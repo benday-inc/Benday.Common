@@ -2,7 +2,7 @@
 {
     public class SortBy
     {
-        public string PropertyName { get; set; }
-        public string Direction { get; set; }
+        public string PropertyName { get; set; } = string.Empty;
+        public string Direction { get; set; } = SearchConstants.SortDirectionAscending;
     }
 }

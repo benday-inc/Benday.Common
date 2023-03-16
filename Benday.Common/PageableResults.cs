@@ -7,7 +7,7 @@ namespace Benday.Common
 {
     public class PageableResults<T> : IPageableResults
     {
-        private IList<T> _results;
+        private IList<T>? _results;
         private int _currentPage;
 
         public PageableResults()
@@ -91,10 +91,7 @@ namespace Benday.Common
         {
             get
             {
-                if (_results == null)
-                {
-                    _results = new List<T>();
-                }
+                _results ??= new List<T>();
 
                 return _results;
             }
@@ -111,6 +108,6 @@ namespace Benday.Common
             set => SetCurrentPage(value);
         }
 
-        public IList<T> PageValues { get; private set; }
+        public IList<T> PageValues { get; private set; } = new List<T>();
     }
 }

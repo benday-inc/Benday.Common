@@ -18,7 +18,7 @@ namespace Benday.Common
         [DisplayFormat(ConvertEmptyStringToNull = false)]
         public string CurrentSortDirection { get; set; }
 
-        public PageableResults<T> Results
+        public PageableResults<T>? Results
         {
             get;
             set;

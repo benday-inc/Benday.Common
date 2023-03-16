@@ -14,6 +14,6 @@ namespace Benday.Common
 
         [Display(Name = "Simple Search Value")]
         [DisplayFormat(ConvertEmptyStringToNull = false)]
-        public string SimpleSearchValue { get; set; }
+        public string SimpleSearchValue { get; set; } = string.Empty;
     }
 }

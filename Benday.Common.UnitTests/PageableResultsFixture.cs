@@ -14,15 +14,12 @@ namespace Benday.Common.UnitTests
             _systemUnderTest = null;
         }
 
-        private PageableResults<string> _systemUnderTest;
+        private PageableResults<string>? _systemUnderTest;
         public PageableResults<string> SystemUnderTest
         {
             get
             {
-                if (_systemUnderTest == null)
-                {
-                    _systemUnderTest = new PageableResults<string>();
-                }
+                _systemUnderTest ??= new PageableResults<string>();
 
                 return _systemUnderTest;
             }

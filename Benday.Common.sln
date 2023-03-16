@@ -1,10 +1,16 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29324.140
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benday.Common", "Benday.Common\Benday.Common.csproj", "{865F607D-CA6E-4D5F-8EAA-8560C814B75E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benday.Common.UnitTests", "Benday.Common.UnitTests\Benday.Common.UnitTests.csproj", "{E70BDAD2-7A74-494A-BA4A-9D2D8B52936E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benday.Common.UnitTests", "Benday.Common.UnitTests\Benday.Common.UnitTests.csproj", "{E70BDAD2-7A74-494A-BA4A-9D2D8B52936E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E30C396B-6D80-4E96-9D96-4B1FA9372427}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

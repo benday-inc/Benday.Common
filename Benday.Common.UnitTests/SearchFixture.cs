@@ -13,15 +13,12 @@ namespace Benday.Common.UnitTests
             _systemUnderTest = null;
         }
 
-        private Search _systemUnderTest;
+        private Search? _systemUnderTest;
         public Search SystemUnderTest
         {
             get
             {
-                if (_systemUnderTest == null)
-                {
-                    _systemUnderTest = new Search();
-                }
+                _systemUnderTest ??= new Search();
 
                 return _systemUnderTest;
             }
@@ -157,26 +154,6 @@ namespace Benday.Common.UnitTests
             // arrange
             var expectedSortByValue = "asdf";
             var expectedSortDirection = "garbage";
-
-            // act
-            SystemUnderTest.AddSort(expectedSortByValue, expectedSortDirection);
-
-            // assert
-            Assert.AreEqual<int>(1, SystemUnderTest.Sorts.Count,
-                "Item count was wrong.");
-
-            var actual = SystemUnderTest.Sorts[0];
-
-            AssertSort(actual, expectedSortByValue, expectedSortDirection);
-        }
-
-        [TestMethod]
-        [ExpectedException(typeof(ArgumentNullException))]
-        public void AddSort_ThrowsExceptionOnNullSortDirection()
-        {
-            // arrange
-            var expectedSortByValue = "asdf";
-            string expectedSortDirection = null;
 
             // act
             SystemUnderTest.AddSort(expectedSortByValue, expectedSortDirection);

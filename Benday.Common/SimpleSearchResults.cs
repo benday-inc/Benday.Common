@@ -21,7 +21,7 @@ namespace Benday.Common
         public string CurrentSortDirection { get; set; }
 
         [JsonPropertyName("simpleSearchValue")]
-        public string SearchValue { get; set; }
+        public string SearchValue { get; set; } = string.Empty;
 
         public int CurrentPage { get; set; }
 
@@ -31,6 +31,6 @@ namespace Benday.Common
 
         public int PageCount { get; set; }
 
-        public IList<T> CurrentPageValues { get; set; }
+        public IList<T> CurrentPageValues { get; set; } = new List<T>();
     }
 }
