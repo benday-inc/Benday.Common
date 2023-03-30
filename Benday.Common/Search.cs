@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace Benday.Common
 {
+    /// <summary>
+    /// Describes the data required to run a search
+    /// </summary>
     public class Search
     {
         public Search()
@@ -19,8 +22,19 @@ namespace Benday.Common
         /// </summary>
         public string Name { get; set; }
 
+        /// <summary>
+        /// Search arguments and values for those arguments
+        /// </summary>
         public List<SearchArgument> Arguments { get; }
 
+
+        /// <summary>
+        /// Add a search argument
+        /// </summary>
+        /// <param name="propertyName">Name of the search argument or property name</param>
+        /// <param name="method">Type of search operator for this argument</param>
+        /// <param name="value">Value for this search argument</param>
+        /// <param name="combineWithOtherArgumentsAs">Describes how this argument is combined with other arguments: Or and And</param>
         public void AddArgument(
             string propertyName,
             SearchMethod method,
@@ -31,6 +45,13 @@ namespace Benday.Common
                 new SearchArgument(propertyName, method, value, combineWithOtherArgumentsAs));
         }
 
+        /// <summary>
+        /// Add a search argument
+        /// </summary>
+        /// <param name="propertyName">Name of the search argument or property name</param>
+        /// <param name="method">Type of search operator for this argument</param>
+        /// <param name="value">Value for this search argument</param>
+        /// <param name="combineWithOtherArgumentsAs">Describes how this argument is combined with other arguments: Or and And</param>
         public void AddArgument(
             string propertyName,
             SearchMethod method,
@@ -41,10 +62,23 @@ namespace Benday.Common
                 new SearchArgument(propertyName, method, value, combineWithOtherArgumentsAs));
         }
 
+        /// <summary>
+        /// Maximum number of items in the result
+        /// </summary>
         public int MaxNumberOfResults { get; set; }
 
+        /// <summary>
+        /// Description of how the result should be sorted
+        /// </summary>
         public List<SortBy> Sorts { get; set; }
 
+        /// <summary>
+        /// Add a sort directive for the results of the search
+        /// </summary>
+        /// <param name="sortByPropertyName">Name of the result property to order by</param>
+        /// <param name="direction">Ascending or descending</param>
+        /// <exception cref="System.ArgumentNullException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
         public void AddSort(string sortByPropertyName,
             string direction = SearchConstants.SortDirectionAscending)
         {
@@ -85,6 +119,11 @@ namespace Benday.Common
             });
         }
 
+        /// <summary>
+        /// Add a sort directive for the results of the search
+        /// </summary>
+        /// <param name="sortBy"></param>
+        /// <exception cref="ArgumentNullException"></exception>
         private void AddSort(SortBy sortBy)
         {
             if (sortBy is null)
