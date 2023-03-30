@@ -1,0 +1,299 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/code/benday-inc/Benday.Common/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.IDeleteable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.IDeleteable.html",
+          "hash": "YeP2tH3fAPn0Rq0AKdoC01bnbVYp758b0/W8X/jaBoE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.IInt32Identity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.IInt32Identity.html",
+          "hash": "N6TJHHWxBfFm7GOJIQ+7d37iYZa6hoGCyolF17rlMT0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.IPageableResults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.IPageableResults.html",
+          "hash": "Axgo8zdrYXVg+wlein2vCllIhHbW8X2c1nviuivVXes="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.ISelectable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.ISelectable.html",
+          "hash": "SV9vR97EiCd+SO6rUywpiOkbWRbeOWAdkCur9fZ9uTU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.ISortableResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.ISortableResult.html",
+          "hash": "KVZdyYTovWov+UrudV9oFFQeicErLYmR3p3kUQjAdHk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.IStringIdentity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.IStringIdentity.html",
+          "hash": "7wI449FdUI4TZC0JwPN1hsh5FEORn6qAwgUJjAWqEEY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.ITypeRegistrationItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.ITypeRegistrationItem.html",
+          "hash": "iQpwqMhWL9xDbpPynRnLswnRvDlvQNenHYfvPY4Ulow="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.PageableResults-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.PageableResults-1.html",
+          "hash": "YHWRbAuXc+HDlhvq/UjO0LFrt5WLsuhBI8TklAgK4P0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Search.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Search.html",
+          "hash": "exzKHpkl4DX493Gb/vCeWIO5P7sOX2DQc3eu/wcXbZg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.SearchArgument.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.SearchArgument.html",
+          "hash": "e5LtdOXl+KiwDp8f4hXUONN6XnDG/6zKAkyF7NIw3fM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.SearchConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.SearchConstants.html",
+          "hash": "MaA4Kw8rRbVrmPNUoIRoGOyRZvb/knEMcGPswSh8Sp8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.SearchMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.SearchMethod.html",
+          "hash": "6LMkS+pQs78yG2owqlYdjN095FzUHMUkJxgxX3qPiy0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.SearchOperator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.SearchOperator.html",
+          "hash": "r2trktVzyYL0/9Zl7vVKhFRx7A5DNVSo2BINYLPEz7A="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.SearchResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.SearchResult-1.html",
+          "hash": "0CoVTfPYhx9qiG3+JcWbOwdGLbiTjDnGmmqtEU5tDv8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.SearchViewModelBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.SearchViewModelBase-1.html",
+          "hash": "8g+0sps6GDZ35sSTB5zLHzo8TdwpubHVeSROaE0Crl4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.SimpleSearchResults-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.SimpleSearchResults-1.html",
+          "hash": "noDsXx+WjCqaAGJdz2Z03cGt5CXTII0gBYpwoH0484E="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.SortBy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.SortBy.html",
+          "hash": "E/4AXpnOFRiId/FirrT0p5uYbbq6uiTn6GpHJ1YTxWk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.SortableViewModelBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.SortableViewModelBase-1.html",
+          "hash": "tJIcsl6CXMq0BlMElmKSKxnHaTkIG2isKe05VjZISEM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.TypeRegistrationItem-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.TypeRegistrationItem-2.html",
+          "hash": "Lnt7jXF7zSCTXgaZwdiOclchzWFnMdWlD+B3YMoFfPM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.html",
+          "hash": "S9j1BwYDUcntdRl6UGAFXo2hU/0kr1IL1xABhxXY16k="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "oV0uIfl0jpnEDj8byKPeOdWuqIKTQtow2lxc8LiYvlI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "welLQe3cQVTtltDNI3I3LDh/6NRwL24OKYZZeE8i1oc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "RrMPv6WR7D66ufZgavyjWNHLz589ht4qwjaYza/1T2I="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "+FPCLcvmNhVb9VLasYr6Tnep0PZtIA6V/UOJ0u+1RmE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "9Z7tqhm6YybHXg6bhnAynAkR6iKxaNVmnBjA+L3KNdc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "aVe9U1RxWP3P5E5X/x2rL8jCuFlqix3bHKxtkjZ3zxg="
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
