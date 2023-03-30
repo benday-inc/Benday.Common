@@ -5,6 +5,10 @@ using System.Text.Json.Serialization;
 
 namespace Benday.Common
 {
+    /// <summary>
+    /// Utility class that provides data paging for a result set
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class PageableResults<T> : IPageableResults
     {
         private IList<T>? _results;
@@ -15,6 +19,11 @@ namespace Benday.Common
             ItemsPerPage = 10;
         }
 
+        /// <summary>
+        /// Sets the data result set that will be paged
+        /// </summary>
+        /// <param name="values">Result set to be paged</param>
+        /// <exception cref="ArgumentNullException"></exception>
         public void Initialize(IList<T> values)
         {
             if (values is null)
@@ -86,6 +95,9 @@ namespace Benday.Common
             }
         }
 
+        /// <summary>
+        /// The complete list of results wrapped for paging
+        /// </summary>
         [JsonIgnore]
         public IList<T> Results
         {
@@ -98,16 +110,33 @@ namespace Benday.Common
             private set => _results = value;
         }
 
+        /// <summary>
+        /// Total number of items in the data source
+        /// </summary>
         public int TotalCount => Results.Count;
 
+        /// <summary>
+        /// Number of items per page
+        /// </summary>
         public int ItemsPerPage { get; set; }
+        
+        /// <summary>
+        /// Number of pages in the results
+        /// </summary>
         public int PageCount { get; set; }
+        
+        /// <summary>
+        /// Index of the current page being displayed
+        /// </summary>
         public int CurrentPage
         {
             get => _currentPage;
             set => SetCurrentPage(value);
         }
 
+        /// <summary>
+        /// List of values in the current page
+        /// </summary>
         public IList<T> PageValues { get; private set; } = new List<T>();
     }
 }
