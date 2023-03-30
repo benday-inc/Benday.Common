@@ -1,0 +1,1128 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Benday.Common
+  name: Benday.Common
+  href: api/Benday.Common.html
+  commentId: N:Benday.Common
+  fullName: Benday.Common
+  nameWithType: Benday.Common
+- uid: Benday.Common.IDeleteable
+  name: IDeleteable
+  href: api/Benday.Common.IDeleteable.html
+  commentId: T:Benday.Common.IDeleteable
+  fullName: Benday.Common.IDeleteable
+  nameWithType: IDeleteable
+- uid: Benday.Common.IDeleteable.IsMarkedForDelete
+  name: IsMarkedForDelete
+  href: api/Benday.Common.IDeleteable.html#Benday_Common_IDeleteable_IsMarkedForDelete
+  commentId: P:Benday.Common.IDeleteable.IsMarkedForDelete
+  fullName: Benday.Common.IDeleteable.IsMarkedForDelete
+  nameWithType: IDeleteable.IsMarkedForDelete
+- uid: Benday.Common.IDeleteable.IsMarkedForDelete*
+  name: IsMarkedForDelete
+  href: api/Benday.Common.IDeleteable.html#Benday_Common_IDeleteable_IsMarkedForDelete_
+  commentId: Overload:Benday.Common.IDeleteable.IsMarkedForDelete
+  isSpec: "True"
+  fullName: Benday.Common.IDeleteable.IsMarkedForDelete
+  nameWithType: IDeleteable.IsMarkedForDelete
+- uid: Benday.Common.IInt32Identity
+  name: IInt32Identity
+  href: api/Benday.Common.IInt32Identity.html
+  commentId: T:Benday.Common.IInt32Identity
+  fullName: Benday.Common.IInt32Identity
+  nameWithType: IInt32Identity
+- uid: Benday.Common.IInt32Identity.Id
+  name: Id
+  href: api/Benday.Common.IInt32Identity.html#Benday_Common_IInt32Identity_Id
+  commentId: P:Benday.Common.IInt32Identity.Id
+  fullName: Benday.Common.IInt32Identity.Id
+  nameWithType: IInt32Identity.Id
+- uid: Benday.Common.IInt32Identity.Id*
+  name: Id
+  href: api/Benday.Common.IInt32Identity.html#Benday_Common_IInt32Identity_Id_
+  commentId: Overload:Benday.Common.IInt32Identity.Id
+  isSpec: "True"
+  fullName: Benday.Common.IInt32Identity.Id
+  nameWithType: IInt32Identity.Id
+- uid: Benday.Common.IPageableResults
+  name: IPageableResults
+  href: api/Benday.Common.IPageableResults.html
+  commentId: T:Benday.Common.IPageableResults
+  fullName: Benday.Common.IPageableResults
+  nameWithType: IPageableResults
+- uid: Benday.Common.IPageableResults.CurrentPage
+  name: CurrentPage
+  href: api/Benday.Common.IPageableResults.html#Benday_Common_IPageableResults_CurrentPage
+  commentId: P:Benday.Common.IPageableResults.CurrentPage
+  fullName: Benday.Common.IPageableResults.CurrentPage
+  nameWithType: IPageableResults.CurrentPage
+- uid: Benday.Common.IPageableResults.CurrentPage*
+  name: CurrentPage
+  href: api/Benday.Common.IPageableResults.html#Benday_Common_IPageableResults_CurrentPage_
+  commentId: Overload:Benday.Common.IPageableResults.CurrentPage
+  isSpec: "True"
+  fullName: Benday.Common.IPageableResults.CurrentPage
+  nameWithType: IPageableResults.CurrentPage
+- uid: Benday.Common.IPageableResults.ItemsPerPage
+  name: ItemsPerPage
+  href: api/Benday.Common.IPageableResults.html#Benday_Common_IPageableResults_ItemsPerPage
+  commentId: P:Benday.Common.IPageableResults.ItemsPerPage
+  fullName: Benday.Common.IPageableResults.ItemsPerPage
+  nameWithType: IPageableResults.ItemsPerPage
+- uid: Benday.Common.IPageableResults.ItemsPerPage*
+  name: ItemsPerPage
+  href: api/Benday.Common.IPageableResults.html#Benday_Common_IPageableResults_ItemsPerPage_
+  commentId: Overload:Benday.Common.IPageableResults.ItemsPerPage
+  isSpec: "True"
+  fullName: Benday.Common.IPageableResults.ItemsPerPage
+  nameWithType: IPageableResults.ItemsPerPage
+- uid: Benday.Common.IPageableResults.PageCount
+  name: PageCount
+  href: api/Benday.Common.IPageableResults.html#Benday_Common_IPageableResults_PageCount
+  commentId: P:Benday.Common.IPageableResults.PageCount
+  fullName: Benday.Common.IPageableResults.PageCount
+  nameWithType: IPageableResults.PageCount
+- uid: Benday.Common.IPageableResults.PageCount*
+  name: PageCount
+  href: api/Benday.Common.IPageableResults.html#Benday_Common_IPageableResults_PageCount_
+  commentId: Overload:Benday.Common.IPageableResults.PageCount
+  isSpec: "True"
+  fullName: Benday.Common.IPageableResults.PageCount
+  nameWithType: IPageableResults.PageCount
+- uid: Benday.Common.IPageableResults.TotalCount
+  name: TotalCount
+  href: api/Benday.Common.IPageableResults.html#Benday_Common_IPageableResults_TotalCount
+  commentId: P:Benday.Common.IPageableResults.TotalCount
+  fullName: Benday.Common.IPageableResults.TotalCount
+  nameWithType: IPageableResults.TotalCount
+- uid: Benday.Common.IPageableResults.TotalCount*
+  name: TotalCount
+  href: api/Benday.Common.IPageableResults.html#Benday_Common_IPageableResults_TotalCount_
+  commentId: Overload:Benday.Common.IPageableResults.TotalCount
+  isSpec: "True"
+  fullName: Benday.Common.IPageableResults.TotalCount
+  nameWithType: IPageableResults.TotalCount
+- uid: Benday.Common.ISelectable
+  name: ISelectable
+  href: api/Benday.Common.ISelectable.html
+  commentId: T:Benday.Common.ISelectable
+  fullName: Benday.Common.ISelectable
+  nameWithType: ISelectable
+- uid: Benday.Common.ISelectable.IsSelected
+  name: IsSelected
+  href: api/Benday.Common.ISelectable.html#Benday_Common_ISelectable_IsSelected
+  commentId: P:Benday.Common.ISelectable.IsSelected
+  fullName: Benday.Common.ISelectable.IsSelected
+  nameWithType: ISelectable.IsSelected
+- uid: Benday.Common.ISelectable.IsSelected*
+  name: IsSelected
+  href: api/Benday.Common.ISelectable.html#Benday_Common_ISelectable_IsSelected_
+  commentId: Overload:Benday.Common.ISelectable.IsSelected
+  isSpec: "True"
+  fullName: Benday.Common.ISelectable.IsSelected
+  nameWithType: ISelectable.IsSelected
+- uid: Benday.Common.ISortableResult
+  name: ISortableResult
+  href: api/Benday.Common.ISortableResult.html
+  commentId: T:Benday.Common.ISortableResult
+  fullName: Benday.Common.ISortableResult
+  nameWithType: ISortableResult
+- uid: Benday.Common.ISortableResult.CurrentSortDirection
+  name: CurrentSortDirection
+  href: api/Benday.Common.ISortableResult.html#Benday_Common_ISortableResult_CurrentSortDirection
+  commentId: P:Benday.Common.ISortableResult.CurrentSortDirection
+  fullName: Benday.Common.ISortableResult.CurrentSortDirection
+  nameWithType: ISortableResult.CurrentSortDirection
+- uid: Benday.Common.ISortableResult.CurrentSortDirection*
+  name: CurrentSortDirection
+  href: api/Benday.Common.ISortableResult.html#Benday_Common_ISortableResult_CurrentSortDirection_
+  commentId: Overload:Benday.Common.ISortableResult.CurrentSortDirection
+  isSpec: "True"
+  fullName: Benday.Common.ISortableResult.CurrentSortDirection
+  nameWithType: ISortableResult.CurrentSortDirection
+- uid: Benday.Common.ISortableResult.CurrentSortProperty
+  name: CurrentSortProperty
+  href: api/Benday.Common.ISortableResult.html#Benday_Common_ISortableResult_CurrentSortProperty
+  commentId: P:Benday.Common.ISortableResult.CurrentSortProperty
+  fullName: Benday.Common.ISortableResult.CurrentSortProperty
+  nameWithType: ISortableResult.CurrentSortProperty
+- uid: Benday.Common.ISortableResult.CurrentSortProperty*
+  name: CurrentSortProperty
+  href: api/Benday.Common.ISortableResult.html#Benday_Common_ISortableResult_CurrentSortProperty_
+  commentId: Overload:Benday.Common.ISortableResult.CurrentSortProperty
+  isSpec: "True"
+  fullName: Benday.Common.ISortableResult.CurrentSortProperty
+  nameWithType: ISortableResult.CurrentSortProperty
+- uid: Benday.Common.IStringIdentity
+  name: IStringIdentity
+  href: api/Benday.Common.IStringIdentity.html
+  commentId: T:Benday.Common.IStringIdentity
+  fullName: Benday.Common.IStringIdentity
+  nameWithType: IStringIdentity
+- uid: Benday.Common.IStringIdentity.Id
+  name: Id
+  href: api/Benday.Common.IStringIdentity.html#Benday_Common_IStringIdentity_Id
+  commentId: P:Benday.Common.IStringIdentity.Id
+  fullName: Benday.Common.IStringIdentity.Id
+  nameWithType: IStringIdentity.Id
+- uid: Benday.Common.IStringIdentity.Id*
+  name: Id
+  href: api/Benday.Common.IStringIdentity.html#Benday_Common_IStringIdentity_Id_
+  commentId: Overload:Benday.Common.IStringIdentity.Id
+  isSpec: "True"
+  fullName: Benday.Common.IStringIdentity.Id
+  nameWithType: IStringIdentity.Id
+- uid: Benday.Common.ITypeRegistrationItem
+  name: ITypeRegistrationItem
+  href: api/Benday.Common.ITypeRegistrationItem.html
+  commentId: T:Benday.Common.ITypeRegistrationItem
+  fullName: Benday.Common.ITypeRegistrationItem
+  nameWithType: ITypeRegistrationItem
+- uid: Benday.Common.ITypeRegistrationItem.ImplementationType
+  name: ImplementationType
+  href: api/Benday.Common.ITypeRegistrationItem.html#Benday_Common_ITypeRegistrationItem_ImplementationType
+  commentId: P:Benday.Common.ITypeRegistrationItem.ImplementationType
+  fullName: Benday.Common.ITypeRegistrationItem.ImplementationType
+  nameWithType: ITypeRegistrationItem.ImplementationType
+- uid: Benday.Common.ITypeRegistrationItem.ImplementationType*
+  name: ImplementationType
+  href: api/Benday.Common.ITypeRegistrationItem.html#Benday_Common_ITypeRegistrationItem_ImplementationType_
+  commentId: Overload:Benday.Common.ITypeRegistrationItem.ImplementationType
+  isSpec: "True"
+  fullName: Benday.Common.ITypeRegistrationItem.ImplementationType
+  nameWithType: ITypeRegistrationItem.ImplementationType
+- uid: Benday.Common.ITypeRegistrationItem.Lifetime
+  name: Lifetime
+  href: api/Benday.Common.ITypeRegistrationItem.html#Benday_Common_ITypeRegistrationItem_Lifetime
+  commentId: P:Benday.Common.ITypeRegistrationItem.Lifetime
+  fullName: Benday.Common.ITypeRegistrationItem.Lifetime
+  nameWithType: ITypeRegistrationItem.Lifetime
+- uid: Benday.Common.ITypeRegistrationItem.Lifetime*
+  name: Lifetime
+  href: api/Benday.Common.ITypeRegistrationItem.html#Benday_Common_ITypeRegistrationItem_Lifetime_
+  commentId: Overload:Benday.Common.ITypeRegistrationItem.Lifetime
+  isSpec: "True"
+  fullName: Benday.Common.ITypeRegistrationItem.Lifetime
+  nameWithType: ITypeRegistrationItem.Lifetime
+- uid: Benday.Common.ITypeRegistrationItem.ServiceType
+  name: ServiceType
+  href: api/Benday.Common.ITypeRegistrationItem.html#Benday_Common_ITypeRegistrationItem_ServiceType
+  commentId: P:Benday.Common.ITypeRegistrationItem.ServiceType
+  fullName: Benday.Common.ITypeRegistrationItem.ServiceType
+  nameWithType: ITypeRegistrationItem.ServiceType
+- uid: Benday.Common.ITypeRegistrationItem.ServiceType*
+  name: ServiceType
+  href: api/Benday.Common.ITypeRegistrationItem.html#Benday_Common_ITypeRegistrationItem_ServiceType_
+  commentId: Overload:Benday.Common.ITypeRegistrationItem.ServiceType
+  isSpec: "True"
+  fullName: Benday.Common.ITypeRegistrationItem.ServiceType
+  nameWithType: ITypeRegistrationItem.ServiceType
+- uid: Benday.Common.PageableResults`1
+  name: PageableResults<T>
+  href: api/Benday.Common.PageableResults-1.html
+  commentId: T:Benday.Common.PageableResults`1
+  name.vb: PageableResults(Of T)
+  fullName: Benday.Common.PageableResults<T>
+  fullName.vb: Benday.Common.PageableResults(Of T)
+  nameWithType: PageableResults<T>
+  nameWithType.vb: PageableResults(Of T)
+- uid: Benday.Common.PageableResults`1.#ctor
+  name: PageableResults()
+  href: api/Benday.Common.PageableResults-1.html#Benday_Common_PageableResults_1__ctor
+  commentId: M:Benday.Common.PageableResults`1.#ctor
+  name.vb: New()
+  fullName: Benday.Common.PageableResults<T>.PageableResults()
+  fullName.vb: Benday.Common.PageableResults(Of T).New()
+  nameWithType: PageableResults<T>.PageableResults()
+  nameWithType.vb: PageableResults(Of T).New()
+- uid: Benday.Common.PageableResults`1.#ctor*
+  name: PageableResults
+  href: api/Benday.Common.PageableResults-1.html#Benday_Common_PageableResults_1__ctor_
+  commentId: Overload:Benday.Common.PageableResults`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Common.PageableResults<T>.PageableResults
+  fullName.vb: Benday.Common.PageableResults(Of T).New
+  nameWithType: PageableResults<T>.PageableResults
+  nameWithType.vb: PageableResults(Of T).New
+- uid: Benday.Common.PageableResults`1.CurrentPage
+  name: CurrentPage
+  href: api/Benday.Common.PageableResults-1.html#Benday_Common_PageableResults_1_CurrentPage
+  commentId: P:Benday.Common.PageableResults`1.CurrentPage
+  fullName: Benday.Common.PageableResults<T>.CurrentPage
+  fullName.vb: Benday.Common.PageableResults(Of T).CurrentPage
+  nameWithType: PageableResults<T>.CurrentPage
+  nameWithType.vb: PageableResults(Of T).CurrentPage
+- uid: Benday.Common.PageableResults`1.CurrentPage*
+  name: CurrentPage
+  href: api/Benday.Common.PageableResults-1.html#Benday_Common_PageableResults_1_CurrentPage_
+  commentId: Overload:Benday.Common.PageableResults`1.CurrentPage
+  isSpec: "True"
+  fullName: Benday.Common.PageableResults<T>.CurrentPage
+  fullName.vb: Benday.Common.PageableResults(Of T).CurrentPage
+  nameWithType: PageableResults<T>.CurrentPage
+  nameWithType.vb: PageableResults(Of T).CurrentPage
+- uid: Benday.Common.PageableResults`1.Initialize(System.Collections.Generic.IList{`0})
+  name: Initialize(IList<T>)
+  href: api/Benday.Common.PageableResults-1.html#Benday_Common_PageableResults_1_Initialize_System_Collections_Generic_IList__0__
+  commentId: M:Benday.Common.PageableResults`1.Initialize(System.Collections.Generic.IList{`0})
+  name.vb: Initialize(IList(Of T))
+  fullName: Benday.Common.PageableResults<T>.Initialize(System.Collections.Generic.IList<T>)
+  fullName.vb: Benday.Common.PageableResults(Of T).Initialize(System.Collections.Generic.IList(Of T))
+  nameWithType: PageableResults<T>.Initialize(IList<T>)
+  nameWithType.vb: PageableResults(Of T).Initialize(IList(Of T))
+- uid: Benday.Common.PageableResults`1.Initialize*
+  name: Initialize
+  href: api/Benday.Common.PageableResults-1.html#Benday_Common_PageableResults_1_Initialize_
+  commentId: Overload:Benday.Common.PageableResults`1.Initialize
+  isSpec: "True"
+  fullName: Benday.Common.PageableResults<T>.Initialize
+  fullName.vb: Benday.Common.PageableResults(Of T).Initialize
+  nameWithType: PageableResults<T>.Initialize
+  nameWithType.vb: PageableResults(Of T).Initialize
+- uid: Benday.Common.PageableResults`1.ItemsPerPage
+  name: ItemsPerPage
+  href: api/Benday.Common.PageableResults-1.html#Benday_Common_PageableResults_1_ItemsPerPage
+  commentId: P:Benday.Common.PageableResults`1.ItemsPerPage
+  fullName: Benday.Common.PageableResults<T>.ItemsPerPage
+  fullName.vb: Benday.Common.PageableResults(Of T).ItemsPerPage
+  nameWithType: PageableResults<T>.ItemsPerPage
+  nameWithType.vb: PageableResults(Of T).ItemsPerPage
+- uid: Benday.Common.PageableResults`1.ItemsPerPage*
+  name: ItemsPerPage
+  href: api/Benday.Common.PageableResults-1.html#Benday_Common_PageableResults_1_ItemsPerPage_
+  commentId: Overload:Benday.Common.PageableResults`1.ItemsPerPage
+  isSpec: "True"
+  fullName: Benday.Common.PageableResults<T>.ItemsPerPage
+  fullName.vb: Benday.Common.PageableResults(Of T).ItemsPerPage
+  nameWithType: PageableResults<T>.ItemsPerPage
+  nameWithType.vb: PageableResults(Of T).ItemsPerPage
+- uid: Benday.Common.PageableResults`1.PageCount
+  name: PageCount
+  href: api/Benday.Common.PageableResults-1.html#Benday_Common_PageableResults_1_PageCount
+  commentId: P:Benday.Common.PageableResults`1.PageCount
+  fullName: Benday.Common.PageableResults<T>.PageCount
+  fullName.vb: Benday.Common.PageableResults(Of T).PageCount
+  nameWithType: PageableResults<T>.PageCount
+  nameWithType.vb: PageableResults(Of T).PageCount
+- uid: Benday.Common.PageableResults`1.PageCount*
+  name: PageCount
+  href: api/Benday.Common.PageableResults-1.html#Benday_Common_PageableResults_1_PageCount_
+  commentId: Overload:Benday.Common.PageableResults`1.PageCount
+  isSpec: "True"
+  fullName: Benday.Common.PageableResults<T>.PageCount
+  fullName.vb: Benday.Common.PageableResults(Of T).PageCount
+  nameWithType: PageableResults<T>.PageCount
+  nameWithType.vb: PageableResults(Of T).PageCount
+- uid: Benday.Common.PageableResults`1.PageValues
+  name: PageValues
+  href: api/Benday.Common.PageableResults-1.html#Benday_Common_PageableResults_1_PageValues
+  commentId: P:Benday.Common.PageableResults`1.PageValues
+  fullName: Benday.Common.PageableResults<T>.PageValues
+  fullName.vb: Benday.Common.PageableResults(Of T).PageValues
+  nameWithType: PageableResults<T>.PageValues
+  nameWithType.vb: PageableResults(Of T).PageValues
+- uid: Benday.Common.PageableResults`1.PageValues*
+  name: PageValues
+  href: api/Benday.Common.PageableResults-1.html#Benday_Common_PageableResults_1_PageValues_
+  commentId: Overload:Benday.Common.PageableResults`1.PageValues
+  isSpec: "True"
+  fullName: Benday.Common.PageableResults<T>.PageValues
+  fullName.vb: Benday.Common.PageableResults(Of T).PageValues
+  nameWithType: PageableResults<T>.PageValues
+  nameWithType.vb: PageableResults(Of T).PageValues
+- uid: Benday.Common.PageableResults`1.Results
+  name: Results
+  href: api/Benday.Common.PageableResults-1.html#Benday_Common_PageableResults_1_Results
+  commentId: P:Benday.Common.PageableResults`1.Results
+  fullName: Benday.Common.PageableResults<T>.Results
+  fullName.vb: Benday.Common.PageableResults(Of T).Results
+  nameWithType: PageableResults<T>.Results
+  nameWithType.vb: PageableResults(Of T).Results
+- uid: Benday.Common.PageableResults`1.Results*
+  name: Results
+  href: api/Benday.Common.PageableResults-1.html#Benday_Common_PageableResults_1_Results_
+  commentId: Overload:Benday.Common.PageableResults`1.Results
+  isSpec: "True"
+  fullName: Benday.Common.PageableResults<T>.Results
+  fullName.vb: Benday.Common.PageableResults(Of T).Results
+  nameWithType: PageableResults<T>.Results
+  nameWithType.vb: PageableResults(Of T).Results
+- uid: Benday.Common.PageableResults`1.TotalCount
+  name: TotalCount
+  href: api/Benday.Common.PageableResults-1.html#Benday_Common_PageableResults_1_TotalCount
+  commentId: P:Benday.Common.PageableResults`1.TotalCount
+  fullName: Benday.Common.PageableResults<T>.TotalCount
+  fullName.vb: Benday.Common.PageableResults(Of T).TotalCount
+  nameWithType: PageableResults<T>.TotalCount
+  nameWithType.vb: PageableResults(Of T).TotalCount
+- uid: Benday.Common.PageableResults`1.TotalCount*
+  name: TotalCount
+  href: api/Benday.Common.PageableResults-1.html#Benday_Common_PageableResults_1_TotalCount_
+  commentId: Overload:Benday.Common.PageableResults`1.TotalCount
+  isSpec: "True"
+  fullName: Benday.Common.PageableResults<T>.TotalCount
+  fullName.vb: Benday.Common.PageableResults(Of T).TotalCount
+  nameWithType: PageableResults<T>.TotalCount
+  nameWithType.vb: PageableResults(Of T).TotalCount
+- uid: Benday.Common.Search
+  name: Search
+  href: api/Benday.Common.Search.html
+  commentId: T:Benday.Common.Search
+  fullName: Benday.Common.Search
+  nameWithType: Search
+- uid: Benday.Common.Search.#ctor
+  name: Search()
+  href: api/Benday.Common.Search.html#Benday_Common_Search__ctor
+  commentId: M:Benday.Common.Search.#ctor
+  name.vb: New()
+  fullName: Benday.Common.Search.Search()
+  fullName.vb: Benday.Common.Search.New()
+  nameWithType: Search.Search()
+  nameWithType.vb: Search.New()
+- uid: Benday.Common.Search.#ctor*
+  name: Search
+  href: api/Benday.Common.Search.html#Benday_Common_Search__ctor_
+  commentId: Overload:Benday.Common.Search.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Common.Search.Search
+  fullName.vb: Benday.Common.Search.New
+  nameWithType: Search.Search
+  nameWithType.vb: Search.New
+- uid: Benday.Common.Search.AddArgument(System.String,Benday.Common.SearchMethod,System.Int32,Benday.Common.SearchOperator)
+  name: AddArgument(string, SearchMethod, int, SearchOperator)
+  href: api/Benday.Common.Search.html#Benday_Common_Search_AddArgument_System_String_Benday_Common_SearchMethod_System_Int32_Benday_Common_SearchOperator_
+  commentId: M:Benday.Common.Search.AddArgument(System.String,Benday.Common.SearchMethod,System.Int32,Benday.Common.SearchOperator)
+  name.vb: AddArgument(String, SearchMethod, Integer, SearchOperator)
+  fullName: Benday.Common.Search.AddArgument(string, Benday.Common.SearchMethod, int, Benday.Common.SearchOperator)
+  fullName.vb: Benday.Common.Search.AddArgument(String, Benday.Common.SearchMethod, Integer, Benday.Common.SearchOperator)
+  nameWithType: Search.AddArgument(string, SearchMethod, int, SearchOperator)
+  nameWithType.vb: Search.AddArgument(String, SearchMethod, Integer, SearchOperator)
+- uid: Benday.Common.Search.AddArgument(System.String,Benday.Common.SearchMethod,System.String,Benday.Common.SearchOperator)
+  name: AddArgument(string, SearchMethod, string, SearchOperator)
+  href: api/Benday.Common.Search.html#Benday_Common_Search_AddArgument_System_String_Benday_Common_SearchMethod_System_String_Benday_Common_SearchOperator_
+  commentId: M:Benday.Common.Search.AddArgument(System.String,Benday.Common.SearchMethod,System.String,Benday.Common.SearchOperator)
+  name.vb: AddArgument(String, SearchMethod, String, SearchOperator)
+  fullName: Benday.Common.Search.AddArgument(string, Benday.Common.SearchMethod, string, Benday.Common.SearchOperator)
+  fullName.vb: Benday.Common.Search.AddArgument(String, Benday.Common.SearchMethod, String, Benday.Common.SearchOperator)
+  nameWithType: Search.AddArgument(string, SearchMethod, string, SearchOperator)
+  nameWithType.vb: Search.AddArgument(String, SearchMethod, String, SearchOperator)
+- uid: Benday.Common.Search.AddArgument*
+  name: AddArgument
+  href: api/Benday.Common.Search.html#Benday_Common_Search_AddArgument_
+  commentId: Overload:Benday.Common.Search.AddArgument
+  isSpec: "True"
+  fullName: Benday.Common.Search.AddArgument
+  nameWithType: Search.AddArgument
+- uid: Benday.Common.Search.AddSort(System.String,System.String)
+  name: AddSort(string, string)
+  href: api/Benday.Common.Search.html#Benday_Common_Search_AddSort_System_String_System_String_
+  commentId: M:Benday.Common.Search.AddSort(System.String,System.String)
+  name.vb: AddSort(String, String)
+  fullName: Benday.Common.Search.AddSort(string, string)
+  fullName.vb: Benday.Common.Search.AddSort(String, String)
+  nameWithType: Search.AddSort(string, string)
+  nameWithType.vb: Search.AddSort(String, String)
+- uid: Benday.Common.Search.AddSort*
+  name: AddSort
+  href: api/Benday.Common.Search.html#Benday_Common_Search_AddSort_
+  commentId: Overload:Benday.Common.Search.AddSort
+  isSpec: "True"
+  fullName: Benday.Common.Search.AddSort
+  nameWithType: Search.AddSort
+- uid: Benday.Common.Search.Arguments
+  name: Arguments
+  href: api/Benday.Common.Search.html#Benday_Common_Search_Arguments
+  commentId: P:Benday.Common.Search.Arguments
+  fullName: Benday.Common.Search.Arguments
+  nameWithType: Search.Arguments
+- uid: Benday.Common.Search.Arguments*
+  name: Arguments
+  href: api/Benday.Common.Search.html#Benday_Common_Search_Arguments_
+  commentId: Overload:Benday.Common.Search.Arguments
+  isSpec: "True"
+  fullName: Benday.Common.Search.Arguments
+  nameWithType: Search.Arguments
+- uid: Benday.Common.Search.MaxNumberOfResults
+  name: MaxNumberOfResults
+  href: api/Benday.Common.Search.html#Benday_Common_Search_MaxNumberOfResults
+  commentId: P:Benday.Common.Search.MaxNumberOfResults
+  fullName: Benday.Common.Search.MaxNumberOfResults
+  nameWithType: Search.MaxNumberOfResults
+- uid: Benday.Common.Search.MaxNumberOfResults*
+  name: MaxNumberOfResults
+  href: api/Benday.Common.Search.html#Benday_Common_Search_MaxNumberOfResults_
+  commentId: Overload:Benday.Common.Search.MaxNumberOfResults
+  isSpec: "True"
+  fullName: Benday.Common.Search.MaxNumberOfResults
+  nameWithType: Search.MaxNumberOfResults
+- uid: Benday.Common.Search.Name
+  name: Name
+  href: api/Benday.Common.Search.html#Benday_Common_Search_Name
+  commentId: P:Benday.Common.Search.Name
+  fullName: Benday.Common.Search.Name
+  nameWithType: Search.Name
+- uid: Benday.Common.Search.Name*
+  name: Name
+  href: api/Benday.Common.Search.html#Benday_Common_Search_Name_
+  commentId: Overload:Benday.Common.Search.Name
+  isSpec: "True"
+  fullName: Benday.Common.Search.Name
+  nameWithType: Search.Name
+- uid: Benday.Common.Search.Sorts
+  name: Sorts
+  href: api/Benday.Common.Search.html#Benday_Common_Search_Sorts
+  commentId: P:Benday.Common.Search.Sorts
+  fullName: Benday.Common.Search.Sorts
+  nameWithType: Search.Sorts
+- uid: Benday.Common.Search.Sorts*
+  name: Sorts
+  href: api/Benday.Common.Search.html#Benday_Common_Search_Sorts_
+  commentId: Overload:Benday.Common.Search.Sorts
+  isSpec: "True"
+  fullName: Benday.Common.Search.Sorts
+  nameWithType: Search.Sorts
+- uid: Benday.Common.SearchArgument
+  name: SearchArgument
+  href: api/Benday.Common.SearchArgument.html
+  commentId: T:Benday.Common.SearchArgument
+  fullName: Benday.Common.SearchArgument
+  nameWithType: SearchArgument
+- uid: Benday.Common.SearchArgument.#ctor(System.String,Benday.Common.SearchMethod,System.Int32,Benday.Common.SearchOperator)
+  name: SearchArgument(string, SearchMethod, int, SearchOperator)
+  href: api/Benday.Common.SearchArgument.html#Benday_Common_SearchArgument__ctor_System_String_Benday_Common_SearchMethod_System_Int32_Benday_Common_SearchOperator_
+  commentId: M:Benday.Common.SearchArgument.#ctor(System.String,Benday.Common.SearchMethod,System.Int32,Benday.Common.SearchOperator)
+  name.vb: New(String, SearchMethod, Integer, SearchOperator)
+  fullName: Benday.Common.SearchArgument.SearchArgument(string, Benday.Common.SearchMethod, int, Benday.Common.SearchOperator)
+  fullName.vb: Benday.Common.SearchArgument.New(String, Benday.Common.SearchMethod, Integer, Benday.Common.SearchOperator)
+  nameWithType: SearchArgument.SearchArgument(string, SearchMethod, int, SearchOperator)
+  nameWithType.vb: SearchArgument.New(String, SearchMethod, Integer, SearchOperator)
+- uid: Benday.Common.SearchArgument.#ctor(System.String,Benday.Common.SearchMethod,System.String,Benday.Common.SearchOperator)
+  name: SearchArgument(string, SearchMethod, string, SearchOperator)
+  href: api/Benday.Common.SearchArgument.html#Benday_Common_SearchArgument__ctor_System_String_Benday_Common_SearchMethod_System_String_Benday_Common_SearchOperator_
+  commentId: M:Benday.Common.SearchArgument.#ctor(System.String,Benday.Common.SearchMethod,System.String,Benday.Common.SearchOperator)
+  name.vb: New(String, SearchMethod, String, SearchOperator)
+  fullName: Benday.Common.SearchArgument.SearchArgument(string, Benday.Common.SearchMethod, string, Benday.Common.SearchOperator)
+  fullName.vb: Benday.Common.SearchArgument.New(String, Benday.Common.SearchMethod, String, Benday.Common.SearchOperator)
+  nameWithType: SearchArgument.SearchArgument(string, SearchMethod, string, SearchOperator)
+  nameWithType.vb: SearchArgument.New(String, SearchMethod, String, SearchOperator)
+- uid: Benday.Common.SearchArgument.#ctor*
+  name: SearchArgument
+  href: api/Benday.Common.SearchArgument.html#Benday_Common_SearchArgument__ctor_
+  commentId: Overload:Benday.Common.SearchArgument.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Common.SearchArgument.SearchArgument
+  fullName.vb: Benday.Common.SearchArgument.New
+  nameWithType: SearchArgument.SearchArgument
+  nameWithType.vb: SearchArgument.New
+- uid: Benday.Common.SearchArgument.Method
+  name: Method
+  href: api/Benday.Common.SearchArgument.html#Benday_Common_SearchArgument_Method
+  commentId: P:Benday.Common.SearchArgument.Method
+  fullName: Benday.Common.SearchArgument.Method
+  nameWithType: SearchArgument.Method
+- uid: Benday.Common.SearchArgument.Method*
+  name: Method
+  href: api/Benday.Common.SearchArgument.html#Benday_Common_SearchArgument_Method_
+  commentId: Overload:Benday.Common.SearchArgument.Method
+  isSpec: "True"
+  fullName: Benday.Common.SearchArgument.Method
+  nameWithType: SearchArgument.Method
+- uid: Benday.Common.SearchArgument.Operator
+  name: Operator
+  href: api/Benday.Common.SearchArgument.html#Benday_Common_SearchArgument_Operator
+  commentId: P:Benday.Common.SearchArgument.Operator
+  fullName: Benday.Common.SearchArgument.Operator
+  nameWithType: SearchArgument.Operator
+- uid: Benday.Common.SearchArgument.Operator*
+  name: Operator
+  href: api/Benday.Common.SearchArgument.html#Benday_Common_SearchArgument_Operator_
+  commentId: Overload:Benday.Common.SearchArgument.Operator
+  isSpec: "True"
+  fullName: Benday.Common.SearchArgument.Operator
+  nameWithType: SearchArgument.Operator
+- uid: Benday.Common.SearchArgument.PropertyName
+  name: PropertyName
+  href: api/Benday.Common.SearchArgument.html#Benday_Common_SearchArgument_PropertyName
+  commentId: P:Benday.Common.SearchArgument.PropertyName
+  fullName: Benday.Common.SearchArgument.PropertyName
+  nameWithType: SearchArgument.PropertyName
+- uid: Benday.Common.SearchArgument.PropertyName*
+  name: PropertyName
+  href: api/Benday.Common.SearchArgument.html#Benday_Common_SearchArgument_PropertyName_
+  commentId: Overload:Benday.Common.SearchArgument.PropertyName
+  isSpec: "True"
+  fullName: Benday.Common.SearchArgument.PropertyName
+  nameWithType: SearchArgument.PropertyName
+- uid: Benday.Common.SearchArgument.SearchValue
+  name: SearchValue
+  href: api/Benday.Common.SearchArgument.html#Benday_Common_SearchArgument_SearchValue
+  commentId: P:Benday.Common.SearchArgument.SearchValue
+  fullName: Benday.Common.SearchArgument.SearchValue
+  nameWithType: SearchArgument.SearchValue
+- uid: Benday.Common.SearchArgument.SearchValue*
+  name: SearchValue
+  href: api/Benday.Common.SearchArgument.html#Benday_Common_SearchArgument_SearchValue_
+  commentId: Overload:Benday.Common.SearchArgument.SearchValue
+  isSpec: "True"
+  fullName: Benday.Common.SearchArgument.SearchValue
+  nameWithType: SearchArgument.SearchValue
+- uid: Benday.Common.SearchArgument.SearchValueAsInt
+  name: SearchValueAsInt
+  href: api/Benday.Common.SearchArgument.html#Benday_Common_SearchArgument_SearchValueAsInt
+  commentId: P:Benday.Common.SearchArgument.SearchValueAsInt
+  fullName: Benday.Common.SearchArgument.SearchValueAsInt
+  nameWithType: SearchArgument.SearchValueAsInt
+- uid: Benday.Common.SearchArgument.SearchValueAsInt*
+  name: SearchValueAsInt
+  href: api/Benday.Common.SearchArgument.html#Benday_Common_SearchArgument_SearchValueAsInt_
+  commentId: Overload:Benday.Common.SearchArgument.SearchValueAsInt
+  isSpec: "True"
+  fullName: Benday.Common.SearchArgument.SearchValueAsInt
+  nameWithType: SearchArgument.SearchValueAsInt
+- uid: Benday.Common.SearchConstants
+  name: SearchConstants
+  href: api/Benday.Common.SearchConstants.html
+  commentId: T:Benday.Common.SearchConstants
+  fullName: Benday.Common.SearchConstants
+  nameWithType: SearchConstants
+- uid: Benday.Common.SearchConstants.SortDirectionAscending
+  name: SortDirectionAscending
+  href: api/Benday.Common.SearchConstants.html#Benday_Common_SearchConstants_SortDirectionAscending
+  commentId: F:Benday.Common.SearchConstants.SortDirectionAscending
+  fullName: Benday.Common.SearchConstants.SortDirectionAscending
+  nameWithType: SearchConstants.SortDirectionAscending
+- uid: Benday.Common.SearchConstants.SortDirectionDescending
+  name: SortDirectionDescending
+  href: api/Benday.Common.SearchConstants.html#Benday_Common_SearchConstants_SortDirectionDescending
+  commentId: F:Benday.Common.SearchConstants.SortDirectionDescending
+  fullName: Benday.Common.SearchConstants.SortDirectionDescending
+  nameWithType: SearchConstants.SortDirectionDescending
+- uid: Benday.Common.SearchMethod
+  name: SearchMethod
+  href: api/Benday.Common.SearchMethod.html
+  commentId: T:Benday.Common.SearchMethod
+  fullName: Benday.Common.SearchMethod
+  nameWithType: SearchMethod
+- uid: Benday.Common.SearchMethod.Contains
+  name: Contains
+  href: api/Benday.Common.SearchMethod.html#Benday_Common_SearchMethod_Contains
+  commentId: F:Benday.Common.SearchMethod.Contains
+  fullName: Benday.Common.SearchMethod.Contains
+  nameWithType: SearchMethod.Contains
+- uid: Benday.Common.SearchMethod.DoesNotContain
+  name: DoesNotContain
+  href: api/Benday.Common.SearchMethod.html#Benday_Common_SearchMethod_DoesNotContain
+  commentId: F:Benday.Common.SearchMethod.DoesNotContain
+  fullName: Benday.Common.SearchMethod.DoesNotContain
+  nameWithType: SearchMethod.DoesNotContain
+- uid: Benday.Common.SearchMethod.EndsWith
+  name: EndsWith
+  href: api/Benday.Common.SearchMethod.html#Benday_Common_SearchMethod_EndsWith
+  commentId: F:Benday.Common.SearchMethod.EndsWith
+  fullName: Benday.Common.SearchMethod.EndsWith
+  nameWithType: SearchMethod.EndsWith
+- uid: Benday.Common.SearchMethod.Equals
+  name: Equals
+  href: api/Benday.Common.SearchMethod.html#Benday_Common_SearchMethod_Equals
+  commentId: F:Benday.Common.SearchMethod.Equals
+  fullName: Benday.Common.SearchMethod.Equals
+  nameWithType: SearchMethod.Equals
+- uid: Benday.Common.SearchMethod.IsNotEqual
+  name: IsNotEqual
+  href: api/Benday.Common.SearchMethod.html#Benday_Common_SearchMethod_IsNotEqual
+  commentId: F:Benday.Common.SearchMethod.IsNotEqual
+  fullName: Benday.Common.SearchMethod.IsNotEqual
+  nameWithType: SearchMethod.IsNotEqual
+- uid: Benday.Common.SearchMethod.Skip
+  name: Skip
+  href: api/Benday.Common.SearchMethod.html#Benday_Common_SearchMethod_Skip
+  commentId: F:Benday.Common.SearchMethod.Skip
+  fullName: Benday.Common.SearchMethod.Skip
+  nameWithType: SearchMethod.Skip
+- uid: Benday.Common.SearchMethod.StartsWith
+  name: StartsWith
+  href: api/Benday.Common.SearchMethod.html#Benday_Common_SearchMethod_StartsWith
+  commentId: F:Benday.Common.SearchMethod.StartsWith
+  fullName: Benday.Common.SearchMethod.StartsWith
+  nameWithType: SearchMethod.StartsWith
+- uid: Benday.Common.SearchOperator
+  name: SearchOperator
+  href: api/Benday.Common.SearchOperator.html
+  commentId: T:Benday.Common.SearchOperator
+  fullName: Benday.Common.SearchOperator
+  nameWithType: SearchOperator
+- uid: Benday.Common.SearchOperator.And
+  name: And
+  href: api/Benday.Common.SearchOperator.html#Benday_Common_SearchOperator_And
+  commentId: F:Benday.Common.SearchOperator.And
+  fullName: Benday.Common.SearchOperator.And
+  nameWithType: SearchOperator.And
+- uid: Benday.Common.SearchOperator.Or
+  name: Or
+  href: api/Benday.Common.SearchOperator.html#Benday_Common_SearchOperator_Or
+  commentId: F:Benday.Common.SearchOperator.Or
+  fullName: Benday.Common.SearchOperator.Or
+  nameWithType: SearchOperator.Or
+- uid: Benday.Common.SearchResult`1
+  name: SearchResult<T>
+  href: api/Benday.Common.SearchResult-1.html
+  commentId: T:Benday.Common.SearchResult`1
+  name.vb: SearchResult(Of T)
+  fullName: Benday.Common.SearchResult<T>
+  fullName.vb: Benday.Common.SearchResult(Of T)
+  nameWithType: SearchResult<T>
+  nameWithType.vb: SearchResult(Of T)
+- uid: Benday.Common.SearchResult`1.Results
+  name: Results
+  href: api/Benday.Common.SearchResult-1.html#Benday_Common_SearchResult_1_Results
+  commentId: P:Benday.Common.SearchResult`1.Results
+  fullName: Benday.Common.SearchResult<T>.Results
+  fullName.vb: Benday.Common.SearchResult(Of T).Results
+  nameWithType: SearchResult<T>.Results
+  nameWithType.vb: SearchResult(Of T).Results
+- uid: Benday.Common.SearchResult`1.Results*
+  name: Results
+  href: api/Benday.Common.SearchResult-1.html#Benday_Common_SearchResult_1_Results_
+  commentId: Overload:Benday.Common.SearchResult`1.Results
+  isSpec: "True"
+  fullName: Benday.Common.SearchResult<T>.Results
+  fullName.vb: Benday.Common.SearchResult(Of T).Results
+  nameWithType: SearchResult<T>.Results
+  nameWithType.vb: SearchResult(Of T).Results
+- uid: Benday.Common.SearchResult`1.SearchRequest
+  name: SearchRequest
+  href: api/Benday.Common.SearchResult-1.html#Benday_Common_SearchResult_1_SearchRequest
+  commentId: P:Benday.Common.SearchResult`1.SearchRequest
+  fullName: Benday.Common.SearchResult<T>.SearchRequest
+  fullName.vb: Benday.Common.SearchResult(Of T).SearchRequest
+  nameWithType: SearchResult<T>.SearchRequest
+  nameWithType.vb: SearchResult(Of T).SearchRequest
+- uid: Benday.Common.SearchResult`1.SearchRequest*
+  name: SearchRequest
+  href: api/Benday.Common.SearchResult-1.html#Benday_Common_SearchResult_1_SearchRequest_
+  commentId: Overload:Benday.Common.SearchResult`1.SearchRequest
+  isSpec: "True"
+  fullName: Benday.Common.SearchResult<T>.SearchRequest
+  fullName.vb: Benday.Common.SearchResult(Of T).SearchRequest
+  nameWithType: SearchResult<T>.SearchRequest
+  nameWithType.vb: SearchResult(Of T).SearchRequest
+- uid: Benday.Common.SearchViewModelBase`1
+  name: SearchViewModelBase<T>
+  href: api/Benday.Common.SearchViewModelBase-1.html
+  commentId: T:Benday.Common.SearchViewModelBase`1
+  name.vb: SearchViewModelBase(Of T)
+  fullName: Benday.Common.SearchViewModelBase<T>
+  fullName.vb: Benday.Common.SearchViewModelBase(Of T)
+  nameWithType: SearchViewModelBase<T>
+  nameWithType.vb: SearchViewModelBase(Of T)
+- uid: Benday.Common.SearchViewModelBase`1.#ctor
+  name: SearchViewModelBase()
+  href: api/Benday.Common.SearchViewModelBase-1.html#Benday_Common_SearchViewModelBase_1__ctor
+  commentId: M:Benday.Common.SearchViewModelBase`1.#ctor
+  name.vb: New()
+  fullName: Benday.Common.SearchViewModelBase<T>.SearchViewModelBase()
+  fullName.vb: Benday.Common.SearchViewModelBase(Of T).New()
+  nameWithType: SearchViewModelBase<T>.SearchViewModelBase()
+  nameWithType.vb: SearchViewModelBase(Of T).New()
+- uid: Benday.Common.SearchViewModelBase`1.#ctor*
+  name: SearchViewModelBase
+  href: api/Benday.Common.SearchViewModelBase-1.html#Benday_Common_SearchViewModelBase_1__ctor_
+  commentId: Overload:Benday.Common.SearchViewModelBase`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Common.SearchViewModelBase<T>.SearchViewModelBase
+  fullName.vb: Benday.Common.SearchViewModelBase(Of T).New
+  nameWithType: SearchViewModelBase<T>.SearchViewModelBase
+  nameWithType.vb: SearchViewModelBase(Of T).New
+- uid: Benday.Common.SearchViewModelBase`1.IsSimpleSearch
+  name: IsSimpleSearch
+  href: api/Benday.Common.SearchViewModelBase-1.html#Benday_Common_SearchViewModelBase_1_IsSimpleSearch
+  commentId: P:Benday.Common.SearchViewModelBase`1.IsSimpleSearch
+  fullName: Benday.Common.SearchViewModelBase<T>.IsSimpleSearch
+  fullName.vb: Benday.Common.SearchViewModelBase(Of T).IsSimpleSearch
+  nameWithType: SearchViewModelBase<T>.IsSimpleSearch
+  nameWithType.vb: SearchViewModelBase(Of T).IsSimpleSearch
+- uid: Benday.Common.SearchViewModelBase`1.IsSimpleSearch*
+  name: IsSimpleSearch
+  href: api/Benday.Common.SearchViewModelBase-1.html#Benday_Common_SearchViewModelBase_1_IsSimpleSearch_
+  commentId: Overload:Benday.Common.SearchViewModelBase`1.IsSimpleSearch
+  isSpec: "True"
+  fullName: Benday.Common.SearchViewModelBase<T>.IsSimpleSearch
+  fullName.vb: Benday.Common.SearchViewModelBase(Of T).IsSimpleSearch
+  nameWithType: SearchViewModelBase<T>.IsSimpleSearch
+  nameWithType.vb: SearchViewModelBase(Of T).IsSimpleSearch
+- uid: Benday.Common.SearchViewModelBase`1.SimpleSearchValue
+  name: SimpleSearchValue
+  href: api/Benday.Common.SearchViewModelBase-1.html#Benday_Common_SearchViewModelBase_1_SimpleSearchValue
+  commentId: P:Benday.Common.SearchViewModelBase`1.SimpleSearchValue
+  fullName: Benday.Common.SearchViewModelBase<T>.SimpleSearchValue
+  fullName.vb: Benday.Common.SearchViewModelBase(Of T).SimpleSearchValue
+  nameWithType: SearchViewModelBase<T>.SimpleSearchValue
+  nameWithType.vb: SearchViewModelBase(Of T).SimpleSearchValue
+- uid: Benday.Common.SearchViewModelBase`1.SimpleSearchValue*
+  name: SimpleSearchValue
+  href: api/Benday.Common.SearchViewModelBase-1.html#Benday_Common_SearchViewModelBase_1_SimpleSearchValue_
+  commentId: Overload:Benday.Common.SearchViewModelBase`1.SimpleSearchValue
+  isSpec: "True"
+  fullName: Benday.Common.SearchViewModelBase<T>.SimpleSearchValue
+  fullName.vb: Benday.Common.SearchViewModelBase(Of T).SimpleSearchValue
+  nameWithType: SearchViewModelBase<T>.SimpleSearchValue
+  nameWithType.vb: SearchViewModelBase(Of T).SimpleSearchValue
+- uid: Benday.Common.SimpleSearchResults`1
+  name: SimpleSearchResults<T>
+  href: api/Benday.Common.SimpleSearchResults-1.html
+  commentId: T:Benday.Common.SimpleSearchResults`1
+  name.vb: SimpleSearchResults(Of T)
+  fullName: Benday.Common.SimpleSearchResults<T>
+  fullName.vb: Benday.Common.SimpleSearchResults(Of T)
+  nameWithType: SimpleSearchResults<T>
+  nameWithType.vb: SimpleSearchResults(Of T)
+- uid: Benday.Common.SimpleSearchResults`1.#ctor
+  name: SimpleSearchResults()
+  href: api/Benday.Common.SimpleSearchResults-1.html#Benday_Common_SimpleSearchResults_1__ctor
+  commentId: M:Benday.Common.SimpleSearchResults`1.#ctor
+  name.vb: New()
+  fullName: Benday.Common.SimpleSearchResults<T>.SimpleSearchResults()
+  fullName.vb: Benday.Common.SimpleSearchResults(Of T).New()
+  nameWithType: SimpleSearchResults<T>.SimpleSearchResults()
+  nameWithType.vb: SimpleSearchResults(Of T).New()
+- uid: Benday.Common.SimpleSearchResults`1.#ctor*
+  name: SimpleSearchResults
+  href: api/Benday.Common.SimpleSearchResults-1.html#Benday_Common_SimpleSearchResults_1__ctor_
+  commentId: Overload:Benday.Common.SimpleSearchResults`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Common.SimpleSearchResults<T>.SimpleSearchResults
+  fullName.vb: Benday.Common.SimpleSearchResults(Of T).New
+  nameWithType: SimpleSearchResults<T>.SimpleSearchResults
+  nameWithType.vb: SimpleSearchResults(Of T).New
+- uid: Benday.Common.SimpleSearchResults`1.CurrentPage
+  name: CurrentPage
+  href: api/Benday.Common.SimpleSearchResults-1.html#Benday_Common_SimpleSearchResults_1_CurrentPage
+  commentId: P:Benday.Common.SimpleSearchResults`1.CurrentPage
+  fullName: Benday.Common.SimpleSearchResults<T>.CurrentPage
+  fullName.vb: Benday.Common.SimpleSearchResults(Of T).CurrentPage
+  nameWithType: SimpleSearchResults<T>.CurrentPage
+  nameWithType.vb: SimpleSearchResults(Of T).CurrentPage
+- uid: Benday.Common.SimpleSearchResults`1.CurrentPage*
+  name: CurrentPage
+  href: api/Benday.Common.SimpleSearchResults-1.html#Benday_Common_SimpleSearchResults_1_CurrentPage_
+  commentId: Overload:Benday.Common.SimpleSearchResults`1.CurrentPage
+  isSpec: "True"
+  fullName: Benday.Common.SimpleSearchResults<T>.CurrentPage
+  fullName.vb: Benday.Common.SimpleSearchResults(Of T).CurrentPage
+  nameWithType: SimpleSearchResults<T>.CurrentPage
+  nameWithType.vb: SimpleSearchResults(Of T).CurrentPage
+- uid: Benday.Common.SimpleSearchResults`1.CurrentPageValues
+  name: CurrentPageValues
+  href: api/Benday.Common.SimpleSearchResults-1.html#Benday_Common_SimpleSearchResults_1_CurrentPageValues
+  commentId: P:Benday.Common.SimpleSearchResults`1.CurrentPageValues
+  fullName: Benday.Common.SimpleSearchResults<T>.CurrentPageValues
+  fullName.vb: Benday.Common.SimpleSearchResults(Of T).CurrentPageValues
+  nameWithType: SimpleSearchResults<T>.CurrentPageValues
+  nameWithType.vb: SimpleSearchResults(Of T).CurrentPageValues
+- uid: Benday.Common.SimpleSearchResults`1.CurrentPageValues*
+  name: CurrentPageValues
+  href: api/Benday.Common.SimpleSearchResults-1.html#Benday_Common_SimpleSearchResults_1_CurrentPageValues_
+  commentId: Overload:Benday.Common.SimpleSearchResults`1.CurrentPageValues
+  isSpec: "True"
+  fullName: Benday.Common.SimpleSearchResults<T>.CurrentPageValues
+  fullName.vb: Benday.Common.SimpleSearchResults(Of T).CurrentPageValues
+  nameWithType: SimpleSearchResults<T>.CurrentPageValues
+  nameWithType.vb: SimpleSearchResults(Of T).CurrentPageValues
+- uid: Benday.Common.SimpleSearchResults`1.CurrentSortDirection
+  name: CurrentSortDirection
+  href: api/Benday.Common.SimpleSearchResults-1.html#Benday_Common_SimpleSearchResults_1_CurrentSortDirection
+  commentId: P:Benday.Common.SimpleSearchResults`1.CurrentSortDirection
+  fullName: Benday.Common.SimpleSearchResults<T>.CurrentSortDirection
+  fullName.vb: Benday.Common.SimpleSearchResults(Of T).CurrentSortDirection
+  nameWithType: SimpleSearchResults<T>.CurrentSortDirection
+  nameWithType.vb: SimpleSearchResults(Of T).CurrentSortDirection
+- uid: Benday.Common.SimpleSearchResults`1.CurrentSortDirection*
+  name: CurrentSortDirection
+  href: api/Benday.Common.SimpleSearchResults-1.html#Benday_Common_SimpleSearchResults_1_CurrentSortDirection_
+  commentId: Overload:Benday.Common.SimpleSearchResults`1.CurrentSortDirection
+  isSpec: "True"
+  fullName: Benday.Common.SimpleSearchResults<T>.CurrentSortDirection
+  fullName.vb: Benday.Common.SimpleSearchResults(Of T).CurrentSortDirection
+  nameWithType: SimpleSearchResults<T>.CurrentSortDirection
+  nameWithType.vb: SimpleSearchResults(Of T).CurrentSortDirection
+- uid: Benday.Common.SimpleSearchResults`1.CurrentSortProperty
+  name: CurrentSortProperty
+  href: api/Benday.Common.SimpleSearchResults-1.html#Benday_Common_SimpleSearchResults_1_CurrentSortProperty
+  commentId: P:Benday.Common.SimpleSearchResults`1.CurrentSortProperty
+  fullName: Benday.Common.SimpleSearchResults<T>.CurrentSortProperty
+  fullName.vb: Benday.Common.SimpleSearchResults(Of T).CurrentSortProperty
+  nameWithType: SimpleSearchResults<T>.CurrentSortProperty
+  nameWithType.vb: SimpleSearchResults(Of T).CurrentSortProperty
+- uid: Benday.Common.SimpleSearchResults`1.CurrentSortProperty*
+  name: CurrentSortProperty
+  href: api/Benday.Common.SimpleSearchResults-1.html#Benday_Common_SimpleSearchResults_1_CurrentSortProperty_
+  commentId: Overload:Benday.Common.SimpleSearchResults`1.CurrentSortProperty
+  isSpec: "True"
+  fullName: Benday.Common.SimpleSearchResults<T>.CurrentSortProperty
+  fullName.vb: Benday.Common.SimpleSearchResults(Of T).CurrentSortProperty
+  nameWithType: SimpleSearchResults<T>.CurrentSortProperty
+  nameWithType.vb: SimpleSearchResults(Of T).CurrentSortProperty
+- uid: Benday.Common.SimpleSearchResults`1.ItemsPerPage
+  name: ItemsPerPage
+  href: api/Benday.Common.SimpleSearchResults-1.html#Benday_Common_SimpleSearchResults_1_ItemsPerPage
+  commentId: P:Benday.Common.SimpleSearchResults`1.ItemsPerPage
+  fullName: Benday.Common.SimpleSearchResults<T>.ItemsPerPage
+  fullName.vb: Benday.Common.SimpleSearchResults(Of T).ItemsPerPage
+  nameWithType: SimpleSearchResults<T>.ItemsPerPage
+  nameWithType.vb: SimpleSearchResults(Of T).ItemsPerPage
+- uid: Benday.Common.SimpleSearchResults`1.ItemsPerPage*
+  name: ItemsPerPage
+  href: api/Benday.Common.SimpleSearchResults-1.html#Benday_Common_SimpleSearchResults_1_ItemsPerPage_
+  commentId: Overload:Benday.Common.SimpleSearchResults`1.ItemsPerPage
+  isSpec: "True"
+  fullName: Benday.Common.SimpleSearchResults<T>.ItemsPerPage
+  fullName.vb: Benday.Common.SimpleSearchResults(Of T).ItemsPerPage
+  nameWithType: SimpleSearchResults<T>.ItemsPerPage
+  nameWithType.vb: SimpleSearchResults(Of T).ItemsPerPage
+- uid: Benday.Common.SimpleSearchResults`1.PageCount
+  name: PageCount
+  href: api/Benday.Common.SimpleSearchResults-1.html#Benday_Common_SimpleSearchResults_1_PageCount
+  commentId: P:Benday.Common.SimpleSearchResults`1.PageCount
+  fullName: Benday.Common.SimpleSearchResults<T>.PageCount
+  fullName.vb: Benday.Common.SimpleSearchResults(Of T).PageCount
+  nameWithType: SimpleSearchResults<T>.PageCount
+  nameWithType.vb: SimpleSearchResults(Of T).PageCount
+- uid: Benday.Common.SimpleSearchResults`1.PageCount*
+  name: PageCount
+  href: api/Benday.Common.SimpleSearchResults-1.html#Benday_Common_SimpleSearchResults_1_PageCount_
+  commentId: Overload:Benday.Common.SimpleSearchResults`1.PageCount
+  isSpec: "True"
+  fullName: Benday.Common.SimpleSearchResults<T>.PageCount
+  fullName.vb: Benday.Common.SimpleSearchResults(Of T).PageCount
+  nameWithType: SimpleSearchResults<T>.PageCount
+  nameWithType.vb: SimpleSearchResults(Of T).PageCount
+- uid: Benday.Common.SimpleSearchResults`1.SearchValue
+  name: SearchValue
+  href: api/Benday.Common.SimpleSearchResults-1.html#Benday_Common_SimpleSearchResults_1_SearchValue
+  commentId: P:Benday.Common.SimpleSearchResults`1.SearchValue
+  fullName: Benday.Common.SimpleSearchResults<T>.SearchValue
+  fullName.vb: Benday.Common.SimpleSearchResults(Of T).SearchValue
+  nameWithType: SimpleSearchResults<T>.SearchValue
+  nameWithType.vb: SimpleSearchResults(Of T).SearchValue
+- uid: Benday.Common.SimpleSearchResults`1.SearchValue*
+  name: SearchValue
+  href: api/Benday.Common.SimpleSearchResults-1.html#Benday_Common_SimpleSearchResults_1_SearchValue_
+  commentId: Overload:Benday.Common.SimpleSearchResults`1.SearchValue
+  isSpec: "True"
+  fullName: Benday.Common.SimpleSearchResults<T>.SearchValue
+  fullName.vb: Benday.Common.SimpleSearchResults(Of T).SearchValue
+  nameWithType: SimpleSearchResults<T>.SearchValue
+  nameWithType.vb: SimpleSearchResults(Of T).SearchValue
+- uid: Benday.Common.SimpleSearchResults`1.TotalCount
+  name: TotalCount
+  href: api/Benday.Common.SimpleSearchResults-1.html#Benday_Common_SimpleSearchResults_1_TotalCount
+  commentId: P:Benday.Common.SimpleSearchResults`1.TotalCount
+  fullName: Benday.Common.SimpleSearchResults<T>.TotalCount
+  fullName.vb: Benday.Common.SimpleSearchResults(Of T).TotalCount
+  nameWithType: SimpleSearchResults<T>.TotalCount
+  nameWithType.vb: SimpleSearchResults(Of T).TotalCount
+- uid: Benday.Common.SimpleSearchResults`1.TotalCount*
+  name: TotalCount
+  href: api/Benday.Common.SimpleSearchResults-1.html#Benday_Common_SimpleSearchResults_1_TotalCount_
+  commentId: Overload:Benday.Common.SimpleSearchResults`1.TotalCount
+  isSpec: "True"
+  fullName: Benday.Common.SimpleSearchResults<T>.TotalCount
+  fullName.vb: Benday.Common.SimpleSearchResults(Of T).TotalCount
+  nameWithType: SimpleSearchResults<T>.TotalCount
+  nameWithType.vb: SimpleSearchResults(Of T).TotalCount
+- uid: Benday.Common.SortableViewModelBase`1
+  name: SortableViewModelBase<T>
+  href: api/Benday.Common.SortableViewModelBase-1.html
+  commentId: T:Benday.Common.SortableViewModelBase`1
+  name.vb: SortableViewModelBase(Of T)
+  fullName: Benday.Common.SortableViewModelBase<T>
+  fullName.vb: Benday.Common.SortableViewModelBase(Of T)
+  nameWithType: SortableViewModelBase<T>
+  nameWithType.vb: SortableViewModelBase(Of T)
+- uid: Benday.Common.SortableViewModelBase`1.#ctor
+  name: SortableViewModelBase()
+  href: api/Benday.Common.SortableViewModelBase-1.html#Benday_Common_SortableViewModelBase_1__ctor
+  commentId: M:Benday.Common.SortableViewModelBase`1.#ctor
+  name.vb: New()
+  fullName: Benday.Common.SortableViewModelBase<T>.SortableViewModelBase()
+  fullName.vb: Benday.Common.SortableViewModelBase(Of T).New()
+  nameWithType: SortableViewModelBase<T>.SortableViewModelBase()
+  nameWithType.vb: SortableViewModelBase(Of T).New()
+- uid: Benday.Common.SortableViewModelBase`1.#ctor*
+  name: SortableViewModelBase
+  href: api/Benday.Common.SortableViewModelBase-1.html#Benday_Common_SortableViewModelBase_1__ctor_
+  commentId: Overload:Benday.Common.SortableViewModelBase`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Common.SortableViewModelBase<T>.SortableViewModelBase
+  fullName.vb: Benday.Common.SortableViewModelBase(Of T).New
+  nameWithType: SortableViewModelBase<T>.SortableViewModelBase
+  nameWithType.vb: SortableViewModelBase(Of T).New
+- uid: Benday.Common.SortableViewModelBase`1.CurrentSortDirection
+  name: CurrentSortDirection
+  href: api/Benday.Common.SortableViewModelBase-1.html#Benday_Common_SortableViewModelBase_1_CurrentSortDirection
+  commentId: P:Benday.Common.SortableViewModelBase`1.CurrentSortDirection
+  fullName: Benday.Common.SortableViewModelBase<T>.CurrentSortDirection
+  fullName.vb: Benday.Common.SortableViewModelBase(Of T).CurrentSortDirection
+  nameWithType: SortableViewModelBase<T>.CurrentSortDirection
+  nameWithType.vb: SortableViewModelBase(Of T).CurrentSortDirection
+- uid: Benday.Common.SortableViewModelBase`1.CurrentSortDirection*
+  name: CurrentSortDirection
+  href: api/Benday.Common.SortableViewModelBase-1.html#Benday_Common_SortableViewModelBase_1_CurrentSortDirection_
+  commentId: Overload:Benday.Common.SortableViewModelBase`1.CurrentSortDirection
+  isSpec: "True"
+  fullName: Benday.Common.SortableViewModelBase<T>.CurrentSortDirection
+  fullName.vb: Benday.Common.SortableViewModelBase(Of T).CurrentSortDirection
+  nameWithType: SortableViewModelBase<T>.CurrentSortDirection
+  nameWithType.vb: SortableViewModelBase(Of T).CurrentSortDirection
+- uid: Benday.Common.SortableViewModelBase`1.CurrentSortProperty
+  name: CurrentSortProperty
+  href: api/Benday.Common.SortableViewModelBase-1.html#Benday_Common_SortableViewModelBase_1_CurrentSortProperty
+  commentId: P:Benday.Common.SortableViewModelBase`1.CurrentSortProperty
+  fullName: Benday.Common.SortableViewModelBase<T>.CurrentSortProperty
+  fullName.vb: Benday.Common.SortableViewModelBase(Of T).CurrentSortProperty
+  nameWithType: SortableViewModelBase<T>.CurrentSortProperty
+  nameWithType.vb: SortableViewModelBase(Of T).CurrentSortProperty
+- uid: Benday.Common.SortableViewModelBase`1.CurrentSortProperty*
+  name: CurrentSortProperty
+  href: api/Benday.Common.SortableViewModelBase-1.html#Benday_Common_SortableViewModelBase_1_CurrentSortProperty_
+  commentId: Overload:Benday.Common.SortableViewModelBase`1.CurrentSortProperty
+  isSpec: "True"
+  fullName: Benday.Common.SortableViewModelBase<T>.CurrentSortProperty
+  fullName.vb: Benday.Common.SortableViewModelBase(Of T).CurrentSortProperty
+  nameWithType: SortableViewModelBase<T>.CurrentSortProperty
+  nameWithType.vb: SortableViewModelBase(Of T).CurrentSortProperty
+- uid: Benday.Common.SortableViewModelBase`1.Results
+  name: Results
+  href: api/Benday.Common.SortableViewModelBase-1.html#Benday_Common_SortableViewModelBase_1_Results
+  commentId: P:Benday.Common.SortableViewModelBase`1.Results
+  fullName: Benday.Common.SortableViewModelBase<T>.Results
+  fullName.vb: Benday.Common.SortableViewModelBase(Of T).Results
+  nameWithType: SortableViewModelBase<T>.Results
+  nameWithType.vb: SortableViewModelBase(Of T).Results
+- uid: Benday.Common.SortableViewModelBase`1.Results*
+  name: Results
+  href: api/Benday.Common.SortableViewModelBase-1.html#Benday_Common_SortableViewModelBase_1_Results_
+  commentId: Overload:Benday.Common.SortableViewModelBase`1.Results
+  isSpec: "True"
+  fullName: Benday.Common.SortableViewModelBase<T>.Results
+  fullName.vb: Benday.Common.SortableViewModelBase(Of T).Results
+  nameWithType: SortableViewModelBase<T>.Results
+  nameWithType.vb: SortableViewModelBase(Of T).Results
+- uid: Benday.Common.SortBy
+  name: SortBy
+  href: api/Benday.Common.SortBy.html
+  commentId: T:Benday.Common.SortBy
+  fullName: Benday.Common.SortBy
+  nameWithType: SortBy
+- uid: Benday.Common.SortBy.Direction
+  name: Direction
+  href: api/Benday.Common.SortBy.html#Benday_Common_SortBy_Direction
+  commentId: P:Benday.Common.SortBy.Direction
+  fullName: Benday.Common.SortBy.Direction
+  nameWithType: SortBy.Direction
+- uid: Benday.Common.SortBy.Direction*
+  name: Direction
+  href: api/Benday.Common.SortBy.html#Benday_Common_SortBy_Direction_
+  commentId: Overload:Benday.Common.SortBy.Direction
+  isSpec: "True"
+  fullName: Benday.Common.SortBy.Direction
+  nameWithType: SortBy.Direction
+- uid: Benday.Common.SortBy.PropertyName
+  name: PropertyName
+  href: api/Benday.Common.SortBy.html#Benday_Common_SortBy_PropertyName
+  commentId: P:Benday.Common.SortBy.PropertyName
+  fullName: Benday.Common.SortBy.PropertyName
+  nameWithType: SortBy.PropertyName
+- uid: Benday.Common.SortBy.PropertyName*
+  name: PropertyName
+  href: api/Benday.Common.SortBy.html#Benday_Common_SortBy_PropertyName_
+  commentId: Overload:Benday.Common.SortBy.PropertyName
+  isSpec: "True"
+  fullName: Benday.Common.SortBy.PropertyName
+  nameWithType: SortBy.PropertyName
+- uid: Benday.Common.TypeRegistrationItem`2
+  name: TypeRegistrationItem<TService, TImplementation>
+  href: api/Benday.Common.TypeRegistrationItem-2.html
+  commentId: T:Benday.Common.TypeRegistrationItem`2
+  name.vb: TypeRegistrationItem(Of TService, TImplementation)
+  fullName: Benday.Common.TypeRegistrationItem<TService, TImplementation>
+  fullName.vb: Benday.Common.TypeRegistrationItem(Of TService, TImplementation)
+  nameWithType: TypeRegistrationItem<TService, TImplementation>
+  nameWithType.vb: TypeRegistrationItem(Of TService, TImplementation)
+- uid: Benday.Common.TypeRegistrationItem`2.#ctor(Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  name: TypeRegistrationItem(ServiceLifetime)
+  href: api/Benday.Common.TypeRegistrationItem-2.html#Benday_Common_TypeRegistrationItem_2__ctor_Microsoft_Extensions_DependencyInjection_ServiceLifetime_
+  commentId: M:Benday.Common.TypeRegistrationItem`2.#ctor(Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  name.vb: New(ServiceLifetime)
+  fullName: Benday.Common.TypeRegistrationItem<TService, TImplementation>.TypeRegistrationItem(Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  fullName.vb: Benday.Common.TypeRegistrationItem(Of TService, TImplementation).New(Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  nameWithType: TypeRegistrationItem<TService, TImplementation>.TypeRegistrationItem(ServiceLifetime)
+  nameWithType.vb: TypeRegistrationItem(Of TService, TImplementation).New(ServiceLifetime)
+- uid: Benday.Common.TypeRegistrationItem`2.#ctor*
+  name: TypeRegistrationItem
+  href: api/Benday.Common.TypeRegistrationItem-2.html#Benday_Common_TypeRegistrationItem_2__ctor_
+  commentId: Overload:Benday.Common.TypeRegistrationItem`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Common.TypeRegistrationItem<TService, TImplementation>.TypeRegistrationItem
+  fullName.vb: Benday.Common.TypeRegistrationItem(Of TService, TImplementation).New
+  nameWithType: TypeRegistrationItem<TService, TImplementation>.TypeRegistrationItem
+  nameWithType.vb: TypeRegistrationItem(Of TService, TImplementation).New
+- uid: Benday.Common.TypeRegistrationItem`2.ImplementationType
+  name: ImplementationType
+  href: api/Benday.Common.TypeRegistrationItem-2.html#Benday_Common_TypeRegistrationItem_2_ImplementationType
+  commentId: P:Benday.Common.TypeRegistrationItem`2.ImplementationType
+  fullName: Benday.Common.TypeRegistrationItem<TService, TImplementation>.ImplementationType
+  fullName.vb: Benday.Common.TypeRegistrationItem(Of TService, TImplementation).ImplementationType
+  nameWithType: TypeRegistrationItem<TService, TImplementation>.ImplementationType
+  nameWithType.vb: TypeRegistrationItem(Of TService, TImplementation).ImplementationType
+- uid: Benday.Common.TypeRegistrationItem`2.ImplementationType*
+  name: ImplementationType
+  href: api/Benday.Common.TypeRegistrationItem-2.html#Benday_Common_TypeRegistrationItem_2_ImplementationType_
+  commentId: Overload:Benday.Common.TypeRegistrationItem`2.ImplementationType
+  isSpec: "True"
+  fullName: Benday.Common.TypeRegistrationItem<TService, TImplementation>.ImplementationType
+  fullName.vb: Benday.Common.TypeRegistrationItem(Of TService, TImplementation).ImplementationType
+  nameWithType: TypeRegistrationItem<TService, TImplementation>.ImplementationType
+  nameWithType.vb: TypeRegistrationItem(Of TService, TImplementation).ImplementationType
+- uid: Benday.Common.TypeRegistrationItem`2.Lifetime
+  name: Lifetime
+  href: api/Benday.Common.TypeRegistrationItem-2.html#Benday_Common_TypeRegistrationItem_2_Lifetime
+  commentId: P:Benday.Common.TypeRegistrationItem`2.Lifetime
+  fullName: Benday.Common.TypeRegistrationItem<TService, TImplementation>.Lifetime
+  fullName.vb: Benday.Common.TypeRegistrationItem(Of TService, TImplementation).Lifetime
+  nameWithType: TypeRegistrationItem<TService, TImplementation>.Lifetime
+  nameWithType.vb: TypeRegistrationItem(Of TService, TImplementation).Lifetime
+- uid: Benday.Common.TypeRegistrationItem`2.Lifetime*
+  name: Lifetime
+  href: api/Benday.Common.TypeRegistrationItem-2.html#Benday_Common_TypeRegistrationItem_2_Lifetime_
+  commentId: Overload:Benday.Common.TypeRegistrationItem`2.Lifetime
+  isSpec: "True"
+  fullName: Benday.Common.TypeRegistrationItem<TService, TImplementation>.Lifetime
+  fullName.vb: Benday.Common.TypeRegistrationItem(Of TService, TImplementation).Lifetime
+  nameWithType: TypeRegistrationItem<TService, TImplementation>.Lifetime
+  nameWithType.vb: TypeRegistrationItem(Of TService, TImplementation).Lifetime
+- uid: Benday.Common.TypeRegistrationItem`2.ServiceType
+  name: ServiceType
+  href: api/Benday.Common.TypeRegistrationItem-2.html#Benday_Common_TypeRegistrationItem_2_ServiceType
+  commentId: P:Benday.Common.TypeRegistrationItem`2.ServiceType
+  fullName: Benday.Common.TypeRegistrationItem<TService, TImplementation>.ServiceType
+  fullName.vb: Benday.Common.TypeRegistrationItem(Of TService, TImplementation).ServiceType
+  nameWithType: TypeRegistrationItem<TService, TImplementation>.ServiceType
+  nameWithType.vb: TypeRegistrationItem(Of TService, TImplementation).ServiceType
+- uid: Benday.Common.TypeRegistrationItem`2.ServiceType*
+  name: ServiceType
+  href: api/Benday.Common.TypeRegistrationItem-2.html#Benday_Common_TypeRegistrationItem_2_ServiceType_
+  commentId: Overload:Benday.Common.TypeRegistrationItem`2.ServiceType
+  isSpec: "True"
+  fullName: Benday.Common.TypeRegistrationItem<TService, TImplementation>.ServiceType
+  fullName.vb: Benday.Common.TypeRegistrationItem(Of TService, TImplementation).ServiceType
+  nameWithType: TypeRegistrationItem<TService, TImplementation>.ServiceType
+  nameWithType.vb: TypeRegistrationItem(Of TService, TImplementation).ServiceType
