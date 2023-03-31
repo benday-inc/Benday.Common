@@ -38,6 +38,8 @@
     "resource": [
       {
         "files": [
+          "logo.svg",
+          "logo.png",
           "images/**"
         ]
       }
@@ -54,11 +56,14 @@
       }
     ],
     "dest": "_site",
-    "globalMetadataFiles": [],
+    "globalMetadataFiles": [
+      
+    ],
     "fileMetadataFiles": [],
     "template": [
-      "default"
-    ],
+      "default",
+      "./template"
+    ],  
     "postProcessors": [],
     "noLangKeyword": false,
     "keepFileLink": false,
