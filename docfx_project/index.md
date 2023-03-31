@@ -1,4 +1,20 @@
-# This is the **HOMEPAGE**.
-Refer to [Markdown](http://daringfireball.net/projects/markdown/) for how to write markdown files.
-## Quick Start Notes:
-1. Add images to the *images* folder if the file is referencing an image.
+# Benday.Common
+
+A collection of classes for supporting the domain model pattern in .NET Core.
+
+## About
+
+Written by Benjamin Day  
+Pluralsight Author | Microsoft MVP | Scrum.org Professional Scrum Trainer  
+https://www.benday.com  
+info@benday.com 
+
+*Got ideas for git repo sync features you'd like to see? Found a bug? 
+Let us know by submitting an [issue](https://github.com/benday-inc/Benday.Common/issues)*. *Want to contribute? Submit a pull request.*
+
+[Source code](https://github.com/benday-inc/Benday.Common)
+
+[API Documentation](api)
+
+[NuGet Package](https://www.nuget.org/packages/Benday.Common/)
+
