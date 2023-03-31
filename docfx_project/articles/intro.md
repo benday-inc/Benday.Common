@@ -1,1 +1,1 @@
-# Add your introductions here!
+<meta http-equiv="refresh" content="0; url=https://benday-inc.github.io/Benday.Common/api/Benday.Common.html">

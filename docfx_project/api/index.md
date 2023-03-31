@@ -1,2 +1,1 @@
-# PLACEHOLDER
-TODO: Add .NET projects to the *src* folder and run `docfx` to generate **REAL** *API Documentation*!
+<meta http-equiv="refresh" content="0; url=https://benday-inc.github.io/Benday.Common/api/Benday.Common.html">
