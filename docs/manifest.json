@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/code/benday-inc/Benday.Common/docfx_project",
+  "source_base_path": "/Users/benday/code/benday-inc/Benday.Common/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.IDeleteable.html",
-          "hash": "YeP2tH3fAPn0Rq0AKdoC01bnbVYp758b0/W8X/jaBoE="
+          "hash": "/+g3YrDr3K0vLaggmHIfnzRRdXrl34nnkZ8li+C7scs="
         }
       },
       "version": ""
@@ -20,7 +20,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.IInt32Identity.html",
-          "hash": "N6TJHHWxBfFm7GOJIQ+7d37iYZa6hoGCyolF17rlMT0="
+          "hash": "1eevPT8GtLwKkATGTdkQp/fflvmcOMviOLhnsGAOQVQ="
         }
       },
       "version": ""
@@ -31,7 +31,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.IPageableResults.html",
-          "hash": "Axgo8zdrYXVg+wlein2vCllIhHbW8X2c1nviuivVXes="
+          "hash": "cM/3Ei0RMd8t9HxY4+cnEuXnfQNiLLzfaW5QNZs0bCM="
         }
       },
       "version": ""
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.ISelectable.html",
-          "hash": "SV9vR97EiCd+SO6rUywpiOkbWRbeOWAdkCur9fZ9uTU="
+          "hash": "LPY/+qThJSm+lCCZJvUYa4eAjzENWKNM00Rlrn2msN0="
         }
       },
       "version": ""
@@ -53,7 +53,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.ISortableResult.html",
-          "hash": "KVZdyYTovWov+UrudV9oFFQeicErLYmR3p3kUQjAdHk="
+          "hash": "U88l+jo6uZ7Afl2rKaN0powsAEEujLmy+QoQhJ1VyY0="
         }
       },
       "version": ""
@@ -64,7 +64,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.IStringIdentity.html",
-          "hash": "7wI449FdUI4TZC0JwPN1hsh5FEORn6qAwgUJjAWqEEY="
+          "hash": "mcHB50tuL32fqB6T/8pQ7o9x4dv3cbz9A0Uc3dgpLko="
         }
       },
       "version": ""
@@ -75,7 +75,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.ITypeRegistrationItem.html",
-          "hash": "iQpwqMhWL9xDbpPynRnLswnRvDlvQNenHYfvPY4Ulow="
+          "hash": "xrbEgdP1ZCb/0rNvvmBtCsXI2gkoTaCW+Zwk/lOTWyY="
         }
       },
       "version": ""
@@ -86,7 +86,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.PageableResults-1.html",
-          "hash": "YHWRbAuXc+HDlhvq/UjO0LFrt5WLsuhBI8TklAgK4P0="
+          "hash": "sgoxGOS8faLxGQQGBYLZioiC4fSiEXmJQYMPX2Y7ays="
         }
       },
       "version": ""
@@ -97,7 +97,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.Search.html",
-          "hash": "exzKHpkl4DX493Gb/vCeWIO5P7sOX2DQc3eu/wcXbZg="
+          "hash": "awsm9eLF4DOnK4rFNao2Ek4aFhA4M8VjzH+UlyLrLtE="
         }
       },
       "version": ""
@@ -108,7 +108,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.SearchArgument.html",
-          "hash": "e5LtdOXl+KiwDp8f4hXUONN6XnDG/6zKAkyF7NIw3fM="
+          "hash": "uacbfZ8LjJhuLFJFx2LVFIh1i6x9ULlgourdNHYOktU="
         }
       },
       "version": ""
@@ -119,7 +119,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.SearchConstants.html",
-          "hash": "MaA4Kw8rRbVrmPNUoIRoGOyRZvb/knEMcGPswSh8Sp8="
+          "hash": "mqtVPilTniKmGFxkz8+75rdGnHlBkJOuIFBRG7970no="
         }
       },
       "version": ""
@@ -130,7 +130,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.SearchMethod.html",
-          "hash": "6LMkS+pQs78yG2owqlYdjN095FzUHMUkJxgxX3qPiy0="
+          "hash": "TbB/NZFNubgk16vjMkFkEVgCog57NVY+L+p9P7HiY8w="
         }
       },
       "version": ""
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.SearchOperator.html",
-          "hash": "r2trktVzyYL0/9Zl7vVKhFRx7A5DNVSo2BINYLPEz7A="
+          "hash": "5czfXr477ZB7Ki1vMn+17d5DXxxF320o0Ec7pHsdYKI="
         }
       },
       "version": ""
@@ -152,7 +152,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.SearchResult-1.html",
-          "hash": "0CoVTfPYhx9qiG3+JcWbOwdGLbiTjDnGmmqtEU5tDv8="
+          "hash": "4MZQA+5lE/S74xKiBn3ZhC/BIOhNAcSj5bCwmkko+5s="
         }
       },
       "version": ""
@@ -163,7 +163,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.SearchViewModelBase-1.html",
-          "hash": "8g+0sps6GDZ35sSTB5zLHzo8TdwpubHVeSROaE0Crl4="
+          "hash": "jNj8kQrqfuse9TcqiENTY2ggi3CVE7xfmw0P9i7spOw="
         }
       },
       "version": ""
@@ -174,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.SimpleSearchResults-1.html",
-          "hash": "noDsXx+WjCqaAGJdz2Z03cGt5CXTII0gBYpwoH0484E="
+          "hash": "cpJsmA1Ta7txe6gCvXUi4nmdDaDG2afU3ZfplEcWOG4="
         }
       },
       "version": ""
@@ -185,7 +185,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.SortBy.html",
-          "hash": "E/4AXpnOFRiId/FirrT0p5uYbbq6uiTn6GpHJ1YTxWk="
+          "hash": "0BnZcEn6BK2QatiQ4DbUsK4SL4DUy6+xhUIfUJxgl6c="
         }
       },
       "version": ""
@@ -196,7 +196,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.SortableViewModelBase-1.html",
-          "hash": "tJIcsl6CXMq0BlMElmKSKxnHaTkIG2isKe05VjZISEM="
+          "hash": "ZXAt9LmsewJGlU4jgGRq7r4MBZubmdg7ec9Wlj8nbT0="
         }
       },
       "version": ""
@@ -207,7 +207,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.TypeRegistrationItem-2.html",
-          "hash": "Lnt7jXF7zSCTXgaZwdiOclchzWFnMdWlD+B3YMoFfPM="
+          "hash": "Zk4JhjFAKb55/+DHMdwerdp6Rb3a/s4ZQdpZUpqNZgk="
         }
       },
       "version": ""
@@ -218,7 +218,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.html",
-          "hash": "S9j1BwYDUcntdRl6UGAFXo2hU/0kr1IL1xABhxXY16k="
+          "hash": "X5ngEIhA9w342b0UTwlHOGoGQnM2cNkgVwQ1JY7WkSs="
         }
       },
       "version": ""
@@ -229,7 +229,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "oV0uIfl0jpnEDj8byKPeOdWuqIKTQtow2lxc8LiYvlI="
+          "hash": "tYclXE0ge6l0IEiXtQ/6D4nGIlsD/K04/Kj1hMlWUn4="
         }
       },
       "version": ""
@@ -251,7 +251,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "RrMPv6WR7D66ufZgavyjWNHLz589ht4qwjaYza/1T2I="
+          "hash": "7r2eYWrlyMd1bZELBSqPnkjzNSDBFSYEz7WrM3Fx2oU="
         }
       },
       "version": ""
@@ -268,12 +268,35 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "9Z7tqhm6YybHXg6bhnAynAkR6iKxaNVmnBjA+L3KNdc="
+          "hash": "jLuevZXo1G8/Q4/QA0skw+lVnpnIRK8u9X+gUSo8Pzs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "logo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "logo.svg"
         }
       },
       "version": ""
