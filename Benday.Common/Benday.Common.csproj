@@ -11,7 +11,7 @@
         <Authors>benday</Authors>
         <PackageIcon>bdc_mark_128_128.png</PackageIcon>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
-        <Version>$(VersionPrefix)7.0.0-beta</Version>
+        <Version>$(VersionPrefix)7.0.0</Version>
         <Title>Benday.Common</Title>
         <Description>A collection of classes for supporting the domain model pattern in .NET Core.</Description>
         <PackageReadmeFile>README.md</PackageReadmeFile>
