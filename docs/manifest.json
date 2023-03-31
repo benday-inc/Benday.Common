@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.IDeleteable.html",
-          "hash": "/+g3YrDr3K0vLaggmHIfnzRRdXrl34nnkZ8li+C7scs="
+          "hash": "XWwdgXylIqzJEVlKUxR7KmlTzaMplfreL+nAV7kHAKU="
         }
       },
       "version": ""
@@ -20,7 +20,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.IInt32Identity.html",
-          "hash": "1eevPT8GtLwKkATGTdkQp/fflvmcOMviOLhnsGAOQVQ="
+          "hash": "sbq8Zk6LFKhTwlJ7lZ8rYhGdOnZgswebYlUmpoUSx8c="
         }
       },
       "version": ""
@@ -31,7 +31,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.IPageableResults.html",
-          "hash": "cM/3Ei0RMd8t9HxY4+cnEuXnfQNiLLzfaW5QNZs0bCM="
+          "hash": "5GQLgcKy693fPOzsVGd/txv+v0Is6jCyCeyANlqhP/k="
         }
       },
       "version": ""
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.ISelectable.html",
-          "hash": "LPY/+qThJSm+lCCZJvUYa4eAjzENWKNM00Rlrn2msN0="
+          "hash": "lV2c/1b/45umOJTfwZkaj5KDdXF13DJ9UEOHruWbnwA="
         }
       },
       "version": ""
@@ -53,7 +53,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.ISortableResult.html",
-          "hash": "U88l+jo6uZ7Afl2rKaN0powsAEEujLmy+QoQhJ1VyY0="
+          "hash": "Ba4z3iqm0KjrPcOLBAZrLMktj5WjSzo4nuA9ITIezkA="
         }
       },
       "version": ""
@@ -64,7 +64,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.IStringIdentity.html",
-          "hash": "mcHB50tuL32fqB6T/8pQ7o9x4dv3cbz9A0Uc3dgpLko="
+          "hash": "bVQJVehx4VNwXMnMQ+XPb1mCXhmY7dxMZgw+UdvBcbM="
         }
       },
       "version": ""
@@ -75,7 +75,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.ITypeRegistrationItem.html",
-          "hash": "xrbEgdP1ZCb/0rNvvmBtCsXI2gkoTaCW+Zwk/lOTWyY="
+          "hash": "z3uMt7IacTd4ACpMkm0abXhHfO5gnyStBHbB3luynJU="
         }
       },
       "version": ""
@@ -86,7 +86,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.PageableResults-1.html",
-          "hash": "sgoxGOS8faLxGQQGBYLZioiC4fSiEXmJQYMPX2Y7ays="
+          "hash": "cYX8ex/xtxU7zMgJhacAcpkBF+olYB7ck6twvVwB3og="
         }
       },
       "version": ""
@@ -97,7 +97,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.Search.html",
-          "hash": "awsm9eLF4DOnK4rFNao2Ek4aFhA4M8VjzH+UlyLrLtE="
+          "hash": "nYqabs+sVnPf+BzJ3BsGNs2l3qsNfYytyk8K0kRtC/o="
         }
       },
       "version": ""
@@ -108,7 +108,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.SearchArgument.html",
-          "hash": "uacbfZ8LjJhuLFJFx2LVFIh1i6x9ULlgourdNHYOktU="
+          "hash": "SfReUYZZAHXi3Xl2mhm4NsaLKNjnfB9i7b3vfIfenSE="
         }
       },
       "version": ""
@@ -119,7 +119,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.SearchConstants.html",
-          "hash": "mqtVPilTniKmGFxkz8+75rdGnHlBkJOuIFBRG7970no="
+          "hash": "XjNVDiTvANZoQ5DWpIcq9km5tIsU+4P2+Iw4dgLqxZY="
         }
       },
       "version": ""
@@ -130,7 +130,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.SearchMethod.html",
-          "hash": "TbB/NZFNubgk16vjMkFkEVgCog57NVY+L+p9P7HiY8w="
+          "hash": "g9YyNwpF63msBOSdyWvY/SLCjqKNg+kTSHIQTLfqqew="
         }
       },
       "version": ""
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.SearchOperator.html",
-          "hash": "5czfXr477ZB7Ki1vMn+17d5DXxxF320o0Ec7pHsdYKI="
+          "hash": "EWt1v4mwVVSERmiKN9Cb5AHBFP69KqKky1K8PoapVd0="
         }
       },
       "version": ""
@@ -152,7 +152,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.SearchResult-1.html",
-          "hash": "4MZQA+5lE/S74xKiBn3ZhC/BIOhNAcSj5bCwmkko+5s="
+          "hash": "Z3/vpzUF6V/VQ8AJpNXo8OdoS5IWpIrMIMiSM8/SpWw="
         }
       },
       "version": ""
@@ -163,7 +163,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.SearchViewModelBase-1.html",
-          "hash": "jNj8kQrqfuse9TcqiENTY2ggi3CVE7xfmw0P9i7spOw="
+          "hash": "yqeqzomnwD59VXAAQo1P2zTMBJx4FSkAO4Ajz+K3ooA="
         }
       },
       "version": ""
@@ -174,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.SimpleSearchResults-1.html",
-          "hash": "cpJsmA1Ta7txe6gCvXUi4nmdDaDG2afU3ZfplEcWOG4="
+          "hash": "N9z4VtXLKviFT1usv4RMy63SIrkIUf3nE95pyp+pjCs="
         }
       },
       "version": ""
@@ -185,7 +185,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.SortBy.html",
-          "hash": "0BnZcEn6BK2QatiQ4DbUsK4SL4DUy6+xhUIfUJxgl6c="
+          "hash": "4THUxHHr+Soytho6WvcMZFo+TrLTH9fYi6fwTsgIBig="
         }
       },
       "version": ""
@@ -196,7 +196,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.SortableViewModelBase-1.html",
-          "hash": "ZXAt9LmsewJGlU4jgGRq7r4MBZubmdg7ec9Wlj8nbT0="
+          "hash": "R8dfCDnWCdjwbKb+MfZI+g7vr/dgmpvOMwL2rySH1X8="
         }
       },
       "version": ""
@@ -207,7 +207,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.TypeRegistrationItem-2.html",
-          "hash": "Zk4JhjFAKb55/+DHMdwerdp6Rb3a/s4ZQdpZUpqNZgk="
+          "hash": "pQm+28pKn3+xqea6I+akNKl+jwf2sPbzWAxpsWvbjQM="
         }
       },
       "version": ""
@@ -218,7 +218,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Benday.Common.html",
-          "hash": "X5ngEIhA9w342b0UTwlHOGoGQnM2cNkgVwQ1JY7WkSs="
+          "hash": "Ljtq1CD8ZutoQnNR1V36Z3xACCDkZnrq1XxrXrD/Nek="
         }
       },
       "version": ""
@@ -263,6 +263,16 @@
         ".html": {
           "relative_path": "articles/toc.html",
           "hash": "+FPCLcvmNhVb9VLasYr6Tnep0PZtIA6V/UOJ0u+1RmE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "favicon.ico"
         }
       },
       "version": ""
