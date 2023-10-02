@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class SearchConstants
+      <title>Class StringExtensionMethods
  </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class SearchConstants
+      <meta name="title" content="Class StringExtensionMethods
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
@@ -68,19 +68,19 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Benday.Common.SearchConstants">
+            <article class="content wrap" id="_content" data-uid="Benday.Common.StringExtensionMethods">
 
 
 
-  <h1 id="Benday_Common_SearchConstants" data-uid="Benday.Common.SearchConstants" class="text-break">Class SearchConstants
+  <h1 id="Benday_Common_StringExtensionMethods" data-uid="Benday.Common.StringExtensionMethods" class="text-break">Class StringExtensionMethods
 </h1>
-  <div class="markdown level0 summary"><p>Constant values for search functionality</p>
+  <div class="markdown level0 summary"><p>Extension methods for string.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">SearchConstants</span></div>
+    <div class="level1"><span class="xref">StringExtensionMethods</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -108,58 +108,52 @@
   </div>
   <h6><strong>Namespace</strong>: <span class="xref">Benday</span>.<a class="xref" href="Benday.Common.html">Common</a></h6>
   <h6><strong>Assembly</strong>: Benday.Common.dll</h6>
-  <h5 id="Benday_Common_SearchConstants_syntax">Syntax</h5>
+  <h5 id="Benday_Common_StringExtensionMethods_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class SearchConstants</code></pre>
+    <pre><code class="lang-csharp hljs">public static class StringExtensionMethods</code></pre>
   </div>
-  <h3 id="fields">Fields
+  <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_SearchConstants_SortDirectionAscending.md&amp;value=---%0Auid%3A%20Benday.Common.SearchConstants.SortDirectionAscending%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_StringExtensionMethods_SafeToString_System_String_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.StringExtensionMethods.SafeToString(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/SearchConstants.cs/#L11">View Source</a>
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/StringExtensionMethods.cs/#L14">View Source</a>
   </span>
-  <h4 id="Benday_Common_SearchConstants_SortDirectionAscending" data-uid="Benday.Common.SearchConstants.SortDirectionAscending">SortDirectionAscending</h4>
-  <div class="markdown level1 summary"><p>Sort direction ascending</p>
+  <a id="Benday_Common_StringExtensionMethods_SafeToString_" data-uid="Benday.Common.StringExtensionMethods.SafeToString*"></a>
+  <h4 id="Benday_Common_StringExtensionMethods_SafeToString_System_String_System_String_" data-uid="Benday.Common.StringExtensionMethods.SafeToString(System.String,System.String)">SafeToString(string?, string)</h4>
+  <div class="markdown level1 summary"><p>This wraps the ToString() method and handles the case where the string is null.  Returns the input string if it is not null, otherwise returns the default value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string SortDirectionAscending = &quot;ascending&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public static string SafeToString(this string? input, string defaultValue = &quot;&quot;)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">input</span></td>
         <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">defaultValue</span></td>
+        <td><p>Value to return if null. The default value is empty string.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_SearchConstants_SortDirectionDescending.md&amp;value=---%0Auid%3A%20Benday.Common.SearchConstants.SortDirectionDescending%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/SearchConstants.cs/#L16">View Source</a>
-  </span>
-  <h4 id="Benday_Common_SearchConstants_SortDirectionDescending" data-uid="Benday.Common.SearchConstants.SortDirectionDescending">SortDirectionDescending</h4>
-  <div class="markdown level1 summary"><p>Sort direction descending</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string SortDirectionDescending = &quot;descending&quot;</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
     <thead>
       <tr>
@@ -183,10 +177,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_SearchConstants.md&amp;value=---%0Auid%3A%20Benday.Common.SearchConstants%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_StringExtensionMethods.md&amp;value=---%0Auid%3A%20Benday.Common.StringExtensionMethods%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/SearchConstants.cs/#L6" class="contribution-link">View Source</a>
+                    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/StringExtensionMethods.cs/#L6" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

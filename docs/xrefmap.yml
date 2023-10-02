@@ -1047,6 +1047,28 @@ references:
   isSpec: "True"
   fullName: Benday.Common.SortBy.PropertyName
   nameWithType: SortBy.PropertyName
+- uid: Benday.Common.StringExtensionMethods
+  name: StringExtensionMethods
+  href: api/Benday.Common.StringExtensionMethods.html
+  commentId: T:Benday.Common.StringExtensionMethods
+  fullName: Benday.Common.StringExtensionMethods
+  nameWithType: StringExtensionMethods
+- uid: Benday.Common.StringExtensionMethods.SafeToString(System.String,System.String)
+  name: SafeToString(string?, string)
+  href: api/Benday.Common.StringExtensionMethods.html#Benday_Common_StringExtensionMethods_SafeToString_System_String_System_String_
+  commentId: M:Benday.Common.StringExtensionMethods.SafeToString(System.String,System.String)
+  name.vb: SafeToString(String, String)
+  fullName: Benday.Common.StringExtensionMethods.SafeToString(string?, string)
+  fullName.vb: Benday.Common.StringExtensionMethods.SafeToString(String, String)
+  nameWithType: StringExtensionMethods.SafeToString(string?, string)
+  nameWithType.vb: StringExtensionMethods.SafeToString(String, String)
+- uid: Benday.Common.StringExtensionMethods.SafeToString*
+  name: SafeToString
+  href: api/Benday.Common.StringExtensionMethods.html#Benday_Common_StringExtensionMethods_SafeToString_
+  commentId: Overload:Benday.Common.StringExtensionMethods.SafeToString
+  isSpec: "True"
+  fullName: Benday.Common.StringExtensionMethods.SafeToString
+  nameWithType: StringExtensionMethods.SafeToString
 - uid: Benday.Common.TypeRegistrationItem`2
   name: TypeRegistrationItem<TService, TImplementation>
   href: api/Benday.Common.TypeRegistrationItem-2.html
