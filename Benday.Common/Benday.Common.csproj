@@ -1,36 +1,34 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
-    <PropertyGroup>
-        <TargetFramework>netstandard2.1</TargetFramework>
-        <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
-        <Copyright>2023</Copyright>
-        <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/benday-inc/Benday.Common.git</RepositoryUrl>
-        <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-        <Authors>benday</Authors>
-        <PackageIcon>bdc_mark_128_128.png</PackageIcon>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <Version>$(VersionPrefix)7.1.0</Version>
-        <Title>Benday.Common</Title>
-        <Description>A collection of classes for supporting the domain model pattern in .NET Core.</Description>
-        <PackageReadmeFile>README.md</PackageReadmeFile>
-        <Nullable>enable</Nullable>
-    </PropertyGroup>
-
-    <ItemGroup>
-        <None Include="..\bdc_mark_128_128.png">
-            <Pack>True</Pack>
-            <PackagePath>\</PackagePath>
-        </None>
-        <None Include="..\README.md">
-          <Pack>True</Pack>
-          <PackagePath>\</PackagePath>
-        </None>
-    </ItemGroup>
-    <ItemGroup>
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.*" />
-        <PackageReference Include="System.ComponentModel.Annotations" Version="5.*" />
-        <PackageReference Include="System.Text.Json" Version="7.*" />
-    </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <Copyright>2023</Copyright>
+    <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/benday-inc/Benday.Common.git</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>benday</Authors>
+    <PackageIcon>bdc_mark_128_128.png</PackageIcon>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <Version>$(VersionPrefix)8.0.0</Version>
+    <Title>Benday.Common</Title>
+    <Description>A collection of classes for supporting the domain model pattern in .NET Core.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\bdc_mark_128_128.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.*" />
+    <PackageReference Include="System.Text.Json" Version="8.0.0" />
+  </ItemGroup>
 </Project>
