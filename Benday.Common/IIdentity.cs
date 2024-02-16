@@ -1,6 +1,8 @@
-﻿namespace Benday.Common;
+﻿using System;
 
-public interface IIdentity<T>
+namespace Benday.Common;
+
+public interface IIdentity<T> where T : IComparable<T>
 {
     T Id { get; set; }
 }

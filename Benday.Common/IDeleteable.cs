@@ -1,10 +1,12 @@
-﻿namespace Benday.Common;
+﻿using System;
+
+namespace Benday.Common;
 
 /// <summary>
 /// Interface to indicate that an object is deletable. This is helpful for
 /// handling changes to collections of objects during CRUD operations. 
 /// </summary>
-public interface IDeleteable<T> : IIdentity<T>
+public interface IDeleteable<T> : IIdentity<T> where T : IComparable<T>
 {
     /// <summary>
     /// Set this to true to indicate that this instance should be deleted.
