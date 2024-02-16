@@ -5,8 +5,8 @@
     /// entity framework core entity, CosmosDb entity, or Azure Storage entity. 
     /// For EF Core, this typically becomes the primary key.
     /// </summary>
-    public interface IStringIdentity
+    public interface IStringIdentity : IIdentity<int>
     {
-        string Id { get; set; }
+        
     }
 }

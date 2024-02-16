@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
-    <Copyright>2023</Copyright>
+    <Copyright>2024</Copyright>
     <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
     <RepositoryUrl>https://github.com/benday-inc/Benday.Common.git</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -10,7 +10,7 @@
     <Authors>benday</Authors>
     <PackageIcon>bdc_mark_128_128.png</PackageIcon>
     <AssemblyVersion>8.0.0.0</AssemblyVersion>
-    <Version>$(VersionPrefix)8.0.0</Version>
+    <Version>$(VersionPrefix)9.0.0-alpha</Version>
     <Title>Benday.Common</Title>
     <Description>A collection of classes for supporting the domain model pattern in .NET Core.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>

@@ -5,8 +5,8 @@
     /// entity framework core entity. For EF Core with SQL Server, this typically becomes
     /// the primary key with an incrementing value (@@IDENTITY).
     /// </summary>
-    public interface IInt32Identity
+    public interface IInt32Identity : IIdentity<int>
     {
-        int Id { get; set; }
+        
     }
 }
