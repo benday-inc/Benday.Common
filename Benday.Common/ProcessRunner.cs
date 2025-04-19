@@ -8,6 +8,10 @@ using System.Threading.Tasks;
 
 namespace Benday.Common;
 
+/// <summary>
+/// This class is used to run a process and capture the output.
+/// It is a wrapper around the System.Diagnostics.Process class.
+/// </summary>
 public class ProcessRunner
 {
     private const int TIMEOUT_IN_MILLISECS = 10000;
@@ -25,10 +29,19 @@ public class ProcessRunner
         StartInfo = startInfo;
     }
 
+    /// <summary>
+    /// The ProcessStartInfo object that is used to start the process.
+    /// This object is used to configure the process start info before running.
+    /// </summary>
     public ProcessStartInfo StartInfo { get; private set; }
 
     private bool _hasRunBeenCalled = false;
 
+    /// <summary>
+    /// Run the command
+    /// </summary>
+    /// <exception cref="InvalidOperationException"></exception>
+    /// <exception cref="TimeoutException"></exception>
     public void Run()
     {
         if (_hasRunBeenCalled == true)
@@ -37,9 +50,7 @@ public class ProcessRunner
         }
 
         _hasRunBeenCalled = true;
-
-        var timeout = TIMEOUT_IN_MILLISECS;
-
+        
         using (var process = new Process())
         {
             var outputBuilder = new StringBuilder();
@@ -83,9 +94,9 @@ public class ProcessRunner
                 var exitCode = EXIT_CODE_NOT_SET;
 
                 if (
-                    process.WaitForExit(timeout) &&
-                    outputWaitHandle.WaitOne(timeout) &&
-                    errorWaitHandle.WaitOne(timeout))
+                    process.WaitForExit(Timeout) &&
+                    outputWaitHandle.WaitOne(Timeout) &&
+                    errorWaitHandle.WaitOne(Timeout))
                 {
                     // Process completed. Check process.ExitCode here.
                     exitCode = process.ExitCode;
@@ -97,7 +108,7 @@ public class ProcessRunner
                     IsTimeout = true;
 
                     throw new TimeoutException(
-                        $"Process timed out after {timeout} milliseconds.");
+                        $"Process timed out after {Timeout} milliseconds.");
                 }
 
                 if (process.ExitCode != EXIT_CODE_SUCCESS)
@@ -111,6 +122,16 @@ public class ProcessRunner
             }
         }
     }
+
+    /// <summary>
+    /// The timeout in milliseconds for the process to run.
+    /// The default timeout is 10 seconds.
+    /// </summary>
+    public int Timeout
+    {
+        get;
+        set;
+    } = TIMEOUT_IN_MILLISECS;
 
     private void SetResultData(
         bool isError,
@@ -131,10 +152,37 @@ public class ProcessRunner
         ErrorText = errorBuilder.ToString();
     }
 
+    /// <summary>
+    /// Indicates if the process completed with an error.
+    /// </summary>
     public bool IsError { get; private set; }
+
+    /// <summary>
+    /// Indicates if the process completed successfully.
+    /// </summary>
     public bool IsSuccess { get; private set; }
+
+    /// <summary>
+    /// Indicates if the process timed out.
+    /// </summary>
     public bool IsTimeout { get; private set; }
+
+    /// <summary>
+    /// Indicates if the process has completed.
+    /// This is true if the process has completed with an error or
+    /// successfully.
+    /// </summary>
     public bool HasCompleted { get => IsError | IsSuccess; }
+
+    /// <summary>
+    /// The output text from the process.
+    /// This is the standard output from the process.
+    /// </summary>
     public string OutputText { get; private set; } = string.Empty;
+
+    /// <summary>
+    /// The error text from the process.
+    /// This is the standard error from the process.
+    /// </summary>
     public string ErrorText { get; private set; } = string.Empty;
 }
