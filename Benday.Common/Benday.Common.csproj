@@ -1,20 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
-    <Copyright>2023</Copyright>
+    <Copyright>2025</Copyright>
     <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
     <RepositoryUrl>https://github.com/benday-inc/Benday.Common.git</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>benday</Authors>
     <PackageIcon>bdc_mark_128_128.png</PackageIcon>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
-    <Version>$(VersionPrefix)8.0.0</Version>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <Version>$(VersionPrefix)9.0.0</Version>
     <Title>Benday.Common</Title>
-    <Description>A collection of classes for supporting the domain model pattern in .NET Core.</Description>
+    <Description>A collection of classes for supporting the searching, paging, domain model pattern, and other miscellaneous stuff in .NET Core.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <Nullable>enable</Nullable>
+    <PackageReleaseNotes>v9.0 - Updating dependencies and adding package target for .net 9.0</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\bdc_mark_128_128.png">
@@ -27,8 +28,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.*" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.*" />
-    <PackageReference Include="System.Text.Json" Version="8.0.0" />
+    <PackageReference Include="System.Text.Json" Version="9.*" />
   </ItemGroup>
 </Project>
