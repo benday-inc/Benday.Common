@@ -14,7 +14,7 @@ Let us know by submitting an [issue](https://github.com/benday-inc/Benday.Common
 
 [Source code](https://github.com/benday-inc/Benday.Common)
 
-[API Documentation](api/Benday.Common.html)
+[API Documentation](api/Benday.Common.yml)
 
 [NuGet Package](https://www.nuget.org/packages/Benday.Common/)
 

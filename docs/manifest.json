@@ -1,5 +1,4 @@
 {
-  "homepages": [],
   "source_base_path": "/Users/benday/code/benday-inc/Benday.Common/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
@@ -8,8 +7,7 @@
       "source_relative_path": "api/Benday.Common.IDeleteable.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Benday.Common.IDeleteable.html",
-          "hash": "/+g3YrDr3K0vLaggmHIfnzRRdXrl34nnkZ8li+C7scs="
+          "relative_path": "api/Benday.Common.IDeleteable.html"
         }
       },
       "version": ""
@@ -19,8 +17,7 @@
       "source_relative_path": "api/Benday.Common.IInt32Identity.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Benday.Common.IInt32Identity.html",
-          "hash": "1eevPT8GtLwKkATGTdkQp/fflvmcOMviOLhnsGAOQVQ="
+          "relative_path": "api/Benday.Common.IInt32Identity.html"
         }
       },
       "version": ""
@@ -30,8 +27,7 @@
       "source_relative_path": "api/Benday.Common.IPageableResults.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Benday.Common.IPageableResults.html",
-          "hash": "cM/3Ei0RMd8t9HxY4+cnEuXnfQNiLLzfaW5QNZs0bCM="
+          "relative_path": "api/Benday.Common.IPageableResults.html"
         }
       },
       "version": ""
@@ -41,8 +37,7 @@
       "source_relative_path": "api/Benday.Common.ISelectable.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Benday.Common.ISelectable.html",
-          "hash": "LPY/+qThJSm+lCCZJvUYa4eAjzENWKNM00Rlrn2msN0="
+          "relative_path": "api/Benday.Common.ISelectable.html"
         }
       },
       "version": ""
@@ -52,8 +47,7 @@
       "source_relative_path": "api/Benday.Common.ISortableResult.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Benday.Common.ISortableResult.html",
-          "hash": "U88l+jo6uZ7Afl2rKaN0powsAEEujLmy+QoQhJ1VyY0="
+          "relative_path": "api/Benday.Common.ISortableResult.html"
         }
       },
       "version": ""
@@ -63,8 +57,7 @@
       "source_relative_path": "api/Benday.Common.IStringIdentity.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Benday.Common.IStringIdentity.html",
-          "hash": "mcHB50tuL32fqB6T/8pQ7o9x4dv3cbz9A0Uc3dgpLko="
+          "relative_path": "api/Benday.Common.IStringIdentity.html"
         }
       },
       "version": ""
@@ -74,8 +67,7 @@
       "source_relative_path": "api/Benday.Common.ITypeRegistrationItem.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Benday.Common.ITypeRegistrationItem.html",
-          "hash": "xrbEgdP1ZCb/0rNvvmBtCsXI2gkoTaCW+Zwk/lOTWyY="
+          "relative_path": "api/Benday.Common.ITypeRegistrationItem.html"
         }
       },
       "version": ""
@@ -85,8 +77,17 @@
       "source_relative_path": "api/Benday.Common.PageableResults-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Benday.Common.PageableResults-1.html",
-          "hash": "sgoxGOS8faLxGQQGBYLZioiC4fSiEXmJQYMPX2Y7ays="
+          "relative_path": "api/Benday.Common.PageableResults-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.ProcessRunner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.ProcessRunner.html"
         }
       },
       "version": ""
@@ -96,8 +97,7 @@
       "source_relative_path": "api/Benday.Common.Search.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Benday.Common.Search.html",
-          "hash": "awsm9eLF4DOnK4rFNao2Ek4aFhA4M8VjzH+UlyLrLtE="
+          "relative_path": "api/Benday.Common.Search.html"
         }
       },
       "version": ""
@@ -107,8 +107,7 @@
       "source_relative_path": "api/Benday.Common.SearchArgument.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Benday.Common.SearchArgument.html",
-          "hash": "uacbfZ8LjJhuLFJFx2LVFIh1i6x9ULlgourdNHYOktU="
+          "relative_path": "api/Benday.Common.SearchArgument.html"
         }
       },
       "version": ""
@@ -118,8 +117,7 @@
       "source_relative_path": "api/Benday.Common.SearchConstants.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Benday.Common.SearchConstants.html",
-          "hash": "mqtVPilTniKmGFxkz8+75rdGnHlBkJOuIFBRG7970no="
+          "relative_path": "api/Benday.Common.SearchConstants.html"
         }
       },
       "version": ""
@@ -129,8 +127,7 @@
       "source_relative_path": "api/Benday.Common.SearchMethod.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Benday.Common.SearchMethod.html",
-          "hash": "TbB/NZFNubgk16vjMkFkEVgCog57NVY+L+p9P7HiY8w="
+          "relative_path": "api/Benday.Common.SearchMethod.html"
         }
       },
       "version": ""
@@ -140,8 +137,7 @@
       "source_relative_path": "api/Benday.Common.SearchOperator.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Benday.Common.SearchOperator.html",
-          "hash": "5czfXr477ZB7Ki1vMn+17d5DXxxF320o0Ec7pHsdYKI="
+          "relative_path": "api/Benday.Common.SearchOperator.html"
         }
       },
       "version": ""
@@ -151,8 +147,7 @@
       "source_relative_path": "api/Benday.Common.SearchResult-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Benday.Common.SearchResult-1.html",
-          "hash": "4MZQA+5lE/S74xKiBn3ZhC/BIOhNAcSj5bCwmkko+5s="
+          "relative_path": "api/Benday.Common.SearchResult-1.html"
         }
       },
       "version": ""
@@ -162,8 +157,7 @@
       "source_relative_path": "api/Benday.Common.SearchViewModelBase-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Benday.Common.SearchViewModelBase-1.html",
-          "hash": "jNj8kQrqfuse9TcqiENTY2ggi3CVE7xfmw0P9i7spOw="
+          "relative_path": "api/Benday.Common.SearchViewModelBase-1.html"
         }
       },
       "version": ""
@@ -173,8 +167,7 @@
       "source_relative_path": "api/Benday.Common.SimpleSearchResults-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Benday.Common.SimpleSearchResults-1.html",
-          "hash": "cpJsmA1Ta7txe6gCvXUi4nmdDaDG2afU3ZfplEcWOG4="
+          "relative_path": "api/Benday.Common.SimpleSearchResults-1.html"
         }
       },
       "version": ""
@@ -184,8 +177,7 @@
       "source_relative_path": "api/Benday.Common.SortBy.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Benday.Common.SortBy.html",
-          "hash": "0BnZcEn6BK2QatiQ4DbUsK4SL4DUy6+xhUIfUJxgl6c="
+          "relative_path": "api/Benday.Common.SortBy.html"
         }
       },
       "version": ""
@@ -195,8 +187,7 @@
       "source_relative_path": "api/Benday.Common.SortableViewModelBase-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Benday.Common.SortableViewModelBase-1.html",
-          "hash": "ZXAt9LmsewJGlU4jgGRq7r4MBZubmdg7ec9Wlj8nbT0="
+          "relative_path": "api/Benday.Common.SortableViewModelBase-1.html"
         }
       },
       "version": ""
@@ -206,8 +197,7 @@
       "source_relative_path": "api/Benday.Common.StringExtensionMethods.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Benday.Common.StringExtensionMethods.html",
-          "hash": "n3BEThxJpJicXDmnOZjR+plRP2AuHV5KX0cgaXTbGUc="
+          "relative_path": "api/Benday.Common.StringExtensionMethods.html"
         }
       },
       "version": ""
@@ -217,8 +207,7 @@
       "source_relative_path": "api/Benday.Common.TypeRegistrationItem-2.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Benday.Common.TypeRegistrationItem-2.html",
-          "hash": "Zk4JhjFAKb55/+DHMdwerdp6Rb3a/s4ZQdpZUpqNZgk="
+          "relative_path": "api/Benday.Common.TypeRegistrationItem-2.html"
         }
       },
       "version": ""
@@ -228,8 +217,7 @@
       "source_relative_path": "api/Benday.Common.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Benday.Common.html",
-          "hash": "Xqmy7xuuHN3aHNYtCjX8mM98osRpBU0nfMSwHo12qRI="
+          "relative_path": "api/Benday.Common.html"
         }
       },
       "version": ""
@@ -239,8 +227,7 @@
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
-          "relative_path": "api/index.html",
-          "hash": "tYclXE0ge6l0IEiXtQ/6D4nGIlsD/K04/Kj1hMlWUn4="
+          "relative_path": "api/index.html"
         }
       },
       "version": ""
@@ -250,8 +237,10 @@
       "source_relative_path": "api/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "bdglEFUND8n2psa3f3fVG4p0XNcwsMTCAsGGerb2uCE="
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
         }
       },
       "version": ""
@@ -261,8 +250,7 @@
       "source_relative_path": "articles/intro.md",
       "output": {
         ".html": {
-          "relative_path": "articles/intro.html",
-          "hash": "7r2eYWrlyMd1bZELBSqPnkjzNSDBFSYEz7WrM3Fx2oU="
+          "relative_path": "articles/intro.html"
         }
       },
       "version": ""
@@ -272,8 +260,10 @@
       "source_relative_path": "articles/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "articles/toc.html",
-          "hash": "+FPCLcvmNhVb9VLasYr6Tnep0PZtIA6V/UOJ0u+1RmE="
+          "relative_path": "articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/toc.json"
         }
       },
       "version": ""
@@ -289,15 +279,11 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
-          "relative_path": "index.html",
-          "hash": "jLuevZXo1G8/Q4/QA0skw+lVnpnIRK8u9X+gUSo8Pzs="
+          "relative_path": "index.html"
         }
       },
       "version": ""
@@ -327,14 +313,15 @@
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
-          "relative_path": "toc.html",
-          "hash": "aVe9U1RxWP3P5E5X/x2rL8jCuFlqix3bHKxtkjZ3zxg="
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
       "version": ""
     }
   ],
-  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"
