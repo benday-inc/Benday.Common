@@ -15,6 +15,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Benday.Common.Testing\Benday.Common.Testing.csproj" />
     <ProjectReference Include="..\Benday.Common\Benday.Common.csproj" />
   </ItemGroup>
 </Project>
