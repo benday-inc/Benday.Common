@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class MockUtility ">
     
-    
+    <meta name="description" content="This class is used to create instances of classes using reflection and Moq.">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -72,7 +72,8 @@
 
 
   <h1 id="Benday_Common_Testing_MockUtility" data-uid="Benday.Common.Testing.MockUtility" class="text-break">Class MockUtility</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>This class is used to create instances of classes using reflection and Moq.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -116,11 +117,14 @@
     <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Testing_MockUtility_CreateInstance__1.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.MockUtility.CreateInstance%60%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common.Testing/MockUtility.cs/#L10">View Source</a>
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common.Testing/MockUtility.cs/#L23">View Source</a>
   </span>
   <a id="Benday_Common_Testing_MockUtility_CreateInstance_" data-uid="Benday.Common.Testing.MockUtility.CreateInstance*"></a>
   <h4 id="Benday_Common_Testing_MockUtility_CreateInstance__1" data-uid="Benday.Common.Testing.MockUtility.CreateInstance``1">CreateInstance&lt;T&gt;()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates an instance of a class using reflection and Moq.
+If the class has a parameterless constructor, it will be used.
+If the class has a constructor with parameters, mocks will be created for each parameter type.    ///</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -137,7 +141,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Benday.Common.Testing.MockCreationResult-1.html">MockCreationResult</a>&lt;T&gt;</td>
-        <td></td>
+        <td><p>MockCreationResult that provides access to the instance of T that was instantiated and also access to the Moq mocks.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -152,7 +157,25 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>Create an instance of this type. This is typically the system under test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Exceptions are thrown if the class does not have any constructors or has multiple constructors.
+BTW, if you have suggestions on how to gracefully handle the multi-constructor case, please let me know.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -168,7 +191,7 @@
                     <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Testing_MockUtility.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.MockUtility%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common.Testing/MockUtility.cs/#L8" class="contribution-link">View Source</a>
+                    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common.Testing/MockUtility.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

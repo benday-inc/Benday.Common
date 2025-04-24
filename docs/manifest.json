@@ -294,7 +294,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Benday.Common.Testing.MockCreationResult<T>",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Benday.Common.Testing.MockCreationResult-1.yml\" sourcestartlinenumber=\"1\">The result of the creation of an instance of a class with Moq-based mocks.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -308,7 +308,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Benday.Common.Testing.MockUtility",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Benday.Common.Testing.MockUtility.yml\" sourcestartlinenumber=\"1\">This class is used to create instances of classes using reflection and Moq.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -322,7 +322,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Benday.Common.Testing.TestClassBase",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Benday.Common.Testing.TestClassBase.yml\" sourcestartlinenumber=\"1\">Base class for XUnit-based test classes.</p>\n"
     },
     {
       "type": "ManagedReference",

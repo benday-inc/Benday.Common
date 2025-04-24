@@ -5,8 +5,21 @@ using System.Linq;
 
 namespace Benday.Common.Testing;
 
+/// <summary>
+/// This class is used to create instances of classes using reflection and Moq.
+/// </summary>
 public static class MockUtility
 {
+    /// <summary>
+    /// Creates an instance of a class using reflection and Moq.
+    /// If the class has a parameterless constructor, it will be used.
+    /// If the class has a constructor with parameters, mocks will be created for each parameter type.    /// 
+    /// </summary>
+    /// <typeparam name="T">Create an instance of this type. This is typically the system under test.</typeparam>
+    /// <returns>MockCreationResult that provides access to the instance of T that was instantiated and also access to the Moq mocks.</returns>
+    /// <exception cref="InvalidOperationException">Exceptions are thrown if the class does not have any constructors or has multiple constructors.
+    /// BTW, if you have suggestions on how to gracefully handle the multi-constructor case, please let me know.
+    /// </exception>
     public static MockCreationResult<T> CreateInstance<T>() where T : class
     {
         var constructors = typeof(T).GetConstructors();
