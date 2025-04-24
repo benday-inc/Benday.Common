@@ -495,6 +495,19 @@ references:
   isSpec: "True"
   fullName: Benday.Common.ProcessRunner.StartInfo
   nameWithType: ProcessRunner.StartInfo
+- uid: Benday.Common.ProcessRunner.Timeout
+  name: Timeout
+  href: api/Benday.Common.ProcessRunner.html#Benday_Common_ProcessRunner_Timeout
+  commentId: P:Benday.Common.ProcessRunner.Timeout
+  fullName: Benday.Common.ProcessRunner.Timeout
+  nameWithType: ProcessRunner.Timeout
+- uid: Benday.Common.ProcessRunner.Timeout*
+  name: Timeout
+  href: api/Benday.Common.ProcessRunner.html#Benday_Common_ProcessRunner_Timeout_
+  commentId: Overload:Benday.Common.ProcessRunner.Timeout
+  isSpec: "True"
+  fullName: Benday.Common.ProcessRunner.Timeout
+  nameWithType: ProcessRunner.Timeout
 - uid: Benday.Common.Search
   name: Search
   href: api/Benday.Common.Search.html
@@ -1182,6 +1195,86 @@ references:
   commentId: T:Benday.Common.StringExtensionMethods
   fullName: Benday.Common.StringExtensionMethods
   nameWithType: StringExtensionMethods
+- uid: Benday.Common.StringExtensionMethods.EqualsCaseInsensitive(System.String,System.String)
+  name: EqualsCaseInsensitive(string?, string?)
+  href: api/Benday.Common.StringExtensionMethods.html#Benday_Common_StringExtensionMethods_EqualsCaseInsensitive_System_String_System_String_
+  commentId: M:Benday.Common.StringExtensionMethods.EqualsCaseInsensitive(System.String,System.String)
+  name.vb: EqualsCaseInsensitive(String, String)
+  fullName: Benday.Common.StringExtensionMethods.EqualsCaseInsensitive(string?, string?)
+  fullName.vb: Benday.Common.StringExtensionMethods.EqualsCaseInsensitive(String, String)
+  nameWithType: StringExtensionMethods.EqualsCaseInsensitive(string?, string?)
+  nameWithType.vb: StringExtensionMethods.EqualsCaseInsensitive(String, String)
+- uid: Benday.Common.StringExtensionMethods.EqualsCaseInsensitive*
+  name: EqualsCaseInsensitive
+  href: api/Benday.Common.StringExtensionMethods.html#Benday_Common_StringExtensionMethods_EqualsCaseInsensitive_
+  commentId: Overload:Benday.Common.StringExtensionMethods.EqualsCaseInsensitive
+  isSpec: "True"
+  fullName: Benday.Common.StringExtensionMethods.EqualsCaseInsensitive
+  nameWithType: StringExtensionMethods.EqualsCaseInsensitive
+- uid: Benday.Common.StringExtensionMethods.IsNullOrWhitespace(System.String)
+  name: IsNullOrWhitespace(string?)
+  href: api/Benday.Common.StringExtensionMethods.html#Benday_Common_StringExtensionMethods_IsNullOrWhitespace_System_String_
+  commentId: M:Benday.Common.StringExtensionMethods.IsNullOrWhitespace(System.String)
+  name.vb: IsNullOrWhitespace(String)
+  fullName: Benday.Common.StringExtensionMethods.IsNullOrWhitespace(string?)
+  fullName.vb: Benday.Common.StringExtensionMethods.IsNullOrWhitespace(String)
+  nameWithType: StringExtensionMethods.IsNullOrWhitespace(string?)
+  nameWithType.vb: StringExtensionMethods.IsNullOrWhitespace(String)
+- uid: Benday.Common.StringExtensionMethods.IsNullOrWhitespace*
+  name: IsNullOrWhitespace
+  href: api/Benday.Common.StringExtensionMethods.html#Benday_Common_StringExtensionMethods_IsNullOrWhitespace_
+  commentId: Overload:Benday.Common.StringExtensionMethods.IsNullOrWhitespace
+  isSpec: "True"
+  fullName: Benday.Common.StringExtensionMethods.IsNullOrWhitespace
+  nameWithType: StringExtensionMethods.IsNullOrWhitespace
+- uid: Benday.Common.StringExtensionMethods.SafeContains(System.String,System.String)
+  name: SafeContains(string?, string)
+  href: api/Benday.Common.StringExtensionMethods.html#Benday_Common_StringExtensionMethods_SafeContains_System_String_System_String_
+  commentId: M:Benday.Common.StringExtensionMethods.SafeContains(System.String,System.String)
+  name.vb: SafeContains(String, String)
+  fullName: Benday.Common.StringExtensionMethods.SafeContains(string?, string)
+  fullName.vb: Benday.Common.StringExtensionMethods.SafeContains(String, String)
+  nameWithType: StringExtensionMethods.SafeContains(string?, string)
+  nameWithType.vb: StringExtensionMethods.SafeContains(String, String)
+- uid: Benday.Common.StringExtensionMethods.SafeContains*
+  name: SafeContains
+  href: api/Benday.Common.StringExtensionMethods.html#Benday_Common_StringExtensionMethods_SafeContains_
+  commentId: Overload:Benday.Common.StringExtensionMethods.SafeContains
+  isSpec: "True"
+  fullName: Benday.Common.StringExtensionMethods.SafeContains
+  nameWithType: StringExtensionMethods.SafeContains
+- uid: Benday.Common.StringExtensionMethods.SafeContainsCaseInsensitive(System.String,System.String)
+  name: SafeContainsCaseInsensitive(string?, string)
+  href: api/Benday.Common.StringExtensionMethods.html#Benday_Common_StringExtensionMethods_SafeContainsCaseInsensitive_System_String_System_String_
+  commentId: M:Benday.Common.StringExtensionMethods.SafeContainsCaseInsensitive(System.String,System.String)
+  name.vb: SafeContainsCaseInsensitive(String, String)
+  fullName: Benday.Common.StringExtensionMethods.SafeContainsCaseInsensitive(string?, string)
+  fullName.vb: Benday.Common.StringExtensionMethods.SafeContainsCaseInsensitive(String, String)
+  nameWithType: StringExtensionMethods.SafeContainsCaseInsensitive(string?, string)
+  nameWithType.vb: StringExtensionMethods.SafeContainsCaseInsensitive(String, String)
+- uid: Benday.Common.StringExtensionMethods.SafeContainsCaseInsensitive*
+  name: SafeContainsCaseInsensitive
+  href: api/Benday.Common.StringExtensionMethods.html#Benday_Common_StringExtensionMethods_SafeContainsCaseInsensitive_
+  commentId: Overload:Benday.Common.StringExtensionMethods.SafeContainsCaseInsensitive
+  isSpec: "True"
+  fullName: Benday.Common.StringExtensionMethods.SafeContainsCaseInsensitive
+  nameWithType: StringExtensionMethods.SafeContainsCaseInsensitive
+- uid: Benday.Common.StringExtensionMethods.SafeToInt32(System.String,System.Int32)
+  name: SafeToInt32(string?, int)
+  href: api/Benday.Common.StringExtensionMethods.html#Benday_Common_StringExtensionMethods_SafeToInt32_System_String_System_Int32_
+  commentId: M:Benday.Common.StringExtensionMethods.SafeToInt32(System.String,System.Int32)
+  name.vb: SafeToInt32(String, Integer)
+  fullName: Benday.Common.StringExtensionMethods.SafeToInt32(string?, int)
+  fullName.vb: Benday.Common.StringExtensionMethods.SafeToInt32(String, Integer)
+  nameWithType: StringExtensionMethods.SafeToInt32(string?, int)
+  nameWithType.vb: StringExtensionMethods.SafeToInt32(String, Integer)
+- uid: Benday.Common.StringExtensionMethods.SafeToInt32*
+  name: SafeToInt32
+  href: api/Benday.Common.StringExtensionMethods.html#Benday_Common_StringExtensionMethods_SafeToInt32_
+  commentId: Overload:Benday.Common.StringExtensionMethods.SafeToInt32
+  isSpec: "True"
+  fullName: Benday.Common.StringExtensionMethods.SafeToInt32
+  nameWithType: StringExtensionMethods.SafeToInt32
 - uid: Benday.Common.StringExtensionMethods.SafeToString(System.String,System.String)
   name: SafeToString(string?, string)
   href: api/Benday.Common.StringExtensionMethods.html#Benday_Common_StringExtensionMethods_SafeToString_System_String_System_String_
@@ -1198,6 +1291,154 @@ references:
   isSpec: "True"
   fullName: Benday.Common.StringExtensionMethods.SafeToString
   nameWithType: StringExtensionMethods.SafeToString
+- uid: Benday.Common.Testing
+  name: Benday.Common.Testing
+  href: api/Benday.Common.Testing.html
+  commentId: N:Benday.Common.Testing
+  fullName: Benday.Common.Testing
+  nameWithType: Benday.Common.Testing
+- uid: Benday.Common.Testing.MockCreationResult`1
+  name: MockCreationResult<T>
+  href: api/Benday.Common.Testing.MockCreationResult-1.html
+  commentId: T:Benday.Common.Testing.MockCreationResult`1
+  name.vb: MockCreationResult(Of T)
+  fullName: Benday.Common.Testing.MockCreationResult<T>
+  fullName.vb: Benday.Common.Testing.MockCreationResult(Of T)
+  nameWithType: MockCreationResult<T>
+  nameWithType.vb: MockCreationResult(Of T)
+- uid: Benday.Common.Testing.MockCreationResult`1.GetMock*
+  name: GetMock
+  href: api/Benday.Common.Testing.MockCreationResult-1.html#Benday_Common_Testing_MockCreationResult_1_GetMock_
+  commentId: Overload:Benday.Common.Testing.MockCreationResult`1.GetMock
+  isSpec: "True"
+  fullName: Benday.Common.Testing.MockCreationResult<T>.GetMock
+  fullName.vb: Benday.Common.Testing.MockCreationResult(Of T).GetMock
+  nameWithType: MockCreationResult<T>.GetMock
+  nameWithType.vb: MockCreationResult(Of T).GetMock
+- uid: Benday.Common.Testing.MockCreationResult`1.GetMock``1
+  name: GetMock<TMock>()
+  href: api/Benday.Common.Testing.MockCreationResult-1.html#Benday_Common_Testing_MockCreationResult_1_GetMock__1
+  commentId: M:Benday.Common.Testing.MockCreationResult`1.GetMock``1
+  name.vb: GetMock(Of TMock)()
+  fullName: Benday.Common.Testing.MockCreationResult<T>.GetMock<TMock>()
+  fullName.vb: Benday.Common.Testing.MockCreationResult(Of T).GetMock(Of TMock)()
+  nameWithType: MockCreationResult<T>.GetMock<TMock>()
+  nameWithType.vb: MockCreationResult(Of T).GetMock(Of TMock)()
+- uid: Benday.Common.Testing.MockCreationResult`1.GetRequiredMock*
+  name: GetRequiredMock
+  href: api/Benday.Common.Testing.MockCreationResult-1.html#Benday_Common_Testing_MockCreationResult_1_GetRequiredMock_
+  commentId: Overload:Benday.Common.Testing.MockCreationResult`1.GetRequiredMock
+  isSpec: "True"
+  fullName: Benday.Common.Testing.MockCreationResult<T>.GetRequiredMock
+  fullName.vb: Benday.Common.Testing.MockCreationResult(Of T).GetRequiredMock
+  nameWithType: MockCreationResult<T>.GetRequiredMock
+  nameWithType.vb: MockCreationResult(Of T).GetRequiredMock
+- uid: Benday.Common.Testing.MockCreationResult`1.GetRequiredMock``1
+  name: GetRequiredMock<TMock>()
+  href: api/Benday.Common.Testing.MockCreationResult-1.html#Benday_Common_Testing_MockCreationResult_1_GetRequiredMock__1
+  commentId: M:Benday.Common.Testing.MockCreationResult`1.GetRequiredMock``1
+  name.vb: GetRequiredMock(Of TMock)()
+  fullName: Benday.Common.Testing.MockCreationResult<T>.GetRequiredMock<TMock>()
+  fullName.vb: Benday.Common.Testing.MockCreationResult(Of T).GetRequiredMock(Of TMock)()
+  nameWithType: MockCreationResult<T>.GetRequiredMock<TMock>()
+  nameWithType.vb: MockCreationResult(Of T).GetRequiredMock(Of TMock)()
+- uid: Benday.Common.Testing.MockCreationResult`1.Instance
+  name: Instance
+  href: api/Benday.Common.Testing.MockCreationResult-1.html#Benday_Common_Testing_MockCreationResult_1_Instance
+  commentId: P:Benday.Common.Testing.MockCreationResult`1.Instance
+  fullName: Benday.Common.Testing.MockCreationResult<T>.Instance
+  fullName.vb: Benday.Common.Testing.MockCreationResult(Of T).Instance
+  nameWithType: MockCreationResult<T>.Instance
+  nameWithType.vb: MockCreationResult(Of T).Instance
+- uid: Benday.Common.Testing.MockCreationResult`1.Instance*
+  name: Instance
+  href: api/Benday.Common.Testing.MockCreationResult-1.html#Benday_Common_Testing_MockCreationResult_1_Instance_
+  commentId: Overload:Benday.Common.Testing.MockCreationResult`1.Instance
+  isSpec: "True"
+  fullName: Benday.Common.Testing.MockCreationResult<T>.Instance
+  fullName.vb: Benday.Common.Testing.MockCreationResult(Of T).Instance
+  nameWithType: MockCreationResult<T>.Instance
+  nameWithType.vb: MockCreationResult(Of T).Instance
+- uid: Benday.Common.Testing.MockCreationResult`1.Mocks
+  name: Mocks
+  href: api/Benday.Common.Testing.MockCreationResult-1.html#Benday_Common_Testing_MockCreationResult_1_Mocks
+  commentId: P:Benday.Common.Testing.MockCreationResult`1.Mocks
+  fullName: Benday.Common.Testing.MockCreationResult<T>.Mocks
+  fullName.vb: Benday.Common.Testing.MockCreationResult(Of T).Mocks
+  nameWithType: MockCreationResult<T>.Mocks
+  nameWithType.vb: MockCreationResult(Of T).Mocks
+- uid: Benday.Common.Testing.MockCreationResult`1.Mocks*
+  name: Mocks
+  href: api/Benday.Common.Testing.MockCreationResult-1.html#Benday_Common_Testing_MockCreationResult_1_Mocks_
+  commentId: Overload:Benday.Common.Testing.MockCreationResult`1.Mocks
+  isSpec: "True"
+  fullName: Benday.Common.Testing.MockCreationResult<T>.Mocks
+  fullName.vb: Benday.Common.Testing.MockCreationResult(Of T).Mocks
+  nameWithType: MockCreationResult<T>.Mocks
+  nameWithType.vb: MockCreationResult(Of T).Mocks
+- uid: Benday.Common.Testing.MockUtility
+  name: MockUtility
+  href: api/Benday.Common.Testing.MockUtility.html
+  commentId: T:Benday.Common.Testing.MockUtility
+  fullName: Benday.Common.Testing.MockUtility
+  nameWithType: MockUtility
+- uid: Benday.Common.Testing.MockUtility.CreateInstance*
+  name: CreateInstance
+  href: api/Benday.Common.Testing.MockUtility.html#Benday_Common_Testing_MockUtility_CreateInstance_
+  commentId: Overload:Benday.Common.Testing.MockUtility.CreateInstance
+  isSpec: "True"
+  fullName: Benday.Common.Testing.MockUtility.CreateInstance
+  nameWithType: MockUtility.CreateInstance
+- uid: Benday.Common.Testing.MockUtility.CreateInstance``1
+  name: CreateInstance<T>()
+  href: api/Benday.Common.Testing.MockUtility.html#Benday_Common_Testing_MockUtility_CreateInstance__1
+  commentId: M:Benday.Common.Testing.MockUtility.CreateInstance``1
+  name.vb: CreateInstance(Of T)()
+  fullName: Benday.Common.Testing.MockUtility.CreateInstance<T>()
+  fullName.vb: Benday.Common.Testing.MockUtility.CreateInstance(Of T)()
+  nameWithType: MockUtility.CreateInstance<T>()
+  nameWithType.vb: MockUtility.CreateInstance(Of T)()
+- uid: Benday.Common.Testing.TestClassBase
+  name: TestClassBase
+  href: api/Benday.Common.Testing.TestClassBase.html
+  commentId: T:Benday.Common.Testing.TestClassBase
+  fullName: Benday.Common.Testing.TestClassBase
+  nameWithType: TestClassBase
+- uid: Benday.Common.Testing.TestClassBase.#ctor(Xunit.Abstractions.ITestOutputHelper)
+  name: TestClassBase(ITestOutputHelper)
+  href: api/Benday.Common.Testing.TestClassBase.html#Benday_Common_Testing_TestClassBase__ctor_Xunit_Abstractions_ITestOutputHelper_
+  commentId: M:Benday.Common.Testing.TestClassBase.#ctor(Xunit.Abstractions.ITestOutputHelper)
+  name.vb: New(ITestOutputHelper)
+  fullName: Benday.Common.Testing.TestClassBase.TestClassBase(Xunit.Abstractions.ITestOutputHelper)
+  fullName.vb: Benday.Common.Testing.TestClassBase.New(Xunit.Abstractions.ITestOutputHelper)
+  nameWithType: TestClassBase.TestClassBase(ITestOutputHelper)
+  nameWithType.vb: TestClassBase.New(ITestOutputHelper)
+- uid: Benday.Common.Testing.TestClassBase.#ctor*
+  name: TestClassBase
+  href: api/Benday.Common.Testing.TestClassBase.html#Benday_Common_Testing_TestClassBase__ctor_
+  commentId: Overload:Benday.Common.Testing.TestClassBase.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Common.Testing.TestClassBase.TestClassBase
+  fullName.vb: Benday.Common.Testing.TestClassBase.New
+  nameWithType: TestClassBase.TestClassBase
+  nameWithType.vb: TestClassBase.New
+- uid: Benday.Common.Testing.TestClassBase.WriteLine(System.String)
+  name: WriteLine(string)
+  href: api/Benday.Common.Testing.TestClassBase.html#Benday_Common_Testing_TestClassBase_WriteLine_System_String_
+  commentId: M:Benday.Common.Testing.TestClassBase.WriteLine(System.String)
+  name.vb: WriteLine(String)
+  fullName: Benday.Common.Testing.TestClassBase.WriteLine(string)
+  fullName.vb: Benday.Common.Testing.TestClassBase.WriteLine(String)
+  nameWithType: TestClassBase.WriteLine(string)
+  nameWithType.vb: TestClassBase.WriteLine(String)
+- uid: Benday.Common.Testing.TestClassBase.WriteLine*
+  name: WriteLine
+  href: api/Benday.Common.Testing.TestClassBase.html#Benday_Common_Testing_TestClassBase_WriteLine_
+  commentId: Overload:Benday.Common.Testing.TestClassBase.WriteLine
+  isSpec: "True"
+  fullName: Benday.Common.Testing.TestClassBase.WriteLine
+  nameWithType: TestClassBase.WriteLine
 - uid: Benday.Common.TypeRegistrationItem`2
   name: TypeRegistrationItem<TService, TImplementation>
   href: api/Benday.Common.TypeRegistrationItem-2.html

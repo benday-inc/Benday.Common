@@ -126,7 +126,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Benday.Common.ProcessRunner",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Benday.Common.ProcessRunner.yml\" sourcestartlinenumber=\"1\">This class is used to run a process and capture the output.\nIt is a wrapper around the System.Diagnostics.Process class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -281,6 +281,62 @@
       "IsMRef": true,
       "Title": "Benday.Common.StringExtensionMethods",
       "Summary": "<p sourcefile=\"api/Benday.Common.StringExtensionMethods.yml\" sourcestartlinenumber=\"1\">Extension methods for string.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.MockCreationResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.MockCreationResult-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.MockCreationResult<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.MockUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.MockUtility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.MockUtility",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.TestClassBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.TestClassBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.TestClassBase",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
