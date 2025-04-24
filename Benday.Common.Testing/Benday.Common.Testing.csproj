@@ -8,7 +8,7 @@
     <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
     <RepositoryUrl>https://github.com/benday-inc/Benday.Common.git</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    
     <Authors>benday</Authors>
     <PackageIcon>bdc_mark_128_128.png</PackageIcon>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -16,7 +16,9 @@
     <Title>Benday.Common.Testing</Title>
     <Description>A collection of classes to streamline testing with XUnit and Moq.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>    
-    <PackageReleaseNotes>v1.0 - Base class for xunit tests; MockUtility for streamlining testing with Moq;</PackageReleaseNotes>
+    <PackageReleaseNotes>v1.0 - Base class for xunit tests; MockUtility for streamlining testing with Moq;</PackageReleaseNotes>    
+    <PackageTags>xunit; moq; unit testing;</PackageTags>    
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="8.*" />
