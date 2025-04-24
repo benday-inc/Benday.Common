@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     <Copyright>2025</Copyright>
     <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
     <RepositoryUrl>https://github.com/benday-inc/Benday.Common.git</RepositoryUrl>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>    
     <Authors>benday</Authors>
     <PackageIcon>bdc_mark_128_128.png</PackageIcon>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
