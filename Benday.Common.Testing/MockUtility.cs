@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Benday.Common.UnitTests.MockingUtilities;
+namespace Benday.Common.Testing;
 
 public static class MockUtility
 {

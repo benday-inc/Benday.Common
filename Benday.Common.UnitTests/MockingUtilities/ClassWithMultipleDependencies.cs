@@ -1,4 +1,4 @@
-﻿using Microsoft.Testing.Platform.Logging;
+﻿using Microsoft.Extensions.Logging;
 
 namespace Benday.Common.UnitTests.MockingUtilities;
 

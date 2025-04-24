@@ -2,7 +2,7 @@
 
 namespace Benday.Common.Testing;
 
-public class TestClassBase
+public abstract class TestClassBase
 {
     private readonly ITestOutputHelper _output;
 

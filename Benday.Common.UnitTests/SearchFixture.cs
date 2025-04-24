@@ -1,14 +1,17 @@
 ﻿using System;
 
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Benday.Common.Testing;
+
+using FluentAssertions;
+
+using Xunit;
+using Xunit.Abstractions;
 
 namespace Benday.Common.UnitTests;
 
-[TestClass]
-public class SearchFixture
+public class SearchFixture : TestClassBase
 {
-    [TestInitialize]
-    public void OnTestInitialize()
+    public SearchFixture(ITestOutputHelper output) : base(output)
     {
         _systemUnderTest = null;
     }
@@ -19,24 +22,23 @@ public class SearchFixture
         get
         {
             _systemUnderTest ??= new Search();
-
             return _systemUnderTest;
         }
     }
 
-    [TestMethod]
+    [Fact]
     public void Sorts_NotNull_OnInit()
     {
-        Assert.IsNotNull(SystemUnderTest.Sorts);
+        SystemUnderTest.Sorts.Should().NotBeNull();
     }
 
-    [TestMethod]
+    [Fact]
     public void Sorts_ItemCountShouldBeZero_OnInit()
     {
-        Assert.AreEqual<int>(0, SystemUnderTest.Sorts.Count, "Item count was wrong.");
+        SystemUnderTest.Sorts.Count.Should().Be(0, "Item count was wrong.");
     }
 
-    [TestMethod]
+    [Fact]
     public void AddSort_DefaultSortDirectionIsAscending()
     {
         // arrange
@@ -47,15 +49,12 @@ public class SearchFixture
         SystemUnderTest.AddSort(expectedSortByValue);
 
         // assert
-        Assert.AreEqual<int>(1, SystemUnderTest.Sorts.Count,
-            "Item count was wrong.");
-
+        SystemUnderTest.Sorts.Count.Should().Be(1, "Item count was wrong.");
         var actual = SystemUnderTest.Sorts[0];
-
         AssertSort(actual, expectedSortByValue, expectedSortDirection);
     }
 
-    [TestMethod]
+    [Fact]
     public void AddSort_IgnoresDuplicateSortValue()
     {
         // arrange
@@ -64,19 +63,15 @@ public class SearchFixture
 
         // act
         SystemUnderTest.AddSort(expectedSortByValue);
-        // add duplicate
         SystemUnderTest.AddSort(expectedSortByValue);
 
         // assert
-        Assert.AreEqual<int>(1, SystemUnderTest.Sorts.Count,
-            "Item count was wrong.");
-
+        SystemUnderTest.Sorts.Count.Should().Be(1, "Item count was wrong.");
         var actual = SystemUnderTest.Sorts[0];
-
         AssertSort(actual, expectedSortByValue, expectedSortDirection);
     }
 
-    [TestMethod]
+    [Fact]
     public void AddSort_AddTwoSorts()
     {
         // arrange
@@ -86,29 +81,22 @@ public class SearchFixture
 
         // act
         SystemUnderTest.AddSort(expectedSortByValue1);
-        // add duplicate
         SystemUnderTest.AddSort(expectedSortByValue2);
 
         // assert
-        Assert.AreEqual<int>(2, SystemUnderTest.Sorts.Count,
-            "Item count was wrong.");
-
-        var actual = SystemUnderTest.Sorts[0];
-        AssertSort(actual, expectedSortByValue1, expectedSortDirection);
-
-        actual = SystemUnderTest.Sorts[1];
-        AssertSort(actual, expectedSortByValue2, expectedSortDirection);
+        SystemUnderTest.Sorts.Count.Should().Be(2, "Item count was wrong.");
+        AssertSort(SystemUnderTest.Sorts[0], expectedSortByValue1, expectedSortDirection);
+        AssertSort(SystemUnderTest.Sorts[1], expectedSortByValue2, expectedSortDirection);
     }
 
     private static void AssertSort(SortBy actual, string expectedSortByValue, string expectedSortDirection)
     {
-        Assert.IsNotNull(actual, "sortby is null");
-
-        Assert.AreEqual<string>(expectedSortByValue, actual.PropertyName, "SortByValue");
-        Assert.AreEqual<string>(expectedSortDirection, actual.Direction, "SortDirection");
+        actual.Should().NotBeNull("sortby is null");
+        actual.PropertyName.Should().Be(expectedSortByValue, "SortByValue");
+        actual.Direction.Should().Be(expectedSortDirection, "SortDirection");
     }
 
-    [TestMethod]
+    [Fact]
     public void AddSort_Ascending()
     {
         // arrange
@@ -119,16 +107,11 @@ public class SearchFixture
         SystemUnderTest.AddSort(expectedSortByValue, expectedSortDirection);
 
         // assert
-        Assert.AreEqual<int>(1, SystemUnderTest.Sorts.Count,
-            "Item count was wrong.");
-
-        var actual = SystemUnderTest.Sorts[0];
-
-        AssertSort(actual, expectedSortByValue, expectedSortDirection);
+        SystemUnderTest.Sorts.Count.Should().Be(1, "Item count was wrong.");
+        AssertSort(SystemUnderTest.Sorts[0], expectedSortByValue, expectedSortDirection);
     }
 
-
-    [TestMethod]
+    [Fact]
     public void AddSort_Descending()
     {
         // arrange
@@ -139,16 +122,11 @@ public class SearchFixture
         SystemUnderTest.AddSort(expectedSortByValue, expectedSortDirection);
 
         // assert
-        Assert.AreEqual<int>(1, SystemUnderTest.Sorts.Count,
-            "Item count was wrong.");
-
-        var actual = SystemUnderTest.Sorts[0];
-
-        AssertSort(actual, expectedSortByValue, expectedSortDirection);
+        SystemUnderTest.Sorts.Count.Should().Be(1, "Item count was wrong.");
+        AssertSort(SystemUnderTest.Sorts[0], expectedSortByValue, expectedSortDirection);
     }
 
-    [TestMethod]
-    [ExpectedException(typeof(ArgumentOutOfRangeException))]
+    [Fact]
     public void AddSort_ThrowsExceptionOnBogusSortDirection()
     {
         // arrange
@@ -156,19 +134,13 @@ public class SearchFixture
         var expectedSortDirection = "garbage";
 
         // act
-        SystemUnderTest.AddSort(expectedSortByValue, expectedSortDirection);
+        Action act = () => SystemUnderTest.AddSort(expectedSortByValue, expectedSortDirection);
 
         // assert
-        Assert.AreEqual<int>(1, SystemUnderTest.Sorts.Count,
-            "Item count was wrong.");
-
-        var actual = SystemUnderTest.Sorts[0];
-
-        AssertSort(actual, expectedSortByValue, expectedSortDirection);
+        act.Should().Throw<ArgumentOutOfRangeException>();
     }
 
-    [TestMethod]
-    [ExpectedException(typeof(ArgumentOutOfRangeException))]
+    [Fact]
     public void AddSort_ThrowsExceptionOnStringEmptySortDirection()
     {
         // arrange
@@ -176,14 +148,9 @@ public class SearchFixture
         var expectedSortDirection = string.Empty;
 
         // act
-        SystemUnderTest.AddSort(expectedSortByValue, expectedSortDirection);
+        Action act = () => SystemUnderTest.AddSort(expectedSortByValue, expectedSortDirection);
 
         // assert
-        Assert.AreEqual<int>(1, SystemUnderTest.Sorts.Count,
-            "Item count was wrong.");
-
-        var actual = SystemUnderTest.Sorts[0];
-
-        AssertSort(actual, expectedSortByValue, expectedSortDirection);
+        act.Should().Throw<ArgumentOutOfRangeException>();
     }
 }

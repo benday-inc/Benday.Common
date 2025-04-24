@@ -1,112 +1,100 @@
-﻿using Microsoft.Extensions.Logging;
-using Moq;
-using PowerpointUtil.Api.Repositories;
-using System;
+﻿using Benday.Common.Testing;
+using FluentAssertions;
+using Microsoft.Extensions.Logging;
 using System.Linq;
+using Xunit;
+using Xunit.Abstractions;
 
 namespace Benday.Common.UnitTests.MockingUtilities;
 
 
-[TestClass]
-public class MockUtilityFixture
+public class MockUtilityFixture : TestClassBase
 {
-    public MockUtilityFixture()
+    public MockUtilityFixture(ITestOutputHelper output) : base(output)
     {
     }
 
-    [TestMethod]
+    [Fact]
     public void CreateInstanceWithMocks_DefaultConstructor()
     {
         var result = MockUtility.CreateInstance<ClassWithDefaultConstructor>();
 
-        Assert.IsNotNull(result);
-
-        Assert.AreEqual(0, result.Mocks.Count, $"Should not be any mocks created for this instance.");
-
-        Assert.IsNotNull(result.Instance, "Instance was null");
+        result.Should().NotBeNull();
+        result.Mocks.Count.Should().Be(0, "no mocks should be created for this instance");
+        result.Instance.Should().NotBeNull("Instance was null");
     }
 
-    [TestMethod]
+    [Fact]
     public void CreateInstanceWithMocks_ConstructorTakesNoArgs()
     {
         var result = MockUtility.CreateInstance<ClassWithEmptyConstructor>();
 
-        Assert.IsNotNull(result);
-
-        Assert.AreEqual(0, result.Mocks.Count, $"Should not be any mocks created for this instance.");
-
-        Assert.IsNotNull(result.Instance, "Instance was null");
+        result.Should().NotBeNull();
+        result.Mocks.Count.Should().Be(0, "no mocks should be created for this instance");
+        result.Instance.Should().NotBeNull("Instance was null");
     }
 
-    [TestMethod]
+    [Fact]
     public void CreateInstanceWithMocks_ConstructorTakesOneInterface()
     {
         var result = MockUtility.CreateInstance<ClassWithOneDependency>();
 
-        Assert.IsNotNull(result);
-
-        Assert.AreEqual(1, result.Mocks.Count, $"Should be mocks created for this instance.");
-
-        Assert.IsNotNull(result.Instance, "Instance was null");
+        result.Should().NotBeNull();
+        result.Mocks.Count.Should().Be(1, "a mock should be created for this instance");
+        result.Instance.Should().NotBeNull("Instance was null");
 
         var mock0 = result.Mocks.FirstOrDefault();
 
-        Assert.IsNotNull(mock0);
-
-        Assert.AreSame(result.Instance.Repository, mock0.Value.Object, "Values didn't match");
-        Assert.AreEqual(typeof(ISampleRepository), mock0.Key, "Key didn't match");
+        mock0.Should().NotBeNull();
+        result.Instance.Repository.Should().BeSameAs(mock0.Value.Object, "Values didn't match");
+        mock0.Key.Should().Be(typeof(ISampleRepository), "Key didn't match");
     }
 
-    [TestMethod]
+    [Fact]
     public void CreateInstanceWithMocks_ConstructorTakesMultipleParameters()
     {
         var result = MockUtility.CreateInstance<ClassWithMultipleDependencies>();
 
-        Assert.IsNotNull(result);
+        result.Should().NotBeNull();
+        result.Mocks.Count.Should().Be(2, "mocks should be created for this instance");
+        result.Instance.Should().NotBeNull("Instance was null");
 
-        Assert.AreEqual(2, result.Mocks.Count, $"Should be mocks created for this instance.");
-
-        Assert.IsNotNull(result.Instance, "Instance was null");
-
-        // get the first mock
         var mock0 = result.Mocks.FirstOrDefault();
-
-        // get the second mock
         var mock1 = result.Mocks.LastOrDefault();
 
-        Assert.IsNotNull(mock0);
-        Assert.IsNotNull(mock1);
+        mock0.Should().NotBeNull();
+        mock1.Should().NotBeNull();
 
-        Assert.AreSame(result.Instance.Repository, mock0.Value.Object, "Values didn't match for item 0");
-        Assert.AreEqual(typeof(ISampleRepository), mock0.Key, "Key didn't match for item 0");
+        result.Instance.Repository.Should().BeSameAs(mock0.Value.Object, "Values didn't match for item 0");
+        mock0.Key.Should().Be(typeof(ISampleRepository), "Key didn't match for item 0");
 
-        Assert.AreSame(result.Instance.Logger, mock1.Value.Object, "Values didn't match for item 1");
-        Assert.AreEqual(typeof(ILogger<ClassWithMultipleDependencies>), mock1.Key, "Key didn't match for item 1");
+        result.Instance.Logger.Should().BeSameAs(mock1.Value.Object, "Values didn't match for item 1");
+        mock1.Key.Should().Be(typeof(ILogger<ClassWithMultipleDependencies>), "Key didn't match for item 1");
     }
 
-    [TestMethod]
+    [Fact]
     public void MockCreationResult_GetMockByType()
     {
         var result = MockUtility.CreateInstance<ClassWithMultipleDependencies>();
 
-        Assert.IsNotNull(result);
-
-        Assert.AreEqual(2, result.Mocks.Count, $"Should be mocks created for this instance.");
+        result.Should().NotBeNull();
+        result.Mocks.Count.Should().Be(2, "mocks should be created for this instance");
 
         var mockOfSlideDataRepository = result.GetMock<ISampleRepository>();
-        Assert.IsNotNull(mockOfSlideDataRepository);
+        mockOfSlideDataRepository.Should().NotBeNull();
 
         var mockOfLogger = result.GetMock<ILogger<ClassWithMultipleDependencies>>();
-        Assert.IsNotNull(mockOfLogger);
+        mockOfLogger.Should().NotBeNull();
     }
 
-    [TestMethod]
+    [Fact]
     public void MockCreationResult_GetMockByType_BogusDependency()
     {
         var result = MockUtility.CreateInstance<ClassWithDefaultConstructor>();
-        Assert.IsNotNull(result);
+
+        result.Should().NotBeNull();
 
         var mockOfLogger = result.GetMock<ILogger<ClassWithMultipleDependencies>>();
-        Assert.IsNull(mockOfLogger);
+        mockOfLogger.Should().BeNull();
     }
 }
