@@ -1,24 +1,26 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
-    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
-    <Copyright>2025</Copyright>
-    <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/benday-inc/Benday.Common.git</RepositoryUrl>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>    
-    <Authors>benday</Authors>
-    <PackageIcon>bdc_mark_128_128.png</PackageIcon>
+    <AssemblyName>Benday.Common.Testing</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <Version>$(VersionPrefix)1.0.0</Version>
-    <Title>Benday.Common.Testing</Title>
+    <Authors>benday</Authors>
+    <Copyright>2025</Copyright>
     <Description>A collection of classes to streamline testing with XUnit and Moq.</Description>
-    <PackageReadmeFile>README.md</PackageReadmeFile>    
-    <PackageReleaseNotes>v1.0 - Base class for xunit tests; MockUtility for streamlining testing with Moq;</PackageReleaseNotes>    
-    <PackageTags>xunit; moq; unit testing;</PackageTags>    
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>true</IsPackable>
+    <Nullable>enable</Nullable>
+    <PackageIcon>bdc_mark_128_128.png</PackageIcon>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReleaseNotes>v1.0 - Base class for xunit tests; MockUtility for streamlining testing with Moq;</PackageReleaseNotes>
+    <PackageTags>xunit; moq; unit testing;</PackageTags>
+    <RepositoryUrl>https://github.com/benday-inc/Benday.Common.git</RepositoryUrl>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <Title>Benday.Common.Testing</Title>
+    <Version>1.0.0</Version>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="8.*" />
