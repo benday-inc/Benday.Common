@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace PowerpointUtil.Api.Tests.MockingUtilities;
+namespace Benday.Common.UnitTests.MockingUtilities;
 
 public class ClassWithDefaultConstructor
 {

@@ -4,7 +4,7 @@ using PowerpointUtil.Api.Repositories;
 using System;
 using System.Linq;
 
-namespace PowerpointUtil.Api.Tests.MockingUtilities;
+namespace Benday.Common.UnitTests.MockingUtilities;
 
 
 [TestClass]
@@ -54,7 +54,7 @@ public class MockUtilityFixture
         Assert.IsNotNull(mock0);
 
         Assert.AreSame(result.Instance.Repository, mock0.Value.Object, "Values didn't match");
-        Assert.AreEqual(typeof(ISlideDataRepository), mock0.Key, "Key didn't match");
+        Assert.AreEqual(typeof(ISampleRepository), mock0.Key, "Key didn't match");
     }
 
     [TestMethod]
@@ -78,7 +78,7 @@ public class MockUtilityFixture
         Assert.IsNotNull(mock1);
 
         Assert.AreSame(result.Instance.Repository, mock0.Value.Object, "Values didn't match for item 0");
-        Assert.AreEqual(typeof(ISlideDataRepository), mock0.Key, "Key didn't match for item 0");
+        Assert.AreEqual(typeof(ISampleRepository), mock0.Key, "Key didn't match for item 0");
 
         Assert.AreSame(result.Instance.Logger, mock1.Value.Object, "Values didn't match for item 1");
         Assert.AreEqual(typeof(ILogger<ClassWithMultipleDependencies>), mock1.Key, "Key didn't match for item 1");
@@ -93,7 +93,7 @@ public class MockUtilityFixture
 
         Assert.AreEqual(2, result.Mocks.Count, $"Should be mocks created for this instance.");
 
-        var mockOfSlideDataRepository = result.GetMock<ISlideDataRepository>();
+        var mockOfSlideDataRepository = result.GetMock<ISampleRepository>();
         Assert.IsNotNull(mockOfSlideDataRepository);
 
         var mockOfLogger = result.GetMock<ILogger<ClassWithMultipleDependencies>>();

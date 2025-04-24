@@ -1,8 +1,9 @@
 ﻿using Moq;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
-namespace PowerpointUtil.Api.Tests.MockingUtilities;
+namespace Benday.Common.UnitTests.MockingUtilities;
 
 public static class MockUtility
 {
