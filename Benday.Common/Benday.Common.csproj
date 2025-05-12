@@ -1,28 +1,32 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
-    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
-    <Copyright>2025</Copyright>
-    <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/benday-inc/Benday.Common.git</RepositoryUrl>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <AssemblyVersion>9.1.0.0</AssemblyVersion>
     <Authors>benday</Authors>
-    <PackageIcon>bdc_mark_128_128.png</PackageIcon>
-    <AssemblyVersion>9.0.0.0</AssemblyVersion>
-    <Version>$(VersionPrefix)9.0.0</Version>
-    <Title>Benday.Common</Title>
+    <Copyright>2025</Copyright>
     <Description>A collection of classes for supporting the searching, paging, domain model pattern, and other miscellaneous stuff in .NET Core.</Description>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Nullable>enable</Nullable>
-    <PackageReleaseNotes>v9.0 - Updating dependencies and adding package target for .net 9.0</PackageReleaseNotes>
+    <PackageIcon>bdc_mark_128_128.png</PackageIcon>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReleaseNotes>
+v9.1 - Added some additional methods to the StringExtensionMethods class.
+v9.0 - Updating dependencies and adding package target for .net 9.0
+</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/benday-inc/Benday.Common.git</RepositoryUrl>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <Title>Benday.Common</Title>
+    <Version>$(VersionPrefix)9.1.0</Version>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\bdc_mark_128_128.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Include="..\README.md">
+    <None Include="README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>

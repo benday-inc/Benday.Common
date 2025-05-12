@@ -52,6 +52,13 @@ public static class StringExtensionMethods
         }
     }
 
+    /// <summary>
+    /// This method converts a string to an integer.  If the string is null or empty, it returns the default value.
+    /// If the string cannot be converted to an integer, it returns the default value.
+    /// </summary>
+    /// <param name="value"></param>
+    /// <param name="defaultValue"></param>
+    /// <returns></returns>
     public static int SafeToInt32(this string? value, int defaultValue = default)
     {
         var valueAsString = value.SafeToString();
