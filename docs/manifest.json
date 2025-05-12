@@ -1,5 +1,5 @@
 {
-  "source_base_path": "/Users/benday/code/benday-inc/Benday.Common/docfx_project",
+  "source_base_path": "C:/code/benday-inc/Benday.Common/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -10,11 +10,7 @@
           "relative_path": "api/Benday.Common.IDeleteable.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.IDeleteable",
-      "Summary": "<p sourcefile=\"api/Benday.Common.IDeleteable.yml\" sourcestartlinenumber=\"1\">Interface to indicate that an object is deletable. This is helpful for\nhandling changes to collections of objects during CRUD operations.</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -24,11 +20,7 @@
           "relative_path": "api/Benday.Common.IInt32Identity.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.IInt32Identity",
-      "Summary": "<p sourcefile=\"api/Benday.Common.IInt32Identity.yml\" sourcestartlinenumber=\"1\">Indicates the int32 identity property for a domain object or\nentity framework core entity. For EF Core with SQL Server, this typically becomes\nthe primary key with an incrementing value (@<xref href=\"IDENTITY)\" data-throw-if-not-resolved=\"False\" data-raw-source=\"@IDENTITY)\" sourcefile=\"api/Benday.Common.IInt32Identity.yml\" sourcestartlinenumber=\"3\"></xref>.</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -38,11 +30,7 @@
           "relative_path": "api/Benday.Common.IPageableResults.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.IPageableResults",
-      "Summary": "<p sourcefile=\"api/Benday.Common.IPageableResults.yml\" sourcestartlinenumber=\"1\">Represents information about a result set that can be\narranged into pages.</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -52,11 +40,7 @@
           "relative_path": "api/Benday.Common.ISelectable.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.ISelectable",
-      "Summary": "<p sourcefile=\"api/Benday.Common.ISelectable.yml\" sourcestartlinenumber=\"1\">Utility interface for objects that can be selected .</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -66,11 +50,7 @@
           "relative_path": "api/Benday.Common.ISortableResult.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.ISortableResult",
-      "Summary": "<p sourcefile=\"api/Benday.Common.ISortableResult.yml\" sourcestartlinenumber=\"1\">Represents the sorting status of a result set\nthat allows sorting by single property value.</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -80,11 +60,7 @@
           "relative_path": "api/Benday.Common.IStringIdentity.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.IStringIdentity",
-      "Summary": "<p sourcefile=\"api/Benday.Common.IStringIdentity.yml\" sourcestartlinenumber=\"1\">Indicates the string identity property for a domain object,<br>\nentity framework core entity, CosmosDb entity, or Azure Storage entity.\nFor EF Core, this typically becomes the primary key.</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -94,11 +70,7 @@
           "relative_path": "api/Benday.Common.ITypeRegistrationItem.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.ITypeRegistrationItem",
-      "Summary": "<p sourcefile=\"api/Benday.Common.ITypeRegistrationItem.yml\" sourcestartlinenumber=\"1\">Interface for describing a type that should be registered with\n.NET Core dependency injection. It describes the service lifetime,\ninterface data type, and concrete implementation.</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -108,11 +80,7 @@
           "relative_path": "api/Benday.Common.PageableResults-1.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.PageableResults<T>",
-      "Summary": "<p sourcefile=\"api/Benday.Common.PageableResults-1.yml\" sourcestartlinenumber=\"1\">Utility class that provides data paging for a result set</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -122,11 +90,7 @@
           "relative_path": "api/Benday.Common.ProcessRunner.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.ProcessRunner",
-      "Summary": null
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -136,11 +100,7 @@
           "relative_path": "api/Benday.Common.Search.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.Search",
-      "Summary": "<p sourcefile=\"api/Benday.Common.Search.yml\" sourcestartlinenumber=\"1\">Describes the data required to run a search</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -150,11 +110,7 @@
           "relative_path": "api/Benday.Common.SearchArgument.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.SearchArgument",
-      "Summary": "<p sourcefile=\"api/Benday.Common.SearchArgument.yml\" sourcestartlinenumber=\"1\">Named argument to a search.</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -164,11 +120,7 @@
           "relative_path": "api/Benday.Common.SearchConstants.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.SearchConstants",
-      "Summary": "<p sourcefile=\"api/Benday.Common.SearchConstants.yml\" sourcestartlinenumber=\"1\">Constant values for search functionality</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -178,11 +130,7 @@
           "relative_path": "api/Benday.Common.SearchMethod.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.SearchMethod",
-      "Summary": "<p sourcefile=\"api/Benday.Common.SearchMethod.yml\" sourcestartlinenumber=\"1\">Search method for a search argument</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -192,11 +140,7 @@
           "relative_path": "api/Benday.Common.SearchOperator.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.SearchOperator",
-      "Summary": "<p sourcefile=\"api/Benday.Common.SearchOperator.yml\" sourcestartlinenumber=\"1\">Describes how a search argument should be combined with another search argument</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -206,11 +150,7 @@
           "relative_path": "api/Benday.Common.SearchResult-1.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.SearchResult<T>",
-      "Summary": "<p sourcefile=\"api/Benday.Common.SearchResult-1.yml\" sourcestartlinenumber=\"1\">Data result from a search</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -220,11 +160,7 @@
           "relative_path": "api/Benday.Common.SearchViewModelBase-1.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.SearchViewModelBase<T>",
-      "Summary": "<p sourcefile=\"api/Benday.Common.SearchViewModelBase-1.yml\" sourcestartlinenumber=\"1\">Base class describing a view model for capturing the data for and\ndisplaying the result of a search.</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -234,11 +170,7 @@
           "relative_path": "api/Benday.Common.SimpleSearchResults-1.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.SimpleSearchResults<T>",
-      "Summary": "<p sourcefile=\"api/Benday.Common.SimpleSearchResults-1.yml\" sourcestartlinenumber=\"1\">View model for displaying the results of a simple search.\nProvides basic properties for handling sorting of the results of the search\nand paging through the result set.</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -248,11 +180,7 @@
           "relative_path": "api/Benday.Common.SortBy.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.SortBy",
-      "Summary": "<p sourcefile=\"api/Benday.Common.SortBy.yml\" sourcestartlinenumber=\"1\">Defines a sorting rule for a property or column in a search result</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -262,11 +190,7 @@
           "relative_path": "api/Benday.Common.SortableViewModelBase-1.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.SortableViewModelBase<T>",
-      "Summary": "<p sourcefile=\"api/Benday.Common.SortableViewModelBase-1.yml\" sourcestartlinenumber=\"1\">Base class for a view model that provides data sorting capabilities for a result set</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -276,11 +200,7 @@
           "relative_path": "api/Benday.Common.StringExtensionMethods.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.StringExtensionMethods",
-      "Summary": "<p sourcefile=\"api/Benday.Common.StringExtensionMethods.yml\" sourcestartlinenumber=\"1\">Extension methods for string.</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -290,11 +210,7 @@
           "relative_path": "api/Benday.Common.TypeRegistrationItem-2.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.TypeRegistrationItem<TService, TImplementation>",
-      "Summary": "<p sourcefile=\"api/Benday.Common.TypeRegistrationItem-2.yml\" sourcestartlinenumber=\"1\">Describes a type mapping that should be registered with\n.NET Core dependency injection.</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -304,11 +220,7 @@
           "relative_path": "api/Benday.Common.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common",
-      "Summary": null
+      "version": ""
     },
     {
       "type": "Conceptual",
