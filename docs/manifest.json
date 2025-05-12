@@ -90,11 +90,7 @@
           "relative_path": "api/Benday.Common.ProcessRunner.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.ProcessRunner",
-      "Summary": "<p sourcefile=\"api/Benday.Common.ProcessRunner.yml\" sourcestartlinenumber=\"1\">This class is used to run a process and capture the output.\nIt is a wrapper around the System.Diagnostics.Process class.</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -214,11 +210,7 @@
           "relative_path": "api/Benday.Common.Testing.MockCreationResult-1.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.Testing.MockCreationResult<T>",
-      "Summary": "<p sourcefile=\"api/Benday.Common.Testing.MockCreationResult-1.yml\" sourcestartlinenumber=\"1\">The result of the creation of an instance of a class with Moq-based mocks.</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -228,11 +220,7 @@
           "relative_path": "api/Benday.Common.Testing.MockUtility.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.Testing.MockUtility",
-      "Summary": "<p sourcefile=\"api/Benday.Common.Testing.MockUtility.yml\" sourcestartlinenumber=\"1\">This class is used to create instances of classes using reflection and Moq.</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -242,11 +230,7 @@
           "relative_path": "api/Benday.Common.Testing.TestClassBase.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.Testing.TestClassBase",
-      "Summary": "<p sourcefile=\"api/Benday.Common.Testing.TestClassBase.yml\" sourcestartlinenumber=\"1\">Base class for XUnit-based test classes.</p>\n"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -256,11 +240,7 @@
           "relative_path": "api/Benday.Common.Testing.html"
         }
       },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Benday.Common.Testing",
-      "Summary": null
+      "version": ""
     },
     {
       "type": "ManagedReference",
