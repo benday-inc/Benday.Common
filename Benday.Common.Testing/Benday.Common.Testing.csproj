@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Benday.Common.Testing</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <Authors>benday</Authors>
     <Copyright>2025</Copyright>
     <Description>A collection of classes to streamline testing with XUnit and Moq.</Description>
@@ -23,7 +23,7 @@ v1.0 - Base class for xunit tests; MockUtility for streamlining testing with Moq
     <RepositoryUrl>https://github.com/benday-inc/Benday.Common.git</RepositoryUrl>
     <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     <Title>Benday.Common.Testing</Title>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.*" />
