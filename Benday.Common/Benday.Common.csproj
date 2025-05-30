@@ -7,6 +7,7 @@
     <Description>A collection of classes for supporting the searching, paging, domain model pattern, and other miscellaneous stuff in .NET Core.</Description>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <IsPackable>true</IsPackable>
     <Nullable>enable</Nullable>
     <PackageIcon>bdc_mark_128_128.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -20,7 +21,7 @@ v9.0 - Updating dependencies and adding package target for .net 9.0
     <RepositoryUrl>https://github.com/benday-inc/Benday.Common.git</RepositoryUrl>
     <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     <Title>Benday.Common</Title>
-    <Version>$(VersionPrefix)9.1.0</Version>
+    <Version>$(VersionPrefix)9.2.0</Version>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\bdc_mark_128_128.png">
