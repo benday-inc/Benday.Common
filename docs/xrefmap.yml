@@ -1291,6 +1291,22 @@ references:
   isSpec: "True"
   fullName: Benday.Common.StringExtensionMethods.SafeToString
   nameWithType: StringExtensionMethods.SafeToString
+- uid: Benday.Common.StringExtensionMethods.ToStringThrowIfNullOrEmpty(System.String,System.String)
+  name: ToStringThrowIfNullOrEmpty(string?, string)
+  href: api/Benday.Common.StringExtensionMethods.html#Benday_Common_StringExtensionMethods_ToStringThrowIfNullOrEmpty_System_String_System_String_
+  commentId: M:Benday.Common.StringExtensionMethods.ToStringThrowIfNullOrEmpty(System.String,System.String)
+  name.vb: ToStringThrowIfNullOrEmpty(String, String)
+  fullName: Benday.Common.StringExtensionMethods.ToStringThrowIfNullOrEmpty(string?, string)
+  fullName.vb: Benday.Common.StringExtensionMethods.ToStringThrowIfNullOrEmpty(String, String)
+  nameWithType: StringExtensionMethods.ToStringThrowIfNullOrEmpty(string?, string)
+  nameWithType.vb: StringExtensionMethods.ToStringThrowIfNullOrEmpty(String, String)
+- uid: Benday.Common.StringExtensionMethods.ToStringThrowIfNullOrEmpty*
+  name: ToStringThrowIfNullOrEmpty
+  href: api/Benday.Common.StringExtensionMethods.html#Benday_Common_StringExtensionMethods_ToStringThrowIfNullOrEmpty_
+  commentId: Overload:Benday.Common.StringExtensionMethods.ToStringThrowIfNullOrEmpty
+  isSpec: "True"
+  fullName: Benday.Common.StringExtensionMethods.ToStringThrowIfNullOrEmpty
+  nameWithType: StringExtensionMethods.ToStringThrowIfNullOrEmpty
 - uid: Benday.Common.Testing
   name: Benday.Common.Testing
   href: api/Benday.Common.Testing.html

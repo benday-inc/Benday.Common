@@ -26,6 +26,32 @@ public static class StringExtensionMethods
     }
 
     /// <summary>
+    /// This method converts a string to a string and throws an exception if the string is null or empty.
+    /// </summary>
+    /// <param name="input">Input string to check</param>
+    /// <param name="label">Optional label/name for the string to include in the exception</param>
+    /// <returns></returns>
+    /// <exception cref="InvalidOperationException"></exception>
+    public static string ToStringThrowIfNullOrEmpty(this string? input, string label = "")
+    {
+        if (string.IsNullOrEmpty(input))
+        {
+            if (string.IsNullOrEmpty(label) == false)
+            {
+                throw new InvalidOperationException($"{label} cannot be null or empty.");
+            }
+            else
+            {
+                throw new InvalidOperationException("Input string cannot be null or empty.");
+            }
+        }
+        else
+        {
+            return input.ToString()!;
+        }
+    }
+
+    /// <summary>
     /// This method compares two strings for equality, ignoring case.  If both strings are null, they are considered equal.
     /// </summary>
     /// <param name="value1"></param>

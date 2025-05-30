@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <AssemblyVersion>9.1.0.0</AssemblyVersion>
+    <AssemblyVersion>9.2.0.0</AssemblyVersion>
     <Authors>benday</Authors>
     <Copyright>2025</Copyright>
     <Description>A collection of classes for supporting the searching, paging, domain model pattern, and other miscellaneous stuff in .NET Core.</Description>
@@ -13,6 +13,7 @@
     <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageReleaseNotes>
+v9.2 - Added ToStringThrowIfNullOrEmpty() to the StringExtensionMethods class.
 v9.1 - Added some additional methods to the StringExtensionMethods class.
 v9.0 - Updating dependencies and adding package target for .net 9.0
 </PackageReleaseNotes>
