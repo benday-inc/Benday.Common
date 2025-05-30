@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <AssemblyVersion>9.2.0.0</AssemblyVersion>
+    <AssemblyVersion>9.3.0.0</AssemblyVersion>
     <Authors>benday</Authors>
     <Copyright>2025</Copyright>
     <Description>A collection of classes for supporting the searching, paging, domain model pattern, and other miscellaneous stuff in .NET Core.</Description>
@@ -14,6 +14,7 @@
     <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageReleaseNotes>
+v9.3 - Added ConfigurationExtensionMethods; Added ToStringThrowIfNullOrEmpty() and SafeToString() to the ConfigurationExtensionMethods class for accessing values from IConfiguration.
 v9.2 - Added ToStringThrowIfNullOrEmpty() to the StringExtensionMethods class.
 v9.1 - Added some additional methods to the StringExtensionMethods class.
 v9.0 - Updating dependencies and adding package target for .net 9.0
@@ -21,7 +22,7 @@ v9.0 - Updating dependencies and adding package target for .net 9.0
     <RepositoryUrl>https://github.com/benday-inc/Benday.Common.git</RepositoryUrl>
     <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     <Title>Benday.Common</Title>
-    <Version>$(VersionPrefix)9.2.0</Version>
+    <Version>$(VersionPrefix)9.3.0</Version>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\bdc_mark_128_128.png">
@@ -34,6 +35,7 @@ v9.0 - Updating dependencies and adding package target for .net 9.0
     </None>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.*" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.*" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.*" />
     <PackageReference Include="System.Text.Json" Version="9.*" />

@@ -4,6 +4,34 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.ConfigurationExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.ConfigurationExtensionMethods.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.ConfigurationExtensionMethods",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.ConfigurationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.ConfigurationExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.ConfigurationExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Benday.Common.IDeleteable.yml",
       "output": {
         ".html": {

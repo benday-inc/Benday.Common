@@ -7,6 +7,82 @@ references:
   commentId: N:Benday.Common
   fullName: Benday.Common
   nameWithType: Benday.Common
+- uid: Benday.Common.ConfigurationExtensionMethods
+  name: ConfigurationExtensionMethods
+  href: api/Benday.Common.ConfigurationExtensionMethods.html
+  commentId: T:Benday.Common.ConfigurationExtensionMethods
+  fullName: Benday.Common.ConfigurationExtensionMethods
+  nameWithType: ConfigurationExtensionMethods
+- uid: Benday.Common.ConfigurationExtensionMethods.GetStringThrowIfNullOrEmpty(Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  name: GetStringThrowIfNullOrEmpty(IConfiguration, string)
+  href: api/Benday.Common.ConfigurationExtensionMethods.html#Benday_Common_ConfigurationExtensionMethods_GetStringThrowIfNullOrEmpty_Microsoft_Extensions_Configuration_IConfiguration_System_String_
+  commentId: M:Benday.Common.ConfigurationExtensionMethods.GetStringThrowIfNullOrEmpty(Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  name.vb: GetStringThrowIfNullOrEmpty(IConfiguration, String)
+  fullName: Benday.Common.ConfigurationExtensionMethods.GetStringThrowIfNullOrEmpty(Microsoft.Extensions.Configuration.IConfiguration, string)
+  fullName.vb: Benday.Common.ConfigurationExtensionMethods.GetStringThrowIfNullOrEmpty(Microsoft.Extensions.Configuration.IConfiguration, String)
+  nameWithType: ConfigurationExtensionMethods.GetStringThrowIfNullOrEmpty(IConfiguration, string)
+  nameWithType.vb: ConfigurationExtensionMethods.GetStringThrowIfNullOrEmpty(IConfiguration, String)
+- uid: Benday.Common.ConfigurationExtensionMethods.GetStringThrowIfNullOrEmpty*
+  name: GetStringThrowIfNullOrEmpty
+  href: api/Benday.Common.ConfigurationExtensionMethods.html#Benday_Common_ConfigurationExtensionMethods_GetStringThrowIfNullOrEmpty_
+  commentId: Overload:Benday.Common.ConfigurationExtensionMethods.GetStringThrowIfNullOrEmpty
+  isSpec: "True"
+  fullName: Benday.Common.ConfigurationExtensionMethods.GetStringThrowIfNullOrEmpty
+  nameWithType: ConfigurationExtensionMethods.GetStringThrowIfNullOrEmpty
+- uid: Benday.Common.ConfigurationExtensionMethods.SafeGetString(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
+  name: SafeGetString(IConfiguration, string, string)
+  href: api/Benday.Common.ConfigurationExtensionMethods.html#Benday_Common_ConfigurationExtensionMethods_SafeGetString_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_
+  commentId: M:Benday.Common.ConfigurationExtensionMethods.SafeGetString(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
+  name.vb: SafeGetString(IConfiguration, String, String)
+  fullName: Benday.Common.ConfigurationExtensionMethods.SafeGetString(Microsoft.Extensions.Configuration.IConfiguration, string, string)
+  fullName.vb: Benday.Common.ConfigurationExtensionMethods.SafeGetString(Microsoft.Extensions.Configuration.IConfiguration, String, String)
+  nameWithType: ConfigurationExtensionMethods.SafeGetString(IConfiguration, string, string)
+  nameWithType.vb: ConfigurationExtensionMethods.SafeGetString(IConfiguration, String, String)
+- uid: Benday.Common.ConfigurationExtensionMethods.SafeGetString*
+  name: SafeGetString
+  href: api/Benday.Common.ConfigurationExtensionMethods.html#Benday_Common_ConfigurationExtensionMethods_SafeGetString_
+  commentId: Overload:Benday.Common.ConfigurationExtensionMethods.SafeGetString
+  isSpec: "True"
+  fullName: Benday.Common.ConfigurationExtensionMethods.SafeGetString
+  nameWithType: ConfigurationExtensionMethods.SafeGetString
+- uid: Benday.Common.ConfigurationExtensions
+  name: ConfigurationExtensions
+  href: api/Benday.Common.ConfigurationExtensions.html
+  commentId: T:Benday.Common.ConfigurationExtensions
+  fullName: Benday.Common.ConfigurationExtensions
+  nameWithType: ConfigurationExtensions
+- uid: Benday.Common.ConfigurationExtensions.GetStringThrowIfNullOrEmpty(Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  name: GetStringThrowIfNullOrEmpty(IConfiguration, string)
+  href: api/Benday.Common.ConfigurationExtensions.html#Benday_Common_ConfigurationExtensions_GetStringThrowIfNullOrEmpty_Microsoft_Extensions_Configuration_IConfiguration_System_String_
+  commentId: M:Benday.Common.ConfigurationExtensions.GetStringThrowIfNullOrEmpty(Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  name.vb: GetStringThrowIfNullOrEmpty(IConfiguration, String)
+  fullName: Benday.Common.ConfigurationExtensions.GetStringThrowIfNullOrEmpty(Microsoft.Extensions.Configuration.IConfiguration, string)
+  fullName.vb: Benday.Common.ConfigurationExtensions.GetStringThrowIfNullOrEmpty(Microsoft.Extensions.Configuration.IConfiguration, String)
+  nameWithType: ConfigurationExtensions.GetStringThrowIfNullOrEmpty(IConfiguration, string)
+  nameWithType.vb: ConfigurationExtensions.GetStringThrowIfNullOrEmpty(IConfiguration, String)
+- uid: Benday.Common.ConfigurationExtensions.GetStringThrowIfNullOrEmpty*
+  name: GetStringThrowIfNullOrEmpty
+  href: api/Benday.Common.ConfigurationExtensions.html#Benday_Common_ConfigurationExtensions_GetStringThrowIfNullOrEmpty_
+  commentId: Overload:Benday.Common.ConfigurationExtensions.GetStringThrowIfNullOrEmpty
+  isSpec: "True"
+  fullName: Benday.Common.ConfigurationExtensions.GetStringThrowIfNullOrEmpty
+  nameWithType: ConfigurationExtensions.GetStringThrowIfNullOrEmpty
+- uid: Benday.Common.ConfigurationExtensions.SafeGetString(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
+  name: SafeGetString(IConfiguration, string, string)
+  href: api/Benday.Common.ConfigurationExtensions.html#Benday_Common_ConfigurationExtensions_SafeGetString_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_
+  commentId: M:Benday.Common.ConfigurationExtensions.SafeGetString(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
+  name.vb: SafeGetString(IConfiguration, String, String)
+  fullName: Benday.Common.ConfigurationExtensions.SafeGetString(Microsoft.Extensions.Configuration.IConfiguration, string, string)
+  fullName.vb: Benday.Common.ConfigurationExtensions.SafeGetString(Microsoft.Extensions.Configuration.IConfiguration, String, String)
+  nameWithType: ConfigurationExtensions.SafeGetString(IConfiguration, string, string)
+  nameWithType.vb: ConfigurationExtensions.SafeGetString(IConfiguration, String, String)
+- uid: Benday.Common.ConfigurationExtensions.SafeGetString*
+  name: SafeGetString
+  href: api/Benday.Common.ConfigurationExtensions.html#Benday_Common_ConfigurationExtensions_SafeGetString_
+  commentId: Overload:Benday.Common.ConfigurationExtensions.SafeGetString
+  isSpec: "True"
+  fullName: Benday.Common.ConfigurationExtensions.SafeGetString
+  nameWithType: ConfigurationExtensions.SafeGetString
 - uid: Benday.Common.IDeleteable
   name: IDeleteable
   href: api/Benday.Common.IDeleteable.html

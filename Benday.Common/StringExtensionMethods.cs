@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
+
+using Microsoft.Extensions.Configuration;
 
 namespace Benday.Common;
 
@@ -32,7 +35,7 @@ public static class StringExtensionMethods
     /// <param name="label">Optional label/name for the string to include in the exception</param>
     /// <returns></returns>
     /// <exception cref="InvalidOperationException"></exception>
-    public static string ToStringThrowIfNullOrEmpty(this string? input, string label = "")
+    public static string ToStringThrowIfNullOrEmpty([NotNull] this string? input, string label = "")
     {
         if (string.IsNullOrEmpty(input))
         {
