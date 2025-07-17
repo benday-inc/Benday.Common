@@ -55,11 +55,65 @@ public class CheckThatForStringsFixture : TestClassBase
         string? input = "";
         Assert.Throws<CheckAssertionFailureException>(() => input.CheckThat().IsNotNullOrEmpty());
     }
-    
+
     [Fact]
     public void CheckThat_WhitespaceString_IsNotNullOrWhitespace()
     {
         string? input = "   ";
         Assert.Throws<CheckAssertionFailureException>(() => input.CheckThat().IsNotNullOrWhitespace());
+    }
+
+    [Fact]
+    public void CheckThat_IsEqualTo_Equal()
+    {
+        // arrange
+        var input = "asdf1234";
+        var value2 = "asdf1234";
+
+        // act
+        input.CheckThat().IsEqualTo(value2);
+
+        // assert
+        // this worked if we didn't get an exception
+    }
+
+    [Fact]
+    public void CheckThat_IsEqualTo_NotEqual()
+    {
+        // arrange
+        var input = "asdf1234";
+        var value2 = "asdf1234asdf";
+
+        // act & assert
+        Assert.Throws<CheckAssertionFailureException>(() =>
+            input.CheckThat().IsEqualTo(value2)
+        );
+    }
+
+    [Fact]
+    public void CheckThat_AreNotEqual_Equal()
+    {
+        // arrange
+        var input = "asdf1234";
+        var value2 = "asdf1234";
+
+        // act & assert
+        Assert.Throws<CheckAssertionFailureException>(() =>
+            input.CheckThat().IsNotEqualTo(value2)
+        );
+    }
+
+    [Fact]
+    public void CheckThat_AreNotEqual_NotEqual()
+    {
+ // arrange
+        var input = "asdf1234";
+        var value2 = "asdf1234asdfasdf";
+
+        // act
+        input.CheckThat().IsNotEqualTo(value2);
+
+        // assert
+        // this worked if we didn't get an exception
     }
 }
