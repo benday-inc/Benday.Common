@@ -30,7 +30,7 @@ v1.0 - Base class for xunit tests; MockUtility for streamlining testing with Moq
     <PackageReference Include="Moq" Version="4.*" />
     <PackageReference Include="xunit" Version="2.*" />
     <PackageReference Include="xunit.runner.visualstudio" Version="3.*" />
-    <PackageReference Include="Benday.Common" Version="9.*" />
+    <PackageReference Include="Benday.Common" Version="9.4" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\bdc_mark_128_128.png">

@@ -4,15 +4,20 @@ namespace Benday.Common.Testing;
 
 public static class CheckAssertionExtensions
 {
-    public static void Fail<T>(this ICheckAssertion<T> check)
+    public static void FailWithOptionalMessage<T>(this ICheckAssertion<T> check, string? message = null)
     {
-        if (check.FailureMessage.IsNullOrWhitespace() == true)
+        if (check.FailureMessage.IsNullOrWhitespace() == false)
         {
-            Fail(check, "Check assertion failed.");
+            Fail(check, check.FailureMessage!);
         }
+        else if (
+            message.IsNullOrWhitespace() == false)
+        {
+            Fail(check, message!);
+        }        
         else
         {
-            Fail(check, check.FailureMessage);
+            Fail(check, "Check assertion failed.");
         }
     }
 
@@ -25,7 +30,7 @@ public static class CheckAssertionExtensions
     {
         if (check.Input == null)
         {
-            throw new ArgumentNullException(nameof(check.Input));
+            check.FailWithOptionalMessage("Input is null.");
         }
 
         return check;
@@ -35,12 +40,12 @@ public static class CheckAssertionExtensions
     {
         if (check.Input == null)
         {
-            throw new ArgumentNullException(nameof(check.Input));
+            check.FailWithOptionalMessage("Input is null.");
         }
 
         if (string.IsNullOrEmpty(check.Input))
         {
-            throw new ArgumentException("String is null or empty", nameof(check.Input));
+            check.FailWithOptionalMessage("String is empty");
         }
 
         return check;

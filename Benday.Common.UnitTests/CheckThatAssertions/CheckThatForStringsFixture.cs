@@ -39,7 +39,7 @@ public class CheckThatForStringsFixture : TestClassBase
     public void CheckThat_Null_IsNotNullOrEmpty()
     {
         ValueToTest = null;
-        Assert.Throws<ArgumentException>(() => SystemUnderTest.IsNotNullOrEmpty());
+        Assert.Throws<CheckAssertionFailureException>(() => SystemUnderTest.IsNotNullOrEmpty());
     }
 
     [Fact]
@@ -53,6 +53,6 @@ public class CheckThatForStringsFixture : TestClassBase
     public void CheckThat_StringIsNullOrEmpty_ThrowsArgumentException()
     {
         string? input = "";
-        Assert.Throws<ArgumentException>(() => input.CheckThat().IsNotNullOrEmpty());
+        Assert.Throws<CheckAssertionFailureException>(() => input.CheckThat().IsNotNullOrEmpty());
     }
 }
