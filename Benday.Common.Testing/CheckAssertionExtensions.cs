@@ -44,6 +44,17 @@ public static class CheckAssertionExtensions
         return check;
     }
 
+    public static ICheckAssertion<T> IsNull<T>(this ICheckAssertion<T> check,
+        string? userFailureMessage = null)
+    {
+        if (check.Input != null)
+        {
+            check.FailWithOptionalMessage(userFailureMessage, "Input should be null.");
+        }
+
+        return check;
+    }
+
     public static ICheckAssertion<string> IsNotNullOrEmpty(
         this ICheckAssertion<string> check,
         string? userFailureMessage = null)
@@ -72,6 +83,34 @@ public static class CheckAssertionExtensions
         if (string.IsNullOrWhiteSpace(check.Input))
         {
             check.FailWithOptionalMessage(userFailureMessage, "String is empty or whitespace");
+        }
+
+        return check;
+    }
+
+    public static ICheckAssertion<T> IsTheSameAs<T>(this ICheckAssertion<T> check,
+        T? expected,
+        string? userFailureMessage = null) where T : class
+    {
+        if (check.Input != expected)
+        {
+            check.FailWithOptionalMessage(
+                userFailureMessage,
+                $"Values should be the same reference.");
+        }
+
+        return check;
+    }
+
+    public static ICheckAssertion<T> IsNotTheSameAs<T>(this ICheckAssertion<T> check,
+        T? expected,
+        string? userFailureMessage = null) where T : class
+    {
+        if (check.Input == expected)
+        {
+            check.FailWithOptionalMessage(
+                userFailureMessage,
+                $"Values should be the same reference.");
         }
 
         return check;
