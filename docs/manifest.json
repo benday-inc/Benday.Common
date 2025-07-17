@@ -312,6 +312,76 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.CheckAssertion-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.CheckAssertion-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.CheckAssertion<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.CheckAssertionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.CheckAssertionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.CheckAssertionExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.CheckAssertionFailureException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.CheckAssertionFailureException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.CheckAssertionFailureException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.CheckExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.CheckExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.CheckExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.ICheckAssertion-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.ICheckAssertion-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.ICheckAssertion<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Benday.Common.Testing.MockCreationResult-1.yml",
       "output": {
         ".html": {

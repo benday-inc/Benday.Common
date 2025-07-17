@@ -154,8 +154,18 @@ public static class StringExtensionMethods
     /// </summary>
     /// <param name="value"></param>
     /// <returns></returns>
-    public static bool IsNullOrWhitespace(this string? value)
+    public static bool IsNullOrWhitespace([NotNullWhen(false)] this string? value)
     {
         return string.IsNullOrWhiteSpace(value);
+    }
+
+    /// <summary>
+    /// This method checks if the string is null or empty.  If the string is null or empty, it returns true.
+    /// </summary>
+    /// <param name="value"></param>
+    /// <returns></returns>
+    public static bool IsNullOrEmpty([NotNullWhen(false)] this string? value)
+    {
+        return string.IsNullOrEmpty(value);
     }
 }

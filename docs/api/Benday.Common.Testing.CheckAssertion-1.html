@@ -5,11 +5,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class MockCreationResult&lt;T&gt; </title>
+      <title>Class CheckAssertion&lt;T&gt; </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class MockCreationResult&lt;T&gt; ">
+      <meta name="title" content="Class CheckAssertion&lt;T&gt; ">
     
-    <meta name="description" content="The result of the creation of an instance of a class with Moq-based mocks.">
+    
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -67,18 +67,21 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Benday.Common.Testing.MockCreationResult`1">
+            <article class="content wrap" id="_content" data-uid="Benday.Common.Testing.CheckAssertion`1">
 
 
 
-  <h1 id="Benday_Common_Testing_MockCreationResult_1" data-uid="Benday.Common.Testing.MockCreationResult`1" class="text-break">Class MockCreationResult&lt;T&gt;</h1>
-  <div class="markdown level0 summary"><p>The result of the creation of an instance of a class with Moq-based mocks.</p>
-</div>
+  <h1 id="Benday_Common_Testing_CheckAssertion_1" data-uid="Benday.Common.Testing.CheckAssertion`1" class="text-break">Class CheckAssertion&lt;T&gt;</h1>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">MockCreationResult&lt;T&gt;</span></div>
+    <div class="level1"><span class="xref">CheckAssertion&lt;T&gt;</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Benday.Common.Testing.ICheckAssertion-1.html">ICheckAssertion</a>&lt;T&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -106,9 +109,9 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Benday.html">Benday</a>.<a class="xref" href="Benday.Common.html">Common</a>.<a class="xref" href="Benday.Common.Testing.html">Testing</a></h6>
   <h6><strong>Assembly</strong>: Benday.Common.Testing.dll</h6>
-  <h5 id="Benday_Common_Testing_MockCreationResult_1_syntax">Syntax</h5>
+  <h5 id="Benday_Common_Testing_CheckAssertion_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MockCreationResult&lt;T&gt; where T : class</code></pre>
+    <pre><code class="lang-csharp hljs">public class CheckAssertion&lt;T&gt; : ICheckAssertion&lt;T&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -121,8 +124,41 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p>The type for the class that was created</p>
-</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/assertions/apiSpec/new?filename=Benday_Common_Testing_CheckAssertion_1__ctor__0_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.CheckAssertion%601.%23ctor(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/assertions/Benday.Common.Testing/CheckAssertion.cs/#L9">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_CheckAssertion_1__ctor_" data-uid="Benday.Common.Testing.CheckAssertion`1.#ctor*"></a>
+  <h4 id="Benday_Common_Testing_CheckAssertion_1__ctor__0_" data-uid="Benday.Common.Testing.CheckAssertion`1.#ctor(`0)">CheckAssertion(T?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CheckAssertion(T? input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -130,19 +166,48 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/benday-inc/Benday.Common/new/assertions/apiSpec/new?filename=Benday_Common_Testing_MockCreationResult_1_Instance.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.MockCreationResult%601.Instance%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/benday-inc/Benday.Common/new/assertions/apiSpec/new?filename=Benday_Common_Testing_CheckAssertion_1_FailureMessage.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.CheckAssertion%601.FailureMessage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/assertions/Benday.Common.Testing/MockCreationResult.cs/#L17">View Source</a>
+    <a href="https://github.com/benday-inc/Benday.Common/blob/assertions/Benday.Common.Testing/CheckAssertion.cs/#L7">View Source</a>
   </span>
-  <a id="Benday_Common_Testing_MockCreationResult_1_Instance_" data-uid="Benday.Common.Testing.MockCreationResult`1.Instance*"></a>
-  <h4 id="Benday_Common_Testing_MockCreationResult_1_Instance" data-uid="Benday.Common.Testing.MockCreationResult`1.Instance">Instance</h4>
-  <div class="markdown level1 summary"><p>The instance of the class that was created. This is typically the system under test.</p>
-</div>
+  <a id="Benday_Common_Testing_CheckAssertion_1_FailureMessage_" data-uid="Benday.Common.Testing.CheckAssertion`1.FailureMessage*"></a>
+  <h4 id="Benday_Common_Testing_CheckAssertion_1_FailureMessage" data-uid="Benday.Common.Testing.CheckAssertion`1.FailureMessage">FailureMessage</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public required T Instance { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string? FailureMessage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/assertions/apiSpec/new?filename=Benday_Common_Testing_CheckAssertion_1_Input.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.CheckAssertion%601.Input%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/assertions/Benday.Common.Testing/CheckAssertion.cs/#L5">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_CheckAssertion_1_Input_" data-uid="Benday.Common.Testing.CheckAssertion`1.Input*"></a>
+  <h4 id="Benday_Common_Testing_CheckAssertion_1_Input" data-uid="Benday.Common.Testing.CheckAssertion`1.Input">Input</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T? Input { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -159,55 +224,40 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/benday-inc/Benday.Common/new/assertions/apiSpec/new?filename=Benday_Common_Testing_MockCreationResult_1_Mocks.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.MockCreationResult%601.Mocks%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/assertions/Benday.Common.Testing/MockCreationResult.cs/#L22">View Source</a>
-  </span>
-  <a id="Benday_Common_Testing_MockCreationResult_1_Mocks_" data-uid="Benday.Common.Testing.MockCreationResult`1.Mocks*"></a>
-  <h4 id="Benday_Common_Testing_MockCreationResult_1_Mocks" data-uid="Benday.Common.Testing.MockCreationResult`1.Mocks">Mocks</h4>
-  <div class="markdown level1 summary"><p>The mocks that were created for the class. This is typically the dependencies of the system under test.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Dictionary&lt;Type, Mock&gt; Mocks { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>, <span class="xref">Mock</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/benday-inc/Benday.Common/new/assertions/apiSpec/new?filename=Benday_Common_Testing_MockCreationResult_1_GetMock__1.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.MockCreationResult%601.GetMock%60%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/benday-inc/Benday.Common/new/assertions/apiSpec/new?filename=Benday_Common_Testing_CheckAssertion_1_WithMessage_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.CheckAssertion%601.WithMessage(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/assertions/Benday.Common.Testing/MockCreationResult.cs/#L44">View Source</a>
+    <a href="https://github.com/benday-inc/Benday.Common/blob/assertions/Benday.Common.Testing/CheckAssertion.cs/#L14">View Source</a>
   </span>
-  <a id="Benday_Common_Testing_MockCreationResult_1_GetMock_" data-uid="Benday.Common.Testing.MockCreationResult`1.GetMock*"></a>
-  <h4 id="Benday_Common_Testing_MockCreationResult_1_GetMock__1" data-uid="Benday.Common.Testing.MockCreationResult`1.GetMock``1">GetMock&lt;TMock&gt;()</h4>
-  <div class="markdown level1 summary"><p>Get a mock of the specified type. If not found, null is returned.</p>
-</div>
+  <a id="Benday_Common_Testing_CheckAssertion_1_WithMessage_" data-uid="Benday.Common.Testing.CheckAssertion`1.WithMessage*"></a>
+  <h4 id="Benday_Common_Testing_CheckAssertion_1_WithMessage_System_String_" data-uid="Benday.Common.Testing.CheckAssertion`1.WithMessage(System.String)">WithMessage(string)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Mock&lt;TMock&gt;? GetMock&lt;TMock&gt;() where TMock : class</code></pre>
+    <pre><code class="lang-csharp hljs">public ICheckAssertion&lt;T&gt; WithMessage(string message)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
     <thead>
@@ -218,95 +268,27 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Mock</span>&lt;TMock&gt;</td>
-        <td><p>The Moq-based mock instance</p>
-</td>
+        <td><a class="xref" href="Benday.Common.Testing.ICheckAssertion-1.html">ICheckAssertion</a>&lt;T&gt;</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">TMock</span></td>
-        <td><p>The type that was mocked</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/benday-inc/Benday.Common/new/assertions/apiSpec/new?filename=Benday_Common_Testing_MockCreationResult_1_GetRequiredMock__1.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.MockCreationResult%601.GetRequiredMock%60%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/assertions/Benday.Common.Testing/MockCreationResult.cs/#L30">View Source</a>
-  </span>
-  <a id="Benday_Common_Testing_MockCreationResult_1_GetRequiredMock_" data-uid="Benday.Common.Testing.MockCreationResult`1.GetRequiredMock*"></a>
-  <h4 id="Benday_Common_Testing_MockCreationResult_1_GetRequiredMock__1" data-uid="Benday.Common.Testing.MockCreationResult`1.GetRequiredMock``1">GetRequiredMock&lt;TMock&gt;()</h4>
-  <div class="markdown level1 summary"><p>Get a mock of the specified type and throw an exception if it is not found.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Mock&lt;TMock&gt; GetRequiredMock&lt;TMock&gt;() where TMock : class</code></pre>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Benday.Common.Testing.ICheckAssertion-1.html">ICheckAssertion&lt;T&gt;</a>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Mock</span>&lt;TMock&gt;</td>
-        <td><p>The mocked dependency</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">TMock</span></td>
-        <td><p>The type that was mocked</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>Throws an exception if not found</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Benday.Common.Testing.CheckExtensions.html#Benday_Common_Testing_CheckExtensions_CheckThat__1___0_">CheckExtensions.CheckThat&lt;T&gt;(T?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Benday.Common.Testing.CheckAssertionExtensions.html#Benday_Common_Testing_CheckAssertionExtensions_Fail__1_Benday_Common_Testing_ICheckAssertion___0__">CheckAssertionExtensions.Fail&lt;T&gt;(ICheckAssertion&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Benday.Common.Testing.CheckAssertionExtensions.html#Benday_Common_Testing_CheckAssertionExtensions_Fail__1_Benday_Common_Testing_ICheckAssertion___0__System_String_">CheckAssertionExtensions.Fail&lt;T&gt;(ICheckAssertion&lt;T&gt;, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Benday.Common.Testing.CheckAssertionExtensions.html#Benday_Common_Testing_CheckAssertionExtensions_IsNotNull__1_Benday_Common_Testing_ICheckAssertion___0__">CheckAssertionExtensions.IsNotNull&lt;T&gt;(ICheckAssertion&lt;T&gt;)</a>
   </div>
 
 </article>
@@ -317,10 +299,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/benday-inc/Benday.Common/new/assertions/apiSpec/new?filename=Benday_Common_Testing_MockCreationResult_1.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.MockCreationResult%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/benday-inc/Benday.Common/new/assertions/apiSpec/new?filename=Benday_Common_Testing_CheckAssertion_1.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.CheckAssertion%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/benday-inc/Benday.Common/blob/assertions/Benday.Common.Testing/MockCreationResult.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/benday-inc/Benday.Common/blob/assertions/Benday.Common.Testing/CheckAssertion.cs/#L3" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

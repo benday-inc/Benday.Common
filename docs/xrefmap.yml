@@ -1287,6 +1287,22 @@ references:
   isSpec: "True"
   fullName: Benday.Common.StringExtensionMethods.EqualsCaseInsensitive
   nameWithType: StringExtensionMethods.EqualsCaseInsensitive
+- uid: Benday.Common.StringExtensionMethods.IsNullOrEmpty(System.String)
+  name: IsNullOrEmpty(string?)
+  href: api/Benday.Common.StringExtensionMethods.html#Benday_Common_StringExtensionMethods_IsNullOrEmpty_System_String_
+  commentId: M:Benday.Common.StringExtensionMethods.IsNullOrEmpty(System.String)
+  name.vb: IsNullOrEmpty(String)
+  fullName: Benday.Common.StringExtensionMethods.IsNullOrEmpty(string?)
+  fullName.vb: Benday.Common.StringExtensionMethods.IsNullOrEmpty(String)
+  nameWithType: StringExtensionMethods.IsNullOrEmpty(string?)
+  nameWithType.vb: StringExtensionMethods.IsNullOrEmpty(String)
+- uid: Benday.Common.StringExtensionMethods.IsNullOrEmpty*
+  name: IsNullOrEmpty
+  href: api/Benday.Common.StringExtensionMethods.html#Benday_Common_StringExtensionMethods_IsNullOrEmpty_
+  commentId: Overload:Benday.Common.StringExtensionMethods.IsNullOrEmpty
+  isSpec: "True"
+  fullName: Benday.Common.StringExtensionMethods.IsNullOrEmpty
+  nameWithType: StringExtensionMethods.IsNullOrEmpty
 - uid: Benday.Common.StringExtensionMethods.IsNullOrWhitespace(System.String)
   name: IsNullOrWhitespace(string?)
   href: api/Benday.Common.StringExtensionMethods.html#Benday_Common_StringExtensionMethods_IsNullOrWhitespace_System_String_
@@ -1389,6 +1405,266 @@ references:
   commentId: N:Benday.Common.Testing
   fullName: Benday.Common.Testing
   nameWithType: Benday.Common.Testing
+- uid: Benday.Common.Testing.CheckAssertionExtensions
+  name: CheckAssertionExtensions
+  href: api/Benday.Common.Testing.CheckAssertionExtensions.html
+  commentId: T:Benday.Common.Testing.CheckAssertionExtensions
+  fullName: Benday.Common.Testing.CheckAssertionExtensions
+  nameWithType: CheckAssertionExtensions
+- uid: Benday.Common.Testing.CheckAssertionExtensions.Fail*
+  name: Fail
+  href: api/Benday.Common.Testing.CheckAssertionExtensions.html#Benday_Common_Testing_CheckAssertionExtensions_Fail_
+  commentId: Overload:Benday.Common.Testing.CheckAssertionExtensions.Fail
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CheckAssertionExtensions.Fail
+  nameWithType: CheckAssertionExtensions.Fail
+- uid: Benday.Common.Testing.CheckAssertionExtensions.Fail``1(Benday.Common.Testing.ICheckAssertion{``0})
+  name: Fail<T>(ICheckAssertion<T>)
+  href: api/Benday.Common.Testing.CheckAssertionExtensions.html#Benday_Common_Testing_CheckAssertionExtensions_Fail__1_Benday_Common_Testing_ICheckAssertion___0__
+  commentId: M:Benday.Common.Testing.CheckAssertionExtensions.Fail``1(Benday.Common.Testing.ICheckAssertion{``0})
+  name.vb: Fail(Of T)(ICheckAssertion(Of T))
+  fullName: Benday.Common.Testing.CheckAssertionExtensions.Fail<T>(Benday.Common.Testing.ICheckAssertion<T>)
+  fullName.vb: Benday.Common.Testing.CheckAssertionExtensions.Fail(Of T)(Benday.Common.Testing.ICheckAssertion(Of T))
+  nameWithType: CheckAssertionExtensions.Fail<T>(ICheckAssertion<T>)
+  nameWithType.vb: CheckAssertionExtensions.Fail(Of T)(ICheckAssertion(Of T))
+- uid: Benday.Common.Testing.CheckAssertionExtensions.Fail``1(Benday.Common.Testing.ICheckAssertion{``0},System.String)
+  name: Fail<T>(ICheckAssertion<T>, string)
+  href: api/Benday.Common.Testing.CheckAssertionExtensions.html#Benday_Common_Testing_CheckAssertionExtensions_Fail__1_Benday_Common_Testing_ICheckAssertion___0__System_String_
+  commentId: M:Benday.Common.Testing.CheckAssertionExtensions.Fail``1(Benday.Common.Testing.ICheckAssertion{``0},System.String)
+  name.vb: Fail(Of T)(ICheckAssertion(Of T), String)
+  fullName: Benday.Common.Testing.CheckAssertionExtensions.Fail<T>(Benday.Common.Testing.ICheckAssertion<T>, string)
+  fullName.vb: Benday.Common.Testing.CheckAssertionExtensions.Fail(Of T)(Benday.Common.Testing.ICheckAssertion(Of T), String)
+  nameWithType: CheckAssertionExtensions.Fail<T>(ICheckAssertion<T>, string)
+  nameWithType.vb: CheckAssertionExtensions.Fail(Of T)(ICheckAssertion(Of T), String)
+- uid: Benday.Common.Testing.CheckAssertionExtensions.IsNotNull*
+  name: IsNotNull
+  href: api/Benday.Common.Testing.CheckAssertionExtensions.html#Benday_Common_Testing_CheckAssertionExtensions_IsNotNull_
+  commentId: Overload:Benday.Common.Testing.CheckAssertionExtensions.IsNotNull
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CheckAssertionExtensions.IsNotNull
+  nameWithType: CheckAssertionExtensions.IsNotNull
+- uid: Benday.Common.Testing.CheckAssertionExtensions.IsNotNullOrEmpty(Benday.Common.Testing.ICheckAssertion{System.String})
+  name: IsNotNullOrEmpty(ICheckAssertion<string>)
+  href: api/Benday.Common.Testing.CheckAssertionExtensions.html#Benday_Common_Testing_CheckAssertionExtensions_IsNotNullOrEmpty_Benday_Common_Testing_ICheckAssertion_System_String__
+  commentId: M:Benday.Common.Testing.CheckAssertionExtensions.IsNotNullOrEmpty(Benday.Common.Testing.ICheckAssertion{System.String})
+  name.vb: IsNotNullOrEmpty(ICheckAssertion(Of String))
+  fullName: Benday.Common.Testing.CheckAssertionExtensions.IsNotNullOrEmpty(Benday.Common.Testing.ICheckAssertion<string>)
+  fullName.vb: Benday.Common.Testing.CheckAssertionExtensions.IsNotNullOrEmpty(Benday.Common.Testing.ICheckAssertion(Of String))
+  nameWithType: CheckAssertionExtensions.IsNotNullOrEmpty(ICheckAssertion<string>)
+  nameWithType.vb: CheckAssertionExtensions.IsNotNullOrEmpty(ICheckAssertion(Of String))
+- uid: Benday.Common.Testing.CheckAssertionExtensions.IsNotNullOrEmpty*
+  name: IsNotNullOrEmpty
+  href: api/Benday.Common.Testing.CheckAssertionExtensions.html#Benday_Common_Testing_CheckAssertionExtensions_IsNotNullOrEmpty_
+  commentId: Overload:Benday.Common.Testing.CheckAssertionExtensions.IsNotNullOrEmpty
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CheckAssertionExtensions.IsNotNullOrEmpty
+  nameWithType: CheckAssertionExtensions.IsNotNullOrEmpty
+- uid: Benday.Common.Testing.CheckAssertionExtensions.IsNotNull``1(Benday.Common.Testing.ICheckAssertion{``0})
+  name: IsNotNull<T>(ICheckAssertion<T>)
+  href: api/Benday.Common.Testing.CheckAssertionExtensions.html#Benday_Common_Testing_CheckAssertionExtensions_IsNotNull__1_Benday_Common_Testing_ICheckAssertion___0__
+  commentId: M:Benday.Common.Testing.CheckAssertionExtensions.IsNotNull``1(Benday.Common.Testing.ICheckAssertion{``0})
+  name.vb: IsNotNull(Of T)(ICheckAssertion(Of T))
+  fullName: Benday.Common.Testing.CheckAssertionExtensions.IsNotNull<T>(Benday.Common.Testing.ICheckAssertion<T>)
+  fullName.vb: Benday.Common.Testing.CheckAssertionExtensions.IsNotNull(Of T)(Benday.Common.Testing.ICheckAssertion(Of T))
+  nameWithType: CheckAssertionExtensions.IsNotNull<T>(ICheckAssertion<T>)
+  nameWithType.vb: CheckAssertionExtensions.IsNotNull(Of T)(ICheckAssertion(Of T))
+- uid: Benday.Common.Testing.CheckAssertionFailureException
+  name: CheckAssertionFailureException
+  href: api/Benday.Common.Testing.CheckAssertionFailureException.html
+  commentId: T:Benday.Common.Testing.CheckAssertionFailureException
+  fullName: Benday.Common.Testing.CheckAssertionFailureException
+  nameWithType: CheckAssertionFailureException
+- uid: Benday.Common.Testing.CheckAssertionFailureException.#ctor(System.String)
+  name: CheckAssertionFailureException(string)
+  href: api/Benday.Common.Testing.CheckAssertionFailureException.html#Benday_Common_Testing_CheckAssertionFailureException__ctor_System_String_
+  commentId: M:Benday.Common.Testing.CheckAssertionFailureException.#ctor(System.String)
+  name.vb: New(String)
+  fullName: Benday.Common.Testing.CheckAssertionFailureException.CheckAssertionFailureException(string)
+  fullName.vb: Benday.Common.Testing.CheckAssertionFailureException.New(String)
+  nameWithType: CheckAssertionFailureException.CheckAssertionFailureException(string)
+  nameWithType.vb: CheckAssertionFailureException.New(String)
+- uid: Benday.Common.Testing.CheckAssertionFailureException.#ctor(System.String,System.String,System.String)
+  name: CheckAssertionFailureException(string, string, string)
+  href: api/Benday.Common.Testing.CheckAssertionFailureException.html#Benday_Common_Testing_CheckAssertionFailureException__ctor_System_String_System_String_System_String_
+  commentId: M:Benday.Common.Testing.CheckAssertionFailureException.#ctor(System.String,System.String,System.String)
+  name.vb: New(String, String, String)
+  fullName: Benday.Common.Testing.CheckAssertionFailureException.CheckAssertionFailureException(string, string, string)
+  fullName.vb: Benday.Common.Testing.CheckAssertionFailureException.New(String, String, String)
+  nameWithType: CheckAssertionFailureException.CheckAssertionFailureException(string, string, string)
+  nameWithType.vb: CheckAssertionFailureException.New(String, String, String)
+- uid: Benday.Common.Testing.CheckAssertionFailureException.#ctor*
+  name: CheckAssertionFailureException
+  href: api/Benday.Common.Testing.CheckAssertionFailureException.html#Benday_Common_Testing_CheckAssertionFailureException__ctor_
+  commentId: Overload:Benday.Common.Testing.CheckAssertionFailureException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Common.Testing.CheckAssertionFailureException.CheckAssertionFailureException
+  fullName.vb: Benday.Common.Testing.CheckAssertionFailureException.New
+  nameWithType: CheckAssertionFailureException.CheckAssertionFailureException
+  nameWithType.vb: CheckAssertionFailureException.New
+- uid: Benday.Common.Testing.CheckAssertion`1
+  name: CheckAssertion<T>
+  href: api/Benday.Common.Testing.CheckAssertion-1.html
+  commentId: T:Benday.Common.Testing.CheckAssertion`1
+  name.vb: CheckAssertion(Of T)
+  fullName: Benday.Common.Testing.CheckAssertion<T>
+  fullName.vb: Benday.Common.Testing.CheckAssertion(Of T)
+  nameWithType: CheckAssertion<T>
+  nameWithType.vb: CheckAssertion(Of T)
+- uid: Benday.Common.Testing.CheckAssertion`1.#ctor(`0)
+  name: CheckAssertion(T?)
+  href: api/Benday.Common.Testing.CheckAssertion-1.html#Benday_Common_Testing_CheckAssertion_1__ctor__0_
+  commentId: M:Benday.Common.Testing.CheckAssertion`1.#ctor(`0)
+  name.vb: New(T)
+  fullName: Benday.Common.Testing.CheckAssertion<T>.CheckAssertion(T?)
+  fullName.vb: Benday.Common.Testing.CheckAssertion(Of T).New(T)
+  nameWithType: CheckAssertion<T>.CheckAssertion(T?)
+  nameWithType.vb: CheckAssertion(Of T).New(T)
+- uid: Benday.Common.Testing.CheckAssertion`1.#ctor*
+  name: CheckAssertion
+  href: api/Benday.Common.Testing.CheckAssertion-1.html#Benday_Common_Testing_CheckAssertion_1__ctor_
+  commentId: Overload:Benday.Common.Testing.CheckAssertion`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Common.Testing.CheckAssertion<T>.CheckAssertion
+  fullName.vb: Benday.Common.Testing.CheckAssertion(Of T).New
+  nameWithType: CheckAssertion<T>.CheckAssertion
+  nameWithType.vb: CheckAssertion(Of T).New
+- uid: Benday.Common.Testing.CheckAssertion`1.FailureMessage
+  name: FailureMessage
+  href: api/Benday.Common.Testing.CheckAssertion-1.html#Benday_Common_Testing_CheckAssertion_1_FailureMessage
+  commentId: P:Benday.Common.Testing.CheckAssertion`1.FailureMessage
+  fullName: Benday.Common.Testing.CheckAssertion<T>.FailureMessage
+  fullName.vb: Benday.Common.Testing.CheckAssertion(Of T).FailureMessage
+  nameWithType: CheckAssertion<T>.FailureMessage
+  nameWithType.vb: CheckAssertion(Of T).FailureMessage
+- uid: Benday.Common.Testing.CheckAssertion`1.FailureMessage*
+  name: FailureMessage
+  href: api/Benday.Common.Testing.CheckAssertion-1.html#Benday_Common_Testing_CheckAssertion_1_FailureMessage_
+  commentId: Overload:Benday.Common.Testing.CheckAssertion`1.FailureMessage
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CheckAssertion<T>.FailureMessage
+  fullName.vb: Benday.Common.Testing.CheckAssertion(Of T).FailureMessage
+  nameWithType: CheckAssertion<T>.FailureMessage
+  nameWithType.vb: CheckAssertion(Of T).FailureMessage
+- uid: Benday.Common.Testing.CheckAssertion`1.Input
+  name: Input
+  href: api/Benday.Common.Testing.CheckAssertion-1.html#Benday_Common_Testing_CheckAssertion_1_Input
+  commentId: P:Benday.Common.Testing.CheckAssertion`1.Input
+  fullName: Benday.Common.Testing.CheckAssertion<T>.Input
+  fullName.vb: Benday.Common.Testing.CheckAssertion(Of T).Input
+  nameWithType: CheckAssertion<T>.Input
+  nameWithType.vb: CheckAssertion(Of T).Input
+- uid: Benday.Common.Testing.CheckAssertion`1.Input*
+  name: Input
+  href: api/Benday.Common.Testing.CheckAssertion-1.html#Benday_Common_Testing_CheckAssertion_1_Input_
+  commentId: Overload:Benday.Common.Testing.CheckAssertion`1.Input
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CheckAssertion<T>.Input
+  fullName.vb: Benday.Common.Testing.CheckAssertion(Of T).Input
+  nameWithType: CheckAssertion<T>.Input
+  nameWithType.vb: CheckAssertion(Of T).Input
+- uid: Benday.Common.Testing.CheckAssertion`1.WithMessage(System.String)
+  name: WithMessage(string)
+  href: api/Benday.Common.Testing.CheckAssertion-1.html#Benday_Common_Testing_CheckAssertion_1_WithMessage_System_String_
+  commentId: M:Benday.Common.Testing.CheckAssertion`1.WithMessage(System.String)
+  name.vb: WithMessage(String)
+  fullName: Benday.Common.Testing.CheckAssertion<T>.WithMessage(string)
+  fullName.vb: Benday.Common.Testing.CheckAssertion(Of T).WithMessage(String)
+  nameWithType: CheckAssertion<T>.WithMessage(string)
+  nameWithType.vb: CheckAssertion(Of T).WithMessage(String)
+- uid: Benday.Common.Testing.CheckAssertion`1.WithMessage*
+  name: WithMessage
+  href: api/Benday.Common.Testing.CheckAssertion-1.html#Benday_Common_Testing_CheckAssertion_1_WithMessage_
+  commentId: Overload:Benday.Common.Testing.CheckAssertion`1.WithMessage
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CheckAssertion<T>.WithMessage
+  fullName.vb: Benday.Common.Testing.CheckAssertion(Of T).WithMessage
+  nameWithType: CheckAssertion<T>.WithMessage
+  nameWithType.vb: CheckAssertion(Of T).WithMessage
+- uid: Benday.Common.Testing.CheckExtensions
+  name: CheckExtensions
+  href: api/Benday.Common.Testing.CheckExtensions.html
+  commentId: T:Benday.Common.Testing.CheckExtensions
+  fullName: Benday.Common.Testing.CheckExtensions
+  nameWithType: CheckExtensions
+- uid: Benday.Common.Testing.CheckExtensions.CheckThat*
+  name: CheckThat
+  href: api/Benday.Common.Testing.CheckExtensions.html#Benday_Common_Testing_CheckExtensions_CheckThat_
+  commentId: Overload:Benday.Common.Testing.CheckExtensions.CheckThat
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CheckExtensions.CheckThat
+  nameWithType: CheckExtensions.CheckThat
+- uid: Benday.Common.Testing.CheckExtensions.CheckThat``1(``0)
+  name: CheckThat<T>(T?)
+  href: api/Benday.Common.Testing.CheckExtensions.html#Benday_Common_Testing_CheckExtensions_CheckThat__1___0_
+  commentId: M:Benday.Common.Testing.CheckExtensions.CheckThat``1(``0)
+  name.vb: CheckThat(Of T)(T)
+  fullName: Benday.Common.Testing.CheckExtensions.CheckThat<T>(T?)
+  fullName.vb: Benday.Common.Testing.CheckExtensions.CheckThat(Of T)(T)
+  nameWithType: CheckExtensions.CheckThat<T>(T?)
+  nameWithType.vb: CheckExtensions.CheckThat(Of T)(T)
+- uid: Benday.Common.Testing.ICheckAssertion`1
+  name: ICheckAssertion<T>
+  href: api/Benday.Common.Testing.ICheckAssertion-1.html
+  commentId: T:Benday.Common.Testing.ICheckAssertion`1
+  name.vb: ICheckAssertion(Of T)
+  fullName: Benday.Common.Testing.ICheckAssertion<T>
+  fullName.vb: Benday.Common.Testing.ICheckAssertion(Of T)
+  nameWithType: ICheckAssertion<T>
+  nameWithType.vb: ICheckAssertion(Of T)
+- uid: Benday.Common.Testing.ICheckAssertion`1.FailureMessage
+  name: FailureMessage
+  href: api/Benday.Common.Testing.ICheckAssertion-1.html#Benday_Common_Testing_ICheckAssertion_1_FailureMessage
+  commentId: P:Benday.Common.Testing.ICheckAssertion`1.FailureMessage
+  fullName: Benday.Common.Testing.ICheckAssertion<T>.FailureMessage
+  fullName.vb: Benday.Common.Testing.ICheckAssertion(Of T).FailureMessage
+  nameWithType: ICheckAssertion<T>.FailureMessage
+  nameWithType.vb: ICheckAssertion(Of T).FailureMessage
+- uid: Benday.Common.Testing.ICheckAssertion`1.FailureMessage*
+  name: FailureMessage
+  href: api/Benday.Common.Testing.ICheckAssertion-1.html#Benday_Common_Testing_ICheckAssertion_1_FailureMessage_
+  commentId: Overload:Benday.Common.Testing.ICheckAssertion`1.FailureMessage
+  isSpec: "True"
+  fullName: Benday.Common.Testing.ICheckAssertion<T>.FailureMessage
+  fullName.vb: Benday.Common.Testing.ICheckAssertion(Of T).FailureMessage
+  nameWithType: ICheckAssertion<T>.FailureMessage
+  nameWithType.vb: ICheckAssertion(Of T).FailureMessage
+- uid: Benday.Common.Testing.ICheckAssertion`1.Input
+  name: Input
+  href: api/Benday.Common.Testing.ICheckAssertion-1.html#Benday_Common_Testing_ICheckAssertion_1_Input
+  commentId: P:Benday.Common.Testing.ICheckAssertion`1.Input
+  fullName: Benday.Common.Testing.ICheckAssertion<T>.Input
+  fullName.vb: Benday.Common.Testing.ICheckAssertion(Of T).Input
+  nameWithType: ICheckAssertion<T>.Input
+  nameWithType.vb: ICheckAssertion(Of T).Input
+- uid: Benday.Common.Testing.ICheckAssertion`1.Input*
+  name: Input
+  href: api/Benday.Common.Testing.ICheckAssertion-1.html#Benday_Common_Testing_ICheckAssertion_1_Input_
+  commentId: Overload:Benday.Common.Testing.ICheckAssertion`1.Input
+  isSpec: "True"
+  fullName: Benday.Common.Testing.ICheckAssertion<T>.Input
+  fullName.vb: Benday.Common.Testing.ICheckAssertion(Of T).Input
+  nameWithType: ICheckAssertion<T>.Input
+  nameWithType.vb: ICheckAssertion(Of T).Input
+- uid: Benday.Common.Testing.ICheckAssertion`1.WithMessage(System.String)
+  name: WithMessage(string)
+  href: api/Benday.Common.Testing.ICheckAssertion-1.html#Benday_Common_Testing_ICheckAssertion_1_WithMessage_System_String_
+  commentId: M:Benday.Common.Testing.ICheckAssertion`1.WithMessage(System.String)
+  name.vb: WithMessage(String)
+  fullName: Benday.Common.Testing.ICheckAssertion<T>.WithMessage(string)
+  fullName.vb: Benday.Common.Testing.ICheckAssertion(Of T).WithMessage(String)
+  nameWithType: ICheckAssertion<T>.WithMessage(string)
+  nameWithType.vb: ICheckAssertion(Of T).WithMessage(String)
+- uid: Benday.Common.Testing.ICheckAssertion`1.WithMessage*
+  name: WithMessage
+  href: api/Benday.Common.Testing.ICheckAssertion-1.html#Benday_Common_Testing_ICheckAssertion_1_WithMessage_
+  commentId: Overload:Benday.Common.Testing.ICheckAssertion`1.WithMessage
+  isSpec: "True"
+  fullName: Benday.Common.Testing.ICheckAssertion<T>.WithMessage
+  fullName.vb: Benday.Common.Testing.ICheckAssertion(Of T).WithMessage
+  nameWithType: ICheckAssertion<T>.WithMessage
+  nameWithType.vb: ICheckAssertion(Of T).WithMessage
 - uid: Benday.Common.Testing.MockCreationResult`1
   name: MockCreationResult<T>
   href: api/Benday.Common.Testing.MockCreationResult-1.html
