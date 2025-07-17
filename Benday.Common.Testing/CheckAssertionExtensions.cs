@@ -14,7 +14,7 @@ public static class CheckAssertionExtensions
             message.IsNullOrWhitespace() == false)
         {
             Fail(check, message!);
-        }        
+        }
         else
         {
             Fail(check, "Check assertion failed.");
@@ -46,6 +46,21 @@ public static class CheckAssertionExtensions
         if (string.IsNullOrEmpty(check.Input))
         {
             check.FailWithOptionalMessage("String is empty");
+        }
+
+        return check;
+    }
+    
+    public static ICheckAssertion<string> IsNotNullOrWhitespace(this ICheckAssertion<string> check)
+    {
+        if (check.Input == null)
+        {
+            check.FailWithOptionalMessage("Input is null.");
+        }
+
+        if (string.IsNullOrWhiteSpace(check.Input))
+        {
+            check.FailWithOptionalMessage("String is empty or whitespace");
         }
 
         return check;

@@ -11,7 +11,7 @@ public class CheckThatForStringsFixture : TestClassBase
 {
     public CheckThatForStringsFixture(ITestOutputHelper output) : base(output)
     {
-        
+
     }
 
     private string? ValueToTest { get; set; } = null;
@@ -36,13 +36,6 @@ public class CheckThatForStringsFixture : TestClassBase
     }
 
     [Fact]
-    public void CheckThat_Null_IsNotNullOrEmpty()
-    {
-        ValueToTest = null;
-        Assert.Throws<CheckAssertionFailureException>(() => SystemUnderTest.IsNotNullOrEmpty());
-    }
-
-    [Fact]
     public void CheckThat_StringIsNotNullOrEmpty()
     {
         ValueToTest = "Hello, World!";
@@ -50,9 +43,23 @@ public class CheckThatForStringsFixture : TestClassBase
     }
 
     [Fact]
-    public void CheckThat_StringIsNullOrEmpty_ThrowsArgumentException()
+    public void CheckThat_Null_IsNotNullOrEmpty()
+    {
+        ValueToTest = null;
+        Assert.Throws<CheckAssertionFailureException>(() => SystemUnderTest.IsNotNullOrEmpty());
+    }
+
+    [Fact]
+    public void CheckThat_EmptyString_IsNotNullOrEmpty()
     {
         string? input = "";
         Assert.Throws<CheckAssertionFailureException>(() => input.CheckThat().IsNotNullOrEmpty());
+    }
+    
+    [Fact]
+    public void CheckThat_WhitespaceString_IsNotNullOrWhitespace()
+    {
+        string? input = "   ";
+        Assert.Throws<CheckAssertionFailureException>(() => input.CheckThat().IsNotNullOrWhitespace());
     }
 }
