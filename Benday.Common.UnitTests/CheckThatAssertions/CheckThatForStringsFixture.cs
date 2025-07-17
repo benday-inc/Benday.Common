@@ -91,6 +91,33 @@ public class CheckThatForStringsFixture : TestClassBase
     }
 
     [Fact]
+    public void CheckThat_IsEqualCaseInsensitiveTo_Equal()
+    {
+        // arrange
+        var input = "asdf1234";
+        var value2 = "ASDF1234";
+
+        // act
+        input.CheckThat().IsEqualCaseInsensitiveTo(value2);
+
+        // assert
+        // this worked if we didn't get an exception
+    }
+
+    [Fact]
+    public void CheckThat_IsEqualCaseInsensitiveTo_NotEqual()
+    {
+        // arrange
+        var input = "asdf1234";
+        var value2 = "ASDF1234asdf";
+
+        // act & assert
+        Assert.Throws<CheckAssertionFailureException>(() =>
+            input.CheckThat().IsEqualCaseInsensitiveTo(value2)
+        );
+    }
+
+    [Fact]
     public void CheckThat_AreNotEqual_Equal()
     {
         // arrange

@@ -91,6 +91,20 @@ public static class CheckAssertionExtensions
         return check;
     }
 
+    public static ICheckAssertion<string> IsEqualCaseInsensitiveTo(this ICheckAssertion<string> check,
+        string? expected,
+        string? userFailureMessage = null)
+    {
+        if (string.Equals(check.Input, expected, StringComparison.CurrentCultureIgnoreCase) == false)
+        {
+            check.FailWithOptionalMessage(
+                userFailureMessage,
+                $"Values should be equal. Expected '{expected}' but actual value was '{check.Input}'");
+        }
+
+        return check;
+    }
+
     public static ICheckAssertion<string> IsNotEqualTo(this ICheckAssertion<string> check,
         string? expected,
         string? userFailureMessage = null)
