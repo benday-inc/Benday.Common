@@ -312,6 +312,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.ArrayAssertionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.ArrayAssertionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.ArrayAssertionExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.CheckArrayAssertion-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.CheckArrayAssertion-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.CheckArrayAssertion<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Benday.Common.Testing.CheckAssertion-1.yml",
       "output": {
         ".html": {
@@ -354,6 +382,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.CheckAssertionForNullableType-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.CheckAssertionForNullableType-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.CheckAssertionForNullableType<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.CheckCollectionAssertion-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.CheckCollectionAssertion-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.CheckCollectionAssertion<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Benday.Common.Testing.CheckExtensions.yml",
       "output": {
         ".html": {
@@ -368,6 +424,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.ICheckArrayAssertion-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.ICheckArrayAssertion-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.ICheckArrayAssertion<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Benday.Common.Testing.ICheckAssertion-1.yml",
       "output": {
         ".html": {
@@ -378,6 +448,76 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Benday.Common.Testing.ICheckAssertion<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.ICheckAssertionForNullableType-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.ICheckAssertionForNullableType-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.ICheckAssertionForNullableType<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.ICheckCollectionAssertion-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.ICheckCollectionAssertion-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.ICheckCollectionAssertion<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.IEnumerableAssertionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.IEnumerableAssertionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.IEnumerableAssertionExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.IListAssertionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.IListAssertionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.IListAssertionExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.ListAssertionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.ListAssertionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.ListAssertionExtensions",
       "Summary": null
     },
     {
@@ -407,6 +547,34 @@
       "IsMRef": true,
       "Title": "Benday.Common.Testing.MockUtility",
       "Summary": "<p sourcefile=\"api/Benday.Common.Testing.MockUtility.yml\" sourcestartlinenumber=\"1\">This class is used to create instances of classes using reflection and Moq.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.NullableStringAssertionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.NullableStringAssertionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.NullableStringAssertionExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.StringAssertionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.StringAssertionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.StringAssertionExtensions",
+      "Summary": null
     },
     {
       "type": "ManagedReference",

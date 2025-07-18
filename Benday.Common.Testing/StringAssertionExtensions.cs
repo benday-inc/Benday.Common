@@ -32,6 +32,25 @@ public static class StringAssertionExtensions
         return check;
     }
 
+    public static ICheckAssertionForNullableType<string?[]> AllItemsAreNotNull(
+        this ICheckAssertionForNullableType<string?[]> check)
+    {
+        if (check.Input == null)
+        {
+            check.FailWithOptionalMessage("Actual array is null.");
+        }
+
+        foreach (var item in check.Input)
+        {
+            if (item is null)
+            {
+                check.FailWithOptionalMessage("Expected all items to be non-null.");
+            }
+        }
+
+        return check;
+    }
+
     public static ICheckAssertion<string> IsNotEqualTo(this ICheckAssertion<string> check,
         string? expected,
         string? userFailureMessage = null)

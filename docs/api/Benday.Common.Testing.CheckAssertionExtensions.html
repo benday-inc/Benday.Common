@@ -113,18 +113,18 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/benday-inc/Benday.Common/new/assertions/apiSpec/new?filename=Benday_Common_Testing_CheckAssertionExtensions_Fail__1_Benday_Common_Testing_ICheckAssertion___0__.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.CheckAssertionExtensions.Fail%60%601(Benday.Common.Testing.ICheckAssertion%7B%60%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/benday-inc/Benday.Common/new/assertions/apiSpec/new?filename=Benday_Common_Testing_CheckAssertionExtensions_FailWithOptionalMessage__1_Benday_Common_Testing_ICheckAssertion___0__System_String_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.CheckAssertionExtensions.FailWithOptionalMessage%60%601(Benday.Common.Testing.ICheckAssertion%7B%60%600%7D%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/assertions/Benday.Common.Testing/CheckAssertionExtensions.cs/#L7">View Source</a>
+    <a href="https://github.com/benday-inc/Benday.Common/blob/assertions/Benday.Common.Testing/CheckAssertionExtensions.cs/#L10">View Source</a>
   </span>
-  <a id="Benday_Common_Testing_CheckAssertionExtensions_Fail_" data-uid="Benday.Common.Testing.CheckAssertionExtensions.Fail*"></a>
-  <h4 id="Benday_Common_Testing_CheckAssertionExtensions_Fail__1_Benday_Common_Testing_ICheckAssertion___0__" data-uid="Benday.Common.Testing.CheckAssertionExtensions.Fail``1(Benday.Common.Testing.ICheckAssertion{``0})">Fail&lt;T&gt;(ICheckAssertion&lt;T&gt;)</h4>
+  <a id="Benday_Common_Testing_CheckAssertionExtensions_FailWithOptionalMessage_" data-uid="Benday.Common.Testing.CheckAssertionExtensions.FailWithOptionalMessage*"></a>
+  <h4 id="Benday_Common_Testing_CheckAssertionExtensions_FailWithOptionalMessage__1_Benday_Common_Testing_ICheckAssertion___0__System_String_System_String_" data-uid="Benday.Common.Testing.CheckAssertionExtensions.FailWithOptionalMessage``1(Benday.Common.Testing.ICheckAssertion{``0},System.String,System.String)">FailWithOptionalMessage&lt;T&gt;(ICheckAssertion&lt;T&gt;, string?, string)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Fail&lt;T&gt;(this ICheckAssertion&lt;T&gt; check)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void FailWithOptionalMessage&lt;T&gt;(this ICheckAssertion&lt;T&gt; check, string? userFailureMessage = null, string assertionDefaultMessage = &quot;Check assertion failed.&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -139,6 +139,16 @@
       <tr>
         <td><a class="xref" href="Benday.Common.Testing.ICheckAssertion-1.html">ICheckAssertion</a>&lt;T&gt;</td>
         <td><span class="parametername">check</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">userFailureMessage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">assertionDefaultMessage</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -163,7 +173,7 @@
     <a href="https://github.com/benday-inc/Benday.Common/new/assertions/apiSpec/new?filename=Benday_Common_Testing_CheckAssertionExtensions_Fail__1_Benday_Common_Testing_ICheckAssertion___0__System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.CheckAssertionExtensions.Fail%60%601(Benday.Common.Testing.ICheckAssertion%7B%60%600%7D%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/assertions/Benday.Common.Testing/CheckAssertionExtensions.cs/#L19">View Source</a>
+    <a href="https://github.com/benday-inc/Benday.Common/blob/assertions/Benday.Common.Testing/CheckAssertionExtensions.cs/#L33">View Source</a>
   </span>
   <a id="Benday_Common_Testing_CheckAssertionExtensions_Fail_" data-uid="Benday.Common.Testing.CheckAssertionExtensions.Fail*"></a>
   <h4 id="Benday_Common_Testing_CheckAssertionExtensions_Fail__1_Benday_Common_Testing_ICheckAssertion___0__System_String_" data-uid="Benday.Common.Testing.CheckAssertionExtensions.Fail``1(Benday.Common.Testing.ICheckAssertion{``0},System.String)">Fail&lt;T&gt;(ICheckAssertion&lt;T&gt;, string)</h4>
@@ -212,65 +222,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/benday-inc/Benday.Common/new/assertions/apiSpec/new?filename=Benday_Common_Testing_CheckAssertionExtensions_IsNotNullOrEmpty_Benday_Common_Testing_ICheckAssertion_System_String__.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.CheckAssertionExtensions.IsNotNullOrEmpty(Benday.Common.Testing.ICheckAssertion%7BSystem.String%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/benday-inc/Benday.Common/new/assertions/apiSpec/new?filename=Benday_Common_Testing_CheckAssertionExtensions_IsNotNull__1_Benday_Common_Testing_ICheckAssertion___0__System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.CheckAssertionExtensions.IsNotNull%60%601(Benday.Common.Testing.ICheckAssertion%7B%60%600%7D%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/assertions/Benday.Common.Testing/CheckAssertionExtensions.cs/#L34">View Source</a>
-  </span>
-  <a id="Benday_Common_Testing_CheckAssertionExtensions_IsNotNullOrEmpty_" data-uid="Benday.Common.Testing.CheckAssertionExtensions.IsNotNullOrEmpty*"></a>
-  <h4 id="Benday_Common_Testing_CheckAssertionExtensions_IsNotNullOrEmpty_Benday_Common_Testing_ICheckAssertion_System_String__" data-uid="Benday.Common.Testing.CheckAssertionExtensions.IsNotNullOrEmpty(Benday.Common.Testing.ICheckAssertion{System.String})">IsNotNullOrEmpty(ICheckAssertion&lt;string&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ICheckAssertion&lt;string&gt; IsNotNullOrEmpty(this ICheckAssertion&lt;string&gt; check)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Benday.Common.Testing.ICheckAssertion-1.html">ICheckAssertion</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
-        <td><span class="parametername">check</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Benday.Common.Testing.ICheckAssertion-1.html">ICheckAssertion</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/benday-inc/Benday.Common/new/assertions/apiSpec/new?filename=Benday_Common_Testing_CheckAssertionExtensions_IsNotNull__1_Benday_Common_Testing_ICheckAssertion___0__.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.CheckAssertionExtensions.IsNotNull%60%601(Benday.Common.Testing.ICheckAssertion%7B%60%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/assertions/Benday.Common.Testing/CheckAssertionExtensions.cs/#L24">View Source</a>
+    <a href="https://github.com/benday-inc/Benday.Common/blob/assertions/Benday.Common.Testing/CheckAssertionExtensions.cs/#L39">View Source</a>
   </span>
   <a id="Benday_Common_Testing_CheckAssertionExtensions_IsNotNull_" data-uid="Benday.Common.Testing.CheckAssertionExtensions.IsNotNull*"></a>
-  <h4 id="Benday_Common_Testing_CheckAssertionExtensions_IsNotNull__1_Benday_Common_Testing_ICheckAssertion___0__" data-uid="Benday.Common.Testing.CheckAssertionExtensions.IsNotNull``1(Benday.Common.Testing.ICheckAssertion{``0})">IsNotNull&lt;T&gt;(ICheckAssertion&lt;T&gt;)</h4>
+  <h4 id="Benday_Common_Testing_CheckAssertionExtensions_IsNotNull__1_Benday_Common_Testing_ICheckAssertion___0__System_String_" data-uid="Benday.Common.Testing.CheckAssertionExtensions.IsNotNull``1(Benday.Common.Testing.ICheckAssertion{``0},System.String)">IsNotNull&lt;T&gt;(ICheckAssertion&lt;T&gt;, string?)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ICheckAssertion&lt;T&gt; IsNotNull&lt;T&gt;(this ICheckAssertion&lt;T&gt; check)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ICheckAssertion&lt;T&gt; IsNotNull&lt;T&gt;(this ICheckAssertion&lt;T&gt; check, string? userFailureMessage = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -285,6 +248,222 @@
       <tr>
         <td><a class="xref" href="Benday.Common.Testing.ICheckAssertion-1.html">ICheckAssertion</a>&lt;T&gt;</td>
         <td><span class="parametername">check</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">userFailureMessage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.ICheckAssertion-1.html">ICheckAssertion</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/assertions/apiSpec/new?filename=Benday_Common_Testing_CheckAssertionExtensions_IsNotTheSameAs__1_Benday_Common_Testing_ICheckAssertion___0____0_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.CheckAssertionExtensions.IsNotTheSameAs%60%601(Benday.Common.Testing.ICheckAssertion%7B%60%600%7D%2C%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/assertions/Benday.Common.Testing/CheckAssertionExtensions.cs/#L75">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_CheckAssertionExtensions_IsNotTheSameAs_" data-uid="Benday.Common.Testing.CheckAssertionExtensions.IsNotTheSameAs*"></a>
+  <h4 id="Benday_Common_Testing_CheckAssertionExtensions_IsNotTheSameAs__1_Benday_Common_Testing_ICheckAssertion___0____0_System_String_" data-uid="Benday.Common.Testing.CheckAssertionExtensions.IsNotTheSameAs``1(Benday.Common.Testing.ICheckAssertion{``0},``0,System.String)">IsNotTheSameAs&lt;T&gt;(ICheckAssertion&lt;T&gt;, T?, string?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ICheckAssertion&lt;T&gt; IsNotTheSameAs&lt;T&gt;(this ICheckAssertion&lt;T&gt; check, T? expected, string? userFailureMessage = null) where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.ICheckAssertion-1.html">ICheckAssertion</a>&lt;T&gt;</td>
+        <td><span class="parametername">check</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">expected</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">userFailureMessage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.ICheckAssertion-1.html">ICheckAssertion</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/assertions/apiSpec/new?filename=Benday_Common_Testing_CheckAssertionExtensions_IsNull__1_Benday_Common_Testing_ICheckAssertion___0__System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.CheckAssertionExtensions.IsNull%60%601(Benday.Common.Testing.ICheckAssertion%7B%60%600%7D%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/assertions/Benday.Common.Testing/CheckAssertionExtensions.cs/#L50">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_CheckAssertionExtensions_IsNull_" data-uid="Benday.Common.Testing.CheckAssertionExtensions.IsNull*"></a>
+  <h4 id="Benday_Common_Testing_CheckAssertionExtensions_IsNull__1_Benday_Common_Testing_ICheckAssertion___0__System_String_" data-uid="Benday.Common.Testing.CheckAssertionExtensions.IsNull``1(Benday.Common.Testing.ICheckAssertion{``0},System.String)">IsNull&lt;T&gt;(ICheckAssertion&lt;T&gt;, string?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ICheckAssertion&lt;T&gt; IsNull&lt;T&gt;(this ICheckAssertion&lt;T&gt; check, string? userFailureMessage = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.ICheckAssertion-1.html">ICheckAssertion</a>&lt;T&gt;</td>
+        <td><span class="parametername">check</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">userFailureMessage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.ICheckAssertion-1.html">ICheckAssertion</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/assertions/apiSpec/new?filename=Benday_Common_Testing_CheckAssertionExtensions_IsTheSameAs__1_Benday_Common_Testing_ICheckAssertion___0____0_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.CheckAssertionExtensions.IsTheSameAs%60%601(Benday.Common.Testing.ICheckAssertion%7B%60%600%7D%2C%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/assertions/Benday.Common.Testing/CheckAssertionExtensions.cs/#L61">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_CheckAssertionExtensions_IsTheSameAs_" data-uid="Benday.Common.Testing.CheckAssertionExtensions.IsTheSameAs*"></a>
+  <h4 id="Benday_Common_Testing_CheckAssertionExtensions_IsTheSameAs__1_Benday_Common_Testing_ICheckAssertion___0____0_System_String_" data-uid="Benday.Common.Testing.CheckAssertionExtensions.IsTheSameAs``1(Benday.Common.Testing.ICheckAssertion{``0},``0,System.String)">IsTheSameAs&lt;T&gt;(ICheckAssertion&lt;T&gt;, T?, string?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ICheckAssertion&lt;T&gt; IsTheSameAs&lt;T&gt;(this ICheckAssertion&lt;T&gt; check, T? expected, string? userFailureMessage = null) where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.ICheckAssertion-1.html">ICheckAssertion</a>&lt;T&gt;</td>
+        <td><span class="parametername">check</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">expected</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">userFailureMessage</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -331,7 +510,7 @@
                     <a href="https://github.com/benday-inc/Benday.Common/new/assertions/apiSpec/new?filename=Benday_Common_Testing_CheckAssertionExtensions.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.CheckAssertionExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/benday-inc/Benday.Common/blob/assertions/Benday.Common.Testing/CheckAssertionExtensions.cs/#L5" class="contribution-link">View Source</a>
+                    <a href="https://github.com/benday-inc/Benday.Common/blob/assertions/Benday.Common.Testing/CheckAssertionExtensions.cs/#L8" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -129,8 +129,9 @@ public class CheckThatForArraysFixture : TestClassBase
     public void CheckThat_AllItemsAreNotNull_False()
     {
         var input = new string?[] { "a", null, "c" };
+        var check = input.CheckThatNullable();
         Assert.Throws<CheckAssertionFailureException>(() =>
-            input.CheckThat().AllItemsAreNotNull()
+            check.AllItemsAreNotNull()
         );
     }
 

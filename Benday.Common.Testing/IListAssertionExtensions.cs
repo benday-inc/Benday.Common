@@ -3,41 +3,48 @@ namespace Benday.Common.Testing;
 public static class IListAssertionExtensions
 {
     public static ICheckCollectionAssertion<IList<T>> IsEqualTo<T>(
-        this ICheckCollectionAssertion<IList<T>> check, IList<T> expected)
+        this ICheckCollectionAssertion<IList<T>> check, IList<T> expected,
+            string? userFailureMessage = null)
     {
         if (check.Input == null)
         {
-            check.FailWithOptionalMessage("Actual collection is null.");
+            check.FailWithOptionalMessage(userFailureMessage, "Actual collection is null.");
         }
 
         if (!check.Input.SequenceEqual(expected))
         {
-            check.FailWithOptionalMessage($"Expected collection to equal: [{string.Join(", ", expected)}]");
+            check.FailWithOptionalMessage(userFailureMessage, $"Expected collection to equal: [{string.Join(", ", expected)}]");
         }
         return check;
     }
 
 
-    public static ICheckCollectionAssertion<IList<T>> IsNotEqualTo<T>(this ICheckCollectionAssertion<IList<T>> check, IList<T> notExpected)
+    public static ICheckCollectionAssertion<IList<T>> IsNotEqualTo<T>(
+        this ICheckCollectionAssertion<IList<T>> check, IList<T> notExpected,
+            string? userFailureMessage = null)
     {
         if (check.Input == null)
         {
-            check.FailWithOptionalMessage("Actual collection is null.");
+            check.FailWithOptionalMessage(userFailureMessage, "Actual collection is null.");
         }
 
         if (check.Input.SequenceEqual(notExpected))
         {
-            check.FailWithOptionalMessage($"Did not expect collection to equal: [{string.Join(", ", notExpected)}]");
+            check.FailWithOptionalMessage(userFailureMessage,
+            $"Did not expect collection to equal: [{string.Join(", ", notExpected)}]");
         }
         return check;
     }
 
 
-    public static ICheckCollectionAssertion<IList<T>> IsEquivalentTo<T>(this ICheckCollectionAssertion<IList<T>> check, IList<T> expected)
+    public static ICheckCollectionAssertion<IList<T>> IsEquivalentTo<T>(
+        this ICheckCollectionAssertion<IList<T>> check,
+        IList<T> expected,
+            string? userFailureMessage = null)
     {
         if (check.Input == null)
         {
-            check.FailWithOptionalMessage("Actual collection is null.");
+            check.FailWithOptionalMessage(userFailureMessage, "Actual collection is null.");
         }
 
         var actualSet = new HashSet<T>(check.Input);
@@ -45,17 +52,20 @@ public static class IListAssertionExtensions
 
         if (!actualSet.SetEquals(expectedSet))
         {
-            check.FailWithOptionalMessage($"Expected collection to be equivalent to: [{string.Join(", ", expected)}]");
+            check.FailWithOptionalMessage(userFailureMessage,
+                $"Expected collection to be equivalent to: [{string.Join(", ", expected)}]");
         }
 
         return check;
     }
 
-    public static ICheckCollectionAssertion<IList<T>> IsNotEquivalentTo<T>(this ICheckCollectionAssertion<IList<T>> check, IList<T> notExpected)
+    public static ICheckCollectionAssertion<IList<T>> IsNotEquivalentTo<T>(
+        this ICheckCollectionAssertion<IList<T>> check, IList<T> notExpected,
+            string? userFailureMessage = null)
     {
         if (check.Input == null)
         {
-            check.FailWithOptionalMessage("Actual collection is null.");
+            check.FailWithOptionalMessage(userFailureMessage, "Actual collection is null.");
         }
 
         var actualSet = new HashSet<T>(check.Input);
@@ -63,55 +73,62 @@ public static class IListAssertionExtensions
 
         if (actualSet.SetEquals(expectedSet))
         {
-            check.FailWithOptionalMessage($"Did not expect collection to be equivalent to: [{string.Join(", ", notExpected)}]");
+            check.FailWithOptionalMessage(
+                userFailureMessage,
+                $"Did not expect collection to be equivalent to: [{string.Join(", ", notExpected)}]");
         }
 
         return check;
     }
 
-
-    public static ICheckCollectionAssertion<IList<T>> Contains<T>(this ICheckCollectionAssertion<IList<T>> check, T expected)
+    public static ICheckCollectionAssertion<IList<T>> Contains<T>(
+        this ICheckCollectionAssertion<IList<T>> check, T expected,
+            string? userFailureMessage = null)
     {
         if (check.Input == null)
         {
-            check.FailWithOptionalMessage("Actual collection is null.");
+            check.FailWithOptionalMessage(userFailureMessage, "Actual collection is null.");
         }
 
         if (!check.Input.Contains(expected))
         {
-            check.FailWithOptionalMessage($"Expected collection to contain: {expected}");
+            check.FailWithOptionalMessage(userFailureMessage, $"Expected collection to contain: {expected}");
         }
         return check;
     }
 
 
-    public static ICheckCollectionAssertion<IList<T>> DoesNotContain<T>(this ICheckCollectionAssertion<IList<T>> check, T unexpected)
+    public static ICheckCollectionAssertion<IList<T>> DoesNotContain<T>(
+        this ICheckCollectionAssertion<IList<T>> check, T unexpected,
+            string? userFailureMessage = null)
     {
         if (check.Input == null)
         {
-            check.FailWithOptionalMessage("Actual collection is null.");
+            check.FailWithOptionalMessage(userFailureMessage, "Actual collection is null.");
         }
 
         if (check.Input.Contains(unexpected))
         {
-            check.FailWithOptionalMessage($"Did not expect collection to contain: {unexpected}");
+            check.FailWithOptionalMessage(userFailureMessage, $"Did not expect collection to contain: {unexpected}");
         }
         return check;
     }
 
 
-    public static ICheckCollectionAssertion<IList<T?>> AllItemsAreNotNull<T>(this ICheckCollectionAssertion<IList<T?>> check) where T : class
+    public static ICheckCollectionAssertion<IList<T?>> AllItemsAreNotNull<T>(
+        this ICheckCollectionAssertion<IList<T?>> check,
+            string? userFailureMessage = null) where T : class
     {
         if (check.Input == null)
         {
-            check.FailWithOptionalMessage("Actual collection is null.");
+            check.FailWithOptionalMessage(userFailureMessage, "Actual collection is null.");
         }
 
         foreach (var item in check.Input)
         {
             if (item == null)
             {
-                check.FailWithOptionalMessage("Expected all items to be non-null.");
+                check.FailWithOptionalMessage(userFailureMessage, "Expected all items to be non-null.");
             }
         }
 
@@ -119,11 +136,13 @@ public static class IListAssertionExtensions
     }
 
 
-    public static ICheckCollectionAssertion<IList<T>> AllItemsAreUnique<T>(this ICheckCollectionAssertion<IList<T>> check)
+    public static ICheckCollectionAssertion<IList<T>> AllItemsAreUnique<T>(
+        this ICheckCollectionAssertion<IList<T>> check,
+            string? userFailureMessage = null)
     {
         if (check.Input == null)
         {
-            check.FailWithOptionalMessage("Actual collection is null.");
+            check.FailWithOptionalMessage(userFailureMessage, "Actual collection is null.");
         }
 
         var set = new HashSet<T>();
@@ -131,7 +150,7 @@ public static class IListAssertionExtensions
         {
             if (!set.Add(item))
             {
-                check.FailWithOptionalMessage($"Expected all items to be unique, but found duplicate: {item}");
+                check.FailWithOptionalMessage(userFailureMessage, $"Expected all items to be unique, but found duplicate: {item}");
             }
         }
 
@@ -139,11 +158,13 @@ public static class IListAssertionExtensions
     }
 
 
-    public static ICheckCollectionAssertion<IList<T>> IsSubsetOf<T>(this ICheckCollectionAssertion<IList<T>> check, IList<T> superset)
+    public static ICheckCollectionAssertion<IList<T>> IsSubsetOf<T>(
+        this ICheckCollectionAssertion<IList<T>> check, IList<T> superset,
+            string? userFailureMessage = null)
     {
         if (check.Input == null)
         {
-            check.FailWithOptionalMessage("Actual collection is null.");
+            check.FailWithOptionalMessage(userFailureMessage, "Actual collection is null.");
         }
 
         var actualSet = new HashSet<T>(check.Input);
@@ -151,18 +172,20 @@ public static class IListAssertionExtensions
 
         if (!actualSet.IsSubsetOf(supersetSet))
         {
-            check.FailWithOptionalMessage("Expected collection to be a subset of the specified superset.");
+            check.FailWithOptionalMessage(userFailureMessage, "Expected collection to be a subset of the specified superset.");
         }
 
         return check;
     }
 
 
-    public static ICheckCollectionAssertion<IList<T>> IsSupersetOf<T>(this ICheckCollectionAssertion<IList<T>> check, IList<T> subset)
+    public static ICheckCollectionAssertion<IList<T>> IsSupersetOf<T>(
+        this ICheckCollectionAssertion<IList<T>> check, IList<T> subset,
+            string? userFailureMessage = null)
     {
         if (check.Input == null)
         {
-            check.FailWithOptionalMessage("Actual collection is null.");
+            check.FailWithOptionalMessage(userFailureMessage, "Actual collection is null.");
         }
 
         var actualSet = new HashSet<T>(check.Input);
@@ -170,7 +193,7 @@ public static class IListAssertionExtensions
 
         if (!actualSet.IsSupersetOf(subsetSet))
         {
-            check.FailWithOptionalMessage("Expected collection to be a superset of the specified subset.");
+            check.FailWithOptionalMessage(userFailureMessage, "Expected collection to be a superset of the specified subset.");
         }
 
         return check;

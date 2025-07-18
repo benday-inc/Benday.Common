@@ -20,6 +20,12 @@ public static class CheckExtensions
         return new CheckAssertionForNullableType<string?>(input);
     }
 
+    public static ICheckAssertionForNullableType<string?[]> CheckThatNullable(
+       this string?[] input)
+    {
+        return new CheckAssertionForNullableType<string?[]>(input);
+    }
+
     public static ICheckArrayAssertion<T[]> CheckThat<T>(this T[] input)
     {
         return new CheckArrayAssertion<T[]>(input);
