@@ -9,10 +9,7 @@ namespace Benday.Common.UnitTests.CheckThatAssertions;
 
 public class CheckThatForClassFixture : TestClassBase
 {
-    public class ClassForTesting
-    {
-        public string Id { get; set; } = Guid.NewGuid().ToString();
-    }
+    
 
     public CheckThatForClassFixture(ITestOutputHelper output) : base(output)
     {
