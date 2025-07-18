@@ -1,18 +1,14 @@
-using System;
-using System.Collections.Generic;
-
 using Benday.Common.Testing;
 
-using Xunit;
 using Xunit.Abstractions;
 
 namespace Benday.Common.UnitTests.CheckThatAssertions;
 
-public class CheckThatForCollectionsFixture : TestClassBase
+public class CheckThatForListsFixture : TestClassBase
 {
     
 
-    public CheckThatForCollectionsFixture(ITestOutputHelper output) : base(output)
+    public CheckThatForListsFixture(ITestOutputHelper output) : base(output)
     {
 
     }
