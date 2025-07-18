@@ -1,72 +1,63 @@
 namespace Benday.Common.Testing;
 
+
 public static class ArrayAssertionExtensions
 {
-    public static ICheckAssertion<T[]> IsEqualTo<T>(this ICheckAssertion<T[]> check, IEnumerable<T> expected)
+    public static ICheckArrayAssertion<T[]> IsEqualTo<T>(this ICheckArrayAssertion<T[]> check, IEnumerable<T> expected)
     {
-        ((ICheckAssertion<IEnumerable<T>>)check.AsEnumerableWrapper()).IsEqualTo(expected);
+        check.IsEqualTo(expected);
         return check;
     }
 
-    public static ICheckAssertion<T[]> IsNotEqualTo<T>(this ICheckAssertion<T[]> check, IEnumerable<T> notExpected)
+    public static ICheckArrayAssertion<T[]> IsNotEqualTo<T>(this ICheckArrayAssertion<T[]> check, IEnumerable<T> notExpected)
     {
-        ((ICheckAssertion<IEnumerable<T>>)check.AsEnumerableWrapper()).IsNotEqualTo(notExpected);
+        check.IsNotEqualTo(notExpected);
         return check;
     }
 
-    public static ICheckAssertion<T[]> IsEquivalentTo<T>(this ICheckAssertion<T[]> check, IEnumerable<T> expected)
+    public static ICheckArrayAssertion<T[]> IsEquivalentTo<T>(this ICheckArrayAssertion<T[]> check, IEnumerable<T> expected)
     {
-        ((ICheckAssertion<IEnumerable<T>>)check.AsEnumerableWrapper()).IsEquivalentTo(expected);
+        check.IsEquivalentTo(expected);
         return check;
     }
 
-    public static ICheckAssertion<T[]> IsNotEquivalentTo<T>(this ICheckAssertion<T[]> check, IEnumerable<T> notExpected)
+    public static ICheckArrayAssertion<T[]> IsNotEquivalentTo<T>(this ICheckArrayAssertion<T[]> check, IEnumerable<T> notExpected)
     {
-        ((ICheckAssertion<IEnumerable<T>>)check.AsEnumerableWrapper()).IsNotEquivalentTo(notExpected);
+        check.IsNotEquivalentTo(notExpected);
         return check;
     }
 
-    public static ICheckAssertion<T[]> Contains<T>(this ICheckAssertion<T[]> check, T expected)
+    public static ICheckArrayAssertion<T[]> Contains<T>(this ICheckArrayAssertion<T[]> check, T expected)
     {
-        ((ICheckAssertion<IEnumerable<T>>)check.AsEnumerableWrapper()).Contains(expected);
+        check.Contains(expected);
         return check;
     }
 
-    public static ICheckAssertion<T[]> DoesNotContain<T>(this ICheckAssertion<T[]> check, T unexpected)
+    public static ICheckArrayAssertion<T[]> DoesNotContain<T>(this ICheckArrayAssertion<T[]> check, T unexpected)
     {
-        ((ICheckAssertion<IEnumerable<T>>)check.AsEnumerableWrapper()).DoesNotContain(unexpected);
+        check.DoesNotContain(unexpected);
         return check;
     }
 
-    public static ICheckAssertion<T[]> AllItemsAreUnique<T>(this ICheckAssertion<T[]> check)
+    public static ICheckArrayAssertion<T[]> AllItemsAreUnique<T>(this ICheckArrayAssertion<T[]> check)
     {
-        ((ICheckAssertion<IEnumerable<T>>)check.AsEnumerableWrapper()).AllItemsAreUnique();
+        check.AllItemsAreUnique();
         return check;
     }
 
-    public static ICheckAssertion<T[]> IsSubsetOf<T>(this ICheckAssertion<T[]> check, IEnumerable<T> superset)
+    public static ICheckArrayAssertion<T[]> IsSubsetOf<T>(this ICheckArrayAssertion<T[]> check, IEnumerable<T> superset)
     {
-        ((ICheckAssertion<IEnumerable<T>>)check.AsEnumerableWrapper()).IsSubsetOf(superset);
+        check.IsSubsetOf(superset);
         return check;
     }
 
-    public static ICheckAssertion<T[]> IsSupersetOf<T>(this ICheckAssertion<T[]> check, IEnumerable<T> subset)
+    public static ICheckArrayAssertion<T[]> IsSupersetOf<T>(this ICheckArrayAssertion<T[]> check, IEnumerable<T> subset)
     {
-        ((ICheckAssertion<IEnumerable<T>>)check.AsEnumerableWrapper()).IsSupersetOf(subset);
+        check.IsSupersetOf(subset);
         return check;
     }
 
-    private static ICheckAssertion<IEnumerable<T>> AsEnumerableWrapper<T>(this ICheckAssertion<T[]> check)
-    {
-        if (check.Input == null)
-        {
-            check.FailWithOptionalMessage("Actual array is null.");
-        }
-
-        return new CheckAssertion<IEnumerable<T>>(check.Input);
-    }
-    
-    public static ICheckAssertion<T[]> AllItemsAreNotNull<T>(this ICheckAssertion<T[]> check)
+    public static ICheckArrayAssertion<T[]> AllItemsAreNotNull<T>(this ICheckArrayAssertion<T[]> check)
     {
         if (check.Input == null)
         {

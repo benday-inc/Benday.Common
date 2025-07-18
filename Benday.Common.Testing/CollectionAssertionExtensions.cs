@@ -2,8 +2,8 @@ namespace Benday.Common.Testing;
 
 public static class CollectionAssertionExtensions
 {
-    public static ICheckAssertion<ICollection<T>> IsEqualTo<T>(
-        this ICheckAssertion<ICollection<T>> check, ICollection<T> expected)
+    public static ICheckCollectionAssertion<ICollection<T>> IsEqualTo<T>(
+        this ICheckCollectionAssertion<ICollection<T>> check, ICollection<T> expected)
     {
         if (check.Input == null)
         {
@@ -18,7 +18,7 @@ public static class CollectionAssertionExtensions
     }
 
 
-    public static ICheckAssertion<IEnumerable<T>> IsNotEqualTo<T>(this ICheckAssertion<IEnumerable<T>> check, IEnumerable<T> notExpected)
+    public static ICheckCollectionAssertion<IEnumerable<T>> IsNotEqualTo<T>(this ICheckCollectionAssertion<IEnumerable<T>> check, IEnumerable<T> notExpected)
     {
         if (check.Input == null)
         {
@@ -33,7 +33,7 @@ public static class CollectionAssertionExtensions
     }
 
 
-    public static ICheckAssertion<IEnumerable<T>> IsEquivalentTo<T>(this ICheckAssertion<IEnumerable<T>> check, IEnumerable<T> expected)
+    public static ICheckCollectionAssertion<IEnumerable<T>> IsEquivalentTo<T>(this ICheckCollectionAssertion<IEnumerable<T>> check, IEnumerable<T> expected)
     {
         if (check.Input == null)
         {
@@ -51,7 +51,7 @@ public static class CollectionAssertionExtensions
         return check;
     }
 
-    public static ICheckAssertion<IEnumerable<T>> IsNotEquivalentTo<T>(this ICheckAssertion<IEnumerable<T>> check, IEnumerable<T> notExpected)
+    public static ICheckCollectionAssertion<IEnumerable<T>> IsNotEquivalentTo<T>(this ICheckCollectionAssertion<IEnumerable<T>> check, IEnumerable<T> notExpected)
     {
         if (check.Input == null)
         {
@@ -70,7 +70,7 @@ public static class CollectionAssertionExtensions
     }
 
 
-    public static ICheckAssertion<IEnumerable<T>> Contains<T>(this ICheckAssertion<IEnumerable<T>> check, T expected)
+    public static ICheckCollectionAssertion<IEnumerable<T>> Contains<T>(this ICheckCollectionAssertion<IEnumerable<T>> check, T expected)
     {
         if (check.Input == null)
         {
@@ -85,7 +85,7 @@ public static class CollectionAssertionExtensions
     }
 
 
-    public static ICheckAssertion<IEnumerable<T>> DoesNotContain<T>(this ICheckAssertion<IEnumerable<T>> check, T unexpected)
+    public static ICheckCollectionAssertion<IEnumerable<T>> DoesNotContain<T>(this ICheckCollectionAssertion<IEnumerable<T>> check, T unexpected)
     {
         if (check.Input == null)
         {
@@ -100,7 +100,7 @@ public static class CollectionAssertionExtensions
     }
 
 
-    public static ICheckAssertion<IEnumerable<T?>> AllItemsAreNotNull<T>(this ICheckAssertion<IEnumerable<T?>> check) where T : class
+    public static ICheckCollectionAssertion<IEnumerable<T?>> AllItemsAreNotNull<T>(this ICheckCollectionAssertion<IEnumerable<T?>> check) where T : class
     {
         if (check.Input == null)
         {
@@ -119,7 +119,7 @@ public static class CollectionAssertionExtensions
     }
 
 
-    public static ICheckAssertion<IEnumerable<T>> AllItemsAreUnique<T>(this ICheckAssertion<IEnumerable<T>> check)
+    public static ICheckCollectionAssertion<IEnumerable<T>> AllItemsAreUnique<T>(this ICheckCollectionAssertion<IEnumerable<T>> check)
     {
         if (check.Input == null)
         {
@@ -139,7 +139,7 @@ public static class CollectionAssertionExtensions
     }
 
 
-    public static ICheckAssertion<IEnumerable<T>> IsSubsetOf<T>(this ICheckAssertion<IEnumerable<T>> check, IEnumerable<T> superset)
+    public static ICheckCollectionAssertion<IEnumerable<T>> IsSubsetOf<T>(this ICheckCollectionAssertion<IEnumerable<T>> check, IEnumerable<T> superset)
     {
         if (check.Input == null)
         {
@@ -158,7 +158,7 @@ public static class CollectionAssertionExtensions
     }
 
 
-    public static ICheckAssertion<IEnumerable<T>> IsSupersetOf<T>(this ICheckAssertion<IEnumerable<T>> check, IEnumerable<T> subset)
+    public static ICheckCollectionAssertion<IEnumerable<T>> IsSupersetOf<T>(this ICheckCollectionAssertion<IEnumerable<T>> check, IEnumerable<T> subset)
     {
         if (check.Input == null)
         {

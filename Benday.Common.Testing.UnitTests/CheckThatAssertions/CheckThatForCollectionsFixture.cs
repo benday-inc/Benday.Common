@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+
 using Benday.Common.Testing;
+
 using Xunit;
 using Xunit.Abstractions;
 
@@ -12,7 +14,7 @@ public class CheckThatForCollectionsFixture : TestClassBase
     {
         public string Id { get; set; } = Guid.NewGuid().ToString();
     }
-    
+
     public CheckThatForCollectionsFixture(ITestOutputHelper output) : base(output)
     {
 
@@ -27,7 +29,7 @@ public class CheckThatForCollectionsFixture : TestClassBase
         var input = new List<ClassForTesting> { a, b, c };
         var expected = new List<ClassForTesting> { a, b, c };
 
-        var check = input.CheckThat();
+        var check = input.CheckThatCollection();
 
         check.IsEqualTo(expected);
     }
@@ -40,8 +42,10 @@ public class CheckThatForCollectionsFixture : TestClassBase
         var c = new ClassForTesting();
         var input = new List<ClassForTesting> { a, b, c };
         var expected = new List<ClassForTesting> { c, b, a };
+        var check = input.CheckThatCollection();
+
         Assert.Throws<CheckAssertionFailureException>(() =>
-            input.CheckThat().IsEqualTo(expected)
+        check.IsEqualTo(expected)
         );
     }
 
@@ -53,7 +57,8 @@ public class CheckThatForCollectionsFixture : TestClassBase
         var c = new ClassForTesting();
         var input = new List<ClassForTesting> { a, b, c };
         var notExpected = new List<ClassForTesting> { c, b, a };
-        input.CheckThat().IsNotEqualTo(notExpected);
+        var check = input.CheckThatCollection();
+        check.IsNotEqualTo(notExpected);
     }
 
     [Fact]
@@ -64,8 +69,11 @@ public class CheckThatForCollectionsFixture : TestClassBase
         var c = new ClassForTesting();
         var input = new List<ClassForTesting> { a, b, c };
         var notExpected = new List<ClassForTesting> { a, b, c };
+
+        var check = input.CheckThatCollection();
+
         Assert.Throws<CheckAssertionFailureException>(() =>
-            input.CheckThat().IsNotEqualTo(notExpected)
+            check.IsNotEqualTo(notExpected)
         );
     }
 
@@ -77,7 +85,9 @@ public class CheckThatForCollectionsFixture : TestClassBase
         var c = new ClassForTesting();
         var input = new List<ClassForTesting> { a, b, c };
         var expected = new List<ClassForTesting> { c, a, b };
-        input.CheckThat().IsEquivalentTo(expected);
+        var check = input.CheckThatCollection(); 
+
+        check.IsEquivalentTo(expected);
     }
 
     [Fact]
@@ -89,8 +99,9 @@ public class CheckThatForCollectionsFixture : TestClassBase
         var d = new ClassForTesting();
         var input = new List<ClassForTesting> { a, b, c };
         var expected = new List<ClassForTesting> { a, b, d };
+        var check = input.CheckThatCollection();
         Assert.Throws<CheckAssertionFailureException>(() =>
-            input.CheckThat().IsEquivalentTo(expected)
+            check.IsEquivalentTo(expected)
         );
     }
 
@@ -105,7 +116,9 @@ public class CheckThatForCollectionsFixture : TestClassBase
         var z = new ClassForTesting();
         var input = new List<ClassForTesting> { a, b, c };
         var notExpected = new List<ClassForTesting> { x, y, z };
-        input.CheckThat().IsNotEquivalentTo(notExpected);
+        var check = input.CheckThatCollection();
+        
+        check.IsNotEquivalentTo(notExpected);
     }
 
     [Fact]
@@ -116,8 +129,9 @@ public class CheckThatForCollectionsFixture : TestClassBase
         var c = new ClassForTesting();
         var input = new List<ClassForTesting> { a, b, c };
         var notExpected = new List<ClassForTesting> { c, b, a };
+        var check = input.CheckThatCollection();
         Assert.Throws<CheckAssertionFailureException>(() =>
-            input.CheckThat().IsNotEquivalentTo(notExpected)
+            check.IsNotEquivalentTo(notExpected)
         );
     }
 
@@ -128,7 +142,8 @@ public class CheckThatForCollectionsFixture : TestClassBase
         var b = new ClassForTesting();
         var c = new ClassForTesting();
         var input = new List<ClassForTesting> { a, b, c };
-        input.CheckThat().Contains(b);
+        var check = input.CheckThatCollection(); 
+        check.Contains(b);
     }
 
     [Fact]
@@ -139,8 +154,9 @@ public class CheckThatForCollectionsFixture : TestClassBase
         var c = new ClassForTesting();
         var d = new ClassForTesting();
         var input = new List<ClassForTesting> { a, b, c };
+        var check = input.CheckThatCollection();
         Assert.Throws<CheckAssertionFailureException>(() =>
-            input.CheckThat().Contains(d)
+            check.Contains(d)
         );
     }
 
@@ -152,7 +168,9 @@ public class CheckThatForCollectionsFixture : TestClassBase
         var c = new ClassForTesting();
         var d = new ClassForTesting();
         var input = new List<ClassForTesting> { a, b, c };
-        input.CheckThat().DoesNotContain(d);
+        var check = input.CheckThatCollection(); 
+
+        check.DoesNotContain(d);
     }
 
     [Fact]
@@ -162,8 +180,9 @@ public class CheckThatForCollectionsFixture : TestClassBase
         var b = new ClassForTesting();
         var c = new ClassForTesting();
         var input = new List<ClassForTesting> { a, b, c };
+        var check = input.CheckThatCollection();
         Assert.Throws<CheckAssertionFailureException>(() =>
-            input.CheckThat().DoesNotContain(b)
+            check.DoesNotContain(b)
         );
     }
 
@@ -174,7 +193,8 @@ public class CheckThatForCollectionsFixture : TestClassBase
         var b = new ClassForTesting();
         var c = new ClassForTesting();
         var input = new List<ClassForTesting?> { a, b, c };
-        input.CheckThat().AllItemsAreNotNull();
+        var check = input.CheckThatCollection(); 
+        check.AllItemsAreNotNull();
     }
 
     [Fact]
@@ -184,8 +204,9 @@ public class CheckThatForCollectionsFixture : TestClassBase
         ClassForTesting? b = null;
         var c = new ClassForTesting();
         var input = new List<ClassForTesting?> { a, b, c };
+        var check = input.CheckThatCollection();
         Assert.Throws<CheckAssertionFailureException>(() =>
-            input.CheckThat().AllItemsAreNotNull()
+            check.AllItemsAreNotNull()
         );
     }
 
@@ -196,7 +217,8 @@ public class CheckThatForCollectionsFixture : TestClassBase
         var b = new ClassForTesting();
         var c = new ClassForTesting();
         var input = new List<ClassForTesting> { a, b, c };
-        input.CheckThat().AllItemsAreUnique();
+        var check = input.CheckThatCollection(); 
+        check.AllItemsAreUnique();
     }
 
     [Fact]
@@ -205,8 +227,9 @@ public class CheckThatForCollectionsFixture : TestClassBase
         var a = new ClassForTesting();
         var b = new ClassForTesting();
         var input = new List<ClassForTesting> { a, b, a };
+        var check = input.CheckThatCollection();
         Assert.Throws<CheckAssertionFailureException>(() =>
-            input.CheckThat().AllItemsAreUnique()
+             check.AllItemsAreUnique()
         );
     }
 
@@ -219,7 +242,8 @@ public class CheckThatForCollectionsFixture : TestClassBase
         var d = new ClassForTesting();
         var input = new List<ClassForTesting> { a, b };
         var superset = new List<ClassForTesting> { a, b, c, d };
-        input.CheckThat().IsSubsetOf(superset);
+        var check = input.CheckThatCollection(); 
+        check.IsSubsetOf(superset);
     }
 
     [Fact]
@@ -232,8 +256,9 @@ public class CheckThatForCollectionsFixture : TestClassBase
         var e = new ClassForTesting();
         var input = new List<ClassForTesting> { a, b, e };
         var superset = new List<ClassForTesting> { a, b, c, d };
+        var check = input.CheckThatCollection();
         Assert.Throws<CheckAssertionFailureException>(() =>
-            input.CheckThat().IsSubsetOf(superset)
+             check.IsSubsetOf(superset)
         );
     }
 
@@ -246,7 +271,8 @@ public class CheckThatForCollectionsFixture : TestClassBase
         var d = new ClassForTesting();
         var input = new List<ClassForTesting> { a, b, c, d };
         var subset = new List<ClassForTesting> { b, c };
-        input.CheckThat().IsSupersetOf(subset);
+        var check = input.CheckThatCollection(); 
+        check.IsSupersetOf(subset);
     }
 
     [Fact]
@@ -258,8 +284,9 @@ public class CheckThatForCollectionsFixture : TestClassBase
         var d = new ClassForTesting();
         var input = new List<ClassForTesting> { a, b, c };
         var subset = new List<ClassForTesting> { b, d };
+        var check = input.CheckThatCollection();
         Assert.Throws<CheckAssertionFailureException>(() =>
-            input.CheckThat().IsSupersetOf(subset)
+            check.IsSupersetOf(subset)
         );
     }
 }

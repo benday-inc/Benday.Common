@@ -17,7 +17,9 @@ public class CheckThatForArraysFixture : TestClassBase
     {
         var input = new[] { 1, 2, 3 };
         var expected = new[] { 1, 2, 3 };
-        input.CheckThat().IsEqualTo(expected);
+        var check = input.CheckThat();
+            
+        check.IsEqualTo(expected);
     }
 
     [Fact]

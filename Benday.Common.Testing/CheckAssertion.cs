@@ -20,7 +20,6 @@ public class CheckAssertion<T> : ICheckAssertion<T>
         FailureMessage = message;
         return this;
     }
-
 }
 
 

@@ -21,68 +21,68 @@ public class CheckThatForClassFixture : TestClassBase
 
 
     [Fact]
-    public void CheckThat_Null_IsNotNull()
+    public void CheckThatCollection_Null_IsNotNull()
     {
         ClassForTesting? input = null;
-        Assert.Throws<CheckAssertionFailureException>(() => input.CheckThat().IsNotNull());
+        Assert.Throws<CheckAssertionFailureException>(() => input.CheckThatCollection().IsNotNull());
     }
 
     [Fact]
-    public void CheckThat_NotNull_IsNotNull()
+    public void CheckThatCollection_NotNull_IsNotNull()
     {
         ClassForTesting? input = new();
 
-        input.CheckThat().IsNotNull();
+        input.CheckThatCollection().IsNotNull();
     }
 
     [Fact]
-    public void CheckThat_Null_IsNull()
+    public void CheckThatCollection_Null_IsNull()
     {
         ClassForTesting? input = null;
-        input.CheckThat().IsNull();
+        input.CheckThatCollection().IsNull();
     }
 
     [Fact]
-    public void CheckThat_NotNull_IsNull()
+    public void CheckThatCollection_NotNull_IsNull()
     {
         ClassForTesting? input = new();
 
-        Assert.Throws<CheckAssertionFailureException>(() => input.CheckThat().IsNull());
+        Assert.Throws<CheckAssertionFailureException>(() => input.CheckThatCollection().IsNull());
     }
 
     [Fact]
-    public void CheckThat_NotTheSameReference_IsTheSameAs()
+    public void CheckThatCollection_NotTheSameReference_IsTheSameAs()
     {
         ClassForTesting? actual = new();
         ClassForTesting expected = new();
 
-        Assert.Throws<CheckAssertionFailureException>(() => actual.CheckThat().IsTheSameAs(expected));
+        Assert.Throws<CheckAssertionFailureException>(() => actual.CheckThatCollection().IsTheSameAs(expected));
     }
 
     [Fact]
-    public void CheckThat_SameReference_IsTheSameAs()
+    public void CheckThatCollection_SameReference_IsTheSameAs()
     {
         ClassForTesting? actual = new();
         ClassForTesting expected = actual!;
 
-        actual.CheckThat().IsTheSameAs(expected);
+        actual.CheckThatCollection().IsTheSameAs(expected);
     }
 
     [Fact]
-    public void CheckThat_NotTheSameReference_IsNotTheSameAs()
+    public void CheckThatCollection_NotTheSameReference_IsNotTheSameAs()
     {
         ClassForTesting? actual = new();
         ClassForTesting expected = new();
 
-        actual.CheckThat().IsNotTheSameAs(expected);
+        actual.CheckThatCollection().IsNotTheSameAs(expected);
     }
 
     [Fact]
-    public void CheckThat_SameReference_IsNotTheSameAs()
+    public void CheckThatCollection_SameReference_IsNotTheSameAs()
     {
         ClassForTesting? actual = new();
         ClassForTesting expected = actual!;
 
-        Assert.Throws<CheckAssertionFailureException>(() => actual.CheckThat().IsNotTheSameAs(expected));
+        Assert.Throws<CheckAssertionFailureException>(() => actual.CheckThatCollection().IsNotTheSameAs(expected));
     }
 }
