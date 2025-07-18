@@ -41,7 +41,20 @@ public static class ArrayAssertionExtensions
 
     public static ICheckArrayAssertion<T[]> AllItemsAreUnique<T>(this ICheckArrayAssertion<T[]> check)
     {
-        check.AllItemsAreUnique();
+        if (check.Input == null)
+        {
+            check.FailWithOptionalMessage("Actual array is null.");
+        }
+
+        var items = check.Input;
+
+        var distinctItems = items.Distinct();
+
+        if (items.Length != distinctItems.Count())
+        {
+            check.FailWithOptionalMessage("Expected all items to be unique.");
+        }
+
         return check;
     }
 

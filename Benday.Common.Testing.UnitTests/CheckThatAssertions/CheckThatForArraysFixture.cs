@@ -145,8 +145,11 @@ public class CheckThatForArraysFixture : TestClassBase
     public void CheckThat_AllItemsAreUnique_False()
     {
         var input = new[] { "apple", "banana", "apple" };
+
+        var check = input.CheckThat();
+
         Assert.Throws<CheckAssertionFailureException>(() =>
-            input.CheckThat().AllItemsAreUnique()
+            check.AllItemsAreUnique()
         );
     }
 

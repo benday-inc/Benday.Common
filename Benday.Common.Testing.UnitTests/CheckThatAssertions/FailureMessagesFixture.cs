@@ -20,8 +20,10 @@ public class FailureMessagesFixture : TestClassBase
     {
         string? input = null;
 
+        var check = input.CheckThat().WithMessage("Custom failure message");
+
         var exception = Assert.Throws<CheckAssertionFailureException>(() =>
-            input.CheckThat().WithMessage("Custom failure message").IsNotNullOrEmpty());
+            check.IsNotNullOrEmpty());
 
         Assert.Equal("Custom failure message", exception.Message);
     }

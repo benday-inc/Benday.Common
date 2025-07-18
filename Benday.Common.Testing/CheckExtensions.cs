@@ -9,6 +9,11 @@ public static class CheckExtensions
     //    return new CheckAssertion<T?>(input);
     //}
 
+    //public static ICheckAssertion<T> CheckThat<T>(this T input) where T : notnull
+    //{
+    //    return new CheckAssertion<T>(input);
+    //}
+
     public static ICheckAssertion<T> CheckThat<T>(this T input)
     {
         return new CheckAssertion<T>(input);

@@ -44,8 +44,8 @@ public static class StringAssertionExtensions
         return check;
     }
 
-    public static ICheckAssertion<string> IsNotNullOrEmpty(
-        this ICheckAssertion<string> check,
+    public static ICheckAssertion<string?> IsNotNullOrEmpty(
+        this ICheckAssertion<string?> check,
         string? userFailureMessage = null)
     {
         if (check.Input == null)
