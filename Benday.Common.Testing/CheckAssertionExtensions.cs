@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 
 using Benday.Common;
@@ -6,6 +7,7 @@ namespace Benday.Common.Testing;
 
 public static class CheckAssertionExtensions
 {
+    [DoesNotReturn]
     public static void FailWithOptionalMessage<T>(this ICheckAssertion<T> check,
         string? userFailureMessage = null,
         string assertionDefaultMessage = "Check assertion failed.")
@@ -28,6 +30,7 @@ public static class CheckAssertionExtensions
         }
     }
 
+    [DoesNotReturn]
     public static void Fail<T>(this ICheckAssertion<T> check, string message)
     {
         throw new CheckAssertionFailureException(message);
