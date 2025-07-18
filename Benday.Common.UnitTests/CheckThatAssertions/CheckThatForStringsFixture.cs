@@ -133,7 +133,7 @@ public class CheckThatForStringsFixture : TestClassBase
     [Fact]
     public void CheckThat_AreNotEqual_NotEqual()
     {
- // arrange
+        // arrange
         var input = "asdf1234";
         var value2 = "asdf1234asdfasdf";
 
@@ -142,5 +142,197 @@ public class CheckThatForStringsFixture : TestClassBase
 
         // assert
         // this worked if we didn't get an exception
+    }
+
+    [Fact]
+    public void CheckThat_Contains_True()
+    {
+        string? input = "Hello, World!";
+        input.CheckThat().Contains("World");
+    }
+
+    [Fact]
+    public void CheckThat_Contains_False()
+    {
+        string? input = "Hello, World!";
+        Assert.Throws<CheckAssertionFailureException>(() =>
+            input.CheckThat().Contains("Universe")
+        );
+    }
+
+    [Fact]
+    public void CheckThat_DoesNotContain_True()
+    {
+        string? input = "Hello, World!";
+        input.CheckThat().DoesNotContain("Universe");
+    }
+
+    [Fact]
+    public void CheckThat_DoesNotContain_False()
+    {
+        string? input = "Hello, World!";
+        Assert.Throws<CheckAssertionFailureException>(() =>
+            input.CheckThat().DoesNotContain("World")
+        );
+    }
+
+    [Fact]
+    public void CheckThat_StartsWith_True()
+    {
+        string? input = "Hello, World!";
+        input.CheckThat().StartsWith("Hello");
+    }
+
+    [Fact]
+    public void CheckThat_StartsWith_False()
+    {
+        string? input = "Hello, World!";
+        Assert.Throws<CheckAssertionFailureException>(() =>
+            input.CheckThat().StartsWith("World")
+        );
+    }
+
+    [Fact]
+    public void CheckThat_EndsWith_True()
+    {
+        string? input = "Hello, World!";
+        input.CheckThat().EndsWith("World!");
+    }
+
+    [Fact]
+    public void CheckThat_EndsWith_False()
+    {
+        string? input = "Hello, World!";
+        Assert.Throws<CheckAssertionFailureException>(() =>
+            input.CheckThat().EndsWith("Hello")
+        );
+    }
+
+    [Fact]
+    public void CheckThat_DoesNotStartWith_True()
+    {
+        string? input = "Hello, World!";
+        input.CheckThat().DoesNotStartWith("World");
+    }
+
+    [Fact]
+    public void CheckThat_DoesNotStartWith_False()
+    {
+        string? input = "Hello, World!";
+        Assert.Throws<CheckAssertionFailureException>(() =>
+            input.CheckThat().DoesNotStartWith("Hello")
+        );
+    }
+
+    [Fact]
+    public void CheckThat_DoesNotEndWith_True()
+    {
+        string? input = "Hello, World!";
+        input.CheckThat().DoesNotEndWith("Hello");
+    }
+
+    [Fact]
+    public void CheckThat_DoesNotEndWith_False()
+    {
+        string? input = "Hello, World!";
+        Assert.Throws<CheckAssertionFailureException>(() =>
+            input.CheckThat().DoesNotEndWith("World!")
+        );
+    }
+
+    [Fact]
+    public void CheckThat_ContainsCaseInsensitive_True()
+    {
+        string? input = "Hello, World!";
+        input.CheckThat().ContainsCaseInsensitive("world");
+    }
+
+    [Fact]
+    public void CheckThat_ContainsCaseInsensitive_False()
+    {
+        string? input = "Hello, World!";
+        Assert.Throws<CheckAssertionFailureException>(() =>
+            input.CheckThat().ContainsCaseInsensitive("universe")
+        );
+    }
+
+    [Fact]
+    public void CheckThat_DoesNotContainCaseInsensitive_True()
+    {
+        string? input = "Hello, World!";
+        input.CheckThat().DoesNotContainCaseInsensitive("universe");
+    }
+
+    [Fact]
+    public void CheckThat_DoesNotContainCaseInsensitive_False()
+    {
+        string? input = "Hello, World!";
+        Assert.Throws<CheckAssertionFailureException>(() =>
+            input.CheckThat().DoesNotContainCaseInsensitive("world")
+        );
+    }
+
+    [Fact]
+    public void CheckThat_StartsWithCaseInsensitive_True()
+    {
+        string? input = "Hello, World!";
+        input.CheckThat().StartsWithCaseInsensitive("hello");
+    }
+
+    [Fact]
+    public void CheckThat_StartsWithCaseInsensitive_False()
+    {
+        string? input = "Hello, World!";
+        Assert.Throws<CheckAssertionFailureException>(() =>
+            input.CheckThat().StartsWithCaseInsensitive("world")
+        );
+    }
+
+    [Fact]
+    public void CheckThat_EndsWithCaseInsensitive_True()
+    {
+        string? input = "Hello, World!";
+        input.CheckThat().EndsWithCaseInsensitive("world!");
+    }
+
+    [Fact]
+    public void CheckThat_EndsWithCaseInsensitive_False()
+    {
+        string? input = "Hello, World!";
+        Assert.Throws<CheckAssertionFailureException>(() =>
+            input.CheckThat().EndsWithCaseInsensitive("hello")
+        );
+    }
+
+    [Fact]
+    public void CheckThat_DoesNotStartWithCaseInsensitive_True()
+    {
+        string? input = "Hello, World!";
+        input.CheckThat().DoesNotStartWithCaseInsensitive("world");
+    }
+
+    [Fact]
+    public void CheckThat_DoesNotStartWithCaseInsensitive_False()
+    {
+        string? input = "Hello, World!";
+        Assert.Throws<CheckAssertionFailureException>(() =>
+            input.CheckThat().DoesNotStartWithCaseInsensitive("hello")
+        );
+    }
+
+    [Fact]
+    public void CheckThat_DoesNotEndWithCaseInsensitive_True()
+    {
+        string? input = "Hello, World!";
+        input.CheckThat().DoesNotEndWithCaseInsensitive("hello");
+    }
+
+    [Fact]
+    public void CheckThat_DoesNotEndWithCaseInsensitive_False()
+    {
+        string? input = "Hello, World!";
+        Assert.Throws<CheckAssertionFailureException>(() =>
+            input.CheckThat().DoesNotEndWithCaseInsensitive("world!")
+        );
     }
 }
