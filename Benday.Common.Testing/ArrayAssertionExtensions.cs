@@ -5,37 +5,93 @@ public static class ArrayAssertionExtensions
 {
     public static ICheckArrayAssertion<T[]> IsEqualTo<T>(this ICheckArrayAssertion<T[]> check, IEnumerable<T> expected)
     {
-        check.IsEqualTo(expected);
+        if (check.Input == null)
+        {
+            check.FailWithOptionalMessage("Actual collection is null.");
+        }
+
+        if (!check.Input.SequenceEqual(expected))
+        {
+            check.FailWithOptionalMessage($"Expected collection to equal: [{string.Join(", ", expected)}]");
+        }
         return check;
     }
 
     public static ICheckArrayAssertion<T[]> IsNotEqualTo<T>(this ICheckArrayAssertion<T[]> check, IEnumerable<T> notExpected)
     {
-        check.IsNotEqualTo(notExpected);
+        if (check.Input == null)
+        {
+            check.FailWithOptionalMessage("Actual collection is null.");
+        }
+
+        if (check.Input.SequenceEqual(notExpected))
+        {
+            check.FailWithOptionalMessage($"Did not expect collection to equal: [{string.Join(", ", notExpected)}]");
+        }
         return check;
     }
 
     public static ICheckArrayAssertion<T[]> IsEquivalentTo<T>(this ICheckArrayAssertion<T[]> check, IEnumerable<T> expected)
     {
-        check.IsEquivalentTo(expected);
+        if (check.Input == null)
+        {
+            check.FailWithOptionalMessage("Actual collection is null.");
+        }
+
+        var actualSet = new HashSet<T>(check.Input);
+        var expectedSet = new HashSet<T>(expected);
+
+        if (!actualSet.SetEquals(expectedSet))
+        {
+            check.FailWithOptionalMessage($"Expected collection to be equivalent to: [{string.Join(", ", expected)}]");
+        }
+
         return check;
     }
 
     public static ICheckArrayAssertion<T[]> IsNotEquivalentTo<T>(this ICheckArrayAssertion<T[]> check, IEnumerable<T> notExpected)
     {
-        check.IsNotEquivalentTo(notExpected);
+        if (check.Input == null)
+        {
+            check.FailWithOptionalMessage("Actual collection is null.");
+        }
+
+        var actualSet = new HashSet<T>(check.Input);
+        var expectedSet = new HashSet<T>(notExpected);
+
+        if (actualSet.SetEquals(expectedSet))
+        {
+            check.FailWithOptionalMessage($"Did not expect collection to be equivalent to: [{string.Join(", ", notExpected)}]");
+        }
+
         return check;
     }
 
     public static ICheckArrayAssertion<T[]> Contains<T>(this ICheckArrayAssertion<T[]> check, T expected)
     {
-        check.Contains(expected);
+        if (check.Input == null)
+        {
+            check.FailWithOptionalMessage("Actual collection is null.");
+        }
+
+        if (!check.Input.Contains(expected))
+        {
+            check.FailWithOptionalMessage($"Expected collection to contain: {expected}");
+        }
         return check;
     }
 
     public static ICheckArrayAssertion<T[]> DoesNotContain<T>(this ICheckArrayAssertion<T[]> check, T unexpected)
     {
-        check.DoesNotContain(unexpected);
+        if (check.Input == null)
+        {
+            check.FailWithOptionalMessage("Actual collection is null.");
+        }
+
+        if (check.Input.Contains(unexpected))
+        {
+            check.FailWithOptionalMessage($"Did not expect collection to contain: {unexpected}");
+        }
         return check;
     }
 
@@ -43,16 +99,16 @@ public static class ArrayAssertionExtensions
     {
         if (check.Input == null)
         {
-            check.FailWithOptionalMessage("Actual array is null.");
+            check.FailWithOptionalMessage("Actual collection is null.");
         }
 
-        var items = check.Input;
-
-        var distinctItems = items.Distinct();
-
-        if (items.Length != distinctItems.Count())
+        var set = new HashSet<T>();
+        foreach (var item in check.Input)
         {
-            check.FailWithOptionalMessage("Expected all items to be unique.");
+            if (!set.Add(item))
+            {
+                check.FailWithOptionalMessage($"Expected all items to be unique, but found duplicate: {item}");
+            }
         }
 
         return check;
@@ -60,13 +116,37 @@ public static class ArrayAssertionExtensions
 
     public static ICheckArrayAssertion<T[]> IsSubsetOf<T>(this ICheckArrayAssertion<T[]> check, IEnumerable<T> superset)
     {
-        check.IsSubsetOf(superset);
+        if (check.Input == null)
+        {
+            check.FailWithOptionalMessage("Actual collection is null.");
+        }
+
+        var actualSet = new HashSet<T>(check.Input);
+        var supersetSet = new HashSet<T>(superset);
+
+        if (!actualSet.IsSubsetOf(supersetSet))
+        {
+            check.FailWithOptionalMessage("Expected collection to be a subset of the specified superset.");
+        }
+
         return check;
     }
 
     public static ICheckArrayAssertion<T[]> IsSupersetOf<T>(this ICheckArrayAssertion<T[]> check, IEnumerable<T> subset)
     {
-        check.IsSupersetOf(subset);
+        if (check.Input == null)
+        {
+            check.FailWithOptionalMessage("Actual collection is null.");
+        }
+
+        var actualSet = new HashSet<T>(check.Input);
+        var subsetSet = new HashSet<T>(subset);
+
+        if (!actualSet.IsSupersetOf(subsetSet))
+        {
+            check.FailWithOptionalMessage("Expected collection to be a superset of the specified subset.");
+        }
+
         return check;
     }
 
