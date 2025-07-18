@@ -1,9 +1,9 @@
 namespace Benday.Common.Testing;
 
-public static class CollectionAssertionExtensions
+public static class IEnumerableAssertionExtensions
 {
-    public static ICheckCollectionAssertion<ICollection<T>> IsEqualTo<T>(
-        this ICheckCollectionAssertion<ICollection<T>> check, ICollection<T> expected)
+    public static ICheckCollectionAssertion<IEnumerable<T>> IsEqualTo<T>(
+        this ICheckCollectionAssertion<IEnumerable<T>> check, IEnumerable<T> expected)
     {
         if (check.Input == null)
         {
