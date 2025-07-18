@@ -15,10 +15,20 @@ public class CheckThatForStringsFixture : TestClassBase
     }
 
     [Fact]
-    public void CheckThat_StringIsNotNullOrEmpty()
+    public void CheckThat_NullableString_IsNotNullOrEmpty()
     {
         string? input = null;
         input = "Hello, World!";
+
+        var check = input.CheckThatNullable();
+
+        check.IsNotNullOrEmpty();
+    }
+
+    [Fact]
+    public void CheckThat_String_IsNotNullOrEmpty()
+    {
+        string input = "Hello, World!";
 
         var check = input.CheckThat();
 
@@ -30,7 +40,7 @@ public class CheckThatForStringsFixture : TestClassBase
     {
         string? input = null;
 
-        var check = input.CheckThat();
+        var check = input.CheckThatNullable();
 
         Assert.Throws<CheckAssertionFailureException>(() => check.IsNotNullOrEmpty());
     }
@@ -41,7 +51,7 @@ public class CheckThatForStringsFixture : TestClassBase
         string? input = null;
         input = "";
 
-        var check = input.CheckThat();
+        var check = input.CheckThatNullable();
 
         Assert.Throws<CheckAssertionFailureException>(() => check.IsNotNullOrEmpty());
     }
@@ -49,8 +59,10 @@ public class CheckThatForStringsFixture : TestClassBase
     [Fact]
     public void CheckThat_WhitespaceString_IsNotNullOrWhitespace()
     {
-        string? input = "   ";
-        Assert.Throws<CheckAssertionFailureException>(() => input.CheckThat().IsNotNullOrWhitespace());
+        string? input = null;
+        input = "   ";
+        var check = input.CheckThatNullable();
+        Assert.Throws<CheckAssertionFailureException>(() => check.IsNotNullOrWhitespace());
     }
 
     [Fact]
@@ -61,7 +73,9 @@ public class CheckThatForStringsFixture : TestClassBase
         var value2 = "asdf1234";
 
         // act
-        input.CheckThat().IsEqualTo(value2);
+        var check = input.CheckThat();
+
+        check.IsEqualTo(value2);
 
         // assert
         // this worked if we didn't get an exception

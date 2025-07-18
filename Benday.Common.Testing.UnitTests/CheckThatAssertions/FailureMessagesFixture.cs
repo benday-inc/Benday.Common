@@ -18,7 +18,7 @@ public class FailureMessagesFixture : TestClassBase
     [Fact]
     public void CheckThat_FailureMessageIsUsed()
     {
-        string? input = null;
+        string input = "";
 
         var check = input.CheckThat().WithMessage("Custom failure message");
 
@@ -32,7 +32,8 @@ public class FailureMessagesFixture : TestClassBase
     [Fact]
     public void CheckThat_FailureMessageIsUsedWithOptionalMessage()
     {
-        string? input = null;
+        string input = "";
+
         var check = input.CheckThat().WithMessage("Custom failure message");
 
         var exception = Assert.Throws<CheckAssertionFailureException>(() =>
@@ -45,7 +46,8 @@ public class FailureMessagesFixture : TestClassBase
     [Fact]
     public void CheckThat_FailureMessageIsUsedWithOptionalMessageWhenNoFailureMessageSet()
     {
-        string? input = null;
+        string input = "";
+
         var check = input.CheckThat();
 
         var exception = Assert.Throws<CheckAssertionFailureException>(() => check.FailWithOptionalMessage("This message should be used"));
@@ -56,7 +58,8 @@ public class FailureMessagesFixture : TestClassBase
     [Fact]
     public void CheckThat_WithMessage_ValueIsUsed()
     {
-        string? input = null;
+        string input = "";
+
         var check = input.CheckThat().WithMessage("Custom failure message for null input");
 
         var exception = Assert.Throws<CheckAssertionFailureException>(() => check.IsNotNullOrEmpty());
@@ -66,7 +69,8 @@ public class FailureMessagesFixture : TestClassBase
     [Fact]
     public void CheckThat_DefaultFailureMessageIsUsed()
     {
-        string? input = null;
+        string input = "";
+
         var check = input.CheckThat();     
         var exception = Assert.Throws<CheckAssertionFailureException>(() =>
             check.FailWithOptionalMessage(

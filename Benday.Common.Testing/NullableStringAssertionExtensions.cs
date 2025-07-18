@@ -2,10 +2,10 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace Benday.Common.Testing;
 
-public static class StringAssertionExtensions
+public static class NullableStringAssertionExtensions
 {
-    public static ICheckAssertion<string> IsEqualTo(this ICheckAssertion<string> check,
-            string expected,
+    public static ICheckAssertionForNullableType<string?> IsEqualTo(this ICheckAssertionForNullableType<string?> check,
+            string? expected,
             string? userFailureMessage = null)
     {
         if (string.Equals(check.Input, expected) == false)
@@ -18,7 +18,7 @@ public static class StringAssertionExtensions
         return check;
     }
 
-    public static ICheckAssertion<string> IsEqualCaseInsensitiveTo(this ICheckAssertion<string> check,
+    public static ICheckAssertionForNullableType<string?> IsEqualCaseInsensitiveTo(this ICheckAssertionForNullableType<string?> check,
         string? expected,
         string? userFailureMessage = null)
     {
@@ -32,7 +32,7 @@ public static class StringAssertionExtensions
         return check;
     }
 
-    public static ICheckAssertion<string> IsNotEqualTo(this ICheckAssertion<string> check,
+    public static ICheckAssertionForNullableType<string?> IsNotEqualTo(this ICheckAssertionForNullableType<string?> check,
         string? expected,
         string? userFailureMessage = null)
     {
@@ -46,8 +46,8 @@ public static class StringAssertionExtensions
         return check;
     }
 
-    public static ICheckAssertion<string> IsNotNullOrEmpty(
-        this ICheckAssertion<string> check,
+    public static ICheckAssertionForNullableType<string?> IsNotNullOrEmpty(
+        this ICheckAssertionForNullableType<string?> check,
         string? userFailureMessage = null)
     {
         if (check.Input == null)
@@ -63,8 +63,8 @@ public static class StringAssertionExtensions
         return check;
     }
 
-    public static ICheckAssertion<string> IsNotNullOrWhitespace(
-        this ICheckAssertion<string> check,
+    public static ICheckAssertionForNullableType<string?> IsNotNullOrWhitespace(
+        this ICheckAssertionForNullableType<string?> check,
         string? userFailureMessage = null)
     {
         if (check.Input == null)
@@ -80,7 +80,7 @@ public static class StringAssertionExtensions
         return check;
     }
 
-    public static ICheckAssertion<string> Contains(this ICheckAssertion<string> check, string expected, string? userFailureMessage = null)
+    public static ICheckAssertionForNullableType<string?> Contains(this ICheckAssertionForNullableType<string?> check, string expected, string? userFailureMessage = null)
     {
         if (check.Input == null || check.Input.Contains(expected) == false)
         {
@@ -90,7 +90,7 @@ public static class StringAssertionExtensions
         return check;
     }
 
-    public static ICheckAssertion<string> ContainsCaseInsensitive(this ICheckAssertion<string> check, string expected, string? userFailureMessage = null)
+    public static ICheckAssertionForNullableType<string?> ContainsCaseInsensitive(this ICheckAssertionForNullableType<string?> check, string expected, string? userFailureMessage = null)
     {
         if (check.Input == null || check.Input.IndexOf(expected, StringComparison.CurrentCultureIgnoreCase) < 0)
         {
@@ -100,7 +100,7 @@ public static class StringAssertionExtensions
         return check;
     }
 
-    public static ICheckAssertion<string> DoesNotContain(this ICheckAssertion<string> check, string unexpected, string? userFailureMessage = null)
+    public static ICheckAssertionForNullableType<string?> DoesNotContain(this ICheckAssertionForNullableType<string?> check, string unexpected, string? userFailureMessage = null)
     {
         if (check.Input != null && check.Input.Contains(unexpected))
         {
@@ -110,7 +110,7 @@ public static class StringAssertionExtensions
         return check;
     }
 
-    public static ICheckAssertion<string> DoesNotContainCaseInsensitive(this ICheckAssertion<string> check, string unexpected, string? userFailureMessage = null)
+    public static ICheckAssertionForNullableType<string?> DoesNotContainCaseInsensitive(this ICheckAssertionForNullableType<string?> check, string unexpected, string? userFailureMessage = null)
     {
         if (check.Input != null && check.Input.IndexOf(unexpected, StringComparison.CurrentCultureIgnoreCase) >= 0)
         {
@@ -120,7 +120,7 @@ public static class StringAssertionExtensions
         return check;
     }
 
-    public static ICheckAssertion<string> StartsWith(this ICheckAssertion<string> check, string expectedStart, string? userFailureMessage = null)
+    public static ICheckAssertionForNullableType<string?> StartsWith(this ICheckAssertionForNullableType<string?> check, string expectedStart, string? userFailureMessage = null)
     {
         if (check.Input == null || check.Input.StartsWith(expectedStart) == false)
         {
@@ -130,7 +130,7 @@ public static class StringAssertionExtensions
         return check;
     }
 
-    public static ICheckAssertion<string> StartsWithCaseInsensitive(this ICheckAssertion<string> check, string expectedStart, string? userFailureMessage = null)
+    public static ICheckAssertionForNullableType<string?> StartsWithCaseInsensitive(this ICheckAssertionForNullableType<string?> check, string expectedStart, string? userFailureMessage = null)
     {
         if (check.Input == null || check.Input.StartsWith(expectedStart, StringComparison.CurrentCultureIgnoreCase) == false)
         {
@@ -140,7 +140,7 @@ public static class StringAssertionExtensions
         return check;
     }
 
-    public static ICheckAssertion<string> DoesNotStartWith(this ICheckAssertion<string> check, string unexpectedStart, string? userFailureMessage = null)
+    public static ICheckAssertionForNullableType<string?> DoesNotStartWith(this ICheckAssertionForNullableType<string?> check, string unexpectedStart, string? userFailureMessage = null)
     {
         if (check.Input != null && check.Input.StartsWith(unexpectedStart))
         {
@@ -150,7 +150,7 @@ public static class StringAssertionExtensions
         return check;
     }
 
-    public static ICheckAssertion<string> DoesNotStartWithCaseInsensitive(this ICheckAssertion<string> check, string unexpectedStart, string? userFailureMessage = null)
+    public static ICheckAssertionForNullableType<string?> DoesNotStartWithCaseInsensitive(this ICheckAssertionForNullableType<string?> check, string unexpectedStart, string? userFailureMessage = null)
     {
         if (check.Input != null && check.Input.StartsWith(unexpectedStart, StringComparison.CurrentCultureIgnoreCase))
         {
@@ -160,7 +160,7 @@ public static class StringAssertionExtensions
         return check;
     }
 
-    public static ICheckAssertion<string> EndsWith(this ICheckAssertion<string> check, string expectedEnd, string? userFailureMessage = null)
+    public static ICheckAssertionForNullableType<string?> EndsWith(this ICheckAssertionForNullableType<string?> check, string expectedEnd, string? userFailureMessage = null)
     {
         if (check.Input == null || check.Input.EndsWith(expectedEnd) == false)
         {
@@ -170,7 +170,7 @@ public static class StringAssertionExtensions
         return check;
     }
 
-    public static ICheckAssertion<string> EndsWithCaseInsensitive(this ICheckAssertion<string> check, string expectedEnd, string? userFailureMessage = null)
+    public static ICheckAssertionForNullableType<string?> EndsWithCaseInsensitive(this ICheckAssertionForNullableType<string?> check, string expectedEnd, string? userFailureMessage = null)
     {
         if (check.Input == null || check.Input.EndsWith(expectedEnd, StringComparison.CurrentCultureIgnoreCase) == false)
         {
@@ -180,7 +180,7 @@ public static class StringAssertionExtensions
         return check;
     }
 
-    public static ICheckAssertion<string> DoesNotEndWith(this ICheckAssertion<string> check, string unexpectedEnd, string? userFailureMessage = null)
+    public static ICheckAssertionForNullableType<string?> DoesNotEndWith(this ICheckAssertionForNullableType<string?> check, string unexpectedEnd, string? userFailureMessage = null)
     {
         if (check.Input != null && check.Input.EndsWith(unexpectedEnd))
         {
@@ -190,7 +190,7 @@ public static class StringAssertionExtensions
         return check;
     }
 
-    public static ICheckAssertion<string> DoesNotEndWithCaseInsensitive(this ICheckAssertion<string> check, string unexpectedEnd, string? userFailureMessage = null)
+    public static ICheckAssertionForNullableType<string?> DoesNotEndWithCaseInsensitive(this ICheckAssertionForNullableType<string?> check, string unexpectedEnd, string? userFailureMessage = null)
     {
         if (check.Input != null && check.Input.EndsWith(unexpectedEnd, StringComparison.CurrentCultureIgnoreCase))
         {
