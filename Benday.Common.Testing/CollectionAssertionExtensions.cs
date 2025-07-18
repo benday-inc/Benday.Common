@@ -2,7 +2,8 @@ namespace Benday.Common.Testing;
 
 public static class CollectionAssertionExtensions
 {
-    public static ICheckAssertion<IEnumerable<T>> IsEqualTo<T>(this ICheckAssertion<IEnumerable<T>> check, IEnumerable<T> expected)
+    public static ICheckAssertion<ICollection<T>> IsEqualTo<T>(
+        this ICheckAssertion<ICollection<T>> check, ICollection<T> expected)
     {
         if (check.Input == null)
         {
@@ -15,6 +16,7 @@ public static class CollectionAssertionExtensions
         }
         return check;
     }
+
 
     public static ICheckAssertion<IEnumerable<T>> IsNotEqualTo<T>(this ICheckAssertion<IEnumerable<T>> check, IEnumerable<T> notExpected)
     {
@@ -29,6 +31,7 @@ public static class CollectionAssertionExtensions
         }
         return check;
     }
+
 
     public static ICheckAssertion<IEnumerable<T>> IsEquivalentTo<T>(this ICheckAssertion<IEnumerable<T>> check, IEnumerable<T> expected)
     {
@@ -66,6 +69,7 @@ public static class CollectionAssertionExtensions
         return check;
     }
 
+
     public static ICheckAssertion<IEnumerable<T>> Contains<T>(this ICheckAssertion<IEnumerable<T>> check, T expected)
     {
         if (check.Input == null)
@@ -79,6 +83,7 @@ public static class CollectionAssertionExtensions
         }
         return check;
     }
+
 
     public static ICheckAssertion<IEnumerable<T>> DoesNotContain<T>(this ICheckAssertion<IEnumerable<T>> check, T unexpected)
     {
@@ -94,7 +99,8 @@ public static class CollectionAssertionExtensions
         return check;
     }
 
-    public static ICheckAssertion<IEnumerable<T>> AllItemsAreNotNull<T>(this ICheckAssertion<IEnumerable<T?>> check) where T : class
+
+    public static ICheckAssertion<IEnumerable<T?>> AllItemsAreNotNull<T>(this ICheckAssertion<IEnumerable<T?>> check) where T : class
     {
         if (check.Input == null)
         {
@@ -109,8 +115,9 @@ public static class CollectionAssertionExtensions
             }
         }
 
-        return (ICheckAssertion<IEnumerable<T>>)check;
+        return check;
     }
+
 
     public static ICheckAssertion<IEnumerable<T>> AllItemsAreUnique<T>(this ICheckAssertion<IEnumerable<T>> check)
     {
@@ -131,6 +138,7 @@ public static class CollectionAssertionExtensions
         return check;
     }
 
+
     public static ICheckAssertion<IEnumerable<T>> IsSubsetOf<T>(this ICheckAssertion<IEnumerable<T>> check, IEnumerable<T> superset)
     {
         if (check.Input == null)
@@ -149,6 +157,7 @@ public static class CollectionAssertionExtensions
         return check;
     }
 
+
     public static ICheckAssertion<IEnumerable<T>> IsSupersetOf<T>(this ICheckAssertion<IEnumerable<T>> check, IEnumerable<T> subset)
     {
         if (check.Input == null)
@@ -166,4 +175,5 @@ public static class CollectionAssertionExtensions
 
         return check;
     }
+
 }
