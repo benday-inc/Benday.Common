@@ -12,9 +12,10 @@
     <PackageReference Include="xunit" Version="2.*" />
     <PackageReference Include="xunit.runner.visualstudio" Version="3.*" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.*" />
+    <PackageReference Include="Benday.Common.Testing" Version="1.*" />
+
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Benday.Common.Testing\Benday.Common.Testing.csproj" />
     <ProjectReference Include="..\Benday.Common\Benday.Common.csproj" />
   </ItemGroup>
 </Project>
