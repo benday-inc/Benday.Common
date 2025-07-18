@@ -17,7 +17,8 @@ public class CheckThatForStringsFixture : TestClassBase
     [Fact]
     public void CheckThat_StringIsNotNullOrEmpty()
     {
-        string? input = "Hello, World!";
+        string? input = null;
+        input = "Hello, World!";
 
         var check = input.CheckThat();
 
@@ -37,7 +38,8 @@ public class CheckThatForStringsFixture : TestClassBase
     [Fact]
     public void CheckThat_EmptyString_IsNotNullOrEmpty()
     {
-        string? input = "";
+        string? input = null;
+        input = "";
 
         var check = input.CheckThat();
 
