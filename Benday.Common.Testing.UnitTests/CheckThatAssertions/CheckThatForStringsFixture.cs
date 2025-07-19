@@ -82,6 +82,68 @@ public class CheckThatForStringsFixture : TestClassBase
     }
 
     [Fact]
+    public void CheckThat_IsEqualTo_Equal_NullableStrings()
+    {
+        // arrange
+        string? input = "asdf1234";
+        string? value2 = "asdf1234";
+
+        // act
+        var check = input.CheckThat();
+
+        check.IsEqualTo(value2);
+
+        // assert
+        // this worked if we didn't get an exception
+    }
+
+    [Fact]
+    public void CheckThat_IsEqualTo_Equal_BothNull_NullableStrings()
+    {
+        // arrange
+        string? input = null;
+        string? value2 = null;
+
+        // act
+        var check = input.CheckThatNullable();
+
+        check.IsEqualTo(value2);
+
+        // assert
+        // this worked if we didn't get an exception
+    }
+
+    [Fact]
+    public void CheckThat_IsEqualTo_NotEqual_NullableStrings_v1()
+    {
+        // arrange
+        string? input = null;
+        string? value2 = "asdf1234asdf";
+
+        var check = input.CheckThatNullable();
+
+        // act & assert
+        Assert.Throws<CheckAssertionFailureException>(() =>
+            check.IsEqualTo(value2)
+        );
+    }
+
+    [Fact]
+    public void CheckThat_IsEqualTo_NotEqual_NullableStrings_v2()
+    {
+        // arrange
+        string? input = "asdf";
+        string? value2 = null;
+
+        var check = input.CheckThatNullable();
+
+        // act & assert
+        Assert.Throws<CheckAssertionFailureException>(() =>
+            check.IsEqualTo(value2)
+        );
+    }
+
+    [Fact]
     public void CheckThat_IsEqualTo_NotEqual()
     {
         // arrange
