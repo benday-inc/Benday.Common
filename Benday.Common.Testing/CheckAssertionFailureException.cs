@@ -8,9 +8,4 @@ public class CheckAssertionFailureException : XunitException
         : base(message)
     {
     }
-
-    public CheckAssertionFailureException(string userMessage, string expected, string actual)
-        : base($"{userMessage}\nExpected: {expected}\nActual: {actual}")
-    {
-    }
 }
