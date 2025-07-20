@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Benday.Common.Testing</AssemblyName>
-    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <Authors>benday</Authors>
     <Copyright>2025</Copyright>
     <Description>A collection of classes to streamline testing with XUnit and Moq.</Description>
@@ -15,6 +15,7 @@
     <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageReleaseNotes>
+v1.2 - Added fluent assertions for xUnit to the package;
 v1.1 - Added base class functionality for reading sample data files during tests; Removed dependency on FluentAssertions;
 v1.0 - Base class for xunit tests; MockUtility for streamlining testing with Moq;
     </PackageReleaseNotes>
@@ -22,7 +23,7 @@ v1.0 - Base class for xunit tests; MockUtility for streamlining testing with Moq
     <RepositoryUrl>https://github.com/benday-inc/Benday.Common.git</RepositoryUrl>
     <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     <Title>Benday.Common.Testing</Title>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.*" />
@@ -32,7 +33,7 @@ v1.0 - Base class for xunit tests; MockUtility for streamlining testing with Moq
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Benday.Common" Version="9.4" />
+    <PackageReference Include="Benday.Common" Version="[9.4,)" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\bdc_mark_128_128.png">
