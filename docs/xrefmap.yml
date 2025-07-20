@@ -1418,15 +1418,15 @@ references:
   isSpec: "True"
   fullName: Benday.Common.Testing.ArrayAssertionExtensions.AllItemsAreNotNull
   nameWithType: ArrayAssertionExtensions.AllItemsAreNotNull
-- uid: Benday.Common.Testing.ArrayAssertionExtensions.AllItemsAreNotNull``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]})
-  name: AllItemsAreNotNull<T>(ICheckArrayAssertion<T[]>)
-  href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_AllItemsAreNotNull__1_Benday_Common_Testing_ICheckArrayAssertion___0____
-  commentId: M:Benday.Common.Testing.ArrayAssertionExtensions.AllItemsAreNotNull``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]})
-  name.vb: AllItemsAreNotNull(Of T)(ICheckArrayAssertion(Of T()))
-  fullName: Benday.Common.Testing.ArrayAssertionExtensions.AllItemsAreNotNull<T>(Benday.Common.Testing.ICheckArrayAssertion<T[]>)
-  fullName.vb: Benday.Common.Testing.ArrayAssertionExtensions.AllItemsAreNotNull(Of T)(Benday.Common.Testing.ICheckArrayAssertion(Of T()))
-  nameWithType: ArrayAssertionExtensions.AllItemsAreNotNull<T>(ICheckArrayAssertion<T[]>)
-  nameWithType.vb: ArrayAssertionExtensions.AllItemsAreNotNull(Of T)(ICheckArrayAssertion(Of T()))
+- uid: Benday.Common.Testing.ArrayAssertionExtensions.AllItemsAreNotNull``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.String)
+  name: AllItemsAreNotNull<T>(ICheckArrayAssertion<T[]>, string?)
+  href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_AllItemsAreNotNull__1_Benday_Common_Testing_ICheckArrayAssertion___0____System_String_
+  commentId: M:Benday.Common.Testing.ArrayAssertionExtensions.AllItemsAreNotNull``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.String)
+  name.vb: AllItemsAreNotNull(Of T)(ICheckArrayAssertion(Of T()), String)
+  fullName: Benday.Common.Testing.ArrayAssertionExtensions.AllItemsAreNotNull<T>(Benday.Common.Testing.ICheckArrayAssertion<T[]>, string?)
+  fullName.vb: Benday.Common.Testing.ArrayAssertionExtensions.AllItemsAreNotNull(Of T)(Benday.Common.Testing.ICheckArrayAssertion(Of T()), String)
+  nameWithType: ArrayAssertionExtensions.AllItemsAreNotNull<T>(ICheckArrayAssertion<T[]>, string?)
+  nameWithType.vb: ArrayAssertionExtensions.AllItemsAreNotNull(Of T)(ICheckArrayAssertion(Of T()), String)
 - uid: Benday.Common.Testing.ArrayAssertionExtensions.AllItemsAreUnique*
   name: AllItemsAreUnique
   href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_AllItemsAreUnique_
@@ -1434,15 +1434,15 @@ references:
   isSpec: "True"
   fullName: Benday.Common.Testing.ArrayAssertionExtensions.AllItemsAreUnique
   nameWithType: ArrayAssertionExtensions.AllItemsAreUnique
-- uid: Benday.Common.Testing.ArrayAssertionExtensions.AllItemsAreUnique``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]})
-  name: AllItemsAreUnique<T>(ICheckArrayAssertion<T[]>)
-  href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_AllItemsAreUnique__1_Benday_Common_Testing_ICheckArrayAssertion___0____
-  commentId: M:Benday.Common.Testing.ArrayAssertionExtensions.AllItemsAreUnique``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]})
-  name.vb: AllItemsAreUnique(Of T)(ICheckArrayAssertion(Of T()))
-  fullName: Benday.Common.Testing.ArrayAssertionExtensions.AllItemsAreUnique<T>(Benday.Common.Testing.ICheckArrayAssertion<T[]>)
-  fullName.vb: Benday.Common.Testing.ArrayAssertionExtensions.AllItemsAreUnique(Of T)(Benday.Common.Testing.ICheckArrayAssertion(Of T()))
-  nameWithType: ArrayAssertionExtensions.AllItemsAreUnique<T>(ICheckArrayAssertion<T[]>)
-  nameWithType.vb: ArrayAssertionExtensions.AllItemsAreUnique(Of T)(ICheckArrayAssertion(Of T()))
+- uid: Benday.Common.Testing.ArrayAssertionExtensions.AllItemsAreUnique``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.String)
+  name: AllItemsAreUnique<T>(ICheckArrayAssertion<T[]>, string?)
+  href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_AllItemsAreUnique__1_Benday_Common_Testing_ICheckArrayAssertion___0____System_String_
+  commentId: M:Benday.Common.Testing.ArrayAssertionExtensions.AllItemsAreUnique``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.String)
+  name.vb: AllItemsAreUnique(Of T)(ICheckArrayAssertion(Of T()), String)
+  fullName: Benday.Common.Testing.ArrayAssertionExtensions.AllItemsAreUnique<T>(Benday.Common.Testing.ICheckArrayAssertion<T[]>, string?)
+  fullName.vb: Benday.Common.Testing.ArrayAssertionExtensions.AllItemsAreUnique(Of T)(Benday.Common.Testing.ICheckArrayAssertion(Of T()), String)
+  nameWithType: ArrayAssertionExtensions.AllItemsAreUnique<T>(ICheckArrayAssertion<T[]>, string?)
+  nameWithType.vb: ArrayAssertionExtensions.AllItemsAreUnique(Of T)(ICheckArrayAssertion(Of T()), String)
 - uid: Benday.Common.Testing.ArrayAssertionExtensions.Contains*
   name: Contains
   href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_Contains_
@@ -1450,15 +1450,15 @@ references:
   isSpec: "True"
   fullName: Benday.Common.Testing.ArrayAssertionExtensions.Contains
   nameWithType: ArrayAssertionExtensions.Contains
-- uid: Benday.Common.Testing.ArrayAssertionExtensions.Contains``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},``0)
-  name: Contains<T>(ICheckArrayAssertion<T[]>, T)
-  href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_Contains__1_Benday_Common_Testing_ICheckArrayAssertion___0______0_
-  commentId: M:Benday.Common.Testing.ArrayAssertionExtensions.Contains``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},``0)
-  name.vb: Contains(Of T)(ICheckArrayAssertion(Of T()), T)
-  fullName: Benday.Common.Testing.ArrayAssertionExtensions.Contains<T>(Benday.Common.Testing.ICheckArrayAssertion<T[]>, T)
-  fullName.vb: Benday.Common.Testing.ArrayAssertionExtensions.Contains(Of T)(Benday.Common.Testing.ICheckArrayAssertion(Of T()), T)
-  nameWithType: ArrayAssertionExtensions.Contains<T>(ICheckArrayAssertion<T[]>, T)
-  nameWithType.vb: ArrayAssertionExtensions.Contains(Of T)(ICheckArrayAssertion(Of T()), T)
+- uid: Benday.Common.Testing.ArrayAssertionExtensions.Contains``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},``0,System.String)
+  name: Contains<T>(ICheckArrayAssertion<T[]>, T, string?)
+  href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_Contains__1_Benday_Common_Testing_ICheckArrayAssertion___0______0_System_String_
+  commentId: M:Benday.Common.Testing.ArrayAssertionExtensions.Contains``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},``0,System.String)
+  name.vb: Contains(Of T)(ICheckArrayAssertion(Of T()), T, String)
+  fullName: Benday.Common.Testing.ArrayAssertionExtensions.Contains<T>(Benday.Common.Testing.ICheckArrayAssertion<T[]>, T, string?)
+  fullName.vb: Benday.Common.Testing.ArrayAssertionExtensions.Contains(Of T)(Benday.Common.Testing.ICheckArrayAssertion(Of T()), T, String)
+  nameWithType: ArrayAssertionExtensions.Contains<T>(ICheckArrayAssertion<T[]>, T, string?)
+  nameWithType.vb: ArrayAssertionExtensions.Contains(Of T)(ICheckArrayAssertion(Of T()), T, String)
 - uid: Benday.Common.Testing.ArrayAssertionExtensions.DoesNotContain*
   name: DoesNotContain
   href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_DoesNotContain_
@@ -1466,15 +1466,15 @@ references:
   isSpec: "True"
   fullName: Benday.Common.Testing.ArrayAssertionExtensions.DoesNotContain
   nameWithType: ArrayAssertionExtensions.DoesNotContain
-- uid: Benday.Common.Testing.ArrayAssertionExtensions.DoesNotContain``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},``0)
-  name: DoesNotContain<T>(ICheckArrayAssertion<T[]>, T)
-  href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_DoesNotContain__1_Benday_Common_Testing_ICheckArrayAssertion___0______0_
-  commentId: M:Benday.Common.Testing.ArrayAssertionExtensions.DoesNotContain``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},``0)
-  name.vb: DoesNotContain(Of T)(ICheckArrayAssertion(Of T()), T)
-  fullName: Benday.Common.Testing.ArrayAssertionExtensions.DoesNotContain<T>(Benday.Common.Testing.ICheckArrayAssertion<T[]>, T)
-  fullName.vb: Benday.Common.Testing.ArrayAssertionExtensions.DoesNotContain(Of T)(Benday.Common.Testing.ICheckArrayAssertion(Of T()), T)
-  nameWithType: ArrayAssertionExtensions.DoesNotContain<T>(ICheckArrayAssertion<T[]>, T)
-  nameWithType.vb: ArrayAssertionExtensions.DoesNotContain(Of T)(ICheckArrayAssertion(Of T()), T)
+- uid: Benday.Common.Testing.ArrayAssertionExtensions.DoesNotContain``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},``0,System.String)
+  name: DoesNotContain<T>(ICheckArrayAssertion<T[]>, T, string?)
+  href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_DoesNotContain__1_Benday_Common_Testing_ICheckArrayAssertion___0______0_System_String_
+  commentId: M:Benday.Common.Testing.ArrayAssertionExtensions.DoesNotContain``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},``0,System.String)
+  name.vb: DoesNotContain(Of T)(ICheckArrayAssertion(Of T()), T, String)
+  fullName: Benday.Common.Testing.ArrayAssertionExtensions.DoesNotContain<T>(Benday.Common.Testing.ICheckArrayAssertion<T[]>, T, string?)
+  fullName.vb: Benday.Common.Testing.ArrayAssertionExtensions.DoesNotContain(Of T)(Benday.Common.Testing.ICheckArrayAssertion(Of T()), T, String)
+  nameWithType: ArrayAssertionExtensions.DoesNotContain<T>(ICheckArrayAssertion<T[]>, T, string?)
+  nameWithType.vb: ArrayAssertionExtensions.DoesNotContain(Of T)(ICheckArrayAssertion(Of T()), T, String)
 - uid: Benday.Common.Testing.ArrayAssertionExtensions.IsEqualTo*
   name: IsEqualTo
   href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_IsEqualTo_
@@ -1482,15 +1482,15 @@ references:
   isSpec: "True"
   fullName: Benday.Common.Testing.ArrayAssertionExtensions.IsEqualTo
   nameWithType: ArrayAssertionExtensions.IsEqualTo
-- uid: Benday.Common.Testing.ArrayAssertionExtensions.IsEqualTo``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0})
-  name: IsEqualTo<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>)
-  href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_IsEqualTo__1_Benday_Common_Testing_ICheckArrayAssertion___0____System_Collections_Generic_IEnumerable___0__
-  commentId: M:Benday.Common.Testing.ArrayAssertionExtensions.IsEqualTo``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0})
-  name.vb: IsEqualTo(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T))
-  fullName: Benday.Common.Testing.ArrayAssertionExtensions.IsEqualTo<T>(Benday.Common.Testing.ICheckArrayAssertion<T[]>, System.Collections.Generic.IEnumerable<T>)
-  fullName.vb: Benday.Common.Testing.ArrayAssertionExtensions.IsEqualTo(Of T)(Benday.Common.Testing.ICheckArrayAssertion(Of T()), System.Collections.Generic.IEnumerable(Of T))
-  nameWithType: ArrayAssertionExtensions.IsEqualTo<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>)
-  nameWithType.vb: ArrayAssertionExtensions.IsEqualTo(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T))
+- uid: Benday.Common.Testing.ArrayAssertionExtensions.IsEqualTo``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0},System.String)
+  name: IsEqualTo<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>, string?)
+  href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_IsEqualTo__1_Benday_Common_Testing_ICheckArrayAssertion___0____System_Collections_Generic_IEnumerable___0__System_String_
+  commentId: M:Benday.Common.Testing.ArrayAssertionExtensions.IsEqualTo``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0},System.String)
+  name.vb: IsEqualTo(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T), String)
+  fullName: Benday.Common.Testing.ArrayAssertionExtensions.IsEqualTo<T>(Benday.Common.Testing.ICheckArrayAssertion<T[]>, System.Collections.Generic.IEnumerable<T>, string?)
+  fullName.vb: Benday.Common.Testing.ArrayAssertionExtensions.IsEqualTo(Of T)(Benday.Common.Testing.ICheckArrayAssertion(Of T()), System.Collections.Generic.IEnumerable(Of T), String)
+  nameWithType: ArrayAssertionExtensions.IsEqualTo<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>, string?)
+  nameWithType.vb: ArrayAssertionExtensions.IsEqualTo(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T), String)
 - uid: Benday.Common.Testing.ArrayAssertionExtensions.IsEquivalentTo*
   name: IsEquivalentTo
   href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_IsEquivalentTo_
@@ -1498,15 +1498,15 @@ references:
   isSpec: "True"
   fullName: Benday.Common.Testing.ArrayAssertionExtensions.IsEquivalentTo
   nameWithType: ArrayAssertionExtensions.IsEquivalentTo
-- uid: Benday.Common.Testing.ArrayAssertionExtensions.IsEquivalentTo``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0})
-  name: IsEquivalentTo<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>)
-  href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_IsEquivalentTo__1_Benday_Common_Testing_ICheckArrayAssertion___0____System_Collections_Generic_IEnumerable___0__
-  commentId: M:Benday.Common.Testing.ArrayAssertionExtensions.IsEquivalentTo``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0})
-  name.vb: IsEquivalentTo(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T))
-  fullName: Benday.Common.Testing.ArrayAssertionExtensions.IsEquivalentTo<T>(Benday.Common.Testing.ICheckArrayAssertion<T[]>, System.Collections.Generic.IEnumerable<T>)
-  fullName.vb: Benday.Common.Testing.ArrayAssertionExtensions.IsEquivalentTo(Of T)(Benday.Common.Testing.ICheckArrayAssertion(Of T()), System.Collections.Generic.IEnumerable(Of T))
-  nameWithType: ArrayAssertionExtensions.IsEquivalentTo<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>)
-  nameWithType.vb: ArrayAssertionExtensions.IsEquivalentTo(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T))
+- uid: Benday.Common.Testing.ArrayAssertionExtensions.IsEquivalentTo``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0},System.String)
+  name: IsEquivalentTo<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>, string?)
+  href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_IsEquivalentTo__1_Benday_Common_Testing_ICheckArrayAssertion___0____System_Collections_Generic_IEnumerable___0__System_String_
+  commentId: M:Benday.Common.Testing.ArrayAssertionExtensions.IsEquivalentTo``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0},System.String)
+  name.vb: IsEquivalentTo(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T), String)
+  fullName: Benday.Common.Testing.ArrayAssertionExtensions.IsEquivalentTo<T>(Benday.Common.Testing.ICheckArrayAssertion<T[]>, System.Collections.Generic.IEnumerable<T>, string?)
+  fullName.vb: Benday.Common.Testing.ArrayAssertionExtensions.IsEquivalentTo(Of T)(Benday.Common.Testing.ICheckArrayAssertion(Of T()), System.Collections.Generic.IEnumerable(Of T), String)
+  nameWithType: ArrayAssertionExtensions.IsEquivalentTo<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>, string?)
+  nameWithType.vb: ArrayAssertionExtensions.IsEquivalentTo(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T), String)
 - uid: Benday.Common.Testing.ArrayAssertionExtensions.IsNotEqualTo*
   name: IsNotEqualTo
   href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_IsNotEqualTo_
@@ -1514,15 +1514,15 @@ references:
   isSpec: "True"
   fullName: Benday.Common.Testing.ArrayAssertionExtensions.IsNotEqualTo
   nameWithType: ArrayAssertionExtensions.IsNotEqualTo
-- uid: Benday.Common.Testing.ArrayAssertionExtensions.IsNotEqualTo``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0})
-  name: IsNotEqualTo<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>)
-  href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_IsNotEqualTo__1_Benday_Common_Testing_ICheckArrayAssertion___0____System_Collections_Generic_IEnumerable___0__
-  commentId: M:Benday.Common.Testing.ArrayAssertionExtensions.IsNotEqualTo``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0})
-  name.vb: IsNotEqualTo(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T))
-  fullName: Benday.Common.Testing.ArrayAssertionExtensions.IsNotEqualTo<T>(Benday.Common.Testing.ICheckArrayAssertion<T[]>, System.Collections.Generic.IEnumerable<T>)
-  fullName.vb: Benday.Common.Testing.ArrayAssertionExtensions.IsNotEqualTo(Of T)(Benday.Common.Testing.ICheckArrayAssertion(Of T()), System.Collections.Generic.IEnumerable(Of T))
-  nameWithType: ArrayAssertionExtensions.IsNotEqualTo<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>)
-  nameWithType.vb: ArrayAssertionExtensions.IsNotEqualTo(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T))
+- uid: Benday.Common.Testing.ArrayAssertionExtensions.IsNotEqualTo``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0},System.String)
+  name: IsNotEqualTo<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>, string?)
+  href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_IsNotEqualTo__1_Benday_Common_Testing_ICheckArrayAssertion___0____System_Collections_Generic_IEnumerable___0__System_String_
+  commentId: M:Benday.Common.Testing.ArrayAssertionExtensions.IsNotEqualTo``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0},System.String)
+  name.vb: IsNotEqualTo(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T), String)
+  fullName: Benday.Common.Testing.ArrayAssertionExtensions.IsNotEqualTo<T>(Benday.Common.Testing.ICheckArrayAssertion<T[]>, System.Collections.Generic.IEnumerable<T>, string?)
+  fullName.vb: Benday.Common.Testing.ArrayAssertionExtensions.IsNotEqualTo(Of T)(Benday.Common.Testing.ICheckArrayAssertion(Of T()), System.Collections.Generic.IEnumerable(Of T), String)
+  nameWithType: ArrayAssertionExtensions.IsNotEqualTo<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>, string?)
+  nameWithType.vb: ArrayAssertionExtensions.IsNotEqualTo(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T), String)
 - uid: Benday.Common.Testing.ArrayAssertionExtensions.IsNotEquivalentTo*
   name: IsNotEquivalentTo
   href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_IsNotEquivalentTo_
@@ -1530,15 +1530,15 @@ references:
   isSpec: "True"
   fullName: Benday.Common.Testing.ArrayAssertionExtensions.IsNotEquivalentTo
   nameWithType: ArrayAssertionExtensions.IsNotEquivalentTo
-- uid: Benday.Common.Testing.ArrayAssertionExtensions.IsNotEquivalentTo``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0})
-  name: IsNotEquivalentTo<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>)
-  href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_IsNotEquivalentTo__1_Benday_Common_Testing_ICheckArrayAssertion___0____System_Collections_Generic_IEnumerable___0__
-  commentId: M:Benday.Common.Testing.ArrayAssertionExtensions.IsNotEquivalentTo``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0})
-  name.vb: IsNotEquivalentTo(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T))
-  fullName: Benday.Common.Testing.ArrayAssertionExtensions.IsNotEquivalentTo<T>(Benday.Common.Testing.ICheckArrayAssertion<T[]>, System.Collections.Generic.IEnumerable<T>)
-  fullName.vb: Benday.Common.Testing.ArrayAssertionExtensions.IsNotEquivalentTo(Of T)(Benday.Common.Testing.ICheckArrayAssertion(Of T()), System.Collections.Generic.IEnumerable(Of T))
-  nameWithType: ArrayAssertionExtensions.IsNotEquivalentTo<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>)
-  nameWithType.vb: ArrayAssertionExtensions.IsNotEquivalentTo(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T))
+- uid: Benday.Common.Testing.ArrayAssertionExtensions.IsNotEquivalentTo``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0},System.String)
+  name: IsNotEquivalentTo<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>, string?)
+  href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_IsNotEquivalentTo__1_Benday_Common_Testing_ICheckArrayAssertion___0____System_Collections_Generic_IEnumerable___0__System_String_
+  commentId: M:Benday.Common.Testing.ArrayAssertionExtensions.IsNotEquivalentTo``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0},System.String)
+  name.vb: IsNotEquivalentTo(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T), String)
+  fullName: Benday.Common.Testing.ArrayAssertionExtensions.IsNotEquivalentTo<T>(Benday.Common.Testing.ICheckArrayAssertion<T[]>, System.Collections.Generic.IEnumerable<T>, string?)
+  fullName.vb: Benday.Common.Testing.ArrayAssertionExtensions.IsNotEquivalentTo(Of T)(Benday.Common.Testing.ICheckArrayAssertion(Of T()), System.Collections.Generic.IEnumerable(Of T), String)
+  nameWithType: ArrayAssertionExtensions.IsNotEquivalentTo<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>, string?)
+  nameWithType.vb: ArrayAssertionExtensions.IsNotEquivalentTo(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T), String)
 - uid: Benday.Common.Testing.ArrayAssertionExtensions.IsSubsetOf*
   name: IsSubsetOf
   href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_IsSubsetOf_
@@ -1546,15 +1546,15 @@ references:
   isSpec: "True"
   fullName: Benday.Common.Testing.ArrayAssertionExtensions.IsSubsetOf
   nameWithType: ArrayAssertionExtensions.IsSubsetOf
-- uid: Benday.Common.Testing.ArrayAssertionExtensions.IsSubsetOf``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0})
-  name: IsSubsetOf<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>)
-  href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_IsSubsetOf__1_Benday_Common_Testing_ICheckArrayAssertion___0____System_Collections_Generic_IEnumerable___0__
-  commentId: M:Benday.Common.Testing.ArrayAssertionExtensions.IsSubsetOf``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0})
-  name.vb: IsSubsetOf(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T))
-  fullName: Benday.Common.Testing.ArrayAssertionExtensions.IsSubsetOf<T>(Benday.Common.Testing.ICheckArrayAssertion<T[]>, System.Collections.Generic.IEnumerable<T>)
-  fullName.vb: Benday.Common.Testing.ArrayAssertionExtensions.IsSubsetOf(Of T)(Benday.Common.Testing.ICheckArrayAssertion(Of T()), System.Collections.Generic.IEnumerable(Of T))
-  nameWithType: ArrayAssertionExtensions.IsSubsetOf<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>)
-  nameWithType.vb: ArrayAssertionExtensions.IsSubsetOf(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T))
+- uid: Benday.Common.Testing.ArrayAssertionExtensions.IsSubsetOf``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0},System.String)
+  name: IsSubsetOf<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>, string?)
+  href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_IsSubsetOf__1_Benday_Common_Testing_ICheckArrayAssertion___0____System_Collections_Generic_IEnumerable___0__System_String_
+  commentId: M:Benday.Common.Testing.ArrayAssertionExtensions.IsSubsetOf``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0},System.String)
+  name.vb: IsSubsetOf(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T), String)
+  fullName: Benday.Common.Testing.ArrayAssertionExtensions.IsSubsetOf<T>(Benday.Common.Testing.ICheckArrayAssertion<T[]>, System.Collections.Generic.IEnumerable<T>, string?)
+  fullName.vb: Benday.Common.Testing.ArrayAssertionExtensions.IsSubsetOf(Of T)(Benday.Common.Testing.ICheckArrayAssertion(Of T()), System.Collections.Generic.IEnumerable(Of T), String)
+  nameWithType: ArrayAssertionExtensions.IsSubsetOf<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>, string?)
+  nameWithType.vb: ArrayAssertionExtensions.IsSubsetOf(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T), String)
 - uid: Benday.Common.Testing.ArrayAssertionExtensions.IsSupersetOf*
   name: IsSupersetOf
   href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_IsSupersetOf_
@@ -1562,15 +1562,15 @@ references:
   isSpec: "True"
   fullName: Benday.Common.Testing.ArrayAssertionExtensions.IsSupersetOf
   nameWithType: ArrayAssertionExtensions.IsSupersetOf
-- uid: Benday.Common.Testing.ArrayAssertionExtensions.IsSupersetOf``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0})
-  name: IsSupersetOf<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>)
-  href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_IsSupersetOf__1_Benday_Common_Testing_ICheckArrayAssertion___0____System_Collections_Generic_IEnumerable___0__
-  commentId: M:Benday.Common.Testing.ArrayAssertionExtensions.IsSupersetOf``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0})
-  name.vb: IsSupersetOf(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T))
-  fullName: Benday.Common.Testing.ArrayAssertionExtensions.IsSupersetOf<T>(Benday.Common.Testing.ICheckArrayAssertion<T[]>, System.Collections.Generic.IEnumerable<T>)
-  fullName.vb: Benday.Common.Testing.ArrayAssertionExtensions.IsSupersetOf(Of T)(Benday.Common.Testing.ICheckArrayAssertion(Of T()), System.Collections.Generic.IEnumerable(Of T))
-  nameWithType: ArrayAssertionExtensions.IsSupersetOf<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>)
-  nameWithType.vb: ArrayAssertionExtensions.IsSupersetOf(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T))
+- uid: Benday.Common.Testing.ArrayAssertionExtensions.IsSupersetOf``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0},System.String)
+  name: IsSupersetOf<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>, string?)
+  href: api/Benday.Common.Testing.ArrayAssertionExtensions.html#Benday_Common_Testing_ArrayAssertionExtensions_IsSupersetOf__1_Benday_Common_Testing_ICheckArrayAssertion___0____System_Collections_Generic_IEnumerable___0__System_String_
+  commentId: M:Benday.Common.Testing.ArrayAssertionExtensions.IsSupersetOf``1(Benday.Common.Testing.ICheckArrayAssertion{``0[]},System.Collections.Generic.IEnumerable{``0},System.String)
+  name.vb: IsSupersetOf(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T), String)
+  fullName: Benday.Common.Testing.ArrayAssertionExtensions.IsSupersetOf<T>(Benday.Common.Testing.ICheckArrayAssertion<T[]>, System.Collections.Generic.IEnumerable<T>, string?)
+  fullName.vb: Benday.Common.Testing.ArrayAssertionExtensions.IsSupersetOf(Of T)(Benday.Common.Testing.ICheckArrayAssertion(Of T()), System.Collections.Generic.IEnumerable(Of T), String)
+  nameWithType: ArrayAssertionExtensions.IsSupersetOf<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>, string?)
+  nameWithType.vb: ArrayAssertionExtensions.IsSupersetOf(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T), String)
 - uid: Benday.Common.Testing.CheckArrayAssertion`1
   name: CheckArrayAssertion<T>
   href: api/Benday.Common.Testing.CheckArrayAssertion-1.html
@@ -1716,15 +1716,6 @@ references:
   fullName.vb: Benday.Common.Testing.CheckAssertionFailureException.New(String)
   nameWithType: CheckAssertionFailureException.CheckAssertionFailureException(string)
   nameWithType.vb: CheckAssertionFailureException.New(String)
-- uid: Benday.Common.Testing.CheckAssertionFailureException.#ctor(System.String,System.String,System.String)
-  name: CheckAssertionFailureException(string, string, string)
-  href: api/Benday.Common.Testing.CheckAssertionFailureException.html#Benday_Common_Testing_CheckAssertionFailureException__ctor_System_String_System_String_System_String_
-  commentId: M:Benday.Common.Testing.CheckAssertionFailureException.#ctor(System.String,System.String,System.String)
-  name.vb: New(String, String, String)
-  fullName: Benday.Common.Testing.CheckAssertionFailureException.CheckAssertionFailureException(string, string, string)
-  fullName.vb: Benday.Common.Testing.CheckAssertionFailureException.New(String, String, String)
-  nameWithType: CheckAssertionFailureException.CheckAssertionFailureException(string, string, string)
-  nameWithType.vb: CheckAssertionFailureException.New(String, String, String)
 - uid: Benday.Common.Testing.CheckAssertionFailureException.#ctor*
   name: CheckAssertionFailureException
   href: api/Benday.Common.Testing.CheckAssertionFailureException.html#Benday_Common_Testing_CheckAssertionFailureException__ctor_
@@ -1918,6 +1909,15 @@ references:
   fullName.vb: Benday.Common.Testing.CheckExtensions.CheckThatNullable(String)
   nameWithType: CheckExtensions.CheckThatNullable(string?)
   nameWithType.vb: CheckExtensions.CheckThatNullable(String)
+- uid: Benday.Common.Testing.CheckExtensions.CheckThatNullable(System.String[])
+  name: CheckThatNullable(string?[])
+  href: api/Benday.Common.Testing.CheckExtensions.html#Benday_Common_Testing_CheckExtensions_CheckThatNullable_System_String___
+  commentId: M:Benday.Common.Testing.CheckExtensions.CheckThatNullable(System.String[])
+  name.vb: CheckThatNullable(String())
+  fullName: Benday.Common.Testing.CheckExtensions.CheckThatNullable(string?[])
+  fullName.vb: Benday.Common.Testing.CheckExtensions.CheckThatNullable(String())
+  nameWithType: CheckExtensions.CheckThatNullable(string?[])
+  nameWithType.vb: CheckExtensions.CheckThatNullable(String())
 - uid: Benday.Common.Testing.CheckExtensions.CheckThatNullable*
   name: CheckThatNullable
   href: api/Benday.Common.Testing.CheckExtensions.html#Benday_Common_Testing_CheckExtensions_CheckThatNullable_
@@ -1925,15 +1925,6 @@ references:
   isSpec: "True"
   fullName: Benday.Common.Testing.CheckExtensions.CheckThatNullable
   nameWithType: CheckExtensions.CheckThatNullable
-- uid: Benday.Common.Testing.CheckExtensions.CheckThat``1(``0)
-  name: CheckThat<T>(T)
-  href: api/Benday.Common.Testing.CheckExtensions.html#Benday_Common_Testing_CheckExtensions_CheckThat__1___0_
-  commentId: M:Benday.Common.Testing.CheckExtensions.CheckThat``1(``0)
-  name.vb: CheckThat(Of T)(T)
-  fullName: Benday.Common.Testing.CheckExtensions.CheckThat<T>(T)
-  fullName.vb: Benday.Common.Testing.CheckExtensions.CheckThat(Of T)(T)
-  nameWithType: CheckExtensions.CheckThat<T>(T)
-  nameWithType.vb: CheckExtensions.CheckThat(Of T)(T)
 - uid: Benday.Common.Testing.CheckExtensions.CheckThat``1(``0[])
   name: CheckThat<T>(T[])
   href: api/Benday.Common.Testing.CheckExtensions.html#Benday_Common_Testing_CheckExtensions_CheckThat__1___0___
@@ -2914,6 +2905,22 @@ references:
   commentId: T:Benday.Common.Testing.StringAssertionExtensions
   fullName: Benday.Common.Testing.StringAssertionExtensions
   nameWithType: StringAssertionExtensions
+- uid: Benday.Common.Testing.StringAssertionExtensions.AllItemsAreNotNull(Benday.Common.Testing.ICheckAssertionForNullableType{System.String[]})
+  name: AllItemsAreNotNull(ICheckAssertionForNullableType<string?[]>)
+  href: api/Benday.Common.Testing.StringAssertionExtensions.html#Benday_Common_Testing_StringAssertionExtensions_AllItemsAreNotNull_Benday_Common_Testing_ICheckAssertionForNullableType_System_String____
+  commentId: M:Benday.Common.Testing.StringAssertionExtensions.AllItemsAreNotNull(Benday.Common.Testing.ICheckAssertionForNullableType{System.String[]})
+  name.vb: AllItemsAreNotNull(ICheckAssertionForNullableType(Of String()))
+  fullName: Benday.Common.Testing.StringAssertionExtensions.AllItemsAreNotNull(Benday.Common.Testing.ICheckAssertionForNullableType<string?[]>)
+  fullName.vb: Benday.Common.Testing.StringAssertionExtensions.AllItemsAreNotNull(Benday.Common.Testing.ICheckAssertionForNullableType(Of String()))
+  nameWithType: StringAssertionExtensions.AllItemsAreNotNull(ICheckAssertionForNullableType<string?[]>)
+  nameWithType.vb: StringAssertionExtensions.AllItemsAreNotNull(ICheckAssertionForNullableType(Of String()))
+- uid: Benday.Common.Testing.StringAssertionExtensions.AllItemsAreNotNull*
+  name: AllItemsAreNotNull
+  href: api/Benday.Common.Testing.StringAssertionExtensions.html#Benday_Common_Testing_StringAssertionExtensions_AllItemsAreNotNull_
+  commentId: Overload:Benday.Common.Testing.StringAssertionExtensions.AllItemsAreNotNull
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssertionExtensions.AllItemsAreNotNull
+  nameWithType: StringAssertionExtensions.AllItemsAreNotNull
 - uid: Benday.Common.Testing.StringAssertionExtensions.Contains(Benday.Common.Testing.ICheckAssertion{System.String},System.String,System.String)
   name: Contains(ICheckAssertion<string>, string, string?)
   href: api/Benday.Common.Testing.StringAssertionExtensions.html#Benday_Common_Testing_StringAssertionExtensions_Contains_Benday_Common_Testing_ICheckAssertion_System_String__System_String_System_String_
