@@ -18,9 +18,20 @@ public class CheckThatForValueTypeArraysFixture : TestClassBase
     {
         var input = new[] { 1, 2, 3 };
         var expected = new[] { 1, 2, 3 };
-        var check = input.CheckThat();
+        var check = input.CheckThatArray();
 
         check.IsEqualTo(expected);
+    }
+
+    [Fact]
+    public void CheckThat_ThrowsException_WhenTypeIsArray()
+    {
+        var input = new[] { 1, 2, 3 };
+        var expected = new[] { 1, 2, 3 };
+
+        Assert.Throws<WrongCheckThatMethodException>(() =>
+            input.CheckThat()
+        );
     }
 
     [Fact]
@@ -29,7 +40,7 @@ public class CheckThatForValueTypeArraysFixture : TestClassBase
         var input = new[] { 1, 2, 3 };
         var expected = new[] { 3, 2, 1 };
         Assert.Throws<CheckAssertionFailureException>(() =>
-            input.CheckThat().IsEqualTo(expected)
+            input.CheckThatArray().IsEqualTo(expected)
         );
     }
 
@@ -38,7 +49,7 @@ public class CheckThatForValueTypeArraysFixture : TestClassBase
     {
         var input = new[] { 1, 2, 3 };
         var notExpected = new[] { 3, 2, 1 };
-        input.CheckThat().IsNotEqualTo(notExpected);
+        input.CheckThatArray().IsNotEqualTo(notExpected);
     }
 
     [Fact]
@@ -47,7 +58,7 @@ public class CheckThatForValueTypeArraysFixture : TestClassBase
         var input = new[] { 1, 2, 3 };
         var notExpected = new[] { 1, 2, 3 };
         Assert.Throws<CheckAssertionFailureException>(() =>
-            input.CheckThat().IsNotEqualTo(notExpected)
+            input.CheckThatArray().IsNotEqualTo(notExpected)
         );
     }
 
@@ -56,7 +67,7 @@ public class CheckThatForValueTypeArraysFixture : TestClassBase
     {
         var input = new[] { "a", "b", "c" };
         var expected = new[] { "c", "a", "b" };
-        input.CheckThat().IsEquivalentTo(expected);
+        input.CheckThatArray().IsEquivalentTo(expected);
     }
 
     [Fact]
@@ -65,7 +76,7 @@ public class CheckThatForValueTypeArraysFixture : TestClassBase
         var input = new[] { "a", "b", "c" };
         var expected = new[] { "a", "b", "d" };
         Assert.Throws<CheckAssertionFailureException>(() =>
-            input.CheckThat().IsEquivalentTo(expected)
+            input.CheckThatArray().IsEquivalentTo(expected)
         );
     }
 
@@ -74,7 +85,7 @@ public class CheckThatForValueTypeArraysFixture : TestClassBase
     {
         var input = new[] { "a", "b", "c" };
         var notExpected = new[] { "x", "y", "z" };
-        input.CheckThat().IsNotEquivalentTo(notExpected);
+        input.CheckThatArray().IsNotEquivalentTo(notExpected);
     }
 
     [Fact]
@@ -83,7 +94,7 @@ public class CheckThatForValueTypeArraysFixture : TestClassBase
         var input = new[] { "a", "b", "c" };
         var notExpected = new[] { "c", "b", "a" };
         Assert.Throws<CheckAssertionFailureException>(() =>
-            input.CheckThat().IsNotEquivalentTo(notExpected)
+            input.CheckThatArray().IsNotEquivalentTo(notExpected)
         );
     }
 
@@ -91,7 +102,7 @@ public class CheckThatForValueTypeArraysFixture : TestClassBase
     public void CheckThat_Contains_True()
     {
         var input = new[] { 1, 2, 3 };
-        input.CheckThat().Contains(2);
+        input.CheckThatArray().Contains(2);
     }
 
     [Fact]
@@ -99,7 +110,7 @@ public class CheckThatForValueTypeArraysFixture : TestClassBase
     {
         var input = new[] { 1, 2, 3 };
         Assert.Throws<CheckAssertionFailureException>(() =>
-            input.CheckThat().Contains(4)
+            input.CheckThatArray().Contains(4)
         );
     }
 
@@ -107,7 +118,7 @@ public class CheckThatForValueTypeArraysFixture : TestClassBase
     public void CheckThat_DoesNotContain_True()
     {
         var input = new[] { 1, 2, 3 };
-        input.CheckThat().DoesNotContain(4);
+        input.CheckThatArray().DoesNotContain(4);
     }
 
     [Fact]
@@ -115,7 +126,7 @@ public class CheckThatForValueTypeArraysFixture : TestClassBase
     {
         var input = new[] { 1, 2, 3 };
         Assert.Throws<CheckAssertionFailureException>(() =>
-            input.CheckThat().DoesNotContain(2)
+            input.CheckThatArray().DoesNotContain(2)
         );
     }
 
@@ -123,7 +134,7 @@ public class CheckThatForValueTypeArraysFixture : TestClassBase
     public void CheckThat_AllItemsAreNotNull_True()
     {
         var input = new[] { "a", "b", "c" };
-        input.CheckThat().AllItemsAreNotNull();
+        input.CheckThatArray().AllItemsAreNotNull();
     }
 
     [Fact]
@@ -140,7 +151,7 @@ public class CheckThatForValueTypeArraysFixture : TestClassBase
     public void CheckThat_AllItemsAreUnique_True()
     {
         var input = new[] { "apple", "banana", "cherry" };
-        input.CheckThat().AllItemsAreUnique();
+        input.CheckThatArray().AllItemsAreUnique();
     }
 
     [Fact]
@@ -148,7 +159,7 @@ public class CheckThatForValueTypeArraysFixture : TestClassBase
     {
         var input = new[] { "apple", "banana", "apple" };
 
-        var check = input.CheckThat();
+        var check = input.CheckThatArray();
 
         Assert.Throws<CheckAssertionFailureException>(() =>
             check.AllItemsAreUnique()
@@ -160,7 +171,7 @@ public class CheckThatForValueTypeArraysFixture : TestClassBase
     {
         var input = new[] { 1, 2 };
         var superset = new[] { 1, 2, 3, 4 };
-        input.CheckThat().IsSubsetOf(superset);
+        input.CheckThatArray().IsSubsetOf(superset);
     }
 
     [Fact]
@@ -169,7 +180,7 @@ public class CheckThatForValueTypeArraysFixture : TestClassBase
         var input = new[] { 1, 2, 5 };
         var superset = new[] { 1, 2, 3, 4 };
         Assert.Throws<CheckAssertionFailureException>(() =>
-            input.CheckThat().IsSubsetOf(superset)
+            input.CheckThatArray().IsSubsetOf(superset)
         );
     }
 
@@ -178,7 +189,7 @@ public class CheckThatForValueTypeArraysFixture : TestClassBase
     {
         var input = new[] { 1, 2, 3, 4 };
         var subset = new[] { 2, 3 };
-        input.CheckThat().IsSupersetOf(subset);
+        input.CheckThatArray().IsSupersetOf(subset);
     }
 
     [Fact]
@@ -187,7 +198,7 @@ public class CheckThatForValueTypeArraysFixture : TestClassBase
         var input = new[] { 1, 2, 3 };
         var subset = new[] { 2, 4 };
         Assert.Throws<CheckAssertionFailureException>(() =>
-            input.CheckThat().IsSupersetOf(subset)
+            input.CheckThatArray().IsSupersetOf(subset)
         );
     }
 }

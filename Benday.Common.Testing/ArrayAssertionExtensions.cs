@@ -199,4 +199,23 @@ public static class ArrayAssertionExtensions
         return check;
     }
 
+    public static ICheckAssertionForNullableType<T?[]> AllItemsAreNotNull<T>(
+        this ICheckAssertionForNullableType<T?[]> check)
+    {
+        if (check.Input == null)
+        {
+            check.FailWithOptionalMessage("Actual array is null.");
+        }
+
+        foreach (var item in check.Input)
+        {
+            if (item is null)
+            {
+                check.FailWithOptionalMessage("Expected all items to be non-null.");
+            }
+        }
+
+        return check;
+    }
+
 }
