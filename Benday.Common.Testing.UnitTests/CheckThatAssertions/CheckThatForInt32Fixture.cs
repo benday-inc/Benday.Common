@@ -83,4 +83,44 @@ public class CheckThatForInt32Fixture : TestClassBase
 
         Assert.Throws<CheckAssertionFailureException>(() => check.IsZero());
     }
+
+    [Fact]
+    public void CheckThat_IsNotZero_WhenValueIsNotZero()
+    {
+        int input = 1;
+
+        var check = input.CheckThat();
+
+        check.IsNotZero();
+    }
+
+    [Fact]
+    public void CheckThat_IsNotZero_WhenValueIsZero()
+    {
+        int input = 0;
+
+        var check = input.CheckThat();
+
+        Assert.Throws<CheckAssertionFailureException>(() => check.IsNotZero());
+    }
+
+    [Fact]
+    public void CheckThat_IsZero_WhenValueIsNotZero()
+    {
+        int input = 1;
+
+        var check = input.CheckThat();
+
+        Assert.Throws<CheckAssertionFailureException>(() => check.IsZero());
+    }
+
+    [Fact]
+    public void CheckThat_IsZero_WhenValueIsZero()
+    {
+        int input = 0;
+
+        var check = input.CheckThat();
+
+        check.IsZero();
+    }    
 }

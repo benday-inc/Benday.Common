@@ -9,6 +9,17 @@ public static class CheckExtensions
         return new CheckAssertion<string>(input);
     }
 
+    public static ICheckAssertion<T> CheckThat<T>(this T input) where T : notnull
+    {
+        return new CheckAssertion<T>(input);
+    }
+
+    public static ICheckAssertion<int> CheckThat(
+        this int input)
+    {
+        return new CheckAssertion<int>(input);
+    }
+
     public static ICheckAssertionForNullableType<string?> CheckThatNullable(
         this string? input)
     {
