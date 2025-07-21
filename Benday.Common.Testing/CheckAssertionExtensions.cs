@@ -36,6 +36,38 @@ public static class CheckAssertionExtensions
         throw new CheckAssertionFailureException(message);
     }
 
+    public static ICheckAssertion<int?> IsNotZero(this ICheckAssertion<int?> check,
+        string? userFailureMessage = null)
+    {
+        if (check.Input is null)
+        {
+            check.FailWithOptionalMessage(userFailureMessage, "Input is null.");
+        }
+
+        if (check.Input == 0)
+        {
+            check.FailWithOptionalMessage(userFailureMessage, "Input should not be zero.");
+        }
+
+        return check;
+    }
+
+    public static ICheckAssertion<int?> IsZero(this ICheckAssertion<int?> check,
+        string? userFailureMessage = null)
+    {
+        if (check.Input is null)
+        {
+            check.FailWithOptionalMessage(userFailureMessage, "Input is null.");
+        }
+
+        if (check.Input != 0)
+        {
+            check.FailWithOptionalMessage(userFailureMessage, "Input should be zero.");
+        }
+
+        return check;
+    }
+
     public static ICheckAssertion<T> IsNotNull<T>(this ICheckAssertion<T> check,
         string? userFailureMessage = null)
     {

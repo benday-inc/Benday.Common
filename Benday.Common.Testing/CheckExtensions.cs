@@ -15,6 +15,12 @@ public static class CheckExtensions
         return new CheckAssertionForNullableType<string?>(input);
     }
 
+    public static ICheckAssertionForNullableType<int?> CheckThatNullable(
+        this int? input)
+    {
+        return new CheckAssertionForNullableType<int?>(input);
+    }
+
     public static ICheckAssertionForNullableType<string?[]> CheckThatNullable(
        this string?[] input)
     {
