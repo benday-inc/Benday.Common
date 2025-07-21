@@ -250,9 +250,6 @@ $(function () {
     }
 
     function extractContentBrief(content) {
-      if (!content) {
-        return
-      }
       var briefOffset = 512;
       var words = query.split(/\s+/g);
       var queryIndex = content.indexOf(words[0]);
@@ -288,7 +285,7 @@ $(function () {
                 var itemRawHref = relativeUrlToAbsoluteUrl(currentUrl, relHref + hit.href);
                 var itemHref = relHref + hit.href + "?q=" + query;
                 var itemTitle = hit.title;
-                var itemBrief = extractContentBrief(hit.summary || '');
+                var itemBrief = extractContentBrief(hit.keywords);
 
                 var itemNode = $('<div>').attr('class', 'sr-item');
                 var itemTitleNode = $('<div>').attr('class', 'item-title').append($('<a>').attr('href', itemHref).attr("target", "_blank").attr("rel", "noopener noreferrer").text(itemTitle));
