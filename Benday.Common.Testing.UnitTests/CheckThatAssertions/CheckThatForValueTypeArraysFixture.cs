@@ -1,13 +1,14 @@
-using System;
 using Benday.Common.Testing;
-using Xunit;
+
+using System;
+
 using Xunit.Abstractions;
 
 namespace Benday.Common.UnitTests.CheckThatAssertions;
 
-public class CheckThatForArraysFixture : TestClassBase
+public class CheckThatForValueTypeArraysFixture : TestClassBase
 {
-    public CheckThatForArraysFixture(ITestOutputHelper output) : base(output)
+    public CheckThatForValueTypeArraysFixture(ITestOutputHelper output) : base(output)
     {
 
     }
