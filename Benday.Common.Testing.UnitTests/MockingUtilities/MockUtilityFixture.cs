@@ -1,7 +1,17 @@
-﻿using Benday.Common.Testing;
+﻿using System.Linq;
+using System.Reflection;
+
+using Benday.Common.Testing;
+
+using Castle.DynamicProxy;
+
+
 using FluentAssertions;
+
+
 using Microsoft.Extensions.Logging;
-using System.Linq;
+
+
 using Xunit;
 using Xunit.Abstractions;
 
@@ -96,5 +106,47 @@ public class MockUtilityFixture : TestClassBase
 
         var mockOfLogger = result.GetMock<ILogger<ClassWithMultipleDependencies>>();
         mockOfLogger.Should().BeNull();
+    }
+
+    [Fact]
+    public void Instance_IsLazyLoaded_WithConfiguredMocks()
+    {
+        var result = MockUtility.CreateInstance<ClassWithOneDependencyAndValidationLogicInTheConstructor>();
+
+        result.Should().NotBeNull();
+        result.Mocks.Count.Should().Be(1, "a mock should be created for this instance");
+
+        result.IsInstanceCreated.Should().BeFalse("Instance should not be created yet");
+
+        var mock = result.GetRequiredMock<ISampleConfigurationInfo>();
+
+        mock.SetupGet(x => x.ConfigurationValue).Returns("Test Value");
+
+        result.IsInstanceCreated.Should().BeFalse("Instance should still not be created yet");
+
+        result.Instance.Should().NotBeNull("Instance was null");
+
+        result.IsInstanceCreated.Should().BeTrue("Instance should be created");
+    }
+
+    [Fact]
+    public void Instance_IsLazyLoaded_WithoutConfiguredMocks()
+    {
+        var result = MockUtility.CreateInstance<ClassWithOneDependencyAndValidationLogicInTheConstructor>();
+
+        result.Should().NotBeNull();
+        result.Mocks.Count.Should().Be(1, "a mock should be created for this instance");
+
+        result.IsInstanceCreated.Should().BeFalse("Instance should not be created yet");
+
+        var ex = Assert.Throws<TargetInvocationException>(() =>
+        {
+            // this should throw an exception from the constructor validation logic
+            // because we haven't configured the mock yet
+            var instance = result.Instance;
+        });
+
+        ex.InnerException.Should().BeOfType<ArgumentException>();
+        ex.InnerException!.Message.Should().Contain("Configuration value cannot be null or empty.");
     }
 }

@@ -37,9 +37,7 @@ public static class MockUtility
 
         if (parameterlessConstructor != null)
         {
-            var instance = (T)parameterlessConstructor.Invoke(null);
-
-            return new MockCreationResult<T> { Instance = instance };
+            return new MockCreationResult<T>(parameterlessConstructor, null, new Dictionary<Type, Mock>());
         }
         else
         {
@@ -71,9 +69,7 @@ public static class MockUtility
                 }
             }
 
-            var instance = (T)ctor.Invoke(args.ToArray());
-
-            return new MockCreationResult<T> { Instance = instance, Mocks = mocks };
+            return new MockCreationResult<T>(ctor, args.ToArray(), mocks);
         }
     }
 }
