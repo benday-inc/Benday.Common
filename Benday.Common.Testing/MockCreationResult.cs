@@ -13,13 +13,19 @@ namespace Benday.Common.Testing;
 /// <typeparam name="T">The type for the class that was created</typeparam>
 public class MockCreationResult<T> where T : class
 {
+    /// <summary>
+    /// Creates a new instance of MockCreationResult. This is typically used internally by the MockUtility class.
+    /// Recommendation: Use the MockUtility.CreateInstance<T>() method to create an instance of this class.
+    /// </summary>
+    /// <param name="reflectedConstructor">Constructor information for the instance</param>
+    /// <param name="constructorArguments">The arguments to pass to the constructor</param>
+    /// <param name="mocks">The mocks that were created for the instance</param>
     public MockCreationResult(
         ConstructorInfo reflectedConstructor,
         object[]? constructorArguments,
         Dictionary<Type, Mock> mocks)
     {
         ConstructorArguments = constructorArguments;
-        // Instance = (T)reflectedConstructor.Invoke(constructorArguments);
         ReflectedConstructor = reflectedConstructor;
         Mocks = mocks;
     }
