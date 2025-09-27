@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class NumericAssertExtensions </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class NumericAssertExtensions ">
+    
+    <meta name="description" content="Provides fluent assertion extension methods for numeric values.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="navbar-brand">
+                <a href="../">
+                  <img id="logo" src="../logo.png" alt="" alt="asdf" width="50" height="50">
+                </a>
+
+              </div>            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Benday.Common.Testing.NumericAssertExtensions">
+
+
+
+  <h1 id="Benday_Common_Testing_NumericAssertExtensions" data-uid="Benday.Common.Testing.NumericAssertExtensions" class="text-break">Class NumericAssertExtensions</h1>
+  <div class="markdown level0 summary"><p>Provides fluent assertion extension methods for numeric values.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">NumericAssertExtensions</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Benday.html">Benday</a>.<a class="xref" href="Benday.Common.html">Common</a>.<a class="xref" href="Benday.Common.Testing.html">Testing</a></h6>
+  <h6><strong>Assembly</strong>: Benday.Common.Testing.dll</h6>
+  <h5 id="Benday_Common_Testing_NumericAssertExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class NumericAssertExtensions</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/refactor-and-add-basic-asserts/apiSpec/new?filename=Benday_Common_Testing_NumericAssertExtensions_ShouldBeApproximatelyEqualTo_System_Decimal_System_Decimal_System_Decimal_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo(System.Decimal%2CSystem.Decimal%2CSystem.Decimal%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/refactor-and-add-basic-asserts/Benday.Common.Testing/NumericAssertExtensions.cs/#L195">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeApproximatelyEqualTo_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo*"></a>
+  <h4 id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeApproximatelyEqualTo_System_Decimal_System_Decimal_System_Decimal_System_String_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo(System.Decimal,System.Decimal,System.Decimal,System.String)">ShouldBeApproximatelyEqualTo(decimal, decimal, decimal, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that two decimal values are approximately equal within the specified tolerance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static decimal ShouldBeApproximatelyEqualTo(this decimal actual, decimal expected, decimal tolerance, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td><span class="parametername">expected</span></td>
+        <td><p>The expected value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td><p>The tolerance for comparison.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td><p>The actual value for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the values are not approximately equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/refactor-and-add-basic-asserts/apiSpec/new?filename=Benday_Common_Testing_NumericAssertExtensions_ShouldBeApproximatelyEqualTo_System_Double_System_Double_System_Double_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo(System.Double%2CSystem.Double%2CSystem.Double%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/refactor-and-add-basic-asserts/Benday.Common.Testing/NumericAssertExtensions.cs/#L165">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeApproximatelyEqualTo_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo*"></a>
+  <h4 id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeApproximatelyEqualTo_System_Double_System_Double_System_Double_System_String_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo(System.Double,System.Double,System.Double,System.String)">ShouldBeApproximatelyEqualTo(double, double, double, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that two floating-point values are approximately equal within the specified tolerance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double ShouldBeApproximatelyEqualTo(this double actual, double expected, double tolerance, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">expected</span></td>
+        <td><p>The expected value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td><p>The tolerance for comparison.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The actual value for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the values are not approximately equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/refactor-and-add-basic-asserts/apiSpec/new?filename=Benday_Common_Testing_NumericAssertExtensions_ShouldBeApproximatelyEqualTo_System_Single_System_Single_System_Single_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo(System.Single%2CSystem.Single%2CSystem.Single%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/refactor-and-add-basic-asserts/Benday.Common.Testing/NumericAssertExtensions.cs/#L180">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeApproximatelyEqualTo_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo*"></a>
+  <h4 id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeApproximatelyEqualTo_System_Single_System_Single_System_Single_System_String_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo(System.Single,System.Single,System.Single,System.String)">ShouldBeApproximatelyEqualTo(float, float, float, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that two floating-point values are approximately equal within the specified tolerance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float ShouldBeApproximatelyEqualTo(this float actual, float expected, float tolerance, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">expected</span></td>
+        <td><p>The expected value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td><p>The tolerance for comparison.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><p>The actual value for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the values are not approximately equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/refactor-and-add-basic-asserts/apiSpec/new?filename=Benday_Common_Testing_NumericAssertExtensions_ShouldBeFinite_System_Double_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.NumericAssertExtensions.ShouldBeFinite(System.Double%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/refactor-and-add-basic-asserts/Benday.Common.Testing/NumericAssertExtensions.cs/#L234">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeFinite_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeFinite*"></a>
+  <h4 id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeFinite_System_Double_System_String_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeFinite(System.Double,System.String)">ShouldBeFinite(double, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a double value is finite (not infinity or NaN).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double ShouldBeFinite(this double actual, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The actual value for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the value is not finite.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/refactor-and-add-basic-asserts/apiSpec/new?filename=Benday_Common_Testing_NumericAssertExtensions_ShouldBeFinite_System_Single_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.NumericAssertExtensions.ShouldBeFinite(System.Single%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/refactor-and-add-basic-asserts/Benday.Common.Testing/NumericAssertExtensions.cs/#L247">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeFinite_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeFinite*"></a>
+  <h4 id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeFinite_System_Single_System_String_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeFinite(System.Single,System.String)">ShouldBeFinite(float, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a float value is finite (not infinity or NaN).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float ShouldBeFinite(this float actual, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><p>The actual value for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the value is not finite.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/refactor-and-add-basic-asserts/apiSpec/new?filename=Benday_Common_Testing_NumericAssertExtensions_ShouldBeGreaterThanOrEqualTo__1___0___0_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.NumericAssertExtensions.ShouldBeGreaterThanOrEqualTo%60%601(%60%600%2C%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/refactor-and-add-basic-asserts/Benday.Common.Testing/NumericAssertExtensions.cs/#L32">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeGreaterThanOrEqualTo_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeGreaterThanOrEqualTo*"></a>
+  <h4 id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeGreaterThanOrEqualTo__1___0___0_System_String_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeGreaterThanOrEqualTo``1(``0,``0,System.String)">ShouldBeGreaterThanOrEqualTo&lt;T&gt;(T, T, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a value is greater than or equal to the specified minimum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ShouldBeGreaterThanOrEqualTo&lt;T&gt;(this T actual, T minimum, string message) where T : IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">minimum</span></td>
+        <td><p>The minimum value (inclusive).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The actual value for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of values to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the actual value is not greater than or equal to the minimum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/refactor-and-add-basic-asserts/apiSpec/new?filename=Benday_Common_Testing_NumericAssertExtensions_ShouldBeGreaterThan__1___0___0_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.NumericAssertExtensions.ShouldBeGreaterThan%60%601(%60%600%2C%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/refactor-and-add-basic-asserts/Benday.Common.Testing/NumericAssertExtensions.cs/#L17">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeGreaterThan_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeGreaterThan*"></a>
+  <h4 id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeGreaterThan__1___0___0_System_String_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeGreaterThan``1(``0,``0,System.String)">ShouldBeGreaterThan&lt;T&gt;(T, T, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a value is greater than the specified minimum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ShouldBeGreaterThan&lt;T&gt;(this T actual, T minimum, string message) where T : IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">minimum</span></td>
+        <td><p>The minimum value (exclusive).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The actual value for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of values to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the actual value is not greater than the minimum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/refactor-and-add-basic-asserts/apiSpec/new?filename=Benday_Common_Testing_NumericAssertExtensions_ShouldBeInRange__1___0___0___0_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.NumericAssertExtensions.ShouldBeInRange%60%601(%60%600%2C%60%600%2C%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/refactor-and-add-basic-asserts/Benday.Common.Testing/NumericAssertExtensions.cs/#L78">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeInRange_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeInRange*"></a>
+  <h4 id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeInRange__1___0___0___0_System_String_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeInRange``1(``0,``0,``0,System.String)">ShouldBeInRange&lt;T&gt;(T, T, T, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a value is within the specified range (inclusive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ShouldBeInRange&lt;T&gt;(this T actual, T minimum, T maximum, string message) where T : IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">minimum</span></td>
+        <td><p>The minimum value (inclusive).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">maximum</span></td>
+        <td><p>The maximum value (inclusive).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The actual value for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of values to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the actual value is not within the range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/refactor-and-add-basic-asserts/apiSpec/new?filename=Benday_Common_Testing_NumericAssertExtensions_ShouldBeLessThanOrEqualTo__1___0___0_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.NumericAssertExtensions.ShouldBeLessThanOrEqualTo%60%601(%60%600%2C%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/refactor-and-add-basic-asserts/Benday.Common.Testing/NumericAssertExtensions.cs/#L62">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeLessThanOrEqualTo_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeLessThanOrEqualTo*"></a>
+  <h4 id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeLessThanOrEqualTo__1___0___0_System_String_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeLessThanOrEqualTo``1(``0,``0,System.String)">ShouldBeLessThanOrEqualTo&lt;T&gt;(T, T, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a value is less than or equal to the specified maximum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ShouldBeLessThanOrEqualTo&lt;T&gt;(this T actual, T maximum, string message) where T : IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">maximum</span></td>
+        <td><p>The maximum value (inclusive).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The actual value for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of values to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the actual value is not less than or equal to the maximum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/refactor-and-add-basic-asserts/apiSpec/new?filename=Benday_Common_Testing_NumericAssertExtensions_ShouldBeLessThan__1___0___0_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.NumericAssertExtensions.ShouldBeLessThan%60%601(%60%600%2C%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/refactor-and-add-basic-asserts/Benday.Common.Testing/NumericAssertExtensions.cs/#L47">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeLessThan_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeLessThan*"></a>
+  <h4 id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeLessThan__1___0___0_System_String_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeLessThan``1(``0,``0,System.String)">ShouldBeLessThan&lt;T&gt;(T, T, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a value is less than the specified maximum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ShouldBeLessThan&lt;T&gt;(this T actual, T maximum, string message) where T : IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">maximum</span></td>
+        <td><p>The maximum value (exclusive).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The actual value for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of values to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the actual value is not less than the maximum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/refactor-and-add-basic-asserts/apiSpec/new?filename=Benday_Common_Testing_NumericAssertExtensions_ShouldBeNegative__1___0_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.NumericAssertExtensions.ShouldBeNegative%60%601(%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/refactor-and-add-basic-asserts/Benday.Common.Testing/NumericAssertExtensions.cs/#L122">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeNegative_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeNegative*"></a>
+  <h4 id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeNegative__1___0_System_String_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeNegative``1(``0,System.String)">ShouldBeNegative&lt;T&gt;(T, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a value is negative (less than zero).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ShouldBeNegative&lt;T&gt;(this T actual, string message) where T : IComparable&lt;T&gt;, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The actual value for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the value is not negative.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/refactor-and-add-basic-asserts/apiSpec/new?filename=Benday_Common_Testing_NumericAssertExtensions_ShouldBePositive__1___0_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.NumericAssertExtensions.ShouldBePositive%60%601(%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/refactor-and-add-basic-asserts/Benday.Common.Testing/NumericAssertExtensions.cs/#L108">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_NumericAssertExtensions_ShouldBePositive_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBePositive*"></a>
+  <h4 id="Benday_Common_Testing_NumericAssertExtensions_ShouldBePositive__1___0_System_String_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBePositive``1(``0,System.String)">ShouldBePositive&lt;T&gt;(T, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a value is positive (greater than zero).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ShouldBePositive&lt;T&gt;(this T actual, string message) where T : IComparable&lt;T&gt;, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The actual value for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the value is not positive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/refactor-and-add-basic-asserts/apiSpec/new?filename=Benday_Common_Testing_NumericAssertExtensions_ShouldBeZero__1___0_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.NumericAssertExtensions.ShouldBeZero%60%601(%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/refactor-and-add-basic-asserts/Benday.Common.Testing/NumericAssertExtensions.cs/#L136">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeZero_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeZero*"></a>
+  <h4 id="Benday_Common_Testing_NumericAssertExtensions_ShouldBeZero__1___0_System_String_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldBeZero``1(``0,System.String)">ShouldBeZero&lt;T&gt;(T, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a value is zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ShouldBeZero&lt;T&gt;(this T actual, string message) where T : IComparable&lt;T&gt;, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The actual value for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the value is not zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/refactor-and-add-basic-asserts/apiSpec/new?filename=Benday_Common_Testing_NumericAssertExtensions_ShouldNotBeInRange__1___0___0___0_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeInRange%60%601(%60%600%2C%60%600%2C%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/refactor-and-add-basic-asserts/Benday.Common.Testing/NumericAssertExtensions.cs/#L94">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_NumericAssertExtensions_ShouldNotBeInRange_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeInRange*"></a>
+  <h4 id="Benday_Common_Testing_NumericAssertExtensions_ShouldNotBeInRange__1___0___0___0_System_String_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeInRange``1(``0,``0,``0,System.String)">ShouldNotBeInRange&lt;T&gt;(T, T, T, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a value is not within the specified range (inclusive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ShouldNotBeInRange&lt;T&gt;(this T actual, T minimum, T maximum, string message) where T : IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">minimum</span></td>
+        <td><p>The minimum value (inclusive).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">maximum</span></td>
+        <td><p>The maximum value (inclusive).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The actual value for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of values to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the actual value is within the range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/refactor-and-add-basic-asserts/apiSpec/new?filename=Benday_Common_Testing_NumericAssertExtensions_ShouldNotBeNaN_System_Double_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeNaN(System.Double%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/refactor-and-add-basic-asserts/Benday.Common.Testing/NumericAssertExtensions.cs/#L208">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_NumericAssertExtensions_ShouldNotBeNaN_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeNaN*"></a>
+  <h4 id="Benday_Common_Testing_NumericAssertExtensions_ShouldNotBeNaN_System_Double_System_String_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeNaN(System.Double,System.String)">ShouldNotBeNaN(double, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a double value is not NaN (Not a Number).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double ShouldNotBeNaN(this double actual, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The actual value for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the value is NaN.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/refactor-and-add-basic-asserts/apiSpec/new?filename=Benday_Common_Testing_NumericAssertExtensions_ShouldNotBeNaN_System_Single_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeNaN(System.Single%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/refactor-and-add-basic-asserts/Benday.Common.Testing/NumericAssertExtensions.cs/#L221">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_NumericAssertExtensions_ShouldNotBeNaN_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeNaN*"></a>
+  <h4 id="Benday_Common_Testing_NumericAssertExtensions_ShouldNotBeNaN_System_Single_System_String_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeNaN(System.Single,System.String)">ShouldNotBeNaN(float, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a float value is not NaN (Not a Number).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float ShouldNotBeNaN(this float actual, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><p>The actual value for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the value is NaN.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/refactor-and-add-basic-asserts/apiSpec/new?filename=Benday_Common_Testing_NumericAssertExtensions_ShouldNotBeZero__1___0_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeZero%60%601(%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/refactor-and-add-basic-asserts/Benday.Common.Testing/NumericAssertExtensions.cs/#L150">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_NumericAssertExtensions_ShouldNotBeZero_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeZero*"></a>
+  <h4 id="Benday_Common_Testing_NumericAssertExtensions_ShouldNotBeZero__1___0_System_String_" data-uid="Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeZero``1(``0,System.String)">ShouldNotBeZero&lt;T&gt;(T, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a value is not zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ShouldNotBeZero&lt;T&gt;(this T actual, string message) where T : IComparable&lt;T&gt;, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The actual value for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the value is zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/benday-inc/Benday.Common/new/refactor-and-add-basic-asserts/apiSpec/new?filename=Benday_Common_Testing_NumericAssertExtensions.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.NumericAssertExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/benday-inc/Benday.Common/blob/refactor-and-add-basic-asserts/Benday.Common.Testing/NumericAssertExtensions.cs/#L6" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      Copyright © <a href="https://www.benday.com/">www.benday.com</a> | <a href="mailto:info@benday.com">info@benday.com</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

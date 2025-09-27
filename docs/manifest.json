@@ -326,6 +326,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.Assert.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.Assert.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.Assert",
+      "Summary": "<p sourcefile=\"api/Benday.Common.Testing.Assert.yml\" sourcestartlinenumber=\"1\">Provides static methods for making assertions in tests with descriptive failure messages.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.AssertionException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.AssertionException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.AssertionException",
+      "Summary": "<p sourcefile=\"api/Benday.Common.Testing.AssertionException.yml\" sourcestartlinenumber=\"1\">Exception thrown when an assertion fails.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Benday.Common.Testing.CheckArrayAssertion-1.yml",
       "output": {
         ".html": {
@@ -421,6 +449,34 @@
       "IsMRef": true,
       "Title": "Benday.Common.Testing.CheckExtensions",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.CollectionAssert.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.CollectionAssert.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.CollectionAssert",
+      "Summary": "<p sourcefile=\"api/Benday.Common.Testing.CollectionAssert.yml\" sourcestartlinenumber=\"1\">Provides static methods for making assertions on collections with descriptive failure messages.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.CollectionAssertExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.CollectionAssertExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.CollectionAssertExtensions",
+      "Summary": "<p sourcefile=\"api/Benday.Common.Testing.CollectionAssertExtensions.yml\" sourcestartlinenumber=\"1\">Provides fluent assertion extension methods for collections.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -561,6 +617,76 @@
       "IsMRef": true,
       "Title": "Benday.Common.Testing.NullableStringAssertionExtensions",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.NumericAssert.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.NumericAssert.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.NumericAssert",
+      "Summary": "<p sourcefile=\"api/Benday.Common.Testing.NumericAssert.yml\" sourcestartlinenumber=\"1\">Provides static methods for making assertions on numeric values with descriptive failure messages.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.NumericAssertExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.NumericAssertExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.NumericAssertExtensions",
+      "Summary": "<p sourcefile=\"api/Benday.Common.Testing.NumericAssertExtensions.yml\" sourcestartlinenumber=\"1\">Provides fluent assertion extension methods for numeric values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.ObjectAssertExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.ObjectAssertExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.ObjectAssertExtensions",
+      "Summary": "<p sourcefile=\"api/Benday.Common.Testing.ObjectAssertExtensions.yml\" sourcestartlinenumber=\"1\">Provides fluent assertion extension methods for all objects.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.StringAssert.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.StringAssert.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.StringAssert",
+      "Summary": "<p sourcefile=\"api/Benday.Common.Testing.StringAssert.yml\" sourcestartlinenumber=\"1\">Provides static methods for making assertions on strings with descriptive failure messages.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.StringAssertExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.StringAssertExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.StringAssertExtensions",
+      "Summary": "<p sourcefile=\"api/Benday.Common.Testing.StringAssertExtensions.yml\" sourcestartlinenumber=\"1\">Provides fluent assertion extension methods for strings.</p>\n"
     },
     {
       "type": "ManagedReference",

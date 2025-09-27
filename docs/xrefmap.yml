@@ -1571,6 +1571,263 @@ references:
   fullName.vb: Benday.Common.Testing.ArrayAssertionExtensions.IsSupersetOf(Of T)(Benday.Common.Testing.ICheckArrayAssertion(Of T()), System.Collections.Generic.IEnumerable(Of T), String)
   nameWithType: ArrayAssertionExtensions.IsSupersetOf<T>(ICheckArrayAssertion<T[]>, IEnumerable<T>, string?)
   nameWithType.vb: ArrayAssertionExtensions.IsSupersetOf(Of T)(ICheckArrayAssertion(Of T()), IEnumerable(Of T), String)
+- uid: Benday.Common.Testing.Assert
+  name: Assert
+  href: api/Benday.Common.Testing.Assert.html
+  commentId: T:Benday.Common.Testing.Assert
+  fullName: Benday.Common.Testing.Assert
+  nameWithType: Assert
+- uid: Benday.Common.Testing.Assert.AreEqual*
+  name: AreEqual
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_AreEqual_
+  commentId: Overload:Benday.Common.Testing.Assert.AreEqual
+  isSpec: "True"
+  fullName: Benday.Common.Testing.Assert.AreEqual
+  nameWithType: Assert.AreEqual
+- uid: Benday.Common.Testing.Assert.AreEqual``1(``0,``0,System.String)
+  name: AreEqual<T>(T, T, string)
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_AreEqual__1___0___0_System_String_
+  commentId: M:Benday.Common.Testing.Assert.AreEqual``1(``0,``0,System.String)
+  name.vb: AreEqual(Of T)(T, T, String)
+  fullName: Benday.Common.Testing.Assert.AreEqual<T>(T, T, string)
+  fullName.vb: Benday.Common.Testing.Assert.AreEqual(Of T)(T, T, String)
+  nameWithType: Assert.AreEqual<T>(T, T, string)
+  nameWithType.vb: Assert.AreEqual(Of T)(T, T, String)
+- uid: Benday.Common.Testing.Assert.AreNotEqual*
+  name: AreNotEqual
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_AreNotEqual_
+  commentId: Overload:Benday.Common.Testing.Assert.AreNotEqual
+  isSpec: "True"
+  fullName: Benday.Common.Testing.Assert.AreNotEqual
+  nameWithType: Assert.AreNotEqual
+- uid: Benday.Common.Testing.Assert.AreNotEqual``1(``0,``0,System.String)
+  name: AreNotEqual<T>(T, T, string)
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_AreNotEqual__1___0___0_System_String_
+  commentId: M:Benday.Common.Testing.Assert.AreNotEqual``1(``0,``0,System.String)
+  name.vb: AreNotEqual(Of T)(T, T, String)
+  fullName: Benday.Common.Testing.Assert.AreNotEqual<T>(T, T, string)
+  fullName.vb: Benday.Common.Testing.Assert.AreNotEqual(Of T)(T, T, String)
+  nameWithType: Assert.AreNotEqual<T>(T, T, string)
+  nameWithType.vb: Assert.AreNotEqual(Of T)(T, T, String)
+- uid: Benday.Common.Testing.Assert.AreNotSame(System.Object,System.Object,System.String)
+  name: AreNotSame(object?, object?, string)
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_AreNotSame_System_Object_System_Object_System_String_
+  commentId: M:Benday.Common.Testing.Assert.AreNotSame(System.Object,System.Object,System.String)
+  name.vb: AreNotSame(Object, Object, String)
+  fullName: Benday.Common.Testing.Assert.AreNotSame(object?, object?, string)
+  fullName.vb: Benday.Common.Testing.Assert.AreNotSame(Object, Object, String)
+  nameWithType: Assert.AreNotSame(object?, object?, string)
+  nameWithType.vb: Assert.AreNotSame(Object, Object, String)
+- uid: Benday.Common.Testing.Assert.AreNotSame*
+  name: AreNotSame
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_AreNotSame_
+  commentId: Overload:Benday.Common.Testing.Assert.AreNotSame
+  isSpec: "True"
+  fullName: Benday.Common.Testing.Assert.AreNotSame
+  nameWithType: Assert.AreNotSame
+- uid: Benday.Common.Testing.Assert.AreSame(System.Object,System.Object,System.String)
+  name: AreSame(object?, object?, string)
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_AreSame_System_Object_System_Object_System_String_
+  commentId: M:Benday.Common.Testing.Assert.AreSame(System.Object,System.Object,System.String)
+  name.vb: AreSame(Object, Object, String)
+  fullName: Benday.Common.Testing.Assert.AreSame(object?, object?, string)
+  fullName.vb: Benday.Common.Testing.Assert.AreSame(Object, Object, String)
+  nameWithType: Assert.AreSame(object?, object?, string)
+  nameWithType.vb: Assert.AreSame(Object, Object, String)
+- uid: Benday.Common.Testing.Assert.AreSame*
+  name: AreSame
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_AreSame_
+  commentId: Overload:Benday.Common.Testing.Assert.AreSame
+  isSpec: "True"
+  fullName: Benday.Common.Testing.Assert.AreSame
+  nameWithType: Assert.AreSame
+- uid: Benday.Common.Testing.Assert.DoesNotThrow(System.Action,System.String)
+  name: DoesNotThrow(Action, string)
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_DoesNotThrow_System_Action_System_String_
+  commentId: M:Benday.Common.Testing.Assert.DoesNotThrow(System.Action,System.String)
+  name.vb: DoesNotThrow(Action, String)
+  fullName: Benday.Common.Testing.Assert.DoesNotThrow(System.Action, string)
+  fullName.vb: Benday.Common.Testing.Assert.DoesNotThrow(System.Action, String)
+  nameWithType: Assert.DoesNotThrow(Action, string)
+  nameWithType.vb: Assert.DoesNotThrow(Action, String)
+- uid: Benday.Common.Testing.Assert.DoesNotThrow*
+  name: DoesNotThrow
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_DoesNotThrow_
+  commentId: Overload:Benday.Common.Testing.Assert.DoesNotThrow
+  isSpec: "True"
+  fullName: Benday.Common.Testing.Assert.DoesNotThrow
+  nameWithType: Assert.DoesNotThrow
+- uid: Benday.Common.Testing.Assert.Fail(System.String)
+  name: Fail(string)
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_Fail_System_String_
+  commentId: M:Benday.Common.Testing.Assert.Fail(System.String)
+  name.vb: Fail(String)
+  fullName: Benday.Common.Testing.Assert.Fail(string)
+  fullName.vb: Benday.Common.Testing.Assert.Fail(String)
+  nameWithType: Assert.Fail(string)
+  nameWithType.vb: Assert.Fail(String)
+- uid: Benday.Common.Testing.Assert.Fail*
+  name: Fail
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_Fail_
+  commentId: Overload:Benday.Common.Testing.Assert.Fail
+  isSpec: "True"
+  fullName: Benday.Common.Testing.Assert.Fail
+  nameWithType: Assert.Fail
+- uid: Benday.Common.Testing.Assert.IsFalse(System.Boolean,System.String)
+  name: IsFalse(bool, string)
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_IsFalse_System_Boolean_System_String_
+  commentId: M:Benday.Common.Testing.Assert.IsFalse(System.Boolean,System.String)
+  name.vb: IsFalse(Boolean, String)
+  fullName: Benday.Common.Testing.Assert.IsFalse(bool, string)
+  fullName.vb: Benday.Common.Testing.Assert.IsFalse(Boolean, String)
+  nameWithType: Assert.IsFalse(bool, string)
+  nameWithType.vb: Assert.IsFalse(Boolean, String)
+- uid: Benday.Common.Testing.Assert.IsFalse*
+  name: IsFalse
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_IsFalse_
+  commentId: Overload:Benday.Common.Testing.Assert.IsFalse
+  isSpec: "True"
+  fullName: Benday.Common.Testing.Assert.IsFalse
+  nameWithType: Assert.IsFalse
+- uid: Benday.Common.Testing.Assert.IsNotNull*
+  name: IsNotNull
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_IsNotNull_
+  commentId: Overload:Benday.Common.Testing.Assert.IsNotNull
+  isSpec: "True"
+  fullName: Benday.Common.Testing.Assert.IsNotNull
+  nameWithType: Assert.IsNotNull
+- uid: Benday.Common.Testing.Assert.IsNotNull``1(``0,System.String)
+  name: IsNotNull<T>(T?, string)
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_IsNotNull__1___0_System_String_
+  commentId: M:Benday.Common.Testing.Assert.IsNotNull``1(``0,System.String)
+  name.vb: IsNotNull(Of T)(T, String)
+  fullName: Benday.Common.Testing.Assert.IsNotNull<T>(T?, string)
+  fullName.vb: Benday.Common.Testing.Assert.IsNotNull(Of T)(T, String)
+  nameWithType: Assert.IsNotNull<T>(T?, string)
+  nameWithType.vb: Assert.IsNotNull(Of T)(T, String)
+- uid: Benday.Common.Testing.Assert.IsNotOfType*
+  name: IsNotOfType
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_IsNotOfType_
+  commentId: Overload:Benday.Common.Testing.Assert.IsNotOfType
+  isSpec: "True"
+  fullName: Benday.Common.Testing.Assert.IsNotOfType
+  nameWithType: Assert.IsNotOfType
+- uid: Benday.Common.Testing.Assert.IsNotOfType``1(System.Object,System.String)
+  name: IsNotOfType<T>(object?, string)
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_IsNotOfType__1_System_Object_System_String_
+  commentId: M:Benday.Common.Testing.Assert.IsNotOfType``1(System.Object,System.String)
+  name.vb: IsNotOfType(Of T)(Object, String)
+  fullName: Benday.Common.Testing.Assert.IsNotOfType<T>(object?, string)
+  fullName.vb: Benday.Common.Testing.Assert.IsNotOfType(Of T)(Object, String)
+  nameWithType: Assert.IsNotOfType<T>(object?, string)
+  nameWithType.vb: Assert.IsNotOfType(Of T)(Object, String)
+- uid: Benday.Common.Testing.Assert.IsNull*
+  name: IsNull
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_IsNull_
+  commentId: Overload:Benday.Common.Testing.Assert.IsNull
+  isSpec: "True"
+  fullName: Benday.Common.Testing.Assert.IsNull
+  nameWithType: Assert.IsNull
+- uid: Benday.Common.Testing.Assert.IsNull``1(``0,System.String)
+  name: IsNull<T>(T?, string)
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_IsNull__1___0_System_String_
+  commentId: M:Benday.Common.Testing.Assert.IsNull``1(``0,System.String)
+  name.vb: IsNull(Of T)(T, String)
+  fullName: Benday.Common.Testing.Assert.IsNull<T>(T?, string)
+  fullName.vb: Benday.Common.Testing.Assert.IsNull(Of T)(T, String)
+  nameWithType: Assert.IsNull<T>(T?, string)
+  nameWithType.vb: Assert.IsNull(Of T)(T, String)
+- uid: Benday.Common.Testing.Assert.IsOfType*
+  name: IsOfType
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_IsOfType_
+  commentId: Overload:Benday.Common.Testing.Assert.IsOfType
+  isSpec: "True"
+  fullName: Benday.Common.Testing.Assert.IsOfType
+  nameWithType: Assert.IsOfType
+- uid: Benday.Common.Testing.Assert.IsOfType``1(System.Object,System.String)
+  name: IsOfType<T>(object?, string)
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_IsOfType__1_System_Object_System_String_
+  commentId: M:Benday.Common.Testing.Assert.IsOfType``1(System.Object,System.String)
+  name.vb: IsOfType(Of T)(Object, String)
+  fullName: Benday.Common.Testing.Assert.IsOfType<T>(object?, string)
+  fullName.vb: Benday.Common.Testing.Assert.IsOfType(Of T)(Object, String)
+  nameWithType: Assert.IsOfType<T>(object?, string)
+  nameWithType.vb: Assert.IsOfType(Of T)(Object, String)
+- uid: Benday.Common.Testing.Assert.IsTrue(System.Boolean,System.String)
+  name: IsTrue(bool, string)
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_IsTrue_System_Boolean_System_String_
+  commentId: M:Benday.Common.Testing.Assert.IsTrue(System.Boolean,System.String)
+  name.vb: IsTrue(Boolean, String)
+  fullName: Benday.Common.Testing.Assert.IsTrue(bool, string)
+  fullName.vb: Benday.Common.Testing.Assert.IsTrue(Boolean, String)
+  nameWithType: Assert.IsTrue(bool, string)
+  nameWithType.vb: Assert.IsTrue(Boolean, String)
+- uid: Benday.Common.Testing.Assert.IsTrue*
+  name: IsTrue
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_IsTrue_
+  commentId: Overload:Benday.Common.Testing.Assert.IsTrue
+  isSpec: "True"
+  fullName: Benday.Common.Testing.Assert.IsTrue
+  nameWithType: Assert.IsTrue
+- uid: Benday.Common.Testing.Assert.Throws*
+  name: Throws
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_Throws_
+  commentId: Overload:Benday.Common.Testing.Assert.Throws
+  isSpec: "True"
+  fullName: Benday.Common.Testing.Assert.Throws
+  nameWithType: Assert.Throws
+- uid: Benday.Common.Testing.Assert.Throws``1(System.Action,System.String)
+  name: Throws<T>(Action, string)
+  href: api/Benday.Common.Testing.Assert.html#Benday_Common_Testing_Assert_Throws__1_System_Action_System_String_
+  commentId: M:Benday.Common.Testing.Assert.Throws``1(System.Action,System.String)
+  name.vb: Throws(Of T)(Action, String)
+  fullName: Benday.Common.Testing.Assert.Throws<T>(System.Action, string)
+  fullName.vb: Benday.Common.Testing.Assert.Throws(Of T)(System.Action, String)
+  nameWithType: Assert.Throws<T>(Action, string)
+  nameWithType.vb: Assert.Throws(Of T)(Action, String)
+- uid: Benday.Common.Testing.AssertionException
+  name: AssertionException
+  href: api/Benday.Common.Testing.AssertionException.html
+  commentId: T:Benday.Common.Testing.AssertionException
+  fullName: Benday.Common.Testing.AssertionException
+  nameWithType: AssertionException
+- uid: Benday.Common.Testing.AssertionException.#ctor
+  name: AssertionException()
+  href: api/Benday.Common.Testing.AssertionException.html#Benday_Common_Testing_AssertionException__ctor
+  commentId: M:Benday.Common.Testing.AssertionException.#ctor
+  name.vb: New()
+  fullName: Benday.Common.Testing.AssertionException.AssertionException()
+  fullName.vb: Benday.Common.Testing.AssertionException.New()
+  nameWithType: AssertionException.AssertionException()
+  nameWithType.vb: AssertionException.New()
+- uid: Benday.Common.Testing.AssertionException.#ctor(System.String)
+  name: AssertionException(string)
+  href: api/Benday.Common.Testing.AssertionException.html#Benday_Common_Testing_AssertionException__ctor_System_String_
+  commentId: M:Benday.Common.Testing.AssertionException.#ctor(System.String)
+  name.vb: New(String)
+  fullName: Benday.Common.Testing.AssertionException.AssertionException(string)
+  fullName.vb: Benday.Common.Testing.AssertionException.New(String)
+  nameWithType: AssertionException.AssertionException(string)
+  nameWithType.vb: AssertionException.New(String)
+- uid: Benday.Common.Testing.AssertionException.#ctor(System.String,System.Exception)
+  name: AssertionException(string, Exception)
+  href: api/Benday.Common.Testing.AssertionException.html#Benday_Common_Testing_AssertionException__ctor_System_String_System_Exception_
+  commentId: M:Benday.Common.Testing.AssertionException.#ctor(System.String,System.Exception)
+  name.vb: New(String, Exception)
+  fullName: Benday.Common.Testing.AssertionException.AssertionException(string, System.Exception)
+  fullName.vb: Benday.Common.Testing.AssertionException.New(String, System.Exception)
+  nameWithType: AssertionException.AssertionException(string, Exception)
+  nameWithType.vb: AssertionException.New(String, Exception)
+- uid: Benday.Common.Testing.AssertionException.#ctor*
+  name: AssertionException
+  href: api/Benday.Common.Testing.AssertionException.html#Benday_Common_Testing_AssertionException__ctor_
+  commentId: Overload:Benday.Common.Testing.AssertionException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Common.Testing.AssertionException.AssertionException
+  fullName.vb: Benday.Common.Testing.AssertionException.New
+  nameWithType: AssertionException.AssertionException
+  nameWithType.vb: AssertionException.New
 - uid: Benday.Common.Testing.CheckArrayAssertion`1
   name: CheckArrayAssertion<T>
   href: api/Benday.Common.Testing.CheckArrayAssertion-1.html
@@ -1934,6 +2191,395 @@ references:
   fullName.vb: Benday.Common.Testing.CheckExtensions.CheckThat(Of T)(T())
   nameWithType: CheckExtensions.CheckThat<T>(T[])
   nameWithType.vb: CheckExtensions.CheckThat(Of T)(T())
+- uid: Benday.Common.Testing.CollectionAssert
+  name: CollectionAssert
+  href: api/Benday.Common.Testing.CollectionAssert.html
+  commentId: T:Benday.Common.Testing.CollectionAssert
+  fullName: Benday.Common.Testing.CollectionAssert
+  nameWithType: CollectionAssert
+- uid: Benday.Common.Testing.CollectionAssert.AllMatch*
+  name: AllMatch
+  href: api/Benday.Common.Testing.CollectionAssert.html#Benday_Common_Testing_CollectionAssert_AllMatch_
+  commentId: Overload:Benday.Common.Testing.CollectionAssert.AllMatch
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssert.AllMatch
+  nameWithType: CollectionAssert.AllMatch
+- uid: Benday.Common.Testing.CollectionAssert.AllMatch``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.String)
+  name: AllMatch<T>(IEnumerable<T>, Func<T, bool>, string)
+  href: api/Benday.Common.Testing.CollectionAssert.html#Benday_Common_Testing_CollectionAssert_AllMatch__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssert.AllMatch``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.String)
+  name.vb: AllMatch(Of T)(IEnumerable(Of T), Func(Of T, Boolean), String)
+  fullName: Benday.Common.Testing.CollectionAssert.AllMatch<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, bool>, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssert.AllMatch(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, Boolean), String)
+  nameWithType: CollectionAssert.AllMatch<T>(IEnumerable<T>, Func<T, bool>, string)
+  nameWithType.vb: CollectionAssert.AllMatch(Of T)(IEnumerable(Of T), Func(Of T, Boolean), String)
+- uid: Benday.Common.Testing.CollectionAssert.AnyMatch*
+  name: AnyMatch
+  href: api/Benday.Common.Testing.CollectionAssert.html#Benday_Common_Testing_CollectionAssert_AnyMatch_
+  commentId: Overload:Benday.Common.Testing.CollectionAssert.AnyMatch
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssert.AnyMatch
+  nameWithType: CollectionAssert.AnyMatch
+- uid: Benday.Common.Testing.CollectionAssert.AnyMatch``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.String)
+  name: AnyMatch<T>(IEnumerable<T>, Func<T, bool>, string)
+  href: api/Benday.Common.Testing.CollectionAssert.html#Benday_Common_Testing_CollectionAssert_AnyMatch__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssert.AnyMatch``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.String)
+  name.vb: AnyMatch(Of T)(IEnumerable(Of T), Func(Of T, Boolean), String)
+  fullName: Benday.Common.Testing.CollectionAssert.AnyMatch<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, bool>, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssert.AnyMatch(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, Boolean), String)
+  nameWithType: CollectionAssert.AnyMatch<T>(IEnumerable<T>, Func<T, bool>, string)
+  nameWithType.vb: CollectionAssert.AnyMatch(Of T)(IEnumerable(Of T), Func(Of T, Boolean), String)
+- uid: Benday.Common.Testing.CollectionAssert.AreEqual*
+  name: AreEqual
+  href: api/Benday.Common.Testing.CollectionAssert.html#Benday_Common_Testing_CollectionAssert_AreEqual_
+  commentId: Overload:Benday.Common.Testing.CollectionAssert.AreEqual
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssert.AreEqual
+  nameWithType: CollectionAssert.AreEqual
+- uid: Benday.Common.Testing.CollectionAssert.AreEqual``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.String)
+  name: AreEqual<T>(IEnumerable<T>, IEnumerable<T>, string)
+  href: api/Benday.Common.Testing.CollectionAssert.html#Benday_Common_Testing_CollectionAssert_AreEqual__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssert.AreEqual``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.String)
+  name.vb: AreEqual(Of T)(IEnumerable(Of T), IEnumerable(Of T), String)
+  fullName: Benday.Common.Testing.CollectionAssert.AreEqual<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssert.AreEqual(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T), String)
+  nameWithType: CollectionAssert.AreEqual<T>(IEnumerable<T>, IEnumerable<T>, string)
+  nameWithType.vb: CollectionAssert.AreEqual(Of T)(IEnumerable(Of T), IEnumerable(Of T), String)
+- uid: Benday.Common.Testing.CollectionAssert.Contains*
+  name: Contains
+  href: api/Benday.Common.Testing.CollectionAssert.html#Benday_Common_Testing_CollectionAssert_Contains_
+  commentId: Overload:Benday.Common.Testing.CollectionAssert.Contains
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssert.Contains
+  nameWithType: CollectionAssert.Contains
+- uid: Benday.Common.Testing.CollectionAssert.Contains``1(System.Collections.Generic.IEnumerable{``0},``0,System.String)
+  name: Contains<T>(IEnumerable<T>, T, string)
+  href: api/Benday.Common.Testing.CollectionAssert.html#Benday_Common_Testing_CollectionAssert_Contains__1_System_Collections_Generic_IEnumerable___0____0_System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssert.Contains``1(System.Collections.Generic.IEnumerable{``0},``0,System.String)
+  name.vb: Contains(Of T)(IEnumerable(Of T), T, String)
+  fullName: Benday.Common.Testing.CollectionAssert.Contains<T>(System.Collections.Generic.IEnumerable<T>, T, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssert.Contains(Of T)(System.Collections.Generic.IEnumerable(Of T), T, String)
+  nameWithType: CollectionAssert.Contains<T>(IEnumerable<T>, T, string)
+  nameWithType.vb: CollectionAssert.Contains(Of T)(IEnumerable(Of T), T, String)
+- uid: Benday.Common.Testing.CollectionAssert.DoesNotContain*
+  name: DoesNotContain
+  href: api/Benday.Common.Testing.CollectionAssert.html#Benday_Common_Testing_CollectionAssert_DoesNotContain_
+  commentId: Overload:Benday.Common.Testing.CollectionAssert.DoesNotContain
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssert.DoesNotContain
+  nameWithType: CollectionAssert.DoesNotContain
+- uid: Benday.Common.Testing.CollectionAssert.DoesNotContain``1(System.Collections.Generic.IEnumerable{``0},``0,System.String)
+  name: DoesNotContain<T>(IEnumerable<T>, T, string)
+  href: api/Benday.Common.Testing.CollectionAssert.html#Benday_Common_Testing_CollectionAssert_DoesNotContain__1_System_Collections_Generic_IEnumerable___0____0_System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssert.DoesNotContain``1(System.Collections.Generic.IEnumerable{``0},``0,System.String)
+  name.vb: DoesNotContain(Of T)(IEnumerable(Of T), T, String)
+  fullName: Benday.Common.Testing.CollectionAssert.DoesNotContain<T>(System.Collections.Generic.IEnumerable<T>, T, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssert.DoesNotContain(Of T)(System.Collections.Generic.IEnumerable(Of T), T, String)
+  nameWithType: CollectionAssert.DoesNotContain<T>(IEnumerable<T>, T, string)
+  nameWithType.vb: CollectionAssert.DoesNotContain(Of T)(IEnumerable(Of T), T, String)
+- uid: Benday.Common.Testing.CollectionAssert.HasCount*
+  name: HasCount
+  href: api/Benday.Common.Testing.CollectionAssert.html#Benday_Common_Testing_CollectionAssert_HasCount_
+  commentId: Overload:Benday.Common.Testing.CollectionAssert.HasCount
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssert.HasCount
+  nameWithType: CollectionAssert.HasCount
+- uid: Benday.Common.Testing.CollectionAssert.HasCount``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.String)
+  name: HasCount<T>(IEnumerable<T>, int, string)
+  href: api/Benday.Common.Testing.CollectionAssert.html#Benday_Common_Testing_CollectionAssert_HasCount__1_System_Collections_Generic_IEnumerable___0__System_Int32_System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssert.HasCount``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.String)
+  name.vb: HasCount(Of T)(IEnumerable(Of T), Integer, String)
+  fullName: Benday.Common.Testing.CollectionAssert.HasCount<T>(System.Collections.Generic.IEnumerable<T>, int, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssert.HasCount(Of T)(System.Collections.Generic.IEnumerable(Of T), Integer, String)
+  nameWithType: CollectionAssert.HasCount<T>(IEnumerable<T>, int, string)
+  nameWithType.vb: CollectionAssert.HasCount(Of T)(IEnumerable(Of T), Integer, String)
+- uid: Benday.Common.Testing.CollectionAssert.HasUniqueElements*
+  name: HasUniqueElements
+  href: api/Benday.Common.Testing.CollectionAssert.html#Benday_Common_Testing_CollectionAssert_HasUniqueElements_
+  commentId: Overload:Benday.Common.Testing.CollectionAssert.HasUniqueElements
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssert.HasUniqueElements
+  nameWithType: CollectionAssert.HasUniqueElements
+- uid: Benday.Common.Testing.CollectionAssert.HasUniqueElements``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  name: HasUniqueElements<T>(IEnumerable<T>, string)
+  href: api/Benday.Common.Testing.CollectionAssert.html#Benday_Common_Testing_CollectionAssert_HasUniqueElements__1_System_Collections_Generic_IEnumerable___0__System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssert.HasUniqueElements``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  name.vb: HasUniqueElements(Of T)(IEnumerable(Of T), String)
+  fullName: Benday.Common.Testing.CollectionAssert.HasUniqueElements<T>(System.Collections.Generic.IEnumerable<T>, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssert.HasUniqueElements(Of T)(System.Collections.Generic.IEnumerable(Of T), String)
+  nameWithType: CollectionAssert.HasUniqueElements<T>(IEnumerable<T>, string)
+  nameWithType.vb: CollectionAssert.HasUniqueElements(Of T)(IEnumerable(Of T), String)
+- uid: Benday.Common.Testing.CollectionAssert.IsEmpty*
+  name: IsEmpty
+  href: api/Benday.Common.Testing.CollectionAssert.html#Benday_Common_Testing_CollectionAssert_IsEmpty_
+  commentId: Overload:Benday.Common.Testing.CollectionAssert.IsEmpty
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssert.IsEmpty
+  nameWithType: CollectionAssert.IsEmpty
+- uid: Benday.Common.Testing.CollectionAssert.IsEmpty``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  name: IsEmpty<T>(IEnumerable<T>, string)
+  href: api/Benday.Common.Testing.CollectionAssert.html#Benday_Common_Testing_CollectionAssert_IsEmpty__1_System_Collections_Generic_IEnumerable___0__System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssert.IsEmpty``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  name.vb: IsEmpty(Of T)(IEnumerable(Of T), String)
+  fullName: Benday.Common.Testing.CollectionAssert.IsEmpty<T>(System.Collections.Generic.IEnumerable<T>, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssert.IsEmpty(Of T)(System.Collections.Generic.IEnumerable(Of T), String)
+  nameWithType: CollectionAssert.IsEmpty<T>(IEnumerable<T>, string)
+  nameWithType.vb: CollectionAssert.IsEmpty(Of T)(IEnumerable(Of T), String)
+- uid: Benday.Common.Testing.CollectionAssert.IsNotEmpty*
+  name: IsNotEmpty
+  href: api/Benday.Common.Testing.CollectionAssert.html#Benday_Common_Testing_CollectionAssert_IsNotEmpty_
+  commentId: Overload:Benday.Common.Testing.CollectionAssert.IsNotEmpty
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssert.IsNotEmpty
+  nameWithType: CollectionAssert.IsNotEmpty
+- uid: Benday.Common.Testing.CollectionAssert.IsNotEmpty``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  name: IsNotEmpty<T>(IEnumerable<T>, string)
+  href: api/Benday.Common.Testing.CollectionAssert.html#Benday_Common_Testing_CollectionAssert_IsNotEmpty__1_System_Collections_Generic_IEnumerable___0__System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssert.IsNotEmpty``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  name.vb: IsNotEmpty(Of T)(IEnumerable(Of T), String)
+  fullName: Benday.Common.Testing.CollectionAssert.IsNotEmpty<T>(System.Collections.Generic.IEnumerable<T>, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssert.IsNotEmpty(Of T)(System.Collections.Generic.IEnumerable(Of T), String)
+  nameWithType: CollectionAssert.IsNotEmpty<T>(IEnumerable<T>, string)
+  nameWithType.vb: CollectionAssert.IsNotEmpty(Of T)(IEnumerable(Of T), String)
+- uid: Benday.Common.Testing.CollectionAssert.IsSubsetOf*
+  name: IsSubsetOf
+  href: api/Benday.Common.Testing.CollectionAssert.html#Benday_Common_Testing_CollectionAssert_IsSubsetOf_
+  commentId: Overload:Benday.Common.Testing.CollectionAssert.IsSubsetOf
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssert.IsSubsetOf
+  nameWithType: CollectionAssert.IsSubsetOf
+- uid: Benday.Common.Testing.CollectionAssert.IsSubsetOf``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.String)
+  name: IsSubsetOf<T>(IEnumerable<T>, IEnumerable<T>, string)
+  href: api/Benday.Common.Testing.CollectionAssert.html#Benday_Common_Testing_CollectionAssert_IsSubsetOf__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssert.IsSubsetOf``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.String)
+  name.vb: IsSubsetOf(Of T)(IEnumerable(Of T), IEnumerable(Of T), String)
+  fullName: Benday.Common.Testing.CollectionAssert.IsSubsetOf<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssert.IsSubsetOf(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T), String)
+  nameWithType: CollectionAssert.IsSubsetOf<T>(IEnumerable<T>, IEnumerable<T>, string)
+  nameWithType.vb: CollectionAssert.IsSubsetOf(Of T)(IEnumerable(Of T), IEnumerable(Of T), String)
+- uid: Benday.Common.Testing.CollectionAssert.IsSupersetOf*
+  name: IsSupersetOf
+  href: api/Benday.Common.Testing.CollectionAssert.html#Benday_Common_Testing_CollectionAssert_IsSupersetOf_
+  commentId: Overload:Benday.Common.Testing.CollectionAssert.IsSupersetOf
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssert.IsSupersetOf
+  nameWithType: CollectionAssert.IsSupersetOf
+- uid: Benday.Common.Testing.CollectionAssert.IsSupersetOf``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.String)
+  name: IsSupersetOf<T>(IEnumerable<T>, IEnumerable<T>, string)
+  href: api/Benday.Common.Testing.CollectionAssert.html#Benday_Common_Testing_CollectionAssert_IsSupersetOf__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssert.IsSupersetOf``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.String)
+  name.vb: IsSupersetOf(Of T)(IEnumerable(Of T), IEnumerable(Of T), String)
+  fullName: Benday.Common.Testing.CollectionAssert.IsSupersetOf<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssert.IsSupersetOf(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T), String)
+  nameWithType: CollectionAssert.IsSupersetOf<T>(IEnumerable<T>, IEnumerable<T>, string)
+  nameWithType.vb: CollectionAssert.IsSupersetOf(Of T)(IEnumerable(Of T), IEnumerable(Of T), String)
+- uid: Benday.Common.Testing.CollectionAssertExtensions
+  name: CollectionAssertExtensions
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html
+  commentId: T:Benday.Common.Testing.CollectionAssertExtensions
+  fullName: Benday.Common.Testing.CollectionAssertExtensions
+  nameWithType: CollectionAssertExtensions
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldAllMatch*
+  name: ShouldAllMatch
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldAllMatch_
+  commentId: Overload:Benday.Common.Testing.CollectionAssertExtensions.ShouldAllMatch
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldAllMatch
+  nameWithType: CollectionAssertExtensions.ShouldAllMatch
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldAllMatch``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.String)
+  name: ShouldAllMatch<T>(IEnumerable<T>, Func<T, bool>, string)
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldAllMatch__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssertExtensions.ShouldAllMatch``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.String)
+  name.vb: ShouldAllMatch(Of T)(IEnumerable(Of T), Func(Of T, Boolean), String)
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldAllMatch<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, bool>, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssertExtensions.ShouldAllMatch(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, Boolean), String)
+  nameWithType: CollectionAssertExtensions.ShouldAllMatch<T>(IEnumerable<T>, Func<T, bool>, string)
+  nameWithType.vb: CollectionAssertExtensions.ShouldAllMatch(Of T)(IEnumerable(Of T), Func(Of T, Boolean), String)
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldAnyMatch*
+  name: ShouldAnyMatch
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldAnyMatch_
+  commentId: Overload:Benday.Common.Testing.CollectionAssertExtensions.ShouldAnyMatch
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldAnyMatch
+  nameWithType: CollectionAssertExtensions.ShouldAnyMatch
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldAnyMatch``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.String)
+  name: ShouldAnyMatch<T>(IEnumerable<T>, Func<T, bool>, string)
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldAnyMatch__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssertExtensions.ShouldAnyMatch``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.String)
+  name.vb: ShouldAnyMatch(Of T)(IEnumerable(Of T), Func(Of T, Boolean), String)
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldAnyMatch<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, bool>, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssertExtensions.ShouldAnyMatch(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, Boolean), String)
+  nameWithType: CollectionAssertExtensions.ShouldAnyMatch<T>(IEnumerable<T>, Func<T, bool>, string)
+  nameWithType.vb: CollectionAssertExtensions.ShouldAnyMatch(Of T)(IEnumerable(Of T), Func(Of T, Boolean), String)
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldBeEmpty*
+  name: ShouldBeEmpty
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldBeEmpty_
+  commentId: Overload:Benday.Common.Testing.CollectionAssertExtensions.ShouldBeEmpty
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldBeEmpty
+  nameWithType: CollectionAssertExtensions.ShouldBeEmpty
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldBeEmpty``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  name: ShouldBeEmpty<T>(IEnumerable<T>, string)
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldBeEmpty__1_System_Collections_Generic_IEnumerable___0__System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssertExtensions.ShouldBeEmpty``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  name.vb: ShouldBeEmpty(Of T)(IEnumerable(Of T), String)
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldBeEmpty<T>(System.Collections.Generic.IEnumerable<T>, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssertExtensions.ShouldBeEmpty(Of T)(System.Collections.Generic.IEnumerable(Of T), String)
+  nameWithType: CollectionAssertExtensions.ShouldBeEmpty<T>(IEnumerable<T>, string)
+  nameWithType.vb: CollectionAssertExtensions.ShouldBeEmpty(Of T)(IEnumerable(Of T), String)
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldBeSubsetOf*
+  name: ShouldBeSubsetOf
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldBeSubsetOf_
+  commentId: Overload:Benday.Common.Testing.CollectionAssertExtensions.ShouldBeSubsetOf
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldBeSubsetOf
+  nameWithType: CollectionAssertExtensions.ShouldBeSubsetOf
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldBeSubsetOf``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.String)
+  name: ShouldBeSubsetOf<T>(IEnumerable<T>, IEnumerable<T>, string)
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldBeSubsetOf__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssertExtensions.ShouldBeSubsetOf``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.String)
+  name.vb: ShouldBeSubsetOf(Of T)(IEnumerable(Of T), IEnumerable(Of T), String)
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldBeSubsetOf<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssertExtensions.ShouldBeSubsetOf(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T), String)
+  nameWithType: CollectionAssertExtensions.ShouldBeSubsetOf<T>(IEnumerable<T>, IEnumerable<T>, string)
+  nameWithType.vb: CollectionAssertExtensions.ShouldBeSubsetOf(Of T)(IEnumerable(Of T), IEnumerable(Of T), String)
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldBeSupersetOf*
+  name: ShouldBeSupersetOf
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldBeSupersetOf_
+  commentId: Overload:Benday.Common.Testing.CollectionAssertExtensions.ShouldBeSupersetOf
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldBeSupersetOf
+  nameWithType: CollectionAssertExtensions.ShouldBeSupersetOf
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldBeSupersetOf``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.String)
+  name: ShouldBeSupersetOf<T>(IEnumerable<T>, IEnumerable<T>, string)
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldBeSupersetOf__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssertExtensions.ShouldBeSupersetOf``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.String)
+  name.vb: ShouldBeSupersetOf(Of T)(IEnumerable(Of T), IEnumerable(Of T), String)
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldBeSupersetOf<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssertExtensions.ShouldBeSupersetOf(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T), String)
+  nameWithType: CollectionAssertExtensions.ShouldBeSupersetOf<T>(IEnumerable<T>, IEnumerable<T>, string)
+  nameWithType.vb: CollectionAssertExtensions.ShouldBeSupersetOf(Of T)(IEnumerable(Of T), IEnumerable(Of T), String)
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldContain*
+  name: ShouldContain
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldContain_
+  commentId: Overload:Benday.Common.Testing.CollectionAssertExtensions.ShouldContain
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldContain
+  nameWithType: CollectionAssertExtensions.ShouldContain
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldContain``1(System.Collections.Generic.IEnumerable{``0},``0,System.String)
+  name: ShouldContain<T>(IEnumerable<T>, T, string)
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldContain__1_System_Collections_Generic_IEnumerable___0____0_System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssertExtensions.ShouldContain``1(System.Collections.Generic.IEnumerable{``0},``0,System.String)
+  name.vb: ShouldContain(Of T)(IEnumerable(Of T), T, String)
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldContain<T>(System.Collections.Generic.IEnumerable<T>, T, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssertExtensions.ShouldContain(Of T)(System.Collections.Generic.IEnumerable(Of T), T, String)
+  nameWithType: CollectionAssertExtensions.ShouldContain<T>(IEnumerable<T>, T, string)
+  nameWithType.vb: CollectionAssertExtensions.ShouldContain(Of T)(IEnumerable(Of T), T, String)
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldEqual*
+  name: ShouldEqual
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldEqual_
+  commentId: Overload:Benday.Common.Testing.CollectionAssertExtensions.ShouldEqual
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldEqual
+  nameWithType: CollectionAssertExtensions.ShouldEqual
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldEqual``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.String)
+  name: ShouldEqual<T>(IEnumerable<T>, IEnumerable<T>, string)
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldEqual__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssertExtensions.ShouldEqual``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.String)
+  name.vb: ShouldEqual(Of T)(IEnumerable(Of T), IEnumerable(Of T), String)
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldEqual<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssertExtensions.ShouldEqual(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T), String)
+  nameWithType: CollectionAssertExtensions.ShouldEqual<T>(IEnumerable<T>, IEnumerable<T>, string)
+  nameWithType.vb: CollectionAssertExtensions.ShouldEqual(Of T)(IEnumerable(Of T), IEnumerable(Of T), String)
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveCount*
+  name: ShouldHaveCount
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldHaveCount_
+  commentId: Overload:Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveCount
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveCount
+  nameWithType: CollectionAssertExtensions.ShouldHaveCount
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveCount``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.String)
+  name: ShouldHaveCount<T>(IEnumerable<T>, int, string)
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldHaveCount__1_System_Collections_Generic_IEnumerable___0__System_Int32_System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveCount``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.String)
+  name.vb: ShouldHaveCount(Of T)(IEnumerable(Of T), Integer, String)
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveCount<T>(System.Collections.Generic.IEnumerable<T>, int, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveCount(Of T)(System.Collections.Generic.IEnumerable(Of T), Integer, String)
+  nameWithType: CollectionAssertExtensions.ShouldHaveCount<T>(IEnumerable<T>, int, string)
+  nameWithType.vb: CollectionAssertExtensions.ShouldHaveCount(Of T)(IEnumerable(Of T), Integer, String)
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveSingleElement*
+  name: ShouldHaveSingleElement
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldHaveSingleElement_
+  commentId: Overload:Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveSingleElement
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveSingleElement
+  nameWithType: CollectionAssertExtensions.ShouldHaveSingleElement
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveSingleElement``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.String)
+  name: ShouldHaveSingleElement<T>(IEnumerable<T>, Func<T, bool>, string)
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldHaveSingleElement__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveSingleElement``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.String)
+  name.vb: ShouldHaveSingleElement(Of T)(IEnumerable(Of T), Func(Of T, Boolean), String)
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveSingleElement<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, bool>, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveSingleElement(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, Boolean), String)
+  nameWithType: CollectionAssertExtensions.ShouldHaveSingleElement<T>(IEnumerable<T>, Func<T, bool>, string)
+  nameWithType.vb: CollectionAssertExtensions.ShouldHaveSingleElement(Of T)(IEnumerable(Of T), Func(Of T, Boolean), String)
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveSingleElement``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  name: ShouldHaveSingleElement<T>(IEnumerable<T>, string)
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldHaveSingleElement__1_System_Collections_Generic_IEnumerable___0__System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveSingleElement``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  name.vb: ShouldHaveSingleElement(Of T)(IEnumerable(Of T), String)
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveSingleElement<T>(System.Collections.Generic.IEnumerable<T>, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveSingleElement(Of T)(System.Collections.Generic.IEnumerable(Of T), String)
+  nameWithType: CollectionAssertExtensions.ShouldHaveSingleElement<T>(IEnumerable<T>, string)
+  nameWithType.vb: CollectionAssertExtensions.ShouldHaveSingleElement(Of T)(IEnumerable(Of T), String)
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveUniqueElements*
+  name: ShouldHaveUniqueElements
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldHaveUniqueElements_
+  commentId: Overload:Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveUniqueElements
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveUniqueElements
+  nameWithType: CollectionAssertExtensions.ShouldHaveUniqueElements
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveUniqueElements``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  name: ShouldHaveUniqueElements<T>(IEnumerable<T>, string)
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldHaveUniqueElements__1_System_Collections_Generic_IEnumerable___0__System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveUniqueElements``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  name.vb: ShouldHaveUniqueElements(Of T)(IEnumerable(Of T), String)
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveUniqueElements<T>(System.Collections.Generic.IEnumerable<T>, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssertExtensions.ShouldHaveUniqueElements(Of T)(System.Collections.Generic.IEnumerable(Of T), String)
+  nameWithType: CollectionAssertExtensions.ShouldHaveUniqueElements<T>(IEnumerable<T>, string)
+  nameWithType.vb: CollectionAssertExtensions.ShouldHaveUniqueElements(Of T)(IEnumerable(Of T), String)
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldNotBeEmpty*
+  name: ShouldNotBeEmpty
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldNotBeEmpty_
+  commentId: Overload:Benday.Common.Testing.CollectionAssertExtensions.ShouldNotBeEmpty
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldNotBeEmpty
+  nameWithType: CollectionAssertExtensions.ShouldNotBeEmpty
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldNotBeEmpty``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  name: ShouldNotBeEmpty<T>(IEnumerable<T>, string)
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldNotBeEmpty__1_System_Collections_Generic_IEnumerable___0__System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssertExtensions.ShouldNotBeEmpty``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  name.vb: ShouldNotBeEmpty(Of T)(IEnumerable(Of T), String)
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldNotBeEmpty<T>(System.Collections.Generic.IEnumerable<T>, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssertExtensions.ShouldNotBeEmpty(Of T)(System.Collections.Generic.IEnumerable(Of T), String)
+  nameWithType: CollectionAssertExtensions.ShouldNotBeEmpty<T>(IEnumerable<T>, string)
+  nameWithType.vb: CollectionAssertExtensions.ShouldNotBeEmpty(Of T)(IEnumerable(Of T), String)
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldNotContain*
+  name: ShouldNotContain
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldNotContain_
+  commentId: Overload:Benday.Common.Testing.CollectionAssertExtensions.ShouldNotContain
+  isSpec: "True"
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldNotContain
+  nameWithType: CollectionAssertExtensions.ShouldNotContain
+- uid: Benday.Common.Testing.CollectionAssertExtensions.ShouldNotContain``1(System.Collections.Generic.IEnumerable{``0},``0,System.String)
+  name: ShouldNotContain<T>(IEnumerable<T>, T, string)
+  href: api/Benday.Common.Testing.CollectionAssertExtensions.html#Benday_Common_Testing_CollectionAssertExtensions_ShouldNotContain__1_System_Collections_Generic_IEnumerable___0____0_System_String_
+  commentId: M:Benday.Common.Testing.CollectionAssertExtensions.ShouldNotContain``1(System.Collections.Generic.IEnumerable{``0},``0,System.String)
+  name.vb: ShouldNotContain(Of T)(IEnumerable(Of T), T, String)
+  fullName: Benday.Common.Testing.CollectionAssertExtensions.ShouldNotContain<T>(System.Collections.Generic.IEnumerable<T>, T, string)
+  fullName.vb: Benday.Common.Testing.CollectionAssertExtensions.ShouldNotContain(Of T)(System.Collections.Generic.IEnumerable(Of T), T, String)
+  nameWithType: CollectionAssertExtensions.ShouldNotContain<T>(IEnumerable<T>, T, string)
+  nameWithType.vb: CollectionAssertExtensions.ShouldNotContain(Of T)(IEnumerable(Of T), T, String)
 - uid: Benday.Common.Testing.ICheckArrayAssertion`1
   name: ICheckArrayAssertion<T>
   href: api/Benday.Common.Testing.ICheckArrayAssertion-1.html
@@ -2969,6 +3615,1240 @@ references:
   isSpec: "True"
   fullName: Benday.Common.Testing.NullableStringAssertionExtensions.StartsWithCaseInsensitive
   nameWithType: NullableStringAssertionExtensions.StartsWithCaseInsensitive
+- uid: Benday.Common.Testing.NumericAssert
+  name: NumericAssert
+  href: api/Benday.Common.Testing.NumericAssert.html
+  commentId: T:Benday.Common.Testing.NumericAssert
+  fullName: Benday.Common.Testing.NumericAssert
+  nameWithType: NumericAssert
+- uid: Benday.Common.Testing.NumericAssert.AreApproximatelyEqual(System.Decimal,System.Decimal,System.Decimal,System.String)
+  name: AreApproximatelyEqual(decimal, decimal, decimal, string)
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_AreApproximatelyEqual_System_Decimal_System_Decimal_System_Decimal_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssert.AreApproximatelyEqual(System.Decimal,System.Decimal,System.Decimal,System.String)
+  name.vb: AreApproximatelyEqual(Decimal, Decimal, Decimal, String)
+  fullName: Benday.Common.Testing.NumericAssert.AreApproximatelyEqual(decimal, decimal, decimal, string)
+  fullName.vb: Benday.Common.Testing.NumericAssert.AreApproximatelyEqual(Decimal, Decimal, Decimal, String)
+  nameWithType: NumericAssert.AreApproximatelyEqual(decimal, decimal, decimal, string)
+  nameWithType.vb: NumericAssert.AreApproximatelyEqual(Decimal, Decimal, Decimal, String)
+- uid: Benday.Common.Testing.NumericAssert.AreApproximatelyEqual(System.Double,System.Double,System.Double,System.String)
+  name: AreApproximatelyEqual(double, double, double, string)
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_AreApproximatelyEqual_System_Double_System_Double_System_Double_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssert.AreApproximatelyEqual(System.Double,System.Double,System.Double,System.String)
+  name.vb: AreApproximatelyEqual(Double, Double, Double, String)
+  fullName: Benday.Common.Testing.NumericAssert.AreApproximatelyEqual(double, double, double, string)
+  fullName.vb: Benday.Common.Testing.NumericAssert.AreApproximatelyEqual(Double, Double, Double, String)
+  nameWithType: NumericAssert.AreApproximatelyEqual(double, double, double, string)
+  nameWithType.vb: NumericAssert.AreApproximatelyEqual(Double, Double, Double, String)
+- uid: Benday.Common.Testing.NumericAssert.AreApproximatelyEqual(System.Single,System.Single,System.Single,System.String)
+  name: AreApproximatelyEqual(float, float, float, string)
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_AreApproximatelyEqual_System_Single_System_Single_System_Single_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssert.AreApproximatelyEqual(System.Single,System.Single,System.Single,System.String)
+  name.vb: AreApproximatelyEqual(Single, Single, Single, String)
+  fullName: Benday.Common.Testing.NumericAssert.AreApproximatelyEqual(float, float, float, string)
+  fullName.vb: Benday.Common.Testing.NumericAssert.AreApproximatelyEqual(Single, Single, Single, String)
+  nameWithType: NumericAssert.AreApproximatelyEqual(float, float, float, string)
+  nameWithType.vb: NumericAssert.AreApproximatelyEqual(Single, Single, Single, String)
+- uid: Benday.Common.Testing.NumericAssert.AreApproximatelyEqual*
+  name: AreApproximatelyEqual
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_AreApproximatelyEqual_
+  commentId: Overload:Benday.Common.Testing.NumericAssert.AreApproximatelyEqual
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssert.AreApproximatelyEqual
+  nameWithType: NumericAssert.AreApproximatelyEqual
+- uid: Benday.Common.Testing.NumericAssert.IsFinite(System.Double,System.String)
+  name: IsFinite(double, string)
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsFinite_System_Double_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssert.IsFinite(System.Double,System.String)
+  name.vb: IsFinite(Double, String)
+  fullName: Benday.Common.Testing.NumericAssert.IsFinite(double, string)
+  fullName.vb: Benday.Common.Testing.NumericAssert.IsFinite(Double, String)
+  nameWithType: NumericAssert.IsFinite(double, string)
+  nameWithType.vb: NumericAssert.IsFinite(Double, String)
+- uid: Benday.Common.Testing.NumericAssert.IsFinite(System.Single,System.String)
+  name: IsFinite(float, string)
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsFinite_System_Single_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssert.IsFinite(System.Single,System.String)
+  name.vb: IsFinite(Single, String)
+  fullName: Benday.Common.Testing.NumericAssert.IsFinite(float, string)
+  fullName.vb: Benday.Common.Testing.NumericAssert.IsFinite(Single, String)
+  nameWithType: NumericAssert.IsFinite(float, string)
+  nameWithType.vb: NumericAssert.IsFinite(Single, String)
+- uid: Benday.Common.Testing.NumericAssert.IsFinite*
+  name: IsFinite
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsFinite_
+  commentId: Overload:Benday.Common.Testing.NumericAssert.IsFinite
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssert.IsFinite
+  nameWithType: NumericAssert.IsFinite
+- uid: Benday.Common.Testing.NumericAssert.IsGreaterThan*
+  name: IsGreaterThan
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsGreaterThan_
+  commentId: Overload:Benday.Common.Testing.NumericAssert.IsGreaterThan
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssert.IsGreaterThan
+  nameWithType: NumericAssert.IsGreaterThan
+- uid: Benday.Common.Testing.NumericAssert.IsGreaterThanOrEqualTo*
+  name: IsGreaterThanOrEqualTo
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsGreaterThanOrEqualTo_
+  commentId: Overload:Benday.Common.Testing.NumericAssert.IsGreaterThanOrEqualTo
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssert.IsGreaterThanOrEqualTo
+  nameWithType: NumericAssert.IsGreaterThanOrEqualTo
+- uid: Benday.Common.Testing.NumericAssert.IsGreaterThanOrEqualTo``1(``0,``0,System.String)
+  name: IsGreaterThanOrEqualTo<T>(T, T, string)
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsGreaterThanOrEqualTo__1___0___0_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssert.IsGreaterThanOrEqualTo``1(``0,``0,System.String)
+  name.vb: IsGreaterThanOrEqualTo(Of T)(T, T, String)
+  fullName: Benday.Common.Testing.NumericAssert.IsGreaterThanOrEqualTo<T>(T, T, string)
+  fullName.vb: Benday.Common.Testing.NumericAssert.IsGreaterThanOrEqualTo(Of T)(T, T, String)
+  nameWithType: NumericAssert.IsGreaterThanOrEqualTo<T>(T, T, string)
+  nameWithType.vb: NumericAssert.IsGreaterThanOrEqualTo(Of T)(T, T, String)
+- uid: Benday.Common.Testing.NumericAssert.IsGreaterThan``1(``0,``0,System.String)
+  name: IsGreaterThan<T>(T, T, string)
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsGreaterThan__1___0___0_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssert.IsGreaterThan``1(``0,``0,System.String)
+  name.vb: IsGreaterThan(Of T)(T, T, String)
+  fullName: Benday.Common.Testing.NumericAssert.IsGreaterThan<T>(T, T, string)
+  fullName.vb: Benday.Common.Testing.NumericAssert.IsGreaterThan(Of T)(T, T, String)
+  nameWithType: NumericAssert.IsGreaterThan<T>(T, T, string)
+  nameWithType.vb: NumericAssert.IsGreaterThan(Of T)(T, T, String)
+- uid: Benday.Common.Testing.NumericAssert.IsInRange*
+  name: IsInRange
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsInRange_
+  commentId: Overload:Benday.Common.Testing.NumericAssert.IsInRange
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssert.IsInRange
+  nameWithType: NumericAssert.IsInRange
+- uid: Benday.Common.Testing.NumericAssert.IsInRange``1(``0,``0,``0,System.String)
+  name: IsInRange<T>(T, T, T, string)
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsInRange__1___0___0___0_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssert.IsInRange``1(``0,``0,``0,System.String)
+  name.vb: IsInRange(Of T)(T, T, T, String)
+  fullName: Benday.Common.Testing.NumericAssert.IsInRange<T>(T, T, T, string)
+  fullName.vb: Benday.Common.Testing.NumericAssert.IsInRange(Of T)(T, T, T, String)
+  nameWithType: NumericAssert.IsInRange<T>(T, T, T, string)
+  nameWithType.vb: NumericAssert.IsInRange(Of T)(T, T, T, String)
+- uid: Benday.Common.Testing.NumericAssert.IsLessThan*
+  name: IsLessThan
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsLessThan_
+  commentId: Overload:Benday.Common.Testing.NumericAssert.IsLessThan
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssert.IsLessThan
+  nameWithType: NumericAssert.IsLessThan
+- uid: Benday.Common.Testing.NumericAssert.IsLessThanOrEqualTo*
+  name: IsLessThanOrEqualTo
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsLessThanOrEqualTo_
+  commentId: Overload:Benday.Common.Testing.NumericAssert.IsLessThanOrEqualTo
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssert.IsLessThanOrEqualTo
+  nameWithType: NumericAssert.IsLessThanOrEqualTo
+- uid: Benday.Common.Testing.NumericAssert.IsLessThanOrEqualTo``1(``0,``0,System.String)
+  name: IsLessThanOrEqualTo<T>(T, T, string)
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsLessThanOrEqualTo__1___0___0_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssert.IsLessThanOrEqualTo``1(``0,``0,System.String)
+  name.vb: IsLessThanOrEqualTo(Of T)(T, T, String)
+  fullName: Benday.Common.Testing.NumericAssert.IsLessThanOrEqualTo<T>(T, T, string)
+  fullName.vb: Benday.Common.Testing.NumericAssert.IsLessThanOrEqualTo(Of T)(T, T, String)
+  nameWithType: NumericAssert.IsLessThanOrEqualTo<T>(T, T, string)
+  nameWithType.vb: NumericAssert.IsLessThanOrEqualTo(Of T)(T, T, String)
+- uid: Benday.Common.Testing.NumericAssert.IsLessThan``1(``0,``0,System.String)
+  name: IsLessThan<T>(T, T, string)
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsLessThan__1___0___0_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssert.IsLessThan``1(``0,``0,System.String)
+  name.vb: IsLessThan(Of T)(T, T, String)
+  fullName: Benday.Common.Testing.NumericAssert.IsLessThan<T>(T, T, string)
+  fullName.vb: Benday.Common.Testing.NumericAssert.IsLessThan(Of T)(T, T, String)
+  nameWithType: NumericAssert.IsLessThan<T>(T, T, string)
+  nameWithType.vb: NumericAssert.IsLessThan(Of T)(T, T, String)
+- uid: Benday.Common.Testing.NumericAssert.IsNegative*
+  name: IsNegative
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsNegative_
+  commentId: Overload:Benday.Common.Testing.NumericAssert.IsNegative
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssert.IsNegative
+  nameWithType: NumericAssert.IsNegative
+- uid: Benday.Common.Testing.NumericAssert.IsNegative``1(``0,System.String)
+  name: IsNegative<T>(T, string)
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsNegative__1___0_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssert.IsNegative``1(``0,System.String)
+  name.vb: IsNegative(Of T)(T, String)
+  fullName: Benday.Common.Testing.NumericAssert.IsNegative<T>(T, string)
+  fullName.vb: Benday.Common.Testing.NumericAssert.IsNegative(Of T)(T, String)
+  nameWithType: NumericAssert.IsNegative<T>(T, string)
+  nameWithType.vb: NumericAssert.IsNegative(Of T)(T, String)
+- uid: Benday.Common.Testing.NumericAssert.IsNotInRange*
+  name: IsNotInRange
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsNotInRange_
+  commentId: Overload:Benday.Common.Testing.NumericAssert.IsNotInRange
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssert.IsNotInRange
+  nameWithType: NumericAssert.IsNotInRange
+- uid: Benday.Common.Testing.NumericAssert.IsNotInRange``1(``0,``0,``0,System.String)
+  name: IsNotInRange<T>(T, T, T, string)
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsNotInRange__1___0___0___0_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssert.IsNotInRange``1(``0,``0,``0,System.String)
+  name.vb: IsNotInRange(Of T)(T, T, T, String)
+  fullName: Benday.Common.Testing.NumericAssert.IsNotInRange<T>(T, T, T, string)
+  fullName.vb: Benday.Common.Testing.NumericAssert.IsNotInRange(Of T)(T, T, T, String)
+  nameWithType: NumericAssert.IsNotInRange<T>(T, T, T, string)
+  nameWithType.vb: NumericAssert.IsNotInRange(Of T)(T, T, T, String)
+- uid: Benday.Common.Testing.NumericAssert.IsNotNaN(System.Double,System.String)
+  name: IsNotNaN(double, string)
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsNotNaN_System_Double_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssert.IsNotNaN(System.Double,System.String)
+  name.vb: IsNotNaN(Double, String)
+  fullName: Benday.Common.Testing.NumericAssert.IsNotNaN(double, string)
+  fullName.vb: Benday.Common.Testing.NumericAssert.IsNotNaN(Double, String)
+  nameWithType: NumericAssert.IsNotNaN(double, string)
+  nameWithType.vb: NumericAssert.IsNotNaN(Double, String)
+- uid: Benday.Common.Testing.NumericAssert.IsNotNaN(System.Single,System.String)
+  name: IsNotNaN(float, string)
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsNotNaN_System_Single_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssert.IsNotNaN(System.Single,System.String)
+  name.vb: IsNotNaN(Single, String)
+  fullName: Benday.Common.Testing.NumericAssert.IsNotNaN(float, string)
+  fullName.vb: Benday.Common.Testing.NumericAssert.IsNotNaN(Single, String)
+  nameWithType: NumericAssert.IsNotNaN(float, string)
+  nameWithType.vb: NumericAssert.IsNotNaN(Single, String)
+- uid: Benday.Common.Testing.NumericAssert.IsNotNaN*
+  name: IsNotNaN
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsNotNaN_
+  commentId: Overload:Benday.Common.Testing.NumericAssert.IsNotNaN
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssert.IsNotNaN
+  nameWithType: NumericAssert.IsNotNaN
+- uid: Benday.Common.Testing.NumericAssert.IsNotZero*
+  name: IsNotZero
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsNotZero_
+  commentId: Overload:Benday.Common.Testing.NumericAssert.IsNotZero
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssert.IsNotZero
+  nameWithType: NumericAssert.IsNotZero
+- uid: Benday.Common.Testing.NumericAssert.IsNotZero``1(``0,System.String)
+  name: IsNotZero<T>(T, string)
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsNotZero__1___0_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssert.IsNotZero``1(``0,System.String)
+  name.vb: IsNotZero(Of T)(T, String)
+  fullName: Benday.Common.Testing.NumericAssert.IsNotZero<T>(T, string)
+  fullName.vb: Benday.Common.Testing.NumericAssert.IsNotZero(Of T)(T, String)
+  nameWithType: NumericAssert.IsNotZero<T>(T, string)
+  nameWithType.vb: NumericAssert.IsNotZero(Of T)(T, String)
+- uid: Benday.Common.Testing.NumericAssert.IsPositive*
+  name: IsPositive
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsPositive_
+  commentId: Overload:Benday.Common.Testing.NumericAssert.IsPositive
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssert.IsPositive
+  nameWithType: NumericAssert.IsPositive
+- uid: Benday.Common.Testing.NumericAssert.IsPositive``1(``0,System.String)
+  name: IsPositive<T>(T, string)
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsPositive__1___0_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssert.IsPositive``1(``0,System.String)
+  name.vb: IsPositive(Of T)(T, String)
+  fullName: Benday.Common.Testing.NumericAssert.IsPositive<T>(T, string)
+  fullName.vb: Benday.Common.Testing.NumericAssert.IsPositive(Of T)(T, String)
+  nameWithType: NumericAssert.IsPositive<T>(T, string)
+  nameWithType.vb: NumericAssert.IsPositive(Of T)(T, String)
+- uid: Benday.Common.Testing.NumericAssert.IsZero*
+  name: IsZero
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsZero_
+  commentId: Overload:Benday.Common.Testing.NumericAssert.IsZero
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssert.IsZero
+  nameWithType: NumericAssert.IsZero
+- uid: Benday.Common.Testing.NumericAssert.IsZero``1(``0,System.String)
+  name: IsZero<T>(T, string)
+  href: api/Benday.Common.Testing.NumericAssert.html#Benday_Common_Testing_NumericAssert_IsZero__1___0_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssert.IsZero``1(``0,System.String)
+  name.vb: IsZero(Of T)(T, String)
+  fullName: Benday.Common.Testing.NumericAssert.IsZero<T>(T, string)
+  fullName.vb: Benday.Common.Testing.NumericAssert.IsZero(Of T)(T, String)
+  nameWithType: NumericAssert.IsZero<T>(T, string)
+  nameWithType.vb: NumericAssert.IsZero(Of T)(T, String)
+- uid: Benday.Common.Testing.NumericAssertExtensions
+  name: NumericAssertExtensions
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html
+  commentId: T:Benday.Common.Testing.NumericAssertExtensions
+  fullName: Benday.Common.Testing.NumericAssertExtensions
+  nameWithType: NumericAssertExtensions
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo(System.Decimal,System.Decimal,System.Decimal,System.String)
+  name: ShouldBeApproximatelyEqualTo(decimal, decimal, decimal, string)
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBeApproximatelyEqualTo_System_Decimal_System_Decimal_System_Decimal_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo(System.Decimal,System.Decimal,System.Decimal,System.String)
+  name.vb: ShouldBeApproximatelyEqualTo(Decimal, Decimal, Decimal, String)
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo(decimal, decimal, decimal, string)
+  fullName.vb: Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo(Decimal, Decimal, Decimal, String)
+  nameWithType: NumericAssertExtensions.ShouldBeApproximatelyEqualTo(decimal, decimal, decimal, string)
+  nameWithType.vb: NumericAssertExtensions.ShouldBeApproximatelyEqualTo(Decimal, Decimal, Decimal, String)
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo(System.Double,System.Double,System.Double,System.String)
+  name: ShouldBeApproximatelyEqualTo(double, double, double, string)
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBeApproximatelyEqualTo_System_Double_System_Double_System_Double_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo(System.Double,System.Double,System.Double,System.String)
+  name.vb: ShouldBeApproximatelyEqualTo(Double, Double, Double, String)
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo(double, double, double, string)
+  fullName.vb: Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo(Double, Double, Double, String)
+  nameWithType: NumericAssertExtensions.ShouldBeApproximatelyEqualTo(double, double, double, string)
+  nameWithType.vb: NumericAssertExtensions.ShouldBeApproximatelyEqualTo(Double, Double, Double, String)
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo(System.Single,System.Single,System.Single,System.String)
+  name: ShouldBeApproximatelyEqualTo(float, float, float, string)
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBeApproximatelyEqualTo_System_Single_System_Single_System_Single_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo(System.Single,System.Single,System.Single,System.String)
+  name.vb: ShouldBeApproximatelyEqualTo(Single, Single, Single, String)
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo(float, float, float, string)
+  fullName.vb: Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo(Single, Single, Single, String)
+  nameWithType: NumericAssertExtensions.ShouldBeApproximatelyEqualTo(float, float, float, string)
+  nameWithType.vb: NumericAssertExtensions.ShouldBeApproximatelyEqualTo(Single, Single, Single, String)
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo*
+  name: ShouldBeApproximatelyEqualTo
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBeApproximatelyEqualTo_
+  commentId: Overload:Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBeApproximatelyEqualTo
+  nameWithType: NumericAssertExtensions.ShouldBeApproximatelyEqualTo
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBeFinite(System.Double,System.String)
+  name: ShouldBeFinite(double, string)
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBeFinite_System_Double_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssertExtensions.ShouldBeFinite(System.Double,System.String)
+  name.vb: ShouldBeFinite(Double, String)
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBeFinite(double, string)
+  fullName.vb: Benday.Common.Testing.NumericAssertExtensions.ShouldBeFinite(Double, String)
+  nameWithType: NumericAssertExtensions.ShouldBeFinite(double, string)
+  nameWithType.vb: NumericAssertExtensions.ShouldBeFinite(Double, String)
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBeFinite(System.Single,System.String)
+  name: ShouldBeFinite(float, string)
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBeFinite_System_Single_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssertExtensions.ShouldBeFinite(System.Single,System.String)
+  name.vb: ShouldBeFinite(Single, String)
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBeFinite(float, string)
+  fullName.vb: Benday.Common.Testing.NumericAssertExtensions.ShouldBeFinite(Single, String)
+  nameWithType: NumericAssertExtensions.ShouldBeFinite(float, string)
+  nameWithType.vb: NumericAssertExtensions.ShouldBeFinite(Single, String)
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBeFinite*
+  name: ShouldBeFinite
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBeFinite_
+  commentId: Overload:Benday.Common.Testing.NumericAssertExtensions.ShouldBeFinite
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBeFinite
+  nameWithType: NumericAssertExtensions.ShouldBeFinite
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBeGreaterThan*
+  name: ShouldBeGreaterThan
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBeGreaterThan_
+  commentId: Overload:Benday.Common.Testing.NumericAssertExtensions.ShouldBeGreaterThan
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBeGreaterThan
+  nameWithType: NumericAssertExtensions.ShouldBeGreaterThan
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBeGreaterThanOrEqualTo*
+  name: ShouldBeGreaterThanOrEqualTo
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBeGreaterThanOrEqualTo_
+  commentId: Overload:Benday.Common.Testing.NumericAssertExtensions.ShouldBeGreaterThanOrEqualTo
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBeGreaterThanOrEqualTo
+  nameWithType: NumericAssertExtensions.ShouldBeGreaterThanOrEqualTo
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBeGreaterThanOrEqualTo``1(``0,``0,System.String)
+  name: ShouldBeGreaterThanOrEqualTo<T>(T, T, string)
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBeGreaterThanOrEqualTo__1___0___0_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssertExtensions.ShouldBeGreaterThanOrEqualTo``1(``0,``0,System.String)
+  name.vb: ShouldBeGreaterThanOrEqualTo(Of T)(T, T, String)
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBeGreaterThanOrEqualTo<T>(T, T, string)
+  fullName.vb: Benday.Common.Testing.NumericAssertExtensions.ShouldBeGreaterThanOrEqualTo(Of T)(T, T, String)
+  nameWithType: NumericAssertExtensions.ShouldBeGreaterThanOrEqualTo<T>(T, T, string)
+  nameWithType.vb: NumericAssertExtensions.ShouldBeGreaterThanOrEqualTo(Of T)(T, T, String)
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBeGreaterThan``1(``0,``0,System.String)
+  name: ShouldBeGreaterThan<T>(T, T, string)
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBeGreaterThan__1___0___0_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssertExtensions.ShouldBeGreaterThan``1(``0,``0,System.String)
+  name.vb: ShouldBeGreaterThan(Of T)(T, T, String)
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBeGreaterThan<T>(T, T, string)
+  fullName.vb: Benday.Common.Testing.NumericAssertExtensions.ShouldBeGreaterThan(Of T)(T, T, String)
+  nameWithType: NumericAssertExtensions.ShouldBeGreaterThan<T>(T, T, string)
+  nameWithType.vb: NumericAssertExtensions.ShouldBeGreaterThan(Of T)(T, T, String)
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBeInRange*
+  name: ShouldBeInRange
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBeInRange_
+  commentId: Overload:Benday.Common.Testing.NumericAssertExtensions.ShouldBeInRange
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBeInRange
+  nameWithType: NumericAssertExtensions.ShouldBeInRange
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBeInRange``1(``0,``0,``0,System.String)
+  name: ShouldBeInRange<T>(T, T, T, string)
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBeInRange__1___0___0___0_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssertExtensions.ShouldBeInRange``1(``0,``0,``0,System.String)
+  name.vb: ShouldBeInRange(Of T)(T, T, T, String)
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBeInRange<T>(T, T, T, string)
+  fullName.vb: Benday.Common.Testing.NumericAssertExtensions.ShouldBeInRange(Of T)(T, T, T, String)
+  nameWithType: NumericAssertExtensions.ShouldBeInRange<T>(T, T, T, string)
+  nameWithType.vb: NumericAssertExtensions.ShouldBeInRange(Of T)(T, T, T, String)
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBeLessThan*
+  name: ShouldBeLessThan
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBeLessThan_
+  commentId: Overload:Benday.Common.Testing.NumericAssertExtensions.ShouldBeLessThan
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBeLessThan
+  nameWithType: NumericAssertExtensions.ShouldBeLessThan
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBeLessThanOrEqualTo*
+  name: ShouldBeLessThanOrEqualTo
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBeLessThanOrEqualTo_
+  commentId: Overload:Benday.Common.Testing.NumericAssertExtensions.ShouldBeLessThanOrEqualTo
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBeLessThanOrEqualTo
+  nameWithType: NumericAssertExtensions.ShouldBeLessThanOrEqualTo
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBeLessThanOrEqualTo``1(``0,``0,System.String)
+  name: ShouldBeLessThanOrEqualTo<T>(T, T, string)
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBeLessThanOrEqualTo__1___0___0_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssertExtensions.ShouldBeLessThanOrEqualTo``1(``0,``0,System.String)
+  name.vb: ShouldBeLessThanOrEqualTo(Of T)(T, T, String)
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBeLessThanOrEqualTo<T>(T, T, string)
+  fullName.vb: Benday.Common.Testing.NumericAssertExtensions.ShouldBeLessThanOrEqualTo(Of T)(T, T, String)
+  nameWithType: NumericAssertExtensions.ShouldBeLessThanOrEqualTo<T>(T, T, string)
+  nameWithType.vb: NumericAssertExtensions.ShouldBeLessThanOrEqualTo(Of T)(T, T, String)
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBeLessThan``1(``0,``0,System.String)
+  name: ShouldBeLessThan<T>(T, T, string)
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBeLessThan__1___0___0_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssertExtensions.ShouldBeLessThan``1(``0,``0,System.String)
+  name.vb: ShouldBeLessThan(Of T)(T, T, String)
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBeLessThan<T>(T, T, string)
+  fullName.vb: Benday.Common.Testing.NumericAssertExtensions.ShouldBeLessThan(Of T)(T, T, String)
+  nameWithType: NumericAssertExtensions.ShouldBeLessThan<T>(T, T, string)
+  nameWithType.vb: NumericAssertExtensions.ShouldBeLessThan(Of T)(T, T, String)
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBeNegative*
+  name: ShouldBeNegative
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBeNegative_
+  commentId: Overload:Benday.Common.Testing.NumericAssertExtensions.ShouldBeNegative
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBeNegative
+  nameWithType: NumericAssertExtensions.ShouldBeNegative
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBeNegative``1(``0,System.String)
+  name: ShouldBeNegative<T>(T, string)
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBeNegative__1___0_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssertExtensions.ShouldBeNegative``1(``0,System.String)
+  name.vb: ShouldBeNegative(Of T)(T, String)
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBeNegative<T>(T, string)
+  fullName.vb: Benday.Common.Testing.NumericAssertExtensions.ShouldBeNegative(Of T)(T, String)
+  nameWithType: NumericAssertExtensions.ShouldBeNegative<T>(T, string)
+  nameWithType.vb: NumericAssertExtensions.ShouldBeNegative(Of T)(T, String)
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBePositive*
+  name: ShouldBePositive
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBePositive_
+  commentId: Overload:Benday.Common.Testing.NumericAssertExtensions.ShouldBePositive
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBePositive
+  nameWithType: NumericAssertExtensions.ShouldBePositive
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBePositive``1(``0,System.String)
+  name: ShouldBePositive<T>(T, string)
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBePositive__1___0_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssertExtensions.ShouldBePositive``1(``0,System.String)
+  name.vb: ShouldBePositive(Of T)(T, String)
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBePositive<T>(T, string)
+  fullName.vb: Benday.Common.Testing.NumericAssertExtensions.ShouldBePositive(Of T)(T, String)
+  nameWithType: NumericAssertExtensions.ShouldBePositive<T>(T, string)
+  nameWithType.vb: NumericAssertExtensions.ShouldBePositive(Of T)(T, String)
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBeZero*
+  name: ShouldBeZero
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBeZero_
+  commentId: Overload:Benday.Common.Testing.NumericAssertExtensions.ShouldBeZero
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBeZero
+  nameWithType: NumericAssertExtensions.ShouldBeZero
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldBeZero``1(``0,System.String)
+  name: ShouldBeZero<T>(T, string)
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldBeZero__1___0_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssertExtensions.ShouldBeZero``1(``0,System.String)
+  name.vb: ShouldBeZero(Of T)(T, String)
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldBeZero<T>(T, string)
+  fullName.vb: Benday.Common.Testing.NumericAssertExtensions.ShouldBeZero(Of T)(T, String)
+  nameWithType: NumericAssertExtensions.ShouldBeZero<T>(T, string)
+  nameWithType.vb: NumericAssertExtensions.ShouldBeZero(Of T)(T, String)
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeInRange*
+  name: ShouldNotBeInRange
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldNotBeInRange_
+  commentId: Overload:Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeInRange
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeInRange
+  nameWithType: NumericAssertExtensions.ShouldNotBeInRange
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeInRange``1(``0,``0,``0,System.String)
+  name: ShouldNotBeInRange<T>(T, T, T, string)
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldNotBeInRange__1___0___0___0_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeInRange``1(``0,``0,``0,System.String)
+  name.vb: ShouldNotBeInRange(Of T)(T, T, T, String)
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeInRange<T>(T, T, T, string)
+  fullName.vb: Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeInRange(Of T)(T, T, T, String)
+  nameWithType: NumericAssertExtensions.ShouldNotBeInRange<T>(T, T, T, string)
+  nameWithType.vb: NumericAssertExtensions.ShouldNotBeInRange(Of T)(T, T, T, String)
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeNaN(System.Double,System.String)
+  name: ShouldNotBeNaN(double, string)
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldNotBeNaN_System_Double_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeNaN(System.Double,System.String)
+  name.vb: ShouldNotBeNaN(Double, String)
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeNaN(double, string)
+  fullName.vb: Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeNaN(Double, String)
+  nameWithType: NumericAssertExtensions.ShouldNotBeNaN(double, string)
+  nameWithType.vb: NumericAssertExtensions.ShouldNotBeNaN(Double, String)
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeNaN(System.Single,System.String)
+  name: ShouldNotBeNaN(float, string)
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldNotBeNaN_System_Single_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeNaN(System.Single,System.String)
+  name.vb: ShouldNotBeNaN(Single, String)
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeNaN(float, string)
+  fullName.vb: Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeNaN(Single, String)
+  nameWithType: NumericAssertExtensions.ShouldNotBeNaN(float, string)
+  nameWithType.vb: NumericAssertExtensions.ShouldNotBeNaN(Single, String)
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeNaN*
+  name: ShouldNotBeNaN
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldNotBeNaN_
+  commentId: Overload:Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeNaN
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeNaN
+  nameWithType: NumericAssertExtensions.ShouldNotBeNaN
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeZero*
+  name: ShouldNotBeZero
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldNotBeZero_
+  commentId: Overload:Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeZero
+  isSpec: "True"
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeZero
+  nameWithType: NumericAssertExtensions.ShouldNotBeZero
+- uid: Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeZero``1(``0,System.String)
+  name: ShouldNotBeZero<T>(T, string)
+  href: api/Benday.Common.Testing.NumericAssertExtensions.html#Benday_Common_Testing_NumericAssertExtensions_ShouldNotBeZero__1___0_System_String_
+  commentId: M:Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeZero``1(``0,System.String)
+  name.vb: ShouldNotBeZero(Of T)(T, String)
+  fullName: Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeZero<T>(T, string)
+  fullName.vb: Benday.Common.Testing.NumericAssertExtensions.ShouldNotBeZero(Of T)(T, String)
+  nameWithType: NumericAssertExtensions.ShouldNotBeZero<T>(T, string)
+  nameWithType.vb: NumericAssertExtensions.ShouldNotBeZero(Of T)(T, String)
+- uid: Benday.Common.Testing.ObjectAssertExtensions
+  name: ObjectAssertExtensions
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html
+  commentId: T:Benday.Common.Testing.ObjectAssertExtensions
+  fullName: Benday.Common.Testing.ObjectAssertExtensions
+  nameWithType: ObjectAssertExtensions
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeFalse(System.Boolean,System.String)
+  name: ShouldBeFalse(bool, string)
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldBeFalse_System_Boolean_System_String_
+  commentId: M:Benday.Common.Testing.ObjectAssertExtensions.ShouldBeFalse(System.Boolean,System.String)
+  name.vb: ShouldBeFalse(Boolean, String)
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeFalse(bool, string)
+  fullName.vb: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeFalse(Boolean, String)
+  nameWithType: ObjectAssertExtensions.ShouldBeFalse(bool, string)
+  nameWithType.vb: ObjectAssertExtensions.ShouldBeFalse(Boolean, String)
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeFalse*
+  name: ShouldBeFalse
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldBeFalse_
+  commentId: Overload:Benday.Common.Testing.ObjectAssertExtensions.ShouldBeFalse
+  isSpec: "True"
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeFalse
+  nameWithType: ObjectAssertExtensions.ShouldBeFalse
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeNull*
+  name: ShouldBeNull
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldBeNull_
+  commentId: Overload:Benday.Common.Testing.ObjectAssertExtensions.ShouldBeNull
+  isSpec: "True"
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeNull
+  nameWithType: ObjectAssertExtensions.ShouldBeNull
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeNull``1(``0,System.String)
+  name: ShouldBeNull<T>(T?, string)
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldBeNull__1___0_System_String_
+  commentId: M:Benday.Common.Testing.ObjectAssertExtensions.ShouldBeNull``1(``0,System.String)
+  name.vb: ShouldBeNull(Of T)(T, String)
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeNull<T>(T?, string)
+  fullName.vb: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeNull(Of T)(T, String)
+  nameWithType: ObjectAssertExtensions.ShouldBeNull<T>(T?, string)
+  nameWithType.vb: ObjectAssertExtensions.ShouldBeNull(Of T)(T, String)
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeOfType*
+  name: ShouldBeOfType
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldBeOfType_
+  commentId: Overload:Benday.Common.Testing.ObjectAssertExtensions.ShouldBeOfType
+  isSpec: "True"
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeOfType
+  nameWithType: ObjectAssertExtensions.ShouldBeOfType
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeOfType``1(System.Object,System.String)
+  name: ShouldBeOfType<T>(object?, string)
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldBeOfType__1_System_Object_System_String_
+  commentId: M:Benday.Common.Testing.ObjectAssertExtensions.ShouldBeOfType``1(System.Object,System.String)
+  name.vb: ShouldBeOfType(Of T)(Object, String)
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeOfType<T>(object?, string)
+  fullName.vb: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeOfType(Of T)(Object, String)
+  nameWithType: ObjectAssertExtensions.ShouldBeOfType<T>(object?, string)
+  nameWithType.vb: ObjectAssertExtensions.ShouldBeOfType(Of T)(Object, String)
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeSameAs*
+  name: ShouldBeSameAs
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldBeSameAs_
+  commentId: Overload:Benday.Common.Testing.ObjectAssertExtensions.ShouldBeSameAs
+  isSpec: "True"
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeSameAs
+  nameWithType: ObjectAssertExtensions.ShouldBeSameAs
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeSameAs``1(``0,``0,System.String)
+  name: ShouldBeSameAs<T>(T, T, string)
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldBeSameAs__1___0___0_System_String_
+  commentId: M:Benday.Common.Testing.ObjectAssertExtensions.ShouldBeSameAs``1(``0,``0,System.String)
+  name.vb: ShouldBeSameAs(Of T)(T, T, String)
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeSameAs<T>(T, T, string)
+  fullName.vb: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeSameAs(Of T)(T, T, String)
+  nameWithType: ObjectAssertExtensions.ShouldBeSameAs<T>(T, T, string)
+  nameWithType.vb: ObjectAssertExtensions.ShouldBeSameAs(Of T)(T, T, String)
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeTrue(System.Boolean,System.String)
+  name: ShouldBeTrue(bool, string)
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldBeTrue_System_Boolean_System_String_
+  commentId: M:Benday.Common.Testing.ObjectAssertExtensions.ShouldBeTrue(System.Boolean,System.String)
+  name.vb: ShouldBeTrue(Boolean, String)
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeTrue(bool, string)
+  fullName.vb: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeTrue(Boolean, String)
+  nameWithType: ObjectAssertExtensions.ShouldBeTrue(bool, string)
+  nameWithType.vb: ObjectAssertExtensions.ShouldBeTrue(Boolean, String)
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeTrue*
+  name: ShouldBeTrue
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldBeTrue_
+  commentId: Overload:Benday.Common.Testing.ObjectAssertExtensions.ShouldBeTrue
+  isSpec: "True"
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldBeTrue
+  nameWithType: ObjectAssertExtensions.ShouldBeTrue
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldEqual*
+  name: ShouldEqual
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldEqual_
+  commentId: Overload:Benday.Common.Testing.ObjectAssertExtensions.ShouldEqual
+  isSpec: "True"
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldEqual
+  nameWithType: ObjectAssertExtensions.ShouldEqual
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldEqual``1(``0,``0,System.String)
+  name: ShouldEqual<T>(T, T, string)
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldEqual__1___0___0_System_String_
+  commentId: M:Benday.Common.Testing.ObjectAssertExtensions.ShouldEqual``1(``0,``0,System.String)
+  name.vb: ShouldEqual(Of T)(T, T, String)
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldEqual<T>(T, T, string)
+  fullName.vb: Benday.Common.Testing.ObjectAssertExtensions.ShouldEqual(Of T)(T, T, String)
+  nameWithType: ObjectAssertExtensions.ShouldEqual<T>(T, T, string)
+  nameWithType.vb: ObjectAssertExtensions.ShouldEqual(Of T)(T, T, String)
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotBeNull*
+  name: ShouldNotBeNull
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldNotBeNull_
+  commentId: Overload:Benday.Common.Testing.ObjectAssertExtensions.ShouldNotBeNull
+  isSpec: "True"
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotBeNull
+  nameWithType: ObjectAssertExtensions.ShouldNotBeNull
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotBeNull``1(``0,System.String)
+  name: ShouldNotBeNull<T>(T?, string)
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldNotBeNull__1___0_System_String_
+  commentId: M:Benday.Common.Testing.ObjectAssertExtensions.ShouldNotBeNull``1(``0,System.String)
+  name.vb: ShouldNotBeNull(Of T)(T, String)
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotBeNull<T>(T?, string)
+  fullName.vb: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotBeNull(Of T)(T, String)
+  nameWithType: ObjectAssertExtensions.ShouldNotBeNull<T>(T?, string)
+  nameWithType.vb: ObjectAssertExtensions.ShouldNotBeNull(Of T)(T, String)
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotBeOfType*
+  name: ShouldNotBeOfType
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldNotBeOfType_
+  commentId: Overload:Benday.Common.Testing.ObjectAssertExtensions.ShouldNotBeOfType
+  isSpec: "True"
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotBeOfType
+  nameWithType: ObjectAssertExtensions.ShouldNotBeOfType
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotBeOfType``1(System.Object,System.String)
+  name: ShouldNotBeOfType<T>(object?, string)
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldNotBeOfType__1_System_Object_System_String_
+  commentId: M:Benday.Common.Testing.ObjectAssertExtensions.ShouldNotBeOfType``1(System.Object,System.String)
+  name.vb: ShouldNotBeOfType(Of T)(Object, String)
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotBeOfType<T>(object?, string)
+  fullName.vb: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotBeOfType(Of T)(Object, String)
+  nameWithType: ObjectAssertExtensions.ShouldNotBeOfType<T>(object?, string)
+  nameWithType.vb: ObjectAssertExtensions.ShouldNotBeOfType(Of T)(Object, String)
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotBeSameAs*
+  name: ShouldNotBeSameAs
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldNotBeSameAs_
+  commentId: Overload:Benday.Common.Testing.ObjectAssertExtensions.ShouldNotBeSameAs
+  isSpec: "True"
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotBeSameAs
+  nameWithType: ObjectAssertExtensions.ShouldNotBeSameAs
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotBeSameAs``1(``0,``0,System.String)
+  name: ShouldNotBeSameAs<T>(T, T, string)
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldNotBeSameAs__1___0___0_System_String_
+  commentId: M:Benday.Common.Testing.ObjectAssertExtensions.ShouldNotBeSameAs``1(``0,``0,System.String)
+  name.vb: ShouldNotBeSameAs(Of T)(T, T, String)
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotBeSameAs<T>(T, T, string)
+  fullName.vb: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotBeSameAs(Of T)(T, T, String)
+  nameWithType: ObjectAssertExtensions.ShouldNotBeSameAs<T>(T, T, string)
+  nameWithType.vb: ObjectAssertExtensions.ShouldNotBeSameAs(Of T)(T, T, String)
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotEqual*
+  name: ShouldNotEqual
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldNotEqual_
+  commentId: Overload:Benday.Common.Testing.ObjectAssertExtensions.ShouldNotEqual
+  isSpec: "True"
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotEqual
+  nameWithType: ObjectAssertExtensions.ShouldNotEqual
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotEqual``1(``0,``0,System.String)
+  name: ShouldNotEqual<T>(T, T, string)
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldNotEqual__1___0___0_System_String_
+  commentId: M:Benday.Common.Testing.ObjectAssertExtensions.ShouldNotEqual``1(``0,``0,System.String)
+  name.vb: ShouldNotEqual(Of T)(T, T, String)
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotEqual<T>(T, T, string)
+  fullName.vb: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotEqual(Of T)(T, T, String)
+  nameWithType: ObjectAssertExtensions.ShouldNotEqual<T>(T, T, string)
+  nameWithType.vb: ObjectAssertExtensions.ShouldNotEqual(Of T)(T, T, String)
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotThrow(System.Action,System.String)
+  name: ShouldNotThrow(Action, string)
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldNotThrow_System_Action_System_String_
+  commentId: M:Benday.Common.Testing.ObjectAssertExtensions.ShouldNotThrow(System.Action,System.String)
+  name.vb: ShouldNotThrow(Action, String)
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotThrow(System.Action, string)
+  fullName.vb: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotThrow(System.Action, String)
+  nameWithType: ObjectAssertExtensions.ShouldNotThrow(Action, string)
+  nameWithType.vb: ObjectAssertExtensions.ShouldNotThrow(Action, String)
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotThrow*
+  name: ShouldNotThrow
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldNotThrow_
+  commentId: Overload:Benday.Common.Testing.ObjectAssertExtensions.ShouldNotThrow
+  isSpec: "True"
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldNotThrow
+  nameWithType: ObjectAssertExtensions.ShouldNotThrow
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldThrow*
+  name: ShouldThrow
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldThrow_
+  commentId: Overload:Benday.Common.Testing.ObjectAssertExtensions.ShouldThrow
+  isSpec: "True"
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldThrow
+  nameWithType: ObjectAssertExtensions.ShouldThrow
+- uid: Benday.Common.Testing.ObjectAssertExtensions.ShouldThrow``1(System.Action,System.String)
+  name: ShouldThrow<T>(Action, string)
+  href: api/Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldThrow__1_System_Action_System_String_
+  commentId: M:Benday.Common.Testing.ObjectAssertExtensions.ShouldThrow``1(System.Action,System.String)
+  name.vb: ShouldThrow(Of T)(Action, String)
+  fullName: Benday.Common.Testing.ObjectAssertExtensions.ShouldThrow<T>(System.Action, string)
+  fullName.vb: Benday.Common.Testing.ObjectAssertExtensions.ShouldThrow(Of T)(System.Action, String)
+  nameWithType: ObjectAssertExtensions.ShouldThrow<T>(Action, string)
+  nameWithType.vb: ObjectAssertExtensions.ShouldThrow(Of T)(Action, String)
+- uid: Benday.Common.Testing.StringAssert
+  name: StringAssert
+  href: api/Benday.Common.Testing.StringAssert.html
+  commentId: T:Benday.Common.Testing.StringAssert
+  fullName: Benday.Common.Testing.StringAssert
+  nameWithType: StringAssert
+- uid: Benday.Common.Testing.StringAssert.AreEqualIgnoreCase(System.String,System.String,System.String)
+  name: AreEqualIgnoreCase(string, string, string)
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_AreEqualIgnoreCase_System_String_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssert.AreEqualIgnoreCase(System.String,System.String,System.String)
+  name.vb: AreEqualIgnoreCase(String, String, String)
+  fullName: Benday.Common.Testing.StringAssert.AreEqualIgnoreCase(string, string, string)
+  fullName.vb: Benday.Common.Testing.StringAssert.AreEqualIgnoreCase(String, String, String)
+  nameWithType: StringAssert.AreEqualIgnoreCase(string, string, string)
+  nameWithType.vb: StringAssert.AreEqualIgnoreCase(String, String, String)
+- uid: Benday.Common.Testing.StringAssert.AreEqualIgnoreCase*
+  name: AreEqualIgnoreCase
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_AreEqualIgnoreCase_
+  commentId: Overload:Benday.Common.Testing.StringAssert.AreEqualIgnoreCase
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssert.AreEqualIgnoreCase
+  nameWithType: StringAssert.AreEqualIgnoreCase
+- uid: Benday.Common.Testing.StringAssert.AreNotEqualIgnoreCase(System.String,System.String,System.String)
+  name: AreNotEqualIgnoreCase(string, string, string)
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_AreNotEqualIgnoreCase_System_String_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssert.AreNotEqualIgnoreCase(System.String,System.String,System.String)
+  name.vb: AreNotEqualIgnoreCase(String, String, String)
+  fullName: Benday.Common.Testing.StringAssert.AreNotEqualIgnoreCase(string, string, string)
+  fullName.vb: Benday.Common.Testing.StringAssert.AreNotEqualIgnoreCase(String, String, String)
+  nameWithType: StringAssert.AreNotEqualIgnoreCase(string, string, string)
+  nameWithType.vb: StringAssert.AreNotEqualIgnoreCase(String, String, String)
+- uid: Benday.Common.Testing.StringAssert.AreNotEqualIgnoreCase*
+  name: AreNotEqualIgnoreCase
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_AreNotEqualIgnoreCase_
+  commentId: Overload:Benday.Common.Testing.StringAssert.AreNotEqualIgnoreCase
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssert.AreNotEqualIgnoreCase
+  nameWithType: StringAssert.AreNotEqualIgnoreCase
+- uid: Benday.Common.Testing.StringAssert.Contains(System.String,System.String,System.String)
+  name: Contains(string, string, string)
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_Contains_System_String_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssert.Contains(System.String,System.String,System.String)
+  name.vb: Contains(String, String, String)
+  fullName: Benday.Common.Testing.StringAssert.Contains(string, string, string)
+  fullName.vb: Benday.Common.Testing.StringAssert.Contains(String, String, String)
+  nameWithType: StringAssert.Contains(string, string, string)
+  nameWithType.vb: StringAssert.Contains(String, String, String)
+- uid: Benday.Common.Testing.StringAssert.Contains(System.String,System.String,System.StringComparison,System.String)
+  name: Contains(string, string, StringComparison, string)
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_Contains_System_String_System_String_System_StringComparison_System_String_
+  commentId: M:Benday.Common.Testing.StringAssert.Contains(System.String,System.String,System.StringComparison,System.String)
+  name.vb: Contains(String, String, StringComparison, String)
+  fullName: Benday.Common.Testing.StringAssert.Contains(string, string, System.StringComparison, string)
+  fullName.vb: Benday.Common.Testing.StringAssert.Contains(String, String, System.StringComparison, String)
+  nameWithType: StringAssert.Contains(string, string, StringComparison, string)
+  nameWithType.vb: StringAssert.Contains(String, String, StringComparison, String)
+- uid: Benday.Common.Testing.StringAssert.Contains*
+  name: Contains
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_Contains_
+  commentId: Overload:Benday.Common.Testing.StringAssert.Contains
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssert.Contains
+  nameWithType: StringAssert.Contains
+- uid: Benday.Common.Testing.StringAssert.DoesNotContain(System.String,System.String,System.String)
+  name: DoesNotContain(string, string, string)
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_DoesNotContain_System_String_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssert.DoesNotContain(System.String,System.String,System.String)
+  name.vb: DoesNotContain(String, String, String)
+  fullName: Benday.Common.Testing.StringAssert.DoesNotContain(string, string, string)
+  fullName.vb: Benday.Common.Testing.StringAssert.DoesNotContain(String, String, String)
+  nameWithType: StringAssert.DoesNotContain(string, string, string)
+  nameWithType.vb: StringAssert.DoesNotContain(String, String, String)
+- uid: Benday.Common.Testing.StringAssert.DoesNotContain(System.String,System.String,System.StringComparison,System.String)
+  name: DoesNotContain(string, string, StringComparison, string)
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_DoesNotContain_System_String_System_String_System_StringComparison_System_String_
+  commentId: M:Benday.Common.Testing.StringAssert.DoesNotContain(System.String,System.String,System.StringComparison,System.String)
+  name.vb: DoesNotContain(String, String, StringComparison, String)
+  fullName: Benday.Common.Testing.StringAssert.DoesNotContain(string, string, System.StringComparison, string)
+  fullName.vb: Benday.Common.Testing.StringAssert.DoesNotContain(String, String, System.StringComparison, String)
+  nameWithType: StringAssert.DoesNotContain(string, string, StringComparison, string)
+  nameWithType.vb: StringAssert.DoesNotContain(String, String, StringComparison, String)
+- uid: Benday.Common.Testing.StringAssert.DoesNotContain*
+  name: DoesNotContain
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_DoesNotContain_
+  commentId: Overload:Benday.Common.Testing.StringAssert.DoesNotContain
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssert.DoesNotContain
+  nameWithType: StringAssert.DoesNotContain
+- uid: Benday.Common.Testing.StringAssert.DoesNotMatch(System.String,System.String,System.String)
+  name: DoesNotMatch(string, string, string)
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_DoesNotMatch_System_String_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssert.DoesNotMatch(System.String,System.String,System.String)
+  name.vb: DoesNotMatch(String, String, String)
+  fullName: Benday.Common.Testing.StringAssert.DoesNotMatch(string, string, string)
+  fullName.vb: Benday.Common.Testing.StringAssert.DoesNotMatch(String, String, String)
+  nameWithType: StringAssert.DoesNotMatch(string, string, string)
+  nameWithType.vb: StringAssert.DoesNotMatch(String, String, String)
+- uid: Benday.Common.Testing.StringAssert.DoesNotMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.String)
+  name: DoesNotMatch(string, string, RegexOptions, string)
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_DoesNotMatch_System_String_System_String_System_Text_RegularExpressions_RegexOptions_System_String_
+  commentId: M:Benday.Common.Testing.StringAssert.DoesNotMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.String)
+  name.vb: DoesNotMatch(String, String, RegexOptions, String)
+  fullName: Benday.Common.Testing.StringAssert.DoesNotMatch(string, string, System.Text.RegularExpressions.RegexOptions, string)
+  fullName.vb: Benday.Common.Testing.StringAssert.DoesNotMatch(String, String, System.Text.RegularExpressions.RegexOptions, String)
+  nameWithType: StringAssert.DoesNotMatch(string, string, RegexOptions, string)
+  nameWithType.vb: StringAssert.DoesNotMatch(String, String, RegexOptions, String)
+- uid: Benday.Common.Testing.StringAssert.DoesNotMatch*
+  name: DoesNotMatch
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_DoesNotMatch_
+  commentId: Overload:Benday.Common.Testing.StringAssert.DoesNotMatch
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssert.DoesNotMatch
+  nameWithType: StringAssert.DoesNotMatch
+- uid: Benday.Common.Testing.StringAssert.EndsWith(System.String,System.String,System.String)
+  name: EndsWith(string, string, string)
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_EndsWith_System_String_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssert.EndsWith(System.String,System.String,System.String)
+  name.vb: EndsWith(String, String, String)
+  fullName: Benday.Common.Testing.StringAssert.EndsWith(string, string, string)
+  fullName.vb: Benday.Common.Testing.StringAssert.EndsWith(String, String, String)
+  nameWithType: StringAssert.EndsWith(string, string, string)
+  nameWithType.vb: StringAssert.EndsWith(String, String, String)
+- uid: Benday.Common.Testing.StringAssert.EndsWith(System.String,System.String,System.StringComparison,System.String)
+  name: EndsWith(string, string, StringComparison, string)
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_EndsWith_System_String_System_String_System_StringComparison_System_String_
+  commentId: M:Benday.Common.Testing.StringAssert.EndsWith(System.String,System.String,System.StringComparison,System.String)
+  name.vb: EndsWith(String, String, StringComparison, String)
+  fullName: Benday.Common.Testing.StringAssert.EndsWith(string, string, System.StringComparison, string)
+  fullName.vb: Benday.Common.Testing.StringAssert.EndsWith(String, String, System.StringComparison, String)
+  nameWithType: StringAssert.EndsWith(string, string, StringComparison, string)
+  nameWithType.vb: StringAssert.EndsWith(String, String, StringComparison, String)
+- uid: Benday.Common.Testing.StringAssert.EndsWith*
+  name: EndsWith
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_EndsWith_
+  commentId: Overload:Benday.Common.Testing.StringAssert.EndsWith
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssert.EndsWith
+  nameWithType: StringAssert.EndsWith
+- uid: Benday.Common.Testing.StringAssert.HasLength(System.String,System.Int32,System.String)
+  name: HasLength(string, int, string)
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_HasLength_System_String_System_Int32_System_String_
+  commentId: M:Benday.Common.Testing.StringAssert.HasLength(System.String,System.Int32,System.String)
+  name.vb: HasLength(String, Integer, String)
+  fullName: Benday.Common.Testing.StringAssert.HasLength(string, int, string)
+  fullName.vb: Benday.Common.Testing.StringAssert.HasLength(String, Integer, String)
+  nameWithType: StringAssert.HasLength(string, int, string)
+  nameWithType.vb: StringAssert.HasLength(String, Integer, String)
+- uid: Benday.Common.Testing.StringAssert.HasLength*
+  name: HasLength
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_HasLength_
+  commentId: Overload:Benday.Common.Testing.StringAssert.HasLength
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssert.HasLength
+  nameWithType: StringAssert.HasLength
+- uid: Benday.Common.Testing.StringAssert.IsNotNullOrEmpty(System.String,System.String)
+  name: IsNotNullOrEmpty(string?, string)
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_IsNotNullOrEmpty_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssert.IsNotNullOrEmpty(System.String,System.String)
+  name.vb: IsNotNullOrEmpty(String, String)
+  fullName: Benday.Common.Testing.StringAssert.IsNotNullOrEmpty(string?, string)
+  fullName.vb: Benday.Common.Testing.StringAssert.IsNotNullOrEmpty(String, String)
+  nameWithType: StringAssert.IsNotNullOrEmpty(string?, string)
+  nameWithType.vb: StringAssert.IsNotNullOrEmpty(String, String)
+- uid: Benday.Common.Testing.StringAssert.IsNotNullOrEmpty*
+  name: IsNotNullOrEmpty
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_IsNotNullOrEmpty_
+  commentId: Overload:Benday.Common.Testing.StringAssert.IsNotNullOrEmpty
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssert.IsNotNullOrEmpty
+  nameWithType: StringAssert.IsNotNullOrEmpty
+- uid: Benday.Common.Testing.StringAssert.IsNotNullOrWhiteSpace(System.String,System.String)
+  name: IsNotNullOrWhiteSpace(string?, string)
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_IsNotNullOrWhiteSpace_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssert.IsNotNullOrWhiteSpace(System.String,System.String)
+  name.vb: IsNotNullOrWhiteSpace(String, String)
+  fullName: Benday.Common.Testing.StringAssert.IsNotNullOrWhiteSpace(string?, string)
+  fullName.vb: Benday.Common.Testing.StringAssert.IsNotNullOrWhiteSpace(String, String)
+  nameWithType: StringAssert.IsNotNullOrWhiteSpace(string?, string)
+  nameWithType.vb: StringAssert.IsNotNullOrWhiteSpace(String, String)
+- uid: Benday.Common.Testing.StringAssert.IsNotNullOrWhiteSpace*
+  name: IsNotNullOrWhiteSpace
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_IsNotNullOrWhiteSpace_
+  commentId: Overload:Benday.Common.Testing.StringAssert.IsNotNullOrWhiteSpace
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssert.IsNotNullOrWhiteSpace
+  nameWithType: StringAssert.IsNotNullOrWhiteSpace
+- uid: Benday.Common.Testing.StringAssert.IsNullOrEmpty(System.String,System.String)
+  name: IsNullOrEmpty(string?, string)
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_IsNullOrEmpty_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssert.IsNullOrEmpty(System.String,System.String)
+  name.vb: IsNullOrEmpty(String, String)
+  fullName: Benday.Common.Testing.StringAssert.IsNullOrEmpty(string?, string)
+  fullName.vb: Benday.Common.Testing.StringAssert.IsNullOrEmpty(String, String)
+  nameWithType: StringAssert.IsNullOrEmpty(string?, string)
+  nameWithType.vb: StringAssert.IsNullOrEmpty(String, String)
+- uid: Benday.Common.Testing.StringAssert.IsNullOrEmpty*
+  name: IsNullOrEmpty
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_IsNullOrEmpty_
+  commentId: Overload:Benday.Common.Testing.StringAssert.IsNullOrEmpty
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssert.IsNullOrEmpty
+  nameWithType: StringAssert.IsNullOrEmpty
+- uid: Benday.Common.Testing.StringAssert.IsNullOrWhiteSpace(System.String,System.String)
+  name: IsNullOrWhiteSpace(string?, string)
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_IsNullOrWhiteSpace_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssert.IsNullOrWhiteSpace(System.String,System.String)
+  name.vb: IsNullOrWhiteSpace(String, String)
+  fullName: Benday.Common.Testing.StringAssert.IsNullOrWhiteSpace(string?, string)
+  fullName.vb: Benday.Common.Testing.StringAssert.IsNullOrWhiteSpace(String, String)
+  nameWithType: StringAssert.IsNullOrWhiteSpace(string?, string)
+  nameWithType.vb: StringAssert.IsNullOrWhiteSpace(String, String)
+- uid: Benday.Common.Testing.StringAssert.IsNullOrWhiteSpace*
+  name: IsNullOrWhiteSpace
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_IsNullOrWhiteSpace_
+  commentId: Overload:Benday.Common.Testing.StringAssert.IsNullOrWhiteSpace
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssert.IsNullOrWhiteSpace
+  nameWithType: StringAssert.IsNullOrWhiteSpace
+- uid: Benday.Common.Testing.StringAssert.Matches(System.String,System.String,System.String)
+  name: Matches(string, string, string)
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_Matches_System_String_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssert.Matches(System.String,System.String,System.String)
+  name.vb: Matches(String, String, String)
+  fullName: Benday.Common.Testing.StringAssert.Matches(string, string, string)
+  fullName.vb: Benday.Common.Testing.StringAssert.Matches(String, String, String)
+  nameWithType: StringAssert.Matches(string, string, string)
+  nameWithType.vb: StringAssert.Matches(String, String, String)
+- uid: Benday.Common.Testing.StringAssert.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.String)
+  name: Matches(string, string, RegexOptions, string)
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_Matches_System_String_System_String_System_Text_RegularExpressions_RegexOptions_System_String_
+  commentId: M:Benday.Common.Testing.StringAssert.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.String)
+  name.vb: Matches(String, String, RegexOptions, String)
+  fullName: Benday.Common.Testing.StringAssert.Matches(string, string, System.Text.RegularExpressions.RegexOptions, string)
+  fullName.vb: Benday.Common.Testing.StringAssert.Matches(String, String, System.Text.RegularExpressions.RegexOptions, String)
+  nameWithType: StringAssert.Matches(string, string, RegexOptions, string)
+  nameWithType.vb: StringAssert.Matches(String, String, RegexOptions, String)
+- uid: Benday.Common.Testing.StringAssert.Matches*
+  name: Matches
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_Matches_
+  commentId: Overload:Benday.Common.Testing.StringAssert.Matches
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssert.Matches
+  nameWithType: StringAssert.Matches
+- uid: Benday.Common.Testing.StringAssert.StartsWith(System.String,System.String,System.String)
+  name: StartsWith(string, string, string)
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_StartsWith_System_String_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssert.StartsWith(System.String,System.String,System.String)
+  name.vb: StartsWith(String, String, String)
+  fullName: Benday.Common.Testing.StringAssert.StartsWith(string, string, string)
+  fullName.vb: Benday.Common.Testing.StringAssert.StartsWith(String, String, String)
+  nameWithType: StringAssert.StartsWith(string, string, string)
+  nameWithType.vb: StringAssert.StartsWith(String, String, String)
+- uid: Benday.Common.Testing.StringAssert.StartsWith(System.String,System.String,System.StringComparison,System.String)
+  name: StartsWith(string, string, StringComparison, string)
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_StartsWith_System_String_System_String_System_StringComparison_System_String_
+  commentId: M:Benday.Common.Testing.StringAssert.StartsWith(System.String,System.String,System.StringComparison,System.String)
+  name.vb: StartsWith(String, String, StringComparison, String)
+  fullName: Benday.Common.Testing.StringAssert.StartsWith(string, string, System.StringComparison, string)
+  fullName.vb: Benday.Common.Testing.StringAssert.StartsWith(String, String, System.StringComparison, String)
+  nameWithType: StringAssert.StartsWith(string, string, StringComparison, string)
+  nameWithType.vb: StringAssert.StartsWith(String, String, StringComparison, String)
+- uid: Benday.Common.Testing.StringAssert.StartsWith*
+  name: StartsWith
+  href: api/Benday.Common.Testing.StringAssert.html#Benday_Common_Testing_StringAssert_StartsWith_
+  commentId: Overload:Benday.Common.Testing.StringAssert.StartsWith
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssert.StartsWith
+  nameWithType: StringAssert.StartsWith
+- uid: Benday.Common.Testing.StringAssertExtensions
+  name: StringAssertExtensions
+  href: api/Benday.Common.Testing.StringAssertExtensions.html
+  commentId: T:Benday.Common.Testing.StringAssertExtensions
+  fullName: Benday.Common.Testing.StringAssertExtensions
+  nameWithType: StringAssertExtensions
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldBeNullOrEmpty(System.String,System.String)
+  name: ShouldBeNullOrEmpty(string?, string)
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldBeNullOrEmpty_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssertExtensions.ShouldBeNullOrEmpty(System.String,System.String)
+  name.vb: ShouldBeNullOrEmpty(String, String)
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldBeNullOrEmpty(string?, string)
+  fullName.vb: Benday.Common.Testing.StringAssertExtensions.ShouldBeNullOrEmpty(String, String)
+  nameWithType: StringAssertExtensions.ShouldBeNullOrEmpty(string?, string)
+  nameWithType.vb: StringAssertExtensions.ShouldBeNullOrEmpty(String, String)
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldBeNullOrEmpty*
+  name: ShouldBeNullOrEmpty
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldBeNullOrEmpty_
+  commentId: Overload:Benday.Common.Testing.StringAssertExtensions.ShouldBeNullOrEmpty
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldBeNullOrEmpty
+  nameWithType: StringAssertExtensions.ShouldBeNullOrEmpty
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldBeNullOrWhiteSpace(System.String,System.String)
+  name: ShouldBeNullOrWhiteSpace(string?, string)
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldBeNullOrWhiteSpace_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssertExtensions.ShouldBeNullOrWhiteSpace(System.String,System.String)
+  name.vb: ShouldBeNullOrWhiteSpace(String, String)
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldBeNullOrWhiteSpace(string?, string)
+  fullName.vb: Benday.Common.Testing.StringAssertExtensions.ShouldBeNullOrWhiteSpace(String, String)
+  nameWithType: StringAssertExtensions.ShouldBeNullOrWhiteSpace(string?, string)
+  nameWithType.vb: StringAssertExtensions.ShouldBeNullOrWhiteSpace(String, String)
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldBeNullOrWhiteSpace*
+  name: ShouldBeNullOrWhiteSpace
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldBeNullOrWhiteSpace_
+  commentId: Overload:Benday.Common.Testing.StringAssertExtensions.ShouldBeNullOrWhiteSpace
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldBeNullOrWhiteSpace
+  nameWithType: StringAssertExtensions.ShouldBeNullOrWhiteSpace
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldContain(System.String,System.String,System.String)
+  name: ShouldContain(string, string, string)
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldContain_System_String_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssertExtensions.ShouldContain(System.String,System.String,System.String)
+  name.vb: ShouldContain(String, String, String)
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldContain(string, string, string)
+  fullName.vb: Benday.Common.Testing.StringAssertExtensions.ShouldContain(String, String, String)
+  nameWithType: StringAssertExtensions.ShouldContain(string, string, string)
+  nameWithType.vb: StringAssertExtensions.ShouldContain(String, String, String)
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldContain(System.String,System.String,System.StringComparison,System.String)
+  name: ShouldContain(string, string, StringComparison, string)
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldContain_System_String_System_String_System_StringComparison_System_String_
+  commentId: M:Benday.Common.Testing.StringAssertExtensions.ShouldContain(System.String,System.String,System.StringComparison,System.String)
+  name.vb: ShouldContain(String, String, StringComparison, String)
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldContain(string, string, System.StringComparison, string)
+  fullName.vb: Benday.Common.Testing.StringAssertExtensions.ShouldContain(String, String, System.StringComparison, String)
+  nameWithType: StringAssertExtensions.ShouldContain(string, string, StringComparison, string)
+  nameWithType.vb: StringAssertExtensions.ShouldContain(String, String, StringComparison, String)
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldContain*
+  name: ShouldContain
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldContain_
+  commentId: Overload:Benday.Common.Testing.StringAssertExtensions.ShouldContain
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldContain
+  nameWithType: StringAssertExtensions.ShouldContain
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldEndWith(System.String,System.String,System.String)
+  name: ShouldEndWith(string, string, string)
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldEndWith_System_String_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssertExtensions.ShouldEndWith(System.String,System.String,System.String)
+  name.vb: ShouldEndWith(String, String, String)
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldEndWith(string, string, string)
+  fullName.vb: Benday.Common.Testing.StringAssertExtensions.ShouldEndWith(String, String, String)
+  nameWithType: StringAssertExtensions.ShouldEndWith(string, string, string)
+  nameWithType.vb: StringAssertExtensions.ShouldEndWith(String, String, String)
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldEndWith(System.String,System.String,System.StringComparison,System.String)
+  name: ShouldEndWith(string, string, StringComparison, string)
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldEndWith_System_String_System_String_System_StringComparison_System_String_
+  commentId: M:Benday.Common.Testing.StringAssertExtensions.ShouldEndWith(System.String,System.String,System.StringComparison,System.String)
+  name.vb: ShouldEndWith(String, String, StringComparison, String)
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldEndWith(string, string, System.StringComparison, string)
+  fullName.vb: Benday.Common.Testing.StringAssertExtensions.ShouldEndWith(String, String, System.StringComparison, String)
+  nameWithType: StringAssertExtensions.ShouldEndWith(string, string, StringComparison, string)
+  nameWithType.vb: StringAssertExtensions.ShouldEndWith(String, String, StringComparison, String)
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldEndWith*
+  name: ShouldEndWith
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldEndWith_
+  commentId: Overload:Benday.Common.Testing.StringAssertExtensions.ShouldEndWith
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldEndWith
+  nameWithType: StringAssertExtensions.ShouldEndWith
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldEqualIgnoreCase(System.String,System.String,System.String)
+  name: ShouldEqualIgnoreCase(string, string, string)
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldEqualIgnoreCase_System_String_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssertExtensions.ShouldEqualIgnoreCase(System.String,System.String,System.String)
+  name.vb: ShouldEqualIgnoreCase(String, String, String)
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldEqualIgnoreCase(string, string, string)
+  fullName.vb: Benday.Common.Testing.StringAssertExtensions.ShouldEqualIgnoreCase(String, String, String)
+  nameWithType: StringAssertExtensions.ShouldEqualIgnoreCase(string, string, string)
+  nameWithType.vb: StringAssertExtensions.ShouldEqualIgnoreCase(String, String, String)
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldEqualIgnoreCase*
+  name: ShouldEqualIgnoreCase
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldEqualIgnoreCase_
+  commentId: Overload:Benday.Common.Testing.StringAssertExtensions.ShouldEqualIgnoreCase
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldEqualIgnoreCase
+  nameWithType: StringAssertExtensions.ShouldEqualIgnoreCase
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldHaveLength(System.String,System.Int32,System.String)
+  name: ShouldHaveLength(string, int, string)
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldHaveLength_System_String_System_Int32_System_String_
+  commentId: M:Benday.Common.Testing.StringAssertExtensions.ShouldHaveLength(System.String,System.Int32,System.String)
+  name.vb: ShouldHaveLength(String, Integer, String)
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldHaveLength(string, int, string)
+  fullName.vb: Benday.Common.Testing.StringAssertExtensions.ShouldHaveLength(String, Integer, String)
+  nameWithType: StringAssertExtensions.ShouldHaveLength(string, int, string)
+  nameWithType.vb: StringAssertExtensions.ShouldHaveLength(String, Integer, String)
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldHaveLength*
+  name: ShouldHaveLength
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldHaveLength_
+  commentId: Overload:Benday.Common.Testing.StringAssertExtensions.ShouldHaveLength
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldHaveLength
+  nameWithType: StringAssertExtensions.ShouldHaveLength
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldMatch(System.String,System.String,System.String)
+  name: ShouldMatch(string, string, string)
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldMatch_System_String_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssertExtensions.ShouldMatch(System.String,System.String,System.String)
+  name.vb: ShouldMatch(String, String, String)
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldMatch(string, string, string)
+  fullName.vb: Benday.Common.Testing.StringAssertExtensions.ShouldMatch(String, String, String)
+  nameWithType: StringAssertExtensions.ShouldMatch(string, string, string)
+  nameWithType.vb: StringAssertExtensions.ShouldMatch(String, String, String)
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.String)
+  name: ShouldMatch(string, string, RegexOptions, string)
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldMatch_System_String_System_String_System_Text_RegularExpressions_RegexOptions_System_String_
+  commentId: M:Benday.Common.Testing.StringAssertExtensions.ShouldMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.String)
+  name.vb: ShouldMatch(String, String, RegexOptions, String)
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldMatch(string, string, System.Text.RegularExpressions.RegexOptions, string)
+  fullName.vb: Benday.Common.Testing.StringAssertExtensions.ShouldMatch(String, String, System.Text.RegularExpressions.RegexOptions, String)
+  nameWithType: StringAssertExtensions.ShouldMatch(string, string, RegexOptions, string)
+  nameWithType.vb: StringAssertExtensions.ShouldMatch(String, String, RegexOptions, String)
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldMatch*
+  name: ShouldMatch
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldMatch_
+  commentId: Overload:Benday.Common.Testing.StringAssertExtensions.ShouldMatch
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldMatch
+  nameWithType: StringAssertExtensions.ShouldMatch
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldNotBeNullOrEmpty(System.String,System.String)
+  name: ShouldNotBeNullOrEmpty(string?, string)
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldNotBeNullOrEmpty_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssertExtensions.ShouldNotBeNullOrEmpty(System.String,System.String)
+  name.vb: ShouldNotBeNullOrEmpty(String, String)
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldNotBeNullOrEmpty(string?, string)
+  fullName.vb: Benday.Common.Testing.StringAssertExtensions.ShouldNotBeNullOrEmpty(String, String)
+  nameWithType: StringAssertExtensions.ShouldNotBeNullOrEmpty(string?, string)
+  nameWithType.vb: StringAssertExtensions.ShouldNotBeNullOrEmpty(String, String)
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldNotBeNullOrEmpty*
+  name: ShouldNotBeNullOrEmpty
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldNotBeNullOrEmpty_
+  commentId: Overload:Benday.Common.Testing.StringAssertExtensions.ShouldNotBeNullOrEmpty
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldNotBeNullOrEmpty
+  nameWithType: StringAssertExtensions.ShouldNotBeNullOrEmpty
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldNotBeNullOrWhiteSpace(System.String,System.String)
+  name: ShouldNotBeNullOrWhiteSpace(string?, string)
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldNotBeNullOrWhiteSpace_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssertExtensions.ShouldNotBeNullOrWhiteSpace(System.String,System.String)
+  name.vb: ShouldNotBeNullOrWhiteSpace(String, String)
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldNotBeNullOrWhiteSpace(string?, string)
+  fullName.vb: Benday.Common.Testing.StringAssertExtensions.ShouldNotBeNullOrWhiteSpace(String, String)
+  nameWithType: StringAssertExtensions.ShouldNotBeNullOrWhiteSpace(string?, string)
+  nameWithType.vb: StringAssertExtensions.ShouldNotBeNullOrWhiteSpace(String, String)
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldNotBeNullOrWhiteSpace*
+  name: ShouldNotBeNullOrWhiteSpace
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldNotBeNullOrWhiteSpace_
+  commentId: Overload:Benday.Common.Testing.StringAssertExtensions.ShouldNotBeNullOrWhiteSpace
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldNotBeNullOrWhiteSpace
+  nameWithType: StringAssertExtensions.ShouldNotBeNullOrWhiteSpace
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldNotContain(System.String,System.String,System.String)
+  name: ShouldNotContain(string, string, string)
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldNotContain_System_String_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssertExtensions.ShouldNotContain(System.String,System.String,System.String)
+  name.vb: ShouldNotContain(String, String, String)
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldNotContain(string, string, string)
+  fullName.vb: Benday.Common.Testing.StringAssertExtensions.ShouldNotContain(String, String, String)
+  nameWithType: StringAssertExtensions.ShouldNotContain(string, string, string)
+  nameWithType.vb: StringAssertExtensions.ShouldNotContain(String, String, String)
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldNotContain(System.String,System.String,System.StringComparison,System.String)
+  name: ShouldNotContain(string, string, StringComparison, string)
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldNotContain_System_String_System_String_System_StringComparison_System_String_
+  commentId: M:Benday.Common.Testing.StringAssertExtensions.ShouldNotContain(System.String,System.String,System.StringComparison,System.String)
+  name.vb: ShouldNotContain(String, String, StringComparison, String)
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldNotContain(string, string, System.StringComparison, string)
+  fullName.vb: Benday.Common.Testing.StringAssertExtensions.ShouldNotContain(String, String, System.StringComparison, String)
+  nameWithType: StringAssertExtensions.ShouldNotContain(string, string, StringComparison, string)
+  nameWithType.vb: StringAssertExtensions.ShouldNotContain(String, String, StringComparison, String)
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldNotContain*
+  name: ShouldNotContain
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldNotContain_
+  commentId: Overload:Benday.Common.Testing.StringAssertExtensions.ShouldNotContain
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldNotContain
+  nameWithType: StringAssertExtensions.ShouldNotContain
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldNotEqualIgnoreCase(System.String,System.String,System.String)
+  name: ShouldNotEqualIgnoreCase(string, string, string)
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldNotEqualIgnoreCase_System_String_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssertExtensions.ShouldNotEqualIgnoreCase(System.String,System.String,System.String)
+  name.vb: ShouldNotEqualIgnoreCase(String, String, String)
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldNotEqualIgnoreCase(string, string, string)
+  fullName.vb: Benday.Common.Testing.StringAssertExtensions.ShouldNotEqualIgnoreCase(String, String, String)
+  nameWithType: StringAssertExtensions.ShouldNotEqualIgnoreCase(string, string, string)
+  nameWithType.vb: StringAssertExtensions.ShouldNotEqualIgnoreCase(String, String, String)
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldNotEqualIgnoreCase*
+  name: ShouldNotEqualIgnoreCase
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldNotEqualIgnoreCase_
+  commentId: Overload:Benday.Common.Testing.StringAssertExtensions.ShouldNotEqualIgnoreCase
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldNotEqualIgnoreCase
+  nameWithType: StringAssertExtensions.ShouldNotEqualIgnoreCase
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldNotMatch(System.String,System.String,System.String)
+  name: ShouldNotMatch(string, string, string)
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldNotMatch_System_String_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssertExtensions.ShouldNotMatch(System.String,System.String,System.String)
+  name.vb: ShouldNotMatch(String, String, String)
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldNotMatch(string, string, string)
+  fullName.vb: Benday.Common.Testing.StringAssertExtensions.ShouldNotMatch(String, String, String)
+  nameWithType: StringAssertExtensions.ShouldNotMatch(string, string, string)
+  nameWithType.vb: StringAssertExtensions.ShouldNotMatch(String, String, String)
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldNotMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.String)
+  name: ShouldNotMatch(string, string, RegexOptions, string)
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldNotMatch_System_String_System_String_System_Text_RegularExpressions_RegexOptions_System_String_
+  commentId: M:Benday.Common.Testing.StringAssertExtensions.ShouldNotMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.String)
+  name.vb: ShouldNotMatch(String, String, RegexOptions, String)
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldNotMatch(string, string, System.Text.RegularExpressions.RegexOptions, string)
+  fullName.vb: Benday.Common.Testing.StringAssertExtensions.ShouldNotMatch(String, String, System.Text.RegularExpressions.RegexOptions, String)
+  nameWithType: StringAssertExtensions.ShouldNotMatch(string, string, RegexOptions, string)
+  nameWithType.vb: StringAssertExtensions.ShouldNotMatch(String, String, RegexOptions, String)
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldNotMatch*
+  name: ShouldNotMatch
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldNotMatch_
+  commentId: Overload:Benday.Common.Testing.StringAssertExtensions.ShouldNotMatch
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldNotMatch
+  nameWithType: StringAssertExtensions.ShouldNotMatch
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldStartWith(System.String,System.String,System.String)
+  name: ShouldStartWith(string, string, string)
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldStartWith_System_String_System_String_System_String_
+  commentId: M:Benday.Common.Testing.StringAssertExtensions.ShouldStartWith(System.String,System.String,System.String)
+  name.vb: ShouldStartWith(String, String, String)
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldStartWith(string, string, string)
+  fullName.vb: Benday.Common.Testing.StringAssertExtensions.ShouldStartWith(String, String, String)
+  nameWithType: StringAssertExtensions.ShouldStartWith(string, string, string)
+  nameWithType.vb: StringAssertExtensions.ShouldStartWith(String, String, String)
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldStartWith(System.String,System.String,System.StringComparison,System.String)
+  name: ShouldStartWith(string, string, StringComparison, string)
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldStartWith_System_String_System_String_System_StringComparison_System_String_
+  commentId: M:Benday.Common.Testing.StringAssertExtensions.ShouldStartWith(System.String,System.String,System.StringComparison,System.String)
+  name.vb: ShouldStartWith(String, String, StringComparison, String)
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldStartWith(string, string, System.StringComparison, string)
+  fullName.vb: Benday.Common.Testing.StringAssertExtensions.ShouldStartWith(String, String, System.StringComparison, String)
+  nameWithType: StringAssertExtensions.ShouldStartWith(string, string, StringComparison, string)
+  nameWithType.vb: StringAssertExtensions.ShouldStartWith(String, String, StringComparison, String)
+- uid: Benday.Common.Testing.StringAssertExtensions.ShouldStartWith*
+  name: ShouldStartWith
+  href: api/Benday.Common.Testing.StringAssertExtensions.html#Benday_Common_Testing_StringAssertExtensions_ShouldStartWith_
+  commentId: Overload:Benday.Common.Testing.StringAssertExtensions.ShouldStartWith
+  isSpec: "True"
+  fullName: Benday.Common.Testing.StringAssertExtensions.ShouldStartWith
+  nameWithType: StringAssertExtensions.ShouldStartWith
 - uid: Benday.Common.Testing.StringAssertionExtensions
   name: StringAssertionExtensions
   href: api/Benday.Common.Testing.StringAssertionExtensions.html
