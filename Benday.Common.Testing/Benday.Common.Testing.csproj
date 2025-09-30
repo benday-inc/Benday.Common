@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TheVersion>1.5.0</TheVersion>
+    <TheVersion>1.5.1</TheVersion>
     <AssemblyName>Benday.Common.Testing</AssemblyName>
     <AssemblyVersion>$(TheVersion).0</AssemblyVersion>
     <Version>$(TheVersion)</Version>

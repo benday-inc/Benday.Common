@@ -81,7 +81,7 @@ Testing utilities include:
 The library includes a comprehensive suite of assertion classes that address XUnit's lack of failure messages:
 
 **Static Assertion Classes:**
-- `Assert` - Core assertions (equality, null checks, type checks, exceptions)
+- `AssertThat` - Core assertions (equality, null checks, type checks, exceptions)
 - `CollectionAssert` - Collection-specific assertions (empty, count, contains, uniqueness)
 - `StringAssert` - String-specific assertions (starts/ends with, contains, regex, length)
 - `NumericAssert` - Numeric assertions (comparisons, ranges, approximations, NaN/infinity checks)
@@ -94,18 +94,18 @@ The library includes a comprehensive suite of assertion classes that address XUn
 
 **Usage Notes:**
 - All assertion methods require a descriptive failure message parameter
-- The custom `Assert` class may conflict with XUnit's `Assert` - use fully qualified names if needed:
+- Use `AssertThat` for static assertions with descriptive messages:
   ```csharp
-  // Use Benday.Common.Testing.Assert for descriptive messages
-  Benday.Common.Testing.Assert.AreEqual(expected, actual, "Values should match after transformation");
-  
+  // Use AssertThat for descriptive messages
+  AssertThat.AreEqual(expected, actual, "Values should match after transformation");
+
   // Or use XUnit's Assert for standard assertions
   Xunit.Assert.Equal(expected, actual);
-  
-  // Or use fluent syntax to avoid conflicts
+
+  // Or use fluent syntax (recommended)
   actual.ShouldEqual(expected, "Values should match after transformation");
   ```
-- Fluent extensions provide the most readable syntax and avoid naming conflicts
+- Fluent extensions provide the most readable syntax
 - All assertions throw `AssertionException` with formatted error messages showing expected vs actual values
 
 ## Testing Framework

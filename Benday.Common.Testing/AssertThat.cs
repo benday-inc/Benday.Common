@@ -6,7 +6,7 @@ namespace Benday.Common.Testing;
 /// <summary>
 /// Provides static methods for making assertions in tests with descriptive failure messages.
 /// </summary>
-public static class Assert
+public static class AssertThat
 {
     /// <summary>
     /// Verifies that the specified condition is true.

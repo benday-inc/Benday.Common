@@ -18,7 +18,7 @@ public static class ObjectAssertExtensions
     /// <exception cref="AssertionException">Thrown when the values are not equal.</exception>
     public static T ShouldEqual<T>(this T actual, T expected, string message)
     {
-        Assert.AreEqual(expected, actual, message);
+        AssertThat.AreEqual(expected, actual, message);
         return actual;
     }
 
@@ -33,7 +33,7 @@ public static class ObjectAssertExtensions
     /// <exception cref="AssertionException">Thrown when the values are equal.</exception>
     public static T ShouldNotEqual<T>(this T actual, T notExpected, string message)
     {
-        Assert.AreNotEqual(notExpected, actual, message);
+        AssertThat.AreNotEqual(notExpected, actual, message);
         return actual;
     }
 
@@ -47,7 +47,7 @@ public static class ObjectAssertExtensions
     /// <exception cref="AssertionException">Thrown when the object is not null.</exception>
     public static T? ShouldBeNull<T>([NotNull] this T? actual, string message) where T : class
     {
-        Assert.IsNull(actual, message);
+        AssertThat.IsNull(actual, message);
         return actual;
     }
 
@@ -61,7 +61,7 @@ public static class ObjectAssertExtensions
     /// <exception cref="AssertionException">Thrown when the object is null.</exception>
     public static T ShouldNotBeNull<T>([NotNull] this T? actual, string message) where T : class
     {
-        Assert.IsNotNull(actual, message);
+        AssertThat.IsNotNull(actual, message);
         return actual;
     }
 
@@ -75,7 +75,7 @@ public static class ObjectAssertExtensions
     /// <exception cref="AssertionException">Thrown when the object is not of the expected type.</exception>
     public static T ShouldBeOfType<T>(this object? actual, string message)
     {
-        Assert.IsOfType<T>(actual, message);
+        AssertThat.IsOfType<T>(actual, message);
         return (T)actual!;
     }
 
@@ -89,7 +89,7 @@ public static class ObjectAssertExtensions
     /// <exception cref="AssertionException">Thrown when the object is of the specified type.</exception>
     public static object? ShouldNotBeOfType<T>(this object? actual, string message)
     {
-        Assert.IsNotOfType<T>(actual, message);
+        AssertThat.IsNotOfType<T>(actual, message);
         return actual;
     }
 
@@ -104,7 +104,7 @@ public static class ObjectAssertExtensions
     /// <exception cref="AssertionException">Thrown when the references are not the same.</exception>
     public static T ShouldBeSameAs<T>(this T actual, T expected, string message) where T : class
     {
-        Assert.AreSame(expected, actual, message);
+        AssertThat.AreSame(expected, actual, message);
         return actual;
     }
 
@@ -119,7 +119,7 @@ public static class ObjectAssertExtensions
     /// <exception cref="AssertionException">Thrown when the references are the same.</exception>
     public static T ShouldNotBeSameAs<T>(this T actual, T notExpected, string message) where T : class
     {
-        Assert.AreNotSame(notExpected, actual, message);
+        AssertThat.AreNotSame(notExpected, actual, message);
         return actual;
     }
 
@@ -133,7 +133,7 @@ public static class ObjectAssertExtensions
     /// <exception cref="AssertionException">Thrown when no exception or wrong exception type is thrown.</exception>
     public static T ShouldThrow<T>(this Action action, string message) where T : Exception
     {
-        return Assert.Throws<T>(action, message);
+        return AssertThat.Throws<T>(action, message);
     }
 
     /// <summary>
@@ -145,7 +145,7 @@ public static class ObjectAssertExtensions
     /// <exception cref="AssertionException">Thrown when an exception is thrown.</exception>
     public static Action ShouldNotThrow(this Action action, string message)
     {
-        Assert.DoesNotThrow(action, message);
+        AssertThat.DoesNotThrow(action, message);
         return action;
     }
 
@@ -158,7 +158,7 @@ public static class ObjectAssertExtensions
     /// <exception cref="AssertionException">Thrown when the value is false.</exception>
     public static bool ShouldBeTrue([DoesNotReturnIf(false)] this bool actual, string message)
     {
-        Assert.IsTrue(actual, message);
+        AssertThat.IsTrue(actual, message);
         return actual;
     }
 
@@ -171,7 +171,7 @@ public static class ObjectAssertExtensions
     /// <exception cref="AssertionException">Thrown when the value is true.</exception>
     public static bool ShouldBeFalse([DoesNotReturnIf(true)] this bool actual, string message)
     {
-        Assert.IsFalse(actual, message);
+        AssertThat.IsFalse(actual, message);
         return actual;
     }
 }

@@ -163,7 +163,7 @@ public void TestWithDescriptiveAssertions()
 * **MockUtility** - Automatic mock creation for dependencies in constructor injection
 * **MockCreationResult** - Organized access to instances and their mocks
 * **Comprehensive Assertion Library** - Enhanced assertions that solve XUnit's lack of failure messages:
-  * **Static Assertions** - `Assert`, `CollectionAssert`, `StringAssert`, `NumericAssert`
+  * **Static Assertions** - `AssertThat`, `CollectionAssert`, `StringAssert`, `NumericAssert`
   * **Fluent Extensions** - Chain-able assertions like `value.ShouldEqual(expected, "message")`
   * **Rich Error Messages** - Detailed failure information with expected vs actual formatting
   * **Type Safety** - Full nullable reference type support
@@ -206,18 +206,16 @@ public PageableResults<User> GetUsers(int pageNumber = 1, int pageSize = 25)
 
 ### Assertion Library Troubleshooting
 
-**Problem: Assert class conflicts with XUnit.Assert**
+**Problem: Need descriptive failure messages in assertions**
 ```csharp
-// Solution 1: Use fully qualified names
-Benday.Common.Testing.Assert.AreEqual(expected, actual, "Values should match");
-Xunit.Assert.Equal(expected, actual); // XUnit's standard assertion
+// Solution 1: Use AssertThat for static assertions
+AssertThat.AreEqual(expected, actual, "Values should match");
 
 // Solution 2: Use fluent extensions (recommended)
 actual.ShouldEqual(expected, "Values should match");
 
-// Solution 3: Alias the namespaces
-using BendayAssert = Benday.Common.Testing.Assert;
-using XunitAssert = Xunit.Assert;
+// Solution 3: Continue using XUnit's Assert for simple cases
+Xunit.Assert.Equal(expected, actual); // XUnit's standard assertion
 ```
 
 **Problem: Need to test async methods**
