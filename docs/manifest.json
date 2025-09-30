@@ -340,6 +340,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.AssertThat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.AssertThat.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.AssertThat",
+      "Summary": "<p sourcefile=\"api/Benday.Common.Testing.AssertThat.yml\" sourcestartlinenumber=\"1\">Provides static methods for making assertions in tests with descriptive failure messages.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Benday.Common.Testing.AssertionException.yml",
       "output": {
         ".html": {

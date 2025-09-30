@@ -1785,6 +1785,220 @@ references:
   fullName.vb: Benday.Common.Testing.Assert.Throws(Of T)(System.Action, String)
   nameWithType: Assert.Throws<T>(Action, string)
   nameWithType.vb: Assert.Throws(Of T)(Action, String)
+- uid: Benday.Common.Testing.AssertThat
+  name: AssertThat
+  href: api/Benday.Common.Testing.AssertThat.html
+  commentId: T:Benday.Common.Testing.AssertThat
+  fullName: Benday.Common.Testing.AssertThat
+  nameWithType: AssertThat
+- uid: Benday.Common.Testing.AssertThat.AreEqual*
+  name: AreEqual
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_AreEqual_
+  commentId: Overload:Benday.Common.Testing.AssertThat.AreEqual
+  isSpec: "True"
+  fullName: Benday.Common.Testing.AssertThat.AreEqual
+  nameWithType: AssertThat.AreEqual
+- uid: Benday.Common.Testing.AssertThat.AreEqual``1(``0,``0,System.String)
+  name: AreEqual<T>(T, T, string)
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_AreEqual__1___0___0_System_String_
+  commentId: M:Benday.Common.Testing.AssertThat.AreEqual``1(``0,``0,System.String)
+  name.vb: AreEqual(Of T)(T, T, String)
+  fullName: Benday.Common.Testing.AssertThat.AreEqual<T>(T, T, string)
+  fullName.vb: Benday.Common.Testing.AssertThat.AreEqual(Of T)(T, T, String)
+  nameWithType: AssertThat.AreEqual<T>(T, T, string)
+  nameWithType.vb: AssertThat.AreEqual(Of T)(T, T, String)
+- uid: Benday.Common.Testing.AssertThat.AreNotEqual*
+  name: AreNotEqual
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_AreNotEqual_
+  commentId: Overload:Benday.Common.Testing.AssertThat.AreNotEqual
+  isSpec: "True"
+  fullName: Benday.Common.Testing.AssertThat.AreNotEqual
+  nameWithType: AssertThat.AreNotEqual
+- uid: Benday.Common.Testing.AssertThat.AreNotEqual``1(``0,``0,System.String)
+  name: AreNotEqual<T>(T, T, string)
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_AreNotEqual__1___0___0_System_String_
+  commentId: M:Benday.Common.Testing.AssertThat.AreNotEqual``1(``0,``0,System.String)
+  name.vb: AreNotEqual(Of T)(T, T, String)
+  fullName: Benday.Common.Testing.AssertThat.AreNotEqual<T>(T, T, string)
+  fullName.vb: Benday.Common.Testing.AssertThat.AreNotEqual(Of T)(T, T, String)
+  nameWithType: AssertThat.AreNotEqual<T>(T, T, string)
+  nameWithType.vb: AssertThat.AreNotEqual(Of T)(T, T, String)
+- uid: Benday.Common.Testing.AssertThat.AreNotSame(System.Object,System.Object,System.String)
+  name: AreNotSame(object?, object?, string)
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_AreNotSame_System_Object_System_Object_System_String_
+  commentId: M:Benday.Common.Testing.AssertThat.AreNotSame(System.Object,System.Object,System.String)
+  name.vb: AreNotSame(Object, Object, String)
+  fullName: Benday.Common.Testing.AssertThat.AreNotSame(object?, object?, string)
+  fullName.vb: Benday.Common.Testing.AssertThat.AreNotSame(Object, Object, String)
+  nameWithType: AssertThat.AreNotSame(object?, object?, string)
+  nameWithType.vb: AssertThat.AreNotSame(Object, Object, String)
+- uid: Benday.Common.Testing.AssertThat.AreNotSame*
+  name: AreNotSame
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_AreNotSame_
+  commentId: Overload:Benday.Common.Testing.AssertThat.AreNotSame
+  isSpec: "True"
+  fullName: Benday.Common.Testing.AssertThat.AreNotSame
+  nameWithType: AssertThat.AreNotSame
+- uid: Benday.Common.Testing.AssertThat.AreSame(System.Object,System.Object,System.String)
+  name: AreSame(object?, object?, string)
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_AreSame_System_Object_System_Object_System_String_
+  commentId: M:Benday.Common.Testing.AssertThat.AreSame(System.Object,System.Object,System.String)
+  name.vb: AreSame(Object, Object, String)
+  fullName: Benday.Common.Testing.AssertThat.AreSame(object?, object?, string)
+  fullName.vb: Benday.Common.Testing.AssertThat.AreSame(Object, Object, String)
+  nameWithType: AssertThat.AreSame(object?, object?, string)
+  nameWithType.vb: AssertThat.AreSame(Object, Object, String)
+- uid: Benday.Common.Testing.AssertThat.AreSame*
+  name: AreSame
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_AreSame_
+  commentId: Overload:Benday.Common.Testing.AssertThat.AreSame
+  isSpec: "True"
+  fullName: Benday.Common.Testing.AssertThat.AreSame
+  nameWithType: AssertThat.AreSame
+- uid: Benday.Common.Testing.AssertThat.DoesNotThrow(System.Action,System.String)
+  name: DoesNotThrow(Action, string)
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_DoesNotThrow_System_Action_System_String_
+  commentId: M:Benday.Common.Testing.AssertThat.DoesNotThrow(System.Action,System.String)
+  name.vb: DoesNotThrow(Action, String)
+  fullName: Benday.Common.Testing.AssertThat.DoesNotThrow(System.Action, string)
+  fullName.vb: Benday.Common.Testing.AssertThat.DoesNotThrow(System.Action, String)
+  nameWithType: AssertThat.DoesNotThrow(Action, string)
+  nameWithType.vb: AssertThat.DoesNotThrow(Action, String)
+- uid: Benday.Common.Testing.AssertThat.DoesNotThrow*
+  name: DoesNotThrow
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_DoesNotThrow_
+  commentId: Overload:Benday.Common.Testing.AssertThat.DoesNotThrow
+  isSpec: "True"
+  fullName: Benday.Common.Testing.AssertThat.DoesNotThrow
+  nameWithType: AssertThat.DoesNotThrow
+- uid: Benday.Common.Testing.AssertThat.Fail(System.String)
+  name: Fail(string)
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_Fail_System_String_
+  commentId: M:Benday.Common.Testing.AssertThat.Fail(System.String)
+  name.vb: Fail(String)
+  fullName: Benday.Common.Testing.AssertThat.Fail(string)
+  fullName.vb: Benday.Common.Testing.AssertThat.Fail(String)
+  nameWithType: AssertThat.Fail(string)
+  nameWithType.vb: AssertThat.Fail(String)
+- uid: Benday.Common.Testing.AssertThat.Fail*
+  name: Fail
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_Fail_
+  commentId: Overload:Benday.Common.Testing.AssertThat.Fail
+  isSpec: "True"
+  fullName: Benday.Common.Testing.AssertThat.Fail
+  nameWithType: AssertThat.Fail
+- uid: Benday.Common.Testing.AssertThat.IsFalse(System.Boolean,System.String)
+  name: IsFalse(bool, string)
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_IsFalse_System_Boolean_System_String_
+  commentId: M:Benday.Common.Testing.AssertThat.IsFalse(System.Boolean,System.String)
+  name.vb: IsFalse(Boolean, String)
+  fullName: Benday.Common.Testing.AssertThat.IsFalse(bool, string)
+  fullName.vb: Benday.Common.Testing.AssertThat.IsFalse(Boolean, String)
+  nameWithType: AssertThat.IsFalse(bool, string)
+  nameWithType.vb: AssertThat.IsFalse(Boolean, String)
+- uid: Benday.Common.Testing.AssertThat.IsFalse*
+  name: IsFalse
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_IsFalse_
+  commentId: Overload:Benday.Common.Testing.AssertThat.IsFalse
+  isSpec: "True"
+  fullName: Benday.Common.Testing.AssertThat.IsFalse
+  nameWithType: AssertThat.IsFalse
+- uid: Benday.Common.Testing.AssertThat.IsNotNull*
+  name: IsNotNull
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_IsNotNull_
+  commentId: Overload:Benday.Common.Testing.AssertThat.IsNotNull
+  isSpec: "True"
+  fullName: Benday.Common.Testing.AssertThat.IsNotNull
+  nameWithType: AssertThat.IsNotNull
+- uid: Benday.Common.Testing.AssertThat.IsNotNull``1(``0,System.String)
+  name: IsNotNull<T>(T?, string)
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_IsNotNull__1___0_System_String_
+  commentId: M:Benday.Common.Testing.AssertThat.IsNotNull``1(``0,System.String)
+  name.vb: IsNotNull(Of T)(T, String)
+  fullName: Benday.Common.Testing.AssertThat.IsNotNull<T>(T?, string)
+  fullName.vb: Benday.Common.Testing.AssertThat.IsNotNull(Of T)(T, String)
+  nameWithType: AssertThat.IsNotNull<T>(T?, string)
+  nameWithType.vb: AssertThat.IsNotNull(Of T)(T, String)
+- uid: Benday.Common.Testing.AssertThat.IsNotOfType*
+  name: IsNotOfType
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_IsNotOfType_
+  commentId: Overload:Benday.Common.Testing.AssertThat.IsNotOfType
+  isSpec: "True"
+  fullName: Benday.Common.Testing.AssertThat.IsNotOfType
+  nameWithType: AssertThat.IsNotOfType
+- uid: Benday.Common.Testing.AssertThat.IsNotOfType``1(System.Object,System.String)
+  name: IsNotOfType<T>(object?, string)
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_IsNotOfType__1_System_Object_System_String_
+  commentId: M:Benday.Common.Testing.AssertThat.IsNotOfType``1(System.Object,System.String)
+  name.vb: IsNotOfType(Of T)(Object, String)
+  fullName: Benday.Common.Testing.AssertThat.IsNotOfType<T>(object?, string)
+  fullName.vb: Benday.Common.Testing.AssertThat.IsNotOfType(Of T)(Object, String)
+  nameWithType: AssertThat.IsNotOfType<T>(object?, string)
+  nameWithType.vb: AssertThat.IsNotOfType(Of T)(Object, String)
+- uid: Benday.Common.Testing.AssertThat.IsNull*
+  name: IsNull
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_IsNull_
+  commentId: Overload:Benday.Common.Testing.AssertThat.IsNull
+  isSpec: "True"
+  fullName: Benday.Common.Testing.AssertThat.IsNull
+  nameWithType: AssertThat.IsNull
+- uid: Benday.Common.Testing.AssertThat.IsNull``1(``0,System.String)
+  name: IsNull<T>(T?, string)
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_IsNull__1___0_System_String_
+  commentId: M:Benday.Common.Testing.AssertThat.IsNull``1(``0,System.String)
+  name.vb: IsNull(Of T)(T, String)
+  fullName: Benday.Common.Testing.AssertThat.IsNull<T>(T?, string)
+  fullName.vb: Benday.Common.Testing.AssertThat.IsNull(Of T)(T, String)
+  nameWithType: AssertThat.IsNull<T>(T?, string)
+  nameWithType.vb: AssertThat.IsNull(Of T)(T, String)
+- uid: Benday.Common.Testing.AssertThat.IsOfType*
+  name: IsOfType
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_IsOfType_
+  commentId: Overload:Benday.Common.Testing.AssertThat.IsOfType
+  isSpec: "True"
+  fullName: Benday.Common.Testing.AssertThat.IsOfType
+  nameWithType: AssertThat.IsOfType
+- uid: Benday.Common.Testing.AssertThat.IsOfType``1(System.Object,System.String)
+  name: IsOfType<T>(object?, string)
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_IsOfType__1_System_Object_System_String_
+  commentId: M:Benday.Common.Testing.AssertThat.IsOfType``1(System.Object,System.String)
+  name.vb: IsOfType(Of T)(Object, String)
+  fullName: Benday.Common.Testing.AssertThat.IsOfType<T>(object?, string)
+  fullName.vb: Benday.Common.Testing.AssertThat.IsOfType(Of T)(Object, String)
+  nameWithType: AssertThat.IsOfType<T>(object?, string)
+  nameWithType.vb: AssertThat.IsOfType(Of T)(Object, String)
+- uid: Benday.Common.Testing.AssertThat.IsTrue(System.Boolean,System.String)
+  name: IsTrue(bool, string)
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_IsTrue_System_Boolean_System_String_
+  commentId: M:Benday.Common.Testing.AssertThat.IsTrue(System.Boolean,System.String)
+  name.vb: IsTrue(Boolean, String)
+  fullName: Benday.Common.Testing.AssertThat.IsTrue(bool, string)
+  fullName.vb: Benday.Common.Testing.AssertThat.IsTrue(Boolean, String)
+  nameWithType: AssertThat.IsTrue(bool, string)
+  nameWithType.vb: AssertThat.IsTrue(Boolean, String)
+- uid: Benday.Common.Testing.AssertThat.IsTrue*
+  name: IsTrue
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_IsTrue_
+  commentId: Overload:Benday.Common.Testing.AssertThat.IsTrue
+  isSpec: "True"
+  fullName: Benday.Common.Testing.AssertThat.IsTrue
+  nameWithType: AssertThat.IsTrue
+- uid: Benday.Common.Testing.AssertThat.Throws*
+  name: Throws
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_Throws_
+  commentId: Overload:Benday.Common.Testing.AssertThat.Throws
+  isSpec: "True"
+  fullName: Benday.Common.Testing.AssertThat.Throws
+  nameWithType: AssertThat.Throws
+- uid: Benday.Common.Testing.AssertThat.Throws``1(System.Action,System.String)
+  name: Throws<T>(Action, string)
+  href: api/Benday.Common.Testing.AssertThat.html#Benday_Common_Testing_AssertThat_Throws__1_System_Action_System_String_
+  commentId: M:Benday.Common.Testing.AssertThat.Throws``1(System.Action,System.String)
+  name.vb: Throws(Of T)(Action, String)
+  fullName: Benday.Common.Testing.AssertThat.Throws<T>(System.Action, string)
+  fullName.vb: Benday.Common.Testing.AssertThat.Throws(Of T)(System.Action, String)
+  nameWithType: AssertThat.Throws<T>(Action, string)
+  nameWithType.vb: AssertThat.Throws(Of T)(Action, String)
 - uid: Benday.Common.Testing.AssertionException
   name: AssertionException
   href: api/Benday.Common.Testing.AssertionException.html
