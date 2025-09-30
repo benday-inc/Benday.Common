@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TheVersion>1.4.0</TheVersion>
+    <TheVersion>1.5.0</TheVersion>
     <AssemblyName>Benday.Common.Testing</AssemblyName>
     <AssemblyVersion>$(TheVersion).0</AssemblyVersion>
     <Version>$(TheVersion)</Version>
@@ -17,6 +17,7 @@
     <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageReleaseNotes>
+v1.5 - Added assert utility methods;
 v1.4 - Changed the way MockUtility and MockCreationResult work to allow for optional mock configuration before instance creation;
 v1.3 - Unpublishing fluent assertions for xUnit from this package...for now;
 v1.2 - Added fluent assertions for xUnit to the package;
