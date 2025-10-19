@@ -22,18 +22,18 @@ internal static class AssertionMessageFormatter
     /// <returns>Formatted error message.</returns>
     public static string FormatComparisonMessage<T>(T expected, T actual, string userMessage, string operation)
     {
-        var sb = new StringBuilder();
-        
+        string returnValue;
+
         if (!string.IsNullOrEmpty(userMessage))
         {
-            sb.AppendLine(userMessage);
+            returnValue = $"{userMessage} -- Assert.{operation} failed. Expected: {FormatValue(expected)}. Actual: {FormatValue(actual)}.";
+        }
+        else
+        {
+            returnValue = $"Assert.{operation} failed. Expected: {FormatValue(expected)}. Actual: {FormatValue(actual)}.";
         }
         
-        sb.AppendLine($"Assert.{operation} failed.");
-        sb.AppendLine($"Expected: {FormatValue(expected)}");
-        sb.AppendLine($"Actual:   {FormatValue(actual)}");
-        
-        return sb.ToString().TrimEnd();
+        return returnValue;
     }
 
     /// <summary>
@@ -46,19 +46,19 @@ internal static class AssertionMessageFormatter
     public static string FormatSimpleMessage(string userMessage, string operation, string? additionalInfo = null)
     {
         var sb = new StringBuilder();
-        
+
         if (!string.IsNullOrEmpty(userMessage))
         {
             sb.AppendLine(userMessage);
         }
-        
+
         sb.AppendLine($"Assert.{operation} failed.");
-        
+
         if (!string.IsNullOrEmpty(additionalInfo))
         {
             sb.AppendLine(additionalInfo);
         }
-        
+
         return sb.ToString().TrimEnd();
     }
 
@@ -73,24 +73,24 @@ internal static class AssertionMessageFormatter
     public static string FormatCollectionMessage(IEnumerable? collection, string userMessage, string operation, string? additionalInfo = null)
     {
         var sb = new StringBuilder();
-        
+
         if (!string.IsNullOrEmpty(userMessage))
         {
             sb.AppendLine(userMessage);
         }
-        
+
         sb.AppendLine($"CollectionAssert.{operation} failed.");
-        
+
         if (collection != null)
         {
             sb.AppendLine($"Collection: {FormatValue(collection)}");
         }
-        
+
         if (!string.IsNullOrEmpty(additionalInfo))
         {
             sb.AppendLine(additionalInfo);
         }
-        
+
         return sb.ToString().TrimEnd();
     }
 
@@ -112,12 +112,12 @@ internal static class AssertionMessageFormatter
             {
                 return str.Length == 0 ? "<empty string>" : "<null>";
             }
-            
-            var displayStr = str.Length > MaxDisplayLength 
-                ? str.Substring(0, MaxDisplayLength) + "..." 
+
+            var displayStr = str.Length > MaxDisplayLength
+                ? str.Substring(0, MaxDisplayLength) + "..."
                 : str;
-            
-            return $"\"{displayStr}\"";
+
+            return $"\'{displayStr}\'";
         }
 
         if (value is IEnumerable enumerable && !(value is string))
@@ -126,12 +126,12 @@ internal static class AssertionMessageFormatter
         }
 
         var valueStr = value.ToString() ?? "<null>";
-        
+
         if (valueStr.Length > MaxDisplayLength)
         {
             valueStr = valueStr.Substring(0, MaxDisplayLength) + "...";
         }
-        
+
         return valueStr;
     }
 
@@ -144,7 +144,7 @@ internal static class AssertionMessageFormatter
     {
         var items = new List<string>();
         var count = 0;
-        
+
         foreach (var item in collection)
         {
             if (count >= MaxCollectionItems)
@@ -152,11 +152,11 @@ internal static class AssertionMessageFormatter
                 items.Add("...");
                 break;
             }
-            
+
             items.Add(FormatValue(item));
             count++;
         }
-        
+
         return $"[{string.Join(", ", items)}] (Count: {count}{(count >= MaxCollectionItems ? "+" : "")})";
     }
 
@@ -173,7 +173,7 @@ internal static class AssertionMessageFormatter
             var genericArgs = string.Join(", ", type.GetGenericArguments().Select(GetTypeName));
             return $"{genericTypeName}<{genericArgs}>";
         }
-        
+
         return type.Name;
     }
 }

@@ -53,6 +53,22 @@ public static class AssertThat
     }
 
     /// <summary>
+    /// Verifies that two values are equal.
+    /// </summary>
+    /// <typeparam name="T">The type of values to compare.</typeparam>
+    /// <param name="expected">The expected value.</param>
+    /// <param name="actual">The actual value.</param>
+    /// <exception cref="AssertionException">Thrown when the values are not equal.</exception>
+    public static void AreEqual<T>(T expected, T actual)
+    {
+        if (!EqualityComparer<T>.Default.Equals(expected, actual))
+        {
+            throw new AssertionException(AssertionMessageFormatter.FormatComparisonMessage(
+                expected, actual, string.Empty, "AreEqual"));
+        }
+    }
+
+    /// <summary>
     /// Verifies that two values are not equal.
     /// </summary>
     /// <typeparam name="T">The type of values to compare.</typeparam>
