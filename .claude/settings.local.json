@@ -4,7 +4,9 @@
       "Bash(dotnet --version)",
       "Bash(dotnet build:*)",
       "Bash(dotnet test)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(dotnet run TestOverloads.cs -r Benday.Common.Testing/bin/Debug/net9.0/Benday.Common.Testing.dll)",
+      "Bash(dotnet /Users/benday/code/benday-inc/Benday.Common/TestOverloads.cs -r Benday.Common.Testing/bin/Debug/net9.0/Benday.Common.Testing.dll -r Benday.Common/bin/Debug/net9.0/Benday.Common.dll)"
     ],
     "deny": [],
     "ask": []
