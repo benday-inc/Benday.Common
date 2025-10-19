@@ -6,7 +6,11 @@
       "Bash(dotnet test)",
       "Bash(find:*)",
       "Bash(dotnet run TestOverloads.cs -r Benday.Common.Testing/bin/Debug/net9.0/Benday.Common.Testing.dll)",
-      "Bash(dotnet /Users/benday/code/benday-inc/Benday.Common/TestOverloads.cs -r Benday.Common.Testing/bin/Debug/net9.0/Benday.Common.Testing.dll -r Benday.Common/bin/Debug/net9.0/Benday.Common.dll)"
+      "Bash(dotnet /Users/benday/code/benday-inc/Benday.Common/TestOverloads.cs -r Benday.Common.Testing/bin/Debug/net9.0/Benday.Common.Testing.dll -r Benday.Common/bin/Debug/net9.0/Benday.Common.dll)",
+      "Bash(dotnet test --filter \"FullyQualifiedName~AssertionMessageFormatterFixture\")",
+      "Bash(dotnet test Benday.Common.Testing.UnitTests --filter \"FullyQualifiedName~AssertionMessageFormatterFixture\")",
+      "Bash(dotnet test --filter \"FullyQualifiedName~AssertionMessageFormatterFixture|FullyQualifiedName~AssertThatFixture\")",
+      "Bash(dotnet test --filter \"FullyQualifiedName~ShouldEqual_WithEqualCollections\")"
     ],
     "deny": [],
     "ask": []
