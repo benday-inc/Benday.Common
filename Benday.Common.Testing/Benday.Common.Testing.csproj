@@ -17,7 +17,7 @@
     <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageReleaseNotes>
-v2.0 - Major overhaul of assertion methods so that they following a consistent naming pattern;
+v2.0 - Major overhaul of assertion methods so that they following a consistent naming pattern; Added new overloads to existing assertion methods to not require custom messages;
 v1.5 - Added assert utility methods;
 v1.4 - Changed the way MockUtility and MockCreationResult work to allow for optional mock configuration before instance creation;
 v1.3 - Unpublishing fluent assertions for xUnit from this package...for now;
