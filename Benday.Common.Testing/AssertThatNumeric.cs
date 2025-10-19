@@ -3,7 +3,7 @@ namespace Benday.Common.Testing;
 /// <summary>
 /// Provides static methods for making assertions on numeric values with descriptive failure messages.
 /// </summary>
-public static class NumericAssert
+public static class AssertThatNumeric
 {
     /// <summary>
     /// Verifies that a value is greater than the specified minimum.

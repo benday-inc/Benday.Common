@@ -17,7 +17,7 @@ public static class StringAssertExtensions
     /// <exception cref="AssertionException">Thrown when the string is not null or empty.</exception>
     public static string? ShouldBeNullOrEmpty([NotNull] this string? actual, string message)
     {
-        StringAssert.IsNullOrEmpty(actual, message);
+        AssertThatString.IsNullOrEmpty(actual, message);
         return actual;
     }
 
@@ -30,7 +30,7 @@ public static class StringAssertExtensions
     /// <exception cref="AssertionException">Thrown when the string is null or empty.</exception>
     public static string ShouldNotBeNullOrEmpty([NotNull] this string? actual, string message)
     {
-        StringAssert.IsNotNullOrEmpty(actual, message);
+        AssertThatString.IsNotNullOrEmpty(actual, message);
         return actual!;
     }
 
@@ -43,7 +43,7 @@ public static class StringAssertExtensions
     /// <exception cref="AssertionException">Thrown when the string is not null or whitespace.</exception>
     public static string? ShouldBeNullOrWhiteSpace([NotNull] this string? actual, string message)
     {
-        StringAssert.IsNullOrWhiteSpace(actual, message);
+        AssertThatString.IsNullOrWhiteSpace(actual, message);
         return actual;
     }
 
@@ -56,7 +56,7 @@ public static class StringAssertExtensions
     /// <exception cref="AssertionException">Thrown when the string is null or whitespace.</exception>
     public static string ShouldNotBeNullOrWhiteSpace([NotNull] this string? actual, string message)
     {
-        StringAssert.IsNotNullOrWhiteSpace(actual, message);
+        AssertThatString.IsNotNullOrWhiteSpace(actual, message);
         return actual!;
     }
 
@@ -70,7 +70,7 @@ public static class StringAssertExtensions
     /// <exception cref="AssertionException">Thrown when the string does not start with the expected substring.</exception>
     public static string ShouldStartWith(this string actual, string expected, string message)
     {
-        StringAssert.StartsWith(actual, expected, message);
+        AssertThatString.StartsWith(actual, expected, message);
         return actual;
     }
 
@@ -85,7 +85,7 @@ public static class StringAssertExtensions
     /// <exception cref="AssertionException">Thrown when the string does not start with the expected substring.</exception>
     public static string ShouldStartWith(this string actual, string expected, StringComparison comparisonType, string message)
     {
-        StringAssert.StartsWith(actual, expected, comparisonType, message);
+        AssertThatString.StartsWith(actual, expected, comparisonType, message);
         return actual;
     }
 
@@ -99,7 +99,7 @@ public static class StringAssertExtensions
     /// <exception cref="AssertionException">Thrown when the string does not end with the expected substring.</exception>
     public static string ShouldEndWith(this string actual, string expected, string message)
     {
-        StringAssert.EndsWith(actual, expected, message);
+        AssertThatString.EndsWith(actual, expected, message);
         return actual;
     }
 
@@ -114,7 +114,7 @@ public static class StringAssertExtensions
     /// <exception cref="AssertionException">Thrown when the string does not end with the expected substring.</exception>
     public static string ShouldEndWith(this string actual, string expected, StringComparison comparisonType, string message)
     {
-        StringAssert.EndsWith(actual, expected, comparisonType, message);
+        AssertThatString.EndsWith(actual, expected, comparisonType, message);
         return actual;
     }
 
@@ -128,7 +128,7 @@ public static class StringAssertExtensions
     /// <exception cref="AssertionException">Thrown when the string does not contain the expected substring.</exception>
     public static string ShouldContain(this string actual, string expected, string message)
     {
-        StringAssert.Contains(actual, expected, message);
+        AssertThatString.Contains(actual, expected, message);
         return actual;
     }
 
@@ -143,7 +143,7 @@ public static class StringAssertExtensions
     /// <exception cref="AssertionException">Thrown when the string does not contain the expected substring.</exception>
     public static string ShouldContain(this string actual, string expected, StringComparison comparisonType, string message)
     {
-        StringAssert.Contains(actual, expected, comparisonType, message);
+        AssertThatString.Contains(actual, expected, comparisonType, message);
         return actual;
     }
 
@@ -157,7 +157,7 @@ public static class StringAssertExtensions
     /// <exception cref="AssertionException">Thrown when the string contains the substring.</exception>
     public static string ShouldNotContain(this string actual, string expected, string message)
     {
-        StringAssert.DoesNotContain(actual, expected, message);
+        AssertThatString.DoesNotContain(actual, expected, message);
         return actual;
     }
 
@@ -172,7 +172,7 @@ public static class StringAssertExtensions
     /// <exception cref="AssertionException">Thrown when the string contains the substring.</exception>
     public static string ShouldNotContain(this string actual, string expected, StringComparison comparisonType, string message)
     {
-        StringAssert.DoesNotContain(actual, expected, comparisonType, message);
+        AssertThatString.DoesNotContain(actual, expected, comparisonType, message);
         return actual;
     }
 
@@ -186,7 +186,7 @@ public static class StringAssertExtensions
     /// <exception cref="AssertionException">Thrown when the string does not match the pattern.</exception>
     public static string ShouldMatch(this string actual, string pattern, string message)
     {
-        StringAssert.Matches(actual, pattern, message);
+        AssertThatString.Matches(actual, pattern, message);
         return actual;
     }
 
@@ -201,7 +201,7 @@ public static class StringAssertExtensions
     /// <exception cref="AssertionException">Thrown when the string does not match the pattern.</exception>
     public static string ShouldMatch(this string actual, string pattern, RegexOptions options, string message)
     {
-        StringAssert.Matches(actual, pattern, options, message);
+        AssertThatString.Matches(actual, pattern, options, message);
         return actual;
     }
 
@@ -215,7 +215,7 @@ public static class StringAssertExtensions
     /// <exception cref="AssertionException">Thrown when the string matches the pattern.</exception>
     public static string ShouldNotMatch(this string actual, string pattern, string message)
     {
-        StringAssert.DoesNotMatch(actual, pattern, message);
+        AssertThatString.DoesNotMatch(actual, pattern, message);
         return actual;
     }
 
@@ -230,7 +230,7 @@ public static class StringAssertExtensions
     /// <exception cref="AssertionException">Thrown when the string matches the pattern.</exception>
     public static string ShouldNotMatch(this string actual, string pattern, RegexOptions options, string message)
     {
-        StringAssert.DoesNotMatch(actual, pattern, options, message);
+        AssertThatString.DoesNotMatch(actual, pattern, options, message);
         return actual;
     }
 
@@ -244,7 +244,7 @@ public static class StringAssertExtensions
     /// <exception cref="AssertionException">Thrown when the string does not have the expected length.</exception>
     public static string ShouldHaveLength(this string actual, int expectedLength, string message)
     {
-        StringAssert.HasLength(actual, expectedLength, message);
+        AssertThatString.HasLength(actual, expectedLength, message);
         return actual;
     }
 
@@ -258,7 +258,7 @@ public static class StringAssertExtensions
     /// <exception cref="AssertionException">Thrown when the strings are not equal ignoring case.</exception>
     public static string ShouldEqualIgnoreCase(this string actual, string expected, string message)
     {
-        StringAssert.AreEqualIgnoreCase(expected, actual, message);
+        AssertThatString.AreEqualIgnoreCase(expected, actual, message);
         return actual;
     }
 
@@ -272,7 +272,7 @@ public static class StringAssertExtensions
     /// <exception cref="AssertionException">Thrown when the strings are equal ignoring case.</exception>
     public static string ShouldNotEqualIgnoreCase(this string actual, string notExpected, string message)
     {
-        StringAssert.AreNotEqualIgnoreCase(notExpected, actual, message);
+        AssertThatString.AreNotEqualIgnoreCase(notExpected, actual, message);
         return actual;
     }
 }

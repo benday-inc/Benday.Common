@@ -6,7 +6,7 @@ namespace Benday.Common.Testing;
 /// <summary>
 /// Provides static methods for making assertions on collections with descriptive failure messages.
 /// </summary>
-public static class CollectionAssert
+public static class AssertThatCollection
 {
     /// <summary>
     /// Verifies that the collection is empty.

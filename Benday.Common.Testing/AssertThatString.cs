@@ -6,7 +6,7 @@ namespace Benday.Common.Testing;
 /// <summary>
 /// Provides static methods for making assertions on strings with descriptive failure messages.
 /// </summary>
-public static class StringAssert
+public static class AssertThatString
 {
     /// <summary>
     /// Verifies that the string is null or empty.

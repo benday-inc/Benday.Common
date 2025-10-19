@@ -16,7 +16,7 @@ public static class NumericAssertExtensions
     /// <exception cref="AssertionException">Thrown when the actual value is not greater than the minimum.</exception>
     public static T ShouldBeGreaterThan<T>(this T actual, T minimum, string message) where T : IComparable<T>
     {
-        NumericAssert.IsGreaterThan(actual, minimum, message);
+        AssertThatNumeric.IsGreaterThan(actual, minimum, message);
         return actual;
     }
 
@@ -31,7 +31,7 @@ public static class NumericAssertExtensions
     /// <exception cref="AssertionException">Thrown when the actual value is not greater than or equal to the minimum.</exception>
     public static T ShouldBeGreaterThanOrEqualTo<T>(this T actual, T minimum, string message) where T : IComparable<T>
     {
-        NumericAssert.IsGreaterThanOrEqualTo(actual, minimum, message);
+        AssertThatNumeric.IsGreaterThanOrEqualTo(actual, minimum, message);
         return actual;
     }
 
@@ -46,7 +46,7 @@ public static class NumericAssertExtensions
     /// <exception cref="AssertionException">Thrown when the actual value is not less than the maximum.</exception>
     public static T ShouldBeLessThan<T>(this T actual, T maximum, string message) where T : IComparable<T>
     {
-        NumericAssert.IsLessThan(actual, maximum, message);
+        AssertThatNumeric.IsLessThan(actual, maximum, message);
         return actual;
     }
 
@@ -61,7 +61,7 @@ public static class NumericAssertExtensions
     /// <exception cref="AssertionException">Thrown when the actual value is not less than or equal to the maximum.</exception>
     public static T ShouldBeLessThanOrEqualTo<T>(this T actual, T maximum, string message) where T : IComparable<T>
     {
-        NumericAssert.IsLessThanOrEqualTo(actual, maximum, message);
+        AssertThatNumeric.IsLessThanOrEqualTo(actual, maximum, message);
         return actual;
     }
 
@@ -77,7 +77,7 @@ public static class NumericAssertExtensions
     /// <exception cref="AssertionException">Thrown when the actual value is not within the range.</exception>
     public static T ShouldBeInRange<T>(this T actual, T minimum, T maximum, string message) where T : IComparable<T>
     {
-        NumericAssert.IsInRange(actual, minimum, maximum, message);
+        AssertThatNumeric.IsInRange(actual, minimum, maximum, message);
         return actual;
     }
 
@@ -93,7 +93,7 @@ public static class NumericAssertExtensions
     /// <exception cref="AssertionException">Thrown when the actual value is within the range.</exception>
     public static T ShouldNotBeInRange<T>(this T actual, T minimum, T maximum, string message) where T : IComparable<T>
     {
-        NumericAssert.IsNotInRange(actual, minimum, maximum, message);
+        AssertThatNumeric.IsNotInRange(actual, minimum, maximum, message);
         return actual;
     }
 
@@ -107,7 +107,7 @@ public static class NumericAssertExtensions
     /// <exception cref="AssertionException">Thrown when the value is not positive.</exception>
     public static T ShouldBePositive<T>(this T actual, string message) where T : IComparable<T>, new()
     {
-        NumericAssert.IsPositive(actual, message);
+        AssertThatNumeric.IsPositive(actual, message);
         return actual;
     }
 
@@ -121,7 +121,7 @@ public static class NumericAssertExtensions
     /// <exception cref="AssertionException">Thrown when the value is not negative.</exception>
     public static T ShouldBeNegative<T>(this T actual, string message) where T : IComparable<T>, new()
     {
-        NumericAssert.IsNegative(actual, message);
+        AssertThatNumeric.IsNegative(actual, message);
         return actual;
     }
 
@@ -135,7 +135,7 @@ public static class NumericAssertExtensions
     /// <exception cref="AssertionException">Thrown when the value is not zero.</exception>
     public static T ShouldBeZero<T>(this T actual, string message) where T : IComparable<T>, new()
     {
-        NumericAssert.IsZero(actual, message);
+        AssertThatNumeric.IsZero(actual, message);
         return actual;
     }
 
@@ -149,7 +149,7 @@ public static class NumericAssertExtensions
     /// <exception cref="AssertionException">Thrown when the value is zero.</exception>
     public static T ShouldNotBeZero<T>(this T actual, string message) where T : IComparable<T>, new()
     {
-        NumericAssert.IsNotZero(actual, message);
+        AssertThatNumeric.IsNotZero(actual, message);
         return actual;
     }
 
@@ -164,7 +164,7 @@ public static class NumericAssertExtensions
     /// <exception cref="AssertionException">Thrown when the values are not approximately equal.</exception>
     public static double ShouldBeApproximatelyEqualTo(this double actual, double expected, double tolerance, string message)
     {
-        NumericAssert.AreApproximatelyEqual(expected, actual, tolerance, message);
+        AssertThatNumeric.AreApproximatelyEqual(expected, actual, tolerance, message);
         return actual;
     }
 
@@ -179,7 +179,7 @@ public static class NumericAssertExtensions
     /// <exception cref="AssertionException">Thrown when the values are not approximately equal.</exception>
     public static float ShouldBeApproximatelyEqualTo(this float actual, float expected, float tolerance, string message)
     {
-        NumericAssert.AreApproximatelyEqual(expected, actual, tolerance, message);
+        AssertThatNumeric.AreApproximatelyEqual(expected, actual, tolerance, message);
         return actual;
     }
 
@@ -194,7 +194,7 @@ public static class NumericAssertExtensions
     /// <exception cref="AssertionException">Thrown when the values are not approximately equal.</exception>
     public static decimal ShouldBeApproximatelyEqualTo(this decimal actual, decimal expected, decimal tolerance, string message)
     {
-        NumericAssert.AreApproximatelyEqual(expected, actual, tolerance, message);
+        AssertThatNumeric.AreApproximatelyEqual(expected, actual, tolerance, message);
         return actual;
     }
 
@@ -207,7 +207,7 @@ public static class NumericAssertExtensions
     /// <exception cref="AssertionException">Thrown when the value is NaN.</exception>
     public static double ShouldNotBeNaN(this double actual, string message)
     {
-        NumericAssert.IsNotNaN(actual, message);
+        AssertThatNumeric.IsNotNaN(actual, message);
         return actual;
     }
 
@@ -220,7 +220,7 @@ public static class NumericAssertExtensions
     /// <exception cref="AssertionException">Thrown when the value is NaN.</exception>
     public static float ShouldNotBeNaN(this float actual, string message)
     {
-        NumericAssert.IsNotNaN(actual, message);
+        AssertThatNumeric.IsNotNaN(actual, message);
         return actual;
     }
 
@@ -233,7 +233,7 @@ public static class NumericAssertExtensions
     /// <exception cref="AssertionException">Thrown when the value is not finite.</exception>
     public static double ShouldBeFinite(this double actual, string message)
     {
-        NumericAssert.IsFinite(actual, message);
+        AssertThatNumeric.IsFinite(actual, message);
         return actual;
     }
 
@@ -246,7 +246,7 @@ public static class NumericAssertExtensions
     /// <exception cref="AssertionException">Thrown when the value is not finite.</exception>
     public static float ShouldBeFinite(this float actual, string message)
     {
-        NumericAssert.IsFinite(actual, message);
+        AssertThatNumeric.IsFinite(actual, message);
         return actual;
     }
 }
