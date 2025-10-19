@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class AssertThatNumeric </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class AssertThatNumeric ">
+    
+    <meta name="description" content="Provides static methods for making assertions on numeric values with descriptive failure messages.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="navbar-brand">
+                <a href="../">
+                  <img id="logo" src="../logo.png" alt="" alt="asdf" width="50" height="50">
+                </a>
+
+              </div>            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Benday.Common.Testing.AssertThatNumeric">
+
+
+
+  <h1 id="Benday_Common_Testing_AssertThatNumeric" data-uid="Benday.Common.Testing.AssertThatNumeric" class="text-break">Class AssertThatNumeric</h1>
+  <div class="markdown level0 summary"><p>Provides static methods for making assertions on numeric values with descriptive failure messages.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">AssertThatNumeric</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Benday.html">Benday</a>.<a class="xref" href="Benday.Common.html">Common</a>.<a class="xref" href="Benday.Common.Testing.html">Testing</a></h6>
+  <h6><strong>Assembly</strong>: Benday.Common.Testing.dll</h6>
+  <h5 id="Benday_Common_Testing_AssertThatNumeric_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AssertThatNumeric</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Testing_AssertThatNumeric_AreApproximatelyEqual_System_Decimal_System_Decimal_System_Decimal_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.AssertThatNumeric.AreApproximatelyEqual(System.Decimal%2CSystem.Decimal%2CSystem.Decimal%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common.Testing/AssertThatNumeric.cs/#L222">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_AssertThatNumeric_AreApproximatelyEqual_" data-uid="Benday.Common.Testing.AssertThatNumeric.AreApproximatelyEqual*"></a>
+  <h4 id="Benday_Common_Testing_AssertThatNumeric_AreApproximatelyEqual_System_Decimal_System_Decimal_System_Decimal_System_String_" data-uid="Benday.Common.Testing.AssertThatNumeric.AreApproximatelyEqual(System.Decimal,System.Decimal,System.Decimal,System.String)">AreApproximatelyEqual(decimal, decimal, decimal, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that two decimal values are approximately equal within the specified tolerance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreApproximatelyEqual(decimal expected, decimal actual, decimal tolerance, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td><span class="parametername">expected</span></td>
+        <td><p>The expected value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td><p>The tolerance for comparison.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the values are not approximately equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Testing_AssertThatNumeric_AreApproximatelyEqual_System_Double_System_Double_System_Double_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.AssertThatNumeric.AreApproximatelyEqual(System.Double%2CSystem.Double%2CSystem.Double%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common.Testing/AssertThatNumeric.cs/#L188">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_AssertThatNumeric_AreApproximatelyEqual_" data-uid="Benday.Common.Testing.AssertThatNumeric.AreApproximatelyEqual*"></a>
+  <h4 id="Benday_Common_Testing_AssertThatNumeric_AreApproximatelyEqual_System_Double_System_Double_System_Double_System_String_" data-uid="Benday.Common.Testing.AssertThatNumeric.AreApproximatelyEqual(System.Double,System.Double,System.Double,System.String)">AreApproximatelyEqual(double, double, double, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that two floating-point values are approximately equal within the specified tolerance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreApproximatelyEqual(double expected, double actual, double tolerance, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">expected</span></td>
+        <td><p>The expected value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td><p>The tolerance for comparison.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the values are not approximately equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Testing_AssertThatNumeric_AreApproximatelyEqual_System_Single_System_Single_System_Single_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.AssertThatNumeric.AreApproximatelyEqual(System.Single%2CSystem.Single%2CSystem.Single%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common.Testing/AssertThatNumeric.cs/#L205">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_AssertThatNumeric_AreApproximatelyEqual_" data-uid="Benday.Common.Testing.AssertThatNumeric.AreApproximatelyEqual*"></a>
+  <h4 id="Benday_Common_Testing_AssertThatNumeric_AreApproximatelyEqual_System_Single_System_Single_System_Single_System_String_" data-uid="Benday.Common.Testing.AssertThatNumeric.AreApproximatelyEqual(System.Single,System.Single,System.Single,System.String)">AreApproximatelyEqual(float, float, float, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that two floating-point values are approximately equal within the specified tolerance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreApproximatelyEqual(float expected, float actual, float tolerance, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">expected</span></td>
+        <td><p>The expected value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td><p>The tolerance for comparison.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the values are not approximately equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Testing_AssertThatNumeric_IsFinite_System_Double_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.AssertThatNumeric.IsFinite(System.Double%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common.Testing/AssertThatNumeric.cs/#L267">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_AssertThatNumeric_IsFinite_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsFinite*"></a>
+  <h4 id="Benday_Common_Testing_AssertThatNumeric_IsFinite_System_Double_System_String_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsFinite(System.Double,System.String)">IsFinite(double, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a double value is finite (not infinity or NaN).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsFinite(double actual, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the value is not finite.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Testing_AssertThatNumeric_IsFinite_System_Single_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.AssertThatNumeric.IsFinite(System.Single%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common.Testing/AssertThatNumeric.cs/#L282">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_AssertThatNumeric_IsFinite_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsFinite*"></a>
+  <h4 id="Benday_Common_Testing_AssertThatNumeric_IsFinite_System_Single_System_String_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsFinite(System.Single,System.String)">IsFinite(float, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a float value is finite (not infinity or NaN).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsFinite(float actual, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the value is not finite.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Testing_AssertThatNumeric_IsGreaterThanOrEqualTo__1___0___0_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.AssertThatNumeric.IsGreaterThanOrEqualTo%60%601(%60%600%2C%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common.Testing/AssertThatNumeric.cs/#L33">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_AssertThatNumeric_IsGreaterThanOrEqualTo_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsGreaterThanOrEqualTo*"></a>
+  <h4 id="Benday_Common_Testing_AssertThatNumeric_IsGreaterThanOrEqualTo__1___0___0_System_String_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsGreaterThanOrEqualTo``1(``0,``0,System.String)">IsGreaterThanOrEqualTo&lt;T&gt;(T, T, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a value is greater than or equal to the specified minimum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsGreaterThanOrEqualTo&lt;T&gt;(T actual, T minimum, string message) where T : IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">minimum</span></td>
+        <td><p>The minimum value (inclusive).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of values to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the actual value is not greater than or equal to the minimum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Testing_AssertThatNumeric_IsGreaterThan__1___0___0_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.AssertThatNumeric.IsGreaterThan%60%601(%60%600%2C%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common.Testing/AssertThatNumeric.cs/#L16">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_AssertThatNumeric_IsGreaterThan_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsGreaterThan*"></a>
+  <h4 id="Benday_Common_Testing_AssertThatNumeric_IsGreaterThan__1___0___0_System_String_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsGreaterThan``1(``0,``0,System.String)">IsGreaterThan&lt;T&gt;(T, T, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a value is greater than the specified minimum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsGreaterThan&lt;T&gt;(T actual, T minimum, string message) where T : IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">minimum</span></td>
+        <td><p>The minimum value (exclusive).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of values to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the actual value is not greater than the minimum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Testing_AssertThatNumeric_IsInRange__1___0___0___0_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.AssertThatNumeric.IsInRange%60%601(%60%600%2C%60%600%2C%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common.Testing/AssertThatNumeric.cs/#L85">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_AssertThatNumeric_IsInRange_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsInRange*"></a>
+  <h4 id="Benday_Common_Testing_AssertThatNumeric_IsInRange__1___0___0___0_System_String_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsInRange``1(``0,``0,``0,System.String)">IsInRange&lt;T&gt;(T, T, T, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a value is within the specified range (inclusive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsInRange&lt;T&gt;(T actual, T minimum, T maximum, string message) where T : IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">minimum</span></td>
+        <td><p>The minimum value (inclusive).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">maximum</span></td>
+        <td><p>The maximum value (inclusive).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of values to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the actual value is not within the range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Testing_AssertThatNumeric_IsLessThanOrEqualTo__1___0___0_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.AssertThatNumeric.IsLessThanOrEqualTo%60%601(%60%600%2C%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common.Testing/AssertThatNumeric.cs/#L67">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_AssertThatNumeric_IsLessThanOrEqualTo_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsLessThanOrEqualTo*"></a>
+  <h4 id="Benday_Common_Testing_AssertThatNumeric_IsLessThanOrEqualTo__1___0___0_System_String_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsLessThanOrEqualTo``1(``0,``0,System.String)">IsLessThanOrEqualTo&lt;T&gt;(T, T, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a value is less than or equal to the specified maximum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsLessThanOrEqualTo&lt;T&gt;(T actual, T maximum, string message) where T : IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">maximum</span></td>
+        <td><p>The maximum value (inclusive).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of values to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the actual value is not less than or equal to the maximum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Testing_AssertThatNumeric_IsLessThan__1___0___0_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.AssertThatNumeric.IsLessThan%60%601(%60%600%2C%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common.Testing/AssertThatNumeric.cs/#L50">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_AssertThatNumeric_IsLessThan_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsLessThan*"></a>
+  <h4 id="Benday_Common_Testing_AssertThatNumeric_IsLessThan__1___0___0_System_String_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsLessThan``1(``0,``0,System.String)">IsLessThan&lt;T&gt;(T, T, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a value is less than the specified maximum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsLessThan&lt;T&gt;(T actual, T maximum, string message) where T : IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">maximum</span></td>
+        <td><p>The maximum value (exclusive).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of values to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the actual value is not less than the maximum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Testing_AssertThatNumeric_IsNegative__1___0_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.AssertThatNumeric.IsNegative%60%601(%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common.Testing/AssertThatNumeric.cs/#L136">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_AssertThatNumeric_IsNegative_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsNegative*"></a>
+  <h4 id="Benday_Common_Testing_AssertThatNumeric_IsNegative__1___0_System_String_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsNegative``1(``0,System.String)">IsNegative&lt;T&gt;(T, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a value is negative (less than zero).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsNegative&lt;T&gt;(T actual, string message) where T : IComparable&lt;T&gt;, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the value is not negative.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Testing_AssertThatNumeric_IsNotInRange__1___0___0___0_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.AssertThatNumeric.IsNotInRange%60%601(%60%600%2C%60%600%2C%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common.Testing/AssertThatNumeric.cs/#L103">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_AssertThatNumeric_IsNotInRange_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsNotInRange*"></a>
+  <h4 id="Benday_Common_Testing_AssertThatNumeric_IsNotInRange__1___0___0___0_System_String_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsNotInRange``1(``0,``0,``0,System.String)">IsNotInRange&lt;T&gt;(T, T, T, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a value is not within the specified range (inclusive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsNotInRange&lt;T&gt;(T actual, T minimum, T maximum, string message) where T : IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">minimum</span></td>
+        <td><p>The minimum value (inclusive).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">maximum</span></td>
+        <td><p>The maximum value (inclusive).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of values to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the actual value is within the range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Testing_AssertThatNumeric_IsNotNaN_System_Double_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.AssertThatNumeric.IsNotNaN(System.Double%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common.Testing/AssertThatNumeric.cs/#L237">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_AssertThatNumeric_IsNotNaN_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsNotNaN*"></a>
+  <h4 id="Benday_Common_Testing_AssertThatNumeric_IsNotNaN_System_Double_System_String_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsNotNaN(System.Double,System.String)">IsNotNaN(double, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a double value is not NaN (Not a Number).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsNotNaN(double actual, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the value is NaN.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Testing_AssertThatNumeric_IsNotNaN_System_Single_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.AssertThatNumeric.IsNotNaN(System.Single%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common.Testing/AssertThatNumeric.cs/#L252">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_AssertThatNumeric_IsNotNaN_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsNotNaN*"></a>
+  <h4 id="Benday_Common_Testing_AssertThatNumeric_IsNotNaN_System_Single_System_String_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsNotNaN(System.Single,System.String)">IsNotNaN(float, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a float value is not NaN (Not a Number).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsNotNaN(float actual, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the value is NaN.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Testing_AssertThatNumeric_IsNotZero__1___0_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.AssertThatNumeric.IsNotZero%60%601(%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common.Testing/AssertThatNumeric.cs/#L170">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_AssertThatNumeric_IsNotZero_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsNotZero*"></a>
+  <h4 id="Benday_Common_Testing_AssertThatNumeric_IsNotZero__1___0_System_String_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsNotZero``1(``0,System.String)">IsNotZero&lt;T&gt;(T, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a value is not zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsNotZero&lt;T&gt;(T actual, string message) where T : IComparable&lt;T&gt;, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the value is zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Testing_AssertThatNumeric_IsPositive__1___0_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.AssertThatNumeric.IsPositive%60%601(%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common.Testing/AssertThatNumeric.cs/#L119">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_AssertThatNumeric_IsPositive_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsPositive*"></a>
+  <h4 id="Benday_Common_Testing_AssertThatNumeric_IsPositive__1___0_System_String_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsPositive``1(``0,System.String)">IsPositive&lt;T&gt;(T, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a value is positive (greater than zero).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsPositive&lt;T&gt;(T actual, string message) where T : IComparable&lt;T&gt;, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the value is not positive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Testing_AssertThatNumeric_IsZero__1___0_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.AssertThatNumeric.IsZero%60%601(%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common.Testing/AssertThatNumeric.cs/#L153">View Source</a>
+  </span>
+  <a id="Benday_Common_Testing_AssertThatNumeric_IsZero_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsZero*"></a>
+  <h4 id="Benday_Common_Testing_AssertThatNumeric_IsZero__1___0_System_String_" data-uid="Benday.Common.Testing.AssertThatNumeric.IsZero``1(``0,System.String)">IsZero&lt;T&gt;(T, string)</h4>
+  <div class="markdown level1 summary"><p>Verifies that a value is zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsZero&lt;T&gt;(T actual, string message) where T : IComparable&lt;T&gt;, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">actual</span></td>
+        <td><p>The actual value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to display if the assertion fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Testing.AssertionException.html">AssertionException</a></td>
+        <td><p>Thrown when the value is not zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Testing_AssertThatNumeric.md&amp;value=---%0Auid%3A%20Benday.Common.Testing.AssertThatNumeric%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common.Testing/AssertThatNumeric.cs/#L6" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      Copyright © <a href="https://www.benday.com/">www.benday.com</a> | <a href="mailto:info@benday.com">info@benday.com</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -354,6 +354,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.AssertThatCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.AssertThatCollection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.AssertThatCollection",
+      "Summary": "<p sourcefile=\"api/Benday.Common.Testing.AssertThatCollection.yml\" sourcestartlinenumber=\"1\">Provides static methods for making assertions on collections with descriptive failure messages.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.AssertThatNumeric.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.AssertThatNumeric.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.AssertThatNumeric",
+      "Summary": "<p sourcefile=\"api/Benday.Common.Testing.AssertThatNumeric.yml\" sourcestartlinenumber=\"1\">Provides static methods for making assertions on numeric values with descriptive failure messages.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Testing.AssertThatString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Testing.AssertThatString.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Testing.AssertThatString",
+      "Summary": "<p sourcefile=\"api/Benday.Common.Testing.AssertThatString.yml\" sourcestartlinenumber=\"1\">Provides static methods for making assertions on strings with descriptive failure messages.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Benday.Common.Testing.AssertionException.yml",
       "output": {
         ".html": {
