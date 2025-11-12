@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TheVersion>2.0</TheVersion>
+    <TheVersion>2.1</TheVersion>
     <AssemblyName>Benday.Common.Testing</AssemblyName>
     <AssemblyVersion>$(TheVersion).0</AssemblyVersion>
     <Version>$(TheVersion)</Version>
@@ -17,6 +17,7 @@
     <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageReleaseNotes>
+v2.1 - Updated dependencies to .net 10.0;
 v2.0 - Major overhaul of assertion methods so that they following a consistent naming pattern; Added new overloads to existing assertion methods to not require custom messages;
 v1.5 - Added assert utility methods;
 v1.4 - Changed the way MockUtility and MockCreationResult work to allow for optional mock configuration before instance creation;
@@ -27,19 +28,15 @@ v1.0 - Base class for xunit tests; MockUtility for streamlining testing with Moq
     </PackageReleaseNotes>
     <PackageTags>xunit; moq; unit testing;</PackageTags>
     <RepositoryUrl>https://github.com/benday-inc/Benday.Common.git</RepositoryUrl>
-    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
     <Title>Benday.Common.Testing</Title>
-    
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.*" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.*" />
     <PackageReference Include="Moq" Version="4.*" />
     <PackageReference Include="xunit" Version="2.*" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="3.*">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Benday.Common" Version="[9.4,)" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.*" />
+    <PackageReference Include="Benday.Common" Version="9.*" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\bdc_mark_128_128.png">
