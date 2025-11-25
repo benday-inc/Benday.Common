@@ -12,7 +12,7 @@ namespace Benday.Common;
 /// This class is used to run a process and capture the output.
 /// It is a wrapper around the System.Diagnostics.Process class.
 /// </summary>
-public class ProcessRunner
+public class ProcessRunner : IProcessRunner
 {
     private const int TIMEOUT_IN_MILLISECS = 10000;
     private const int EXIT_CODE_SUCCESS = 0;
@@ -40,9 +40,10 @@ public class ProcessRunner
     /// <summary>
     /// Run the command
     /// </summary>
+    /// <returns>The result of the process execution.</returns>
     /// <exception cref="InvalidOperationException"></exception>
     /// <exception cref="TimeoutException"></exception>
-    public void Run()
+    public IProcessRunnerResult Run()
     {
         if (_hasRunBeenCalled == true)
         {
@@ -103,7 +104,7 @@ public class ProcessRunner
                 }
                 else
                 {
-                    SetResultData(true, outputBuilder, errorBuilder);
+                    SetResultData(true, EXIT_CODE_NOT_SET, outputBuilder, errorBuilder);
 
                     IsTimeout = true;
 
@@ -111,14 +112,18 @@ public class ProcessRunner
                         $"Process timed out after {Timeout} milliseconds.");
                 }
 
+                ProcessRunnerResult result;
+
                 if (process.ExitCode != EXIT_CODE_SUCCESS)
                 {
-                    SetResultData(true, outputBuilder, errorBuilder);
+                    result = SetResultData(true, exitCode, outputBuilder, errorBuilder);
                 }
                 else
                 {
-                    SetResultData(false, outputBuilder, errorBuilder);
+                    result = SetResultData(false, exitCode, outputBuilder, errorBuilder);
                 }
+
+                return result;
             }
         }
     }
@@ -133,8 +138,9 @@ public class ProcessRunner
         set;
     } = TIMEOUT_IN_MILLISECS;
 
-    private void SetResultData(
+    private ProcessRunnerResult SetResultData(
         bool isError,
+        int exitCode,
         StringBuilder outputBuilder, StringBuilder errorBuilder)
     {
         if (isError == true)
@@ -148,8 +154,17 @@ public class ProcessRunner
             IsSuccess = true;
         }
 
+        ExitCode = exitCode;
         OutputText = outputBuilder.ToString();
         ErrorText = errorBuilder.ToString();
+
+        return new ProcessRunnerResult(
+            IsError,
+            IsSuccess,
+            IsTimeout,
+            ExitCode,
+            OutputText,
+            ErrorText);
     }
 
     /// <summary>
@@ -173,6 +188,11 @@ public class ProcessRunner
     /// successfully.
     /// </summary>
     public bool HasCompleted { get => IsError | IsSuccess; }
+
+    /// <summary>
+    /// The exit code from the process. Returns -1 if not yet completed.
+    /// </summary>
+    public int ExitCode { get; private set; } = EXIT_CODE_NOT_SET;
 
     /// <summary>
     /// The output text from the process.

@@ -10,7 +10,8 @@
       "Bash(dotnet test --filter \"FullyQualifiedName~AssertionMessageFormatterFixture\")",
       "Bash(dotnet test Benday.Common.Testing.UnitTests --filter \"FullyQualifiedName~AssertionMessageFormatterFixture\")",
       "Bash(dotnet test --filter \"FullyQualifiedName~AssertionMessageFormatterFixture|FullyQualifiedName~AssertThatFixture\")",
-      "Bash(dotnet test --filter \"FullyQualifiedName~ShouldEqual_WithEqualCollections\")"
+      "Bash(dotnet test --filter \"FullyQualifiedName~ShouldEqual_WithEqualCollections\")",
+      "Bash(dotnet test:*)"
     ],
     "deny": [],
     "ask": []

@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TheVersion>9.5.0</TheVersion>
+    <TheVersion>9.6.0</TheVersion>
     <AssemblyVersion>$(TheVersion).0</AssemblyVersion>
     <Version>$(VersionPrefix)$(TheVersion)</Version>
     <Authors>benday</Authors>
@@ -15,6 +15,7 @@
     <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageReleaseNotes>
+v9.6 - Modifying process runner to expose the process and optionally kill it; Adding AsyncProcessRunner for running processes asynchronously;
 v9.5 - Updating dependencies to .net 10.0;
 v9.4 - Added IsNullOrEmpty() to string extension methods; Added compiler hint attributes to indicate when the input strings for IsNullOrEmpty() and IsNullOrWhitespace() are not null;
 v9.3 - Added ConfigurationExtensionMethods; Added ToStringThrowIfNullOrEmpty() and SafeToString() to the ConfigurationExtensionMethods class for accessing values from IConfiguration.
