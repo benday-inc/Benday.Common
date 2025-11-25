@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IAsyncProcessRunner </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IAsyncProcessRunner ">
+    
+    <meta name="description" content="Interface for running external processes asynchronously in the background. Supports monitoring state while running and provides process control.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="navbar-brand">
+                <a href="../">
+                  <img id="logo" src="../logo.png" alt="" alt="asdf" width="50" height="50">
+                </a>
+
+              </div>            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Benday.Common.IAsyncProcessRunner">
+
+
+
+  <h1 id="Benday_Common_IAsyncProcessRunner" data-uid="Benday.Common.IAsyncProcessRunner" class="text-break">Interface IAsyncProcessRunner</h1>
+  <div class="markdown level0 summary"><p>Interface for running external processes asynchronously in the background.
+Supports monitoring state while running and provides process control.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Benday.html">Benday</a>.<a class="xref" href="Benday.Common.html">Common</a></h6>
+  <h6><strong>Assembly</strong>: Benday.Common.dll</h6>
+  <h5 id="Benday_Common_IAsyncProcessRunner_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAsyncProcessRunner : IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_IAsyncProcessRunner_ErrorText.md&amp;value=---%0Auid%3A%20Benday.Common.IAsyncProcessRunner.ErrorText%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/IAsyncProcessRunner.cs/#L110">View Source</a>
+  </span>
+  <a id="Benday_Common_IAsyncProcessRunner_ErrorText_" data-uid="Benday.Common.IAsyncProcessRunner.ErrorText*"></a>
+  <h4 id="Benday_Common_IAsyncProcessRunner_ErrorText" data-uid="Benday.Common.IAsyncProcessRunner.ErrorText">ErrorText</h4>
+  <div class="markdown level1 summary"><p>Get the current error text. Can be called while process is running.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ErrorText { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_IAsyncProcessRunner_ExitCode.md&amp;value=---%0Auid%3A%20Benday.Common.IAsyncProcessRunner.ExitCode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/IAsyncProcessRunner.cs/#L100">View Source</a>
+  </span>
+  <a id="Benday_Common_IAsyncProcessRunner_ExitCode_" data-uid="Benday.Common.IAsyncProcessRunner.ExitCode*"></a>
+  <h4 id="Benday_Common_IAsyncProcessRunner_ExitCode" data-uid="Benday.Common.IAsyncProcessRunner.ExitCode">ExitCode</h4>
+  <div class="markdown level1 summary"><p>The exit code from the process. Returns -1 if not yet completed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ExitCode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_IAsyncProcessRunner_HasCompleted.md&amp;value=---%0Auid%3A%20Benday.Common.IAsyncProcessRunner.HasCompleted%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/IAsyncProcessRunner.cs/#L83">View Source</a>
+  </span>
+  <a id="Benday_Common_IAsyncProcessRunner_HasCompleted_" data-uid="Benday.Common.IAsyncProcessRunner.HasCompleted*"></a>
+  <h4 id="Benday_Common_IAsyncProcessRunner_HasCompleted" data-uid="Benday.Common.IAsyncProcessRunner.HasCompleted">HasCompleted</h4>
+  <div class="markdown level1 summary"><p>Indicates if the process has completed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasCompleted { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_IAsyncProcessRunner_HasStarted.md&amp;value=---%0Auid%3A%20Benday.Common.IAsyncProcessRunner.HasStarted%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/IAsyncProcessRunner.cs/#L63">View Source</a>
+  </span>
+  <a id="Benday_Common_IAsyncProcessRunner_HasStarted_" data-uid="Benday.Common.IAsyncProcessRunner.HasStarted*"></a>
+  <h4 id="Benday_Common_IAsyncProcessRunner_HasStarted" data-uid="Benday.Common.IAsyncProcessRunner.HasStarted">HasStarted</h4>
+  <div class="markdown level1 summary"><p>Indicates if the process has been started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasStarted { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_IAsyncProcessRunner_IsError.md&amp;value=---%0Auid%3A%20Benday.Common.IAsyncProcessRunner.IsError%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/IAsyncProcessRunner.cs/#L68">View Source</a>
+  </span>
+  <a id="Benday_Common_IAsyncProcessRunner_IsError_" data-uid="Benday.Common.IAsyncProcessRunner.IsError*"></a>
+  <h4 id="Benday_Common_IAsyncProcessRunner_IsError" data-uid="Benday.Common.IAsyncProcessRunner.IsError">IsError</h4>
+  <div class="markdown level1 summary"><p>Indicates if the process completed with an error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsError { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_IAsyncProcessRunner_IsRunning.md&amp;value=---%0Auid%3A%20Benday.Common.IAsyncProcessRunner.IsRunning%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/IAsyncProcessRunner.cs/#L58">View Source</a>
+  </span>
+  <a id="Benday_Common_IAsyncProcessRunner_IsRunning_" data-uid="Benday.Common.IAsyncProcessRunner.IsRunning*"></a>
+  <h4 id="Benday_Common_IAsyncProcessRunner_IsRunning" data-uid="Benday.Common.IAsyncProcessRunner.IsRunning">IsRunning</h4>
+  <div class="markdown level1 summary"><p>Indicates if the process is currently running.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsRunning { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_IAsyncProcessRunner_IsSuccess.md&amp;value=---%0Auid%3A%20Benday.Common.IAsyncProcessRunner.IsSuccess%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/IAsyncProcessRunner.cs/#L73">View Source</a>
+  </span>
+  <a id="Benday_Common_IAsyncProcessRunner_IsSuccess_" data-uid="Benday.Common.IAsyncProcessRunner.IsSuccess*"></a>
+  <h4 id="Benday_Common_IAsyncProcessRunner_IsSuccess" data-uid="Benday.Common.IAsyncProcessRunner.IsSuccess">IsSuccess</h4>
+  <div class="markdown level1 summary"><p>Indicates if the process completed successfully.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsSuccess { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_IAsyncProcessRunner_IsTimeout.md&amp;value=---%0Auid%3A%20Benday.Common.IAsyncProcessRunner.IsTimeout%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/IAsyncProcessRunner.cs/#L78">View Source</a>
+  </span>
+  <a id="Benday_Common_IAsyncProcessRunner_IsTimeout_" data-uid="Benday.Common.IAsyncProcessRunner.IsTimeout*"></a>
+  <h4 id="Benday_Common_IAsyncProcessRunner_IsTimeout" data-uid="Benday.Common.IAsyncProcessRunner.IsTimeout">IsTimeout</h4>
+  <div class="markdown level1 summary"><p>Indicates if the process timed out.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsTimeout { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_IAsyncProcessRunner_OutputText.md&amp;value=---%0Auid%3A%20Benday.Common.IAsyncProcessRunner.OutputText%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/IAsyncProcessRunner.cs/#L105">View Source</a>
+  </span>
+  <a id="Benday_Common_IAsyncProcessRunner_OutputText_" data-uid="Benday.Common.IAsyncProcessRunner.OutputText*"></a>
+  <h4 id="Benday_Common_IAsyncProcessRunner_OutputText" data-uid="Benday.Common.IAsyncProcessRunner.OutputText">OutputText</h4>
+  <div class="markdown level1 summary"><p>Get the current output text. Can be called while process is running.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string OutputText { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_IAsyncProcessRunner_ProcessId.md&amp;value=---%0Auid%3A%20Benday.Common.IAsyncProcessRunner.ProcessId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/IAsyncProcessRunner.cs/#L88">View Source</a>
+  </span>
+  <a id="Benday_Common_IAsyncProcessRunner_ProcessId_" data-uid="Benday.Common.IAsyncProcessRunner.ProcessId*"></a>
+  <h4 id="Benday_Common_IAsyncProcessRunner_ProcessId" data-uid="Benday.Common.IAsyncProcessRunner.ProcessId">ProcessId</h4>
+  <div class="markdown level1 summary"><p>The process ID. Returns null if process has not started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int? ProcessId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_IAsyncProcessRunner_RunTimeout.md&amp;value=---%0Auid%3A%20Benday.Common.IAsyncProcessRunner.RunTimeout%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/IAsyncProcessRunner.cs/#L31">View Source</a>
+  </span>
+  <a id="Benday_Common_IAsyncProcessRunner_RunTimeout_" data-uid="Benday.Common.IAsyncProcessRunner.RunTimeout*"></a>
+  <h4 id="Benday_Common_IAsyncProcessRunner_RunTimeout" data-uid="Benday.Common.IAsyncProcessRunner.RunTimeout">RunTimeout</h4>
+  <div class="markdown level1 summary"><p>The timeout in milliseconds for the overall process run duration.
+If exceeded, the process is terminated and IsTimeout becomes true.
+Default is 0 (no timeout - runs indefinitely).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int RunTimeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_IAsyncProcessRunner_StartInfo.md&amp;value=---%0Auid%3A%20Benday.Common.IAsyncProcessRunner.StartInfo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/IAsyncProcessRunner.cs/#L17">View Source</a>
+  </span>
+  <a id="Benday_Common_IAsyncProcessRunner_StartInfo_" data-uid="Benday.Common.IAsyncProcessRunner.StartInfo*"></a>
+  <h4 id="Benday_Common_IAsyncProcessRunner_StartInfo" data-uid="Benday.Common.IAsyncProcessRunner.StartInfo">StartInfo</h4>
+  <div class="markdown level1 summary"><p>The ProcessStartInfo object used to configure the process.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ProcessStartInfo StartInfo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.diagnostics.processstartinfo">ProcessStartInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_IAsyncProcessRunner_StartupTimeout.md&amp;value=---%0Auid%3A%20Benday.Common.IAsyncProcessRunner.StartupTimeout%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/IAsyncProcessRunner.cs/#L24">View Source</a>
+  </span>
+  <a id="Benday_Common_IAsyncProcessRunner_StartupTimeout_" data-uid="Benday.Common.IAsyncProcessRunner.StartupTimeout*"></a>
+  <h4 id="Benday_Common_IAsyncProcessRunner_StartupTimeout" data-uid="Benday.Common.IAsyncProcessRunner.StartupTimeout">StartupTimeout</h4>
+  <div class="markdown level1 summary"><p>The timeout in milliseconds for the process startup.
+The process must start within this time or a TimeoutException is thrown.
+Default is 5000ms (5 seconds).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int StartupTimeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_IAsyncProcessRunner_UnderlyingProcess.md&amp;value=---%0Auid%3A%20Benday.Common.IAsyncProcessRunner.UnderlyingProcess%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/IAsyncProcessRunner.cs/#L95">View Source</a>
+  </span>
+  <a id="Benday_Common_IAsyncProcessRunner_UnderlyingProcess_" data-uid="Benday.Common.IAsyncProcessRunner.UnderlyingProcess*"></a>
+  <h4 id="Benday_Common_IAsyncProcessRunner_UnderlyingProcess" data-uid="Benday.Common.IAsyncProcessRunner.UnderlyingProcess">UnderlyingProcess</h4>
+  <div class="markdown level1 summary"><p>Direct access to the underlying Process instance.
+Returns null if process has not started.
+Use with caution - prefer using the interface methods.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Process? UnderlyingProcess { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.diagnostics.process">Process</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_IAsyncProcessRunner_Kill_System_Boolean_.md&amp;value=---%0Auid%3A%20Benday.Common.IAsyncProcessRunner.Kill(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/IAsyncProcessRunner.cs/#L53">View Source</a>
+  </span>
+  <a id="Benday_Common_IAsyncProcessRunner_Kill_" data-uid="Benday.Common.IAsyncProcessRunner.Kill*"></a>
+  <h4 id="Benday_Common_IAsyncProcessRunner_Kill_System_Boolean_" data-uid="Benday.Common.IAsyncProcessRunner.Kill(System.Boolean)">Kill(bool)</h4>
+  <div class="markdown level1 summary"><p>Kill/stop the running process.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Kill(bool entireProcessTree = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">entireProcessTree</span></td>
+        <td><p>If true, kills the entire process tree.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_IAsyncProcessRunner_StartAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Benday.Common.IAsyncProcessRunner.StartAsync(System.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/IAsyncProcessRunner.cs/#L40">View Source</a>
+  </span>
+  <a id="Benday_Common_IAsyncProcessRunner_StartAsync_" data-uid="Benday.Common.IAsyncProcessRunner.StartAsync*"></a>
+  <h4 id="Benday_Common_IAsyncProcessRunner_StartAsync_System_Threading_CancellationToken_" data-uid="Benday.Common.IAsyncProcessRunner.StartAsync(System.Threading.CancellationToken)">StartAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Start the process in the background (non-blocking).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task StartAsync(CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>Task that completes when the process has started.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown if StartAsync() is called more than once.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timeoutexception">TimeoutException</a></td>
+        <td><p>Thrown if the process does not start within StartupTimeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_IAsyncProcessRunner_WaitForExitAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Benday.Common.IAsyncProcessRunner.WaitForExitAsync(System.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/IAsyncProcessRunner.cs/#L47">View Source</a>
+  </span>
+  <a id="Benday_Common_IAsyncProcessRunner_WaitForExitAsync_" data-uid="Benday.Common.IAsyncProcessRunner.WaitForExitAsync*"></a>
+  <h4 id="Benday_Common_IAsyncProcessRunner_WaitForExitAsync_System_Threading_CancellationToken_" data-uid="Benday.Common.IAsyncProcessRunner.WaitForExitAsync(System.Threading.CancellationToken)">WaitForExitAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Wait for the process to complete.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task WaitForExitAsync(CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>Task that completes when the process has finished.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldBeNull__1___0_System_String_">ObjectAssertExtensions.ShouldBeNull&lt;T&gt;(T?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldBeSameAs__1___0___0_System_String_">ObjectAssertExtensions.ShouldBeSameAs&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldEqual__1___0___0_System_String_">ObjectAssertExtensions.ShouldEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldNotBeNull__1___0_System_String_">ObjectAssertExtensions.ShouldNotBeNull&lt;T&gt;(T?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldNotBeSameAs__1___0___0_System_String_">ObjectAssertExtensions.ShouldNotBeSameAs&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldNotEqual__1___0___0_System_String_">ObjectAssertExtensions.ShouldNotEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldBeOfType__1_System_Object_System_String_">ObjectAssertExtensions.ShouldBeOfType&lt;T&gt;(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldNotBeOfType__1_System_Object_System_String_">ObjectAssertExtensions.ShouldNotBeOfType&lt;T&gt;(object?, string)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_IAsyncProcessRunner.md&amp;value=---%0Auid%3A%20Benday.Common.IAsyncProcessRunner%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/IAsyncProcessRunner.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      Copyright © <a href="https://www.benday.com/">www.benday.com</a> | <a href="mailto:info@benday.com">info@benday.com</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
