@@ -15,7 +15,7 @@ public static class StringAssertExtensions
     /// <param name="message">The message to display if the assertion fails.</param>
     /// <returns>The string for method chaining.</returns>
     /// <exception cref="AssertionException">Thrown when the string is not null or empty.</exception>
-    public static string? ShouldBeNullOrEmpty([NotNull] this string? actual, string message)
+    public static string? ShouldBeNullOrEmpty(this string? actual, string message)
     {
         AssertThatString.IsNullOrEmpty(actual, message);
         return actual;
@@ -41,7 +41,7 @@ public static class StringAssertExtensions
     /// <param name="message">The message to display if the assertion fails.</param>
     /// <returns>The string for method chaining.</returns>
     /// <exception cref="AssertionException">Thrown when the string is not null or whitespace.</exception>
-    public static string? ShouldBeNullOrWhiteSpace([NotNull] this string? actual, string message)
+    public static string? ShouldBeNullOrWhiteSpace(this string? actual, string message)
     {
         AssertThatString.IsNullOrWhiteSpace(actual, message);
         return actual;

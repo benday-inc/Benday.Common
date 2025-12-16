@@ -1,22 +1,24 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TheVersion>2.1</TheVersion>
-    <AssemblyName>Benday.Common.Testing</AssemblyName>
-    <AssemblyVersion>$(TheVersion).0</AssemblyVersion>
-    <Version>$(TheVersion)</Version>
-    <Authors>benday</Authors>
-    <Copyright>2025</Copyright>
-    <Description>A collection of classes to streamline testing with XUnit and Moq.</Description>
-    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <IsPackable>true</IsPackable>
-    <Nullable>enable</Nullable>
-    <PackageIcon>bdc_mark_128_128.png</PackageIcon>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageReleaseNotes>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TheVersion>2.2</TheVersion>
+        <AssemblyName>Benday.Common.Testing</AssemblyName>
+        <AssemblyVersion>$(TheVersion).0</AssemblyVersion>
+        <Version>$(TheVersion)</Version>
+        <Authors>benday</Authors>
+        <Copyright>2025</Copyright>
+        <Description>A collection of classes to streamline testing with XUnit and Moq.</Description>
+        <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <IsPackable>true</IsPackable>
+        <Nullable>enable</Nullable>
+        <PackageIcon>bdc_mark_128_128.png</PackageIcon>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageReleaseNotes>            
+v2.2 - Updated dependencies to include netstandard2.1;
 v2.1 - Updated dependencies to .net 10.0;
 v2.0 - Major overhaul of assertion methods so that they following a consistent naming pattern; Added new overloads to existing assertion methods to not require custom messages;
 v1.5 - Added assert utility methods;
@@ -25,30 +27,32 @@ v1.3 - Unpublishing fluent assertions for xUnit from this package...for now;
 v1.2 - Added fluent assertions for xUnit to the package;
 v1.1 - Added base class functionality for reading sample data files during tests; Removed dependency on FluentAssertions;
 v1.0 - Base class for xunit tests; MockUtility for streamlining testing with Moq;
-    </PackageReleaseNotes>
-    <PackageTags>xunit; moq; unit testing;</PackageTags>
-    <RepositoryUrl>https://github.com/benday-inc/Benday.Common.git</RepositoryUrl>
-    <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
-    <Title>Benday.Common.Testing</Title>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.*" />
-    <PackageReference Include="Moq" Version="4.*" />
-    <PackageReference Include="xunit" Version="2.*" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="3.*" />
-    <PackageReference Include="Benday.Common" Version="9.*" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\bdc_mark_128_128.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
-  <!-- <ItemGroup>
+        </PackageReleaseNotes>
+        <PackageTags>xunit; moq; unit testing;</PackageTags>
+        <RepositoryUrl>https://github.com/benday-inc/Benday.Common.git</RepositoryUrl>
+        <TargetFrameworks>net8.0;net9.0;net10.0;netstandard2.1</TargetFrameworks>
+        <Title>Benday.Common.Testing</Title>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Moq"
+                          Version="4.*" />
+        <PackageReference Include="xunit"
+                          Version="2.*" />
+        <PackageReference Include="Benday.Common"
+                          Version="[9.7.0,)" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="..\bdc_mark_128_128.png">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+        <None Include="README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
+    <!-- <ItemGroup>
     <ProjectReference Include="../Benday.Common/Benday.Common.csproj" />
   </ItemGroup> -->
 </Project>

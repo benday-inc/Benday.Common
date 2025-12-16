@@ -290,7 +290,7 @@ public class ObjectAssertExtensionsFixture : TestClassBase
     public void ShouldThrow_WithNoException_Throws()
     {
         // Arrange
-        Action action = () => { var x = 1 + 1; };
+        Action action = () => { _ = 1 + 1; };
 
         // Act & Assert
         var ex = Assert.Throws<AssertionException>(() =>
@@ -320,7 +320,7 @@ public class ObjectAssertExtensionsFixture : TestClassBase
     public void ShouldNotThrow_WithNoException_ReturnsAction()
     {
         // Arrange
-        Action action = () => { var x = 1 + 1; };
+        Action action = () => { _ = 1 + 1; };
 
         // Act
         var result = action.ShouldNotThrow("Should not throw");

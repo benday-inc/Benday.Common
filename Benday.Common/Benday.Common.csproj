@@ -1,20 +1,21 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TheVersion>9.6.0</TheVersion>
-    <AssemblyVersion>$(TheVersion).0</AssemblyVersion>
-    <Version>$(VersionPrefix)$(TheVersion)</Version>
-    <Authors>benday</Authors>
-    <Copyright>2025</Copyright>
-    <Description>A collection of classes for supporting the searching, paging, domain model pattern, and other miscellaneous stuff in .NET Core.</Description>
-    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <IsPackable>true</IsPackable>
-    <Nullable>enable</Nullable>
-    <PackageIcon>bdc_mark_128_128.png</PackageIcon>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageReleaseNotes>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TheVersion>9.7.0</TheVersion>
+        <AssemblyVersion>$(TheVersion).0</AssemblyVersion>
+        <Version>$(VersionPrefix)$(TheVersion)</Version>
+        <Authors>benday</Authors>
+        <Copyright>2025</Copyright>
+        <Description>A collection of classes for supporting the searching, paging, domain model pattern, and other miscellaneous stuff in .NET Core.</Description>
+        <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <IsPackable>true</IsPackable>
+        <Nullable>enable</Nullable>
+        <PackageIcon>bdc_mark_128_128.png</PackageIcon>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageReleaseNotes>            
 v9.7 - Added support for netstandard2.1;
 v9.6 - Modifying process runner to expose the process and optionally kill it; Adding AsyncProcessRunner for running processes asynchronously;
 v9.5 - Updating dependencies to .net 10.0;
@@ -23,26 +24,30 @@ v9.3 - Added ConfigurationExtensionMethods; Added ToStringThrowIfNullOrEmpty() a
 v9.2 - Added ToStringThrowIfNullOrEmpty() to the StringExtensionMethods class.
 v9.1 - Added some additional methods to the StringExtensionMethods class.
 v9.0 - Updating dependencies and adding package target for .net 9.0
-</PackageReleaseNotes>
-    <RepositoryUrl>https://github.com/benday-inc/Benday.Common.git</RepositoryUrl>
-    <TargetFrameworks>net8.0;net9.0;net10.0;netstandard2.1</TargetFrameworks>
-    <LangVersion>latest</LangVersion>
-    <Title>Benday.Common</Title>
-  </PropertyGroup>
-  <ItemGroup>
-    <None Include="..\bdc_mark_128_128.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.*" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.*" />
-    <PackageReference Include="System.ComponentModel.Annotations" Version="5.*" />
-    <PackageReference Include="System.Text.Json" Version="10.*" />
-  </ItemGroup>
+        </PackageReleaseNotes>
+        <RepositoryUrl>https://github.com/benday-inc/Benday.Common.git</RepositoryUrl>
+        <TargetFrameworks>net8.0;net9.0;net10.0;netstandard2.1</TargetFrameworks>
+        <LangVersion>latest</LangVersion>
+        <Title>Benday.Common</Title>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Include="..\bdc_mark_128_128.png">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+        <None Include="README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions"
+                          Version="10.*" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions"
+                          Version="10.*" />
+        <PackageReference Include="System.ComponentModel.Annotations"
+                          Version="5.*" />
+        <PackageReference Include="System.Text.Json"
+                          Version="10.*" />
+    </ItemGroup>
 </Project>

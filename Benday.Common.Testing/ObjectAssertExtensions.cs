@@ -45,7 +45,7 @@ public static class ObjectAssertExtensions
     /// <param name="message">The message to display if the assertion fails.</param>
     /// <returns>The actual object for method chaining.</returns>
     /// <exception cref="AssertionException">Thrown when the object is not null.</exception>
-    public static T? ShouldBeNull<T>([NotNull] this T? actual, string message) where T : class
+    public static T? ShouldBeNull<T>(this T? actual, string message) where T : class
     {
         AssertThat.IsNull(actual, message);
         return actual;

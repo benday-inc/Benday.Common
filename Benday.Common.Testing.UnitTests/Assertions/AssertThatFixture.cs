@@ -99,7 +99,7 @@ public class AssertThatFixture : TestClassBase
         AssertThat.AreEqual(5, 5, "Numbers are equal");
         AssertThat.AreEqual("test", "test", "Strings are equal");
         AssertThat.AreEqual(5, 5); // Without message
-        AssertThat.AreEqual<object>(null, null, "Both null");
+        AssertThat.AreEqual<object?>(null, null, "Both null");
     }
 
     [Fact]
@@ -148,7 +148,7 @@ public class AssertThatFixture : TestClassBase
         AssertThat.AreNotEqual(5, 10, "Numbers are different");
         AssertThat.AreNotEqual("test", "different", "Strings are different");
         AssertThat.AreNotEqual(5, 10); // Without message
-        AssertThat.AreNotEqual<string>("test", null, "One is null");
+        AssertThat.AreNotEqual<string?>("test", null, "One is null");
     }
 
     [Fact]
@@ -450,8 +450,8 @@ public class AssertThatFixture : TestClassBase
     public void DoesNotThrow_WithNoException_DoesNotThrow()
     {
         // Act & Assert - Should not throw
-        AssertThat.DoesNotThrow(() => { var x = 1 + 1; }, "No exception");
-        AssertThat.DoesNotThrow(() => { var x = "test"; }); // Without message
+        AssertThat.DoesNotThrow(() => { _ = 1 + 1; }, "No exception");
+        AssertThat.DoesNotThrow(() => { _ = "test"; }); // Without message
     }
 
     [Fact]
