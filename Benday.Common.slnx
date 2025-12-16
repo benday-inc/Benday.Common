@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path="copy-docfx-site-to-docs.sh" />
+    <File Path="generate-docfx-docs.sh" />
+    <File Path="README.md" />
+    <File Path="regenerate-and-copy-docs.ps1" />
+  </Folder>
+  <Project Path="Benday.Common.Testing.UnitTests/Benday.Common.Testing.UnitTests.csproj" />
+  <Project Path="Benday.Common.Testing/Benday.Common.Testing.csproj" />
+  <Project Path="Benday.Common.UnitTests/Benday.Common.UnitTests.csproj" />
+  <Project Path="Benday.Common/Benday.Common.csproj" />
+  <Properties Name="ExtensibilityGlobals" Scope="PostLoad">
+    <Property Name="FileExplorer" />
+  </Properties>
+</Solution>
