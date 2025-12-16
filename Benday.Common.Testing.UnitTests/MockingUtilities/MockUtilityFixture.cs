@@ -1,13 +1,7 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Reflection;
 
 using Benday.Common.Testing;
-
-using Castle.DynamicProxy;
-
-
-using FluentAssertions;
-
 
 using Microsoft.Extensions.Logging;
 
@@ -29,9 +23,9 @@ public class MockUtilityFixture : TestClassBase
     {
         var result = MockUtility.CreateInstance<ClassWithDefaultConstructor>();
 
-        result.Should().NotBeNull();
-        result.Mocks.Count.Should().Be(0, "no mocks should be created for this instance");
-        result.Instance.Should().NotBeNull("Instance was null");
+        result.ShouldNotBeNull("Result should not be null");
+        result.Mocks.Count.ShouldEqual(0, "no mocks should be created for this instance");
+        result.Instance.ShouldNotBeNull("Instance was null");
     }
 
     [Fact]
@@ -39,9 +33,9 @@ public class MockUtilityFixture : TestClassBase
     {
         var result = MockUtility.CreateInstance<ClassWithEmptyConstructor>();
 
-        result.Should().NotBeNull();
-        result.Mocks.Count.Should().Be(0, "no mocks should be created for this instance");
-        result.Instance.Should().NotBeNull("Instance was null");
+        result.ShouldNotBeNull("Result should not be null");
+        result.Mocks.Count.ShouldEqual(0, "no mocks should be created for this instance");
+        result.Instance.ShouldNotBeNull("Instance was null");
     }
 
     [Fact]
@@ -49,15 +43,15 @@ public class MockUtilityFixture : TestClassBase
     {
         var result = MockUtility.CreateInstance<ClassWithOneDependency>();
 
-        result.Should().NotBeNull();
-        result.Mocks.Count.Should().Be(1, "a mock should be created for this instance");
-        result.Instance.Should().NotBeNull("Instance was null");
+        result.ShouldNotBeNull("Result should not be null");
+        result.Mocks.Count.ShouldEqual(1, "a mock should be created for this instance");
+        result.Instance.ShouldNotBeNull("Instance was null");
 
         var mock0 = result.Mocks.FirstOrDefault();
 
-        mock0.Should().NotBeNull();
-        result.Instance.Repository.Should().BeSameAs(mock0.Value.Object, "Values didn't match");
-        mock0.Key.Should().Be(typeof(ISampleRepository), "Key didn't match");
+        mock0.Key.ShouldNotBeNull("mock0.Key should not be null");
+        result.Instance.Repository.ShouldBeSameAs(mock0.Value.Object, "Values didn't match");
+        mock0.Key.ShouldEqual(typeof(ISampleRepository), "Key didn't match");
     }
 
     [Fact]
@@ -65,21 +59,21 @@ public class MockUtilityFixture : TestClassBase
     {
         var result = MockUtility.CreateInstance<ClassWithMultipleDependencies>();
 
-        result.Should().NotBeNull();
-        result.Mocks.Count.Should().Be(2, "mocks should be created for this instance");
-        result.Instance.Should().NotBeNull("Instance was null");
+        result.ShouldNotBeNull("Result should not be null");
+        result.Mocks.Count.ShouldEqual(2, "mocks should be created for this instance");
+        result.Instance.ShouldNotBeNull("Instance was null");
 
         var mock0 = result.Mocks.FirstOrDefault();
         var mock1 = result.Mocks.LastOrDefault();
 
-        mock0.Should().NotBeNull();
-        mock1.Should().NotBeNull();
+        mock0.Key.ShouldNotBeNull("mock0.Key should not be null");
+        mock1.Key.ShouldNotBeNull("mock1.Key should not be null");
 
-        result.Instance.Repository.Should().BeSameAs(mock0.Value.Object, "Values didn't match for item 0");
-        mock0.Key.Should().Be(typeof(ISampleRepository), "Key didn't match for item 0");
+        result.Instance.Repository.ShouldBeSameAs(mock0.Value.Object, "Values didn't match for item 0");
+        mock0.Key.ShouldEqual(typeof(ISampleRepository), "Key didn't match for item 0");
 
-        result.Instance.Logger.Should().BeSameAs(mock1.Value.Object, "Values didn't match for item 1");
-        mock1.Key.Should().Be(typeof(ILogger<ClassWithMultipleDependencies>), "Key didn't match for item 1");
+        result.Instance.Logger.ShouldBeSameAs(mock1.Value.Object, "Values didn't match for item 1");
+        mock1.Key.ShouldEqual(typeof(ILogger<ClassWithMultipleDependencies>), "Key didn't match for item 1");
     }
 
     [Fact]
@@ -87,14 +81,14 @@ public class MockUtilityFixture : TestClassBase
     {
         var result = MockUtility.CreateInstance<ClassWithMultipleDependencies>();
 
-        result.Should().NotBeNull();
-        result.Mocks.Count.Should().Be(2, "mocks should be created for this instance");
+        result.ShouldNotBeNull("Result should not be null");
+        result.Mocks.Count.ShouldEqual(2, "mocks should be created for this instance");
 
         var mockOfSlideDataRepository = result.GetMock<ISampleRepository>();
-        mockOfSlideDataRepository.Should().NotBeNull();
+        mockOfSlideDataRepository.ShouldNotBeNull("mockOfSlideDataRepository should not be null");
 
         var mockOfLogger = result.GetMock<ILogger<ClassWithMultipleDependencies>>();
-        mockOfLogger.Should().NotBeNull();
+        mockOfLogger.ShouldNotBeNull("mockOfLogger should not be null");
     }
 
     [Fact]
@@ -102,10 +96,10 @@ public class MockUtilityFixture : TestClassBase
     {
         var result = MockUtility.CreateInstance<ClassWithDefaultConstructor>();
 
-        result.Should().NotBeNull();
+        result.ShouldNotBeNull("Result should not be null");
 
         var mockOfLogger = result.GetMock<ILogger<ClassWithMultipleDependencies>>();
-        mockOfLogger.Should().BeNull();
+        mockOfLogger.ShouldBeNull("mockOfLogger should be null");
     }
 
     [Fact]
@@ -113,20 +107,20 @@ public class MockUtilityFixture : TestClassBase
     {
         var result = MockUtility.CreateInstance<ClassWithOneDependencyAndValidationLogicInTheConstructor>();
 
-        result.Should().NotBeNull();
-        result.Mocks.Count.Should().Be(1, "a mock should be created for this instance");
+        result.ShouldNotBeNull("Result should not be null");
+        result.Mocks.Count.ShouldEqual(1, "a mock should be created for this instance");
 
-        result.IsInstanceCreated.Should().BeFalse("Instance should not be created yet");
+        result.IsInstanceCreated.ShouldBeFalse("Instance should not be created yet");
 
         var mock = result.GetRequiredMock<ISampleConfigurationInfo>();
 
         mock.SetupGet(x => x.ConfigurationValue).Returns("Test Value");
 
-        result.IsInstanceCreated.Should().BeFalse("Instance should still not be created yet");
+        result.IsInstanceCreated.ShouldBeFalse("Instance should still not be created yet");
 
-        result.Instance.Should().NotBeNull("Instance was null");
+        result.Instance.ShouldNotBeNull("Instance was null");
 
-        result.IsInstanceCreated.Should().BeTrue("Instance should be created");
+        result.IsInstanceCreated.ShouldBeTrue("Instance should be created");
     }
 
     [Fact]
@@ -134,10 +128,10 @@ public class MockUtilityFixture : TestClassBase
     {
         var result = MockUtility.CreateInstance<ClassWithOneDependencyAndValidationLogicInTheConstructor>();
 
-        result.Should().NotBeNull();
-        result.Mocks.Count.Should().Be(1, "a mock should be created for this instance");
+        result.ShouldNotBeNull("Result should not be null");
+        result.Mocks.Count.ShouldEqual(1, "a mock should be created for this instance");
 
-        result.IsInstanceCreated.Should().BeFalse("Instance should not be created yet");
+        result.IsInstanceCreated.ShouldBeFalse("Instance should not be created yet");
 
         var ex = Assert.Throws<TargetInvocationException>(() =>
         {
@@ -146,7 +140,7 @@ public class MockUtilityFixture : TestClassBase
             var instance = result.Instance;
         });
 
-        ex.InnerException.Should().BeOfType<ArgumentException>();
-        ex.InnerException!.Message.Should().Contain("Configuration value cannot be null or empty.");
+        ex.InnerException.ShouldBeOfType<ArgumentException>("InnerException should be ArgumentException");
+        ex.InnerException!.Message.ShouldContain("Configuration value cannot be null or empty.", "Exception message should contain expected text");
     }
 }

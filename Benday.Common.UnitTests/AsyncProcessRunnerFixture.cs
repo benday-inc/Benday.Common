@@ -5,8 +5,6 @@ using System.Threading.Tasks;
 
 using Benday.Common.Testing;
 
-using FluentAssertions;
-
 using Xunit;
 using Xunit.Abstractions;
 
@@ -34,8 +32,8 @@ public class AsyncProcessRunnerFixture : TestClassBase
         var sut = new AsyncProcessRunner(startInfo);
 
         // assert
-        sut.StartInfo.Should().NotBeNull("StartInfo should not be null.");
-        sut.StartInfo.FileName.Should().Be("echo", "FileName was wrong.");
+        sut.StartInfo.ShouldNotBeNull("StartInfo should not be null.");
+        sut.StartInfo.FileName.ShouldEqual("echo", "FileName was wrong.");
     }
 
     [Fact]
@@ -48,10 +46,10 @@ public class AsyncProcessRunnerFixture : TestClassBase
         var sut = new AsyncProcessRunner(startInfo);
 
         // assert
-        sut.StartInfo.RedirectStandardOutput.Should().BeTrue("RedirectStandardOutput should be true.");
-        sut.StartInfo.RedirectStandardError.Should().BeTrue("RedirectStandardError should be true.");
-        sut.StartInfo.UseShellExecute.Should().BeFalse("UseShellExecute should be false.");
-        sut.StartInfo.CreateNoWindow.Should().BeTrue("CreateNoWindow should be true.");
+        sut.StartInfo.RedirectStandardOutput.ShouldBeTrue("RedirectStandardOutput should be true.");
+        sut.StartInfo.RedirectStandardError.ShouldBeTrue("RedirectStandardError should be true.");
+        sut.StartInfo.UseShellExecute.ShouldBeFalse("UseShellExecute should be false.");
+        sut.StartInfo.CreateNoWindow.ShouldBeTrue("CreateNoWindow should be true.");
     }
 
     [Fact]
@@ -65,7 +63,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
         var actual = sut.StartupTimeout;
 
         // assert
-        actual.Should().Be(expectedTimeout, "Default StartupTimeout should be 5000ms.");
+        actual.ShouldEqual(expectedTimeout, "Default StartupTimeout should be 5000ms.");
     }
 
     [Fact]
@@ -79,7 +77,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
         var actual = sut.RunTimeout;
 
         // assert
-        actual.Should().Be(expectedTimeout, "Default RunTimeout should be 0 (no timeout).");
+        actual.ShouldEqual(expectedTimeout, "Default RunTimeout should be 0 (no timeout).");
     }
 
     [Fact]
@@ -89,9 +87,9 @@ public class AsyncProcessRunnerFixture : TestClassBase
         var sut = CreateSystemUnderTest("echo");
 
         // act & assert
-        sut.IsRunning.Should().BeFalse("IsRunning should be false before starting.");
-        sut.HasStarted.Should().BeFalse("HasStarted should be false before starting.");
-        sut.HasCompleted.Should().BeFalse("HasCompleted should be false before starting.");
+        sut.IsRunning.ShouldBeFalse("IsRunning should be false before starting.");
+        sut.HasStarted.ShouldBeFalse("HasStarted should be false before starting.");
+        sut.HasCompleted.ShouldBeFalse("HasCompleted should be false before starting.");
     }
 
     [Fact]
@@ -101,8 +99,8 @@ public class AsyncProcessRunnerFixture : TestClassBase
         var sut = CreateSystemUnderTest("echo");
 
         // act & assert
-        sut.ProcessId.Should().BeNull("ProcessId should be null before starting.");
-        sut.UnderlyingProcess.Should().BeNull("UnderlyingProcess should be null before starting.");
+        sut.ProcessId.HasValue.ShouldBeFalse("ProcessId should be null before starting.");
+        sut.UnderlyingProcess.ShouldBeNull("UnderlyingProcess should be null before starting.");
     }
 
     [Fact]
@@ -115,10 +113,10 @@ public class AsyncProcessRunnerFixture : TestClassBase
         await sut.StartAsync();
 
         // assert
-        sut.HasStarted.Should().BeTrue("HasStarted should be true after StartAsync.");
-        sut.IsRunning.Should().BeTrue("IsRunning should be true while process is running.");
-        sut.ProcessId.Should().NotBeNull("ProcessId should not be null after starting.");
-        sut.UnderlyingProcess.Should().NotBeNull("UnderlyingProcess should not be null after starting.");
+        sut.HasStarted.ShouldBeTrue("HasStarted should be true after StartAsync.");
+        sut.IsRunning.ShouldBeTrue("IsRunning should be true while process is running.");
+        sut.ProcessId.HasValue.ShouldBeTrue("ProcessId should not be null after starting.");
+        sut.UnderlyingProcess.ShouldNotBeNull("UnderlyingProcess should not be null after starting.");
     }
 
     [Fact]
@@ -129,8 +127,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
         await sut.StartAsync();
 
         // act & assert
-        var action = async () => await sut.StartAsync();
-        await action.Should().ThrowAsync<InvalidOperationException>("Should throw when StartAsync() is called twice.");
+        await Assert.ThrowsAsync<InvalidOperationException>(async () => await sut.StartAsync());
     }
 
     [Fact]
@@ -144,9 +141,9 @@ public class AsyncProcessRunnerFixture : TestClassBase
         await sut.WaitForExitAsync();
 
         // assert
-        sut.IsRunning.Should().BeFalse("IsRunning should be false after process completes.");
-        sut.HasCompleted.Should().BeTrue("HasCompleted should be true after process completes.");
-        sut.IsSuccess.Should().BeTrue("IsSuccess should be true for successful command.");
+        sut.IsRunning.ShouldBeFalse("IsRunning should be false after process completes.");
+        sut.HasCompleted.ShouldBeTrue("HasCompleted should be true after process completes.");
+        sut.IsSuccess.ShouldBeTrue("IsSuccess should be true for successful command.");
     }
 
     [Fact]
@@ -156,8 +153,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
         using var sut = CreateSystemUnderTest("echo", "hello");
 
         // act & assert
-        var action = async () => await sut.WaitForExitAsync();
-        await action.Should().ThrowAsync<InvalidOperationException>("Should throw when WaitForExitAsync() is called before StartAsync().");
+        await Assert.ThrowsAsync<InvalidOperationException>(async () => await sut.WaitForExitAsync());
     }
 
     [Fact]
@@ -174,7 +170,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
         await Task.Delay(100);
 
         // assert
-        sut.OutputText.Should().Contain("hello async world", "OutputText should contain the echoed text.");
+        sut.OutputText.ShouldContain("hello async world", "OutputText should contain the echoed text.");
     }
 
     [Fact]
@@ -188,7 +184,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
         await sut.WaitForExitAsync();
 
         // assert
-        sut.ExitCode.Should().Be(0, "ExitCode should be 0 for successful command.");
+        sut.ExitCode.ShouldEqual(0, "ExitCode should be 0 for successful command.");
     }
 
     [Fact]
@@ -202,9 +198,9 @@ public class AsyncProcessRunnerFixture : TestClassBase
         await sut.WaitForExitAsync();
 
         // assert
-        sut.IsError.Should().BeTrue("IsError should be true for failing command.");
-        sut.IsSuccess.Should().BeFalse("IsSuccess should be false for failing command.");
-        sut.ExitCode.Should().NotBe(0, "ExitCode should not be 0 for failing command.");
+        sut.IsError.ShouldBeTrue("IsError should be true for failing command.");
+        sut.IsSuccess.ShouldBeFalse("IsSuccess should be false for failing command.");
+        sut.ExitCode.ShouldNotEqual(0, "ExitCode should not be 0 for failing command.");
     }
 
     [Fact]
@@ -213,14 +209,14 @@ public class AsyncProcessRunnerFixture : TestClassBase
         // arrange
         using var sut = CreateSystemUnderTest("sleep", "30");
         await sut.StartAsync();
-        sut.IsRunning.Should().BeTrue("Process should be running.");
+        sut.IsRunning.ShouldBeTrue("Process should be running.");
 
         // act
         sut.Kill();
         await Task.Delay(500); // Give it time to clean up
 
         // assert
-        sut.IsRunning.Should().BeFalse("IsRunning should be false after Kill().");
+        sut.IsRunning.ShouldBeFalse("IsRunning should be false after Kill().");
     }
 
     [Fact]
@@ -235,8 +231,8 @@ public class AsyncProcessRunnerFixture : TestClassBase
         await sut.WaitForExitAsync();
 
         // assert
-        sut.IsTimeout.Should().BeTrue("IsTimeout should be true when process times out.");
-        sut.IsRunning.Should().BeFalse("IsRunning should be false after timeout.");
+        sut.IsTimeout.ShouldBeTrue("IsTimeout should be true when process times out.");
+        sut.IsRunning.ShouldBeFalse("IsRunning should be false after timeout.");
     }
 
     [Fact]
@@ -251,8 +247,8 @@ public class AsyncProcessRunnerFixture : TestClassBase
         var outputWhileRunning = sut.OutputText;
 
         // assert
-        sut.IsRunning.Should().BeTrue("Process should still be running.");
-        outputWhileRunning.Should().Contain("start", "Should be able to read output while process is running.");
+        sut.IsRunning.ShouldBeTrue("Process should still be running.");
+        outputWhileRunning.ShouldContain("start", "Should be able to read output while process is running.");
 
         // cleanup
         sut.Kill();
@@ -265,7 +261,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
         var sut = CreateSystemUnderTest("sleep", "30");
         await sut.StartAsync();
         var processId = sut.ProcessId;
-        processId.Should().NotBeNull("ProcessId should be set.");
+        processId.HasValue.ShouldBeTrue("ProcessId should be set.");
 
         // act
         sut.Dispose();
@@ -274,8 +270,8 @@ public class AsyncProcessRunnerFixture : TestClassBase
         // assert - process should no longer be running
         try
         {
-            var process = Process.GetProcessById(processId!.Value);
-            process.HasExited.Should().BeTrue("Process should have exited after Dispose().");
+            var process = Process.GetProcessById(processId.Value);
+            process.HasExited.ShouldBeTrue("Process should have exited after Dispose().");
         }
         catch (ArgumentException)
         {
@@ -290,7 +286,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
         using var sut = CreateSystemUnderTest("echo", "hello");
 
         // act & assert
-        sut.Should().BeAssignableTo<IAsyncProcessRunner>("AsyncProcessRunner should implement IAsyncProcessRunner.");
+        Assert.IsAssignableFrom<IAsyncProcessRunner>(sut);
     }
 
     [Fact]
@@ -300,7 +296,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
         using var sut = CreateSystemUnderTest("echo", "hello");
 
         // act & assert
-        sut.Should().BeAssignableTo<IDisposable>("AsyncProcessRunner should implement IDisposable.");
+        Assert.IsAssignableFrom<IDisposable>(sut);
     }
 
     [Fact]
@@ -312,8 +308,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
         await sut.StartAsync();
 
         // act & assert
-        var action = async () => await sut.WaitForExitAsync(cts.Token);
-        await action.Should().ThrowAsync<TaskCanceledException>("Should throw when cancellation is requested.");
+        await Assert.ThrowsAsync<TaskCanceledException>(async () => await sut.WaitForExitAsync(cts.Token));
 
         // cleanup
         sut.Kill();

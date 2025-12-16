@@ -3,8 +3,6 @@ using System.Diagnostics;
 
 using Benday.Common.Testing;
 
-using FluentAssertions;
-
 using Xunit;
 using Xunit.Abstractions;
 
@@ -32,8 +30,8 @@ public class ProcessRunnerFixture : TestClassBase
         var sut = new ProcessRunner(startInfo);
 
         // assert
-        sut.StartInfo.Should().NotBeNull("StartInfo should not be null.");
-        sut.StartInfo.FileName.Should().Be("echo", "FileName was wrong.");
+        sut.StartInfo.ShouldNotBeNull("StartInfo should not be null.");
+        sut.StartInfo.FileName.ShouldEqual("echo", "FileName was wrong.");
     }
 
     [Fact]
@@ -46,10 +44,10 @@ public class ProcessRunnerFixture : TestClassBase
         var sut = new ProcessRunner(startInfo);
 
         // assert
-        sut.StartInfo.RedirectStandardOutput.Should().BeTrue("RedirectStandardOutput should be true.");
-        sut.StartInfo.RedirectStandardError.Should().BeTrue("RedirectStandardError should be true.");
-        sut.StartInfo.UseShellExecute.Should().BeFalse("UseShellExecute should be false.");
-        sut.StartInfo.CreateNoWindow.Should().BeTrue("CreateNoWindow should be true.");
+        sut.StartInfo.RedirectStandardOutput.ShouldBeTrue("RedirectStandardOutput should be true.");
+        sut.StartInfo.RedirectStandardError.ShouldBeTrue("RedirectStandardError should be true.");
+        sut.StartInfo.UseShellExecute.ShouldBeFalse("UseShellExecute should be false.");
+        sut.StartInfo.CreateNoWindow.ShouldBeTrue("CreateNoWindow should be true.");
     }
 
     [Fact]
@@ -63,7 +61,7 @@ public class ProcessRunnerFixture : TestClassBase
         var actual = sut.Timeout;
 
         // assert
-        actual.Should().Be(expectedTimeout, "Default timeout should be 10000ms.");
+        actual.ShouldEqual(expectedTimeout, "Default timeout should be 10000ms.");
     }
 
     [Fact]
@@ -76,11 +74,11 @@ public class ProcessRunnerFixture : TestClassBase
         var result = sut.Run();
 
         // assert
-        sut.IsSuccess.Should().BeTrue("IsSuccess should be true for successful command.");
-        sut.IsError.Should().BeFalse("IsError should be false for successful command.");
-        sut.HasCompleted.Should().BeTrue("HasCompleted should be true.");
-        result.Should().NotBeNull("Result should not be null.");
-        result.IsSuccess.Should().BeTrue("Result.IsSuccess should be true.");
+        sut.IsSuccess.ShouldBeTrue("IsSuccess should be true for successful command.");
+        sut.IsError.ShouldBeFalse("IsError should be false for successful command.");
+        sut.HasCompleted.ShouldBeTrue("HasCompleted should be true.");
+        result.ShouldNotBeNull("Result should not be null.");
+        result.IsSuccess.ShouldBeTrue("Result.IsSuccess should be true.");
     }
 
     [Fact]
@@ -93,8 +91,8 @@ public class ProcessRunnerFixture : TestClassBase
         var result = sut.Run();
 
         // assert
-        sut.OutputText.Should().Contain("hello world", "OutputText should contain the echoed text.");
-        result.OutputText.Should().Contain("hello world", "Result.OutputText should contain the echoed text.");
+        sut.OutputText.ShouldContain("hello world", "OutputText should contain the echoed text.");
+        result.OutputText.ShouldContain("hello world", "Result.OutputText should contain the echoed text.");
     }
 
     [Fact]
@@ -107,8 +105,8 @@ public class ProcessRunnerFixture : TestClassBase
         var result = sut.Run();
 
         // assert
-        sut.ExitCode.Should().Be(0, "ExitCode should be 0 for successful command.");
-        result.ExitCode.Should().Be(0, "Result.ExitCode should be 0.");
+        sut.ExitCode.ShouldEqual(0, "ExitCode should be 0 for successful command.");
+        result.ExitCode.ShouldEqual(0, "Result.ExitCode should be 0.");
     }
 
     [Fact]
@@ -121,10 +119,10 @@ public class ProcessRunnerFixture : TestClassBase
         var result = sut.Run();
 
         // assert
-        sut.IsError.Should().BeTrue("IsError should be true for failing command.");
-        sut.IsSuccess.Should().BeFalse("IsSuccess should be false for failing command.");
-        sut.HasCompleted.Should().BeTrue("HasCompleted should be true.");
-        result.IsError.Should().BeTrue("Result.IsError should be true.");
+        sut.IsError.ShouldBeTrue("IsError should be true for failing command.");
+        sut.IsSuccess.ShouldBeFalse("IsSuccess should be false for failing command.");
+        sut.HasCompleted.ShouldBeTrue("HasCompleted should be true.");
+        result.IsError.ShouldBeTrue("Result.IsError should be true.");
     }
 
     [Fact]
@@ -137,8 +135,8 @@ public class ProcessRunnerFixture : TestClassBase
         var result = sut.Run();
 
         // assert
-        sut.ExitCode.Should().NotBe(0, "ExitCode should not be 0 for failing command.");
-        result.ExitCode.Should().NotBe(0, "Result.ExitCode should not be 0.");
+        sut.ExitCode.ShouldNotEqual(0, "ExitCode should not be 0 for failing command.");
+        result.ExitCode.ShouldNotEqual(0, "Result.ExitCode should not be 0.");
     }
 
     [Fact]
@@ -149,8 +147,7 @@ public class ProcessRunnerFixture : TestClassBase
         sut.Run();
 
         // act & assert
-        var action = () => sut.Run();
-        action.Should().Throw<InvalidOperationException>("Should throw when Run() is called twice.");
+        Assert.Throws<InvalidOperationException>(() => sut.Run());
     }
 
     [Fact]
@@ -161,9 +158,8 @@ public class ProcessRunnerFixture : TestClassBase
         sut.Timeout = 100; // 100ms timeout
 
         // act & assert
-        var action = () => sut.Run();
-        action.Should().Throw<TimeoutException>("Should throw TimeoutException when process times out.");
-        sut.IsTimeout.Should().BeTrue("IsTimeout should be true after timeout.");
+        Assert.Throws<TimeoutException>(() => sut.Run());
+        sut.IsTimeout.ShouldBeTrue("IsTimeout should be true after timeout.");
     }
 
     [Fact]
@@ -173,7 +169,7 @@ public class ProcessRunnerFixture : TestClassBase
         var sut = CreateSystemUnderTest("echo", "hello");
 
         // act & assert
-        sut.Should().BeAssignableTo<IProcessRunner>("ProcessRunner should implement IProcessRunner.");
+        Assert.IsAssignableFrom<IProcessRunner>(sut);
     }
 
     [Fact]
@@ -186,6 +182,6 @@ public class ProcessRunnerFixture : TestClassBase
         var result = sut.Run();
 
         // assert
-        result.Should().BeAssignableTo<IProcessRunnerResult>("Run() should return IProcessRunnerResult.");
+        Assert.IsAssignableFrom<IProcessRunnerResult>(result);
     }
 }

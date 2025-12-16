@@ -1,9 +1,7 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 
 using Benday.Common.Testing;
-
-using FluentAssertions;
 
 using Xunit;
 using Xunit.Abstractions;
@@ -34,7 +32,7 @@ public class PageableResultsFixture : TestClassBase
         var results = SystemUnderTest.Results;
 
         // assert
-        results.Should().NotBeNull("Results should not be null.");
+        results.ShouldNotBeNull("Results should not be null.");
     }
 
     [Fact]
@@ -44,7 +42,7 @@ public class PageableResultsFixture : TestClassBase
         var totalCount = SystemUnderTest.TotalCount;
 
         // assert
-        totalCount.Should().Be(0, "TotalCount should be zero.");
+        totalCount.ShouldEqual(0, "TotalCount should be zero.");
     }
 
     [Fact]
@@ -57,7 +55,7 @@ public class PageableResultsFixture : TestClassBase
         var actual = SystemUnderTest.ItemsPerPage;
 
         // assert
-        actual.Should().Be(expected, "ItemsPerPage was wrong.");
+        actual.ShouldEqual(expected, "ItemsPerPage was wrong.");
     }
 
     [Fact]
@@ -71,7 +69,7 @@ public class PageableResultsFixture : TestClassBase
         var actual = SystemUnderTest.TotalCount;
 
         // assert
-        actual.Should().Be(expectedNumberOfRecords, "TotalCount was wrong.");
+        actual.ShouldEqual(expectedNumberOfRecords, "TotalCount was wrong.");
     }
 
     [Fact]
@@ -87,7 +85,7 @@ public class PageableResultsFixture : TestClassBase
         var actual = SystemUnderTest.PageCount;
 
         // assert
-        actual.Should().Be(expectedPageCount, "PageCount was wrong.");
+        actual.ShouldEqual(expectedPageCount, "PageCount was wrong.");
     }
 
     [Fact]
@@ -103,7 +101,7 @@ public class PageableResultsFixture : TestClassBase
         var actual = SystemUnderTest.PageCount;
 
         // assert
-        actual.Should().Be(expectedPageCount, "PageCount was wrong.");
+        actual.ShouldEqual(expectedPageCount, "PageCount was wrong.");
     }
 
     [Fact]
@@ -119,7 +117,7 @@ public class PageableResultsFixture : TestClassBase
         var actual = SystemUnderTest.PageCount;
 
         // assert
-        actual.Should().Be(expectedPageCount, "PageCount was wrong.");
+        actual.ShouldEqual(expectedPageCount, "PageCount was wrong.");
     }
 
     [Fact]
@@ -135,7 +133,7 @@ public class PageableResultsFixture : TestClassBase
         var actual = SystemUnderTest.PageCount;
 
         // assert
-        actual.Should().Be(expectedPageCount, "PageCount was wrong.");
+        actual.ShouldEqual(expectedPageCount, "PageCount was wrong.");
     }
 
     [Fact]
@@ -151,7 +149,7 @@ public class PageableResultsFixture : TestClassBase
         var actual = SystemUnderTest.CurrentPage;
 
         // assert
-        actual.Should().Be(expectedCurrentPage, "CurrentPage was wrong.");
+        actual.ShouldEqual(expectedCurrentPage, "CurrentPage was wrong.");
     }
 
     [Fact]
@@ -167,7 +165,7 @@ public class PageableResultsFixture : TestClassBase
         SystemUnderTest.CurrentPage = 300;
 
         // assert
-        SystemUnderTest.CurrentPage.Should().Be(expectedCurrentPage, "CurrentPage was wrong.");
+        SystemUnderTest.CurrentPage.ShouldEqual(expectedCurrentPage, "CurrentPage was wrong.");
     }
 
     [Fact]
@@ -183,7 +181,7 @@ public class PageableResultsFixture : TestClassBase
         SystemUnderTest.CurrentPage = -300;
 
         // assert
-        SystemUnderTest.CurrentPage.Should().Be(expectedCurrentPage, "CurrentPage was wrong.");
+        SystemUnderTest.CurrentPage.ShouldEqual(expectedCurrentPage, "CurrentPage was wrong.");
     }
 
     [Fact]
@@ -199,7 +197,7 @@ public class PageableResultsFixture : TestClassBase
         SystemUnderTest.CurrentPage = expectedCurrentPage;
 
         // assert
-        SystemUnderTest.CurrentPage.Should().Be(expectedCurrentPage, "CurrentPage was wrong.");
+        SystemUnderTest.CurrentPage.ShouldEqual(expectedCurrentPage, "CurrentPage was wrong.");
     }
 
     [Fact]
@@ -217,8 +215,8 @@ public class PageableResultsFixture : TestClassBase
         var actualPageValues = SystemUnderTest.PageValues;
 
         // assert
-        actualPageValues.Should().BeEquivalentTo(expectedPage1Values, "Page values were wrong.");
-        actualPageValues.Count.Should().Be(expectedItemsPerPage, "Number of values on page was wrong.");
+        actualPageValues.AsEnumerable().ShouldEqual(expectedPage1Values, "Page values were wrong.");
+        actualPageValues.Count.ShouldEqual(expectedItemsPerPage, "Number of values on page was wrong.");
     }
 
     [Fact]
@@ -237,8 +235,8 @@ public class PageableResultsFixture : TestClassBase
         var actualPageValues = SystemUnderTest.PageValues;
 
         // assert
-        actualPageValues.Should().BeEquivalentTo(expectedPage2Values, "Page values were wrong.");
-        actualPageValues.Count.Should().Be(expectedItemsPerPage, "Number of values on page was wrong.");
+        actualPageValues.AsEnumerable().ShouldEqual(expectedPage2Values, "Page values were wrong.");
+        actualPageValues.Count.ShouldEqual(expectedItemsPerPage, "Number of values on page was wrong.");
     }
 
     [Fact]
@@ -257,8 +255,8 @@ public class PageableResultsFixture : TestClassBase
         var actualPageValues = SystemUnderTest.PageValues;
 
         // assert
-        actualPageValues.Should().BeEquivalentTo(expectedPage3Values, "Page values were wrong.");
-        actualPageValues.Count.Should().Be(expectedItemsPerPage, "Number of values on page was wrong.");
+        actualPageValues.AsEnumerable().ShouldEqual(expectedPage3Values, "Page values were wrong.");
+        actualPageValues.Count.ShouldEqual(expectedItemsPerPage, "Number of values on page was wrong.");
     }
 
     [Fact]
@@ -277,8 +275,8 @@ public class PageableResultsFixture : TestClassBase
         var actualPageValues = SystemUnderTest.PageValues;
 
         // assert
-        actualPageValues.Should().BeEquivalentTo(expectedPage3Values, "Page values were wrong.");
-        actualPageValues.Count.Should().Be(5, "Number of values on page was wrong.");
+        actualPageValues.AsEnumerable().ShouldEqual(expectedPage3Values, "Page values were wrong.");
+        actualPageValues.Count.ShouldEqual(5, "Number of values on page was wrong.");
     }
 
     private static List<string> CreateModels(int expectedNumberOfRecords)
