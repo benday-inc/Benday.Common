@@ -267,7 +267,11 @@ namespace Benday.Common
 
             try
             {
+#if NETSTANDARD2_1
+                _process.Kill();
+#else
                 _process.Kill(entireProcessTree);
+#endif
             }
             catch (InvalidOperationException)
             {

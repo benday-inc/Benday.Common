@@ -15,6 +15,7 @@
     <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageReleaseNotes>
+v9.7 - Added support for netstandard2.1;
 v9.6 - Modifying process runner to expose the process and optionally kill it; Adding AsyncProcessRunner for running processes asynchronously;
 v9.5 - Updating dependencies to .net 10.0;
 v9.4 - Added IsNullOrEmpty() to string extension methods; Added compiler hint attributes to indicate when the input strings for IsNullOrEmpty() and IsNullOrWhitespace() are not null;
@@ -24,7 +25,8 @@ v9.1 - Added some additional methods to the StringExtensionMethods class.
 v9.0 - Updating dependencies and adding package target for .net 9.0
 </PackageReleaseNotes>
     <RepositoryUrl>https://github.com/benday-inc/Benday.Common.git</RepositoryUrl>
-    <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
+    <TargetFrameworks>net8.0;net9.0;net10.0;netstandard2.1</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
     <Title>Benday.Common</Title>
   </PropertyGroup>
   <ItemGroup>
