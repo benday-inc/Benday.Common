@@ -6,7 +6,9 @@
         <Version>$(VersionPrefix)$(TheVersion)</Version>
         <Authors>benday</Authors>
         <Copyright>2025</Copyright>
-        <Description>A collection of classes for supporting the searching, paging, domain model pattern, and other miscellaneous stuff in .NET Core.</Description>
+        <Description>A collection of utility classes for .NET including: domain model patterns (identity interfaces, deletable pattern), search and paging infrastructure, JSON reading/editing, process execution, and extension methods for strings and configuration.</Description>
+        <Deterministic>true</Deterministic>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
         <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <IsPackable>true</IsPackable>
@@ -15,6 +17,7 @@
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageTags>dotnet;csharp;utilities;domain-model;search;paging;pagination;json;json-editor;process-runner;string-extensions;configuration;dependency-injection</PackageTags>
         <PackageReleaseNotes>            
 v9.9 - Added JsonEditor and SiblingValueArguments classes in new Benday.Common.Json namespace (merged from Benday.JsonUtilities package);
 v9.8 - Added get non-empty strings method to StringExtensionMethods;
@@ -27,6 +30,7 @@ v9.2 - Added ToStringThrowIfNullOrEmpty() to the StringExtensionMethods class.
 v9.1 - Added some additional methods to the StringExtensionMethods class.
 v9.0 - Updating dependencies and adding package target for .net 9.0
         </PackageReleaseNotes>
+        <RepositoryType>git</RepositoryType>
         <RepositoryUrl>https://github.com/benday-inc/Benday.Common.git</RepositoryUrl>
         <TargetFrameworks>net8.0;net9.0;net10.0;netstandard2.1</TargetFrameworks>
         <LangVersion>latest</LangVersion>
