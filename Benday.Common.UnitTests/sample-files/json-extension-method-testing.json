@@ -1,0 +1,9 @@
+{
+  "top-level-property": "Top Level Value",
+  "object-property": {
+    "nested-property": "Nested Value",
+    "another-object-property": {
+      "deeply-nested-property": 42
+    }
+  }
+}
