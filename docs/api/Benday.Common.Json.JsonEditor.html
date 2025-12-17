@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class JsonEditor </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class JsonEditor ">
+    
+    <meta name="description" content="A utility class for reading and editing JSON documents using path-based navigation.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="navbar-brand">
+                <a href="../">
+                  <img id="logo" src="../logo.png" alt="" alt="asdf" width="50" height="50">
+                </a>
+
+              </div>            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Benday.Common.Json.JsonEditor">
+
+
+
+  <h1 id="Benday_Common_Json_JsonEditor" data-uid="Benday.Common.Json.JsonEditor" class="text-break">Class JsonEditor</h1>
+  <div class="markdown level0 summary"><p>A utility class for reading and editing JSON documents using path-based navigation.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">JsonEditor</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Benday.html">Benday</a>.<a class="xref" href="Benday.Common.html">Common</a>.<a class="xref" href="Benday.Common.Json.html">Json</a></h6>
+  <h6><strong>Assembly</strong>: Benday.Common.dll</h6>
+  <h5 id="Benday_Common_Json_JsonEditor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class JsonEditor</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonEditor__ctor_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonEditor.%23ctor(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonEditor.cs/#L20">View Source</a>
+  </span>
+  <a id="Benday_Common_Json_JsonEditor__ctor_" data-uid="Benday.Common.Json.JsonEditor.#ctor*"></a>
+  <h4 id="Benday_Common_Json_JsonEditor__ctor_System_String_" data-uid="Benday.Common.Json.JsonEditor.#ctor(System.String)">JsonEditor(string)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Benday.Common.Json.JsonEditor.html">JsonEditor</a> class by loading JSON from a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonEditor(string filePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>The path to the JSON file to load.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonEditor__ctor_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonEditor.%23ctor(System.String%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonEditor.cs/#L31">View Source</a>
+  </span>
+  <a id="Benday_Common_Json_JsonEditor__ctor_" data-uid="Benday.Common.Json.JsonEditor.#ctor*"></a>
+  <h4 id="Benday_Common_Json_JsonEditor__ctor_System_String_System_Boolean_" data-uid="Benday.Common.Json.JsonEditor.#ctor(System.String,System.Boolean)">JsonEditor(string, bool)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Benday.Common.Json.JsonEditor.html">JsonEditor</a> class from a JSON string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonEditor(string json, bool loadFromString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">json</span></td>
+        <td><p>The JSON string to parse.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">loadFromString</span></td>
+        <td><p>Must be true. This parameter exists to differentiate from the file path constructor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown when loadFromString is false or JSON cannot be parsed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Thrown when json is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonEditor_GetSiblingValue_Benday_Common_Json_SiblingValueArguments_.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonEditor.GetSiblingValue(Benday.Common.Json.SiblingValueArguments)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonEditor.cs/#L409">View Source</a>
+  </span>
+  <a id="Benday_Common_Json_JsonEditor_GetSiblingValue_" data-uid="Benday.Common.Json.JsonEditor.GetSiblingValue*"></a>
+  <h4 id="Benday_Common_Json_JsonEditor_GetSiblingValue_Benday_Common_Json_SiblingValueArguments_" data-uid="Benday.Common.Json.JsonEditor.GetSiblingValue(Benday.Common.Json.SiblingValueArguments)">GetSiblingValue(SiblingValueArguments)</h4>
+  <div class="markdown level1 summary"><p>Gets a sibling value from a JSON array based on a search key/value pair.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GetSiblingValue(SiblingValueArguments args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Json.SiblingValueArguments.html">SiblingValueArguments</a></td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments specifying the search criteria and desired value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The sibling value as a string, or null if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonEditor_GetValue_System_String___.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonEditor.GetValue(System.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonEditor.cs/#L59">View Source</a>
+  </span>
+  <a id="Benday_Common_Json_JsonEditor_GetValue_" data-uid="Benday.Common.Json.JsonEditor.GetValue*"></a>
+  <h4 id="Benday_Common_Json_JsonEditor_GetValue_System_String___" data-uid="Benday.Common.Json.JsonEditor.GetValue(System.String[])">GetValue(params string[])</h4>
+  <div class="markdown level1 summary"><p>Gets the string value at the specified JSON path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GetValue(params string[] nodes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><span class="parametername">nodes</span></td>
+        <td><p>The path to the value as an array of node names.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The value as a string, or null if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Thrown when nodes is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonEditor_GetValueAsBoolean_System_String___.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonEditor.GetValueAsBoolean(System.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonEditor.cs/#L83">View Source</a>
+  </span>
+  <a id="Benday_Common_Json_JsonEditor_GetValueAsBoolean_" data-uid="Benday.Common.Json.JsonEditor.GetValueAsBoolean*"></a>
+  <h4 id="Benday_Common_Json_JsonEditor_GetValueAsBoolean_System_String___" data-uid="Benday.Common.Json.JsonEditor.GetValueAsBoolean(System.String[])">GetValueAsBoolean(params string[])</h4>
+  <div class="markdown level1 summary"><p>Gets the boolean value at the specified JSON path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? GetValueAsBoolean(params string[] nodes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><span class="parametername">nodes</span></td>
+        <td><p>The path to the value as an array of node names.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><p>The value as a boolean, or null if not found or cannot be parsed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Thrown when nodes is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonEditor_GetValueAsInt32_System_String___.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonEditor.GetValueAsInt32(System.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonEditor.cs/#L114">View Source</a>
+  </span>
+  <a id="Benday_Common_Json_JsonEditor_GetValueAsInt32_" data-uid="Benday.Common.Json.JsonEditor.GetValueAsInt32*"></a>
+  <h4 id="Benday_Common_Json_JsonEditor_GetValueAsInt32_System_String___" data-uid="Benday.Common.Json.JsonEditor.GetValueAsInt32(System.String[])">GetValueAsInt32(params string[])</h4>
+  <div class="markdown level1 summary"><p>Gets the integer value at the specified JSON path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? GetValueAsInt32(params string[] nodes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><span class="parametername">nodes</span></td>
+        <td><p>The path to the value as an array of node names.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><p>The value as an integer, or null if not found or cannot be parsed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Thrown when nodes is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonEditor_SetSiblingValue_Benday_Common_Json_SiblingValueArguments_.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonEditor.SetSiblingValue(Benday.Common.Json.SiblingValueArguments)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonEditor.cs/#L436">View Source</a>
+  </span>
+  <a id="Benday_Common_Json_JsonEditor_SetSiblingValue_" data-uid="Benday.Common.Json.JsonEditor.SetSiblingValue*"></a>
+  <h4 id="Benday_Common_Json_JsonEditor_SetSiblingValue_Benday_Common_Json_SiblingValueArguments_" data-uid="Benday.Common.Json.JsonEditor.SetSiblingValue(Benday.Common.Json.SiblingValueArguments)">SetSiblingValue(SiblingValueArguments)</h4>
+  <div class="markdown level1 summary"><p>Sets a sibling value in a JSON array based on a search key/value pair.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSiblingValue(SiblingValueArguments args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Benday.Common.Json.SiblingValueArguments.html">SiblingValueArguments</a></td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments specifying the search criteria and value to set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonEditor_SetValue_System_Boolean_System_String___.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonEditor.SetValue(System.Boolean%2CSystem.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonEditor.cs/#L230">View Source</a>
+  </span>
+  <a id="Benday_Common_Json_JsonEditor_SetValue_" data-uid="Benday.Common.Json.JsonEditor.SetValue*"></a>
+  <h4 id="Benday_Common_Json_JsonEditor_SetValue_System_Boolean_System_String___" data-uid="Benday.Common.Json.JsonEditor.SetValue(System.Boolean,System.String[])">SetValue(bool, params string[])</h4>
+  <div class="markdown level1 summary"><p>Sets a boolean value at the specified JSON path, creating intermediate nodes if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValue(bool nodeValue, params string[] nodes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">nodeValue</span></td>
+        <td><p>The boolean value to set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><span class="parametername">nodes</span></td>
+        <td><p>The path to the value as an array of node names.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Thrown when nodes is null or empty.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown when the parent node is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonEditor_SetValue_System_Int32_System_String___.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonEditor.SetValue(System.Int32%2CSystem.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonEditor.cs/#L264">View Source</a>
+  </span>
+  <a id="Benday_Common_Json_JsonEditor_SetValue_" data-uid="Benday.Common.Json.JsonEditor.SetValue*"></a>
+  <h4 id="Benday_Common_Json_JsonEditor_SetValue_System_Int32_System_String___" data-uid="Benday.Common.Json.JsonEditor.SetValue(System.Int32,System.String[])">SetValue(int, params string[])</h4>
+  <div class="markdown level1 summary"><p>Sets an integer value at the specified JSON path, creating intermediate nodes if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValue(int nodeValue, params string[] nodes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">nodeValue</span></td>
+        <td><p>The integer value to set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><span class="parametername">nodes</span></td>
+        <td><p>The path to the value as an array of node names.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Thrown when nodes is null or empty.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown when the parent node is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonEditor_SetValue_System_String_System_String___.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonEditor.SetValue(System.String%2CSystem.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonEditor.cs/#L194">View Source</a>
+  </span>
+  <a id="Benday_Common_Json_JsonEditor_SetValue_" data-uid="Benday.Common.Json.JsonEditor.SetValue*"></a>
+  <h4 id="Benday_Common_Json_JsonEditor_SetValue_System_String_System_String___" data-uid="Benday.Common.Json.JsonEditor.SetValue(System.String,System.String[])">SetValue(string, params string[])</h4>
+  <div class="markdown level1 summary"><p>Sets a string value at the specified JSON path, creating intermediate nodes if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValue(string nodeValue, params string[] nodes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">nodeValue</span></td>
+        <td><p>The string value to set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><span class="parametername">nodes</span></td>
+        <td><p>The path to the value as an array of node names.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Thrown when nodeValue or nodes is null or empty.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown when the parent node is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonEditor_ToJson_System_Boolean_.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonEditor.ToJson(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonEditor.cs/#L489">View Source</a>
+  </span>
+  <a id="Benday_Common_Json_JsonEditor_ToJson_" data-uid="Benday.Common.Json.JsonEditor.ToJson*"></a>
+  <h4 id="Benday_Common_Json_JsonEditor_ToJson_System_Boolean_" data-uid="Benday.Common.Json.JsonEditor.ToJson(System.Boolean)">ToJson(bool)</h4>
+  <div class="markdown level1 summary"><p>Converts the JSON document to a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToJson(bool indented = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">indented</span></td>
+        <td><p>If true, the output will be formatted with indentation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The JSON document as a string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown when the root node is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldBeNull__1___0_System_String_">ObjectAssertExtensions.ShouldBeNull&lt;T&gt;(T?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldBeSameAs__1___0___0_System_String_">ObjectAssertExtensions.ShouldBeSameAs&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldEqual__1___0___0_System_String_">ObjectAssertExtensions.ShouldEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldNotBeNull__1___0_System_String_">ObjectAssertExtensions.ShouldNotBeNull&lt;T&gt;(T?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldNotBeSameAs__1___0___0_System_String_">ObjectAssertExtensions.ShouldNotBeSameAs&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldNotEqual__1___0___0_System_String_">ObjectAssertExtensions.ShouldNotEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldBeOfType__1_System_Object_System_String_">ObjectAssertExtensions.ShouldBeOfType&lt;T&gt;(object?, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Benday.Common.Testing.ObjectAssertExtensions.html#Benday_Common_Testing_ObjectAssertExtensions_ShouldNotBeOfType__1_System_Object_System_String_">ObjectAssertExtensions.ShouldNotBeOfType&lt;T&gt;(object?, string)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonEditor.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonEditor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonEditor.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      Copyright © <a href="https://www.benday.com/">www.benday.com</a> | <a href="mailto:info@benday.com">info@benday.com</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

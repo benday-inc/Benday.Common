@@ -977,6 +977,241 @@ references:
   isSpec: "True"
   fullName: Benday.Common.ITypeRegistrationItem.ServiceType
   nameWithType: ITypeRegistrationItem.ServiceType
+- uid: Benday.Common.Json
+  name: Benday.Common.Json
+  href: api/Benday.Common.Json.html
+  commentId: N:Benday.Common.Json
+  fullName: Benday.Common.Json
+  nameWithType: Benday.Common.Json
+- uid: Benday.Common.Json.JsonEditor
+  name: JsonEditor
+  href: api/Benday.Common.Json.JsonEditor.html
+  commentId: T:Benday.Common.Json.JsonEditor
+  fullName: Benday.Common.Json.JsonEditor
+  nameWithType: JsonEditor
+- uid: Benday.Common.Json.JsonEditor.#ctor(System.String)
+  name: JsonEditor(string)
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor__ctor_System_String_
+  commentId: M:Benday.Common.Json.JsonEditor.#ctor(System.String)
+  name.vb: New(String)
+  fullName: Benday.Common.Json.JsonEditor.JsonEditor(string)
+  fullName.vb: Benday.Common.Json.JsonEditor.New(String)
+  nameWithType: JsonEditor.JsonEditor(string)
+  nameWithType.vb: JsonEditor.New(String)
+- uid: Benday.Common.Json.JsonEditor.#ctor(System.String,System.Boolean)
+  name: JsonEditor(string, bool)
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor__ctor_System_String_System_Boolean_
+  commentId: M:Benday.Common.Json.JsonEditor.#ctor(System.String,System.Boolean)
+  name.vb: New(String, Boolean)
+  fullName: Benday.Common.Json.JsonEditor.JsonEditor(string, bool)
+  fullName.vb: Benday.Common.Json.JsonEditor.New(String, Boolean)
+  nameWithType: JsonEditor.JsonEditor(string, bool)
+  nameWithType.vb: JsonEditor.New(String, Boolean)
+- uid: Benday.Common.Json.JsonEditor.#ctor*
+  name: JsonEditor
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor__ctor_
+  commentId: Overload:Benday.Common.Json.JsonEditor.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Common.Json.JsonEditor.JsonEditor
+  fullName.vb: Benday.Common.Json.JsonEditor.New
+  nameWithType: JsonEditor.JsonEditor
+  nameWithType.vb: JsonEditor.New
+- uid: Benday.Common.Json.JsonEditor.GetSiblingValue(Benday.Common.Json.SiblingValueArguments)
+  name: GetSiblingValue(SiblingValueArguments)
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor_GetSiblingValue_Benday_Common_Json_SiblingValueArguments_
+  commentId: M:Benday.Common.Json.JsonEditor.GetSiblingValue(Benday.Common.Json.SiblingValueArguments)
+  fullName: Benday.Common.Json.JsonEditor.GetSiblingValue(Benday.Common.Json.SiblingValueArguments)
+  nameWithType: JsonEditor.GetSiblingValue(SiblingValueArguments)
+- uid: Benday.Common.Json.JsonEditor.GetSiblingValue*
+  name: GetSiblingValue
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor_GetSiblingValue_
+  commentId: Overload:Benday.Common.Json.JsonEditor.GetSiblingValue
+  isSpec: "True"
+  fullName: Benday.Common.Json.JsonEditor.GetSiblingValue
+  nameWithType: JsonEditor.GetSiblingValue
+- uid: Benday.Common.Json.JsonEditor.GetValue(System.String[])
+  name: GetValue(params string[])
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor_GetValue_System_String___
+  commentId: M:Benday.Common.Json.JsonEditor.GetValue(System.String[])
+  name.vb: GetValue(ParamArray String())
+  fullName: Benday.Common.Json.JsonEditor.GetValue(params string[])
+  fullName.vb: Benday.Common.Json.JsonEditor.GetValue(ParamArray String())
+  nameWithType: JsonEditor.GetValue(params string[])
+  nameWithType.vb: JsonEditor.GetValue(ParamArray String())
+- uid: Benday.Common.Json.JsonEditor.GetValue*
+  name: GetValue
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor_GetValue_
+  commentId: Overload:Benday.Common.Json.JsonEditor.GetValue
+  isSpec: "True"
+  fullName: Benday.Common.Json.JsonEditor.GetValue
+  nameWithType: JsonEditor.GetValue
+- uid: Benday.Common.Json.JsonEditor.GetValueAsBoolean(System.String[])
+  name: GetValueAsBoolean(params string[])
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor_GetValueAsBoolean_System_String___
+  commentId: M:Benday.Common.Json.JsonEditor.GetValueAsBoolean(System.String[])
+  name.vb: GetValueAsBoolean(ParamArray String())
+  fullName: Benday.Common.Json.JsonEditor.GetValueAsBoolean(params string[])
+  fullName.vb: Benday.Common.Json.JsonEditor.GetValueAsBoolean(ParamArray String())
+  nameWithType: JsonEditor.GetValueAsBoolean(params string[])
+  nameWithType.vb: JsonEditor.GetValueAsBoolean(ParamArray String())
+- uid: Benday.Common.Json.JsonEditor.GetValueAsBoolean*
+  name: GetValueAsBoolean
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor_GetValueAsBoolean_
+  commentId: Overload:Benday.Common.Json.JsonEditor.GetValueAsBoolean
+  isSpec: "True"
+  fullName: Benday.Common.Json.JsonEditor.GetValueAsBoolean
+  nameWithType: JsonEditor.GetValueAsBoolean
+- uid: Benday.Common.Json.JsonEditor.GetValueAsInt32(System.String[])
+  name: GetValueAsInt32(params string[])
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor_GetValueAsInt32_System_String___
+  commentId: M:Benday.Common.Json.JsonEditor.GetValueAsInt32(System.String[])
+  name.vb: GetValueAsInt32(ParamArray String())
+  fullName: Benday.Common.Json.JsonEditor.GetValueAsInt32(params string[])
+  fullName.vb: Benday.Common.Json.JsonEditor.GetValueAsInt32(ParamArray String())
+  nameWithType: JsonEditor.GetValueAsInt32(params string[])
+  nameWithType.vb: JsonEditor.GetValueAsInt32(ParamArray String())
+- uid: Benday.Common.Json.JsonEditor.GetValueAsInt32*
+  name: GetValueAsInt32
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor_GetValueAsInt32_
+  commentId: Overload:Benday.Common.Json.JsonEditor.GetValueAsInt32
+  isSpec: "True"
+  fullName: Benday.Common.Json.JsonEditor.GetValueAsInt32
+  nameWithType: JsonEditor.GetValueAsInt32
+- uid: Benday.Common.Json.JsonEditor.SetSiblingValue(Benday.Common.Json.SiblingValueArguments)
+  name: SetSiblingValue(SiblingValueArguments)
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor_SetSiblingValue_Benday_Common_Json_SiblingValueArguments_
+  commentId: M:Benday.Common.Json.JsonEditor.SetSiblingValue(Benday.Common.Json.SiblingValueArguments)
+  fullName: Benday.Common.Json.JsonEditor.SetSiblingValue(Benday.Common.Json.SiblingValueArguments)
+  nameWithType: JsonEditor.SetSiblingValue(SiblingValueArguments)
+- uid: Benday.Common.Json.JsonEditor.SetSiblingValue*
+  name: SetSiblingValue
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor_SetSiblingValue_
+  commentId: Overload:Benday.Common.Json.JsonEditor.SetSiblingValue
+  isSpec: "True"
+  fullName: Benday.Common.Json.JsonEditor.SetSiblingValue
+  nameWithType: JsonEditor.SetSiblingValue
+- uid: Benday.Common.Json.JsonEditor.SetValue(System.Boolean,System.String[])
+  name: SetValue(bool, params string[])
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor_SetValue_System_Boolean_System_String___
+  commentId: M:Benday.Common.Json.JsonEditor.SetValue(System.Boolean,System.String[])
+  name.vb: SetValue(Boolean, ParamArray String())
+  fullName: Benday.Common.Json.JsonEditor.SetValue(bool, params string[])
+  fullName.vb: Benday.Common.Json.JsonEditor.SetValue(Boolean, ParamArray String())
+  nameWithType: JsonEditor.SetValue(bool, params string[])
+  nameWithType.vb: JsonEditor.SetValue(Boolean, ParamArray String())
+- uid: Benday.Common.Json.JsonEditor.SetValue(System.Int32,System.String[])
+  name: SetValue(int, params string[])
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor_SetValue_System_Int32_System_String___
+  commentId: M:Benday.Common.Json.JsonEditor.SetValue(System.Int32,System.String[])
+  name.vb: SetValue(Integer, ParamArray String())
+  fullName: Benday.Common.Json.JsonEditor.SetValue(int, params string[])
+  fullName.vb: Benday.Common.Json.JsonEditor.SetValue(Integer, ParamArray String())
+  nameWithType: JsonEditor.SetValue(int, params string[])
+  nameWithType.vb: JsonEditor.SetValue(Integer, ParamArray String())
+- uid: Benday.Common.Json.JsonEditor.SetValue(System.String,System.String[])
+  name: SetValue(string, params string[])
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor_SetValue_System_String_System_String___
+  commentId: M:Benday.Common.Json.JsonEditor.SetValue(System.String,System.String[])
+  name.vb: SetValue(String, ParamArray String())
+  fullName: Benday.Common.Json.JsonEditor.SetValue(string, params string[])
+  fullName.vb: Benday.Common.Json.JsonEditor.SetValue(String, ParamArray String())
+  nameWithType: JsonEditor.SetValue(string, params string[])
+  nameWithType.vb: JsonEditor.SetValue(String, ParamArray String())
+- uid: Benday.Common.Json.JsonEditor.SetValue*
+  name: SetValue
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor_SetValue_
+  commentId: Overload:Benday.Common.Json.JsonEditor.SetValue
+  isSpec: "True"
+  fullName: Benday.Common.Json.JsonEditor.SetValue
+  nameWithType: JsonEditor.SetValue
+- uid: Benday.Common.Json.JsonEditor.ToJson(System.Boolean)
+  name: ToJson(bool)
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor_ToJson_System_Boolean_
+  commentId: M:Benday.Common.Json.JsonEditor.ToJson(System.Boolean)
+  name.vb: ToJson(Boolean)
+  fullName: Benday.Common.Json.JsonEditor.ToJson(bool)
+  fullName.vb: Benday.Common.Json.JsonEditor.ToJson(Boolean)
+  nameWithType: JsonEditor.ToJson(bool)
+  nameWithType.vb: JsonEditor.ToJson(Boolean)
+- uid: Benday.Common.Json.JsonEditor.ToJson*
+  name: ToJson
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor_ToJson_
+  commentId: Overload:Benday.Common.Json.JsonEditor.ToJson
+  isSpec: "True"
+  fullName: Benday.Common.Json.JsonEditor.ToJson
+  nameWithType: JsonEditor.ToJson
+- uid: Benday.Common.Json.SiblingValueArguments
+  name: SiblingValueArguments
+  href: api/Benday.Common.Json.SiblingValueArguments.html
+  commentId: T:Benday.Common.Json.SiblingValueArguments
+  fullName: Benday.Common.Json.SiblingValueArguments
+  nameWithType: SiblingValueArguments
+- uid: Benday.Common.Json.SiblingValueArguments.DesiredNodeKey
+  name: DesiredNodeKey
+  href: api/Benday.Common.Json.SiblingValueArguments.html#Benday_Common_Json_SiblingValueArguments_DesiredNodeKey
+  commentId: P:Benday.Common.Json.SiblingValueArguments.DesiredNodeKey
+  fullName: Benday.Common.Json.SiblingValueArguments.DesiredNodeKey
+  nameWithType: SiblingValueArguments.DesiredNodeKey
+- uid: Benday.Common.Json.SiblingValueArguments.DesiredNodeKey*
+  name: DesiredNodeKey
+  href: api/Benday.Common.Json.SiblingValueArguments.html#Benday_Common_Json_SiblingValueArguments_DesiredNodeKey_
+  commentId: Overload:Benday.Common.Json.SiblingValueArguments.DesiredNodeKey
+  isSpec: "True"
+  fullName: Benday.Common.Json.SiblingValueArguments.DesiredNodeKey
+  nameWithType: SiblingValueArguments.DesiredNodeKey
+- uid: Benday.Common.Json.SiblingValueArguments.DesiredNodeValue
+  name: DesiredNodeValue
+  href: api/Benday.Common.Json.SiblingValueArguments.html#Benday_Common_Json_SiblingValueArguments_DesiredNodeValue
+  commentId: P:Benday.Common.Json.SiblingValueArguments.DesiredNodeValue
+  fullName: Benday.Common.Json.SiblingValueArguments.DesiredNodeValue
+  nameWithType: SiblingValueArguments.DesiredNodeValue
+- uid: Benday.Common.Json.SiblingValueArguments.DesiredNodeValue*
+  name: DesiredNodeValue
+  href: api/Benday.Common.Json.SiblingValueArguments.html#Benday_Common_Json_SiblingValueArguments_DesiredNodeValue_
+  commentId: Overload:Benday.Common.Json.SiblingValueArguments.DesiredNodeValue
+  isSpec: "True"
+  fullName: Benday.Common.Json.SiblingValueArguments.DesiredNodeValue
+  nameWithType: SiblingValueArguments.DesiredNodeValue
+- uid: Benday.Common.Json.SiblingValueArguments.PathArguments
+  name: PathArguments
+  href: api/Benday.Common.Json.SiblingValueArguments.html#Benday_Common_Json_SiblingValueArguments_PathArguments
+  commentId: P:Benday.Common.Json.SiblingValueArguments.PathArguments
+  fullName: Benday.Common.Json.SiblingValueArguments.PathArguments
+  nameWithType: SiblingValueArguments.PathArguments
+- uid: Benday.Common.Json.SiblingValueArguments.PathArguments*
+  name: PathArguments
+  href: api/Benday.Common.Json.SiblingValueArguments.html#Benday_Common_Json_SiblingValueArguments_PathArguments_
+  commentId: Overload:Benday.Common.Json.SiblingValueArguments.PathArguments
+  isSpec: "True"
+  fullName: Benday.Common.Json.SiblingValueArguments.PathArguments
+  nameWithType: SiblingValueArguments.PathArguments
+- uid: Benday.Common.Json.SiblingValueArguments.SiblingSearchKey
+  name: SiblingSearchKey
+  href: api/Benday.Common.Json.SiblingValueArguments.html#Benday_Common_Json_SiblingValueArguments_SiblingSearchKey
+  commentId: P:Benday.Common.Json.SiblingValueArguments.SiblingSearchKey
+  fullName: Benday.Common.Json.SiblingValueArguments.SiblingSearchKey
+  nameWithType: SiblingValueArguments.SiblingSearchKey
+- uid: Benday.Common.Json.SiblingValueArguments.SiblingSearchKey*
+  name: SiblingSearchKey
+  href: api/Benday.Common.Json.SiblingValueArguments.html#Benday_Common_Json_SiblingValueArguments_SiblingSearchKey_
+  commentId: Overload:Benday.Common.Json.SiblingValueArguments.SiblingSearchKey
+  isSpec: "True"
+  fullName: Benday.Common.Json.SiblingValueArguments.SiblingSearchKey
+  nameWithType: SiblingValueArguments.SiblingSearchKey
+- uid: Benday.Common.Json.SiblingValueArguments.SiblingSearchValue
+  name: SiblingSearchValue
+  href: api/Benday.Common.Json.SiblingValueArguments.html#Benday_Common_Json_SiblingValueArguments_SiblingSearchValue
+  commentId: P:Benday.Common.Json.SiblingValueArguments.SiblingSearchValue
+  fullName: Benday.Common.Json.SiblingValueArguments.SiblingSearchValue
+  nameWithType: SiblingValueArguments.SiblingSearchValue
+- uid: Benday.Common.Json.SiblingValueArguments.SiblingSearchValue*
+  name: SiblingSearchValue
+  href: api/Benday.Common.Json.SiblingValueArguments.html#Benday_Common_Json_SiblingValueArguments_SiblingSearchValue_
+  commentId: Overload:Benday.Common.Json.SiblingValueArguments.SiblingSearchValue
+  isSpec: "True"
+  fullName: Benday.Common.Json.SiblingValueArguments.SiblingSearchValue
+  nameWithType: SiblingValueArguments.SiblingSearchValue
 - uid: Benday.Common.PageableResults`1
   name: PageableResults<T>
   href: api/Benday.Common.PageableResults-1.html

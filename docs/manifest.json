@@ -172,6 +172,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Json.JsonEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Json.JsonEditor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Json.JsonEditor",
+      "Summary": "<p sourcefile=\"api/Benday.Common.Json.JsonEditor.yml\" sourcestartlinenumber=\"1\">A utility class for reading and editing JSON documents using path-based navigation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Json.SiblingValueArguments.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Json.SiblingValueArguments.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Json.SiblingValueArguments",
+      "Summary": "<p sourcefile=\"api/Benday.Common.Json.SiblingValueArguments.yml\" sourcestartlinenumber=\"1\">Arguments for finding and setting sibling values in a JSON array.\nUsed with <xref href=\"Benday.Common.Json.JsonEditor.GetSiblingValue(Benday.Common.Json.SiblingValueArguments)\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Benday.Common.Json.JsonEditor.SetSiblingValue(Benday.Common.Json.SiblingValueArguments)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Common.Json.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Common.Json.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Benday.Common.Json",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Benday.Common.PageableResults-1.yml",
       "output": {
         ".html": {
