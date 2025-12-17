@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TheVersion>9.7.0</TheVersion>
+        <TheVersion>9.8.0</TheVersion>
         <AssemblyVersion>$(TheVersion).0</AssemblyVersion>
         <Version>$(VersionPrefix)$(TheVersion)</Version>
         <Authors>benday</Authors>
@@ -16,6 +16,7 @@
         <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageReleaseNotes>            
+v9.8 - Added get non-empty strings method to StringExtensionMethods;
 v9.7 - Added support for netstandard2.1;
 v9.6 - Modifying process runner to expose the process and optionally kill it; Adding AsyncProcessRunner for running processes asynchronously;
 v9.5 - Updating dependencies to .net 10.0;

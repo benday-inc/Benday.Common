@@ -2108,6 +2108,22 @@ references:
   isSpec: "True"
   fullName: Benday.Common.StringExtensionMethods.EqualsCaseInsensitive
   nameWithType: StringExtensionMethods.EqualsCaseInsensitive
+- uid: Benday.Common.StringExtensionMethods.GetNonEmptyStrings(System.Collections.Generic.IEnumerable{System.String})
+  name: GetNonEmptyStrings(params IEnumerable<string?>)
+  href: api/Benday.Common.StringExtensionMethods.html#Benday_Common_StringExtensionMethods_GetNonEmptyStrings_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:Benday.Common.StringExtensionMethods.GetNonEmptyStrings(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: GetNonEmptyStrings(IEnumerable(Of String))
+  fullName: Benday.Common.StringExtensionMethods.GetNonEmptyStrings(params System.Collections.Generic.IEnumerable<string?>)
+  fullName.vb: Benday.Common.StringExtensionMethods.GetNonEmptyStrings(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: StringExtensionMethods.GetNonEmptyStrings(params IEnumerable<string?>)
+  nameWithType.vb: StringExtensionMethods.GetNonEmptyStrings(IEnumerable(Of String))
+- uid: Benday.Common.StringExtensionMethods.GetNonEmptyStrings*
+  name: GetNonEmptyStrings
+  href: api/Benday.Common.StringExtensionMethods.html#Benday_Common_StringExtensionMethods_GetNonEmptyStrings_
+  commentId: Overload:Benday.Common.StringExtensionMethods.GetNonEmptyStrings
+  isSpec: "True"
+  fullName: Benday.Common.StringExtensionMethods.GetNonEmptyStrings
+  nameWithType: StringExtensionMethods.GetNonEmptyStrings
 - uid: Benday.Common.StringExtensionMethods.IsNullOrEmpty(System.String)
   name: IsNullOrEmpty(string?)
   href: api/Benday.Common.StringExtensionMethods.html#Benday_Common_StringExtensionMethods_IsNullOrEmpty_System_String_
