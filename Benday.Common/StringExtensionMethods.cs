@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.Linq;
 
 using Microsoft.Extensions.Configuration;
 
@@ -26,6 +28,22 @@ public static class StringExtensionMethods
         {
             return input.ToString();
         }
+    }
+
+    /// <summary>
+    /// This method returns an array of non-empty strings from the input collection.
+    /// </summary>
+    /// <param name="input"></param>
+    /// <returns></returns>
+    public static string[] GetNonEmptyStrings(
+      params IEnumerable<string?> input)
+    {
+        var returnValue = input.Where(x =>
+                string.IsNullOrWhiteSpace(x) == false).
+            OfType<string>().
+            ToArray();
+
+        return returnValue;
     }
 
     /// <summary>
