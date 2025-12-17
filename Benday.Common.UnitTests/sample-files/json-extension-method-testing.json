@@ -5,5 +5,22 @@
     "another-object-property": {
       "deeply-nested-property": 42
     }
+  },
+  "int-property": 123,
+  "double-property": 3.14159,
+  "long-property": 9223372036854775807,
+  "bool-true-property": true,
+  "bool-false-property": false,
+  "date-property": "2024-06-15T10:30:00Z",
+  "null-property": null,
+  "nested-numbers": {
+    "int-value": 456,
+    "double-value": 2.71828,
+    "long-value": 1234567890123,
+    "bool-value": true,
+    "date-value": "2023-12-25T00:00:00Z",
+    "deeper": {
+      "long-value": 9876543210
+    }
   }
 }
