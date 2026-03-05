@@ -13,6 +13,8 @@ public class JsonEditor
 {
     private readonly JsonNode _rootNode;
 
+    public JsonNode Root => _rootNode.Root;
+
     /// <summary>
     /// Initializes a new instance of the <see cref="JsonEditor"/> class by loading JSON from a file.
     /// </summary>
@@ -136,7 +138,14 @@ public class JsonEditor
         }
     }
 
-    private JsonNode? GetNode(params string[] nodes)
+    /// <summary>
+    /// Gets a JsonNode at the specified path.
+    /// </summary>
+    /// <param name="nodes">The path to the node as an array of node names.</param>
+    /// <returns>The JsonNode if found, otherwise null.</returns>
+    /// <exception cref="ArgumentException">Thrown when nodes is null or empty.</exception>
+    /// <exception cref="InvalidOperationException">Thrown when root node is null.</exception>
+    public JsonNode? GetNode(params string[] nodes)
     {
         if (nodes == null || nodes.Length == 0)
             throw new ArgumentException(

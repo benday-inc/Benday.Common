@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 
 using Benday.Common;
@@ -311,4 +312,213 @@ public static class JsonExtensionMethods
 
         return defaultValue;
     }
+
+    #region JsonNode Extension Methods
+
+    /// <summary>
+    /// Gets a string value from a JsonNode property safely, returning empty string if not found.
+    /// </summary>
+    /// <param name="node">The JsonNode to search in.</param>
+    /// <param name="propertyName">The name of the property to retrieve.</param>
+    /// <returns>The property value as a string, or empty string if not found or null.</returns>
+    public static string GetString(this JsonNode? node, string propertyName)
+    {
+        if (node == null)
+        {
+            return string.Empty;
+        }
+        else
+        {
+            var match = node[propertyName];
+
+            if (match == null)
+            {
+                return string.Empty;
+            }
+            else
+            {
+                return match.ToString();
+            }
+        }
+    }
+
+    /// <summary>
+    /// Gets an integer value from a JsonNode property safely, returning 0 if not found or cannot parse.
+    /// </summary>
+    /// <param name="node">The JsonNode to search in.</param>
+    /// <param name="propertyName">The name of the property to retrieve.</param>
+    /// <returns>The property value as an integer, or 0 if not found, null, or cannot parse.</returns>
+    public static int GetInt32(this JsonNode? node, string propertyName)
+    {
+        if (node == null)
+        {
+            return 0;
+        }
+        else
+        {
+            var match = node[propertyName];
+
+            if (match == null)
+            {
+                return 0;
+            }
+            else
+            {
+                var valueAsString = match.ToString();
+
+                if (int.TryParse(valueAsString, out int result) == true)
+                {
+                    return result;
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+        }
+    }
+
+    /// <summary>
+    /// Finds the first item in a JsonArray that has the specified property name.
+    /// </summary>
+    /// <param name="array">The JsonArray to search in.</param>
+    /// <param name="propertyName">The name of the property to look for.</param>
+    /// <returns>The value of the property from the first matching item, or null if not found.</returns>
+    public static JsonNode? FirstOrDefaultWithPropertyName(
+        this JsonArray? array,
+        string propertyName)
+    {
+        if (array == null)
+        {
+            return null;
+        }
+
+        foreach (var item in array)
+        {
+            if (item == null)
+            {
+                continue;
+            }
+            else if (item[propertyName] != null)
+            {
+                return item[propertyName];
+            }
+        }
+
+        return null;
+    }
+
+    /// <summary>
+    /// Gets a JsonArray property from a JsonNode.
+    /// </summary>
+    /// <param name="node">The JsonNode to search in.</param>
+    /// <param name="propertyName">The name of the array property to retrieve.</param>
+    /// <returns>The JsonArray if found and is an array, otherwise null.</returns>
+    public static JsonArray? GetArray(
+        this JsonNode? node,
+        string propertyName)
+    {
+        if (node == null)
+        {
+            return null;
+        }
+
+        // get reference to array property
+        var array = node[propertyName];
+
+        if (array == null)
+        {
+            return null;
+        }
+        else
+        {
+            if (array is JsonArray valueAsArray)
+            {
+                return valueAsArray;
+            }
+            else
+            {
+                return null;
+            }
+        }
+    }
+
+    /// <summary>
+    /// Gets a specific item from a JsonArray by searching for a property name/value match.
+    /// </summary>
+    /// <param name="node">The JsonNode containing the array.</param>
+    /// <param name="arrayPropertyName">The name of the array property.</param>
+    /// <param name="searchPropertyName">The property name to search for within array items.</param>
+    /// <param name="searchPropertyValue">The property value to match.</param>
+    /// <returns>The matching JsonNode item, or null if not found.</returns>
+    public static JsonNode? GetArrayItem(
+        this JsonNode? node,
+        string arrayPropertyName,
+        string searchPropertyName, string searchPropertyValue)
+    {
+        if (node == null)
+        {
+            return null;
+        }
+
+        var array = node.GetArray(arrayPropertyName);
+
+        if (array == null)
+        {
+            return null;
+        }
+        else
+        {
+            foreach (var item in array)
+            {
+                if (item == null)
+                {
+                    continue;
+                }
+                else if (item[searchPropertyName] != null &&
+                    item[searchPropertyName]!.ToString() == searchPropertyValue)
+                {
+                    return item;
+                }
+            }
+
+            return null;
+        }
+    }
+
+    /// <summary>
+    /// Safely gets a specific item from a JsonArray by searching for a property name/value match.
+    /// This method provides a safe way to retrieve array items without throwing exceptions.
+    /// </summary>
+    /// <param name="array">The JsonArray to search in.</param>
+    /// <param name="searchPropertyName">The property name to search for within array items.</param>
+    /// <param name="searchPropertyValue">The property value to match.</param>
+    /// <returns>The matching JsonNode item, or null if not found.</returns>
+    public static JsonNode? SafeGetArrayItem(
+        this JsonArray? array,
+        string searchPropertyName,
+        string searchPropertyValue)
+    {
+        if (array == null)
+        {
+            return null;
+        }
+
+        foreach (var item in array)
+        {
+            if (item == null)
+            {
+                continue;
+            }
+            else if (item[searchPropertyName] != null &&
+                item[searchPropertyName]!.ToString() == searchPropertyValue)
+            {
+                return item;
+            }
+        }
+
+        return null;
+    }
+
+    #endregion
 }
