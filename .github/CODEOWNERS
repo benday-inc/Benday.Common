@@ -2,18 +2,8 @@
 # These owners will be the default owners for everything in the repo.
 # They will be requested for review when someone opens a pull request.
 
-# Global owners
-* @benday-inc
-
-# Benday.Common library
-/Benday.Common/ @benday-inc
-
-# Benday.Common.Testing library
-/Benday.Common.Testing/ @benday-inc
-
-# Documentation
-/docs/ @benday-inc
-*.md @benday-inc
-
 # GitHub Actions and repository configuration
-/.github/ @benday-inc
+/.github/ @benday
+
+# Global owners for everything else
+* @benday

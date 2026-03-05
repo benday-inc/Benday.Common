@@ -1,0 +1,88 @@
+name: Benday.Common CI
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - 'Benday.Common/**'
+      - 'Benday.Common.UnitTests/**'
+      - '.github/workflows/benday-common.yml'
+  pull_request:
+    branches: [ "main" ]
+    paths:
+      - 'Benday.Common/**'
+      - 'Benday.Common.UnitTests/**'
+      - '.github/workflows/benday-common.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Setup .NET 9
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
+
+      - name: Setup .NET 10
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Restore Benday.Common
+        run: dotnet restore Benday.Common/Benday.Common.csproj
+
+      - name: Restore UnitTests
+        run: dotnet restore Benday.Common.UnitTests/Benday.Common.UnitTests.csproj
+
+      - name: Build Benday.Common (Release)
+        run: dotnet build Benday.Common/Benday.Common.csproj --configuration Release --no-restore
+
+      - name: Build UnitTests (Release)
+        run: dotnet build Benday.Common.UnitTests/Benday.Common.UnitTests.csproj --configuration Release --no-restore
+
+      - name: Test (Release)
+        run: dotnet test Benday.Common.UnitTests/Benday.Common.UnitTests.csproj --configuration Release --verbosity normal
+
+      - name: Pack Benday.Common
+        run: dotnet pack Benday.Common/Benday.Common.csproj --no-build --configuration Release --output ./artifacts
+
+      - name: Upload NuGet packages
+        uses: actions/upload-artifact@v4
+        with:
+          name: nuget-packages-common
+          path: ./artifacts/*.nupkg
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: nuget-deploy
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: nuget-packages-common
+
+      - name: Setup .NET 10
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Push to NuGet
+        env:
+          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+        run: |
+          if [ -z "$NUGET_API_KEY" ]; then
+            echo "Error: NUGET_API_KEY secret is not set"
+            exit 1
+          fi
+          dotnet nuget push *.nupkg -k "$NUGET_API_KEY" -s https://api.nuget.org/v3/index.json --skip-duplicate
