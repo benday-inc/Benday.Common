@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TheVersion>9.11.0</TheVersion>
+        <TheVersion>9.12.0</TheVersion>
         <AssemblyVersion>$(TheVersion).0</AssemblyVersion>
         <Version>$(VersionPrefix)$(TheVersion)</Version>
         <Authors>benday</Authors>
-        <Copyright>2025</Copyright>
+        <Copyright>2026</Copyright>
         <Description>A collection of utility classes for .NET including: domain model patterns (identity interfaces, deletable pattern), search and paging infrastructure, JSON reading/editing with JsonNode extension methods, process execution, and extension methods for strings and configuration.</Description>
         <Deterministic>true</Deterministic>
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
@@ -17,8 +17,9 @@
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
-        <PackageTags>dotnet;csharp;utilities;domain-model;search;paging;pagination;json;json-editor;json-node;json-array;process-runner;string-extensions;configuration;dependency-injection</PackageTags>
+        <PackageTags>dotnet;csharp;utilities;domain-model;search;paging;pagination;json;json-editor;json-node;json-array;dictionary;process-runner;string-extensions;configuration;dependency-injection</PackageTags>
         <PackageReleaseNotes>
+v9.12 - Added GetDictionary() extension methods for JsonNode and JsonArray to convert JSON arrays of name/value pairs into Dictionary&lt;string, string&gt;;
 v9.11 - Added JsonNode/JsonArray extension methods (GetString, GetInt32, GetArray, GetArrayItem, SafeGetArrayItem, FirstOrDefaultWithPropertyName) for simplified JSON manipulation; Made JsonEditor.GetNode() public to enable combined usage with extension methods;
 v9.10 - Added JsonExtensionMethods to help with reading JsonElement values safely without throwing exceptions;
 v9.9 - Added JsonEditor and SiblingValueArguments classes in new Benday.Common.Json namespace (merged from Benday.JsonUtilities package);

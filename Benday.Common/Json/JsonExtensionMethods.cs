@@ -520,5 +520,61 @@ public static class JsonExtensionMethods
         return null;
     }
 
+    /// <summary>
+    /// Converts a JsonArray containing objects with key/value properties into a Dictionary.
+    /// </summary>
+    /// <param name="array">The JsonArray to convert.</param>
+    /// <param name="keyPropertyName">The property name to use as dictionary keys.</param>
+    /// <param name="valuePropertyName">The property name to use as dictionary values.</param>
+    /// <returns>A dictionary with string keys and values, or an empty dictionary if array is null.</returns>
+    public static Dictionary<string, string> GetDictionary(
+        this JsonArray? array,
+        string keyPropertyName,
+        string valuePropertyName)
+    {
+        var dictionary = new Dictionary<string, string>();
+
+        if (array == null)
+        {
+            return dictionary;
+        }
+
+        foreach (var item in array)
+        {
+            if (item == null)
+            {
+                continue;
+            }
+
+            var key = item.GetString(keyPropertyName);
+            var value = item.GetString(valuePropertyName);
+
+            if (!string.IsNullOrEmpty(key))
+            {
+                dictionary[key] = value;
+            }
+        }
+
+        return dictionary;
+    }
+
+    /// <summary>
+    /// Gets a JsonArray property from a JsonNode and converts it into a Dictionary.
+    /// </summary>
+    /// <param name="node">The JsonNode containing the array property.</param>
+    /// <param name="arrayPropertyName">The name of the array property to retrieve.</param>
+    /// <param name="keyPropertyName">The property name to use as dictionary keys.</param>
+    /// <param name="valuePropertyName">The property name to use as dictionary values.</param>
+    /// <returns>A dictionary with string keys and values, or an empty dictionary if array is not found.</returns>
+    public static Dictionary<string, string> GetDictionary(
+        this JsonNode? node,
+        string arrayPropertyName,
+        string keyPropertyName,
+        string valuePropertyName)
+    {
+        var array = node.GetArray(arrayPropertyName);
+        return array.GetDictionary(keyPropertyName, valuePropertyName);
+    }
+
     #endregion
 }
