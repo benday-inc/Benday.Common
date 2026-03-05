@@ -15,7 +15,7 @@ public class MockCreationResult<T> where T : class
 {
     /// <summary>
     /// Creates a new instance of MockCreationResult. This is typically used internally by the MockUtility class.
-    /// Recommendation: Use the MockUtility.CreateInstance<T>() method to create an instance of this class.
+    /// Recommendation: Use the <c>MockUtility.CreateInstance&lt;T&gt;()</c> method to create an instance of this class.
     /// </summary>
     /// <param name="reflectedConstructor">Constructor information for the instance</param>
     /// <param name="constructorArguments">The arguments to pass to the constructor</param>

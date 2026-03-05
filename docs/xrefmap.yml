@@ -1049,6 +1049,22 @@ references:
   fullName.vb: Benday.Common.Json.JsonEditor.New
   nameWithType: JsonEditor.JsonEditor
   nameWithType.vb: JsonEditor.New
+- uid: Benday.Common.Json.JsonEditor.GetNode(System.String[])
+  name: GetNode(params string[])
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor_GetNode_System_String___
+  commentId: M:Benday.Common.Json.JsonEditor.GetNode(System.String[])
+  name.vb: GetNode(ParamArray String())
+  fullName: Benday.Common.Json.JsonEditor.GetNode(params string[])
+  fullName.vb: Benday.Common.Json.JsonEditor.GetNode(ParamArray String())
+  nameWithType: JsonEditor.GetNode(params string[])
+  nameWithType.vb: JsonEditor.GetNode(ParamArray String())
+- uid: Benday.Common.Json.JsonEditor.GetNode*
+  name: GetNode
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor_GetNode_
+  commentId: Overload:Benday.Common.Json.JsonEditor.GetNode
+  isSpec: "True"
+  fullName: Benday.Common.Json.JsonEditor.GetNode
+  nameWithType: JsonEditor.GetNode
 - uid: Benday.Common.Json.JsonEditor.GetSiblingValue(Benday.Common.Json.SiblingValueArguments)
   name: GetSiblingValue(SiblingValueArguments)
   href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor_GetSiblingValue_Benday_Common_Json_SiblingValueArguments_
@@ -1110,6 +1126,19 @@ references:
   isSpec: "True"
   fullName: Benday.Common.Json.JsonEditor.GetValueAsInt32
   nameWithType: JsonEditor.GetValueAsInt32
+- uid: Benday.Common.Json.JsonEditor.Root
+  name: Root
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor_Root
+  commentId: P:Benday.Common.Json.JsonEditor.Root
+  fullName: Benday.Common.Json.JsonEditor.Root
+  nameWithType: JsonEditor.Root
+- uid: Benday.Common.Json.JsonEditor.Root*
+  name: Root
+  href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor_Root_
+  commentId: Overload:Benday.Common.Json.JsonEditor.Root
+  isSpec: "True"
+  fullName: Benday.Common.Json.JsonEditor.Root
+  nameWithType: JsonEditor.Root
 - uid: Benday.Common.Json.JsonEditor.SetSiblingValue(Benday.Common.Json.SiblingValueArguments)
   name: SetSiblingValue(SiblingValueArguments)
   href: api/Benday.Common.Json.JsonEditor.html#Benday_Common_Json_JsonEditor_SetSiblingValue_Benday_Common_Json_SiblingValueArguments_
@@ -1179,6 +1208,54 @@ references:
   commentId: T:Benday.Common.Json.JsonExtensionMethods
   fullName: Benday.Common.Json.JsonExtensionMethods
   nameWithType: JsonExtensionMethods
+- uid: Benday.Common.Json.JsonExtensionMethods.FirstOrDefaultWithPropertyName(System.Text.Json.Nodes.JsonArray,System.String)
+  name: FirstOrDefaultWithPropertyName(JsonArray?, string)
+  href: api/Benday.Common.Json.JsonExtensionMethods.html#Benday_Common_Json_JsonExtensionMethods_FirstOrDefaultWithPropertyName_System_Text_Json_Nodes_JsonArray_System_String_
+  commentId: M:Benday.Common.Json.JsonExtensionMethods.FirstOrDefaultWithPropertyName(System.Text.Json.Nodes.JsonArray,System.String)
+  name.vb: FirstOrDefaultWithPropertyName(JsonArray, String)
+  fullName: Benday.Common.Json.JsonExtensionMethods.FirstOrDefaultWithPropertyName(System.Text.Json.Nodes.JsonArray?, string)
+  fullName.vb: Benday.Common.Json.JsonExtensionMethods.FirstOrDefaultWithPropertyName(System.Text.Json.Nodes.JsonArray, String)
+  nameWithType: JsonExtensionMethods.FirstOrDefaultWithPropertyName(JsonArray?, string)
+  nameWithType.vb: JsonExtensionMethods.FirstOrDefaultWithPropertyName(JsonArray, String)
+- uid: Benday.Common.Json.JsonExtensionMethods.FirstOrDefaultWithPropertyName*
+  name: FirstOrDefaultWithPropertyName
+  href: api/Benday.Common.Json.JsonExtensionMethods.html#Benday_Common_Json_JsonExtensionMethods_FirstOrDefaultWithPropertyName_
+  commentId: Overload:Benday.Common.Json.JsonExtensionMethods.FirstOrDefaultWithPropertyName
+  isSpec: "True"
+  fullName: Benday.Common.Json.JsonExtensionMethods.FirstOrDefaultWithPropertyName
+  nameWithType: JsonExtensionMethods.FirstOrDefaultWithPropertyName
+- uid: Benday.Common.Json.JsonExtensionMethods.GetArray(System.Text.Json.Nodes.JsonNode,System.String)
+  name: GetArray(JsonNode?, string)
+  href: api/Benday.Common.Json.JsonExtensionMethods.html#Benday_Common_Json_JsonExtensionMethods_GetArray_System_Text_Json_Nodes_JsonNode_System_String_
+  commentId: M:Benday.Common.Json.JsonExtensionMethods.GetArray(System.Text.Json.Nodes.JsonNode,System.String)
+  name.vb: GetArray(JsonNode, String)
+  fullName: Benday.Common.Json.JsonExtensionMethods.GetArray(System.Text.Json.Nodes.JsonNode?, string)
+  fullName.vb: Benday.Common.Json.JsonExtensionMethods.GetArray(System.Text.Json.Nodes.JsonNode, String)
+  nameWithType: JsonExtensionMethods.GetArray(JsonNode?, string)
+  nameWithType.vb: JsonExtensionMethods.GetArray(JsonNode, String)
+- uid: Benday.Common.Json.JsonExtensionMethods.GetArray*
+  name: GetArray
+  href: api/Benday.Common.Json.JsonExtensionMethods.html#Benday_Common_Json_JsonExtensionMethods_GetArray_
+  commentId: Overload:Benday.Common.Json.JsonExtensionMethods.GetArray
+  isSpec: "True"
+  fullName: Benday.Common.Json.JsonExtensionMethods.GetArray
+  nameWithType: JsonExtensionMethods.GetArray
+- uid: Benday.Common.Json.JsonExtensionMethods.GetArrayItem(System.Text.Json.Nodes.JsonNode,System.String,System.String,System.String)
+  name: GetArrayItem(JsonNode?, string, string, string)
+  href: api/Benday.Common.Json.JsonExtensionMethods.html#Benday_Common_Json_JsonExtensionMethods_GetArrayItem_System_Text_Json_Nodes_JsonNode_System_String_System_String_System_String_
+  commentId: M:Benday.Common.Json.JsonExtensionMethods.GetArrayItem(System.Text.Json.Nodes.JsonNode,System.String,System.String,System.String)
+  name.vb: GetArrayItem(JsonNode, String, String, String)
+  fullName: Benday.Common.Json.JsonExtensionMethods.GetArrayItem(System.Text.Json.Nodes.JsonNode?, string, string, string)
+  fullName.vb: Benday.Common.Json.JsonExtensionMethods.GetArrayItem(System.Text.Json.Nodes.JsonNode, String, String, String)
+  nameWithType: JsonExtensionMethods.GetArrayItem(JsonNode?, string, string, string)
+  nameWithType.vb: JsonExtensionMethods.GetArrayItem(JsonNode, String, String, String)
+- uid: Benday.Common.Json.JsonExtensionMethods.GetArrayItem*
+  name: GetArrayItem
+  href: api/Benday.Common.Json.JsonExtensionMethods.html#Benday_Common_Json_JsonExtensionMethods_GetArrayItem_
+  commentId: Overload:Benday.Common.Json.JsonExtensionMethods.GetArrayItem
+  isSpec: "True"
+  fullName: Benday.Common.Json.JsonExtensionMethods.GetArrayItem
+  nameWithType: JsonExtensionMethods.GetArrayItem
 - uid: Benday.Common.Json.JsonExtensionMethods.GetElement(System.Text.Json.JsonElement,System.String[])
   name: GetElement(JsonElement, params string[])
   href: api/Benday.Common.Json.JsonExtensionMethods.html#Benday_Common_Json_JsonExtensionMethods_GetElement_System_Text_Json_JsonElement_System_String___
@@ -1211,6 +1288,38 @@ references:
   isSpec: "True"
   fullName: Benday.Common.Json.JsonExtensionMethods.GetElementOrThrow
   nameWithType: JsonExtensionMethods.GetElementOrThrow
+- uid: Benday.Common.Json.JsonExtensionMethods.GetInt32(System.Text.Json.Nodes.JsonNode,System.String)
+  name: GetInt32(JsonNode?, string)
+  href: api/Benday.Common.Json.JsonExtensionMethods.html#Benday_Common_Json_JsonExtensionMethods_GetInt32_System_Text_Json_Nodes_JsonNode_System_String_
+  commentId: M:Benday.Common.Json.JsonExtensionMethods.GetInt32(System.Text.Json.Nodes.JsonNode,System.String)
+  name.vb: GetInt32(JsonNode, String)
+  fullName: Benday.Common.Json.JsonExtensionMethods.GetInt32(System.Text.Json.Nodes.JsonNode?, string)
+  fullName.vb: Benday.Common.Json.JsonExtensionMethods.GetInt32(System.Text.Json.Nodes.JsonNode, String)
+  nameWithType: JsonExtensionMethods.GetInt32(JsonNode?, string)
+  nameWithType.vb: JsonExtensionMethods.GetInt32(JsonNode, String)
+- uid: Benday.Common.Json.JsonExtensionMethods.GetInt32*
+  name: GetInt32
+  href: api/Benday.Common.Json.JsonExtensionMethods.html#Benday_Common_Json_JsonExtensionMethods_GetInt32_
+  commentId: Overload:Benday.Common.Json.JsonExtensionMethods.GetInt32
+  isSpec: "True"
+  fullName: Benday.Common.Json.JsonExtensionMethods.GetInt32
+  nameWithType: JsonExtensionMethods.GetInt32
+- uid: Benday.Common.Json.JsonExtensionMethods.GetString(System.Text.Json.Nodes.JsonNode,System.String)
+  name: GetString(JsonNode?, string)
+  href: api/Benday.Common.Json.JsonExtensionMethods.html#Benday_Common_Json_JsonExtensionMethods_GetString_System_Text_Json_Nodes_JsonNode_System_String_
+  commentId: M:Benday.Common.Json.JsonExtensionMethods.GetString(System.Text.Json.Nodes.JsonNode,System.String)
+  name.vb: GetString(JsonNode, String)
+  fullName: Benday.Common.Json.JsonExtensionMethods.GetString(System.Text.Json.Nodes.JsonNode?, string)
+  fullName.vb: Benday.Common.Json.JsonExtensionMethods.GetString(System.Text.Json.Nodes.JsonNode, String)
+  nameWithType: JsonExtensionMethods.GetString(JsonNode?, string)
+  nameWithType.vb: JsonExtensionMethods.GetString(JsonNode, String)
+- uid: Benday.Common.Json.JsonExtensionMethods.GetString*
+  name: GetString
+  href: api/Benday.Common.Json.JsonExtensionMethods.html#Benday_Common_Json_JsonExtensionMethods_GetString_
+  commentId: Overload:Benday.Common.Json.JsonExtensionMethods.GetString
+  isSpec: "True"
+  fullName: Benday.Common.Json.JsonExtensionMethods.GetString
+  nameWithType: JsonExtensionMethods.GetString
 - uid: Benday.Common.Json.JsonExtensionMethods.HasProperty(System.Text.Json.JsonElement,System.String)
   name: HasProperty(JsonElement, string)
   href: api/Benday.Common.Json.JsonExtensionMethods.html#Benday_Common_Json_JsonExtensionMethods_HasProperty_System_Text_Json_JsonElement_System_String_
@@ -1227,6 +1336,22 @@ references:
   isSpec: "True"
   fullName: Benday.Common.Json.JsonExtensionMethods.HasProperty
   nameWithType: JsonExtensionMethods.HasProperty
+- uid: Benday.Common.Json.JsonExtensionMethods.SafeGetArrayItem(System.Text.Json.Nodes.JsonArray,System.String,System.String)
+  name: SafeGetArrayItem(JsonArray?, string, string)
+  href: api/Benday.Common.Json.JsonExtensionMethods.html#Benday_Common_Json_JsonExtensionMethods_SafeGetArrayItem_System_Text_Json_Nodes_JsonArray_System_String_System_String_
+  commentId: M:Benday.Common.Json.JsonExtensionMethods.SafeGetArrayItem(System.Text.Json.Nodes.JsonArray,System.String,System.String)
+  name.vb: SafeGetArrayItem(JsonArray, String, String)
+  fullName: Benday.Common.Json.JsonExtensionMethods.SafeGetArrayItem(System.Text.Json.Nodes.JsonArray?, string, string)
+  fullName.vb: Benday.Common.Json.JsonExtensionMethods.SafeGetArrayItem(System.Text.Json.Nodes.JsonArray, String, String)
+  nameWithType: JsonExtensionMethods.SafeGetArrayItem(JsonArray?, string, string)
+  nameWithType.vb: JsonExtensionMethods.SafeGetArrayItem(JsonArray, String, String)
+- uid: Benday.Common.Json.JsonExtensionMethods.SafeGetArrayItem*
+  name: SafeGetArrayItem
+  href: api/Benday.Common.Json.JsonExtensionMethods.html#Benday_Common_Json_JsonExtensionMethods_SafeGetArrayItem_
+  commentId: Overload:Benday.Common.Json.JsonExtensionMethods.SafeGetArrayItem
+  isSpec: "True"
+  fullName: Benday.Common.Json.JsonExtensionMethods.SafeGetArrayItem
+  nameWithType: JsonExtensionMethods.SafeGetArrayItem
 - uid: Benday.Common.Json.JsonExtensionMethods.SafeGetBool(System.Text.Json.JsonElement,System.String,System.Boolean)
   name: SafeGetBool(JsonElement, string, bool)
   href: api/Benday.Common.Json.JsonExtensionMethods.html#Benday_Common_Json_JsonExtensionMethods_SafeGetBool_System_Text_Json_JsonElement_System_String_System_Boolean_

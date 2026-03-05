@@ -113,10 +113,190 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods_FirstOrDefaultWithPropertyName_System_Text_Json_Nodes_JsonArray_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods.FirstOrDefaultWithPropertyName(System.Text.Json.Nodes.JsonArray%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L387">View Source</a>
+  </span>
+  <a id="Benday_Common_Json_JsonExtensionMethods_FirstOrDefaultWithPropertyName_" data-uid="Benday.Common.Json.JsonExtensionMethods.FirstOrDefaultWithPropertyName*"></a>
+  <h4 id="Benday_Common_Json_JsonExtensionMethods_FirstOrDefaultWithPropertyName_System_Text_Json_Nodes_JsonArray_System_String_" data-uid="Benday.Common.Json.JsonExtensionMethods.FirstOrDefaultWithPropertyName(System.Text.Json.Nodes.JsonArray,System.String)">FirstOrDefaultWithPropertyName(JsonArray?, string)</h4>
+  <div class="markdown level1 summary"><p>Finds the first item in a JsonArray that has the specified property name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JsonNode? FirstOrDefaultWithPropertyName(this JsonArray? array, string propertyName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a></td>
+        <td><span class="parametername">array</span></td>
+        <td><p>The JsonArray to search in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>The name of the property to look for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonnode">JsonNode</a></td>
+        <td><p>The value of the property from the first matching item, or null if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods_GetArray_System_Text_Json_Nodes_JsonNode_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods.GetArray(System.Text.Json.Nodes.JsonNode%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L417">View Source</a>
+  </span>
+  <a id="Benday_Common_Json_JsonExtensionMethods_GetArray_" data-uid="Benday.Common.Json.JsonExtensionMethods.GetArray*"></a>
+  <h4 id="Benday_Common_Json_JsonExtensionMethods_GetArray_System_Text_Json_Nodes_JsonNode_System_String_" data-uid="Benday.Common.Json.JsonExtensionMethods.GetArray(System.Text.Json.Nodes.JsonNode,System.String)">GetArray(JsonNode?, string)</h4>
+  <div class="markdown level1 summary"><p>Gets a JsonArray property from a JsonNode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JsonArray? GetArray(this JsonNode? node, string propertyName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonnode">JsonNode</a></td>
+        <td><span class="parametername">node</span></td>
+        <td><p>The JsonNode to search in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>The name of the array property to retrieve.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a></td>
+        <td><p>The JsonArray if found and is an array, otherwise null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods_GetArrayItem_System_Text_Json_Nodes_JsonNode_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods.GetArrayItem(System.Text.Json.Nodes.JsonNode%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L454">View Source</a>
+  </span>
+  <a id="Benday_Common_Json_JsonExtensionMethods_GetArrayItem_" data-uid="Benday.Common.Json.JsonExtensionMethods.GetArrayItem*"></a>
+  <h4 id="Benday_Common_Json_JsonExtensionMethods_GetArrayItem_System_Text_Json_Nodes_JsonNode_System_String_System_String_System_String_" data-uid="Benday.Common.Json.JsonExtensionMethods.GetArrayItem(System.Text.Json.Nodes.JsonNode,System.String,System.String,System.String)">GetArrayItem(JsonNode?, string, string, string)</h4>
+  <div class="markdown level1 summary"><p>Gets a specific item from a JsonArray by searching for a property name/value match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JsonNode? GetArrayItem(this JsonNode? node, string arrayPropertyName, string searchPropertyName, string searchPropertyValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonnode">JsonNode</a></td>
+        <td><span class="parametername">node</span></td>
+        <td><p>The JsonNode containing the array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">arrayPropertyName</span></td>
+        <td><p>The name of the array property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">searchPropertyName</span></td>
+        <td><p>The property name to search for within array items.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">searchPropertyValue</span></td>
+        <td><p>The property value to match.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonnode">JsonNode</a></td>
+        <td><p>The matching JsonNode item, or null if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods_GetElement_System_Text_Json_JsonElement_System_String___.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods.GetElement(System.Text.Json.JsonElement%2CSystem.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L196">View Source</a>
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L197">View Source</a>
   </span>
   <a id="Benday_Common_Json_JsonExtensionMethods_GetElement_" data-uid="Benday.Common.Json.JsonExtensionMethods.GetElement*"></a>
   <h4 id="Benday_Common_Json_JsonExtensionMethods_GetElement_System_Text_Json_JsonElement_System_String___" data-uid="Benday.Common.Json.JsonExtensionMethods.GetElement(System.Text.Json.JsonElement,System.String[])">GetElement(JsonElement, params string[])</h4>
@@ -169,7 +349,7 @@
     <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods_GetElementOrThrow_System_Text_Json_JsonElement_System_String___.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods.GetElementOrThrow(System.Text.Json.JsonElement%2CSystem.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L168">View Source</a>
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L169">View Source</a>
   </span>
   <a id="Benday_Common_Json_JsonExtensionMethods_GetElementOrThrow_" data-uid="Benday.Common.Json.JsonExtensionMethods.GetElementOrThrow*"></a>
   <h4 id="Benday_Common_Json_JsonExtensionMethods_GetElementOrThrow_System_Text_Json_JsonElement_System_String___" data-uid="Benday.Common.Json.JsonExtensionMethods.GetElementOrThrow(System.Text.Json.JsonElement,System.String[])">GetElementOrThrow(JsonElement, params string[])</h4>
@@ -218,10 +398,122 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods_GetInt32_System_Text_Json_Nodes_JsonNode_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods.GetInt32(System.Text.Json.Nodes.JsonNode%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L351">View Source</a>
+  </span>
+  <a id="Benday_Common_Json_JsonExtensionMethods_GetInt32_" data-uid="Benday.Common.Json.JsonExtensionMethods.GetInt32*"></a>
+  <h4 id="Benday_Common_Json_JsonExtensionMethods_GetInt32_System_Text_Json_Nodes_JsonNode_System_String_" data-uid="Benday.Common.Json.JsonExtensionMethods.GetInt32(System.Text.Json.Nodes.JsonNode,System.String)">GetInt32(JsonNode?, string)</h4>
+  <div class="markdown level1 summary"><p>Gets an integer value from a JsonNode property safely, returning 0 if not found or cannot parse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetInt32(this JsonNode? node, string propertyName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonnode">JsonNode</a></td>
+        <td><span class="parametername">node</span></td>
+        <td><p>The JsonNode to search in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>The name of the property to retrieve.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The property value as an integer, or 0 if not found, null, or cannot parse.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods_GetString_System_Text_Json_Nodes_JsonNode_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods.GetString(System.Text.Json.Nodes.JsonNode%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L324">View Source</a>
+  </span>
+  <a id="Benday_Common_Json_JsonExtensionMethods_GetString_" data-uid="Benday.Common.Json.JsonExtensionMethods.GetString*"></a>
+  <h4 id="Benday_Common_Json_JsonExtensionMethods_GetString_System_Text_Json_Nodes_JsonNode_System_String_" data-uid="Benday.Common.Json.JsonExtensionMethods.GetString(System.Text.Json.Nodes.JsonNode,System.String)">GetString(JsonNode?, string)</h4>
+  <div class="markdown level1 summary"><p>Gets a string value from a JsonNode property safely, returning empty string if not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetString(this JsonNode? node, string propertyName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonnode">JsonNode</a></td>
+        <td><span class="parametername">node</span></td>
+        <td><p>The JsonNode to search in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>The name of the property to retrieve.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The property value as a string, or empty string if not found or null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods_HasProperty_System_Text_Json_JsonElement_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods.HasProperty(System.Text.Json.JsonElement%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L183">View Source</a>
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L184">View Source</a>
   </span>
   <a id="Benday_Common_Json_JsonExtensionMethods_HasProperty_" data-uid="Benday.Common.Json.JsonExtensionMethods.HasProperty*"></a>
   <h4 id="Benday_Common_Json_JsonExtensionMethods_HasProperty_System_Text_Json_JsonElement_System_String_" data-uid="Benday.Common.Json.JsonExtensionMethods.HasProperty(System.Text.Json.JsonElement,System.String)">HasProperty(JsonElement, string)</h4>
@@ -270,10 +562,73 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods_SafeGetArrayItem_System_Text_Json_Nodes_JsonArray_System_String_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods.SafeGetArrayItem(System.Text.Json.Nodes.JsonArray%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L497">View Source</a>
+  </span>
+  <a id="Benday_Common_Json_JsonExtensionMethods_SafeGetArrayItem_" data-uid="Benday.Common.Json.JsonExtensionMethods.SafeGetArrayItem*"></a>
+  <h4 id="Benday_Common_Json_JsonExtensionMethods_SafeGetArrayItem_System_Text_Json_Nodes_JsonArray_System_String_System_String_" data-uid="Benday.Common.Json.JsonExtensionMethods.SafeGetArrayItem(System.Text.Json.Nodes.JsonArray,System.String,System.String)">SafeGetArrayItem(JsonArray?, string, string)</h4>
+  <div class="markdown level1 summary"><p>Safely gets a specific item from a JsonArray by searching for a property name/value match.
+This method provides a safe way to retrieve array items without throwing exceptions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JsonNode? SafeGetArrayItem(this JsonArray? array, string searchPropertyName, string searchPropertyValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a></td>
+        <td><span class="parametername">array</span></td>
+        <td><p>The JsonArray to search in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">searchPropertyName</span></td>
+        <td><p>The property name to search for within array items.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">searchPropertyValue</span></td>
+        <td><p>The property value to match.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonnode">JsonNode</a></td>
+        <td><p>The matching JsonNode item, or null if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods_SafeGetBool_System_Text_Json_JsonElement_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods.SafeGetBool(System.Text.Json.JsonElement%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L282">View Source</a>
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L283">View Source</a>
   </span>
   <a id="Benday_Common_Json_JsonExtensionMethods_SafeGetBool_" data-uid="Benday.Common.Json.JsonExtensionMethods.SafeGetBool*"></a>
   <h4 id="Benday_Common_Json_JsonExtensionMethods_SafeGetBool_System_Text_Json_JsonElement_System_String_System_Boolean_" data-uid="Benday.Common.Json.JsonExtensionMethods.SafeGetBool(System.Text.Json.JsonElement,System.String,System.Boolean)">SafeGetBool(JsonElement, string, bool)</h4>
@@ -330,7 +685,7 @@
     <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods_SafeGetBool_System_Text_Json_JsonElement_System_String_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods.SafeGetBool(System.Text.Json.JsonElement%2CSystem.String%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L301">View Source</a>
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L302">View Source</a>
   </span>
   <a id="Benday_Common_Json_JsonExtensionMethods_SafeGetBool_" data-uid="Benday.Common.Json.JsonExtensionMethods.SafeGetBool*"></a>
   <h4 id="Benday_Common_Json_JsonExtensionMethods_SafeGetBool_System_Text_Json_JsonElement_System_String_System_String_System_Boolean_" data-uid="Benday.Common.Json.JsonExtensionMethods.SafeGetBool(System.Text.Json.JsonElement,System.String,System.String,System.Boolean)">SafeGetBool(JsonElement, string, string, bool)</h4>
@@ -392,7 +747,7 @@
     <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods_SafeGetDateTime_System_Text_Json_JsonElement_System_String_System_DateTime_.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods.SafeGetDateTime(System.Text.Json.JsonElement%2CSystem.String%2CSystem.DateTime)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L66">View Source</a>
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L67">View Source</a>
   </span>
   <a id="Benday_Common_Json_JsonExtensionMethods_SafeGetDateTime_" data-uid="Benday.Common.Json.JsonExtensionMethods.SafeGetDateTime*"></a>
   <h4 id="Benday_Common_Json_JsonExtensionMethods_SafeGetDateTime_System_Text_Json_JsonElement_System_String_System_DateTime_" data-uid="Benday.Common.Json.JsonExtensionMethods.SafeGetDateTime(System.Text.Json.JsonElement,System.String,System.DateTime)">SafeGetDateTime(JsonElement, string, DateTime)</h4>
@@ -449,7 +804,7 @@
     <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods_SafeGetDateTime_System_Text_Json_JsonElement_System_String_System_String_System_DateTime_.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods.SafeGetDateTime(System.Text.Json.JsonElement%2CSystem.String%2CSystem.String%2CSystem.DateTime)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L86">View Source</a>
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L87">View Source</a>
   </span>
   <a id="Benday_Common_Json_JsonExtensionMethods_SafeGetDateTime_" data-uid="Benday.Common.Json.JsonExtensionMethods.SafeGetDateTime*"></a>
   <h4 id="Benday_Common_Json_JsonExtensionMethods_SafeGetDateTime_System_Text_Json_JsonElement_System_String_System_String_System_DateTime_" data-uid="Benday.Common.Json.JsonExtensionMethods.SafeGetDateTime(System.Text.Json.JsonElement,System.String,System.String,System.DateTime)">SafeGetDateTime(JsonElement, string, string, DateTime)</h4>
@@ -511,7 +866,7 @@
     <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods_SafeGetDouble_System_Text_Json_JsonElement_System_String___.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods.SafeGetDouble(System.Text.Json.JsonElement%2CSystem.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L110">View Source</a>
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L111">View Source</a>
   </span>
   <a id="Benday_Common_Json_JsonExtensionMethods_SafeGetDouble_" data-uid="Benday.Common.Json.JsonExtensionMethods.SafeGetDouble*"></a>
   <h4 id="Benday_Common_Json_JsonExtensionMethods_SafeGetDouble_System_Text_Json_JsonElement_System_String___" data-uid="Benday.Common.Json.JsonExtensionMethods.SafeGetDouble(System.Text.Json.JsonElement,System.String[])">SafeGetDouble(JsonElement, params string[])</h4>
@@ -563,7 +918,7 @@
     <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods_SafeGetInt32_System_Text_Json_JsonElement_System_String___.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods.SafeGetInt32(System.Text.Json.JsonElement%2CSystem.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L138">View Source</a>
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L139">View Source</a>
   </span>
   <a id="Benday_Common_Json_JsonExtensionMethods_SafeGetInt32_" data-uid="Benday.Common.Json.JsonExtensionMethods.SafeGetInt32*"></a>
   <h4 id="Benday_Common_Json_JsonExtensionMethods_SafeGetInt32_System_Text_Json_JsonElement_System_String___" data-uid="Benday.Common.Json.JsonExtensionMethods.SafeGetInt32(System.Text.Json.JsonElement,System.String[])">SafeGetInt32(JsonElement, params string[])</h4>
@@ -615,7 +970,7 @@
     <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods_SafeGetLong_System_Text_Json_JsonElement_System_String_System_Int64_.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods.SafeGetLong(System.Text.Json.JsonElement%2CSystem.String%2CSystem.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L229">View Source</a>
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L230">View Source</a>
   </span>
   <a id="Benday_Common_Json_JsonExtensionMethods_SafeGetLong_" data-uid="Benday.Common.Json.JsonExtensionMethods.SafeGetLong*"></a>
   <h4 id="Benday_Common_Json_JsonExtensionMethods_SafeGetLong_System_Text_Json_JsonElement_System_String_System_Int64_" data-uid="Benday.Common.Json.JsonExtensionMethods.SafeGetLong(System.Text.Json.JsonElement,System.String,System.Int64)">SafeGetLong(JsonElement, string, long)</h4>
@@ -672,7 +1027,7 @@
     <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods_SafeGetLong_System_Text_Json_JsonElement_System_String_System_String_System_Int64_.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods.SafeGetLong(System.Text.Json.JsonElement%2CSystem.String%2CSystem.String%2CSystem.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L249">View Source</a>
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L250">View Source</a>
   </span>
   <a id="Benday_Common_Json_JsonExtensionMethods_SafeGetLong_" data-uid="Benday.Common.Json.JsonExtensionMethods.SafeGetLong*"></a>
   <h4 id="Benday_Common_Json_JsonExtensionMethods_SafeGetLong_System_Text_Json_JsonElement_System_String_System_String_System_Int64_" data-uid="Benday.Common.Json.JsonExtensionMethods.SafeGetLong(System.Text.Json.JsonElement,System.String,System.String,System.Int64)">SafeGetLong(JsonElement, string, string, long)</h4>
@@ -734,7 +1089,7 @@
     <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods_SafeGetLong_System_Text_Json_JsonElement_System_String_System_String_System_String_System_Int64_.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods.SafeGetLong(System.Text.Json.JsonElement%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L263">View Source</a>
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L264">View Source</a>
   </span>
   <a id="Benday_Common_Json_JsonExtensionMethods_SafeGetLong_" data-uid="Benday.Common.Json.JsonExtensionMethods.SafeGetLong*"></a>
   <h4 id="Benday_Common_Json_JsonExtensionMethods_SafeGetLong_System_Text_Json_JsonElement_System_String_System_String_System_String_System_Int64_" data-uid="Benday.Common.Json.JsonExtensionMethods.SafeGetLong(System.Text.Json.JsonElement,System.String,System.String,System.String,System.Int64)">SafeGetLong(JsonElement, string, string, string, long)</h4>
@@ -801,7 +1156,7 @@
     <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods_SafeGetString_System_Text_Json_JsonElement_System_String___.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods.SafeGetString(System.Text.Json.JsonElement%2CSystem.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L22">View Source</a>
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L23">View Source</a>
   </span>
   <a id="Benday_Common_Json_JsonExtensionMethods_SafeGetString_" data-uid="Benday.Common.Json.JsonExtensionMethods.SafeGetString*"></a>
   <h4 id="Benday_Common_Json_JsonExtensionMethods_SafeGetString_System_Text_Json_JsonElement_System_String___" data-uid="Benday.Common.Json.JsonExtensionMethods.SafeGetString(System.Text.Json.JsonElement,System.String[])">SafeGetString(JsonElement, params string[])</h4>
@@ -861,7 +1216,7 @@
                     <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
