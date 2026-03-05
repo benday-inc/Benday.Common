@@ -78,6 +78,51 @@ if (value.IsNullOrEmpty())
 }
 ```
 
+### JSON Utilities
+```csharp
+using Benday.Common.Json;
+
+// Path-based JSON editing with JsonEditor
+var editor = new JsonEditor(jsonString, loadFromString: true);
+
+// Get and set values using path-based navigation
+var userName = editor.GetValue("user", "name");
+var userId = editor.GetValueAsInt32("user", "id");
+var isActive = editor.GetValueAsBoolean("user", "isActive");
+
+editor.SetValue("John Doe", "user", "name");
+editor.SetValue(123, "user", "id");
+editor.SetValue(true, "user", "isActive");
+
+// Work with arrays using sibling value searches
+var args = new SiblingValueArguments
+{
+    PathArguments = new[] { "users" },
+    SiblingSearchKey = "id",
+    SiblingSearchValue = "123",
+    DesiredNodeKey = "email"
+};
+var email = editor.GetSiblingValue(args);
+
+// Save changes
+var updatedJson = editor.ToJson(indented: true);
+
+// JsonNode extension methods for direct manipulation
+var node = editor.GetNode("user");
+var name = node.GetString("name"); // Returns empty string if not found
+var age = node.GetInt32("age"); // Returns 0 if not found
+
+// Work with arrays
+var usersArray = editor.GetNode("users").GetArray("items");
+var firstUser = usersArray.SafeGetArrayItem("id", "123");
+var firstName = firstUser.GetString("firstName");
+
+// Combine JsonEditor with extension methods
+var settings = editor.GetNode("app", "settings");
+var timeout = settings.GetInt32("timeout");
+var apiKeys = settings.GetArray("apiKeys");
+```
+
 ## Quick Start: Benday.Common.Testing
 
 ### Test Base Class
@@ -149,6 +194,7 @@ public void TestWithDescriptiveAssertions()
 
 ## Key Features: Benday.Common
 
+* **JSON Utilities** - JsonEditor for path-based JSON navigation and editing, plus JsonNode/JsonArray extension methods for safe, direct manipulation
 * **ProcessRunner** - Execute command line tools and capture output with error handling
 * **Search Framework** - Flexible search system with arguments, operators, and sorting
 * **Paging Support** - `PageableResults<T>` for handling large result sets
