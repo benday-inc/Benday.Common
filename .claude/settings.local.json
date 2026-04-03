@@ -15,7 +15,10 @@
       "Bash(mkdir -p /Users/benday/code/benday-inc/Benday.Common/Benday.Common.Interfaces)",
       "Bash(mkdir -p /Users/benday/code/benday-inc/Benday.Common/Benday.Common.Interfaces.UnitTests)",
       "Bash(dotnet pack:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(git checkout:*)",
+      "Bash(git merge:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
