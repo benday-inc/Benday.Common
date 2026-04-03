@@ -11,7 +11,11 @@
       "Bash(dotnet test Benday.Common.Testing.UnitTests --filter \"FullyQualifiedName~AssertionMessageFormatterFixture\")",
       "Bash(dotnet test --filter \"FullyQualifiedName~AssertionMessageFormatterFixture|FullyQualifiedName~AssertThatFixture\")",
       "Bash(dotnet test --filter \"FullyQualifiedName~ShouldEqual_WithEqualCollections\")",
-      "Bash(dotnet test:*)"
+      "Bash(dotnet test:*)",
+      "Bash(mkdir -p /Users/benday/code/benday-inc/Benday.Common/Benday.Common.Interfaces)",
+      "Bash(mkdir -p /Users/benday/code/benday-inc/Benday.Common/Benday.Common.Interfaces.UnitTests)",
+      "Bash(dotnet pack:*)",
+      "Bash(ls:*)"
     ],
     "deny": [],
     "ask": []

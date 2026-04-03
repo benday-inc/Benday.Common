@@ -1,12 +1,14 @@
-﻿namespace Benday.Common
+﻿using Benday.Common.Interfaces;
+
+namespace Benday.Common
 {
     /// <summary>
-    /// Indicates the string identity property for a domain object,  
-    /// entity framework core entity, CosmosDb entity, or Azure Storage entity. 
+    /// Indicates the string identity property for a domain object,
+    /// entity framework core entity, CosmosDb entity, or Azure Storage entity.
     /// For EF Core, this typically becomes the primary key.
     /// </summary>
-    public interface IStringIdentity
+    public interface IStringIdentity : IEntityIdentity<string>
     {
-        string Id { get; set; }
+        new string Id { get; set; }
     }
 }

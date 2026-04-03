@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TheVersion>2.2.1</TheVersion>
+        <TheVersion>3.0.0-alpha</TheVersion>
         <AssemblyName>Benday.Common.Testing</AssemblyName>
-        <AssemblyVersion>$(TheVersion)</AssemblyVersion>
+        <AssemblyVersion>3.0.0</AssemblyVersion>
         <Version>$(TheVersion)</Version>
         <Authors>benday</Authors>
         <Copyright>2025</Copyright>
@@ -19,7 +19,8 @@
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
-        <PackageReleaseNotes>            
+        <PackageReleaseNotes>
+v3.0 - Major version bump: Added InMemoryOwnedItemRepository and InMemoryReadableRepository for testing service layers without storage emulators; Added dependency on Benday.Common.Interfaces;
 v2.2.1 - Metadata updates only;
 v2.2 - Updated dependencies to include netstandard2.1;
 v2.1 - Updated dependencies to .net 10.0;
@@ -38,6 +39,9 @@ v1.0 - Base class for xunit tests; MockUtility for streamlining testing with Moq
         <Title>Benday.Common.Testing</Title>
         <LangVersion>latest</LangVersion>
     </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Benday.Common.Interfaces\Benday.Common.Interfaces.csproj" />
+    </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Moq"
                           Version="4.*" />
