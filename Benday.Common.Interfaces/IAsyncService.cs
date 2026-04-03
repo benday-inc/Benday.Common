@@ -6,7 +6,6 @@ namespace Benday.Common.Interfaces
 {
     /// <summary>
     /// Base async service layer contract.
-    /// Service layers compose repositories and add business logic/validation.
     /// </summary>
     public interface IAsyncService<T, TKey>
         where T : IEntityIdentity<TKey>
@@ -18,14 +17,14 @@ namespace Benday.Common.Interfaces
     }
 
     /// <summary>
-    /// Async service layer for owned/multi-tenant entities.
+    /// Async service layer for tenant-scoped entities.
     /// </summary>
-    public interface IAsyncOwnedItemService<T, TKey>
+    public interface IAsyncTenantService<T, TKey>
         : IAsyncService<T, TKey>
-        where T : IOwnedItem<TKey>
+        where T : ITenantItem<TKey>
         where TKey : IEquatable<TKey>
     {
-        Task<T?> GetByIdAsync(string ownerId, TKey id);
-        Task<IList<T>> GetByOwnerAsync(string ownerId);
+        Task<T?> GetByIdAsync(string tenantId, TKey id);
+        Task<IList<T>> GetByTenantAsync(string tenantId);
     }
 }

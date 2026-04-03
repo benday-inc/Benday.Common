@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TheVersion>1.0.0-alpha</TheVersion>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <TheVersion>1.0.1-alpha</TheVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
         <Version>$(TheVersion)</Version>
         <Authors>Benjamin Day</Authors>
         <Company>Benjamin Day Consulting, Inc.</Company>

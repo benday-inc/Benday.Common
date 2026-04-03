@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TheVersion>10.0.0-alpha</TheVersion>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <TheVersion>10.0.1-alpha</TheVersion>
+        <AssemblyVersion>10.0.1.0</AssemblyVersion>
         <Version>$(VersionPrefix)$(TheVersion)</Version>
         <Authors>benday</Authors>
         <Copyright>2026</Copyright>
