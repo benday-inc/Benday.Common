@@ -18,7 +18,10 @@
       "Bash(ls:*)",
       "Bash(git checkout:*)",
       "Bash(git merge:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(cp Benday.Common.Interfaces/bin/Release/Benday.Common.Interfaces.1.0.1-alpha.nupkg ~/LocalNuGet/)",
+      "Bash(cp Benday.Common/bin/Release/Benday.Common.10.0.1-alpha.nupkg ~/LocalNuGet/)",
+      "Bash(cp Benday.Common.Testing/bin/Release/Benday.Common.Testing.3.0.1-alpha.nupkg ~/LocalNuGet/)"
     ],
     "deny": [],
     "ask": []
