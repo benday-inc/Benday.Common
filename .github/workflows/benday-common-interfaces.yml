@@ -1,20 +1,18 @@
-name: Benday.Common CI
+name: Benday.Common.Interfaces CI
 
 on:
   push:
     branches: [ "main" ]
     paths:
-      - 'Benday.Common/**'
       - 'Benday.Common.Interfaces/**'
-      - 'Benday.Common.UnitTests/**'
-      - '.github/workflows/benday-common.yml'
+      - 'Benday.Common.Interfaces.UnitTests/**'
+      - '.github/workflows/benday-common-interfaces.yml'
   pull_request:
     branches: [ "main" ]
     paths:
-      - 'Benday.Common/**'
       - 'Benday.Common.Interfaces/**'
-      - 'Benday.Common.UnitTests/**'
-      - '.github/workflows/benday-common.yml'
+      - 'Benday.Common.Interfaces.UnitTests/**'
+      - '.github/workflows/benday-common-interfaces.yml'
   workflow_dispatch:
 
 jobs:
@@ -38,28 +36,28 @@ jobs:
         with:
           dotnet-version: 10.0.x
 
-      - name: Restore Benday.Common
-        run: dotnet restore Benday.Common/Benday.Common.csproj
+      - name: Restore Benday.Common.Interfaces
+        run: dotnet restore Benday.Common.Interfaces/Benday.Common.Interfaces.csproj
+
+      - name: Build Benday.Common.Interfaces (Release)
+        run: dotnet build Benday.Common.Interfaces/Benday.Common.Interfaces.csproj --configuration Release --no-restore
 
       - name: Restore UnitTests
-        run: dotnet restore Benday.Common.UnitTests/Benday.Common.UnitTests.csproj
-
-      - name: Build Benday.Common (Release)
-        run: dotnet build Benday.Common/Benday.Common.csproj --configuration Release --no-restore
+        run: dotnet restore Benday.Common.Interfaces.UnitTests/Benday.Common.Interfaces.UnitTests.csproj
 
       - name: Build UnitTests (Release)
-        run: dotnet build Benday.Common.UnitTests/Benday.Common.UnitTests.csproj --configuration Release --no-restore
+        run: dotnet build Benday.Common.Interfaces.UnitTests/Benday.Common.Interfaces.UnitTests.csproj --configuration Release --no-restore
 
       - name: Test (Release)
-        run: dotnet test Benday.Common.UnitTests/Benday.Common.UnitTests.csproj --configuration Release --verbosity normal
+        run: dotnet test Benday.Common.Interfaces.UnitTests/Benday.Common.Interfaces.UnitTests.csproj --configuration Release --no-build --verbosity normal
 
-      - name: Pack Benday.Common
-        run: dotnet pack Benday.Common/Benday.Common.csproj --no-build --configuration Release --output ./artifacts
+      - name: Pack Benday.Common.Interfaces
+        run: dotnet pack Benday.Common.Interfaces/Benday.Common.Interfaces.csproj --no-build --configuration Release --output ./artifacts
 
       - name: Upload NuGet packages
         uses: actions/upload-artifact@v4
         with:
-          name: nuget-packages-common
+          name: nuget-packages-common-interfaces
           path: ./artifacts/*.nupkg
 
   deploy:
@@ -72,7 +70,7 @@ jobs:
       - name: Download artifacts
         uses: actions/download-artifact@v4
         with:
-          name: nuget-packages-common
+          name: nuget-packages-common-interfaces
 
       - name: Setup .NET 10
         uses: actions/setup-dotnet@v4
