@@ -4,7 +4,6 @@ using Benday.Common.Testing;
 using System.IO;
 
 using Xunit;
-using Xunit.Abstractions;
 using Xunit.Sdk;
 
 namespace Benday.Common.UnitTests.SampleFiles;

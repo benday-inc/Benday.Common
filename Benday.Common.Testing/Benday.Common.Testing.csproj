@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TheVersion>3.0.1-alpha</TheVersion>
+        <TheVersion>3.0.2-alpha</TheVersion>
         <AssemblyName>Benday.Common.Testing</AssemblyName>
-        <AssemblyVersion>3.0.1.0</AssemblyVersion>
+        <AssemblyVersion>3.0.2.0</AssemblyVersion>
         <Version>$(TheVersion)</Version>
         <Authors>benday</Authors>
         <Copyright>2025</Copyright>
@@ -20,6 +20,7 @@
         <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageReleaseNotes>
+v3.0.2 - Migrated from xunit v2 to xunit.v3;
 v3.0 - Major version bump: Added InMemoryTenantRepository and InMemoryReadableRepository for testing service layers without storage emulators; Added dependency on Benday.Common.Interfaces;
 v2.2.1 - Metadata updates only;
 v2.2 - Updated dependencies to include netstandard2.1;
@@ -35,7 +36,7 @@ v1.0 - Base class for xunit tests; MockUtility for streamlining testing with Moq
         <PackageTags>xunit;moq;unit-testing;testing;assertions;fluent-assertions;mocking;dotnet;csharp</PackageTags>
         <RepositoryType>git</RepositoryType>
         <RepositoryUrl>https://github.com/benday-inc/Benday.Common.git</RepositoryUrl>
-        <TargetFrameworks>net8.0;net9.0;net10.0;netstandard2.1</TargetFrameworks>
+        <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
         <Title>Benday.Common.Testing</Title>
         <LangVersion>latest</LangVersion>
     </PropertyGroup>
@@ -45,8 +46,10 @@ v1.0 - Base class for xunit tests; MockUtility for streamlining testing with Moq
     <ItemGroup>
         <PackageReference Include="Moq"
                           Version="4.*" />
-        <PackageReference Include="xunit"
-                          Version="2.*" />
+        <PackageReference Include="xunit.v3.assert"
+                          Version="3.*" />
+        <PackageReference Include="xunit.v3.extensibility.core"
+                          Version="3.*" />
         <PackageReference Include="Benday.Common"
                           Version="[9.7.0,)" />
     </ItemGroup>
