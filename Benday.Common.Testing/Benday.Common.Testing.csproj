@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TheVersion>3.0.2-alpha</TheVersion>
+        <TheVersion>3.0.4-alpha</TheVersion>
         <AssemblyName>Benday.Common.Testing</AssemblyName>
-        <AssemblyVersion>3.0.2.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
         <Version>$(TheVersion)</Version>
         <Authors>benday</Authors>
         <Copyright>2026</Copyright>
@@ -20,6 +20,7 @@
         <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageReleaseNotes>
+v3.0.4 - Adding fluent version of MockUtility create method so that you can refer to a specific method and provide specific values for scalars;
 v3.0.2 - Migrated from xunit v2 to xunit.v3;
 v3.0 - Major version bump: Added InMemoryTenantRepository and InMemoryReadableRepository for testing service layers without storage emulators; Added dependency on Benday.Common.Interfaces;
 v2.2.1 - Metadata updates only;

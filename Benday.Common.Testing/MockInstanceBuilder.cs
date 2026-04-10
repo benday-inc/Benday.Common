@@ -16,7 +16,7 @@ namespace Benday.Common.Testing;
 public class MockInstanceBuilder<T> where T : class
 {
     private Type[]? _constructorParameterTypes;
-    private readonly Dictionary<string, object?> _parameterValues = new();
+    private readonly Dictionary<Type, Queue<object>> _positionalValues = new();
 
     /// <summary>
     /// Selects which constructor to use by specifying the parameter types.
@@ -31,16 +31,27 @@ public class MockInstanceBuilder<T> where T : class
     }
 
     /// <summary>
-    /// Provides an explicit value for a constructor parameter by name.
+    /// Provides an explicit value for a constructor parameter by type.
     /// Use this for non-mockable types like strings, primitives, and enums.
+    /// Values are assigned positionally: the first call to WithValue for a given type
+    /// is assigned to the first constructor parameter of that type, the second call
+    /// to the second parameter of that type, and so on.
     /// Parameters not provided via WithValue will be auto-mocked if they are interfaces.
     /// </summary>
-    /// <param name="parameterName">The name of the constructor parameter.</param>
+    /// <typeparam name="TValue">The type of the value, matching the constructor parameter type.</typeparam>
     /// <param name="value">The value to pass for this parameter.</param>
     /// <returns>This builder instance for method chaining.</returns>
-    public MockInstanceBuilder<T> WithValue(string parameterName, object? value)
+    public MockInstanceBuilder<T> WithValue<TValue>(TValue value)
     {
-        _parameterValues[parameterName] = value;
+        var type = typeof(TValue);
+
+        if (!_positionalValues.TryGetValue(type, out var queue))
+        {
+            queue = new Queue<object>();
+            _positionalValues[type] = queue;
+        }
+
+        queue.Enqueue(value!);
         return this;
     }
 
@@ -68,9 +79,10 @@ public class MockInstanceBuilder<T> where T : class
 
         foreach (var parameter in parameters)
         {
-            if (_parameterValues.TryGetValue(parameter.Name!, out var explicitValue))
+            if (_positionalValues.TryGetValue(parameter.ParameterType, out var queue) &&
+                queue.Count > 0)
             {
-                args.Add(explicitValue!);
+                args.Add(queue.Dequeue());
             }
             else if (parameter.ParameterType.IsInterface)
             {
@@ -83,7 +95,7 @@ public class MockInstanceBuilder<T> where T : class
                 throw new InvalidOperationException(
                     $"Parameter '{parameter.Name}' of type '{parameter.ParameterType.Name}' " +
                     $"is not an interface and cannot be auto-mocked. " +
-                    $"Use WithValue(\"{parameter.Name}\", value) to provide a value.");
+                    $"Use WithValue<{parameter.ParameterType.Name}>(value) to provide a value.");
             }
         }
 

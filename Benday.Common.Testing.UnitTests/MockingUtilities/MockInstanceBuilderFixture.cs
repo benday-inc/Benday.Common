@@ -72,7 +72,7 @@ public class MockInstanceBuilderFixture : TestClassBase
     {
         var result = MockUtility.Build<ClassWithMultipleConstructors>()
             .UsingConstructor(typeof(string), typeof(ISampleRepository))
-            .WithValue("name", "test-value")
+            .WithValue("test-value")
             .Build();
 
         result.ShouldNotBeNull("Result should not be null");
@@ -87,7 +87,7 @@ public class MockInstanceBuilderFixture : TestClassBase
     {
         var result = MockUtility.Build<ClassWithMultipleConstructors>()
             .UsingConstructor(typeof(string))
-            .WithValue("name", "just-a-name")
+            .WithValue("just-a-name")
             .Build();
 
         result.ShouldNotBeNull("Result should not be null");
@@ -101,8 +101,8 @@ public class MockInstanceBuilderFixture : TestClassBase
     public void Build_MixedParameters_StringAndIntWithInterface()
     {
         var result = MockUtility.Build<ClassWithMixedParameters>()
-            .WithValue("name", "hello")
-            .WithValue("count", 42)
+            .WithValue("hello")
+            .WithValue(42)
             .Build();
 
         result.ShouldNotBeNull("Result should not be null");
@@ -155,11 +155,29 @@ public class MockInstanceBuilderFixture : TestClassBase
     }
 
     [Fact]
+    public void Build_PositionalValues_TwoStringsAssignedInOrder()
+    {
+        var result = MockUtility.Build<ClassWithTwoStringsAndInterface>()
+            .WithValue("Ben")
+            .WithValue("Day")
+            .WithValue(99)
+            .Build();
+
+        result.ShouldNotBeNull("Result should not be null");
+        result.Mocks.Count.ShouldEqual(1, "one mock for ISampleRepository");
+        result.Instance.ShouldNotBeNull("Instance was null");
+        result.Instance.FirstName.ShouldEqual("Ben", "First string should go to firstName");
+        result.Instance.LastName.ShouldEqual("Day", "Second string should go to lastName");
+        result.Instance.Age.ShouldEqual(99, "Int value should go to age");
+        result.Instance.Repository.ShouldNotBeNull("Repository should be mocked");
+    }
+
+    [Fact]
     public void Build_GetMockByType_WorksWithBuilder()
     {
         var result = MockUtility.Build<ClassWithMultipleConstructors>()
             .UsingConstructor(typeof(string), typeof(ISampleRepository))
-            .WithValue("name", "test")
+            .WithValue("test")
             .Build();
 
         var repoMock = result.GetMock<ISampleRepository>();
