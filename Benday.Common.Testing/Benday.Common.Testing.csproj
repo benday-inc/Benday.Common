@@ -6,7 +6,7 @@
         <AssemblyVersion>3.0.2.0</AssemblyVersion>
         <Version>$(TheVersion)</Version>
         <Authors>benday</Authors>
-        <Copyright>2025</Copyright>
+        <Copyright>2026</Copyright>
         <Description>A collection of classes to streamline testing with XUnit and Moq, featuring a comprehensive assertion framework with fluent syntax and descriptive error messages.</Description>
         <Deterministic>true</Deterministic>
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
