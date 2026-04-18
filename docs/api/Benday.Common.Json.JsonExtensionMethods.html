@@ -293,6 +293,136 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods_GetDictionary_System_Text_Json_Nodes_JsonArray_System_String_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods.GetDictionary(System.Text.Json.Nodes.JsonArray%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L530">View Source</a>
+  </span>
+  <a id="Benday_Common_Json_JsonExtensionMethods_GetDictionary_" data-uid="Benday.Common.Json.JsonExtensionMethods.GetDictionary*"></a>
+  <h4 id="Benday_Common_Json_JsonExtensionMethods_GetDictionary_System_Text_Json_Nodes_JsonArray_System_String_System_String_" data-uid="Benday.Common.Json.JsonExtensionMethods.GetDictionary(System.Text.Json.Nodes.JsonArray,System.String,System.String)">GetDictionary(JsonArray?, string, string)</h4>
+  <div class="markdown level1 summary"><p>Converts a JsonArray containing objects with key/value properties into a Dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, string&gt; GetDictionary(this JsonArray? array, string keyPropertyName, string valuePropertyName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a></td>
+        <td><span class="parametername">array</span></td>
+        <td><p>The JsonArray to convert.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">keyPropertyName</span></td>
+        <td><p>The property name to use as dictionary keys.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">valuePropertyName</span></td>
+        <td><p>The property name to use as dictionary values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><p>A dictionary with string keys and values, or an empty dictionary if array is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods_GetDictionary_System_Text_Json_Nodes_JsonNode_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods.GetDictionary(System.Text.Json.Nodes.JsonNode%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/Benday.Common/blob/main/Benday.Common/Json/JsonExtensionMethods.cs/#L569">View Source</a>
+  </span>
+  <a id="Benday_Common_Json_JsonExtensionMethods_GetDictionary_" data-uid="Benday.Common.Json.JsonExtensionMethods.GetDictionary*"></a>
+  <h4 id="Benday_Common_Json_JsonExtensionMethods_GetDictionary_System_Text_Json_Nodes_JsonNode_System_String_System_String_System_String_" data-uid="Benday.Common.Json.JsonExtensionMethods.GetDictionary(System.Text.Json.Nodes.JsonNode,System.String,System.String,System.String)">GetDictionary(JsonNode?, string, string, string)</h4>
+  <div class="markdown level1 summary"><p>Gets a JsonArray property from a JsonNode and converts it into a Dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, string&gt; GetDictionary(this JsonNode? node, string arrayPropertyName, string keyPropertyName, string valuePropertyName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonnode">JsonNode</a></td>
+        <td><span class="parametername">node</span></td>
+        <td><p>The JsonNode containing the array property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">arrayPropertyName</span></td>
+        <td><p>The name of the array property to retrieve.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">keyPropertyName</span></td>
+        <td><p>The property name to use as dictionary keys.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">valuePropertyName</span></td>
+        <td><p>The property name to use as dictionary values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><p>A dictionary with string keys and values, or an empty dictionary if array is not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/benday-inc/Benday.Common/new/main/apiSpec/new?filename=Benday_Common_Json_JsonExtensionMethods_GetElement_System_Text_Json_JsonElement_System_String___.md&amp;value=---%0Auid%3A%20Benday.Common.Json.JsonExtensionMethods.GetElement(System.Text.Json.JsonElement%2CSystem.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">

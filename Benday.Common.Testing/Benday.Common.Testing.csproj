@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TheVersion>3.0.4-alpha</TheVersion>
+        <TheVersion>3.0.4</TheVersion>
         <AssemblyName>Benday.Common.Testing</AssemblyName>
         <AssemblyVersion>3.0.4.0</AssemblyVersion>
         <Version>$(TheVersion)</Version>

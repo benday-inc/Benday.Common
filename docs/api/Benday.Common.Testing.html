@@ -94,8 +94,21 @@ Classes
       <h4><a class="xref" href="Benday.Common.Testing.CollectionAssertExtensions.html">CollectionAssertExtensions</a></h4>
       <section><p>Provides fluent assertion extension methods for collections.</p>
 </section>
+      <h4><a class="xref" href="Benday.Common.Testing.InMemoryReadableRepository-2.html">InMemoryReadableRepository&lt;T, TKey&gt;</a></h4>
+      <section><p>In-memory implementation of IAsyncReadableRepository for testing
+service layers with single-key entities (non-owned).</p>
+</section>
+      <h4><a class="xref" href="Benday.Common.Testing.InMemoryTenantRepository-2.html">InMemoryTenantRepository&lt;T, TKey&gt;</a></h4>
+      <section><p>In-memory implementation of IAsyncTenantRepository for testing
+service layers without any storage emulator or connection string.</p>
+</section>
       <h4><a class="xref" href="Benday.Common.Testing.MockCreationResult-1.html">MockCreationResult&lt;T&gt;</a></h4>
       <section><p>The result of the creation of an instance of a class with Moq-based mocks.</p>
+</section>
+      <h4><a class="xref" href="Benday.Common.Testing.MockInstanceBuilder-1.html">MockInstanceBuilder&lt;T&gt;</a></h4>
+      <section><p>A fluent builder for creating instances of classes with a mix of
+Moq-based mocks and explicit values for constructor parameters.
+Use <code>MockUtility.Build&lt;T&gt;()</code> to create an instance of this builder.</p>
 </section>
       <h4><a class="xref" href="Benday.Common.Testing.MockUtility.html">MockUtility</a></h4>
       <section><p>This class is used to create instances of classes using reflection and Moq.</p>
