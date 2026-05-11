@@ -27,7 +27,8 @@
       "Bash(dotnet package:*)",
       "Bash(dotnet run:*)",
       "Bash(dotnet clean:*)",
-      "Bash(echo \"EXIT CODE: $?\")"
+      "Bash(echo \"EXIT CODE: $?\")",
+      "Bash(echo \"EXIT: $?\")"
     ],
     "deny": [],
     "ask": []

@@ -6,7 +6,7 @@ A collection of utility classes for .NET including: domain model patterns, searc
 
 * **Domain Model Support** - Identity interfaces (`IInt32Identity`, `IStringIdentity`) and deletable pattern (`IDeleteable`)
 * **Search & Paging** - Classes for handling searching, sorting, and paging of results (`Search`, `SearchArgument`, `SearchResult`, `PageableResults`)
-* **JSON Editing** - Path-based JSON reading and editing with `JsonEditor` class (in `Benday.Common.Json` namespace)
+* **JSON Editing** - Path-based JSON reading and editing with `JsonEditor` class (in `Benday.Common.Json` namespace), plus extension methods on `JsonElement` and `JsonNode` for safe property access, array lookups, and dictionary conversion
 * **Process Execution** - Utility classes for running command line tools, reading results, and managing errors (`ProcessRunner`, `AsyncProcessRunner`)
 * **String Extensions** - Safe string operations, null handling, and type conversions (`SafeToString`, `SafeToInt32`, `IsNullOrEmpty`, etc.)
 * **Configuration Extensions** - Extension methods for accessing values from `IConfiguration`
@@ -47,6 +47,14 @@ int? timeout = editor.GetValueAsInt32("Settings", "Timeout");
 
 // Output modified JSON
 string result = editor.ToJson(indented: true);
+
+// Safe property access and array helpers on JsonElement
+var document = JsonDocument.Parse(jsonString);
+var root = document.RootElement;
+string name = root.SafeGetString("user", "name");
+JsonElement? users = root.GetArray("users");
+JsonElement? admin = root.GetArrayItem("users", "role", "admin");
+Dictionary<string, string> options = root.GetDictionary("settings", "key", "value");
 ```
 
 ### String Extensions

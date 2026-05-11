@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TheVersion>10.0.1</TheVersion>
-        <AssemblyVersion>10.0.1.0</AssemblyVersion>
+        <TheVersion>10.1</TheVersion>
+        <AssemblyVersion>$(TheVersion).0</AssemblyVersion>
         <Version>$(VersionPrefix)$(TheVersion)</Version>
         <Authors>benday</Authors>
         <Copyright>2026</Copyright>
@@ -19,6 +19,7 @@
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageTags>dotnet;csharp;utilities;domain-model;search;paging;pagination;json;json-editor;json-node;json-array;dictionary;process-runner;string-extensions;configuration;dependency-injection</PackageTags>
         <PackageReleaseNotes>
+v10.1 - Adding some additional extension methods for working with JsonElement and JsonNode values;
 v10.0 - Major version bump: IInt32Identity and IStringIdentity now extend IEntityIdentity from Benday.Common.Interfaces; Added project reference to Benday.Common.Interfaces;
 v9.12 - Added GetDictionary() extension methods for JsonNode and JsonArray to convert JSON arrays of name/value pairs into Dictionary&lt;string, string&gt;;
 v9.11 - Added JsonNode/JsonArray extension methods (GetString, GetInt32, GetArray, GetArrayItem, SafeGetArrayItem, FirstOrDefaultWithPropertyName) for simplified JSON manipulation; Made JsonEditor.GetNode() public to enable combined usage with extension methods;

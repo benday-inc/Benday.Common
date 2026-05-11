@@ -121,6 +121,23 @@ var firstName = firstUser.GetString("firstName");
 var settings = editor.GetNode("app", "settings");
 var timeout = settings.GetInt32("timeout");
 var apiKeys = settings.GetArray("apiKeys");
+
+// JsonElement extension methods (System.Text.Json.JsonDocument)
+var document = JsonDocument.Parse(jsonString);
+var root = document.RootElement;
+
+// Path-based safe getters
+var userName = root.SafeGetString("user", "name");
+var userId = root.SafeGetInt32("user", "id");
+var createdOn = root.SafeGetDateTime("user", "createdOn");
+
+// Array helpers - all return JsonElement? (null if missing or not an array)
+var usersArray = root.GetArray("users");
+var adminUser = root.GetArrayItem("users", "role", "admin");
+var firstWithCode = usersArray?.FirstOrDefaultWithPropertyName("code");
+
+// Build a dictionary from an array of key/value objects
+var optionsDict = root.GetDictionary("settings", "key", "value");
 ```
 
 ## Quick Start: Benday.Common.Testing

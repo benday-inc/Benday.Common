@@ -22,5 +22,23 @@
     "deeper": {
       "long-value": 9876543210
     }
-  }
+  },
+  "users": [
+    { "id": "123", "name": "Alice", "role": "admin" },
+    { "id": "456", "name": "Bob", "role": "user" },
+    { "id": "789", "name": "Charlie", "role": "user" }
+  ],
+  "settings": {
+    "options": [
+      { "key": "theme", "value": "dark" },
+      { "key": "language", "value": "en" },
+      { "key": "timezone", "value": "UTC" }
+    ]
+  },
+  "mixed-items": [
+    { "label": "first" },
+    { "code": "X1" },
+    { "label": "second", "code": "X2" }
+  ],
+  "empty-array": []
 }
