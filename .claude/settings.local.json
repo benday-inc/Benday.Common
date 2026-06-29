@@ -28,7 +28,12 @@
       "Bash(dotnet run:*)",
       "Bash(dotnet clean:*)",
       "Bash(echo \"EXIT CODE: $?\")",
-      "Bash(echo \"EXIT: $?\")"
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(dotnet test *)",
+      "Read(//tmp/**)",
+      "Bash(Benday.Common.Testing.UnitTests/bin/Debug/net10.0/Benday.Common.Testing.UnitTests --filter /*/*/FakeValueGeneratorFixture/*)",
+      "Bash(Benday.Common.Testing.UnitTests/bin/Debug/net10.0/Benday.Common.Testing.UnitTests --help)",
+      "Bash(Benday.Common.Testing.UnitTests/bin/Debug/net10.0/Benday.Common.Testing.UnitTests -class Benday.Common.Testing.UnitTests.FakeValueGeneratorFixture)"
     ],
     "deny": [],
     "ask": []
