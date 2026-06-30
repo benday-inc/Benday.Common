@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TheVersion>3.1.1</TheVersion>
+        <TheVersion>3.1.2</TheVersion>
         <AssemblyName>Benday.Common.Testing</AssemblyName>
-        <AssemblyVersion>3.1.1</AssemblyVersion>
+        <AssemblyVersion>3.1.2</AssemblyVersion>
         <Version>$(TheVersion)</Version>
         <Authors>benday</Authors>
         <Copyright>2026</Copyright>
@@ -20,6 +20,7 @@
         <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageReleaseNotes>
+v3.1.2 - Added FakeValueGenerator.Create&lt;T&gt;() to create and populate a single fake instance, and Create&lt;T&gt;(numberToCreate) to create and populate multiple fake instances at once (using each item's index as the seed so predictable values are unique across the collection);
 v3.1 - Adding FakeValueGenerator to Benday.Common.Testing to streamline test data generation in tests; Added reflection-based assertions AssertThat.PropertiesAreEqual (compares two objects property-by-property, reporting all mismatches at once) and AssertThat.AllPropertiesAreNonNullAndNonDefaultValue (verifies every property holds a non-default value) -- companions to FakeValueGenerator; added optional per-property special-case callbacks to PropertiesAreEqual, AllPropertiesAreNonNullAndNonDefaultValue, and FakeValueGenerator.PopulateFakeValues;
 v3.0.4 - Adding fluent version of MockUtility create method so that you can refer to a specific method and provide specific values for scalars;
 v3.0.2 - Migrated from xunit v2 to xunit.v3;

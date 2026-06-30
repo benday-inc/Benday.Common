@@ -47,6 +47,109 @@ public static partial class FakeValueGenerator
     }
 
     /// <summary>
+    /// Creates a single new instance of <typeparamref name="T"/> and populates its public, writable
+    /// properties with fake values. <typeparamref name="T"/> must have a public parameterless constructor.
+    /// </summary>
+    /// <typeparam name="T">The type to create and populate. Must have a public parameterless constructor.</typeparam>
+    /// <param name="skipPropertyNames">The names of properties to leave untouched (case-insensitive). Optional.</param>
+    /// <param name="randomize">When true, generated values are random; otherwise they are predictable.</param>
+    /// <returns>A populated instance of <typeparamref name="T"/>.</returns>
+    public static T Create<T>(
+        string[]? skipPropertyNames = null,
+        bool randomize = false)
+        where T : new()
+    {
+        return Create<T>(handleSpecialCases: null, skipPropertyNames, randomize);
+    }
+
+    /// <summary>
+    /// Creates a single new instance of <typeparamref name="T"/> and populates its public, writable
+    /// properties with fake values, giving the caller a chance to populate special-case properties with
+    /// custom logic. <typeparamref name="T"/> must have a public parameterless constructor.
+    /// </summary>
+    /// <typeparam name="T">The type to create and populate. Must have a public parameterless constructor.</typeparam>
+    /// <param name="handleSpecialCases">A callback invoked once per property to optionally populate it with custom logic. See <see cref="PopulateFakeValues{T}(T, Action{PropertyPopulation{T}}?, string[]?, bool, int)"/>.</param>
+    /// <param name="skipPropertyNames">The names of properties to leave untouched (case-insensitive). Optional.</param>
+    /// <param name="randomize">When true, generated values are random; otherwise they are predictable.</param>
+    /// <returns>A populated instance of <typeparamref name="T"/>.</returns>
+    public static T Create<T>(
+        Action<PropertyPopulation<T>>? handleSpecialCases,
+        string[]? skipPropertyNames = null,
+        bool randomize = false)
+        where T : new()
+    {
+        var instance = new T();
+
+        PopulateFakeValuesCore(instance, handleSpecialCases, skipPropertyNames, randomize, seedValue: 0);
+
+        return instance;
+    }
+
+    /// <summary>
+    /// Creates <paramref name="numberToCreate"/> new instances of <typeparamref name="T"/> and populates
+    /// each one's public, writable properties with fake values. Each instance is given its index in the
+    /// collection as the seed value, so in predictable mode the instances have distinct (and reproducible)
+    /// property values. <typeparamref name="T"/> must have a public parameterless constructor.
+    /// </summary>
+    /// <typeparam name="T">The type to create and populate. Must have a public parameterless constructor.</typeparam>
+    /// <param name="numberToCreate">The number of instances to create. May be zero, which returns an empty list.</param>
+    /// <param name="skipPropertyNames">The names of properties to leave untouched (case-insensitive). Optional.</param>
+    /// <param name="randomize">When true, generated values are random; otherwise they are predictable and unique per index.</param>
+    /// <returns>A list of <paramref name="numberToCreate"/> populated instances.</returns>
+    /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="numberToCreate"/> is negative.</exception>
+    public static List<T> Create<T>(
+        int numberToCreate,
+        string[]? skipPropertyNames = null,
+        bool randomize = false)
+        where T : new()
+    {
+        return Create<T>(numberToCreate, null, skipPropertyNames, randomize);
+    }
+
+    /// <summary>
+    /// Creates <paramref name="numberToCreate"/> new instances of <typeparamref name="T"/> and populates
+    /// each one's public, writable properties with fake values, giving the caller a chance to populate
+    /// special-case properties with custom logic. Each instance is given its index in the collection as
+    /// the seed value, so in predictable mode the instances have distinct (and reproducible) property values.
+    /// <typeparamref name="T"/> must have a public parameterless constructor.
+    /// </summary>
+    /// <typeparam name="T">The type to create and populate. Must have a public parameterless constructor.</typeparam>
+    /// <param name="numberToCreate">The number of instances to create. May be zero, which returns an empty list.</param>
+    /// <param name="handleSpecialCases">A callback invoked once per property of each instance to optionally populate it with custom logic. See <see cref="PopulateFakeValues{T}(T, Action{PropertyPopulation{T}}?, string[]?, bool, int)"/>.</param>
+    /// <param name="skipPropertyNames">The names of properties to leave untouched (case-insensitive). Optional.</param>
+    /// <param name="randomize">When true, generated values are random; otherwise they are predictable and unique per index.</param>
+    /// <returns>A list of <paramref name="numberToCreate"/> populated instances.</returns>
+    /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="numberToCreate"/> is negative.</exception>
+    public static List<T> Create<T>(
+        int numberToCreate,
+        Action<PropertyPopulation<T>>? handleSpecialCases,
+        string[]? skipPropertyNames = null,
+        bool randomize = false)
+        where T : new()
+    {
+        if (numberToCreate < 0)
+        {
+            throw new ArgumentOutOfRangeException(
+                nameof(numberToCreate),
+                numberToCreate,
+                "Number to create cannot be negative.");
+        }
+
+        var results = new List<T>(numberToCreate);
+
+        for (var i = 0; i < numberToCreate; i++)
+        {
+            var instance = new T();
+
+            PopulateFakeValuesCore(instance, handleSpecialCases, skipPropertyNames, randomize, seedValue: i);
+
+            results.Add(instance);
+        }
+
+        return results;
+    }
+
+    /// <summary>
     /// Populates the public, writable properties of <paramref name="populateThis"/> with fake values
     /// using reflection. Properties named in <paramref name="skipPropertyNames"/> are left untouched,
     /// as are properties with no public setter or with a type that has no registered generator. The

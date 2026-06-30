@@ -6,8 +6,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a .NET multi-project repository containing two main libraries:
 
-- **Benday.Common** (v9.12.0) - A collection of classes for supporting the domain model pattern in .NET Core
-- **Benday.Common.Testing** (v2.2.1) - A collection of classes to streamline testing with XUnit and Moq
+- **Benday.Common** (v10.1) - A collection of classes for supporting the domain model pattern in .NET Core
+- **Benday.Common.Testing** (v3.1.2) - A collection of classes to streamline testing with XUnit and Moq
 
 Both libraries target .NET 8.0, .NET 9.0, .NET 10.0, and .NET Standard 2.1. They are published as NuGet packages.
 
@@ -126,6 +126,6 @@ The project uses:
 
 ## Version Management
 
-- Benday.Common uses semantic versioning, currently at `9.12.0`
-- Benday.Common.Testing uses semantic versioning, currently at `2.2.1`
+- Benday.Common uses semantic versioning, currently at `10.1`
+- Benday.Common.Testing uses semantic versioning, currently at `3.1.2`
 - The Testing library depends on Benday.Common version `[9.7.0,)` or higher

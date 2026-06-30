@@ -47,7 +47,9 @@
       "Bash(echo \"EXITCODE=$?\")",
       "Bash(echo \"exit=$?\")",
       "Bash(Benday.Common.Testing.UnitTests/bin/Release/net10.0/Benday.Common.Testing.UnitTests --filter-query /[FakeValueGeneratorFixture])",
-      "Bash(./Benday.Common.UnitTests/bin/Debug/net10.0/Benday.Common.UnitTests)"
+      "Bash(./Benday.Common.UnitTests/bin/Debug/net10.0/Benday.Common.UnitTests)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ],
     "deny": [],
     "ask": []
