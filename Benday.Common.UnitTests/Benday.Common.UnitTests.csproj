@@ -4,14 +4,18 @@
     <OutputType>Exe</OutputType>
     <IsPackable>false</IsPackable>
     <Nullable>enable</Nullable>
+    <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="coverlet.collector" Version="6.*" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.*" />
-    <PackageReference Include="xunit.v3" Version="3.*" />
+    <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" Version="18.*" />
+    <PackageReference Include="xunit.v3.mtp-v2" Version="3.*" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Benday.Common\Benday.Common.csproj" />
     <ProjectReference Include="..\Benday.Common.Testing\Benday.Common.Testing.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="xunit.runner.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 </Project>
