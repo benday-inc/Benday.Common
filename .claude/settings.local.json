@@ -35,7 +35,15 @@
       "Bash(Benday.Common.Testing.UnitTests/bin/Debug/net10.0/Benday.Common.Testing.UnitTests --help)",
       "Bash(Benday.Common.Testing.UnitTests/bin/Debug/net10.0/Benday.Common.Testing.UnitTests -class Benday.Common.Testing.UnitTests.FakeValueGeneratorFixture)",
       "Bash(Benday.Common.Testing.UnitTests/bin/Debug/net10.0/Benday.Common.Testing.UnitTests -class Benday.Common.Testing.UnitTests.FakeValueGeneratorFixture -class Benday.Common.Testing.UnitTests.PopulateFakeValuesFixture)",
-      "Bash(awk ' *)"
+      "Bash(awk ' *)",
+      "Bash(xargs cat)",
+      "Bash(echo \"EXIT=$?\")",
+      "Bash(Benday.Common.Testing.UnitTests/bin/Release/net10.0/Benday.Common.Testing.UnitTests --filter /*/*/PropertiesAreEqualFixture/*)",
+      "Bash(Benday.Common.Testing.UnitTests/bin/Release/net10.0/Benday.Common.Testing.UnitTests --help)",
+      "Bash(Benday.Common.Testing.UnitTests/bin/Release/net10.0/Benday.Common.Testing.UnitTests -class *PropertiesAreEqualFixture)",
+      "Bash(Benday.Common.Testing.UnitTests/bin/Release/net10.0/Benday.Common.Testing.UnitTests -filter /*/*/PropertiesAreEqualFixture/*)",
+      "Bash(Benday.Common.Testing.UnitTests/bin/Release/net10.0/Benday.Common.Testing.UnitTests -list methods)",
+      "Bash(Benday.Common.Testing.UnitTests/bin/Release/net10.0/Benday.Common.Testing.UnitTests)"
     ],
     "deny": [],
     "ask": []

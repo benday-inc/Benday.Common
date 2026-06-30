@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TheVersion>3.1.0</TheVersion>
+        <TheVersion>3.2.0</TheVersion>
         <AssemblyName>Benday.Common.Testing</AssemblyName>
-        <AssemblyVersion>3.1.0</AssemblyVersion>
+        <AssemblyVersion>3.2.0</AssemblyVersion>
         <Version>$(TheVersion)</Version>
         <Authors>benday</Authors>
         <Copyright>2026</Copyright>
@@ -20,6 +20,7 @@
         <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageReleaseNotes>
+v3.2 - Added AssertThat.PropertiesAreEqual, a reflection-based assertion that compares two objects property-by-property and reports all mismatches at once -- the companion to FakeValueGenerator;
 v3.1 - Adding FakeValueGenerator to Benday.Common.Testing to streamline test data generation in tests;
 v3.0.4 - Adding fluent version of MockUtility create method so that you can refer to a specific method and provide specific values for scalars;
 v3.0.2 - Migrated from xunit v2 to xunit.v3;
