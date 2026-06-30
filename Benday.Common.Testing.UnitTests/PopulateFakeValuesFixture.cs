@@ -142,4 +142,62 @@ public class PopulateFakeValuesFixture : TestClassBase
         Assert.NotNull(result.Instance.Thing);
         Assert.Equal("Thing_0", result.Instance.Thing!.Value);
     }
+
+    #region special-case lambda
+
+    [Fact]
+    public void Handler_CanPopulateUnsupportedProperty()
+    {
+        // MixedModel.Custom is a CustomThing, which has no registered generator. Normally it is
+        // skipped as UnsupportedType; the handler populates it and marks it handled.
+        var result = FakeValueGenerator.PopulateFakeValues(new MixedModel(),
+            prop =>
+            {
+                if (prop.PropertyName == nameof(MixedModel.Custom))
+                {
+                    prop.Instance.Custom = new CustomThing { Value = $"custom_{prop.SeedValue}" };
+                    prop.IsHandled = true;
+                }
+            });
+
+        Assert.Contains("Custom", result.PopulatedProperties);
+        Assert.DoesNotContain(
+            result.SkippedProperties,
+            x => x.Name == "Custom" && x.Reason == SkipReason.UnsupportedType);
+        Assert.NotNull(result.Instance.Custom);
+        Assert.Equal("custom_0", result.Instance.Custom!.Value);
+    }
+
+    [Fact]
+    public void Handler_CanOverrideABuiltInGeneratedValue()
+    {
+        var result = FakeValueGenerator.PopulateFakeValues(new FullySupportedModel(),
+            prop =>
+            {
+                if (prop.PropertyName == nameof(FullySupportedModel.StringValue))
+                {
+                    prop.Instance.StringValue = "handled-by-caller";
+                    prop.IsHandled = true;
+                }
+            });
+
+        Assert.Equal("handled-by-caller", result.Instance.StringValue);
+        Assert.Contains("StringValue", result.PopulatedProperties);
+        // a property the handler ignored still gets a generated value
+        Assert.Equal("IntValue".Length, result.Instance.IntValue);
+    }
+
+    [Fact]
+    public void Handler_UnhandledPropertiesUseBuiltInGeneration()
+    {
+        var result = FakeValueGenerator.PopulateFakeValues(new FullySupportedModel(),
+            prop => { /* observe only, never handle */ });
+
+        // identical outcome to the no-handler overload
+        Assert.Empty(result.SkippedProperties);
+        Assert.Equal(13, result.PopulatedProperties.Count);
+        Assert.Equal("StringValue_0", result.Instance.StringValue);
+    }
+
+    #endregion
 }

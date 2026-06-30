@@ -65,6 +65,48 @@ public static partial class FakeValueGenerator
         bool randomize = false,
         int seedValue = 0)
     {
+        return PopulateFakeValuesCore(populateThis, null, skipPropertyNames, randomize, seedValue);
+    }
+
+    /// <summary>
+    /// Populates the public, writable properties of <paramref name="populateThis"/> with fake values,
+    /// giving the caller a chance to populate special-case properties with custom logic.
+    /// </summary>
+    /// <remarks>
+    /// For every property that is not in <paramref name="skipPropertyNames"/>,
+    /// <paramref name="handleSpecialCases"/> is invoked with a <see cref="PropertyPopulation{T}"/>
+    /// describing the property. The handler can set the property however it likes (the strongly typed
+    /// instance is available via <see cref="PropertyPopulation{T}.Instance"/>) and then set
+    /// <see cref="PropertyPopulation{T}.IsHandled"/> to <c>true</c> to take that property over. Handled
+    /// properties are reported as populated and the built-in generation is skipped for them. This hook
+    /// runs before the public-setter check, so it can also populate read-only properties (for example
+    /// by adding items to a collection) or properties whose type has no registered generator.
+    /// </remarks>
+    /// <typeparam name="T">The type of the object to populate.</typeparam>
+    /// <param name="populateThis">The object to populate.</param>
+    /// <param name="handleSpecialCases">A callback invoked once per property to optionally populate it with custom logic.</param>
+    /// <param name="skipPropertyNames">The names of properties to leave untouched (case-insensitive). Optional.</param>
+    /// <param name="randomize">When true, generated values are random; otherwise they are predictable.</param>
+    /// <param name="seedValue">A seed used to keep predictable values unique across a collection (e.g. the item index).</param>
+    /// <returns>A result describing the populated instance and any skipped properties.</returns>
+    /// <exception cref="ArgumentNullException">Thrown when <paramref name="populateThis"/> is null.</exception>
+    public static FakeValueResult<T> PopulateFakeValues<T>(
+        T populateThis,
+        Action<PropertyPopulation<T>>? handleSpecialCases,
+        string[]? skipPropertyNames = null,
+        bool randomize = false,
+        int seedValue = 0)
+    {
+        return PopulateFakeValuesCore(populateThis, handleSpecialCases, skipPropertyNames, randomize, seedValue);
+    }
+
+    private static FakeValueResult<T> PopulateFakeValuesCore<T>(
+        T populateThis,
+        Action<PropertyPopulation<T>>? handleSpecialCases,
+        string[]? skipPropertyNames,
+        bool randomize,
+        int seedValue)
+    {
         ArgumentNullException.ThrowIfNull(populateThis);
 
         var skip = new HashSet<string>(
@@ -91,6 +133,20 @@ public static partial class FakeValueGenerator
             {
                 skipped.Add(new SkippedProperty(property.Name, typeName, SkipReason.ExplicitlySkipped));
                 continue;
+            }
+
+            if (handleSpecialCases is not null)
+            {
+                var context = new PropertyPopulation<T>(
+                    populateThis, property.Name, property.PropertyType, randomize, seedValue);
+
+                handleSpecialCases(context);
+
+                if (context.IsHandled)
+                {
+                    populated.Add(property.Name);
+                    continue;
+                }
             }
 
             if (property.CanWrite == false ||

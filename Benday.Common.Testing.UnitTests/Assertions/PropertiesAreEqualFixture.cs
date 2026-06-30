@@ -207,6 +207,85 @@ public class PropertiesAreEqualFixture : TestClassBase
         Assert.Contains("Thing", ex.Message);
         Assert.Contains("did not match", ex.Message);
     }
+
+    #region special-case lambda
+
+    [Fact]
+    public void Handler_CanCustomizeComparisonOfUncomparableProperty()
+    {
+        // Two distinct UncomparableThing instances with identical content. Built-in comparison would
+        // report it as uncomparable; the handler compares the meaningful field instead.
+        var expected = new ModelWithUncomparable
+        {
+            IntValue = 1,
+            Thing = new UncomparableThing { Value = "x" },
+        };
+        var actual = new ModelWithUncomparable
+        {
+            IntValue = 1,
+            Thing = new UncomparableThing { Value = "x" },
+        };
+
+        AssertThat.PropertiesAreEqual(expected, actual,
+            prop =>
+            {
+                if (prop.PropertyName == nameof(ModelWithUncomparable.Thing))
+                {
+                    var expectedThing = (UncomparableThing?)prop.ExpectedValue;
+                    var actualThing = (UncomparableThing?)prop.ActualValue;
+                    AssertThat.AreEqual(expectedThing?.Value, actualThing?.Value, "Thing.Value");
+                    prop.IsHandled = true;
+                }
+            });
+    }
+
+    [Fact]
+    public void Handler_CustomComparisonCanFail()
+    {
+        var expected = new ModelWithUncomparable
+        {
+            IntValue = 1,
+            Thing = new UncomparableThing { Value = "x" },
+        };
+        var actual = new ModelWithUncomparable
+        {
+            IntValue = 1,
+            Thing = new UncomparableThing { Value = "different" },
+        };
+
+        var ex = Assert.Throws<AssertionException>(() =>
+            AssertThat.PropertiesAreEqual(expected, actual,
+                prop =>
+                {
+                    if (prop.PropertyName == nameof(ModelWithUncomparable.Thing))
+                    {
+                        var expectedThing = (UncomparableThing?)prop.ExpectedValue;
+                        var actualThing = (UncomparableThing?)prop.ActualValue;
+                        AssertThat.AreEqual(expectedThing?.Value, actualThing?.Value, "Thing.Value");
+                        prop.IsHandled = true;
+                    }
+                }));
+
+        WriteLine(ex.Message);
+        Assert.Contains("Thing.Value", ex.Message);
+    }
+
+    [Fact]
+    public void Handler_UnhandledPropertiesStillUseBuiltInComparison()
+    {
+        var expected = CreateSample();
+        var actual = CreateSample();
+        actual.IntValue = 99;
+
+        // handler only inspects, never sets IsHandled, so IntValue still fails via the built-in check
+        var ex = Assert.Throws<AssertionException>(() =>
+            AssertThat.PropertiesAreEqual(expected, actual, prop => { /* observe only */ }));
+
+        WriteLine(ex.Message);
+        Assert.Contains("IntValue", ex.Message);
+    }
+
+    #endregion
 }
 
 public class ComparableModel
