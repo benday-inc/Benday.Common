@@ -43,7 +43,9 @@
       "Bash(Benday.Common.Testing.UnitTests/bin/Release/net10.0/Benday.Common.Testing.UnitTests -class *PropertiesAreEqualFixture)",
       "Bash(Benday.Common.Testing.UnitTests/bin/Release/net10.0/Benday.Common.Testing.UnitTests -filter /*/*/PropertiesAreEqualFixture/*)",
       "Bash(Benday.Common.Testing.UnitTests/bin/Release/net10.0/Benday.Common.Testing.UnitTests -list methods)",
-      "Bash(Benday.Common.Testing.UnitTests/bin/Release/net10.0/Benday.Common.Testing.UnitTests)"
+      "Bash(Benday.Common.Testing.UnitTests/bin/Release/net10.0/Benday.Common.Testing.UnitTests)",
+      "Bash(echo \"EXITCODE=$?\")",
+      "Bash(echo \"exit=$?\")"
     ],
     "deny": [],
     "ask": []

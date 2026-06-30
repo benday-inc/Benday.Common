@@ -42,11 +42,41 @@ public sealed class PropertyAssert<T>
 
     /// <summary>
     /// Gets or sets a value indicating whether the test author has fully handled this property.
-    /// When set to <c>true</c>, the built-in assertion is skipped for this property. The handler
-    /// is expected to throw (for example via <see cref="AssertThat.Fail(string)"/>) when its own
-    /// check fails.
+    /// When set to <c>true</c>, the built-in assertion is skipped for this property. A handler that
+    /// sets this directly is expected to throw (for example via <see cref="AssertThat.Fail(string)"/>)
+    /// when its own check fails. Prefer <see cref="HandleManuallyPass"/> /
+    /// <see cref="HandleManuallyFail(string)"/>, which integrate the result into the aggregated
+    /// failure report instead of failing on the first difference.
     /// </summary>
     public bool IsHandled { get; set; }
+
+    internal bool HasManualFailure { get; private set; }
+
+    internal string? ManualFailureMessage { get; private set; }
+
+    /// <summary>
+    /// Marks this property as fully handled and passing, suppressing the built-in check. Use this
+    /// when your custom logic has confirmed the property is acceptable.
+    /// </summary>
+    public void HandleManuallyPass()
+    {
+        IsHandled = true;
+        HasManualFailure = false;
+        ManualFailureMessage = null;
+    }
+
+    /// <summary>
+    /// Marks this property as fully handled and failing, suppressing the built-in check. The supplied
+    /// <paramref name="failureMessage"/> is collected and reported alongside any other failures rather
+    /// than thrown immediately, so a single assertion call surfaces every problem at once.
+    /// </summary>
+    /// <param name="failureMessage">The message describing why this property failed.</param>
+    public void HandleManuallyFail(string failureMessage)
+    {
+        IsHandled = true;
+        HasManualFailure = true;
+        ManualFailureMessage = failureMessage;
+    }
 }
 
 /// <summary>
@@ -107,9 +137,40 @@ public sealed class PropertyComparison<T>
 
     /// <summary>
     /// Gets or sets a value indicating whether the test author has fully handled this property.
-    /// When set to <c>true</c>, the built-in equality check is skipped for this property. The
-    /// handler is expected to throw (for example via <see cref="AssertThat.Fail(string)"/>) when
-    /// its own comparison fails.
+    /// When set to <c>true</c>, the built-in equality check is skipped for this property. A handler
+    /// that sets this directly is expected to throw (for example via
+    /// <see cref="AssertThat.Fail(string)"/>) when its own comparison fails. Prefer
+    /// <see cref="HandleManuallyPass"/> / <see cref="HandleManuallyFail(string)"/>, which integrate
+    /// the result into the aggregated failure report instead of failing on the first difference.
     /// </summary>
     public bool IsHandled { get; set; }
+
+    internal bool HasManualFailure { get; private set; }
+
+    internal string? ManualFailureMessage { get; private set; }
+
+    /// <summary>
+    /// Marks this property as fully handled and passing, suppressing the built-in equality check. Use
+    /// this when your custom comparison has confirmed the values match.
+    /// </summary>
+    public void HandleManuallyPass()
+    {
+        IsHandled = true;
+        HasManualFailure = false;
+        ManualFailureMessage = null;
+    }
+
+    /// <summary>
+    /// Marks this property as fully handled and failing, suppressing the built-in equality check. The
+    /// supplied <paramref name="failureMessage"/> is collected and reported alongside any other
+    /// mismatches rather than thrown immediately, so a single assertion call surfaces every difference
+    /// at once.
+    /// </summary>
+    /// <param name="failureMessage">The message describing why this property failed.</param>
+    public void HandleManuallyFail(string failureMessage)
+    {
+        IsHandled = true;
+        HasManualFailure = true;
+        ManualFailureMessage = failureMessage;
+    }
 }

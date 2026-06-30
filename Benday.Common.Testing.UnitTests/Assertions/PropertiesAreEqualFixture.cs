@@ -208,6 +208,100 @@ public class PropertiesAreEqualFixture : TestClassBase
         Assert.Contains("did not match", ex.Message);
     }
 
+    #region arrays
+
+    [Fact]
+    public void ByteArrayProperty_EqualContents_DoNotThrow()
+    {
+        // distinct instances, identical contents -- the rowversion / timestamp case
+        var expected = new ModelWithArrays { Timestamp = new byte[] { 1, 2, 3, 4 } };
+        var actual = new ModelWithArrays { Timestamp = new byte[] { 1, 2, 3, 4 } };
+
+        AssertThat.PropertiesAreEqual(expected, actual);
+    }
+
+    [Fact]
+    public void ByteArrayProperty_DifferentContents_Throws()
+    {
+        var expected = new ModelWithArrays { Timestamp = new byte[] { 1, 2, 3, 4 } };
+        var actual = new ModelWithArrays { Timestamp = new byte[] { 1, 2, 3, 9 } };
+
+        var ex = Assert.Throws<AssertionException>(() =>
+            AssertThat.PropertiesAreEqual(expected, actual));
+
+        WriteLine(ex.Message);
+        Assert.Contains("Timestamp", ex.Message);
+        Assert.Contains("did not match", ex.Message);
+        Assert.DoesNotContain("could not be compared reliably", ex.Message);
+    }
+
+    [Fact]
+    public void ByteArrayProperty_DifferentLengths_Throws()
+    {
+        var expected = new ModelWithArrays { Timestamp = new byte[] { 1, 2, 3, 4 } };
+        var actual = new ModelWithArrays { Timestamp = new byte[] { 1, 2, 3 } };
+
+        var ex = Assert.Throws<AssertionException>(() =>
+            AssertThat.PropertiesAreEqual(expected, actual));
+
+        WriteLine(ex.Message);
+        Assert.Contains("Timestamp", ex.Message);
+    }
+
+    [Fact]
+    public void ByteArrayProperty_BothNull_DoNotThrow()
+    {
+        var expected = new ModelWithArrays { Timestamp = null };
+        var actual = new ModelWithArrays { Timestamp = null };
+
+        AssertThat.PropertiesAreEqual(expected, actual);
+    }
+
+    [Fact]
+    public void ByteArrayProperty_OneNull_Throws()
+    {
+        var expected = new ModelWithArrays { Timestamp = new byte[] { 1, 2, 3 } };
+        var actual = new ModelWithArrays { Timestamp = null };
+
+        var ex = Assert.Throws<AssertionException>(() =>
+            AssertThat.PropertiesAreEqual(expected, actual));
+
+        WriteLine(ex.Message);
+        Assert.Contains("Timestamp", ex.Message);
+    }
+
+    [Fact]
+    public void StringArrayProperty_ComparedByContent()
+    {
+        var expected = new ModelWithArrays { Tags = new[] { "a", "b" } };
+        var actual = new ModelWithArrays { Tags = new[] { "a", "b" } };
+
+        AssertThat.PropertiesAreEqual(expected, actual);
+    }
+
+    [Fact]
+    public void ArrayOfUncomparableElements_IsStillReportedAsUncomparable()
+    {
+        // element type has no value equality, so the array itself is not reliably comparable
+        var expected = new ModelWithUncomparableArray
+        {
+            Things = new[] { new UncomparableThing { Value = "x" } },
+        };
+        var actual = new ModelWithUncomparableArray
+        {
+            Things = new[] { new UncomparableThing { Value = "x" } },
+        };
+
+        var ex = Assert.Throws<AssertionException>(() =>
+            AssertThat.PropertiesAreEqual(expected, actual));
+
+        WriteLine(ex.Message);
+        Assert.Contains("could not be compared reliably", ex.Message);
+        Assert.Contains("Things", ex.Message);
+    }
+
+    #endregion
+
     #region special-case lambda
 
     [Fact]
@@ -285,6 +379,117 @@ public class PropertiesAreEqualFixture : TestClassBase
         Assert.Contains("IntValue", ex.Message);
     }
 
+    [Fact]
+    public void Handler_FiresForSkippedProperties()
+    {
+        var expected = new ModelWithUncomparable
+        {
+            IntValue = 1,
+            Thing = new UncomparableThing { Value = "x" },
+        };
+        var actual = new ModelWithUncomparable
+        {
+            IntValue = 1,
+            Thing = new UncomparableThing { Value = "x" },
+        };
+
+        var sawThing = false;
+
+        // Thing is skipped (no built-in compare) but the handler still gets to see and pass it.
+        AssertThat.PropertiesAreEqual(expected, actual,
+            prop =>
+            {
+                if (prop.PropertyName == nameof(ModelWithUncomparable.Thing))
+                {
+                    sawThing = true;
+                    var e = (UncomparableThing?)prop.ExpectedValue;
+                    var a = (UncomparableThing?)prop.ActualValue;
+                    if (e?.Value == a?.Value)
+                    {
+                        prop.HandleManuallyPass();
+                    }
+                    else
+                    {
+                        prop.HandleManuallyFail($"Thing.Value mismatch: '{e?.Value}' vs '{a?.Value}'");
+                    }
+                }
+            },
+            skipPropertyNames: new[] { nameof(ModelWithUncomparable.Thing) });
+
+        Assert.True(sawThing, "handler should fire for skipped properties");
+    }
+
+    [Fact]
+    public void Handler_ManualFailIsFoldedIntoAggregatedReport()
+    {
+        var expected = new ModelWithUncomparable
+        {
+            IntValue = 1,
+            Thing = new UncomparableThing { Value = "x" },
+        };
+        var actual = new ModelWithUncomparable
+        {
+            IntValue = 99, // also wrong via the built-in compare
+            Thing = new UncomparableThing { Value = "y" },
+        };
+
+        var ex = Assert.Throws<AssertionException>(() =>
+            AssertThat.PropertiesAreEqual(expected, actual,
+                prop =>
+                {
+                    if (prop.PropertyName == nameof(ModelWithUncomparable.Thing))
+                    {
+                        var e = (UncomparableThing?)prop.ExpectedValue;
+                        var a = (UncomparableThing?)prop.ActualValue;
+                        prop.HandleManuallyFail($"Thing.Value mismatch: '{e?.Value}' vs '{a?.Value}'");
+                    }
+                },
+                skipPropertyNames: new[] { nameof(ModelWithUncomparable.Thing) }));
+
+        WriteLine(ex.Message);
+        // both the manual failure and the built-in IntValue mismatch are reported together
+        Assert.Contains("2 properties did not match", ex.Message);
+        Assert.Contains("Thing.Value mismatch", ex.Message);
+        Assert.Contains("IntValue", ex.Message);
+    }
+
+    [Fact]
+    public void Handler_ManualPassSuppressesBuiltInComparison()
+    {
+        var expected = CreateSample();
+        var actual = CreateSample();
+        actual.IntValue = 99; // would fail the built-in compare
+
+        AssertThat.PropertiesAreEqual(expected, actual,
+            prop =>
+            {
+                if (prop.PropertyName == nameof(ComparableModel.IntValue))
+                {
+                    prop.HandleManuallyPass();
+                }
+            });
+    }
+
+    [Fact]
+    public void Handler_SkippedAndUnhandledPropertyIsLeftUncompared()
+    {
+        var expected = new ModelWithUncomparable
+        {
+            IntValue = 1,
+            Thing = new UncomparableThing { Value = "x" },
+        };
+        var actual = new ModelWithUncomparable
+        {
+            IntValue = 1,
+            Thing = new UncomparableThing { Value = "different" },
+        };
+
+        // Thing is skipped and the handler never handles it -> no failure, no "uncomparable" report
+        AssertThat.PropertiesAreEqual(expected, actual,
+            prop => { /* observe only */ },
+            skipPropertyNames: new[] { nameof(ModelWithUncomparable.Thing) });
+    }
+
     #endregion
 }
 
@@ -317,6 +522,17 @@ public class ModelWithUncomparable
 public class UncomparableThing
 {
     public string Value { get; set; } = string.Empty;
+}
+
+public class ModelWithArrays
+{
+    public byte[]? Timestamp { get; set; }
+    public string[]? Tags { get; set; }
+}
+
+public class ModelWithUncomparableArray
+{
+    public UncomparableThing[]? Things { get; set; }
 }
 
 public class ModelWithEquatable
