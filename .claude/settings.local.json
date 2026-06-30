@@ -45,7 +45,8 @@
       "Bash(Benday.Common.Testing.UnitTests/bin/Release/net10.0/Benday.Common.Testing.UnitTests -list methods)",
       "Bash(Benday.Common.Testing.UnitTests/bin/Release/net10.0/Benday.Common.Testing.UnitTests)",
       "Bash(echo \"EXITCODE=$?\")",
-      "Bash(echo \"exit=$?\")"
+      "Bash(echo \"exit=$?\")",
+      "Bash(Benday.Common.Testing.UnitTests/bin/Release/net10.0/Benday.Common.Testing.UnitTests --filter-query /[FakeValueGeneratorFixture])"
     ],
     "deny": [],
     "ask": []

@@ -109,7 +109,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
         using var sut = CreateSystemUnderTest("sleep", "1");
 
         // act
-        await sut.StartAsync();
+        await sut.StartAsync(TestContext.Current.CancellationToken);
 
         // assert
         sut.HasStarted.ShouldBeTrue("HasStarted should be true after StartAsync.");
@@ -123,10 +123,10 @@ public class AsyncProcessRunnerFixture : TestClassBase
     {
         // arrange
         using var sut = CreateSystemUnderTest("sleep", "1");
-        await sut.StartAsync();
+        await sut.StartAsync(TestContext.Current.CancellationToken);
 
         // act & assert
-        await Assert.ThrowsAsync<InvalidOperationException>(async () => await sut.StartAsync());
+        await Assert.ThrowsAsync<InvalidOperationException>(async () => await sut.StartAsync(TestContext.Current.CancellationToken));
     }
 
     [Fact]
@@ -134,10 +134,10 @@ public class AsyncProcessRunnerFixture : TestClassBase
     {
         // arrange
         using var sut = CreateSystemUnderTest("echo", "hello world");
-        await sut.StartAsync();
+        await sut.StartAsync(TestContext.Current.CancellationToken);
 
         // act
-        await sut.WaitForExitAsync();
+        await sut.WaitForExitAsync(TestContext.Current.CancellationToken);
 
         // assert
         sut.IsRunning.ShouldBeFalse("IsRunning should be false after process completes.");
@@ -152,7 +152,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
         using var sut = CreateSystemUnderTest("echo", "hello");
 
         // act & assert
-        await Assert.ThrowsAsync<InvalidOperationException>(async () => await sut.WaitForExitAsync());
+        await Assert.ThrowsAsync<InvalidOperationException>(async () => await sut.WaitForExitAsync(TestContext.Current.CancellationToken));
     }
 
     [Fact]
@@ -160,13 +160,13 @@ public class AsyncProcessRunnerFixture : TestClassBase
     {
         // arrange
         using var sut = CreateSystemUnderTest("echo", "hello async world");
-        await sut.StartAsync();
+        await sut.StartAsync(TestContext.Current.CancellationToken);
 
         // act
-        await sut.WaitForExitAsync();
+        await sut.WaitForExitAsync(TestContext.Current.CancellationToken);
 
         // Small delay to ensure output buffer is fully captured
-        await Task.Delay(100);
+        await Task.Delay(100, TestContext.Current.CancellationToken);
 
         // assert
         sut.OutputText.ShouldContain("hello async world", "OutputText should contain the echoed text.");
@@ -177,10 +177,10 @@ public class AsyncProcessRunnerFixture : TestClassBase
     {
         // arrange
         using var sut = CreateSystemUnderTest("echo", "hello");
-        await sut.StartAsync();
+        await sut.StartAsync(TestContext.Current.CancellationToken);
 
         // act
-        await sut.WaitForExitAsync();
+        await sut.WaitForExitAsync(TestContext.Current.CancellationToken);
 
         // assert
         sut.ExitCode.ShouldEqual(0, "ExitCode should be 0 for successful command.");
@@ -191,10 +191,10 @@ public class AsyncProcessRunnerFixture : TestClassBase
     {
         // arrange
         using var sut = CreateSystemUnderTest("ls", "/nonexistent/directory/that/does/not/exist");
-        await sut.StartAsync();
+        await sut.StartAsync(TestContext.Current.CancellationToken);
 
         // act
-        await sut.WaitForExitAsync();
+        await sut.WaitForExitAsync(TestContext.Current.CancellationToken);
 
         // assert
         sut.IsError.ShouldBeTrue("IsError should be true for failing command.");
@@ -207,12 +207,12 @@ public class AsyncProcessRunnerFixture : TestClassBase
     {
         // arrange
         using var sut = CreateSystemUnderTest("sleep", "30");
-        await sut.StartAsync();
+        await sut.StartAsync(TestContext.Current.CancellationToken);
         sut.IsRunning.ShouldBeTrue("Process should be running.");
 
         // act
         sut.Kill();
-        await Task.Delay(500); // Give it time to clean up
+        await Task.Delay(500, TestContext.Current.CancellationToken); // Give it time to clean up
 
         // assert
         sut.IsRunning.ShouldBeFalse("IsRunning should be false after Kill().");
@@ -226,8 +226,8 @@ public class AsyncProcessRunnerFixture : TestClassBase
         sut.RunTimeout = 500; // 500ms timeout
 
         // act
-        await sut.StartAsync();
-        await sut.WaitForExitAsync();
+        await sut.StartAsync(TestContext.Current.CancellationToken);
+        await sut.WaitForExitAsync(TestContext.Current.CancellationToken);
 
         // assert
         sut.IsTimeout.ShouldBeTrue("IsTimeout should be true when process times out.");
@@ -239,10 +239,10 @@ public class AsyncProcessRunnerFixture : TestClassBase
     {
         // arrange - use a command that outputs something before sleeping
         using var sut = CreateSystemUnderTest("/bin/bash", "-c \"echo 'start'; sleep 2; echo 'end'\"");
-        await sut.StartAsync();
+        await sut.StartAsync(TestContext.Current.CancellationToken);
 
         // act - wait a bit for first output
-        await Task.Delay(500);
+        await Task.Delay(500, TestContext.Current.CancellationToken);
         var outputWhileRunning = sut.OutputText;
 
         // assert
@@ -258,13 +258,13 @@ public class AsyncProcessRunnerFixture : TestClassBase
     {
         // arrange
         var sut = CreateSystemUnderTest("sleep", "30");
-        await sut.StartAsync();
+        await sut.StartAsync(TestContext.Current.CancellationToken);
         var processId = sut.ProcessId;
         processId.HasValue.ShouldBeTrue("ProcessId should be set.");
 
         // act
         sut.Dispose();
-        await Task.Delay(500); // Give it time to clean up
+        await Task.Delay(500, TestContext.Current.CancellationToken); // Give it time to clean up
 
         // assert - process should no longer be running
         try
@@ -304,7 +304,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
         // arrange
         using var sut = CreateSystemUnderTest("sleep", "30");
         using var cts = new CancellationTokenSource(500); // Cancel after 500ms
-        await sut.StartAsync();
+        await sut.StartAsync(TestContext.Current.CancellationToken);
 
         // act & assert
         await Assert.ThrowsAsync<TaskCanceledException>(async () => await sut.WaitForExitAsync(cts.Token));

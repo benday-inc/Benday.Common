@@ -197,25 +197,27 @@ public static partial class FakeValueGenerator
     }
 
     /// <summary>
-    /// Generates a fake <see cref="bool"/> value for the supplied field name.
+    /// Generates a fake <see cref="bool"/> value for the supplied field name. This always returns
+    /// <c>true</c>, regardless of <paramref name="randomize"/> or <paramref name="seedValue"/>.
     /// </summary>
+    /// <remarks>
+    /// <c>false</c> is <c>default(bool)</c>, so it is the only boolean value that is indistinguishable
+    /// from an unset property. Returning it would defeat the purpose of generating a fake value: callers
+    /// pair this with <see cref="AssertThat.AllPropertiesAreNonNullAndNonDefaultValue{T}"/> to confirm a
+    /// property was populated, and a fake <c>false</c> would be reported as a default. A <c>bool</c>
+    /// also cannot be made unique across a collection (it only has two values), so the seed offers no
+    /// benefit here. Returning <c>true</c> keeps fake booleans reliably non-default.
+    /// </remarks>
     /// <param name="forFieldName">The name of the field the value is being generated for.</param>
-    /// <param name="randomize">When true, returns a random value; otherwise returns a predictable value derived from the field name and seed.</param>
-    /// <param name="seedValue">An offset that makes predictable values alternate across a collection (e.g. the item index). Ignored when <paramref name="randomize"/> is true.</param>
-    /// <returns>A fake boolean value.</returns>
+    /// <param name="randomize">Ignored; retained for signature consistency with the other generators.</param>
+    /// <param name="seedValue">Ignored; retained for signature consistency with the other generators.</param>
+    /// <returns>Always <c>true</c>.</returns>
     /// <exception cref="ArgumentNullException">Thrown when <paramref name="forFieldName"/> is null.</exception>
     public static bool GetFakeValueForBool(string forFieldName, bool randomize = false, int seedValue = 0)
     {
         ArgumentNullException.ThrowIfNull(forFieldName);
 
-        if (randomize)
-        {
-            return Random.Shared.Next(2) == 0;
-        }
-        else
-        {
-            return (forFieldName.Length + seedValue) % 2 == 0;
-        }
+        return true;
     }
 
     /// <summary>

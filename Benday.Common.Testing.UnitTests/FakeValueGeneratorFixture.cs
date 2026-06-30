@@ -174,12 +174,16 @@ public class FakeValueGeneratorFixture : TestClassBase
         Assert.Equal((long)"SomeField".Length, FakeValueGenerator.GetFakeValueForLong("SomeField"));
     }
 
-    [Fact]
-    public void Predictable_Bool_IsDeterministic()
+    [Theory]
+    [InlineData("SomeField", false, 0)]
+    [InlineData("SomeField", false, 1)]
+    [InlineData("ab", false, 0)]
+    [InlineData("SomeField", true, 0)]
+    public void Bool_IsAlwaysTrue(string fieldName, bool randomize, int seedValue)
     {
-        Assert.Equal(
-            FakeValueGenerator.GetFakeValueForBool("SomeField"),
-            FakeValueGenerator.GetFakeValueForBool("SomeField"));
+        // false is default(bool), so a fake bool must never be false or it would look unset
+        // to AssertThat.AllPropertiesAreNonNullAndNonDefaultValue.
+        Assert.True(FakeValueGenerator.GetFakeValueForBool(fieldName, randomize, seedValue));
     }
 
     [Fact]
