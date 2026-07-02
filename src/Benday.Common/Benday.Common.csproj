@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TheVersion>10.1.2</TheVersion>
+        <TheVersion>10.1.3</TheVersion>
         <AssemblyVersion>$(TheVersion)</AssemblyVersion>
         <Version>$(TheVersion)</Version>
         <Authors>benday</Authors>
@@ -63,5 +63,6 @@ v9.0 - Updating dependencies and adding package target for .net 9.0
                           Version="5.*" />
         <PackageReference Include="System.Text.Json"
                           Version="10.*" />
+        <PackageReference Update="Microsoft.SourceLink.GitHub" Version="10.0.300" />
     </ItemGroup>
 </Project>
