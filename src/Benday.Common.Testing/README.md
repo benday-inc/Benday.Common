@@ -238,7 +238,7 @@ public void ValidateUserData_CompleteProfile_PassesAllValidations()
 
 ## Requirements
 
-- .NET 8.0, .NET 9.0, .NET 10.0, or .NET Standard 2.1
+- .NET 8.0, .NET 9.0, or .NET 10.0
 - XUnit 2.x or higher
 - Moq 4.x or higher
 
