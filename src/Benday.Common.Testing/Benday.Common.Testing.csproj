@@ -54,7 +54,7 @@ v1.0 - Base class for xunit tests; MockUtility for streamlining testing with Moq
         <PackageReference Include="xunit.v3.extensibility.core"
                           Version="3.*" />
         <PackageReference Include="Benday.Common" Version="10.1.2" />
-        <PackageReference Update="Microsoft.SourceLink.GitHub" Version="10.0.300" />
+        
     </ItemGroup>
     <ItemGroup>
         <None Include="..\..\bdc_mark_128_128.png">
