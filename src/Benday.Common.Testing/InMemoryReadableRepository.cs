@@ -17,23 +17,27 @@ namespace Benday.Common.Testing
     {
         private readonly Dictionary<TKey, T> _Store = new();
 
+        /// <inheritdoc />
         public Task SaveAsync(T entity)
         {
             _Store[entity.Id] = entity;
             return Task.CompletedTask;
         }
 
+        /// <inheritdoc />
         public Task<T?> GetByIdAsync(TKey id)
         {
             _Store.TryGetValue(id, out var entity);
             return Task.FromResult<T?>(entity);
         }
 
+        /// <inheritdoc />
         public Task<IList<T>> GetAllAsync()
         {
             return Task.FromResult<IList<T>>(_Store.Values.ToList());
         }
 
+        /// <inheritdoc />
         public Task DeleteAsync(T entity)
         {
             _Store.Remove(entity.Id);

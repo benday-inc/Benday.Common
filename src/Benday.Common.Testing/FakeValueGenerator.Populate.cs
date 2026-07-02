@@ -9,7 +9,7 @@ public static partial class FakeValueGenerator
 {
     /// <summary>
     /// Maps a property type to a delegate that produces a fake value for it. This is the dispatch
-    /// table that drives <see cref="PopulateFakeValues{T}"/>. Enum and nullable types are handled
+    /// table that drives <see cref="PopulateFakeValues{T}(T, string[], bool, int)"/>. Enum and nullable types are handled
     /// separately during dispatch and are intentionally not stored here.
     /// </summary>
     private static readonly ConcurrentDictionary<Type, Func<string, bool, int, object?>> _generators =
@@ -28,7 +28,7 @@ public static partial class FakeValueGenerator
         });
 
     /// <summary>
-    /// Registers (or replaces) a generator for the supplied type so that <see cref="PopulateFakeValues{T}"/>
+    /// Registers (or replaces) a generator for the supplied type so that <see cref="PopulateFakeValues{T}(T, string[], bool, int)"/>
     /// can populate properties of that type. Use this to add support for types beyond the built-in set,
     /// such as a custom value object.
     /// </summary>
@@ -68,7 +68,7 @@ public static partial class FakeValueGenerator
     /// custom logic. <typeparamref name="T"/> must have a public parameterless constructor.
     /// </summary>
     /// <typeparam name="T">The type to create and populate. Must have a public parameterless constructor.</typeparam>
-    /// <param name="handleSpecialCases">A callback invoked once per property to optionally populate it with custom logic. See <see cref="PopulateFakeValues{T}(T, Action{PropertyPopulation{T}}?, string[]?, bool, int)"/>.</param>
+    /// <param name="handleSpecialCases">A callback invoked once per property to optionally populate it with custom logic. See <see cref="PopulateFakeValues{T}(T, Action{PropertyPopulation{T}}, string[], bool, int)"/>.</param>
     /// <param name="skipPropertyNames">The names of properties to leave untouched (case-insensitive). Optional.</param>
     /// <param name="randomize">When true, generated values are random; otherwise they are predictable.</param>
     /// <returns>A populated instance of <typeparamref name="T"/>.</returns>
@@ -115,7 +115,7 @@ public static partial class FakeValueGenerator
     /// </summary>
     /// <typeparam name="T">The type to create and populate. Must have a public parameterless constructor.</typeparam>
     /// <param name="numberToCreate">The number of instances to create. May be zero, which returns an empty list.</param>
-    /// <param name="handleSpecialCases">A callback invoked once per property of each instance to optionally populate it with custom logic. See <see cref="PopulateFakeValues{T}(T, Action{PropertyPopulation{T}}?, string[]?, bool, int)"/>.</param>
+    /// <param name="handleSpecialCases">A callback invoked once per property of each instance to optionally populate it with custom logic. See <see cref="PopulateFakeValues{T}(T, Action{PropertyPopulation{T}}, string[], bool, int)"/>.</param>
     /// <param name="skipPropertyNames">The names of properties to leave untouched (case-insensitive). Optional.</param>
     /// <param name="randomize">When true, generated values are random; otherwise they are predictable and unique per index.</param>
     /// <returns>A list of <paramref name="numberToCreate"/> populated instances.</returns>

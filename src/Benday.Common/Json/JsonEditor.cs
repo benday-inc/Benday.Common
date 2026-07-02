@@ -13,6 +13,9 @@ public class JsonEditor
 {
     private readonly JsonNode _rootNode;
 
+    /// <summary>
+    /// Gets the root node of the JSON document.
+    /// </summary>
     public JsonNode Root => _rootNode.Root;
 
     /// <summary>

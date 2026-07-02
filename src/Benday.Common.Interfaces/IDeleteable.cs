@@ -7,6 +7,9 @@ namespace Benday.Common.Interfaces
     /// </summary>
     public interface IDeleteable
     {
+        /// <summary>
+        /// Gets or sets a value indicating whether this entity is marked for deletion.
+        /// </summary>
         bool IsMarkedForDelete { get; set; }
     }
 }

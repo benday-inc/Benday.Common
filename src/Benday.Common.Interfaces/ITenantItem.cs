@@ -9,6 +9,9 @@ namespace Benday.Common.Interfaces
     public interface ITenantItem<TKey> : IEntityIdentity<TKey>
         where TKey : IEquatable<TKey>
     {
+        /// <summary>
+        /// Gets or sets the identifier of the tenant that owns this entity.
+        /// </summary>
         string TenantId { get; set; }
     }
 }

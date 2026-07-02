@@ -35,6 +35,10 @@ public class MockCreationResult<T> where T : class
     /// </summary>
     protected ConstructorInfo ReflectedConstructor { get; }
 
+    /// <summary>
+    /// The arguments (typically the mocked dependencies) that are passed to the
+    /// reflected constructor when the instance is created.
+    /// </summary>
     protected object[]? ConstructorArguments
     {
         get;
@@ -42,6 +46,10 @@ public class MockCreationResult<T> where T : class
 
     private T? _instance;
 
+    /// <summary>
+    /// Indicates whether the lazy-created instance has been created yet. Returns
+    /// true once the Instance property has been accessed, otherwise false.
+    /// </summary>
     public bool IsInstanceCreated
     {
         get

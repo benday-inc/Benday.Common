@@ -9,6 +9,10 @@ namespace Benday.Common
     /// </summary>
     public interface IStringIdentity : IEntityIdentity<string>
     {
+        /// <summary>
+        /// The string identity value for the object. For EF Core, this typically becomes
+        /// the primary key.
+        /// </summary>
         new string Id { get; set; }
     }
 }

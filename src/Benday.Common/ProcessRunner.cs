@@ -18,6 +18,12 @@ public class ProcessRunner : IProcessRunner
     private const int EXIT_CODE_SUCCESS = 0;
     private const int EXIT_CODE_NOT_SET = -1;
 
+    /// <summary>
+    /// Creates a new instance of the <see cref="ProcessRunner"/> class using the supplied
+    /// <see cref="ProcessStartInfo"/>. The start info is configured to redirect standard
+    /// output and standard error, to not use the shell to execute, and to not create a window.
+    /// </summary>
+    /// <param name="startInfo">The process start info used to start the process.</param>
     public ProcessRunner(ProcessStartInfo startInfo)
     {
         startInfo.RedirectStandardOutput = true;

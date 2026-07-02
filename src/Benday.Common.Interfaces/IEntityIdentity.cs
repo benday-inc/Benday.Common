@@ -10,6 +10,9 @@ namespace Benday.Common.Interfaces
     /// </summary>
     public interface IEntityIdentity<TKey> where TKey : IEquatable<TKey>
     {
+        /// <summary>
+        /// Gets or sets the unique identifier for this entity.
+        /// </summary>
         TKey Id { get; set; }
     }
 }

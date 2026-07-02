@@ -10,6 +10,9 @@ namespace Benday.Common.Interfaces
     public interface IParentedItem<TKey> : ITenantItem<TKey>
         where TKey : IEquatable<TKey>
     {
+        /// <summary>
+        /// Gets or sets the identifier of the parent entity.
+        /// </summary>
         string ParentId { get; set; }
     }
 }

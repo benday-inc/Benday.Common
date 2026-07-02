@@ -2,6 +2,10 @@ using Microsoft.Extensions.Configuration;
 
 namespace Benday.Common;
 
+/// <summary>
+/// Extension methods for <see cref="IConfiguration"/> that provide safe access to
+/// configuration values.
+/// </summary>
 public static class ConfigurationExtensionMethods
 {
     /// <summary>

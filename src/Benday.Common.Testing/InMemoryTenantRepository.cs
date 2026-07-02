@@ -17,6 +17,7 @@ namespace Benday.Common.Testing
     {
         private readonly Dictionary<string, Dictionary<TKey, T>> _Store = new();
 
+        /// <inheritdoc />
         public Task SaveAsync(T entity)
         {
             if (!_Store.ContainsKey(entity.TenantId))
@@ -28,6 +29,7 @@ namespace Benday.Common.Testing
             return Task.CompletedTask;
         }
 
+        /// <inheritdoc />
         public Task<T?> GetByIdAsync(string tenantId, TKey id)
         {
             if (_Store.TryGetValue(tenantId, out var tenantStore) &&
@@ -39,6 +41,7 @@ namespace Benday.Common.Testing
             return Task.FromResult<T?>(default);
         }
 
+        /// <inheritdoc />
         public Task<IList<T>> GetByTenantAsync(string tenantId)
         {
             if (_Store.TryGetValue(tenantId, out var tenantStore))
@@ -49,6 +52,7 @@ namespace Benday.Common.Testing
             return Task.FromResult<IList<T>>(new List<T>());
         }
 
+        /// <inheritdoc />
         public Task DeleteAsync(T entity)
         {
             if (_Store.TryGetValue(entity.TenantId, out var tenantStore))

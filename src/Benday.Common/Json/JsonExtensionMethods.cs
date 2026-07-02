@@ -10,6 +10,10 @@ using Benday.Common;
 
 namespace Benday.Common.Json;
 
+/// <summary>
+/// Extension methods for <see cref="JsonElement"/> and <see cref="JsonNode"/> that provide
+/// safe, path-based access to JSON values along with array and dictionary helpers.
+/// </summary>
 public static class JsonExtensionMethods
 {
     const string DEFAULT_VALUE_STRING = "";
@@ -64,6 +68,14 @@ public static class JsonExtensionMethods
         }
     }
 
+    /// <summary>
+    /// Safely gets a <see cref="DateTime"/> value from a <see cref="JsonElement"/> by
+    /// navigating the specified property names. Returns the default <see cref="DateTime"/>
+    /// value if the property is not found, is null, or cannot be parsed as a date/time.
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyNames">The property path to navigate to the value.</param>
+    /// <returns>The value as a <see cref="DateTime"/>, or the default <see cref="DateTime"/> if not found or not a valid date/time.</returns>
     public static DateTime SafeGetDateTime(
         this JsonElement input, params string[] propertyNames)
     {
@@ -86,6 +98,15 @@ public static class JsonExtensionMethods
         return default;
     }
 
+    /// <summary>
+    /// Safely gets a <see cref="DateTime"/> value from the named property of a
+    /// <see cref="JsonElement"/>. Returns <paramref name="defaultValue"/> if the property
+    /// is not found, is null, or cannot be parsed as a date/time.
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyName">The name of the property to retrieve.</param>
+    /// <param name="defaultValue">The value to return when the property is missing, null, or not a valid date/time.</param>
+    /// <returns>The value as a <see cref="DateTime"/>, or <paramref name="defaultValue"/> if not found or not a valid date/time.</returns>
     [Obsolete("Use SafeGetDateTime(params string[] propertyNames) instead. This overload will be removed in a future major version.")]
     public static DateTime SafeGetDateTime(
         this JsonElement input, string propertyName,
@@ -107,6 +128,17 @@ public static class JsonExtensionMethods
         return defaultValue;
     }
 
+    /// <summary>
+    /// Safely gets a <see cref="DateTime"/> value from a nested property of a
+    /// <see cref="JsonElement"/> by drilling into <paramref name="propertyName"/> and then
+    /// <paramref name="childPropertyName"/>. Returns <paramref name="defaultValue"/> if
+    /// either property is not found, the value is null, or it cannot be parsed as a date/time.
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyName">The name of the parent property.</param>
+    /// <param name="childPropertyName">The name of the child property containing the value.</param>
+    /// <param name="defaultValue">The value to return when the property is missing, null, or not a valid date/time.</param>
+    /// <returns>The value as a <see cref="DateTime"/>, or <paramref name="defaultValue"/> if not found or not a valid date/time.</returns>
     [Obsolete("Use SafeGetDateTime(params string[] propertyNames) instead. This overload will be removed in a future major version.")]
     public static DateTime SafeGetDateTime(
         this JsonElement input, string propertyName,
@@ -132,6 +164,14 @@ public static class JsonExtensionMethods
         return defaultValue;
     }
 
+    /// <summary>
+    /// Safely gets a <see cref="double"/> value from a <see cref="JsonElement"/> by
+    /// navigating the specified property names. Returns the default <see cref="double"/>
+    /// value (0) if the property is not found, is null, or cannot be parsed as a double.
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyNames">The property path to navigate to the value.</param>
+    /// <returns>The value as a <see cref="double"/>, or 0 if not found or not a valid number.</returns>
     public static double SafeGetDouble(
         this JsonElement input, params string[] propertyNames
         )
@@ -160,6 +200,14 @@ public static class JsonExtensionMethods
         }
     }
     
+    /// <summary>
+    /// Safely gets an <see cref="int"/> value from a <see cref="JsonElement"/> by
+    /// navigating the specified property names. Returns the default <see cref="int"/>
+    /// value (0) if the property is not found, is null, or cannot be parsed as a 32-bit integer.
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyNames">The property path to navigate to the value.</param>
+    /// <returns>The value as an <see cref="int"/>, or 0 if not found or not a valid 32-bit integer.</returns>
     public static int SafeGetInt32(
         this JsonElement input, params string[] propertyNames
         )
@@ -190,6 +238,14 @@ public static class JsonExtensionMethods
 
     
 
+    /// <summary>
+    /// Gets a <see cref="JsonElement"/> by navigating the specified property names,
+    /// throwing an exception if the property is not found.
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyNames">The property path to navigate to the element.</param>
+    /// <returns>The located <see cref="JsonElement"/>.</returns>
+    /// <exception cref="InvalidOperationException">Thrown when the property path cannot be found.</exception>
     public static JsonElement GetElementOrThrow(
         this JsonElement input,
         params string[] propertyNames)
@@ -205,6 +261,13 @@ public static class JsonExtensionMethods
         return result.Element;
     }
 
+    /// <summary>
+    /// Determines whether the <see cref="JsonElement"/> contains a property with the
+    /// specified name.
+    /// </summary>
+    /// <param name="input">The JsonElement to check.</param>
+    /// <param name="propertyName">The name of the property to look for.</param>
+    /// <returns>True if the property exists; otherwise, false.</returns>
     public static bool HasProperty(
         this JsonElement input,
         string propertyName)
@@ -251,6 +314,15 @@ public static class JsonExtensionMethods
         return result;
     }
 
+    /// <summary>
+    /// Safely gets a <see cref="long"/> value from the named property of a
+    /// <see cref="JsonElement"/>. Returns <paramref name="defaultValue"/> if the property
+    /// is not found, is null, or cannot be parsed as a 64-bit integer.
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyName">The name of the property to retrieve.</param>
+    /// <param name="defaultValue">The value to return when the property is missing, null, or not a valid 64-bit integer. Defaults to 0.</param>
+    /// <returns>The value as a <see cref="long"/>, or <paramref name="defaultValue"/> if not found or not a valid 64-bit integer.</returns>
     public static long SafeGetLong(
         this JsonElement input, string propertyName,
         long defaultValue = 0)
@@ -271,6 +343,17 @@ public static class JsonExtensionMethods
         return defaultValue;
     }
 
+    /// <summary>
+    /// Safely gets a <see cref="long"/> value from a nested property of a
+    /// <see cref="JsonElement"/> by drilling into <paramref name="propertyName"/> and then
+    /// <paramref name="childPropertyName"/>. Returns <paramref name="defaultValue"/> if
+    /// either property is not found, the value is null, or it cannot be parsed as a 64-bit integer.
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyName">The name of the parent property.</param>
+    /// <param name="childPropertyName">The name of the child property containing the value.</param>
+    /// <param name="defaultValue">The value to return when the property is missing, null, or not a valid 64-bit integer. Defaults to 0.</param>
+    /// <returns>The value as a <see cref="long"/>, or <paramref name="defaultValue"/> if not found or not a valid 64-bit integer.</returns>
     public static long SafeGetLong(
         this JsonElement input,
         string propertyName,
@@ -285,6 +368,19 @@ public static class JsonExtensionMethods
         return defaultValue;
     }
 
+    /// <summary>
+    /// Safely gets a <see cref="long"/> value from a doubly-nested property of a
+    /// <see cref="JsonElement"/> by drilling into <paramref name="propertyName"/>,
+    /// <paramref name="childPropertyName"/>, and then <paramref name="subChildPropertyName"/>.
+    /// Returns <paramref name="defaultValue"/> if the parent or child property is not found;
+    /// once the child is reached, the sub-child lookup uses its own default of 0.
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyName">The name of the parent property.</param>
+    /// <param name="childPropertyName">The name of the child property.</param>
+    /// <param name="subChildPropertyName">The name of the sub-child property containing the value.</param>
+    /// <param name="defaultValue">The value to return when the parent or child property is missing. Defaults to 0.</param>
+    /// <returns>The value as a <see cref="long"/>, or a default value if not found or not a valid 64-bit integer.</returns>
     public static long SafeGetLong(
         this JsonElement input,
         string propertyName,
@@ -304,6 +400,15 @@ public static class JsonExtensionMethods
         return defaultValue;
     }
 
+    /// <summary>
+    /// Safely gets a <see cref="bool"/> value from the named property of a
+    /// <see cref="JsonElement"/>. Returns <paramref name="defaultValue"/> if the property
+    /// is not found or is not a JSON boolean (true/false).
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyName">The name of the property to retrieve.</param>
+    /// <param name="defaultValue">The value to return when the property is missing or not a boolean. Defaults to false.</param>
+    /// <returns>The value as a <see cref="bool"/>, or <paramref name="defaultValue"/> if not found or not a boolean.</returns>
     public static bool SafeGetBool(
         this JsonElement input, string propertyName,
         bool defaultValue = false)
@@ -323,6 +428,17 @@ public static class JsonExtensionMethods
         return defaultValue;
     }
 
+    /// <summary>
+    /// Safely gets a <see cref="bool"/> value from a nested property of a
+    /// <see cref="JsonElement"/> by drilling into <paramref name="propertyName"/> and then
+    /// <paramref name="childPropertyName"/>. Returns <paramref name="defaultValue"/> if the
+    /// parent or child property is not found or the value is not a JSON boolean (true/false).
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyName">The name of the parent property.</param>
+    /// <param name="childPropertyName">The name of the child property containing the value.</param>
+    /// <param name="defaultValue">The value to return when the property is missing or not a boolean. Defaults to false.</param>
+    /// <returns>The value as a <see cref="bool"/>, or <paramref name="defaultValue"/> if not found or not a boolean.</returns>
     public static bool SafeGetBool(
         this JsonElement input,
         string propertyName,
