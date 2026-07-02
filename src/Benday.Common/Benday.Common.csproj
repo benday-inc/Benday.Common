@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TheVersion>10.1</TheVersion>
-        <AssemblyVersion>$(TheVersion).0</AssemblyVersion>
-        <Version>$(VersionPrefix)$(TheVersion)</Version>
+        <TheVersion>10.1.2</TheVersion>
+        <AssemblyVersion>$(TheVersion)</AssemblyVersion>
+        <Version>$(TheVersion)</Version>
         <Authors>benday</Authors>
         <Copyright>2026</Copyright>
         <Description>A collection of utility classes for .NET including: domain model patterns (identity interfaces, deletable pattern), search and paging infrastructure, JSON reading/editing with JsonNode extension methods, process execution, and extension methods for strings and configuration.</Description>
