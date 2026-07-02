@@ -1,0 +1,902 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Threading.Tasks;
+
+using Benday.Common;
+
+namespace Benday.Common.Json;
+
+/// <summary>
+/// Extension methods for <see cref="JsonElement"/> and <see cref="JsonNode"/> that provide
+/// safe, path-based access to JSON values along with array and dictionary helpers.
+/// </summary>
+public static class JsonExtensionMethods
+{
+    const string DEFAULT_VALUE_STRING = "";
+
+    /// <summary>
+    /// Get a string property value from a JsonElement safely.
+    /// </summary>
+    /// <param name="input"></param>
+    /// <param name="propertyNames"></param>
+    /// <returns></returns>
+    public static string SafeGetString(
+        this JsonElement input, params string[] propertyNames)
+    {
+
+        var element = input.GetElement(propertyNames);
+        if (element.Found == false)
+        {
+            return DEFAULT_VALUE_STRING;
+        }
+        else
+        {
+            if (element.Element.ValueKind == JsonValueKind.Null)
+            {
+                return DEFAULT_VALUE_STRING;
+            }
+            else if (element.Element.ValueKind == JsonValueKind.Undefined)
+            {
+                return DEFAULT_VALUE_STRING;
+            }
+            else if (element.Element.ValueKind == JsonValueKind.String)
+            {
+                return element.Element.GetString().SafeToString();
+            }
+            else if (element.Element.ValueKind == JsonValueKind.Number)
+            {
+                var resultAsString = element.Element.GetRawText();      
+                return resultAsString;
+            }
+            else if (element.Element.ValueKind == JsonValueKind.True)
+            {
+                return true.ToString();
+            }
+            else if (element.Element.ValueKind == JsonValueKind.False)
+            {
+                return false.ToString();
+            }
+            else
+            {
+                var resultAsString = element.Element.GetRawText();
+                return resultAsString;
+            }
+        }
+    }
+
+    /// <summary>
+    /// Safely gets a <see cref="DateTime"/> value from a <see cref="JsonElement"/> by
+    /// navigating the specified property names. Returns the default <see cref="DateTime"/>
+    /// value if the property is not found, is null, or cannot be parsed as a date/time.
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyNames">The property path to navigate to the value.</param>
+    /// <returns>The value as a <see cref="DateTime"/>, or the default <see cref="DateTime"/> if not found or not a valid date/time.</returns>
+    public static DateTime SafeGetDateTime(
+        this JsonElement input, params string[] propertyNames)
+    {
+        var element = input.GetElement(propertyNames);
+        if (element.Found == false)
+        {
+            return default;
+        }
+
+        if (element.Element.ValueKind == JsonValueKind.Null)
+        {
+            return default;
+        }
+
+        if (element.Element.TryGetDateTime(out var result) == true)
+        {
+            return result;
+        }
+
+        return default;
+    }
+
+    /// <summary>
+    /// Safely gets a <see cref="DateTime"/> value from the named property of a
+    /// <see cref="JsonElement"/>. Returns <paramref name="defaultValue"/> if the property
+    /// is not found, is null, or cannot be parsed as a date/time.
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyName">The name of the property to retrieve.</param>
+    /// <param name="defaultValue">The value to return when the property is missing, null, or not a valid date/time.</param>
+    /// <returns>The value as a <see cref="DateTime"/>, or <paramref name="defaultValue"/> if not found or not a valid date/time.</returns>
+    [Obsolete("Use SafeGetDateTime(params string[] propertyNames) instead. This overload will be removed in a future major version.")]
+    public static DateTime SafeGetDateTime(
+        this JsonElement input, string propertyName,
+        DateTime defaultValue)
+    {
+        if (input.TryGetProperty(propertyName, out var value) == true)
+        {
+            if (value.ValueKind == JsonValueKind.Null)
+            {
+                return defaultValue;
+            }
+
+            if (value.TryGetDateTime(out var result) == true)
+            {
+                return result;
+            }
+        }
+
+        return defaultValue;
+    }
+
+    /// <summary>
+    /// Safely gets a <see cref="DateTime"/> value from a nested property of a
+    /// <see cref="JsonElement"/> by drilling into <paramref name="propertyName"/> and then
+    /// <paramref name="childPropertyName"/>. Returns <paramref name="defaultValue"/> if
+    /// either property is not found, the value is null, or it cannot be parsed as a date/time.
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyName">The name of the parent property.</param>
+    /// <param name="childPropertyName">The name of the child property containing the value.</param>
+    /// <param name="defaultValue">The value to return when the property is missing, null, or not a valid date/time.</param>
+    /// <returns>The value as a <see cref="DateTime"/>, or <paramref name="defaultValue"/> if not found or not a valid date/time.</returns>
+    [Obsolete("Use SafeGetDateTime(params string[] propertyNames) instead. This overload will be removed in a future major version.")]
+    public static DateTime SafeGetDateTime(
+        this JsonElement input, string propertyName,
+        string childPropertyName,
+        DateTime defaultValue)
+    {
+        if (input.TryGetProperty(propertyName, out var value) == true)
+        {
+            if (value.TryGetProperty(childPropertyName, out var childValue) == true)
+            {
+                if (childValue.ValueKind == JsonValueKind.Null)
+                {
+                    return defaultValue;
+                }
+
+                if (childValue.TryGetDateTime(out var result) == true)
+                {
+                    return result;
+                }
+            }
+        }
+
+        return defaultValue;
+    }
+
+    /// <summary>
+    /// Safely gets a <see cref="double"/> value from a <see cref="JsonElement"/> by
+    /// navigating the specified property names. Returns the default <see cref="double"/>
+    /// value (0) if the property is not found, is null, or cannot be parsed as a double.
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyNames">The property path to navigate to the value.</param>
+    /// <returns>The value as a <see cref="double"/>, or 0 if not found or not a valid number.</returns>
+    public static double SafeGetDouble(
+        this JsonElement input, params string[] propertyNames
+        )
+    {
+        var element = input.GetElement(propertyNames);
+        if (element.Found == false)
+        {
+            return default;
+        }
+        else
+        {
+
+            if (element.Element.ValueKind == JsonValueKind.Null)
+            {
+                return default;
+            }
+
+            if (element.Element.TryGetDouble(out var result) == true)
+            {
+                return result;
+            }
+            else
+            {
+                return default;
+            }
+        }
+    }
+    
+    /// <summary>
+    /// Safely gets an <see cref="int"/> value from a <see cref="JsonElement"/> by
+    /// navigating the specified property names. Returns the default <see cref="int"/>
+    /// value (0) if the property is not found, is null, or cannot be parsed as a 32-bit integer.
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyNames">The property path to navigate to the value.</param>
+    /// <returns>The value as an <see cref="int"/>, or 0 if not found or not a valid 32-bit integer.</returns>
+    public static int SafeGetInt32(
+        this JsonElement input, params string[] propertyNames
+        )
+    {
+        var element = input.GetElement(propertyNames);
+        if (element.Found == false)
+        {
+            return default;
+        }
+        else
+        {
+            
+            if (element.Element.ValueKind == JsonValueKind.Null)
+            {
+                return default;
+            }
+
+            if (element.Element.TryGetInt32(out var result) == true)
+            {
+                return result;
+            }
+            else
+            {
+                return default;
+            }
+        }
+    }
+
+    
+
+    /// <summary>
+    /// Gets a <see cref="JsonElement"/> by navigating the specified property names,
+    /// throwing an exception if the property is not found.
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyNames">The property path to navigate to the element.</param>
+    /// <returns>The located <see cref="JsonElement"/>.</returns>
+    /// <exception cref="InvalidOperationException">Thrown when the property path cannot be found.</exception>
+    public static JsonElement GetElementOrThrow(
+        this JsonElement input,
+        params string[] propertyNames)
+    {
+        var result = GetElement(input, propertyNames);
+
+        if (result.Found == false)
+        {
+            throw new InvalidOperationException(
+                $"Property not found: {string.Join(".", propertyNames)}");
+        }
+
+        return result.Element;
+    }
+
+    /// <summary>
+    /// Determines whether the <see cref="JsonElement"/> contains a property with the
+    /// specified name.
+    /// </summary>
+    /// <param name="input">The JsonElement to check.</param>
+    /// <param name="propertyName">The name of the property to look for.</param>
+    /// <returns>True if the property exists; otherwise, false.</returns>
+    public static bool HasProperty(
+        this JsonElement input,
+        string propertyName)
+    {
+        return input.TryGetProperty(propertyName, out var value);
+    }
+
+    /// <summary>
+    /// Gets a JsonElement by navigating the specified property names.
+    /// </summary>
+    /// <param name="input"></param>
+    /// <param name="propertyNames"></param>
+    /// <returns></returns>
+    public static ElementResult GetElement(
+        this JsonElement input,
+        params string[] propertyNames)
+    {
+        var currentElement = input;
+        var result = new ElementResult()
+        {
+            Found = false
+        };
+
+        foreach (var propertyName in propertyNames)
+        {
+            if (currentElement.ValueKind != JsonValueKind.Object)
+            {
+                result.Found = false;
+                return result;
+            }
+            else if (currentElement.TryGetProperty(propertyName, out var childElement) == true)
+            {
+                currentElement = childElement;
+            }
+            else
+            {
+                result.Found = false;
+                return result;
+            }
+        }
+
+        result.Found = true;
+        result.Element = currentElement;
+        return result;
+    }
+
+    /// <summary>
+    /// Safely gets a <see cref="long"/> value from the named property of a
+    /// <see cref="JsonElement"/>. Returns <paramref name="defaultValue"/> if the property
+    /// is not found, is null, or cannot be parsed as a 64-bit integer.
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyName">The name of the property to retrieve.</param>
+    /// <param name="defaultValue">The value to return when the property is missing, null, or not a valid 64-bit integer. Defaults to 0.</param>
+    /// <returns>The value as a <see cref="long"/>, or <paramref name="defaultValue"/> if not found or not a valid 64-bit integer.</returns>
+    public static long SafeGetLong(
+        this JsonElement input, string propertyName,
+        long defaultValue = 0)
+    {
+        if (input.TryGetProperty(propertyName, out var value) == true)
+        {
+            if (value.ValueKind == JsonValueKind.Null)
+            {
+                return defaultValue;
+            }
+
+            if (value.TryGetInt64(out var result) == true)
+            {
+                return result;
+            }
+        }
+
+        return defaultValue;
+    }
+
+    /// <summary>
+    /// Safely gets a <see cref="long"/> value from a nested property of a
+    /// <see cref="JsonElement"/> by drilling into <paramref name="propertyName"/> and then
+    /// <paramref name="childPropertyName"/>. Returns <paramref name="defaultValue"/> if
+    /// either property is not found, the value is null, or it cannot be parsed as a 64-bit integer.
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyName">The name of the parent property.</param>
+    /// <param name="childPropertyName">The name of the child property containing the value.</param>
+    /// <param name="defaultValue">The value to return when the property is missing, null, or not a valid 64-bit integer. Defaults to 0.</param>
+    /// <returns>The value as a <see cref="long"/>, or <paramref name="defaultValue"/> if not found or not a valid 64-bit integer.</returns>
+    public static long SafeGetLong(
+        this JsonElement input,
+        string propertyName,
+        string childPropertyName,
+        long defaultValue = 0)
+    {
+        if (input.TryGetProperty(propertyName, out var value) == true)
+        {
+            return value.SafeGetLong(childPropertyName, defaultValue);
+        }
+
+        return defaultValue;
+    }
+
+    /// <summary>
+    /// Safely gets a <see cref="long"/> value from a doubly-nested property of a
+    /// <see cref="JsonElement"/> by drilling into <paramref name="propertyName"/>,
+    /// <paramref name="childPropertyName"/>, and then <paramref name="subChildPropertyName"/>.
+    /// Returns <paramref name="defaultValue"/> if the parent or child property is not found;
+    /// once the child is reached, the sub-child lookup uses its own default of 0.
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyName">The name of the parent property.</param>
+    /// <param name="childPropertyName">The name of the child property.</param>
+    /// <param name="subChildPropertyName">The name of the sub-child property containing the value.</param>
+    /// <param name="defaultValue">The value to return when the parent or child property is missing. Defaults to 0.</param>
+    /// <returns>The value as a <see cref="long"/>, or a default value if not found or not a valid 64-bit integer.</returns>
+    public static long SafeGetLong(
+        this JsonElement input,
+        string propertyName,
+        string childPropertyName,
+        string subChildPropertyName,
+        long defaultValue = 0)
+    {
+        if (input.TryGetProperty(propertyName, out var value) == true)
+        {
+            if (value.TryGetProperty(childPropertyName, out var value2) == true)
+            {
+                return
+                    value2.SafeGetLong(subChildPropertyName);
+            }
+        }
+
+        return defaultValue;
+    }
+
+    /// <summary>
+    /// Safely gets a <see cref="bool"/> value from the named property of a
+    /// <see cref="JsonElement"/>. Returns <paramref name="defaultValue"/> if the property
+    /// is not found or is not a JSON boolean (true/false).
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyName">The name of the property to retrieve.</param>
+    /// <param name="defaultValue">The value to return when the property is missing or not a boolean. Defaults to false.</param>
+    /// <returns>The value as a <see cref="bool"/>, or <paramref name="defaultValue"/> if not found or not a boolean.</returns>
+    public static bool SafeGetBool(
+        this JsonElement input, string propertyName,
+        bool defaultValue = false)
+    {
+        if (input.TryGetProperty(propertyName, out var value) == true)
+        {
+            if (value.ValueKind == JsonValueKind.True)
+            {
+                return true;
+            }
+            else if (value.ValueKind == JsonValueKind.False)
+            {
+                return false;
+            }
+        }
+
+        return defaultValue;
+    }
+
+    /// <summary>
+    /// Safely gets a <see cref="bool"/> value from a nested property of a
+    /// <see cref="JsonElement"/> by drilling into <paramref name="propertyName"/> and then
+    /// <paramref name="childPropertyName"/>. Returns <paramref name="defaultValue"/> if the
+    /// parent or child property is not found or the value is not a JSON boolean (true/false).
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyName">The name of the parent property.</param>
+    /// <param name="childPropertyName">The name of the child property containing the value.</param>
+    /// <param name="defaultValue">The value to return when the property is missing or not a boolean. Defaults to false.</param>
+    /// <returns>The value as a <see cref="bool"/>, or <paramref name="defaultValue"/> if not found or not a boolean.</returns>
+    public static bool SafeGetBool(
+        this JsonElement input,
+        string propertyName,
+        string childPropertyName,
+        bool defaultValue = false)
+    {
+        if (input.TryGetProperty(propertyName, out var value) == true)
+        {
+            return value.SafeGetBool(childPropertyName, defaultValue);
+        }
+
+        return defaultValue;
+    }
+
+    #region JsonElement Array/Dictionary Helpers
+
+    /// <summary>
+    /// Gets a JsonElement array property by navigating the specified property names.
+    /// </summary>
+    /// <param name="input">The JsonElement to search in.</param>
+    /// <param name="propertyNames">The property path to the array.</param>
+    /// <returns>The array JsonElement if found and is an array, otherwise null.</returns>
+    public static JsonElement? GetArray(
+        this JsonElement input,
+        params string[] propertyNames)
+    {
+        var element = input.GetElement(propertyNames);
+
+        if (element.Found == false)
+        {
+            return null;
+        }
+
+        if (element.Element.ValueKind != JsonValueKind.Array)
+        {
+            return null;
+        }
+
+        return element.Element;
+    }
+
+    /// <summary>
+    /// Gets a specific item from a JsonElement array property by searching for a property name/value match.
+    /// </summary>
+    /// <param name="input">The JsonElement containing the array property.</param>
+    /// <param name="arrayPropertyName">The name of the array property.</param>
+    /// <param name="searchPropertyName">The property name to search for within array items.</param>
+    /// <param name="searchPropertyValue">The property value to match.</param>
+    /// <returns>The matching JsonElement item, or null if not found.</returns>
+    public static JsonElement? GetArrayItem(
+        this JsonElement input,
+        string arrayPropertyName,
+        string searchPropertyName,
+        string searchPropertyValue)
+    {
+        var array = input.GetArray(arrayPropertyName);
+
+        if (array is null)
+        {
+            return null;
+        }
+
+        return array.Value.SafeGetArrayItem(searchPropertyName, searchPropertyValue);
+    }
+
+    /// <summary>
+    /// Safely gets a specific item from a JsonElement array by searching for a property name/value match.
+    /// </summary>
+    /// <param name="array">The JsonElement array to search in.</param>
+    /// <param name="searchPropertyName">The property name to search for within array items.</param>
+    /// <param name="searchPropertyValue">The property value to match.</param>
+    /// <returns>The matching JsonElement item, or null if not found or not an array.</returns>
+    public static JsonElement? SafeGetArrayItem(
+        this JsonElement array,
+        string searchPropertyName,
+        string searchPropertyValue)
+    {
+        if (array.ValueKind != JsonValueKind.Array)
+        {
+            return null;
+        }
+
+        foreach (var item in array.EnumerateArray())
+        {
+            if (item.ValueKind != JsonValueKind.Object)
+            {
+                continue;
+            }
+
+            if (item.TryGetProperty(searchPropertyName, out var match) &&
+                match.ValueKind != JsonValueKind.Null &&
+                match.SafeGetString() == searchPropertyValue)
+            {
+                return item;
+            }
+        }
+
+        return null;
+    }
+
+    /// <summary>
+    /// Finds the first item in a JsonElement array that has the specified property name,
+    /// and returns the value of that property.
+    /// </summary>
+    /// <param name="array">The JsonElement array to search in.</param>
+    /// <param name="propertyName">The name of the property to look for.</param>
+    /// <returns>The value of the property from the first matching item, or null if not found or not an array.</returns>
+    public static JsonElement? FirstOrDefaultWithPropertyName(
+        this JsonElement array,
+        string propertyName)
+    {
+        if (array.ValueKind != JsonValueKind.Array)
+        {
+            return null;
+        }
+
+        foreach (var item in array.EnumerateArray())
+        {
+            if (item.ValueKind != JsonValueKind.Object)
+            {
+                continue;
+            }
+
+            if (item.TryGetProperty(propertyName, out var match))
+            {
+                return match;
+            }
+        }
+
+        return null;
+    }
+
+    /// <summary>
+    /// Converts a JsonElement array containing objects with key/value properties into a Dictionary.
+    /// </summary>
+    /// <param name="array">The JsonElement array to convert.</param>
+    /// <param name="keyPropertyName">The property name to use as dictionary keys.</param>
+    /// <param name="valuePropertyName">The property name to use as dictionary values.</param>
+    /// <returns>A dictionary with string keys and values, or an empty dictionary if not an array.</returns>
+    public static Dictionary<string, string> GetDictionary(
+        this JsonElement array,
+        string keyPropertyName,
+        string valuePropertyName)
+    {
+        var dictionary = new Dictionary<string, string>();
+
+        if (array.ValueKind != JsonValueKind.Array)
+        {
+            return dictionary;
+        }
+
+        foreach (var item in array.EnumerateArray())
+        {
+            if (item.ValueKind != JsonValueKind.Object)
+            {
+                continue;
+            }
+
+            var key = item.SafeGetString(keyPropertyName);
+            var value = item.SafeGetString(valuePropertyName);
+
+            if (!string.IsNullOrEmpty(key))
+            {
+                dictionary[key] = value;
+            }
+        }
+
+        return dictionary;
+    }
+
+    /// <summary>
+    /// Gets a JsonElement array property and converts it into a Dictionary.
+    /// </summary>
+    /// <param name="input">The JsonElement containing the array property.</param>
+    /// <param name="arrayPropertyName">The name of the array property to retrieve.</param>
+    /// <param name="keyPropertyName">The property name to use as dictionary keys.</param>
+    /// <param name="valuePropertyName">The property name to use as dictionary values.</param>
+    /// <returns>A dictionary with string keys and values, or an empty dictionary if array is not found.</returns>
+    public static Dictionary<string, string> GetDictionary(
+        this JsonElement input,
+        string arrayPropertyName,
+        string keyPropertyName,
+        string valuePropertyName)
+    {
+        var array = input.GetArray(arrayPropertyName);
+
+        if (array is null)
+        {
+            return [];
+        }
+
+        return array.Value.GetDictionary(keyPropertyName, valuePropertyName);
+    }
+
+    #endregion
+
+    #region JsonNode Extension Methods
+
+    /// <summary>
+    /// Gets a string value from a JsonNode property safely, returning empty string if not found.
+    /// </summary>
+    /// <param name="node">The JsonNode to search in.</param>
+    /// <param name="propertyName">The name of the property to retrieve.</param>
+    /// <returns>The property value as a string, or empty string if not found or null.</returns>
+    public static string GetString(this JsonNode? node, string propertyName)
+    {
+        if (node == null)
+        {
+            return string.Empty;
+        }
+        else
+        {
+            var match = node[propertyName];
+
+            if (match == null)
+            {
+                return string.Empty;
+            }
+            else
+            {
+                return match.ToString();
+            }
+        }
+    }
+
+    /// <summary>
+    /// Gets an integer value from a JsonNode property safely, returning 0 if not found or cannot parse.
+    /// </summary>
+    /// <param name="node">The JsonNode to search in.</param>
+    /// <param name="propertyName">The name of the property to retrieve.</param>
+    /// <returns>The property value as an integer, or 0 if not found, null, or cannot parse.</returns>
+    public static int GetInt32(this JsonNode? node, string propertyName)
+    {
+        if (node == null)
+        {
+            return 0;
+        }
+        else
+        {
+            var match = node[propertyName];
+
+            if (match == null)
+            {
+                return 0;
+            }
+            else
+            {
+                var valueAsString = match.ToString();
+
+                if (int.TryParse(valueAsString, out int result) == true)
+                {
+                    return result;
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+        }
+    }
+
+    /// <summary>
+    /// Finds the first item in a JsonArray that has the specified property name.
+    /// </summary>
+    /// <param name="array">The JsonArray to search in.</param>
+    /// <param name="propertyName">The name of the property to look for.</param>
+    /// <returns>The value of the property from the first matching item, or null if not found.</returns>
+    public static JsonNode? FirstOrDefaultWithPropertyName(
+        this JsonArray? array,
+        string propertyName)
+    {
+        if (array == null)
+        {
+            return null;
+        }
+
+        foreach (var item in array)
+        {
+            if (item == null)
+            {
+                continue;
+            }
+            else if (item[propertyName] != null)
+            {
+                return item[propertyName];
+            }
+        }
+
+        return null;
+    }
+
+    /// <summary>
+    /// Gets a JsonArray property from a JsonNode.
+    /// </summary>
+    /// <param name="node">The JsonNode to search in.</param>
+    /// <param name="propertyName">The name of the array property to retrieve.</param>
+    /// <returns>The JsonArray if found and is an array, otherwise null.</returns>
+    public static JsonArray? GetArray(
+        this JsonNode? node,
+        string propertyName)
+    {
+        if (node == null)
+        {
+            return null;
+        }
+
+        // get reference to array property
+        var array = node[propertyName];
+
+        if (array == null)
+        {
+            return null;
+        }
+        else
+        {
+            if (array is JsonArray valueAsArray)
+            {
+                return valueAsArray;
+            }
+            else
+            {
+                return null;
+            }
+        }
+    }
+
+    /// <summary>
+    /// Gets a specific item from a JsonArray by searching for a property name/value match.
+    /// </summary>
+    /// <param name="node">The JsonNode containing the array.</param>
+    /// <param name="arrayPropertyName">The name of the array property.</param>
+    /// <param name="searchPropertyName">The property name to search for within array items.</param>
+    /// <param name="searchPropertyValue">The property value to match.</param>
+    /// <returns>The matching JsonNode item, or null if not found.</returns>
+    public static JsonNode? GetArrayItem(
+        this JsonNode? node,
+        string arrayPropertyName,
+        string searchPropertyName, string searchPropertyValue)
+    {
+        if (node == null)
+        {
+            return null;
+        }
+
+        var array = node.GetArray(arrayPropertyName);
+
+        if (array == null)
+        {
+            return null;
+        }
+        else
+        {
+            foreach (var item in array)
+            {
+                if (item == null)
+                {
+                    continue;
+                }
+                else if (item[searchPropertyName] != null &&
+                    item[searchPropertyName]!.ToString() == searchPropertyValue)
+                {
+                    return item;
+                }
+            }
+
+            return null;
+        }
+    }
+
+    /// <summary>
+    /// Safely gets a specific item from a JsonArray by searching for a property name/value match.
+    /// This method provides a safe way to retrieve array items without throwing exceptions.
+    /// </summary>
+    /// <param name="array">The JsonArray to search in.</param>
+    /// <param name="searchPropertyName">The property name to search for within array items.</param>
+    /// <param name="searchPropertyValue">The property value to match.</param>
+    /// <returns>The matching JsonNode item, or null if not found.</returns>
+    public static JsonNode? SafeGetArrayItem(
+        this JsonArray? array,
+        string searchPropertyName,
+        string searchPropertyValue)
+    {
+        if (array == null)
+        {
+            return null;
+        }
+
+        foreach (var item in array)
+        {
+            if (item == null)
+            {
+                continue;
+            }
+            else if (item[searchPropertyName] != null &&
+                item[searchPropertyName]!.ToString() == searchPropertyValue)
+            {
+                return item;
+            }
+        }
+
+        return null;
+    }
+
+    /// <summary>
+    /// Converts a JsonArray containing objects with key/value properties into a Dictionary.
+    /// </summary>
+    /// <param name="array">The JsonArray to convert.</param>
+    /// <param name="keyPropertyName">The property name to use as dictionary keys.</param>
+    /// <param name="valuePropertyName">The property name to use as dictionary values.</param>
+    /// <returns>A dictionary with string keys and values, or an empty dictionary if array is null.</returns>
+    public static Dictionary<string, string> GetDictionary(
+        this JsonArray? array,
+        string keyPropertyName,
+        string valuePropertyName)
+    {
+        var dictionary = new Dictionary<string, string>();
+
+        if (array == null)
+        {
+            return dictionary;
+        }
+
+        foreach (var item in array)
+        {
+            if (item == null)
+            {
+                continue;
+            }
+
+            var key = item.GetString(keyPropertyName);
+            var value = item.GetString(valuePropertyName);
+
+            if (!string.IsNullOrEmpty(key))
+            {
+                dictionary[key] = value;
+            }
+        }
+
+        return dictionary;
+    }
+
+    /// <summary>
+    /// Gets a JsonArray property from a JsonNode and converts it into a Dictionary.
+    /// </summary>
+    /// <param name="node">The JsonNode containing the array property.</param>
+    /// <param name="arrayPropertyName">The name of the array property to retrieve.</param>
+    /// <param name="keyPropertyName">The property name to use as dictionary keys.</param>
+    /// <param name="valuePropertyName">The property name to use as dictionary values.</param>
+    /// <returns>A dictionary with string keys and values, or an empty dictionary if array is not found.</returns>
+    public static Dictionary<string, string> GetDictionary(
+        this JsonNode? node,
+        string arrayPropertyName,
+        string keyPropertyName,
+        string valuePropertyName)
+    {
+        var array = node.GetArray(arrayPropertyName);
+        return array.GetDictionary(keyPropertyName, valuePropertyName);
+    }
+
+    #endregion
+}

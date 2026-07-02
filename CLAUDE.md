@@ -4,29 +4,38 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a .NET multi-project repository containing two main libraries:
+This is a .NET multi-project repository containing three published NuGet packages:
 
-- **Benday.Common** (v9.12.0) - A collection of classes for supporting the domain model pattern in .NET Core
-- **Benday.Common.Testing** (v2.2.1) - A collection of classes to streamline testing with XUnit and Moq
+- **Benday.Common** (v10.1.3) - A collection of classes for supporting the domain model pattern in .NET Core
+- **Benday.Common.Testing** (v3.1.4) - A collection of classes to streamline testing with XUnit and Moq
+- **Benday.Common.Interfaces** (v1.0.3) - A small package holding the core interface contracts (identity, repository, service, and multi-tenant abstractions) that the other two libraries build on
 
-Both libraries target .NET 8.0, .NET 9.0, .NET 10.0, and .NET Standard 2.1. They are published as NuGet packages.
+Target frameworks vary by project:
 
-**Note:** There is no `.sln` file. Build and test commands must target individual `.csproj` files.
+- **Benday.Common** - .NET 8.0, .NET 9.0, .NET 10.0, and .NET Standard 2.1
+- **Benday.Common.Testing** - .NET 8.0, .NET 9.0, and .NET 10.0
+- **Benday.Common.Interfaces** - .NET Standard 2.1
+
+**Note:** There is a solution file (`Benday.Common.slnx`) but no legacy `.sln`. Build and test commands can target either the solution or individual `.csproj` files.
+
+**Repository layout:** Shipping/library projects live under `src/` and unit test projects live under `test/`:
+- `src/Benday.Common`, `src/Benday.Common.Interfaces`, `src/Benday.Common.Testing`
+- `test/Benday.Common.UnitTests`, `test/Benday.Common.Interfaces.UnitTests`, `test/Benday.Common.Testing.UnitTests`
 
 ## Development Commands
 
 ### Building
 ```bash
 # Build specific project
-dotnet build Benday.Common/Benday.Common.csproj
-dotnet build Benday.Common.Testing/Benday.Common.Testing.csproj
+dotnet build src/Benday.Common/Benday.Common.csproj
+dotnet build src/Benday.Common.Testing/Benday.Common.Testing.csproj
 ```
 
 ### Running Tests
 ```bash
 # Run tests for specific project
-dotnet test Benday.Common.UnitTests/Benday.Common.UnitTests.csproj
-dotnet test Benday.Common.Testing.UnitTests/Benday.Common.Testing.UnitTests.csproj
+dotnet test test/Benday.Common.UnitTests/Benday.Common.UnitTests.csproj
+dotnet test test/Benday.Common.Testing.UnitTests/Benday.Common.Testing.UnitTests.csproj
 
 # Run a single test method
 dotnet test --filter "MethodName=TestMethodName"
@@ -35,11 +44,12 @@ dotnet test --filter "MethodName=TestMethodName"
 Test projects target `net10.0` only.
 
 ### Creating NuGet Packages
-Both projects are configured with `<GeneratePackageOnBuild>True</GeneratePackageOnBuild>`, so packages are automatically generated during build.
+All three library projects are configured with `<GeneratePackageOnBuild>True</GeneratePackageOnBuild>`, so packages are automatically generated during build.
 
 ```bash
-dotnet pack Benday.Common/Benday.Common.csproj
-dotnet pack Benday.Common.Testing/Benday.Common.Testing.csproj
+dotnet pack src/Benday.Common/Benday.Common.csproj
+dotnet pack src/Benday.Common.Testing/Benday.Common.Testing.csproj
+dotnet pack src/Benday.Common.Interfaces/Benday.Common.Interfaces.csproj
 ```
 
 ### Documentation Generation
@@ -63,13 +73,20 @@ The project uses DocFX for API documentation:
 
 ### Benday.Common Library
 Core functionality includes:
-- **Domain Model Support**: Identity interfaces (`IInt32Identity`, `IStringIdentity`), deletable pattern (`IDeleteable`), selectable pattern (`ISelectable`)
+- **Domain Model Support**: Identity interfaces (`IInt32Identity`, `IStringIdentity`) and the selectable pattern (`ISelectable`). The deletable pattern (`IDeleteable`) and other core contracts are defined in **Benday.Common.Interfaces** (see below) and re-used here.
 - **Search & Paging**: Search framework with `Search`, `SearchArgument`, `SearchResult`, `SearchMethod`/`SearchOperator` enums, `SearchConstants`, paging with `PageableResults`
 - **Sorting & View Models**: `ISortableResult`, `SortableViewModelBase<T>`, `SearchViewModelBase<T>`, `SimpleSearchResults<T>`, `SortBy`
 - **Process Execution**: `ProcessRunner`/`IProcessRunner` for synchronous operations, `AsyncProcessRunner`/`IAsyncProcessRunner` for async operations, `ProcessRunnerResult`/`IProcessRunnerResult` for results
 - **JSON Utilities** (`Json/` namespace): `JsonEditor` for reading/editing JSON documents, `JsonExtensionMethods` for `JsonElement` and `JsonNode` extension methods (safe getters, array operations, `GetDictionary`), `ElementResult`, `SiblingValueArguments`
 - **Extension Methods**: `StringExtensionMethods` (safe conversions, null checks, case-insensitive comparison), `ConfigurationExtensionMethods` (safe config access)
 - **Dependency Injection**: `ITypeRegistrationItem`, `TypeRegistrationItem<TService, TImplementation>`
+
+### Benday.Common.Interfaces Library
+A small `netstandard2.1`-only package containing just the core interface contracts, so consumers can depend on the abstractions without pulling in the full `Benday.Common` implementation. Both `Benday.Common` and `Benday.Common.Testing` reference it. Contents:
+- **Identity & domain contracts**: `IEntityIdentity<TKey>`, `IDeleteable`, `IParentedItem<TKey>`, `IBlobOwner`
+- **Multi-tenancy**: `ITenantItem<TKey>`
+- **Async repositories**: `IAsyncRepository<T, TKey>`, `IAsyncReadableRepository<T, TKey>`, `IAsyncTenantRepository<T, TKey>`
+- **Async services**: `IAsyncService<T, TKey>`, `IAsyncTenantService<T, TKey>`
 
 ### Benday.Common.Testing Library
 Testing utilities include:
@@ -119,13 +136,15 @@ The project uses:
 
 ## Code Conventions
 
-- Both libraries use nullable reference types (`<Nullable>enable</Nullable>`)
+- All library projects use nullable reference types (`<Nullable>enable</Nullable>`)
 - Code style enforcement is enabled in build (`<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>`)
 - Follow the existing patterns for search functionality, identity interfaces, and dependency injection patterns
 - Extension methods are organized in dedicated classes (e.g., `StringExtensionMethods`, `ConfigurationExtensionMethods`, `JsonExtensionMethods`)
 
 ## Version Management
 
-- Benday.Common uses semantic versioning, currently at `9.12.0`
-- Benday.Common.Testing uses semantic versioning, currently at `2.2.1`
-- The Testing library depends on Benday.Common version `[9.7.0,)` or higher
+- Each library uses semantic versioning, set via the `<TheVersion>` MSBuild property inside its own `.csproj`:
+  - Benday.Common - currently `10.1.3`
+  - Benday.Common.Testing - currently `3.1.4`
+  - Benday.Common.Interfaces - currently `1.0.3`
+- All three packages live in this repo and are versioned/released together, so the internal dependencies use `ProjectReference` rather than `PackageReference`: Benday.Common references Benday.Common.Interfaces; Benday.Common.Testing references both Benday.Common and Benday.Common.Interfaces. Because the referenced projects are packable, `dotnet pack` automatically emits the corresponding NuGet dependencies in each `.nupkg` (floored at the version being built). This means the libraries always build from local source (no dependence on a published package), but it also means a referenced package must be published for a dependent package to be installable — publish/release the dependencies together and in order.
