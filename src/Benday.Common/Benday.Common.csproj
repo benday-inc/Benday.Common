@@ -42,7 +42,7 @@ v9.0 - Updating dependencies and adding package target for .net 9.0
         <Title>Benday.Common</Title>
     </PropertyGroup>
     <ItemGroup>
-        <None Include="..\bdc_mark_128_128.png">
+        <None Include="..\..\bdc_mark_128_128.png">
             <Pack>True</Pack>
             <PackagePath>\</PackagePath>
         </None>

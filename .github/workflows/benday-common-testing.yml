@@ -4,18 +4,18 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - 'Benday.Common.Testing/**'
-      - 'Benday.Common.Testing.UnitTests/**'
-      - 'Benday.Common/**'
-      - 'Benday.Common.Interfaces/**'
+      - 'src/Benday.Common.Testing/**'
+      - 'test/Benday.Common.Testing.UnitTests/**'
+      - 'src/Benday.Common/**'
+      - 'src/Benday.Common.Interfaces/**'
       - '.github/workflows/benday-common-testing.yml'
   pull_request:
     branches: [ "main" ]
     paths:
-      - 'Benday.Common.Testing/**'
-      - 'Benday.Common.Testing.UnitTests/**'
-      - 'Benday.Common/**'
-      - 'Benday.Common.Interfaces/**'
+      - 'src/Benday.Common.Testing/**'
+      - 'test/Benday.Common.Testing.UnitTests/**'
+      - 'src/Benday.Common/**'
+      - 'src/Benday.Common.Interfaces/**'
       - '.github/workflows/benday-common-testing.yml'
   workflow_dispatch:
 
@@ -41,28 +41,28 @@ jobs:
           dotnet-version: 10.0.x
 
       - name: Restore Benday.Common
-        run: dotnet restore Benday.Common/Benday.Common.csproj
+        run: dotnet restore src/Benday.Common/Benday.Common.csproj
 
       - name: Restore Benday.Common.Testing
-        run: dotnet restore Benday.Common.Testing/Benday.Common.Testing.csproj
+        run: dotnet restore src/Benday.Common.Testing/Benday.Common.Testing.csproj
 
       - name: Build Benday.Common (Release)
-        run: dotnet build Benday.Common/Benday.Common.csproj --configuration Release --no-restore
+        run: dotnet build src/Benday.Common/Benday.Common.csproj --configuration Release --no-restore
 
       - name: Build Benday.Common.Testing (Release)
-        run: dotnet build Benday.Common.Testing/Benday.Common.Testing.csproj --configuration Release --no-restore
+        run: dotnet build src/Benday.Common.Testing/Benday.Common.Testing.csproj --configuration Release --no-restore
 
       - name: Restore Benday.Common.Testing.UnitTests
-        run: dotnet restore Benday.Common.Testing.UnitTests/Benday.Common.Testing.UnitTests.csproj
+        run: dotnet restore test/Benday.Common.Testing.UnitTests/Benday.Common.Testing.UnitTests.csproj
 
       - name: Build Benday.Common.Testing.UnitTests (Release)
-        run: dotnet build Benday.Common.Testing.UnitTests/Benday.Common.Testing.UnitTests.csproj --configuration Release --no-restore
+        run: dotnet build test/Benday.Common.Testing.UnitTests/Benday.Common.Testing.UnitTests.csproj --configuration Release --no-restore
 
       - name: Run Unit Tests
-        run: dotnet test Benday.Common.Testing.UnitTests/Benday.Common.Testing.UnitTests.csproj --configuration Release --no-build --verbosity normal
+        run: dotnet test test/Benday.Common.Testing.UnitTests/Benday.Common.Testing.UnitTests.csproj --configuration Release --no-build --verbosity normal
 
       - name: Pack Benday.Common.Testing
-        run: dotnet pack Benday.Common.Testing/Benday.Common.Testing.csproj --no-build --configuration Release --output ./artifacts
+        run: dotnet pack src/Benday.Common.Testing/Benday.Common.Testing.csproj --no-build --configuration Release --output ./artifacts
 
       - name: Upload NuGet packages
         uses: actions/upload-artifact@v7

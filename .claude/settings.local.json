@@ -49,7 +49,10 @@
       "Bash(Benday.Common.Testing.UnitTests/bin/Release/net10.0/Benday.Common.Testing.UnitTests --filter-query /[FakeValueGeneratorFixture])",
       "Bash(./Benday.Common.UnitTests/bin/Debug/net10.0/Benday.Common.UnitTests)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(mkdir -p src test)",
+      "Bash(git mv *)",
+      "Bash(grep -vi \"\\\\.cs$\")"
     ],
     "deny": [],
     "ask": []

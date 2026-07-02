@@ -57,7 +57,7 @@ v1.0 - Base class for xunit tests; MockUtility for streamlining testing with Moq
                           Version="[9.7.0,)" />
     </ItemGroup>
     <ItemGroup>
-        <None Include="..\bdc_mark_128_128.png">
+        <None Include="..\..\bdc_mark_128_128.png">
             <Pack>True</Pack>
             <PackagePath>\</PackagePath>
         </None>

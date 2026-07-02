@@ -6,12 +6,12 @@
     <File Path="README.md" />
     <File Path="regenerate-and-copy-docs.ps1" />
   </Folder>
-  <Project Path="Benday.Common.Interfaces.UnitTests/Benday.Common.Interfaces.UnitTests.csproj" />
-  <Project Path="Benday.Common.Interfaces/Benday.Common.Interfaces.csproj" />
-  <Project Path="Benday.Common.Testing.UnitTests/Benday.Common.Testing.UnitTests.csproj" />
-  <Project Path="Benday.Common.Testing/Benday.Common.Testing.csproj" />
-  <Project Path="Benday.Common.UnitTests/Benday.Common.UnitTests.csproj" />
-  <Project Path="Benday.Common/Benday.Common.csproj" />
+  <Project Path="src/Benday.Common.Interfaces/Benday.Common.Interfaces.csproj" />
+  <Project Path="src/Benday.Common.Testing/Benday.Common.Testing.csproj" />
+  <Project Path="src/Benday.Common/Benday.Common.csproj" />
+  <Project Path="test/Benday.Common.Interfaces.UnitTests/Benday.Common.Interfaces.UnitTests.csproj" />
+  <Project Path="test/Benday.Common.Testing.UnitTests/Benday.Common.Testing.UnitTests.csproj" />
+  <Project Path="test/Benday.Common.UnitTests/Benday.Common.UnitTests.csproj" />
   <Properties Name="ExtensibilityGlobals" Scope="PostLoad">
     <Property Name="FileExplorer" />
   </Properties>

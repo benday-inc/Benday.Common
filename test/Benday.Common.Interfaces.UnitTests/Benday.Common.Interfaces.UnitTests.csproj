@@ -12,9 +12,9 @@
     <PackageReference Include="xunit.v3.mtp-v2" Version="3.*" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Benday.Common.Interfaces\Benday.Common.Interfaces.csproj" />
-    <ProjectReference Include="..\Benday.Common\Benday.Common.csproj" />
-    <ProjectReference Include="..\Benday.Common.Testing\Benday.Common.Testing.csproj" />
+    <ProjectReference Include="..\..\src\Benday.Common.Interfaces\Benday.Common.Interfaces.csproj" />
+    <ProjectReference Include="..\..\src\Benday.Common\Benday.Common.csproj" />
+    <ProjectReference Include="..\..\src\Benday.Common.Testing\Benday.Common.Testing.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Using Include="Xunit" />

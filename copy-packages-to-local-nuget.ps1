@@ -44,9 +44,9 @@ if (-not (Test-Path $localNuGet)) {
 
 # The packable libraries (test/example projects are not packed).
 $projects = @(
-    "Benday.Common.Interfaces/Benday.Common.Interfaces.csproj",
-    "Benday.Common/Benday.Common.csproj",
-    "Benday.Common.Testing/Benday.Common.Testing.csproj"
+    "src/Benday.Common.Interfaces/Benday.Common.Interfaces.csproj",
+    "src/Benday.Common/Benday.Common.csproj",
+    "src/Benday.Common.Testing/Benday.Common.Testing.csproj"
 )
 
 Write-Host "Building solution ($Configuration)..."

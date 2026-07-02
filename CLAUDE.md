@@ -11,22 +11,26 @@ This is a .NET multi-project repository containing two main libraries:
 
 Both libraries target .NET 8.0, .NET 9.0, .NET 10.0, and .NET Standard 2.1. They are published as NuGet packages.
 
-**Note:** There is no `.sln` file. Build and test commands must target individual `.csproj` files.
+**Note:** There is a solution file (`Benday.Common.slnx`) but no legacy `.sln`. Build and test commands can target either the solution or individual `.csproj` files.
+
+**Repository layout:** Shipping/library projects live under `src/` and unit test projects live under `test/`:
+- `src/Benday.Common`, `src/Benday.Common.Interfaces`, `src/Benday.Common.Testing`
+- `test/Benday.Common.UnitTests`, `test/Benday.Common.Interfaces.UnitTests`, `test/Benday.Common.Testing.UnitTests`
 
 ## Development Commands
 
 ### Building
 ```bash
 # Build specific project
-dotnet build Benday.Common/Benday.Common.csproj
-dotnet build Benday.Common.Testing/Benday.Common.Testing.csproj
+dotnet build src/Benday.Common/Benday.Common.csproj
+dotnet build src/Benday.Common.Testing/Benday.Common.Testing.csproj
 ```
 
 ### Running Tests
 ```bash
 # Run tests for specific project
-dotnet test Benday.Common.UnitTests/Benday.Common.UnitTests.csproj
-dotnet test Benday.Common.Testing.UnitTests/Benday.Common.Testing.UnitTests.csproj
+dotnet test test/Benday.Common.UnitTests/Benday.Common.UnitTests.csproj
+dotnet test test/Benday.Common.Testing.UnitTests/Benday.Common.Testing.UnitTests.csproj
 
 # Run a single test method
 dotnet test --filter "MethodName=TestMethodName"
@@ -38,8 +42,8 @@ Test projects target `net10.0` only.
 Both projects are configured with `<GeneratePackageOnBuild>True</GeneratePackageOnBuild>`, so packages are automatically generated during build.
 
 ```bash
-dotnet pack Benday.Common/Benday.Common.csproj
-dotnet pack Benday.Common.Testing/Benday.Common.Testing.csproj
+dotnet pack src/Benday.Common/Benday.Common.csproj
+dotnet pack src/Benday.Common.Testing/Benday.Common.Testing.csproj
 ```
 
 ### Documentation Generation
