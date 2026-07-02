@@ -6,9 +6,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a .NET multi-project repository containing three published NuGet packages:
 
-- **Benday.Common** (v10.1) - A collection of classes for supporting the domain model pattern in .NET Core
-- **Benday.Common.Testing** (v3.1.2) - A collection of classes to streamline testing with XUnit and Moq
-- **Benday.Common.Interfaces** (v1.0.1) - A small package holding the core interface contracts (identity, repository, service, and multi-tenant abstractions) that the other two libraries build on
+- **Benday.Common** (v10.1.3) - A collection of classes for supporting the domain model pattern in .NET Core
+- **Benday.Common.Testing** (v3.1.4) - A collection of classes to streamline testing with XUnit and Moq
+- **Benday.Common.Interfaces** (v1.0.3) - A small package holding the core interface contracts (identity, repository, service, and multi-tenant abstractions) that the other two libraries build on
 
 Target frameworks vary by project:
 
@@ -144,7 +144,7 @@ The project uses:
 ## Version Management
 
 - Each library uses semantic versioning, set via the `<TheVersion>` MSBuild property inside its own `.csproj`:
-  - Benday.Common - currently `10.1`
-  - Benday.Common.Testing - currently `3.1.2`
-  - Benday.Common.Interfaces - currently `1.0.1`
-- The Testing library depends on Benday.Common via a NuGet `PackageReference` with version `[9.7.0,)` (not a project reference), and both Benday.Common and Benday.Common.Testing have a project reference to Benday.Common.Interfaces
+  - Benday.Common - currently `10.1.3`
+  - Benday.Common.Testing - currently `3.1.4`
+  - Benday.Common.Interfaces - currently `1.0.3`
+- All three packages live in this repo and are versioned/released together, so the internal dependencies use `ProjectReference` rather than `PackageReference`: Benday.Common references Benday.Common.Interfaces; Benday.Common.Testing references both Benday.Common and Benday.Common.Interfaces. Because the referenced projects are packable, `dotnet pack` automatically emits the corresponding NuGet dependencies in each `.nupkg` (floored at the version being built). This means the libraries always build from local source (no dependence on a published package), but it also means a referenced package must be published for a dependent package to be installable — publish/release the dependencies together and in order.

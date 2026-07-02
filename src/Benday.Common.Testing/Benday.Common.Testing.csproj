@@ -45,6 +45,7 @@ v1.0 - Base class for xunit tests; MockUtility for streamlining testing with Moq
     </PropertyGroup>
     <ItemGroup>
         <ProjectReference Include="..\Benday.Common.Interfaces\Benday.Common.Interfaces.csproj" />
+        <ProjectReference Include="..\Benday.Common\Benday.Common.csproj" />
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Moq"
@@ -53,8 +54,6 @@ v1.0 - Base class for xunit tests; MockUtility for streamlining testing with Moq
                           Version="3.*" />
         <PackageReference Include="xunit.v3.extensibility.core"
                           Version="3.*" />
-        <PackageReference Include="Benday.Common" Version="10.1.2" />
-        
     </ItemGroup>
     <ItemGroup>
         <None Include="..\..\bdc_mark_128_128.png">
