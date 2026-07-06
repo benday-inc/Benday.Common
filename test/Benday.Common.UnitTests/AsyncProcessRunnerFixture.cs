@@ -21,6 +21,9 @@ public class AsyncProcessRunnerFixture : TestClassBase
         return new AsyncProcessRunner(startInfo);
     }
 
+    private AsyncProcessRunner CreateSystemUnderTest((string fileName, string arguments) command) =>
+        CreateSystemUnderTest(command.fileName, command.arguments);
+
     [Fact]
     public void Constructor_SetsStartInfo()
     {
@@ -106,7 +109,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
     public async Task StartAsync_StartsProcess()
     {
         // arrange
-        using var sut = CreateSystemUnderTest("sleep", "1");
+        using var sut = CreateSystemUnderTest(OsCommands.Sleep(1));
 
         // act
         await sut.StartAsync(TestContext.Current.CancellationToken);
@@ -122,7 +125,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
     public async Task StartAsync_CalledTwice_ThrowsInvalidOperationException()
     {
         // arrange
-        using var sut = CreateSystemUnderTest("sleep", "1");
+        using var sut = CreateSystemUnderTest(OsCommands.Sleep(1));
         await sut.StartAsync(TestContext.Current.CancellationToken);
 
         // act & assert
@@ -133,7 +136,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
     public async Task WaitForExitAsync_WaitsForCompletion()
     {
         // arrange
-        using var sut = CreateSystemUnderTest("echo", "hello world");
+        using var sut = CreateSystemUnderTest(OsCommands.Echo("hello world"));
         await sut.StartAsync(TestContext.Current.CancellationToken);
 
         // act
@@ -149,7 +152,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
     public async Task WaitForExitAsync_BeforeStart_ThrowsInvalidOperationException()
     {
         // arrange
-        using var sut = CreateSystemUnderTest("echo", "hello");
+        using var sut = CreateSystemUnderTest(OsCommands.Echo("hello"));
 
         // act & assert
         await Assert.ThrowsAsync<InvalidOperationException>(async () => await sut.WaitForExitAsync(TestContext.Current.CancellationToken));
@@ -159,7 +162,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
     public async Task SuccessfulCommand_CapturesOutput()
     {
         // arrange
-        using var sut = CreateSystemUnderTest("echo", "hello async world");
+        using var sut = CreateSystemUnderTest(OsCommands.Echo("hello async world"));
         await sut.StartAsync(TestContext.Current.CancellationToken);
 
         // act
@@ -176,7 +179,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
     public async Task SuccessfulCommand_ReturnsExitCodeZero()
     {
         // arrange
-        using var sut = CreateSystemUnderTest("echo", "hello");
+        using var sut = CreateSystemUnderTest(OsCommands.Echo("hello"));
         await sut.StartAsync(TestContext.Current.CancellationToken);
 
         // act
@@ -190,7 +193,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
     public async Task FailingCommand_SetsIsErrorTrue()
     {
         // arrange
-        using var sut = CreateSystemUnderTest("ls", "/nonexistent/directory/that/does/not/exist");
+        using var sut = CreateSystemUnderTest(OsCommands.Failing());
         await sut.StartAsync(TestContext.Current.CancellationToken);
 
         // act
@@ -206,7 +209,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
     public async Task Kill_TerminatesRunningProcess()
     {
         // arrange
-        using var sut = CreateSystemUnderTest("sleep", "30");
+        using var sut = CreateSystemUnderTest(OsCommands.Sleep(30));
         await sut.StartAsync(TestContext.Current.CancellationToken);
         sut.IsRunning.ShouldBeTrue("Process should be running.");
 
@@ -222,7 +225,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
     public async Task RunTimeout_TerminatesLongRunningProcess()
     {
         // arrange
-        using var sut = CreateSystemUnderTest("sleep", "30");
+        using var sut = CreateSystemUnderTest(OsCommands.Sleep(30));
         sut.RunTimeout = 500; // 500ms timeout
 
         // act
@@ -238,7 +241,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
     public async Task OutputText_CanBeReadWhileRunning()
     {
         // arrange - use a command that outputs something before sleeping
-        using var sut = CreateSystemUnderTest("/bin/bash", "-c \"echo 'start'; sleep 2; echo 'end'\"");
+        using var sut = CreateSystemUnderTest(OsCommands.EchoWaitEcho("start", 2, "end"));
         await sut.StartAsync(TestContext.Current.CancellationToken);
 
         // act - wait a bit for first output
@@ -257,7 +260,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
     public async Task Dispose_KillsRunningProcess()
     {
         // arrange
-        var sut = CreateSystemUnderTest("sleep", "30");
+        var sut = CreateSystemUnderTest(OsCommands.Sleep(30));
         await sut.StartAsync(TestContext.Current.CancellationToken);
         var processId = sut.ProcessId;
         processId.HasValue.ShouldBeTrue("ProcessId should be set.");
@@ -302,7 +305,7 @@ public class AsyncProcessRunnerFixture : TestClassBase
     public async Task CancellationToken_CancelsWaitForExit()
     {
         // arrange
-        using var sut = CreateSystemUnderTest("sleep", "30");
+        using var sut = CreateSystemUnderTest(OsCommands.Sleep(30));
         using var cts = new CancellationTokenSource(500); // Cancel after 500ms
         await sut.StartAsync(TestContext.Current.CancellationToken);
 

@@ -55,7 +55,8 @@
       "Bash(grep -vi \"\\\\.cs$\")",
       "Bash(sort -t'|' -k1,1 -k2,2n -u)",
       "Bash(awk -F'|' '{ split\\($1,a,\"/src/\"\\); print a[2]\"  L\"$2\"  =>  \"$3 }')",
-      "Bash(xargs -n1 basename)"
+      "Bash(xargs -n1 basename)",
+      "Bash(dotnet build *)"
     ],
     "deny": [],
     "ask": []

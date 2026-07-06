@@ -36,9 +36,27 @@ The library provides a complete assertion framework that addresses XUnit's lack 
   * Empty checks (`IsEmpty`, `IsNotEmpty`)
   * Count validation (`HasCount`)
   * Element presence (`Contains`, `DoesNotContain`)
+  * Ordered equality (`AreEqual`)
+  * Unordered / content equality (`AreEquivalent`)
   * Subset/superset validation
   * Uniqueness checks (`HasUniqueElements`)
-  * Element matching (`AllMatch`, `AnyMatch`)
+  * Element matching (`AllMatch`, `AnyMatch`) and per-element assertions (`AllSatisfy`)
+
+  **How elements are compared:** by default these methods compare elements *by value*
+  using `EqualityComparer<T>.Default`. For types that implement `IEquatable<T>` /
+  override `Equals` — `string`, `int`, `DateTime`, value types, records — that is value
+  equality. For custom reference types that don't override equality (and for nested
+  collections such as `string[]` elements), the default falls back to *reference*
+  equality; in those cases pass an `IEqualityComparer<T>` overload, or use the
+  `AreEqual(expected, actual, Action<T,T>, message)` overload to assert each element pair
+  yourself. `AreEqual` is order-sensitive; use `AreEquivalent` to compare contents while
+  ignoring order (respecting duplicate counts).
+
+  > **Fluent gotcha:** calling `.ShouldEqual(...)` on an *array-typed* (or otherwise
+  > concretely-typed) variable binds to the object-equality extension and compares the two
+  > collections *by reference*. Use `.ShouldEqualCollection(...)` (or type the variable as
+  > `IEnumerable<T>`) to force element-by-element comparison. `.ShouldBeEquivalentTo(...)`
+  > and `.ShouldAllSatisfy(...)` are the fluent forms of `AreEquivalent` / `AllSatisfy`.
 
 * **`AssertThatNumeric`** - Numeric assertions
   * Comparison operators (`IsGreaterThan`, `IsLessThan`, etc.)

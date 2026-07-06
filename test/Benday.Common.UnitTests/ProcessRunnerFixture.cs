@@ -19,6 +19,9 @@ public class ProcessRunnerFixture : TestClassBase
         return new ProcessRunner(startInfo);
     }
 
+    private ProcessRunner CreateSystemUnderTest((string fileName, string arguments) command) =>
+        CreateSystemUnderTest(command.fileName, command.arguments);
+
     [Fact]
     public void Constructor_SetsStartInfo()
     {
@@ -67,7 +70,7 @@ public class ProcessRunnerFixture : TestClassBase
     public void Run_SuccessfulCommand_SetsIsSuccessTrue()
     {
         // arrange
-        var sut = CreateSystemUnderTest("echo", "hello world");
+        var sut = CreateSystemUnderTest(OsCommands.Echo("hello world"));
 
         // act
         var result = sut.Run();
@@ -84,7 +87,7 @@ public class ProcessRunnerFixture : TestClassBase
     public void Run_SuccessfulCommand_CapturesOutput()
     {
         // arrange
-        var sut = CreateSystemUnderTest("echo", "hello world");
+        var sut = CreateSystemUnderTest(OsCommands.Echo("hello world"));
 
         // act
         var result = sut.Run();
@@ -98,7 +101,7 @@ public class ProcessRunnerFixture : TestClassBase
     public void Run_SuccessfulCommand_ReturnsExitCodeZero()
     {
         // arrange
-        var sut = CreateSystemUnderTest("echo", "hello");
+        var sut = CreateSystemUnderTest(OsCommands.Echo("hello"));
 
         // act
         var result = sut.Run();
@@ -112,7 +115,7 @@ public class ProcessRunnerFixture : TestClassBase
     public void Run_FailingCommand_SetsIsErrorTrue()
     {
         // arrange - use a command that will fail
-        var sut = CreateSystemUnderTest("ls", "/nonexistent/directory/that/does/not/exist");
+        var sut = CreateSystemUnderTest(OsCommands.Failing());
 
         // act
         var result = sut.Run();
@@ -128,7 +131,7 @@ public class ProcessRunnerFixture : TestClassBase
     public void Run_FailingCommand_ReturnsNonZeroExitCode()
     {
         // arrange
-        var sut = CreateSystemUnderTest("ls", "/nonexistent/directory/that/does/not/exist");
+        var sut = CreateSystemUnderTest(OsCommands.Failing());
 
         // act
         var result = sut.Run();
@@ -142,7 +145,7 @@ public class ProcessRunnerFixture : TestClassBase
     public void Run_CalledTwice_ThrowsInvalidOperationException()
     {
         // arrange
-        var sut = CreateSystemUnderTest("echo", "hello");
+        var sut = CreateSystemUnderTest(OsCommands.Echo("hello"));
         sut.Run();
 
         // act & assert
@@ -153,7 +156,7 @@ public class ProcessRunnerFixture : TestClassBase
     public void Run_WithTimeout_ThrowsTimeoutException()
     {
         // arrange - use sleep command with short timeout
-        var sut = CreateSystemUnderTest("sleep", "10");
+        var sut = CreateSystemUnderTest(OsCommands.Sleep(10));
         sut.Timeout = 100; // 100ms timeout
 
         // act & assert
@@ -175,7 +178,7 @@ public class ProcessRunnerFixture : TestClassBase
     public void Run_ReturnsIProcessRunnerResult()
     {
         // arrange
-        var sut = CreateSystemUnderTest("echo", "hello");
+        var sut = CreateSystemUnderTest(OsCommands.Echo("hello"));
 
         // act
         var result = sut.Run();

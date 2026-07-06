@@ -452,4 +452,121 @@ public class CollectionAssertExtensionsFixture : TestClassBase
     }
 
     #endregion
+
+    #region ShouldEqualCollection Tests (avoids the array overload-resolution trap)
+
+    private static string NotInterned(string value) => new string(value.ToCharArray());
+
+    [Fact]
+    public void ShouldEqualCollection_OnStringArrayTypedVariable_ComparesByElement()
+    {
+        // Arrange - both variables are typed as string[]. Calling .ShouldEqual here would bind to
+        // ObjectAssertExtensions.ShouldEqual and compare by reference; ShouldEqualCollection does not.
+        string[] actual = { NotInterned("a"), NotInterned("b") };
+        string[] expected = { "a", "b" };
+
+        Assert.False(ReferenceEquals(actual, expected),
+            "Test setup error: arrays should be distinct references");
+
+        // Act - element comparison, so distinct-but-equal arrays are equal
+        var result = actual.ShouldEqualCollection(expected, "Arrays should match by element");
+
+        // Assert
+        Assert.Same(actual, result);
+    }
+
+    [Fact]
+    public void ShouldEqualCollection_WithDifferentElements_Throws()
+    {
+        string[] actual = { "a", "b" };
+        string[] expected = { "a", "c" };
+
+        var ex = Assert.Throws<AssertionException>(() =>
+            actual.ShouldEqualCollection(expected, "Should differ"));
+
+        Assert.Contains("Should differ", ex.Message);
+    }
+
+    [Fact]
+    public void ShouldEqualCollection_WithComparer_UsesComparer()
+    {
+        var actual = new[] { "ALPHA", "BETA" };
+        var expected = new[] { "alpha", "beta" };
+
+        var result = actual.ShouldEqualCollection(expected, StringComparer.OrdinalIgnoreCase,
+            "Should match ignoring case");
+
+        Assert.Same(actual, result);
+    }
+
+    [Fact]
+    public void ShouldEqualCollection_WithElementAssertion_RunsPerElement()
+    {
+        // object[] on both sides so a single element type (object) is inferred; the custom rule is
+        // "the actual string's length equals the expected int".
+        object[] actual = { "a", "bb", "ccc" };
+        object[] expected = { 1, 2, 3 };
+
+        actual.ShouldEqualCollection(expected,
+            (exp, act) => ((string)act).Length.ShouldEqual((int)exp, "length should match"),
+            "Lengths should line up");
+    }
+
+    #endregion
+
+    #region ShouldBeEquivalentTo Tests
+
+    [Fact]
+    public void ShouldBeEquivalentTo_SameContentsDifferentOrder_DoesNotThrow()
+    {
+        var actual = new[] { 3, 1, 2 };
+        var expected = new[] { 1, 2, 3 };
+
+        var result = actual.ShouldBeEquivalentTo(expected, "Order should not matter");
+
+        Assert.Same(actual, result);
+    }
+
+    [Fact]
+    public void ShouldBeEquivalentTo_DifferentContents_Throws()
+    {
+        var actual = new[] { 1, 2, 3 };
+        var expected = new[] { 1, 2, 4 };
+
+        var ex = Assert.Throws<AssertionException>(() =>
+            actual.ShouldBeEquivalentTo(expected, "Contents differ"));
+
+        Assert.Contains("Contents differ", ex.Message);
+    }
+
+    #endregion
+
+    #region ShouldAllSatisfy Tests
+
+    [Fact]
+    public void ShouldAllSatisfy_WhenAllPass_ReturnsCollection()
+    {
+        var actual = new[] { 2, 4, 6 };
+
+        var result = actual.ShouldAllSatisfy(
+            x => x.ShouldEqual(x / 2 * 2, "should be even"),
+            "all should be even");
+
+        Assert.Same(actual, result);
+    }
+
+    [Fact]
+    public void ShouldAllSatisfy_WhenOneFails_Throws()
+    {
+        var actual = new[] { 2, 3, 4 };
+
+        var ex = Assert.Throws<AssertionException>(() =>
+            actual.ShouldAllSatisfy(
+                x => x.ShouldEqual(x / 2 * 2, "should be even"),
+                "all should be even"));
+
+        Assert.Contains("index 1", ex.Message);
+    }
+
+    #endregion
 }
