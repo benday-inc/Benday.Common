@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TheVersion>3.1.4</TheVersion>
+        <TheVersion>3.2.0</TheVersion>
         <AssemblyName>Benday.Common.Testing</AssemblyName>
         <AssemblyVersion>$(TheVersion)</AssemblyVersion>
         <Version>$(TheVersion)</Version>
@@ -20,6 +20,7 @@
         <PackageProjectUrl>https://github.com/benday-inc/Benday.Common</PackageProjectUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageReleaseNotes>
+v3.2 - Enhanced collection assertions: added AssertThatCollection.AreEquivalent (unordered/multiset equality), AllSatisfy (per-element assertions), IEqualityComparer&lt;T&gt; overloads across the collection assertions, and an Action&lt;T,T&gt; custom element-comparison overload for AreEqual; added fluent ShouldEqualCollection (which sidesteps the array overload-resolution trap that made .ShouldEqual on array-typed variables compare by reference), ShouldBeEquivalentTo, and ShouldAllSatisfy; clarified in the docs that collection elements are compared by value via EqualityComparer&lt;T&gt;.Default unless a comparer is supplied;
 v3.1.2 - Added FakeValueGenerator.Create&lt;T&gt;() to create and populate a single fake instance, and Create&lt;T&gt;(numberToCreate) to create and populate multiple fake instances at once (using each item's index as the seed so predictable values are unique across the collection);
 v3.1 - Adding FakeValueGenerator to Benday.Common.Testing to streamline test data generation in tests; Added reflection-based assertions AssertThat.PropertiesAreEqual (compares two objects property-by-property, reporting all mismatches at once) and AssertThat.AllPropertiesAreNonNullAndNonDefaultValue (verifies every property holds a non-default value) -- companions to FakeValueGenerator; added optional per-property special-case callbacks to PropertiesAreEqual, AllPropertiesAreNonNullAndNonDefaultValue, and FakeValueGenerator.PopulateFakeValues;
 v3.0.4 - Adding fluent version of MockUtility create method so that you can refer to a specific method and provide specific values for scalars;

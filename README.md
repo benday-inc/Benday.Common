@@ -56,11 +56,11 @@ var result = runner.Run();
 
 if (result.ExitCode == 0)
 {
-    Console.WriteLine($"Git status: {result.StandardOutput}");
+    Console.WriteLine($"Git status: {result.OutputText}");
 }
 else
 {
-    Console.WriteLine($"Error: {result.StandardError}");
+    Console.WriteLine($"Error: {result.ErrorText}");
 }
 ```
 
