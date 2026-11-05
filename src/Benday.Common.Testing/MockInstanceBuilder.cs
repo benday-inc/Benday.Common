@@ -36,7 +36,7 @@ public class MockInstanceBuilder<T> where T : class
     /// Values are assigned positionally: the first call to WithValue for a given type
     /// is assigned to the first constructor parameter of that type, the second call
     /// to the second parameter of that type, and so on.
-    /// Parameters not provided via WithValue will be auto-mocked if they are interfaces.
+    /// Parameters not provided via WithValue will be auto-mocked if they are interfaces or abstract classes.
     /// </summary>
     /// <typeparam name="TValue">The type of the value, matching the constructor parameter type.</typeparam>
     /// <param name="value">The value to pass for this parameter.</param>
@@ -57,7 +57,7 @@ public class MockInstanceBuilder<T> where T : class
 
     /// <summary>
     /// Builds the <see cref="MockCreationResult{T}"/> by resolving the constructor,
-    /// auto-mocking interface parameters, and applying any explicit values.
+    /// auto-mocking interface and abstract class parameters, and applying any explicit values.
     /// </summary>
     /// <returns>A MockCreationResult containing the lazily-created instance and its mocks.</returns>
     /// <exception cref="InvalidOperationException">
@@ -84,7 +84,7 @@ public class MockInstanceBuilder<T> where T : class
             {
                 args.Add(queue.Dequeue());
             }
-            else if (parameter.ParameterType.IsInterface)
+            else if (parameter.ParameterType.IsInterface || parameter.ParameterType.IsAbstract)
             {
                 var mock = CreateMock(parameter.ParameterType);
                 mocks[parameter.ParameterType] = mock;
@@ -94,8 +94,9 @@ public class MockInstanceBuilder<T> where T : class
             {
                 throw new InvalidOperationException(
                     $"Parameter '{parameter.Name}' of type '{parameter.ParameterType.Name}' " +
-                    $"is not an interface and cannot be auto-mocked. " +
-                    $"Use WithValue<{parameter.ParameterType.Name}>(value) to provide a value.");
+                    $"is not an interface or abstract class and cannot be auto-mocked. " +
+                    $"Use MockUtility.Build<{typeof(T).Name}>().WithValue<{parameter.ParameterType.Name}>(value) " +
+                    $"to provide a value.");
             }
         }
 
@@ -157,16 +158,16 @@ public class MockInstanceBuilder<T> where T : class
         return constructors[0];
     }
 
-    private static Mock CreateMock(Type interfaceType)
+    private static Mock CreateMock(Type typeToMock)
     {
-        var mockType = typeof(Mock<>).MakeGenericType(interfaceType);
+        var mockType = typeof(Mock<>).MakeGenericType(typeToMock);
 
         var temp = Activator.CreateInstance(mockType);
 
         if (temp == null)
         {
             throw new InvalidOperationException(
-                $"Failed to create mock of type '{interfaceType.Name}'.");
+                $"Failed to create mock of type '{typeToMock.Name}'.");
         }
 
         return (Mock)temp;

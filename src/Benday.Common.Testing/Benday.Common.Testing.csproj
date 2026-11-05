@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TheVersion>3.2.0</TheVersion>
+        <TheVersion>4.0.0</TheVersion>
         <AssemblyName>Benday.Common.Testing</AssemblyName>
         <AssemblyVersion>$(TheVersion)</AssemblyVersion>
         <Version>$(TheVersion)</Version>
@@ -52,9 +52,9 @@ v1.0 - Base class for xunit tests; MockUtility for streamlining testing with Moq
         <PackageReference Include="Moq"
                           Version="4.*" />
         <PackageReference Include="xunit.v3.assert"
-                          Version="3.*" />
+                          Version="4.*" />
         <PackageReference Include="xunit.v3.extensibility.core"
-                          Version="3.*" />
+                          Version="4.*" />
     </ItemGroup>
     <ItemGroup>
         <None Include="..\..\bdc_mark_128_128.png">

@@ -142,4 +142,53 @@ public class MockUtilityFixture : TestClassBase
         ex.InnerException.ShouldBeOfType<ArgumentException>("InnerException should be ArgumentException");
         ex.InnerException!.Message.ShouldContain("Configuration value cannot be null or empty.", "Exception message should contain expected text");
     }
+
+    [Fact]
+    public void CreateInstance_AbstractClassParameter_IsAutoMocked()
+    {
+        var expected = new DateTimeOffset(2026, 11, 5, 9, 0, 0, TimeSpan.Zero);
+
+        var result = MockUtility.CreateInstance<ClassWithAbstractDependency>();
+
+        result.GetRequiredMock<TimeProvider>()
+            .Setup(x => x.GetUtcNow())
+            .Returns(expected);
+
+        result.Instance.Clock.GetUtcNow().ShouldEqual(expected, "The abstract class should be auto-mocked");
+    }
+
+    [Fact]
+    public void CreateInstance_ConcreteClassParameter_ThrowsAndPointsAtBuild()
+    {
+        var ex = Assert.Throws<InvalidOperationException>(() =>
+        {
+            MockUtility.CreateInstance<ClassWithConcreteDependency>();
+        });
+
+        ex.Message.ShouldContain("dependency", "Exception should mention parameter name");
+        ex.Message.ShouldContain("MockUtility.Build", "Exception should point at the builder");
+        ex.Message.ShouldContain("WithValue", "Exception should mention WithValue");
+    }
+
+    [Fact]
+    public void CreateInstance_StringParameter_ThrowsAndPointsAtBuild()
+    {
+        var ex = Assert.Throws<InvalidOperationException>(() =>
+        {
+            MockUtility.CreateInstance<ClassWithMixedParameters>();
+        });
+
+        ex.Message.ShouldContain("MockUtility.Build", "Exception should point at the builder");
+    }
+
+    [Fact]
+    public void CreateInstance_MultipleConstructors_Throws()
+    {
+        var ex = Assert.Throws<InvalidOperationException>(() =>
+        {
+            MockUtility.CreateInstance<ClassWithMultipleConstructors>();
+        });
+
+        ex.Message.ShouldContain("multiple constructors", "Exception should explain the problem");
+    }
 }

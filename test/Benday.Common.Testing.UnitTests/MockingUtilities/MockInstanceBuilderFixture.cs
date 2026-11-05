@@ -186,4 +186,42 @@ public class MockInstanceBuilderFixture : TestClassBase
         var bogus = result.GetMock<ILogger<ClassWithMultipleConstructors>>();
         bogus.ShouldBeNull("Should return null for non-existent mock");
     }
+
+    [Fact]
+    public void Build_AbstractClassParameter_IsAutoMocked()
+    {
+        var expected = new DateTimeOffset(2026, 11, 5, 9, 0, 0, TimeSpan.Zero);
+
+        var result = MockUtility.Build<ClassWithAbstractDependency>().Build();
+
+        result.GetRequiredMock<TimeProvider>()
+            .Setup(x => x.GetUtcNow())
+            .Returns(expected);
+
+        result.Instance.Clock.GetUtcNow().ShouldEqual(expected, "The abstract class should be auto-mocked");
+    }
+
+    [Fact]
+    public void Build_ConcreteClassParameter_ThrowsWithoutWithValue()
+    {
+        var ex = Assert.Throws<InvalidOperationException>(() =>
+        {
+            MockUtility.Build<ClassWithConcreteDependency>().Build();
+        });
+
+        ex.Message.ShouldContain("dependency", "Exception should mention parameter name");
+        ex.Message.ShouldContain("WithValue", "Exception should mention WithValue");
+    }
+
+    [Fact]
+    public void Build_ConcreteClassParameter_UsesWithValue()
+    {
+        var expected = new ConcreteDependency();
+
+        var result = MockUtility.Build<ClassWithConcreteDependency>()
+            .WithValue(expected)
+            .Build();
+
+        result.Instance.Dependency.ShouldBeSameAs(expected, "The provided value should be used");
+    }
 }
